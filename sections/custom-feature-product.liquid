@@ -1,0 +1,131 @@
+<div class="em-hm-fea-main">
+	<div class="page-width">
+		<div class="em-hm-fea-inn">
+			<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
+			<div class="em-hm-fea-row">
+				<div class="em-hm-fea-block">
+					<div class="em-hm-fea-block-inn">
+						<img src="{{section.settings.Image_1 | img_url: 'original' }}" />
+						<div class="em-hm-fea-block-hover">
+							<img src="{{section.settings.Image_2 | img_url: 'original' }}" />
+							<p>{{section.settings.text}}</p>
+							<div class="em-hm-fea-block-hvr-btn"><a href="{{section.settings.link}}" class="em-bl-back-btn">Show Products</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": {
+    "da": "Udtalelser",
+    "de": "Testimonials",
+    "en": "Custom Product"
+  },
+  "class": "index-section",
+  "max_blocks": 9,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Udtalelser",
+        "de": "Custom Product",
+        "en": "Custom Product"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": {
+        "da": "Udtalelse",
+        "de": "Testimonial",
+        "en": "Custom Product"
+      },
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": {
+            "da": "Tekst",
+            "de": "Text",
+            "en": "Text"
+          },
+          "default": {
+            "da": "<p>Tilføj kundeanmeldelser og udtalelser for at fremhæve din butiks tilfredse kunder.</p>",
+            "de": "<p>Kunden-Reviews und Testimonials, die Kundenzufriedenheit beweisen.</p>",
+            "en": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          }
+        },
+{
+      "type": "url",
+      "id": "link",
+      "label": {
+        "da": "Knaplink",
+        "de": "Button-Etikett",
+        "en": "Button link"
+      }
+    },
+{
+      "type": "image_picker",
+      "id": "image_1",
+      "label": {
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image 1"
+      }
+    },
+{
+      "type": "image_picker",
+      "id": "image_2",
+      "label": {
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image 2"
+      }
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "da": "Custom Product",
+        "de": "Custom Product",
+        "en": "Custom Product"
+      },
+      "category": {
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text"
+      },
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,15 @@
+$(document).ready(function(){
+$( "#CustomaccordionFoot" ).accordion({
+      collapsible: true,heightStyle: "content"
+    });
+  $(".em-mob-header-menu-icon").click(function(){
+  $(".em-mob-toggle-menu").toggleClass("em-mob-toggle-menu-open");
+    $("body").toggleClass("mobilemenu-open");
+    $('<div class="em-toggle-menu-fade-lr"></div>').insertBefore(".em-mob-toggle-menu");
+  })
+  $(".em-mob-toggle-menu-close").click(function(){
+  $(".em-mob-toggle-menu").removeClass("em-mob-toggle-menu-open");
+    $("body").removeClass("mobilemenu-open");
+      $('.em-toggle-menu-fade-lr').remove();
+  })
+})

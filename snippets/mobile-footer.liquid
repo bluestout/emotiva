@@ -1,0 +1,44 @@
+<div class="MobileFooter">
+      {%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'text' -%}
+                {%- if block.settings.text != blank -%}
+  <div class="CustomInfoFoot">
+  <h3>{{ block.settings.title | escape }}</h3>
+                  <div class="site-footer__rte
+                              {% if section.blocks.size == 1 %} site-footer__single-block--centered{% endif %}">
+                      {{ block.settings.text }}
+                  </div>
+                {%- endif -%}
+  </div>
+    {%- endcase -%}
+  {%endfor%}
+  <div id="CustomaccordionFoot">
+     {%- for block in section.blocks -%}
+    {%unless forloop.index == 6%}
+  <h3>{{ block.settings.title | escape }}</h3>
+   
+  <div>
+     {%- case block.type -%}
+ 
+    {%- when 'link_list' -%}
+                {%- assign footer_linklist = block.settings.menu -%}
+                  <ul class="site-footer__linklist
+                            {% if inline_list %}list--inline{% endif %}">
+                    {%- for link in linklists[footer_linklist].links -%}
+                      <li class="site-footer__linklist-item">
+                        <a href="{{ link.url }}"
+                          {% if link.current %} aria-current="page"{% endif %}
+                        >
+                          {{ link.title | escape }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+
+            {%- endcase -%}
+    </div>
+     {%endunless%}
+    {%endfor%}
+</div>
+</div>

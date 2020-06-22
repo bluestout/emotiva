@@ -1,0 +1,66 @@
+<div class="em-top-head-sec DesktopHeader">
+	<div class="em-ext-top-bar"><p>Free Shipping in the USA and CA over $49</p></div>
+	<div class="em-head-top-bar">
+		<div class="em-container">
+			<div class="em-head-top-bar-row">
+				<div class="em-head-top-bar-left">
+					<div class="em-head-top-bar-logo"><img src="https://cdn.shopify.com/s/files/1/2572/6926/t/29/assets/imgpsh_fullsize_anim.png?" /></div><p>Sound as it should be</p>
+				</div>
+				<div class="em-head-top-bar-middle">
+					<form class="search-form search-bar__form" action="{{ routes.search_url }}" method="get" role="search">
+        <div class="search-form__input-wrapper">
+          <input
+            type="text"
+            name="q"
+            placeholder="{{ 'general.search.placeholder' | t }}"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-owns="predictive-search-results"
+            aria-expanded="false"
+            aria-label="{{ 'general.search.placeholder' | t }}"
+            aria-haspopup="listbox"
+            class="search-form__input search-bar__input"
+            data-predictive-search-drawer-input
+          />
+          <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
+          <div class="predictive-search-wrapper predictive-search-wrapper--drawer" data-predictive-search-mount="drawer"></div>
+        </div>
+
+        <button class="search-bar__submit search-form__submit"
+          type="submit"
+          data-search-form-submit>
+          {% include 'icon-search' %}
+          <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+        </button>
+      </form>
+				</div>
+				<div class="em-head-top-bar-right">
+					<ul class="em-head-top-bar-rt-list">
+						<li><a herf="#">Live Chat</a></li>
+						<li>1-615-790-6754</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="em-nav-top-bar">
+		<div class="em-container">
+			<div class="em-nav-top-bar-row">
+				<div class="em-nav-top-bar-left">
+					<ul class="em-nav-top-bar-lt-list">	
+                  {% for link in linklists[section.settings.main_linklist].links %}
+                  <li><a href="{{link.url}}">{{link.title}}</a></li>
+                  {%endfor%}
+                  </ul>
+				</div>
+				<div class="em-nav-top-bar-right">
+					<ul class="em-nav-top-bar-rt-list">
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#" class="em-nav-top-cart">Cart</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

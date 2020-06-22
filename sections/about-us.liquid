@@ -1,0 +1,124 @@
+<div class="em-hm-about-main">
+	<div class="page-width">
+		<div class="em-hm-about-sec">
+			<div class="em-hm-about-inn">
+				<div class="em-hm-about-upr">
+					<h4 class="em-hm-about-title">{{section.settings.title}}</h4>
+					<h2>{{section.settings.subtitle}}</h2>
+					<p>{{section.settings.shortdesc}}</p>
+				</div>				
+				<div class="em-hm-about-lwr">
+					<div class="em-hm-about-row">
+						<div class="em-hm-about-img"><img src="{{section.settings.Image | img_url: 'original' }}" /></div>	
+                        <div class="em-hm-about-cont">
+						{{section.settings.desc}}
+                          <a href="{{section.settings.link}}" class="bl-text-arw-link">Read more</a>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "About Us",
+    "class": "index-section AboutCustomtUs",
+    "settings": [
+{
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "About Us"
+      }
+    },
+{
+      "type": "text",
+      "id": "subtitle",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Sub Heading"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Sub Title"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "shortdesc",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Short Description"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Short Description"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "desc",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Detail"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Detail"
+      }
+    },
+{
+      "type": "url",
+      "id": "link",
+      "label": {
+        "da": "Knaplink",
+        "de": "Button-Etikett",
+        "en": "Button link"
+      }
+    },
+{
+      "type": "image_picker",
+      "id": "image",
+      "label": {
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image"
+      }
+    }
+],
+  "presets": [
+    {
+      "name": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "About Us"
+      },
+      "category": {
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Text"
+      }
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,97 @@
+<div class="page-width">
+	<div class="contact-pg-main-sec">
+		<h3 class="inr-page-main-title">Contact Us</h3>
+		<p class="inr-page-sub-title">Interested in out products or need help with Emotiva products? Get in touch.</p>
+		<div class="gray-back-block-row">
+			<div class="gray-back-block-box">
+				<div class="contact-pg-info-block">
+					<div class="contact-pg-info-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/picto-sales.png?v=1592562351" /></div>
+					<h3>Slaes</h3>
+					<p>Interested in Emotiva? Our team is here to answer your questions and get your new system started.</p> 
+					<h5>Monday - Friday<br />10 am - 8 pm EST</h5>
+					<div class="contact-pg-info-btn"><a href="#" class="em-bl-back-btn">Start live chat</a></div>
+				</div>
+			</div>
+			<div class="gray-back-block-box">
+				<div class="contact-pg-info-block">
+					<div class="contact-pg-info-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/picto-support.png?v=1592562351" /></div>
+					<h3>Support</h3>
+					<p>We're here to help with setup, control, and system performance.</p> 
+					<h5>For product  manuals and firmware downloads, visit <a href="#">Resources Center</a>.</h5>
+					<div class="contact-pg-info-btn"><a href="#" class="em-bl-back-btn">Visit Support Center</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-layered-cont-sec" style="background-image: url('https://cdn.shopify.com/s/files/1/2572/6926/files/lounge-bg.jpg?v=1592562309');">
+		<div class="contact-layered-cont-upr">
+          <h3>Get help in the Emotiva Lounge</h3>
+			<p>Emotiva Community connects you with other owners and product experts. Get help, product tips and tricks. Or, see how others are using our products. Ask questions — and share your own experiences.</p>
+			<div class="contact-layered-cont-btn"><a href="#" class="em-bl-back-btn">Go to Emotiva Lounge</a></div>
+		</div>
+	</div>
+</div>	
+
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      {% if page.content.size > 0 %}
+        <div class="rte">
+          {{ page.content }}
+        </div>
+      {% endif %}
+
+      <div class="contact-form form-vertical">
+        {%- assign formId = 'ContactForm' -%}
+        {% form 'contact', id: formId %}
+          {% include 'form-status', form: form, form_id: formId %}
+
+          <div class="grid grid--half-gutters">
+            <div class="grid__item medium-up--one-half">
+              <label for="{{ formId }}-name">{{ 'contact.form.name' | t }}</label>
+              <input type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+            <div class="grid__item medium-up--one-half">
+              <label for="{{ formId }}-email">{{ 'contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="{{ formId }}-email"
+                name="contact[email]"
+                autocorrect="off"
+                autocapitalize="off"
+                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                aria-required="true"
+                {%- if form.errors contains 'email' -%}
+                  class="input--error"
+                  aria-invalid="true"
+                  aria-describedby="{{ formId }}-email-error"
+                {%- endif -%}
+                >
+              {%- if form.errors contains 'email' -%}
+                <span id="{{ formId}}-email-error" class="input-error-message">
+                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                  {% include 'icon-error' %}
+                  <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                </span>
+              {%- endif -%}
+            </div>
+          </div>
+
+          <label for="{{ formId }}-phone">{{ 'contact.form.phone' | t }}</label>
+          <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+
+          <label for="{{ formId }}-message">{{ 'contact.form.message' | t }}</label>
+          <textarea rows="10" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+          <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
+
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
