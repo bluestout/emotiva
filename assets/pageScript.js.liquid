@@ -1,0 +1,30 @@
+var LinkGet = window.location.href;
+$(".em-inner-sidebar-link-list li").each(function(){
+var LocationFind = $(this).children("a").attr("href");
+  if(LocationFind==LinkGet){
+  $(this).children("a").addClass("active");
+  }
+  else{
+   $(this).children("a").removeClass("active");
+  }
+})
+var HeightGet = $("#shopify-section-header").height();
+  console.log("Height" +HeightGet);
+$(".em-landing-pg-img").css("top",HeightGet);
+$("body").css("padding-top",HeightGet);
+
+  if(LinkGet.indexOf("diraclive/?contact_posted=true") != -1){
+  $(".em-landing-pg-main").addClass("em-landing-form-thank-open");
+  }
+  else{
+  $(".em-landing-pg-main").removeClass("em-landing-form-thank-open");
+  }   
+$( "#accordionBilling" ).accordion({
+      collapsible: true,heightStyle: "content",header: "h3", active: false
+    });
+$( "#accordionOrder" ).accordion({
+      collapsible: true,heightStyle: "content",header: "h3", active: false
+    });
+$( "#accordionCompany" ).accordion({
+      collapsible: true,heightStyle: "content",header: "h3", active: false
+    });

@@ -1,0 +1,49 @@
+<div class="em-landing-pg-main">	
+	<div class="em-landing-pg-img" style="background-image: url('https://cdn.shopify.com/s/files/1/2572/6926/files/landing-pg-img.jpg?v=1592801916')">
+	  <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/landing-mob-img.jpg?v=1592806415" />	
+      <h1 class="em-landing-pg-img-title">Get Dirac Live Room Correction software on your device</h1>
+	</div>
+	<div class="em-landing-pg-form">
+		<div class="em-landing-pg-form-inn">
+			<h3 class="em-landing-pg-form-title">Get Dirac Live Room Correction software on your device</h3>
+			<p class="em-landing-pg-form-desc">If you own <b>RMC-1, RMC-1L, or XMC-2,</b> please register your device to receive an update to the one of the best-performing automatic room correction softwares. </p>
+			<div class="em-landing-pg-form-sec">{%include "landing-contact"%}</div>
+			<div class="em-landing-pg-form-bot">
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=0FJp8fbsDLI" target="_blank" class="em-landing-pg-form-btn em-landing-pg-form-btn-vid"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play.png?v=1592802110" />Watch How<br /> to video</a></li>
+					<li><a href="https://cdn.shopify.com/s/files/1/2572/6926/files/emotiva_dirac2_user.pdf?v=1588959352" target="_blank" class="em-landing-pg-form-btn em-landing-pg-form-btn-user"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-manual.png?v=1592802110" />Dirac User<br /> Manual</a></li>
+					<li><a id="dwn-btn" class="em-landing-pg-form-btn em-landing-pg-form-btn-manual" ><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-download.png?v=1592802110" />Download calibration file required for Emotiva Processor Microphone</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="em-landing-pg-copy-txt">
+		<p>© EMOTIVA AUDIO CORPORATION</p>
+	</div>
+</div>
+{% include 'filecontent' %}
+<script>
+  
+  function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+// Start file download.
+document.getElementById("dwn-btn").addEventListener("click", function(){
+    // Generate download of hello.txt file with some content
+    var text = document.getElementById("text-val").value;
+    var filename = "EmotivaMicCalOA.txt";
+    
+    download(filename, text);
+}, false);
+</script>
+ {{ 'CustomPage.css' | asset_url | stylesheet_tag }}

@@ -155,6 +155,18 @@
       "1592391618290": {
         "type": "Icon-bar",
         "settings": {}
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 3,
+          "rows": 6,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false
+        }
       }
     },
     "content_for_index": [

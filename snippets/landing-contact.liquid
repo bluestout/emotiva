@@ -1,0 +1,100 @@
+{%- assign formId = 'ContactForm' -%}
+        {% form 'contact', id: formId %}
+         {%- if form.posted_successfully? -%}
+   <div class="alert alert--success em-landing-success-info">
+        <div class="em-landing-success-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/thank-you-tick-img.jpg?v=1592816620" /></div>
+        <h3 class="em-landing-success-alert__title">Thank you</h3>
+        <p class="em-landing-success-alert__desc">Your device information is submitted. Once the new firmware is approved, it will be automatically sent to your device and you will be able to use the new feature.</p>
+        <div class="em-landing-success-alert__btn"><a href="https://emotiva.com/" class="button button--primary">Back to Homepage</a></div>
+      </div>
+{%- endif -%}  
+
+{% comment %} We need to add this so the errors are output in the right order {% endcomment %}
+{% assign error_order = "author, email, body, password, form" | split: ", " %}
+
+{%- if form.errors -%}
+
+  <div class="form-message form-message--error">
+    <h2 class="h3 form-message__title " tabindex="-1" data-form-status>{{ 'contact.form.error_heading' | t }}</h2>
+    <ul>
+      {% for error in error_order %}
+        {% for field in form.errors %}
+          {% if error == field %}
+
+            {% capture field_label %}
+              {% case field %}
+                {% when 'author' %}
+                  {{ 'contact.form.name' | t }}
+                {% when 'body' %}
+                  {{ 'contact.form.message' | t }}
+                {% else %}
+                  {{ form.errors.translated_fields[field] }}
+              {% endcase %}
+            {% endcapture %}
+
+            <li>
+              {%- if field == 'form' -%}
+                {{ form.errors.messages[field] }}
+              {%- else -%}
+                {% comment %} the href should match the input's id {% endcomment %}
+                <a href="#{{ form_id }}-{{ field }}" class="form-message__link">{{ field_label | strip | capitalize }} {{ form.errors.messages[field] }}</a>
+              {%- endif -%}
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+{%- endif -%}
+ {%- unless form.posted_successfully? -%}
+          <div class="form__control">
+              
+              <input class="form__input" placeholder="Your name" required="required" type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+</div>
+<div class="form__control">
+              <input class="form__input" required="required" placeholder="Your email"
+                type="email"
+                id="{{ formId }}-email"
+                name="contact[email]"
+                autocorrect="off"
+                autocapitalize="off"
+                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                aria-required="true"
+                {%- if form.errors contains 'email' -%}
+                  class="input--error"
+                  aria-invalid="true"
+                  aria-describedby="{{ formId }}-email-error"
+                {%- endif -%}
+                >
+              {%- if form.errors contains 'email' -%}
+                <span id="{{ formId}}-email-error" class="input-error-message">
+                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                  {% include 'icon-error' %}
+                  <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                </span>
+              {%- endif -%}
+            
+          </div>
+
+          <div class="form__control-row">
+      <div class="form__control">
+     <select id="ContactProcessorUnit" name="contact[Processor Unit]" required="required">
+       <option value="">Processor Unit</option>
+       <option value="RMC-1">RMC-1</option>
+       <option value="RMC-1L">RMC-1L</option>
+       <option value="XMC-2">XMC-2</option>
+      </select>
+      </div>
+      <div class="form__control">
+       <div class="em-landing-mac-fld-tooltip-block">
+         <input type="text" class="form__input" id="contact__mc_address" name="contact[Mac Address]" placeholder="MAC Address" required="required">
+         <div class="em-landing-mac-fld-tooltip">
+         	<img src="https://cdn.shopify.com/s/files/1/2572/6926/files/tl-tip-icon-gr.jpg?v=1592811116" />
+           <div class="em-landing-mac-fld-tt-hover"><p>You can find your MAC address in your processor menu under MENU > INFORMATION > MAC ADDRESS.</p></div>
+         </div>
+       </div>
+    </div>
+    </div>
+          <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
+{%endunless%}
+        {% endform %}

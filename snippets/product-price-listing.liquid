@@ -75,6 +75,7 @@
         {%- endif -%}
       </span>
     </dd>
+    {%comment%}
     <div class="price__compare">
       <dt>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
@@ -85,6 +86,7 @@
         </s>
       </dd>
     </div>
+    {%endcomment%}
   </div>
   <div class="price__unit">
     <dt>
@@ -108,6 +110,7 @@
       <span>{{ variant.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}}
     </dd>
   </div>
+       {%comment%}
   <div class="price__badges price__badges--listing">
     <span class="price__badge price__badge--sale" aria-hidden="true">
       <span>{{ 'products.product.on_sale' | t }}</span>
@@ -116,4 +119,5 @@
       <span>{{ 'products.product.sold_out' | t }}</span>
     </span>
   </div>
+       {%endcomment%}
 </dl>
