@@ -1,0 +1,5 @@
+{%for image in product.images %}
+<li>
+<img src="{{image.src | img_url: "original" }}" />
+</li>
+{%endfor %}

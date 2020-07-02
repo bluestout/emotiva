@@ -22,9 +22,9 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "share_image": "",
-    "share_facebook": true,
-    "share_twitter": true,
-    "share_pinterest": true,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
@@ -34,7 +34,7 @@
     "social_youtube_link": "",
     "social_vimeo_link": "",
     "favicon": "",
-    "enable_ajax": true,
+    "enable_ajax": false,
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -68,15 +68,15 @@
       "hero-1": {
         "type": "hero",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/home-banner.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "large",
           "text_size": "large",
-          "title": "Image with text overlay",
-          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-          "button_label": "",
-          "button_link": ""
+          "title": "Cutting-edge audio products made by people like you",
+          "text": "<p>We create exceptionally designed, heigh-performance audio products at prices that more people could afford and enjoy.<\/p>",
+          "button_label": "Explore Product",
+          "button_link": "#"
         }
       },
       "collection": {
@@ -154,11 +154,29 @@
       },
       "1592391618290": {
         "type": "Icon-bar",
-        "settings": {}
+        "settings": {
+          "title": "The passionate high-end audio products from the people who enjoy music and movies the same like you",
+          "image_1": "shopify:\/\/shop_images\/fea-icon-01.jpg",
+          "heading_1": "Bespoke high-end audio quality",
+          "image_2": "shopify:\/\/shop_images\/fea-icon-02.jpg",
+          "heading_2": "Direct to consumer, no retail markups",
+          "image_3": "shopify:\/\/shop_images\/fea-icon-03.jpg",
+          "heading_3": "5 years transferable warranty",
+          "image_4": "shopify:\/\/shop_images\/fea-icon-04.jpg",
+          "heading_4": "Upgrade Gear with our Trade-In Program"
+        }
       },
       "collection-template": {
         "type": "collection-template",
         "settings": {
+          "text_1": "Bespoke high-end audio quality",
+          "image_1": "shopify:\/\/shop_images\/colc-top-fea-1.jpg",
+          "text_2": "Direct to consumer, no retail markups",
+          "image_2": "shopify:\/\/shop_images\/colc-top-fea-2.jpg",
+          "text_3": "5 years transferrable warranty",
+          "image_3": "shopify:\/\/shop_images\/colc-top-fea-3.jpg",
+          "text_4": "Upgrade Gear with our Trade-In Program",
+          "image_4": "shopify:\/\/shop_images\/colc-top-fea-4.jpg",
           "layout": "grid",
           "grid": 3,
           "rows": 6,
@@ -167,12 +185,255 @@
           "sort_enable": false,
           "tags_enable": false
         }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": false,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "1593579762038": {
+        "type": "custom-blog",
+        "settings": {
+          "title": "Latest Reads",
+          "blog_1": "Processors",
+          "image_1": "shopify:\/\/shop_images\/read-3.jpg",
+          "article_1": "reviews\/xpa-dr-3-review-by-life-of-bliss",
+          "blog_2": "News",
+          "image_2": "shopify:\/\/shop_images\/read-2.jpg",
+          "article_2": "info-hub-1\/steve-guttenberg-reviews-the-airmotiv-t-zero-towers",
+          "blog_3": "Press Reviews",
+          "image_3": "shopify:\/\/shop_images\/read-1.jpg",
+          "article_3": "reviews\/hifi-brothers-review-the-erc-4-cd-player",
+          "blog_4": "Products",
+          "image_4": "shopify:\/\/shop_images\/read-4.jpg",
+          "article_4": "info-hub-1\/life-of-bliss-reviews-the-xpa-dr-3-amplifier"
+        }
+      },
+      "1593588364429": {
+        "type": "about-us",
+        "settings": {
+          "title": "About Us",
+          "subtitle": "We're just like you",
+          "shortdesc": "We have one goal: to offer exceptionally designed, high performance products at prices that more people could afford and enjoy.",
+          "desc": "<p>Emotiva asked a simple question: \"Why can't we have amazing audio and video sound at price that don't threaten our mortage?\"<\/p>\n\t\t\t\t\t\t\t<p>Emotiva is comprised of true audio enthusiasts, engineers, and product specialists. We run a lean organization without excess overhead and redundant levels of management. Our people are passionate enthusiasts who enjoy the experience of using Emotiva products equally as much as designing and building them.<\/p>",
+          "link": "#",
+          "image": "shopify:\/\/shop_images\/abt-us-like-img.jpg"
+        }
+      },
+      "1593596810632": {
+        "type": "featurePro-and-Article",
+        "disabled": true,
+        "settings": {
+          "title": "Featured Products",
+          "product": "rmc-1",
+          "pro_img": "shopify:\/\/shop_images\/product-featured-placeholder1.png",
+          "title_2": "Featured Article",
+          "blog_1": "Loudspeakers",
+          "image_1": "shopify:\/\/shop_images\/news-1.jpg",
+          "article_1": "info-hub-1\/vinyl-back-with-a-vengeance",
+          "blog_2": "Press Reviews",
+          "image_2": "shopify:\/\/shop_images\/news-2.jpg",
+          "article_2": "reviews\/xpa-dr-3-review-by-life-of-bliss",
+          "blog_3": "News",
+          "image_3": "shopify:\/\/shop_images\/news-3-1.jpg",
+          "article_3": "info-hub-1\/emotiva-dirac-live-2-installation-guide"
+        }
+      },
+      "1593671315988": {
+        "type": "custom-logo",
+        "blocks": {
+          "1593671315988-0": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TEC_logo_2013_1-1_02367f88-b12f-46f1-abce-734c85b942e1.png",
+              "link": ""
+            }
+          },
+          "1593671315988-1": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hifi_news_bestof_347aa340-3be1-4f47-a330-8fa3836a46d8.png",
+              "link": ""
+            }
+          },
+          "1593671315988-2": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bestofawards2014-featured-1_18c65426-09be-4486-8653-9b3b70e78e15.png",
+              "link": ""
+            }
+          },
+          "1593671315988-3": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/best-of-awards-2017-intro-featured-1_339f914f-6cbe-46d3-8de7-94a937d100be.png",
+              "link": "#"
+            }
+          },
+          "1593672042980": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/best-of-awards-2017-intro-featuredV2-1_5bb34064-f9a0-4a9e-981d-37a0d8e6ffe9.png",
+              "link": "#"
+            }
+          },
+          "1593672051924": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BOA-2017.png",
+              "link": "#"
+            }
+          },
+          "1593672062495": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/secrets-bestof20162_42b4c751-1fa7-47aa-aaf4-d00941104295.png",
+              "link": "#"
+            }
+          },
+          "1593672072264": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/secrets-bestof2016_1f2f9c0b-bbb8-4f8b-9f0d-ae48dfd6d06e.png",
+              "link": ""
+            }
+          },
+          "1593672084983": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Emotiva3-1_18978d83-82db-4f0e-9ff0-e69a9c84176f.png",
+              "link": "#"
+            }
+          },
+          "1593672095198": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/best-of-awards-2017.png",
+              "link": "#"
+            }
+          },
+          "1593672105626": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/best-of-awards-2013-main-new-1_a5d641d1-c974-4966-ae43-094885204b71.png",
+              "link": "#"
+            }
+          },
+          "1593672116232": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo_192-1_b2db2159-87eb-49a8-8717-dc59c5324c62.png",
+              "link": "#"
+            }
+          },
+          "1593672126204": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/stereophile_bfca101f-22aa-4cbd-b198-9132b7e733ee.png",
+              "link": "#"
+            }
+          },
+          "1593672137678": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sound-Vision-logo_ef5598e4-7453-41d0-8fd7-9298fb7787e2.png",
+              "link": "#"
+            }
+          },
+          "1593672147479": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/best_online_newsweek_2020_cfd9153a-43f3-4549-a4a3-14b34e44f518.png",
+              "link": "#"
+            }
+          },
+          "1593672157427": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Axpona-Logo.png",
+              "link": "#"
+            }
+          },
+          "1593672169415": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/awards4-1_1549a0a9-a4e6-4c1b-8b21-af5dc5bc4820.png",
+              "link": "#"
+            }
+          },
+          "1593672177968": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/awards_1-1_e81743d5-28f9-4313-93b3-b95d97cdb0f9.png",
+              "link": "#"
+            }
+          },
+          "1593672186571": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/awards2-1_ed8aa216-b81f-4772-a034-d96bb72b2a91.png",
+              "link": "#"
+            }
+          },
+          "1593672195951": {
+            "type": "custom_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AVS-Forum-Review-Awards-1_5f190248-6d41-47b1-b96e-2ce51a78b6dd.png",
+              "link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1593671315988-0",
+          "1593671315988-1",
+          "1593671315988-2",
+          "1593671315988-3",
+          "1593672042980",
+          "1593672051924",
+          "1593672062495",
+          "1593672072264",
+          "1593672084983",
+          "1593672095198",
+          "1593672105626",
+          "1593672116232",
+          "1593672126204",
+          "1593672137678",
+          "1593672147479",
+          "1593672157427",
+          "1593672169415",
+          "1593672177968",
+          "1593672186571",
+          "1593672195951"
+        ],
+        "settings": {
+          "title": "Let's have other judge if we succeeded"
+        }
       }
     },
     "content_for_index": [
       "hero-1",
       "1592391618290",
-      "collection"
+      "collection",
+      "1593579762038",
+      "1593588364429",
+      "1593671315988",
+      "1593596810632"
     ]
   },
   "presets": {

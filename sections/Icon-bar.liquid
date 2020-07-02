@@ -1,3 +1,15 @@
+<div class="em-banner-feature-bar">
+	<div class="em-banner-feature-inn">
+		<h3>{{section.settings.title}}</h3>
+		<ul class="em-banner-feature-list">
+			<li><p><img src="{{section.settings.image_1 | img_url: "original"}}" />{{section.settings.heading_1}}</p></li>
+			<li><p><img src="{{section.settings.image_2 | img_url: "original"}}" />{{section.settings.heading_2}}</p></li>
+			<li><p><img src="{{section.settings.image_3 | img_url: "original"}}" />{{section.settings.heading_3}}</p></li>
+			<li><p><img src="{{section.settings.image_4 | img_url: "original"}}" />{{section.settings.heading_4}}</p></li>
+		</ul>
+	</div>
+</div>
+{%comment%}
 <div class="em-satisfaction-black-bar">
 	<div class="em-satisfaction-black-bar-inn">
 		<div class="em-satisfaction-black-bar-blk">
@@ -17,10 +29,118 @@
 		</div>
 	</div>
 </div>
+{%endcomment%}
 {% schema %}
   {
     "name": "Icon Bar",
-    "settings": [],
+    "settings": [
+{
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 1"
+          }
+        },
+{
+      "type": "text",
+      "id": "heading_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 1"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 2"
+          }
+        },
+{
+      "type": "text",
+      "id": "heading_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 2"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 3"
+          }
+        },
+{
+      "type": "text",
+      "id": "heading_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 3"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_4",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 4"
+          }
+        },
+{
+      "type": "text",
+      "id": "heading_4",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 4"
+      }
+    }
+],
   "presets": [
     {
       "name": {

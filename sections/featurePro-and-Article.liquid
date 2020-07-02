@@ -5,7 +5,7 @@
 				<div class="em-hm-pro-art-block">
 					<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
 					<div class="em-hm-fea-pro-block">
-						<div class="em-hm-fea-pro-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/product-featured-placeholder1.png?v=1592295849" /></div>
+						<div class="em-hm-fea-pro-img"><img src="{{section.settings.pro_img | img_url: "original"}}" /></div>
 						<h3>RMC-1</h3>
 						<h4>16 Channel 9.1.6 Discreet Dolby Atmos & DTS:X Reference Cinema Processor</h4>
 						<p>The RMC-1 is a state-of-the-art surround sound processor - designed from the ground up to serve as the nerve center of a modern home theater or surround sound music system. </p>
@@ -19,16 +19,16 @@
 					</div>
 				</div>
 				<div class="em-hm-pro-art-block">
-					<h3 class="em-hm-section-title">Featured Articles</h3>
+					<h3 class="em-hm-section-title">{{section.settings.title_2}}</h3>
 					<div class="em-hm-fea-art-block">
 						<a href="#">
-							<div class="em-hm-fea-art-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/news-1.jpg?v=1592295847" /></div>
+							<div class="em-hm-fea-art-block-img"><img src="{{section.settings.image_1| img_url: 'original'}}" /></div>
 							<div class="em-hm-fea-art-block-cont">
-								<h5>Loudspeakers</h5>
-								<h3>How to choose the best audio processor?</h3>
+								<h5>{{section.settings.blog_1}}</h5>
+								<h3>{{articles[section.settings.article_1].title}}</h3>
 								<div class="em-hm-fea-art-block-auth">
 									<div class="em-hm-fea-art-auth-info">
-										<p><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/auth-img.png?v=1592298000" /> January 6, 2020<br />by John</p>
+										<p><img src="{{section.settings.author_1| img_url: 'original'}}" /> January 6, 2020<br />by John</p>
 										<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 									</div>
 								</div>
@@ -37,28 +37,28 @@
 					</div>
 					<div class="em-hm-fea-art-block em-hm-fea-art-img-right">
 						<a href="#">
-							<div class="em-hm-fea-art-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/news-2.jpg?v=1592295841" /></div>
+							<div class="em-hm-fea-art-block-img"><img src="{{section.settings.image_2| img_url: 'original'}}" /></div>
 							<div class="em-hm-fea-art-block-cont">
-								<h5>Press Reviews</h5>
-								<h3>XMC-1 Reviewed by The Audio Squad Blog</h3>
+								<h5>{{section.settings.blog_2}}</h5>
+								<h3>{{articles[section.settings.article_2].title}}</h3>
 								<div class="em-hm-fea-art-block-auth">
 									<div class="em-hm-fea-art-auth-info">
-										<p><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/auth-img.png?v=1592298000" /> January 21, 2020<br />by John</p>
+										<p><img src="{{section.settings.author_2| img_url: 'original'}}" /> January 21, 2020<br />by John</p>
 										<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 									</div>
 								</div>
 							</div>
-						</a>
+						</a> 
 					</div>
 					<div class="em-hm-fea-art-block">
 						<a href="#">
-							<div class="em-hm-fea-art-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/news-3-1.jpg?v=1592295832" /></div>
+							<div class="em-hm-fea-art-block-img"><img src="{{section.settings.image_3| img_url: 'original'}}" /></div>
 							<div class="em-hm-fea-art-block-cont">
-								<h5>News</h5>
-								<h3>Processor 101 Class from our Open House 2019!</h3>
+								<h5>{{section.settings.blog_3}}</h5>
+								<h3>{{articles[section.settings.article_3].title}}</h3>
 								<div class="em-hm-fea-art-block-auth">
 									<div class="em-hm-fea-art-auth-info">
-										<p><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/auth-img.png?v=1592298000" /> January 6, 2020<br />by John</p>
+										<p><img src="{{section.settings.image_3| img_url: 'original'}}" /> January 6, 2020<br />by John</p>
 										<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 									</div>
 								</div>
@@ -76,7 +76,9 @@
 {% schema %}
   {
     "name": "Product and Post",
-    "settings": [{
+    "settings": [
+{
+
       "type": "text",
       "id": "title",
       "label": {
@@ -89,7 +91,153 @@
         "de": "Vorgestellte Kategorie",
         "en": "Featured Products"
       }
-    }]
+
+},
+{
+      "id": "product",
+      "type": "product",
+      "label": {
+        "da": "Product",
+        "de": "Product",
+        "en": "Product"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "pro_img",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Product Image"
+          }
+        },
+{
+
+      "type": "text",
+      "id": "title_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Featured Article"
+      }
+
+},
+{
+      "type": "text",
+      "id": "blog_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 1"
+          }
+        },
+{
+      "id": "article_1",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Article"
+      }
+    },
+{
+      "type": "text",
+      "id": "blog_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 2"
+          }
+        },
+{
+      "id": "article_2",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Article"
+      }
+    },
+{
+      "type": "text",
+      "id": "blog_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 3"
+          }
+        },
+{
+      "id": "article_3",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Article"
+      }
+    }
+    ],
+  "presets": [
+    {
+      "name": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Custom Blog and Product"
+      },
+      "category": {
+        "da": "Blog",
+        "de": "Blog",
+        "en": "Blog"
+      }
+    }
+  ]
   }
 {% endschema %}
 

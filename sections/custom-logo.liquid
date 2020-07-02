@@ -1,52 +1,115 @@
 <div class="em-logo-inf-slider-section">
 			<div class="page-width">
 				<div class="em-logo-inf-slider-sec-inn">
-					<h4 class="em-logo-inf-slider-title">Let's have other judge if we succeeded</h4>
+					<h4 class="em-logo-inf-slider-title">{{section.settings.title}}</h4>
 					<div class="em-logo-inf-slider-main">
 						<div class="em-logo-inf-slider-inn">
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
+                          {% for block in section.blocks %}
+                          <a href="{{block.settings.link}}">
+                            <img src="{{ block.settings.image | img_url: 'original'}}" />
+                          </a>
+                          {%endfor%}
 						</div>
 						<div class="em-logo-inf-slider-inn">
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-							<a href="#"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/fea-logo.jpg?v=1592289900"></a>
-						</div>
+							 {% for block in section.blocks %}
+                          <a href="{{block.settings.link}}">
+                            <img src="{{ block.settings.image | img_url: 'original'}}" />
+                          </a>
+                          {%endfor%}
+                      </div>
 					</div>
 				</div>
 			</div>
 		</div>
 {% schema %}
-  {
-    "name": "Custom Slide Logo",
-"class": "index-section CustomtSlideLogo",
-    "settings": [],
+{
+  "name": {
+    "da": "Logoliste",
+    "de": "Logo-Liste",
+    "en": "Custom Slide Logo"
+  },
+  "class": "index-section CustomSlideLogo",
+  "max_blocks": 30,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Custom Logo list"
+      }
+    }
+  ], 
+  "blocks": [
+    {
+      "type": "custom_logo_image",
+      "name": {
+        "da": "Custom Logo",
+        "de": "Custom Logo",
+        "en": "Custom Logo"
+      },
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image"
+          }
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": {
+            "da": "Link",
+            "de": "Link",
+            "en": "Link"
+          },
+          "info": {
+            "da": "Valgfri",
+            "de": "Optional",
+            "en": "Optional"
+          }
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": {
-        "da": "Udvalgt kollektion",
-        "de": "Vorgestellte Kategorie",
-        "en": "Custom Slide Logo"
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Custom Logo list"
       },
       "category": {
-        "da": "Image",
-        "de": "Image",
+        "da": "Billede",
+        "de": "Foto",
         "en": "Image"
-      }
+      },
+      "blocks": [
+        {
+          "type": "custom_logo_image"
+        },
+        {
+          "type": "custom_logo_image"
+        },
+        {
+          "type": "custom_logo_image"
+        },
+        {
+          "type": "custom_logo_image"
+        }
+      ]
     }
   ]
-  }
+}
 {% endschema %}
 
 {% stylesheet %}

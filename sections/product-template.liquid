@@ -38,11 +38,9 @@
   <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
     <div class="grid__item product-single__media-group {{ product_media_width }}{% if section.settings.media_size == 'full' %} product-single__media-group--full{% endif %}" data-product-single-media-group>
       {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
-
-      {%- for media in product.media -%}
-        {% include 'media', media: media, featured_media: featured_media, height: height, enable_image_zoom: enable_image_zoom, image_zoom_size: product_image_zoom_size, image_scale: product_image_scale %}
-      {%- endfor -%}
-
+<ul class="CustomMainSlide">
+     {%include "product-thumbnails" %}
+      </ul>
       <noscript>
         {% capture product_image_size %}{{ height }}x{% endcapture %}
         <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
@@ -92,9 +90,9 @@
                       {%- else -%}
                         {{ 'sections.featured_product.gallery_thumbnail_alt' | t: imageAlt: media.alt | escape }}
                       {%- endif -%}
-                    {%- endcapture -%}
+                    {%- endcapture -%} 
 
-                    <img class="product-single__thumbnail-image" src="{{ media.preview_image | img_url: '110x110', scale: 2 }}" alt="{{ thumbnailAlt }}">
+                    <img class="product-single__thumbnail-image" src="{{ media.preview_image | img_url: 'thumb' }}" alt="{{ thumbnailAlt }}">
                     {%- if media.media_type == 'video' or media.media_type =='external_video' -%}
                       <div class="product-single__thumbnail-badge">
                         {% include 'icon-video-badge-full-color' %}
@@ -123,11 +121,12 @@
       <div class="product-single__meta">
 
         <h1 class="product-single__title">{{ product.title }}</h1>
-
+        <div class="ProMeta">Stereo Pre-Amp/DAC/Tuner with Integrated Amplifier </div>
+        <div class="ShortDesc">Stereo preamplifier with digital and analog inputs, tuner, and built in 50 watts/channel stereo amplifier.<span class="moreDesc">More</span></div>
           <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
           </div>
-
+{%comment%}
           {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product__policies rte" data-product-policies>
               {%- if shop.taxes_included -%}
@@ -138,7 +137,8 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-
+{%endcomment%}
+        
           {% capture "form_classes" -%}
             product-form product-form-{{ section.id }}
             {%- unless section.settings.show_variant_labels %} product-form--hide-variant-labels {% endunless %}
@@ -148,7 +148,7 @@
 
           {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
             {% unless product.has_only_default_variant %}
-              <div class="product-form__controls-group">
+              <div class="product-form__controls-group CustomSelectBoxes">
                 {% for option in product.options_with_values %}
                   <div class="selector-wrapper js product-form__item">
                     <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
@@ -167,7 +167,7 @@
               </div>
             {% endunless %}
 
-            <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+            <select name="id" id="ProductSelect-{{ section.id }}" class="CustomBoxes product-form__variants no-js">
               {% for variant in product.variants %}
                 <option value="{{ variant.id }}"
                   {%- if variant == current_variant %} selected="selected" {%- endif -%}
@@ -177,17 +177,7 @@
               {% endfor %}
             </select>
 
-            {% if section.settings.show_quantity_selector %}
-              <div class="product-form__controls-group">
-                <div class="product-form__item">
-                  <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
-                  <input type="number" id="Quantity-{{ section.id }}"
-                    name="quantity" value="1" min="1" pattern="[0-9]*"
-                    class="product-form__input product-form__input--quantity" data-quantity-input
-                  >
-                </div>
-              </div>
-            {% endif %}
+          
 
             <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
               data-error-message-wrapper
@@ -197,7 +187,22 @@
               {% include 'icon-error' %}
               <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
             </div>
-
+        {%include "reward" %}
+        <div class="Qunat_Cart">
+  {% if section.settings.show_quantity_selector %}
+              <div class="product-form__controls-group">
+                <div class="product-form__item">
+                  <div class="CustomQuant">
+                  <input type='button' value='-' class='qtyminus' field='quantity' min="1" />
+                  <input type="text" id="Quantity-{{ section.id }}"
+                    name="quantity" value="1"
+                    class="qty product-form__input product-form__input--quantity" data-quantity-input
+                  >
+                  <input type='button' value='+' class='qtyplus' field='quantity' max="600000000" />
+                  </div>
+                </div>
+              </div>
+            {% endif %}
             <div class="product-form__controls-group product-form__controls-group--submit">
               <div class="product-form__item product-form__item--submit
                 {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
@@ -225,6 +230,29 @@
                 {% endif %}
               </div>
             </div>
+        </div>
+        <div class="em-sin-pro-cst-ship-warranty">
+	<div class="em-sin-pro-cst-ship-warranty-inn">
+		<div class="em-cart-bot-fea-sec">
+			<ul>
+				<li><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/cart-free-shipping-icon.jpg?v=1592908879"> Free Shipping</li>
+				<li><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/cart-waranty-icon.jpg?v=1592908880"> 5 years transferrable warranty</li>
+			</ul>
+		</div>
+		<div class="em-cart-bot-fea-sec-faq"><a href="#">FAQ</a></div>
+	</div>	
+</div>
+
+<div class="em-sin-pro-chat-lined">
+	<div class="em-sin-pro-chat-lined-inn">
+		<div class="em-sin-pro-chat-lined-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/cust-img.jpg?v=1593510030" /></div>
+		<p>Need help? Get in touch and we’ll be glad to help</p>
+		<ul>
+			<li><a href="#">Live chat</a></li>
+			<li><a class="em-clc-no">1-615-790-6754</a></li>
+		</ul>
+	</div>
+</div>
           {% endform %}
         </div>
 
@@ -253,6 +281,9 @@
         {% if section.settings.show_share_buttons %}
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
         {% endif %}
+    </div>
+    <div class="grid_item CustomTabs">
+      {%include "product-tab" %}
     </div>
   </div>
 </div>

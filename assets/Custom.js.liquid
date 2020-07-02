@@ -1,4 +1,64 @@
 $(document).ready(function(){
+  $(".em-sin-pro-reward-pop-close").click(function(){
+    $(".em-sin-pro-reward-popup").removeClass("RewardPop");
+  })
+  $(".em-sin-pro-reward-box").click(function(){
+  $(".em-sin-pro-reward-popup").toggleClass("RewardPop");
+  })
+  
+  $(".moreDesc").on('click',function() {
+    $('html, body').animate({
+        'scrollTop' : $("#CustomProtabs").position().top
+    });
+});
+  
+  
+  $(".CustomMainSlide").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      adaptiveHeight: true,
+      asNavFor: '.product-single__thumbnails'
+    })
+    
+  $('.product-single__thumbnails').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    asNavFor: '.CustomMainSlide',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: true
+  });
+  
+  
+  $('.qtyplus').click(function(){
+ var valuepluss = $(this).attr("max");
+     
+     var val_qty = parseInt($(this).prev(".qty").val());
+  if(val_qty >= 0 &&  val_qty < valuepluss)
+  {
+        val_qty = val_qty + 1 ;
+  }
+
+    $(this).prev(".qty").val(val_qty);
+
+    });
+
+     $('.qtyminus').click(function(){
+ var valueplus = $(this).attr("min");
+     
+     var val_qty = parseInt($(this).next(".qty").val());
+  if(val_qty > 1)
+  {
+        val_qty = val_qty - 1 ;
+  }
+
+    $(this).next(".qty").val(val_qty);
+
+    });
+  $( "#CustomProtabs" ).tabs();
 $( "#CustomaccordionFoot" ).accordion({
       collapsible: true,heightStyle: "content"
     }); 
