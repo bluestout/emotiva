@@ -1,3 +1,18 @@
+{%- capture powerfull_dirac_form -%}
+  <div id="powerfull_dirac_form_success" class = "powerfull-dirac-form-success-hide">
+    <div class="alert alert--success em-landing-success-info">
+      <div class="em-landing-success-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/thank-you-tick-img.jpg?v=1592816620" /></div>
+      <h3 class="em-landing-success-alert__title">Thank you</h3>
+      <p class="em-landing-success-alert__desc">Your device information is submitted. Once the new firmware is approved, it will be automatically sent to your device and you will be able to use the new feature.</p>
+      <div class="em-landing-success-alert__btn"><a href="https://emotiva.com/" class="button button--primary">Back to Homepage</a></div>
+    </div>
+  </div>
+  <div id="powerfull_dirac_form">
+    {% assign powerFullForm = "{formbuilder:10671}" %}
+    {{ powerFullForm }}
+  </div>
+{%- endcapture -%}
+
 <div class="em-landing-pg-main">	
 	<div class="em-landing-pg-img" style="background-image: url('https://cdn.shopify.com/s/files/1/2572/6926/files/landing-pg-img.jpg?v=1592801916')">
 	  <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/landing-mob-img.jpg?v=1592806415" />	
@@ -7,12 +22,14 @@
 		<div class="em-landing-pg-form-inn">
 			<h3 class="em-landing-pg-form-title">Get Dirac Live Room Correction software on your device</h3>
 			<p class="em-landing-pg-form-desc">If you own <b>RMC-1, RMC-1L, or XMC-2,</b> please register your device to receive an update to the one of the best-performing automatic room correction softwares. </p>
-			<div class="em-landing-pg-form-sec">{%include "landing-contact"%}</div>
+			{% comment %} <div class="em-landing-pg-form-sec">{%include "landing-contact"%}</div> {% endcomment %}
+			<div class="em-landing-pg-form-sec">{{ powerfull_dirac_form }}</div>
 			<div class="em-landing-pg-form-bot">
 				<ul>
 					<li><a href="https://www.youtube.com/watch?v=0FJp8fbsDLI" target="_blank" class="em-landing-pg-form-btn em-landing-pg-form-btn-vid"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play.png?v=1592802110" />Watch How<br /> to video</a></li>
 					<li><a href="https://cdn.shopify.com/s/files/1/2572/6926/files/emotiva_dirac2_user.pdf?v=1588959352" target="_blank" class="em-landing-pg-form-btn em-landing-pg-form-btn-user"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-manual.png?v=1592802110" />Dirac User<br /> Manual</a></li>
-					<li><a id="dwn-btn" class="em-landing-pg-form-btn em-landing-pg-form-btn-manual" ><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-download.png?v=1592802110" />Download calibration file required for Emotiva Processor Microphone</a></li>
+					<li style="width: 100%"><a id="dwn-btn" class="em-landing-pg-form-btn em-landing-pg-form-btn-manual" ><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-download.png?v=1592802110" />Download calibration file required for Emotiva Processor Microphone</a></li>
+					<li><a href="https://live.dirac.com/download/" target="_blank" class="em-landing-pg-form-btn em-landing-pg-form-btn-manual" ><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-download.png?v=1592802110" />Dirac software download</a></li>
 				</ul>
 			</div>
 		</div>
