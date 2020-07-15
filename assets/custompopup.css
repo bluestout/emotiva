@@ -1,0 +1,36 @@
+.overlaydiv {
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display:none;
+}
+.popupdiv {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border-radius: 2px;
+  display: none;
+  left: 50%;
+  max-width: 90%;
+  padding: 25px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 9999;
+  max-height: 90%;
+  overflow: auto;
+}
+.closeimage > img {
+  width: 15px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 766px) {
+  body .popupdiv {
+    width: 90%;
+  }
+}

@@ -4,7 +4,7 @@
       .site-header__logo-image {
         max-width: {{ section.settings.logo_max_width | escape }}px;
       }
-    {% endif %}
+    {% endif %} 
 
     {% if section.settings.align_logo == 'left' %}
       .site-header__logo-image {
@@ -227,35 +227,7 @@
         "zh-TW": "標誌圖片"
       }
     },
-    {
-      "type": "range",
-      "id": "logo_max_width",
-      "label": {
-        "da": "Tilpasset logobredde",
-        "de": "Logobreite",
-        "en": "Custom logo width",
-        "es": "Ancho del logo personalizado",
-        "fi": "Mukautetun logon leveys",
-        "fr": "Largeur personnalisée du logo",
-        "hi": "कस्टम लोगो की चौड़ाई",
-        "it": "Larghezza logo personalizzato",
-        "ja": "ロゴの幅をカスタマイズする",
-        "ko": "사용자 지정 로고 폭",
-        "nb": "Tilpasset logobredde",
-        "nl": "Aangepaste logo-breedte",
-        "pt-BR": "Largura do logotipo personalizado",
-        "pt-PT": "Largura de logótipo personalizada",
-        "sv": "Anpassad logotypsbredd",
-        "th": "ความกว้างของโลโก้แบบกำหนดเอง",
-        "zh-CN": "自定义 logo 宽度",
-        "zh-TW": "自訂商標寬度"
-      },
-      "min": 50,
-      "max": 250,
-      "step": 5,
-      "unit": "px",
-      "default": 100
-    },
+    
     {
       "type": "link_list",
       "id": "main_linklist",
@@ -280,6 +252,167 @@
         "zh-TW": "選單"
       },
       "default": "main-menu"
+    },
+{
+      "type": "header",
+      "content": {
+        "da": "Mega Menu",
+        "de": "Mega Menu",
+        "en": "Mega Menu"
+      }
+    },
+{
+      "type": "text",
+      "id": "heading_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 1"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 1"
+          }
+        },
+{
+      "type": "text",
+      "id": "desc_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Descripton"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Descripton 1"
+      }
+    },
+{
+      "type": "url",
+      "id": "link_1",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link 1"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    },
+{
+      "type": "text",
+      "id": "heading_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 2"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 2"
+          }
+        },
+{
+      "type": "text",
+      "id": "desc_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Descripton"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Descripton 2"
+      }
+    },
+{
+      "type": "url",
+      "id": "link_2",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link 2"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    },
+{
+      "type": "text",
+      "id": "heading_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading 3"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 3"
+          }
+        },
+{
+      "type": "text",
+      "id": "desc_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Descripton"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Descripton 3"
+      }
+    },
+{
+      "type": "url",
+      "id": "link_3",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link 3"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
     },
     {
       "type": "header",

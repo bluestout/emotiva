@@ -54,9 +54,20 @@
         "type": "header",
         "settings": {
           "align_logo": "center",
-          "logo": "",
-          "logo_max_width": 100,
-          "main_linklist": "main-menu",
+          "logo": "shopify:\/\/shop_images\/ezgif-6-8d272ee7d7f1.png",
+          "main_linklist": "new-main-menu",
+          "heading_1": "X Series",
+          "image_1": "shopify:\/\/shop_images\/x-series-img.png",
+          "desc_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "link_1": "#",
+          "heading_2": "Airmotive Series",
+          "image_2": "shopify:\/\/shop_images\/airmotive-series-img.png",
+          "desc_2": "Airmotiv Speakers combines meticulous design, extensive testing, and in-depth listening tests with a wide variety of musical material.",
+          "link_2": "#",
+          "heading_3": "BasX Series",
+          "image_3": "shopify:\/\/shop_images\/bas-x-series.png",
+          "desc_3": "Excellent sound quality, all the most useful and essential features, and rock-solid performance for a lifetime.",
+          "link_3": "#",
           "message": false,
           "home_page_only": false,
           "message_text": "",
@@ -177,6 +188,7 @@
           "image_3": "shopify:\/\/shop_images\/colc-top-fea-3.jpg",
           "text_4": "Upgrade Gear with our Trade-In Program",
           "image_4": "shopify:\/\/shop_images\/colc-top-fea-4.jpg",
+          "chat_box": false,
           "layout": "grid",
           "grid": 3,
           "rows": 6,
@@ -423,6 +435,40 @@
         ],
         "settings": {
           "title": "Let's have other judge if we succeeded"
+        }
+      },
+      "blog-template-custom": {
+        "type": "blog-template-custom",
+        "blocks": {
+          "1594456297802": {
+            "type": "quote",
+            "settings": {
+              "getblog": "test-1"
+            }
+          },
+          "1594456304067": {
+            "type": "quote",
+            "settings": {
+              "getblog": "test-2"
+            }
+          }
+        },
+        "block_order": [
+          "1594456297802",
+          "1594456304067"
+        ],
+        "settings": {
+          "article": "info-hub-1\/processor-quick-start-guide"
+        }
+      },
+      "Newsletter-custom": {
+        "type": "Newsletter-custom",
+        "settings": {}
+      },
+      "light-bg-icon": {
+        "type": "light-bg-icon",
+        "settings": {
+          "title": "Heading"
         }
       }
     },

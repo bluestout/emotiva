@@ -9,7 +9,7 @@
 				<div class="em-head-top-bar-left">
 					<div class="em-head-top-bar-logo">
                       <a href="/">
-                        <img src="https://cdn.shopify.com/s/files/1/2572/6926/t/29/assets/imgpsh_fullsize_anim.png?" />
+                        <img src="{{section.settings.logo | img_url: "original"}}" />
                       </a>
                         </div><p>Sound as it should be</p>
 				</div>
@@ -54,18 +54,78 @@
 	<div class="em-nav-top-bar">
 		<div class="em-container">
 			<div class="em-nav-top-bar-row">
-				<div class="em-nav-top-bar-left">
-					<ul class="em-nav-top-bar-lt-list">	
-                  {% for link in linklists[section.settings.main_linklist].links %}
-                  <li><a href="{{link.url}}">{{link.title}}</a></li>
-                  {%endfor%}
-                  </ul>
-				</div>
-				<div class="em-nav-top-bar-right">
+                <div class="em-nav-top-bar-right">
 					<ul class="em-nav-top-bar-rt-list">
 						<li><a href="#">Sign in</a></li>
 						<li><a href="#" class="em-nav-top-cart">Cart</a></li>
 					</ul>
+				</div>
+				<div class="em-nav-top-bar-left">
+					<ul class="em-nav-top-bar-lt-list">	
+                  {% for link in linklists[section.settings.main_linklist].links %}
+                      {% if link.links != blank %}
+                      <li class="em-nav-listing {%if forloop.index==5%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==6%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7%}ReadCustom em-mega-menu-single{%endif%}"><a href="{{link.url}}">{{link.title}}</a>
+                        <div class="em-mega-menu-dd-main">
+                          {%if forloop.index==5 or forloop.index==6%}
+                          <div class="em-mega-menu-dd-main-row">
+	<div class="em-mega-menu-dd-main-left">
+		<ul class="childlist">
+                       {% for childlink in link.links %}
+                          {%if childlink.handle == "has-dropdown" %}
+                          <li>
+                          {%include "admin-menu"%}
+	</li>
+                          {%else%}
+                          {% if childlink.links != blank %}
+                            <li><a href="{{childlink.url}}">{{childlink.title}}</a>
+                          <ul class="SubChilList">
+                            {% for subchildlink in childlink.links %}
+                            <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
+                            {%endfor%}
+                              </ul>
+                          </li>
+                          {%else%}
+                        <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
+                          {%endif%}
+                          {%endif%}
+                        {%endfor%}
+                        </ul>
+	</div>
+	<div class="em-mega-menu-dd-main-right">
+		<img src="{{'imgpsh_fullsize_anim.jpg' | asset_url }}" />
+	</div>
+</div>
+                          {%else%}
+                        <ul class="childlist">
+                       {% for childlink in link.links %}
+                          {%if childlink.handle == "has-dropdown" %}
+                          <li>
+                          {%include "admin-menu"%}
+	</li>
+                          {%else%}
+                          {% if childlink.links != blank %}
+                            <li><a href="{{childlink.url}}">{{childlink.title}}</a>
+                          <ul class="SubChilList">
+                            {% for subchildlink in childlink.links %}
+                            <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
+                            {%endfor%}
+                              </ul>
+                          </li>
+                          {%else%}
+                        <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
+                          {%endif%}
+                          {%endif%}
+                        {%endfor%}
+                        </ul>
+                          {%endif%}
+                        </div>
+                      </li>
+                      {%else%}
+                  <li><a href="{{link.url}}">{{link.title}}</a></li>
+                      {%endif%}
+                  {%endfor%}
+                  </ul>
+                 
 				</div>
 			</div>
 		</div>

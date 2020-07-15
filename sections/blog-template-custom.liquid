@@ -1,0 +1,163 @@
+<div class="page-width">
+	<div class="em-read-sin-top-sec">
+		<div class="em-read-sin-top-left">
+			<img src="{{ articles[section.settings.article].image.src | img_url: 'original' }}" />
+		</div>
+		<div class="em-read-sin-top-right">
+			<div class="em-read-sin-top-cont">
+				<h4>{{ articles[section.settings.article].published_at | date: '%B %d, %Y ' }} by {{ articles[section.settings.article].author }}</h4>
+				<h3>{{ articles[section.settings.article].title }}</h3>
+				<p>{{ articles[section.settings.article].excerpt }}</p>
+				<div class="em-read-sin-article-tags">
+					<ul>
+                      {% for tag in articles[section.settings.article].tags %}
+                      <li>{{ tag | link_to_tag: tag }}</li>
+                      {% endfor %}
+						
+					</ul>
+				</div>
+				<div class="em-read-sin-article-btn">
+					<a href="{{ articles[section.settings.article].url }}" class="em-bl-lined-trans-btn">Read</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="em-read-innr-hm-sec-main">
+		<div class="em-read-innr-hm-sec-inn">
+			<div class="em-read-innr-hm-sec-row">
+              {% for blog in blogs %}
+              {{ blog.title }}
+              {% endfor %}
+              
+              {% for block in section.blocks %}
+              <div class="em-read-innr-hm-sec-col">
+                <div class="em-read-innr-hm-sec-block">
+                  <h2 class="em-read-innr-hm-sec-cat"><a href="{{ blogs[block.settings.getblog].url }}">{{ blogs[block.settings.getblog].title }}</a></h2>
+                  {% for article in blogs[block.settings.getblog].articles limit:1 %}
+                  <div class="em-read-innr-hm-sec-block-img em-img-block-hvr-zoom"><img src="{{ article.image.src | img_url: 'original' }}" /></div>
+                  <div class="em-read-innr-hm-sec-block-info">
+                    <h3>{{ article.title}}</h3>
+                    <p>{{ article.excerpt}}</p>
+                    <div class="em-read-innr-hm-sec-block-date">{{ article.published_at | date: '%B %d, %Y ' }} by {{ article.author }}</div>
+                  </div>
+                  {% endfor %}
+                  <div class="em-read-innr-hm-sec-block-art-list">
+                    {% for article in blogs[block.settings.getblog].articles offset:1 %}
+                    <div class="em-read-innr-hm-sec-block-bot-art">
+                      <a href="{{ article.url }}"><img src="{{ article.image.src | img_url: 'original' }}" /> {{ article.title }}</a>
+                    </div>
+                    {% endfor %}
+                  </div>
+                  <div class="em-read-innr-hm-sec-block-link"><a href="{{ blogs[block.settings.getblog].url }}" class="bl-text-arw-link">See all in {{ blogs[block.settings.getblog].title }}</a></div>
+                  
+                </div>
+              </div>
+              {% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="em-read-sin-explore-sec">
+		<h3>Explore All Tags</h3>
+		<ul class="em-read-sin-explore-list">
+          
+          {% for block in section.blocks %}
+          {% for article in blogs[block.settings.getblog].articles %}
+          {% for tag in article.tags %}
+          <li>{{ tag | link_to_tag: tag }}</li>
+          {% endfor %}
+          {% endfor %}
+          {% endfor %}
+
+			
+		</ul>
+	</div>
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Blogsider",
+    "de": "Blogseiten",
+    "en": "Blog pages",
+    "es": "Páginas del blog",
+    "fi": "Blogisivut",
+    "fr": "Pages du blog",
+    "hi": "ब्लॉग पेज",
+    "it": "Pagine del blog",
+    "ja": "ブログページ",
+    "ko": "블로그 페이지",
+    "nb": "Bloggsider",
+    "nl": "Blogpagina's",
+    "pt-BR": "Páginas do blog",
+    "pt-PT": "Páginas do blogue",
+    "sv": "Bloggsidor",
+    "th": "หน้าบล็อก",
+    "zh-CN": "博客页面",
+    "zh-TW": "部落格頁面"
+  },
+"max_blocks":20,
+  "settings": [
+	{
+      "id": "article",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Main Article"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": {
+        "da": "Udtalelse",
+        "de": "Testimonial",
+        "en": "Blogs",
+        "es": "Testimonio",
+        "fi": "Suositukset",
+        "fr": "Témoignages",
+        "hi": "प्रमाणपत्र",
+        "it": "Testimonial",
+        "ja": "お客様の声",
+        "ko": "추천",
+        "nb": "Anbefaling",
+        "nl": "Testimonial",
+        "pt-BR": "Depoimento",
+        "pt-PT": "Testemunho",
+        "sv": "Kundberättelser",
+        "th": "เสียงชื่นชมจากลูกค้า",
+        "zh-CN": "感言",
+        "zh-TW": "推薦文"
+      },
+      "settings": [
+        {
+          "type": "blog",
+          "id": "getblog",
+          "label": {
+            "da": "Forfatter",
+            "de": "Autor",
+            "en": "Blog",
+            "es": "Autor",
+            "fi": "Kirjoittaja",
+            "fr": "Auteur",
+            "hi": "लेखक",
+            "it": "Autore",
+            "ja": "執筆者",
+            "ko": "작성자",
+            "nb": "Forfatter",
+            "nl": "Auteur",
+            "pt-BR": "Autoria",
+            "pt-PT": "Autoria",
+            "sv": "Upphovsman",
+            "th": "ผู้เขียน",
+            "zh-CN": "作者",
+            "zh-TW": "作者"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
