@@ -1,0 +1,44 @@
+{%if product.metafields.global.complete != blank  %}
+<div class="page-width">
+  <div class="em-sin-pro-dbl-lined-sec em-single-pro-comp-sol-sec">
+      <div class="em-sin-pro-dbl-lined-inn">
+          <div class="em-sin-pro-dbl-lined-upr">
+              <h3 class="em-sin-pro-dbl-lined-title">Complete Your Audio Solution</h3>
+              <h5 class="em-sin-pro-dbl-lined-sb-title">These products work great with RMC-1</h5>
+              <a href="{{product.metafields.global.link}}" class="bl-text-arw-link">See more</a>
+          </div>
+          <div class="em-sin-pro-dbl-lined-lwr">
+            <div class="em-sin-pro-dbl-lined-lwr-row">
+              {% assign prohandle = product.metafields.global.complete | split: ","%}
+              {%for handle in prohandle %}
+              <div class="CompleteLoop-box">
+                <div class="CompleteLoop">
+                  <a href="#" class="em-block-overlay-link"></a>
+                  <div class="em-img-block-hvr-zoom CompleteImage">
+                    <img src="{{all_products[handle].featured_image | img_url: "large"}}">
+                    <div class="CompleteImage-title">{{all_products[handle].metafields.global.type}}</div>
+                  </div>
+                  <div class="completeDes">
+                    <div class="CompleteImage-title-mob">Loudspeakers</div>
+                    <div class="CompleteTitle">{{all_products[handle].title}}</div>
+                    <div class="CompleteTitle-subline">{{all_products[handle].metafields.global.meta}}</div>
+                    <div class="completeDes-price-review">
+                    	<div class="completeDes-price-box">{{all_products[handle].price| money}}</div>
+                      	<div class="completeDes-review-box"> <span class="stamped-product-reviews-badge" data-product-sku="{{ all_products[handle].handle }}" data-id="{{ all_products[handle].id }}" style="display:block;">{{ all_products[handle].metafields.stamped.badge }}</span></div>
+                    </div>
+                        
+                  </div>
+                </div>
+              </div>
+              {%endfor%}
+            </div>
+          </div>
+          <div class="em-single-pro-comp-sol-mob-link">
+              <a href="#" class="bl-text-arw-link">See more</a>	
+          </div>
+
+      </div>
+  </div>
+</div>
+{%endif%}
+

@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div class="em-colc-pg-top-upr-right">
-				<div class="em-colc-pg-top-upr-img"><img src="{{'collection-img.png'|file_url}}" /></div>
+				<div class="em-colc-pg-top-upr-img">{%if collection.image %}<img src="{{collection.image | img_url : "original"}}" />{%endif%}</div>
 			</div>
 		</div>
 		<div class="em-colc-pg-top-lwr">

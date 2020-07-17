@@ -250,21 +250,26 @@
       },
       "1593596810632": {
         "type": "featurePro-and-Article",
-        "disabled": true,
         "settings": {
           "title": "Featured Products",
-          "product": "rmc-1",
-          "pro_img": "shopify:\/\/shop_images\/product-featured-placeholder1.png",
+          "short_description": "16 Channel 9.1.6 Discreet Dolby Atmos & DTS:X Reference Cinema Processor",
+          "description": "The RMC-1 is a state-of-the-art surround sound processor - designed from the ground up to serve as the nerve center of a modern home theater or surround sound music system.",
+          "featured_product": "rmc-1",
+          "pro_img": "shopify:\/\/shop_images\/product-featured-1-sml.png",
           "title_2": "Featured Article",
           "blog_1": "Loudspeakers",
           "image_1": "shopify:\/\/shop_images\/news-1.jpg",
+          "author_1": "shopify:\/\/shop_images\/cust-img.jpg",
           "article_1": "info-hub-1\/vinyl-back-with-a-vengeance",
           "blog_2": "Press Reviews",
           "image_2": "shopify:\/\/shop_images\/news-2.jpg",
+          "author_2": "shopify:\/\/shop_images\/cust-img.jpg",
           "article_2": "reviews\/xpa-dr-3-review-by-life-of-bliss",
           "blog_3": "News",
           "image_3": "shopify:\/\/shop_images\/news-3-1.jpg",
-          "article_3": "info-hub-1\/emotiva-dirac-live-2-installation-guide"
+          "author_3": "shopify:\/\/shop_images\/cust-img.jpg",
+          "article_3": "info-hub-1\/emotiva-dirac-live-2-installation-guide",
+          "link_1": ""
         }
       },
       "1593671315988": {
@@ -468,7 +473,130 @@
       "light-bg-icon": {
         "type": "light-bg-icon",
         "settings": {
-          "title": "Heading"
+          "title": "Satisfaction Guaranteed",
+          "image_1": "shopify:\/\/shop_images\/fea-icon-01.jpg",
+          "desc_1": "Bespoke high-end<br> audio quality",
+          "image_2": "shopify:\/\/shop_images\/fea-icon-02.jpg",
+          "desc_2": "Direct to consumer, no<br> retail markups",
+          "image_3": "shopify:\/\/shop_images\/fea-icon-03.jpg",
+          "desc_3": "5 years transferrable<br> warranty",
+          "image_4": "shopify:\/\/shop_images\/fea-icon-04.jpg",
+          "desc_4": "Upgrade Gear with our<br> Trade-In Program"
+        }
+      },
+      "1594894913573": {
+        "type": "shop-feature",
+        "blocks": {
+          "1594894913573-0": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": "#"
+            }
+          },
+          "1594894913573-1": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594894913573-2": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594894913573-3": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594895362165": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594895380056": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594895514743": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594895528768": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594895555209": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          },
+          "1594895569812": {
+            "type": "feature_logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1594894913573-0",
+          "1594894913573-1",
+          "1594894913573-2",
+          "1594894913573-3",
+          "1594895362165",
+          "1594895380056",
+          "1594895514743",
+          "1594895528768",
+          "1594895555209",
+          "1594895569812"
+        ],
+        "settings": {
+          "title": "Shop by Feature"
+        }
+      },
+      "1594895865446": {
+        "type": "custom-html",
+        "settings": {
+          "title": "Shop by Series",
+          "featured_product_1": "cd-100",
+          "text_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "image_1": "shopify:\/\/shop_images\/airmotive-series-img.png",
+          "featured_product_2": "cd-100",
+          "text_2": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "image_2": "shopify:\/\/shop_images\/bas-x-series.png",
+          "featured_product_3": "cd-100",
+          "text_3": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "image_3": ""
         }
       }
     },
@@ -479,7 +607,9 @@
       "1593579762038",
       "1593588364429",
       "1593671315988",
-      "1593596810632"
+      "1593596810632",
+      "1594894913573",
+      "1594895865446"
     ]
   },
   "presets": {

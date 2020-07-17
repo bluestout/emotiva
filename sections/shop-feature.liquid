@@ -1,0 +1,133 @@
+<div class="em-hm-fea-main">
+	<div class="page-width">
+		<div class="em-hm-fea-inn">
+			<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
+			<div class="em-hm-fea-row">
+                {% for block in section.blocks %}
+				<div class="em-hm-fea-block">
+					<div class="em-hm-fea-block-inn">
+                      	<a href="{{block.settings.link}}" class="em-hm-fea-mob-link"></a>
+					    <img src="{{ block.settings.image | img_url: 'original'}}" />
+						<div class="em-hm-fea-block-hover">
+							<img src="{{ block.settings.image | img_url: 'original'}}" />
+                          <p>{{block.settings.desc}}</p>
+							<div class="em-hm-fea-block-hvr-btn"><a href="{{block.settings.link}}" class="em-bl-back-btn">Show Products</a></div>
+						</div>
+					</div>
+				</div>
+              {%endfor%}
+				
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": {
+    "da": "Logoliste",
+    "de": "Logo-Liste",
+    "en": "Feature Logo"
+  },
+  "class": "FeatureLogo",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Feature Logo list"
+      }
+    }
+  ], 
+  "blocks": [
+    {
+      "type": "feature_logo_image",
+      "name": {
+        "da": "Custom Logo",
+        "de": "Custom Logo",
+        "en": "Custom Logo"
+      },
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image"
+          }
+        },
+{
+      "type": "textarea",
+      "id": "desc",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Detail"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Detail"
+      }
+    },
+        {
+          "type": "url",
+          "id": "link",
+          "label": {
+            "da": "Link",
+            "de": "Link",
+            "en": "Link"
+          },
+          "info": {
+            "da": "Valgfri",
+            "de": "Optional",
+            "en": "Optional"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Feature Logo list"
+      },
+      "category": {
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image"
+      },
+      "blocks": [
+        {
+          "type": "feature_logo_image"
+        },
+        {
+          "type": "feature_logo_image"
+        },
+        {
+          "type": "feature_logo_image"
+        },
+        {
+          "type": "feature_logo_image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

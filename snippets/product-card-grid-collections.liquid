@@ -47,7 +47,8 @@
     <div class="em-colec-title-price-box">{% include 'product-price-listing', product: product, show_vendor: show_vendor %}</div>
   </div>
   
-  <div class="CustomProDesc">Bookshelf Loudspeaker</div>
+  <div class="CustomProDesc">{{product.metafields.global.type}}</div>
+  <span class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span>
   <div class="em-colec-title-price-box em-colec-title-price-box-mob">{% include 'product-price-listing', product: product, show_vendor: show_vendor %}</div>
 
 </div>

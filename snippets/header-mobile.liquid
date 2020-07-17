@@ -26,7 +26,7 @@
                 <ul>
                   {%for link in linklists[section.settings.main_linklist].links%}
                    {% if link.links != blank %}
-                    <li class="childmobile"><a href="{{link.url}}">{{link.title}}</a>
+                    <li class="childmobile em-mob-has-dropdown"><a href="{{link.url}}">{{link.title}}</a>
                   <ul class="childlistmobile">
                        {% for childlink in link.links %}
                           {%if childlink.handle == "has-dropdown" %}
@@ -35,7 +35,7 @@
 	</li>
                           {%else%}
                           {% if childlink.links != blank %}
-                            <li><a href="{{childlink.url}}">{{childlink.title}}</a>
+                            <li class="em-mob-has-dropdown"><a href="{{childlink.url}}">{{childlink.title}}</a>
                           <ul class="SubChilListmobile">
                             {% for subchildlink in childlink.links %}
                             <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>

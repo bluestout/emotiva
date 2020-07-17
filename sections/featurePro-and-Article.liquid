@@ -3,32 +3,33 @@
 		<div class="em-hm-pro-art-inn">
 			<div class="em-hm-pro-art-row">
 				<div class="em-hm-pro-art-block">
+                 {% assign product= all_products[section.settings.featured_product]%}
 					<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
 					<div class="em-hm-fea-pro-block">
-						<div class="em-hm-fea-pro-img"><img src="{{section.settings.pro_img | img_url: "original"}}" /></div>
-						<h3>RMC-1</h3>
-						<h4>16 Channel 9.1.6 Discreet Dolby Atmos & DTS:X Reference Cinema Processor</h4>
-						<p>The RMC-1 is a state-of-the-art surround sound processor - designed from the ground up to serve as the nerve center of a modern home theater or surround sound music system. </p>
+						<div class="em-hm-fea-pro-img">{%if section.settings.pro_img != blank %}<img src="{{section.settings.pro_img | img_url: "original"}}" />{%else%}<img src="{{ product.featured_image.src | img_url: 'original' }}" />{%endif%}</div>
+						<h3>{{product.title}}</h3>
+						<h4>{{section.settings.short_description}}</h4>
+						<p>{{section.settings.description}}</p>
 						<div class="em-hm-fea-pro-price-rate">
-							<p>$4.999.00</p>
+							<p>{{product.price | money}}</p>
 							<div class="em-hm-fea-pro-rating"></div>
 						</div>
 					</div>
 					<div class="em-hm-pro-art-block-link">
-						<a href="#" class="bl-text-arw-link">All Products</a>
+						<a href="{{product.url}}" class="bl-text-arw-link">All Products</a>
 					</div>
 				</div>
 				<div class="em-hm-pro-art-block">
 					<h3 class="em-hm-section-title">{{section.settings.title_2}}</h3>
 					<div class="em-hm-fea-art-block">
-						<a href="#">
+						<a href="{{articles[section.settings.article_1].url}}">
 							<div class="em-hm-fea-art-block-img"><img src="{{section.settings.image_1| img_url: 'original'}}" /></div>
 							<div class="em-hm-fea-art-block-cont">
 								<h5>{{section.settings.blog_1}}</h5>
 								<h3>{{articles[section.settings.article_1].title}}</h3>
 								<div class="em-hm-fea-art-block-auth">
 									<div class="em-hm-fea-art-auth-info">
-										<p><img src="{{section.settings.author_1| img_url: 'original'}}" /> January 6, 2020<br />by John</p>
+										<p><img src="{{section.settings.author_1| img_url: 'original'}}" /> {{articles[section.settings.article_1].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_1].author}}</p>
 										<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 									</div>
 								</div>
@@ -36,14 +37,14 @@
 						</a>
 					</div>
 					<div class="em-hm-fea-art-block em-hm-fea-art-img-right">
-						<a href="#">
+						<a href="{{articles[section.settings.article_2].url}}">
 							<div class="em-hm-fea-art-block-img"><img src="{{section.settings.image_2| img_url: 'original'}}" /></div>
 							<div class="em-hm-fea-art-block-cont">
 								<h5>{{section.settings.blog_2}}</h5>
 								<h3>{{articles[section.settings.article_2].title}}</h3>
 								<div class="em-hm-fea-art-block-auth">
 									<div class="em-hm-fea-art-auth-info">
-										<p><img src="{{section.settings.author_2| img_url: 'original'}}" /> January 21, 2020<br />by John</p>
+										<p><img src="{{section.settings.author_2| img_url: 'original'}}" />{{articles[section.settings.article_2].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_2].author}}</p>
 										<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 									</div>
 								</div>
@@ -51,14 +52,14 @@
 						</a> 
 					</div>
 					<div class="em-hm-fea-art-block">
-						<a href="#">
+						<a href="{{articles[section.settings.article_3].url}}">
 							<div class="em-hm-fea-art-block-img"><img src="{{section.settings.image_3| img_url: 'original'}}" /></div>
 							<div class="em-hm-fea-art-block-cont">
 								<h5>{{section.settings.blog_3}}</h5>
 								<h3>{{articles[section.settings.article_3].title}}</h3>
 								<div class="em-hm-fea-art-block-auth">
 									<div class="em-hm-fea-art-auth-info">
-										<p><img src="{{section.settings.image_3| img_url: 'original'}}" /> January 6, 2020<br />by John</p>
+										<p><img src="{{section.settings.author_3| img_url: 'original'}}" />{{articles[section.settings.article_1].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_3].author}}</p>
 										<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 									</div>
 								</div>
@@ -66,7 +67,7 @@
 						</a>
 					</div>
 					<div class="em-hm-pro-art-block-link">
-						<a href="#" class="bl-text-arw-link">All Products</a>
+						<a href="{{section.settings.link_1}}" class="bl-text-arw-link">All Products</a>
 					</div>
 				</div>
 			</div>
@@ -94,7 +95,39 @@
 
 },
 {
-      "id": "product",
+
+      "type": "textarea",
+      "id": "short_description",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Short description"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Short description"
+      }
+
+},
+{
+
+      "type": "textarea",
+      "id": "description",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Description"
+      },
+      "default": {
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Description"
+      }
+
+},
+{
+      "id": "featured_product",
       "type": "product",
       "label": {
         "da": "Product",
@@ -147,7 +180,16 @@
           "label": {
             "da": "Billede",
             "de": "Foto",
-            "en": "Image 1"
+            "en": "Article Image 1"
+          }
+        },
+{
+          "type": "image_picker",
+          "id": "author_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Author Image 1"
           }
         },
 {
@@ -179,7 +221,16 @@
           "label": {
             "da": "Billede",
             "de": "Foto",
-            "en": "Image 2"
+            "en": "Article Image 2"
+          }
+        },
+{
+          "type": "image_picker",
+          "id": "author_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Author Image 2"
           }
         },
 {
@@ -211,7 +262,16 @@
           "label": {
             "da": "Billede",
             "de": "Foto",
-            "en": "Image 3"
+            "en": "Article Image 3"
+          }
+        },
+{
+          "type": "image_picker",
+          "id": "author_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Author Image 3"
           }
         },
 {
@@ -221,6 +281,21 @@
         "da": "Article",
         "de": "Article",
         "en": "Article"
+      }
+    }
+,
+{
+      "type": "url",
+      "id": "link_1",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
       }
     }
     ],

@@ -136,8 +136,11 @@
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
       {{ content_for_layout }}
-      
+  {%if page.handle contains "contact-1" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" or page.handle contains "support-1" or page.handle contains "support-2" or page.handle contains "resources-10" or page.handle contains "resources-1" or page.handle contains "resources-2" or page.handle contains "resources-4"%}
+ 
+      {%else%}
         {% section "Newsletter-custom" %}
+      {%endif%}
       {% section "light-bg-icon" %}
     </main>
     
@@ -160,6 +163,13 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
+  <script async type="text/javascript" data-api-key="pubkey-DhCVJf5UrKPig7T6z22MAY54I577yP" id="stamped-script-widget" src="https://cdn2.stamped.io/files/widget.min.js"></script>
+  <!-- Gorgias Chat Widget Start -->
+<div id="gorgias-chat">
+<script>window.gorgiasChatParameters = {}</script>
+<script src="https://config.gorgias.io/production/DrQqY7XJPO6L4Wjv/chat/QBGoD2ekODpxdjql.js" defer></script>
+</div>
+<!-- Gorgias Chat Widget End -->
   <!-- klaviyo's Back in Stock Widget Start -->
 <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
 <script>

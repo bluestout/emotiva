@@ -1,18 +1,18 @@
 <div class="em-satisfaction-gray-bar">
 	<div class="em-satisfaction-gray-bar-inn">
-		<h3>Satisfaction Guaranteed</h3>
+		<h3>{{section.settings.title}}</h3>
 		<div class="em-satisfaction-gray-row">
 			<div class="em-satisfaction-gray-blk">
-				<p><img src="{{'bar-blk-icon-1.png'|file_url}}" /> Bespoke high-end<br /> audio quality</p>
+				<p><img src="{{section.settings.image_1| img_url: "original"}}" />{{section.settings.desc_1}}</p>
 			</div>
 			<div class="em-satisfaction-gray-blk">
-				<p><img src="{{'bar-blk-icon-1.png'|file_url}}" /> Direct to consumer, no<br /> retail markups</p>
+				<p><img src="{{section.settings.image_2| img_url: 'original'}}" />{{section.settings.desc_2}}</p>
 			</div>
 			<div class="em-satisfaction-gray-blk">
-				<p><img src="{{'bar-blk-icon-1.png'|file_url}}" /> 5 years transferrable<br /> warranty</p>
+				<p><img src="{{section.settings.image_3| img_url: 'original'}}" />{{section.settings.desc_3}}</p>
 			</div>
 			<div class="em-satisfaction-gray-blk">
-				<p><img src="{{'bar-blk-icon-1.png'|file_url}}" /> Upgrade Gear with our<br /> Trade-In Program</p>
+				<p><img src="{{section.settings.image_4| img_url: 'original'}}" /> {{section.settings.desc_4}}</p>
 			</div>
 		</div>
 	</div>
@@ -33,6 +33,98 @@
         "da": "Logoliste",
         "de": "Logo-Liste",
         "en": "Heading"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 1"
+          }
+        },
+{
+      "type": "textarea",
+      "id": "desc_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Title"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Title 1"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 2"
+          }
+        },
+{
+      "type": "textarea",
+      "id": "desc_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Title"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Title 2"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 3"
+          }
+        },
+{
+      "type": "textarea",
+      "id": "desc_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Title"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Title 3"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_4",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 4"
+          }
+        },
+{
+      "type": "textarea",
+      "id": "desc_4",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Title"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Title 4"
       }
     }
 ]
