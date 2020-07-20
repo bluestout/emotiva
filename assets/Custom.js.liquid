@@ -1,6 +1,115 @@
 $(document).ready(function(){ 
+  $(".CheckNote").change(function(){
+  if ($('input.CheckNote').is(':checked')) {
+    $(".em-cartspecial-ins-textarea").show();
+  }
+  else{
+  $(".em-cartspecial-ins-textarea").hide();
+    $("#CartSpecialInstructions").val(" ");
+  }
+    })
+ /*********************** CART UPDATE QUANTITY ***********************/
+  $('body').on('click', '.qtyplus', function() {
+
+    var valuepluss = $(this).attr("max");
+
+    var val_qty = parseInt($(this).prev(".cart__qty-input").val());
+
+    if(val_qty >= 0 &&  val_qty < valuepluss)
+    {
+      val_qty = val_qty + 1 ;
+    }
+
+    $(this).prev(".cart__qty-input").val(val_qty);
+    var getline = $(this).parents(".cart__qty").attr("data-line");
+
+    $.ajax({
+      type: 'POST',
+      url: '/cart/change.js',
+      data:  'quantity=' + val_qty + '&line=' + getline,
+      dataType: 'json',
+
+      success: function(data) 
+      {
+        if(data.item_count > 0){
+          //$('.ttlitems').html(data.item_count) ;    
+          //$('#CartCount> span').html(data.item_count) ;  
+
+        } else {
+         // $('.ttlitems').html(data.item_count) ;    
+         //$('#CartCount> span').html(data.item_count) ;  
+        }
+
+        $.ajax({
+          type: "GET",
+          url: "/cart",
+          dataType: 'html',
+
+          success: function(data) 
+          {
+
+            // console.log(data);
+            var minicartdata=$(data).find('.CustomCartTemp').html();
+
+            $('.CustomCartTemp').html(minicartdata);
+          }
+        })
+      }
+    })
+  });
+  $('body').on('click', '.qtyminus', function() {
+
+    var valuepluss = $(this).attr("min");
+
+    var val_qty = parseInt($(this).next(".cart__qty-input").val());
+
+    if(val_qty > 0)
+    {
+      val_qty = val_qty - 1 ;
+    }
+
+    $(this).next(".cart__qty-input").val(val_qty);
+    var getline = $(this).parents(".cart__qty").attr("data-line");
+
+    $.ajax({
+      type: 'POST',
+      url: '/cart/change.js',
+      data:  'quantity=' + val_qty + '&line=' + getline,
+      dataType: 'json',
+
+      success: function(data) 
+    
+      {
+        if(data.item_count > 0){
+          //$('.ttlitems').html(data.item_count) ;    
+          //$('#CartCount> span').html(data.item_count) ;  
+
+        } else {
+         // $('.ttlitems').html(data.item_count) ;    
+         // $('#CartCount> span').html(data.item_count) ;  
+        }
+
+        $.ajax({
+          type: "GET",
+          url: "/cart",
+          dataType: 'html',
+
+          success: function(data) 
+          {
+
+            // console.log(data);
+            var minicartdata=$(data).find('.CustomCartTemp').html();
+
+            $('.CustomCartTemp').html(minicartdata);
+          }
+        })
+      }
+    })
+  });
+  
+  
   $(".em-bl-back-btn").click(function(){
-     
+         
   $("#gorgias-chat").trigger("click");
   })
    $( "#Proaccordion" ).accordion({

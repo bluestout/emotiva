@@ -1,21 +1,16 @@
-<div class="page-width" data-section-id="{{ section.id }}" data-section-type="cart-template" data-ajax-enabled="{{ section.settings.cart_ajax_enable }}">
+<div class="page-width CustomCartTemp" data-section-id="{{ section.id }}" data-section-type="cart-template" data-ajax-enabled="{{ section.settings.cart_ajax_enable }}">
 
   <div {% if cart.item_count == 0 %}class="hide" {% endif %}data-cart-wrapper>
     <div class="cart-header">
       <h1 class="cart-header__title">{{ 'cart.general.title' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="text-link text-link--accent">
-        {{ 'cart.general.continue_shopping' | t }}
-      </a>
+     
     </div>
 
     <form action="{{ routes.cart_url }}" method="post" novalidate class="cart">
+      <div class="em-cart-pg-cst-row">
+      <div class="em-cart-pg-left">
       <table>
-        <thead class="cart__row cart__row--heading">
-          <th scope="col">{{ 'cart.label.product' | t }}</th>
-          <th class="text-right" scope="col">{{ 'cart.label.price' | t }}</th>
-          <th class="text-right small--hide" scope="col">{{ 'cart.label.quantity' | t }}</th>
-          <th class="text-right small--hide" scope="col">{{ 'cart.label.total' | t }}</th>
-        </thead>
+        
         <tbody data-cart-line-items>
           {%- for item in cart.items -%}
             <tr class="cart__row" data-cart-item data-cart-item-key="{{ item.key }}" data-cart-item-url="{{ item.url }}" data-cart-item-title="{{ item.title }}" data-cart-item-index="{{ forloop.index }}" data-cart-item-quantity="{{ item.quantity }}">
@@ -179,12 +174,13 @@
                 </div>
               </td>
               <td class="cart__quantity-td text-right small--hide">
-                <div class="cart__qty">
-                  <label for="updates_large_{{ item.key }}" class="cart__qty-label" data-quantity-label-desktop>{{ 'cart.label.quantity' | t }}</label>
-                  <input id="updates_large_{{ item.key }}" class="cart__qty-input" type="number"
-                    name="updates[]" value="{{ item.quantity }}" min="0" pattern="[0-9]*"
-                    data-quantity-input data-quantity-item="{{ forloop.index }}" data-quantity-input-desktop>
-                </div>
+                <div class="cart__qty" data-line="{{forloop.index}}">
+                          <input type='button' value='-' class='qtyminus' field='quantity' min="0" />
+                          <input readonly="readonly" id="updates_large_{{ item.key }}" class="cart__qty-input" type="text"
+                                 name="updates[]" value="{{ item.quantity }}" min="0" pattern="[0-9]*"
+                                 data-quantity-input data-quantity-item="{{ forloop.index }}" data-quantity-input-desktop>
+                          <input type='button' value='+' class='qtyplus' field='quantity' max="1000" />
+                        </div>
                 <div class="cart__qty-error-message-wrapper cart__qty-error-message-wrapper--desktop hide" role="alert" data-cart-quantity-error-message-wrapper>
                   <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
                   {% include 'icon-error' %}
@@ -221,15 +217,11 @@
           {%- endfor -%}
         </tbody>
       </table>
-
+        <div data-app="eastsideco_cartOffers" data-position="product" class="em-cart-like-opt-sec"></div>
+      </div>
       <div class="cart__footer">
-        <div class="grid">
-          {%- if section.settings.cart_notes_enable -%}
-            <div class="grid__item medium-up--one-half cart-note">
-              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
-              <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" data-cart-notes>{{ cart.note }}</textarea>
-            </div>
-          {%- endif -%}
+        <div class="grid cart__footer_inn">
+         
           <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
 
             {%- assign cartDiscounts = 'template ' | split: ' ' -%}
@@ -248,12 +240,18 @@
                 {%- endfor -%}
               </div>
             </div>
+           <div class="ShippingText">
+  <span class="Title">Shipping</span>
+  <span class="ShipValue">Free</span>
+          </div>
 
             <div class="cart-subtotal">
               <span class="cart-subtotal__title">{{ 'cart.general.subtotal' | t }}</span>
               <span class="cart-subtotal__price" data-cart-subtotal>{{ cart.total_price | money_with_currency }}</span>
             </div>
+            
 
+            
             {%- capture taxes_shipping_checkout -%}
               {%- if shop.taxes_included and shop.shipping_policy.body != blank -%}
                 {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
@@ -265,7 +263,7 @@
                 {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
               {%- endif -%}
             {%- endcapture -%}
-            <div class="cart__shipping rte">{{ taxes_shipping_checkout }}</div>
+           
             <div class="cart__buttons-container">
               <div class="cart__submit-controls">
                 {%- unless section.settings.cart_ajax_enable -%}
@@ -284,12 +282,39 @@
                 <span class="cart__error-message" data-cart-error-message></span>
               </div>
 
-              {%- if additional_checkout_buttons -%}
-                <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
-              {%- endif -%}
+             
+            </div>
+            <div class="em-cartspecial-ins-sec">
+                <div class="em-cartspecial-ins-box">
+                    <label><input type="checkbox" class="CheckNote" /> Include special instructions</label>
+                    <a href="#">Military Discount</a>
+                </div>
+                <div class="em-cartspecial-ins-textarea" style="display:none;">
+                     {%- if section.settings.cart_notes_enable -%}
+                        <div class="grid__item medium-up--one-half cart-note">
+
+                          <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" data-cart-notes>{{ cart.note }}</textarea>
+                        </div>
+                      {%- endif -%}
+                </div>
+            </div>
+            <div class="em-sin-pro-cst-ship-warranty CartShip">
+                <div class="em-sin-pro-cst-ship-warranty-inn">
+                    <div class="em-cart-bot-fea-sec">
+                        <ul>
+                            <li><img src="{{'cart-free-shipping-icon.jpg'| file_url}}"> Free Shipping</li>
+                            <li><img src="{{'cart-waranty-icon.jpg'| file_url}}"> 5 years transferrable warranty</li>
+                        </ul>
+                    </div>
+
+                </div>	
+            </div>
+            <div class="StaticCartContent">
+              All orders are processed in shop's currency, which is USD. The content of your cart may be displayed in another currency, at the most current exchange rate. 
             </div>
           </div>
         </div>
+      </div>
       </div>
     </form>
 

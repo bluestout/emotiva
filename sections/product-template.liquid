@@ -128,7 +128,7 @@
         {%if product.metafields.global.short != blank %}
         <div class="ShortDesc">{{product.metafields.global.short}}<span class="moreDesc">More</span></div>
         {%endif%}
-        <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">{{ product.metafields.stamped.badge }}</span> 
+        <div class="em-product-single-rev-rating"><span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">{{ product.metafields.stamped.badge }}</span></div> 
         <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
           </div>
@@ -241,8 +241,8 @@
 	<div class="em-sin-pro-cst-ship-warranty-inn">
 		<div class="em-cart-bot-fea-sec">
 			<ul>
-				<li><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/cart-free-shipping-icon.jpg?v=1592908879"> Free Shipping</li>
-				<li><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/cart-waranty-icon.jpg?v=1592908880"> 5 years transferrable warranty</li>
+				<li><img src="{{'cart-free-shipping-icon.jpg'| file_url}}"> Free Shipping</li>
+				<li><img src="{{'cart-waranty-icon.jpg'| file_url}}"> 5 years transferrable warranty</li>
 			</ul>
 		</div>
 		<div class="em-cart-bot-fea-sec-faq"><a href="#">FAQ</a></div>

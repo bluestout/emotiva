@@ -158,7 +158,7 @@
   },
   "cart": {
     "general": {
-      "title": "Your cart",
+      "title": "Cart",
       "note": "Add a note to your order",
       "removed_item_html": "Removed <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> from your cart.",
       "remove": "Remove",
@@ -169,7 +169,7 @@
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "update": "Update",
-      "checkout": "Check out",
+      "checkout": "Proceed to checkout ",
       "empty": "Your cart is currently empty.",
       "cookies_required": "Enable cookies to use the shopping cart",
       "continue_shopping": "Continue shopping",
