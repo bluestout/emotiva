@@ -35,6 +35,11 @@
     "social_vimeo_link": "",
     "favicon": "",
     "enable_ajax": false,
+    "image_contact": "shopify:\/\/shop_images\/ezgif-7-97b3e7000fbb.png",
+    "heading_desktop": "Not sure what kind of product is for you?",
+    "heading_mobile": "Still need help?",
+    "subheading": "Start a chat or call us. We'll be glad to help!",
+    "number": "1-615-790-6754",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -604,6 +609,136 @@
         "settings": {
           "cart_ajax_enable": true,
           "cart_notes_enable": true
+        }
+      },
+      "customer-Center1": {
+        "type": "customer-Center1",
+        "blocks": {
+          "1595314633396": {
+            "type": "content",
+            "settings": {
+              "title": "Billing",
+              "description": "<h3>When will my credit card be processed<\/h3>\n  <div>\n    <p>\n    Lorem Ipsum\n    <\/p>\n  <\/div>"
+            }
+          },
+          "1595314685933": {
+            "type": "content",
+            "settings": {
+              "title": "Orders",
+              "description": "<h3>When will my credit card be processed<\/h3>\n  <div>\n    <p>\n    Lorem Ipsum\n    <\/p>\n  <\/div>\n                      <h3>When will my credit card be processed<\/h3>\n  <div>\n    <p>\n    Lorem Ipsum\n    <\/p>\n  <\/div>"
+            }
+          },
+          "1595314712441": {
+            "type": "content",
+            "settings": {
+              "title": "Company",
+              "description": "<h3>When will my credit card be processed<\/h3>\n  <div>\n    <p>\n    Lorem Ipsum\n    <\/p>\n  <\/div>\n                      <h3>When will my credit card be processed<\/h3>\n  <div>\n    <p>\n    Lorem Ipsum\n    <\/p>\n  <\/div>\n                          <h3>When will my credit card be processed<\/h3>\n  <div>\n    <p>\n    Lorem Ipsum\n    <\/p>\n  <\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "1595314633396",
+          "1595314685933",
+          "1595314712441"
+        ],
+        "settings": {
+          "title": "Customer Help",
+          "main_linklist": "customer-center"
+        }
+      },
+      "customer-center": {
+        "type": "customer-center",
+        "settings": {
+          "title": "Customer Help",
+          "subtitle": "Have questions? We have all the answers.",
+          "block_1_heading": "Heading",
+          "block_1_title": "Not sure how to make payment or where to buy Emotiva products. We have all the answers.",
+          "block_1_subtitle": "How we handle shipping and returns, check <a href=\"#\">Shipping Policy<\/a> and <a href=\"#\">Returns Policy<\/a>.",
+          "block_1_image": "shopify:\/\/shop_images\/picto-faq.png",
+          "block_1_link": "#",
+          "block_2_heading": "Reward Credit",
+          "block_2_title": "Collect Reward credit points with every purchase and spend on future purchases or upgrades.",
+          "block_2_subtitle": "",
+          "block_2_image": "shopify:\/\/shop_images\/picto-rewards.png",
+          "block_2_link": "",
+          "banner_title": "Get help in the Emotiva Lounge",
+          "banner_subtitle": "Emotiva Community connects you with other owners and product experts. Get help, product tips and tricks. Or, see how others are using our products. Ask questions — and share your own experiences.",
+          "banner_image": "shopify:\/\/shop_images\/ezgif-7-ab7d0affdac0.jpg",
+          "banner_link": ""
+        }
+      },
+      "customer-Center2": {
+        "type": "customer-Center2",
+        "blocks": {
+          "1595320860092": {
+            "type": "content",
+            "settings": {
+              "title": "Shipping in the USA",
+              "description": "<h3>How much is shipping?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>Where do you ship to?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>Where do you ship free?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>We ship free within the contiguous 48 states for all products. Additional shipping charges apply to Alaska, Hawaii, US territories, APO, and FPO addresses. Shipping options and delivery estimates are available at checkout.<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>How quickly are orders shipped?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>How long will it take to receive my shipment in the USA?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>Will I be able to track my shipment?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>Am I required to sign for my UPS package?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>"
+            }
+          },
+          "1595320899567": {
+            "type": "content",
+            "settings": {
+              "title": "International Orders",
+              "description": "<h3>Do you ship worldwide?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>Do you ship free to Canada?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>What about shipping?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>What is the international return policy?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<h3>What about international service?<\/h3>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<p>Lorem Ipsum<\/p>\n\t\t\t\t\t\t\t<\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "1595320860092",
+          "1595320899567"
+        ],
+        "settings": {
+          "title": "Customer Help",
+          "main_linklist": "customer-center"
+        }
+      },
+      "resources3": {
+        "type": "resources3",
+        "settings": {
+          "title": "Customer Help",
+          "main_linklist": "customer-center"
+        }
+      },
+      "support1": {
+        "type": "support1",
+        "settings": {
+          "title": "Support",
+          "main_linklist": "support"
+        }
+      },
+      "support2": {
+        "type": "support2",
+        "settings": {
+          "title": "How can we help you?",
+          "subtitle": "Get product help, track your order or register your new Emotiva product.",
+          "block_1_heading": "Order updates & tracking",
+          "block_1_title": "Track your order or get updates on service requests.",
+          "block_1_subtitle": "",
+          "block_1_image": "shopify:\/\/shop_images\/picto-order-tracking.png",
+          "block_1_link": "",
+          "block_2_heading": "Product support",
+          "block_2_title": "Need help with Emotiva product - setting it up or operating.",
+          "block_2_subtitle": "",
+          "block_2_image": "shopify:\/\/shop_images\/picto-support_527d5bcf-fab7-463d-a3dc-aa30844f6150.png",
+          "block_2_link": "",
+          "block_3_heading": "Service & repair",
+          "block_3_title": "Our goal is to provide you with exceptional service for your Emotiva products. Let us help.",
+          "block_3_subtitle": "<a href=\"#\">See warranty information<\/a>",
+          "block_3_image": "shopify:\/\/shop_images\/picto-service.png",
+          "block_3_link": "",
+          "banner_title": "Get help in the Emotiva Lounge",
+          "banner_subtitle": "Emotiva Community connects you with other owners and product experts. Get help, product tips and tricks. Or, see how others are using our products. Ask questions — and share your own experiences.",
+          "banner_image": "shopify:\/\/shop_images\/ezgif-7-ab7d0affdac0.jpg",
+          "banner_link": ""
+        }
+      },
+      "resources10": {
+        "type": "resources10",
+        "settings": {
+          "title": "Support",
+          "main_linklist": "support"
         }
       }
     },

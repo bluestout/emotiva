@@ -78,7 +78,7 @@
                   </div>
                 </div>
               </td>
-              <td class="cart__price text-right">
+              <td class="cart__price text-right medium-up--hide small--hide">
 
                 {%- assign hasDiscount = false -%}
                 {%- if item.original_price != item.final_price -%}
@@ -173,8 +173,8 @@
                   <span class="cart__qty-error-message" data-cart-quantity-error-message></span>
                 </div>
               </td>
-              <td class="cart__quantity-td text-right small--hide">
-                <div class="cart__qty" data-line="{{forloop.index}}">
+              <td class="cart__quantity-td text-right">
+                <div class="cart__qty CustomQuant" data-line="{{forloop.index}}">
                           <input type='button' value='-' class='qtyminus' field='quantity' min="0" />
                           <input readonly="readonly" id="updates_large_{{ item.key }}" class="cart__qty-input" type="text"
                                  name="updates[]" value="{{ item.quantity }}" min="0" pattern="[0-9]*"
@@ -187,7 +187,7 @@
                   <span class="cart__qty-error-message" data-cart-quantity-error-message></span>
                 </div>
               </td>
-              <td class="cart__final-price text-right small--hide" data-cart-item-line-price>
+              <td class="cart__final-price text-right" data-cart-item-line-price>
                 {%- comment -%}
                   Markup template for discount item
                 {%- endcomment -%}
@@ -217,7 +217,15 @@
           {%- endfor -%}
         </tbody>
       </table>
-        <div data-app="eastsideco_cartOffers" data-position="product" class="em-cart-like-opt-sec"></div>
+        <div class="em-cart-like-opt-sec-main">
+          <div class="em-cart-like-opt-sec-title">
+            <span>You may also need one of these:</span>
+          </div>
+          <div data-app="eastsideco_cartOffers"></div>
+
+          <div data-app="eastsideco_cartOffers" data-position="product" class="em-cart-like-opt-sec"></div>
+        </div>
+        
       </div>
       <div class="cart__footer">
         <div class="grid cart__footer_inn">
@@ -291,7 +299,7 @@
                 </div>
                 <div class="em-cartspecial-ins-textarea" style="display:none;">
                      {%- if section.settings.cart_notes_enable -%}
-                        <div class="grid__item medium-up--one-half cart-note">
+                        <div class="cart-note">
 
                           <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" data-cart-notes>{{ cart.note }}</textarea>
                         </div>

@@ -1,0 +1,52 @@
+<div class="em-inner-sidebar-left">
+			{%include "page-sidebar"%}
+		</div>
+<div class="em-inner-sidebar-cont-right">
+			<div class="em-inner-sidebar-cont-inn">
+				{{page.content}}
+				<div class="em-nt-sure-lined-box">
+              <div class="em-nt-sure-lined-inn">
+                  <h3 class="em-nt-sure-lined-title-desk">{{settings.heading_desktop}}</h3>
+                  <h3 class="em-nt-sure-lined-title-mob">{{settings.heading_mobile}}</h3>
+                  <p>{{settings.subheading}}</p>
+                  <div class="em-nt-sure-lined-btn">
+                      <a href="#" class="em-bl-back-btn">Live chat</a>
+                      <a href="tel:{{settings.number}}"class="em-nt-sure-contact-link">{{settings.number}}</a>
+                  </div>
+                  <div class="em-nt-sure-lined-box-img">
+                    <img src="{{settings.image_contact | img_url: "original"}}" />
+                  </div>
+              </div>
+          </div>			  			  
+			</div>
+		</div>
+		
+{% schema %}
+  {
+    "name": "Support 1",
+    "settings": [
+{
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Content"
+      },
+       {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu"
+      },
+      "default": "main-menu"
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

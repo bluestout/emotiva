@@ -1,0 +1,82 @@
+<div class="em-inner-sidebar-left">
+		{%include "page-sidebar"%}
+	</div>
+	<div class="em-inner-sidebar-cont-right">
+		<div class="em-inner-sidebar-cont-inn">
+          {% for block in section.blocks %}
+<div class="em-inner-sidebar-cont-block">
+				<h2 class="em-inner-sidebar-cont-title">{{block.settings.title}}</h2>
+				<div class="em-inner-sidebar-cont-accr">
+				<div id="accordionBilling" class="CustomerIndex CustomerAccordion-{{forloop.index0}}">
+                  {{block.settings.description}}
+</div>
+				</div>
+			</div>
+{%endfor%}
+			
+          
+          
+          <div class="em-nt-sure-lined-box">
+              <div class="em-nt-sure-lined-inn">
+                  <h3 class="em-nt-sure-lined-title-desk">{{settings.heading_desktop}}</h3>
+                  <h3 class="em-nt-sure-lined-title-mob">{{settings.heading_mobile}}</h3>
+                  <p>{{settings.subheading}}</p>
+                  <div class="em-nt-sure-lined-btn">
+                      <a href="#" class="em-bl-back-btn">Live chat</a>
+                      <a href="tel:{{settings.number}}"class="em-nt-sure-contact-link">{{settings.number}}</a>
+                  </div>
+                  <div class="em-nt-sure-lined-box-img">
+                    <img src="{{settings.image_contact | img_url: "original"}}" />
+                  </div>
+              </div>
+          </div>
+          
+          
+		</div>
+	</div>
+			
+          
+{% schema %}
+  {
+    "name": "Content list",
+    "max_blocks": 12,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Content"
+      },
+       {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu"
+      },
+      "default": "main-menu"
+    }
+    ],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+          {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Title"
+      },
+{
+        "type": "textarea",
+        "id": "description",
+        "label": "Heading",
+        "default": "Content"
+      }
+        ]
+      }
+    ]
+  }
+{% endschema %}

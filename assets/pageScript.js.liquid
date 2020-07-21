@@ -1,4 +1,4 @@
-var LinkGet = window.location.href;
+var LinkGet = window.location.pathname;
 $(".em-inner-sidebar-link-list li").each(function(){
   var LocationFind = $(this).children("a").attr("href");
   if(LocationFind==LinkGet){
@@ -37,3 +37,11 @@ $( "#accordionOrder" ).accordion({
 $( "#accordionCompany" ).accordion({
       collapsible: true,heightStyle: "content",header: "h3", active: false
 });
+
+//alert("testing");
+$(".CustomerIndex").each(function(i){
+  console.log("INDEX"+i);
+$( ".CustomerAccordion-"+i ).accordion({
+      collapsible: true,heightStyle: "content",header: "h3", active: false
+});
+})

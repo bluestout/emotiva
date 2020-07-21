@@ -1,11 +1,8 @@
 <div class="em-inner-sidebar-sec">
-			<h3 class="em-inner-sidebar-left-title">Customer Help</h3>
+			<h3 class="em-inner-sidebar-left-title">{{section.settings.title}}</h3>
+   {% for link in linklists[section.settings.main_linklist].links %}
 			<ul class="em-inner-sidebar-link-list">
-				<li><a class="active" href="https://emotiva.com/pages/customer-center1">General FAQ</a></li>
-				<li><a href="https://emotiva.com/pages/resources3">Reward Credit</a></li>
-				<li><a href="https://emotiva.com/pages/customer-center2">Shipping Policy</a></li>
-				<li><a href="#">Return Policy</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Terms of Use</a></li>
+				<li><a href="{{link.url}}">{{link.title}}</a></li>
 			</ul>
+  {%endfor%}
 		</div>

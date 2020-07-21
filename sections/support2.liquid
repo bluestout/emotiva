@@ -1,0 +1,277 @@
+<div class="contact-pg-main-sec">
+      
+		<h3 class="inr-page-main-title">{{section.settings.title}}How can we help you?</h3>
+		<p class="inr-page-sub-title">{{section.settings.subtitle}}Get product help, track your order or register your new Emotiva product.</p>
+		<div class="gray-back-block-row gray-back-block-row-3 em-how-help-pg-sec">
+			<div class="gray-back-block-box">
+				<div class="contact-pg-info-block">
+					<div class="contact-pg-info-img"><img src="{{section.settings.block_1_image| img_url: 'original'}}" /></div>
+					<h3>{{section.settings.block_1_heading}}</h3>
+					<p>{{section.settings.block_1_title}}</p> 
+                  <h5>{{section.settings.block_1_subtitle}}</h5>
+					<div class="contact-pg-info-btn"><a href="{{section.settings.block_1_link}}" class="em-bl-back-btn">Read FAQ</a></div>
+				</div>
+			</div>
+			<div class="gray-back-block-box">
+				<div class="contact-pg-info-block">
+					<div class="contact-pg-info-img"><img src="{{section.settings.block_2_image| img_url: 'original'}}" /></div>
+					<h3>{{section.settings.block_2_heading}}</h3>
+					<p>{{section.settings.block_2_title}}</p> 
+					<h5>{{section.settings.block_2_subtitle}}</h5>
+					<div class="contact-pg-info-btn"><a href="{{section.settings.block_2_link}}" class="em-bl-back-btn">Learn more</a></div>
+				</div>
+			</div>
+			<div class="gray-back-block-box">
+				<div class="contact-pg-info-block">
+					<div class="contact-pg-info-img"><img src="{{section.settings.block_3_image| img_url: 'original'}}" /></div>
+					<h3>{{section.settings.block_3_heading}}</h3>
+					<p>{{section.settings.block_3_title}}</p> 
+                  <h5>{{section.settings.block_3_subtitle}}</h5>
+					<div class="contact-pg-info-btn"><a href="{{section.settings.block_3_link}}" class="em-bl-back-btn">Read FAQ</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-layered-cont-sec" style="background-image: url('{{section.settings.banner_image| img_url: 'oroginal'}}');">
+		<div class="contact-layered-cont-upr">
+          <h3>{{section.settings.banner_title}}</h3>
+			<p>{{section.settings.banner_subtitle}}</p>
+			<div class="contact-layered-cont-btn"><a href="{{section.settings.banner_link}}" class="em-bl-back-btn">Go to Emotiva Lounge</a></div>
+		</div>
+	</div>
+<div class="em-cc-bot-line-link"><p>Couldn’t find what you are looking for? <a href="#">Contact us and we’ll help</a>.</p></div>
+{% schema %}
+  {
+    "name": "Support 2",
+    "settings": [
+{
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Content"
+      },
+{
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Heading",
+        "default": "Content"
+      },
+{
+      "type": "header",
+      "content": {
+        "da": "Block 1",
+        "de": "Block 1",
+        "en": "Block 1"
+      }
+    },
+{
+        "type": "text",
+        "id": "block_1_heading",
+        "label": "Heading",
+        "default": "Heading"
+      },
+{
+        "type": "text",
+        "id": "block_1_title",
+        "label": "Sub Heading",
+        "default": "Title"
+      },
+{
+        "type": "text",
+        "id": "block_1_subtitle",
+        "label": "Sub Heading",
+        "default": "Sub Title"
+      },
+{
+      "type": "image_picker",
+      "id": "block_1_image",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Image"
+      },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "40 x 40px"
+        }
+    },
+{
+      "type": "url",
+      "id": "block_1_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link 1"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    },
+{
+      "type": "header",
+      "content": {
+        "da": "Block 2",
+        "de": "Block 2",
+        "en": "Block 2"
+      }
+    },
+{
+        "type": "text",
+        "id": "block_2_heading",
+        "label": "Heading",
+        "default": "Heading"
+      },
+{
+        "type": "text",
+        "id": "block_2_title",
+        "label": "Sub Heading",
+        "default": "Title"
+      },
+{
+        "type": "text",
+        "id": "block_2_subtitle",
+        "label": "Sub Heading",
+        "default": "Sub Title"
+      },
+{
+      "type": "image_picker",
+      "id": "block_2_image",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Image"
+      },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "40 x 40px"
+        }
+    },
+{
+      "type": "url",
+      "id": "block_2_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link "
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    },
+{
+      "type": "header",
+      "content": {
+        "da": "Block 3",
+        "de": "Block 3",
+        "en": "Block 3"
+      }
+    },
+{
+        "type": "text",
+        "id": "block_3_heading",
+        "label": "Heading",
+        "default": "Heading"
+      },
+{
+        "type": "text",
+        "id": "block_3_title",
+        "label": "Sub Heading",
+        "default": "Title"
+      },
+{
+        "type": "text",
+        "id": "block_3_subtitle",
+        "label": "Sub Heading",
+        "default": "Sub Title"
+      },
+{
+      "type": "image_picker",
+      "id": "block_3_image",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Image"
+      },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "40 x 40px"
+        }
+    },
+{
+      "type": "url",
+      "id": "block_3_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link "
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    },
+{
+      "type": "header",
+      "content": {
+        "da": "Banner",
+        "de": "Banner",
+        "en": "Banner"
+      }
+    },
+{
+        "type": "text",
+        "id": "banner_title",
+        "label": "Title",
+        "default": "Title"
+      },
+{
+        "type": "text",
+        "id": "banner_subtitle",
+        "label": "Sub Title",
+        "default": "Sub Title"
+      },
+{
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Banner"
+      },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "1098 x 418px"
+        }
+    },
+{
+      "type": "url",
+      "id": "banner_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link "
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

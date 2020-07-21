@@ -1,0 +1,33 @@
+<div class="em-inner-sidebar-left">
+			{%include "page-sidebar"%}
+		</div>
+		{{page.content}}
+{% schema %}
+  {
+    "name": "Resources 3",
+    "settings": [
+ {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Content"
+      },
+       {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu"
+      },
+      "default": "main-menu"
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1405,5 +1405,84 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": {
+      "da": "Meddelelse for læg i indkøbskurven",
+      "de": "Benachrichtigung für „Zum Warenkorb hinzufügen“",
+      "en": "Contact Detail"
+    },
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_contact",
+        "label": {
+          "da": "Billede for favoritikon",
+          "de": "Favicon-Foto",
+          "en": "Image"
+        },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "172 x 206px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "heading_desktop",
+        "label": {
+          "da": "Overskrift",
+          "de": "Titel",
+          "en": "Heading For Desktop"
+        },
+        "default": {
+          "da": "Logoliste",
+          "de": "Logo-Liste",
+          "en": "Heading 1"
+        }
+      },
+      {
+        "type": "text",
+        "id": "heading_mobile",
+        "label": {
+          "da": "Overskrift",
+          "de": "Titel",
+          "en": "Heading For Mobile"
+        },
+        "default": {
+          "da": "Logoliste",
+          "de": "Logo-Liste",
+          "en": "Heading 1"
+        }
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": {
+          "da": "Overskrift",
+          "de": "Titel",
+          "en": "Sub Heading"
+        },
+        "default": {
+          "da": "Logoliste",
+          "de": "Logo-Liste",
+          "en": "Sub Heading"
+        }
+      },
+      {
+        "type": "text",
+        "id": "number",
+        "label": {
+          "da": "Overskrift",
+          "de": "Titel",
+          "en": "Phone Number"
+        },
+        "default": {
+          "da": "Logoliste",
+          "de": "Logo-Liste",
+          "en": "Phone Number"
+        }
+      }
+    ]
   }
 ]
