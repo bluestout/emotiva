@@ -1,110 +1,148 @@
-{% paginate search.results by 10 %}
-
 <div class="page-width">
-  {% if search.performed == false %}
     <div class="text-center">
-      <h1 class="h2">{{ 'general.search.title' | t }}</h1>
-  {% else %}
-    <div class="text-center">
-      <h1 class="h2">
-        <span class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}:</span>
-        {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
-      </h1>
-  {% endif %}
+      <h1 class="bc-sf-search-result-header h2">{{ 'general.search.title' | t }}</h1>
       <div class="grid">
-        <div class="grid__item medium-up--six-tenths medium-up--push-two-tenths">
-          {% if search.performed and search.results_count == 0 %}
-            <div class="rte search--no-results-found">
-              <p>{{ 'general.search.no_results' | t }}</p>
-            </div>
-          {% endif %}
-          <form action="{{ routes.search_url }}" method="get" role="search" class="search-form search-page-form">
-            <div class="input-group input-group--nowrap">
-              <div class="input-group__field input-group__field--connected search-form__input-wrapper">
-                <input
-                  type="search"
-                  name="q"
-                  value="{{ search.terms | escape }}"
-                  placeholder="{{ 'general.search.placeholder' | t }}"
-                  role="combobox"
-                  aria-autocomplete="list"
-                  aria-owns="predictive-search-results"
-                  aria-expanded="false"
-                  aria-label="{{ 'general.search.placeholder' | t }}"
-                  aria-haspopup="listbox"
-                  class="search-form__input"
-                  data-search-page-predictive-search-input
-                />
-
-                <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
-
-                <button type="reset" class="search-form__clear-action" aria-label="{{ 'general.search.clear_search_term' | t }}" data-search-page-predictive-search-clear>
-                  {% include 'icon-close' %}
-                </button>
-
-                <div class="predictive-search-wrapper" data-predictive-search-mount="default"></div>
-              </div>
-
-              <button type="submit" class="search-form__connected-submit" aria-label="{{ 'general.search.submit' | t }}" data-search-page-predictive-search-submit>
-                {% include 'icon-search' %}
-              </button>
+        <div class="grid__item medium-up--two-fifths medium-up--push-three-tenths">
+          <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+            <div class="input-group">
+              <input type="search"
+                     class="input-group__field search__input"
+                     name="q"
+                     value="{{ search.terms | escape }}"
+                     placeholder="{{ 'general.search.placeholder' | t }}"
+                     aria-label="{{ 'general.search.placeholder' | t }}"
+                     autofocus>
+              <input type="search" id="SearchInput">
+              <span class="input-group__btn">
+                <button class="btn search__submit" type="submit">{{ 'general.search.submit' | t }}</button>
+              </span>
             </div>
           </form>
         </div>
       </div>
+
+      <hr class="hr--small hr--invisible">
+      <p class="bc-sf-search-result-number">
+        {% include 'bc-sf-filter-skeleton', width: 2 %}
+      </p>
   </div>
 </div>
 
 
-{% if search.performed %}
-  {% if search.results_count > 0 %}
-    <hr aria-hidden="true" />
-  {% endif %}
+<div class="page-width">
+  	<div class="em-colc-side-list-main">
+      <div class="SidebarCustom em-collection-sidebar">
+        <div id="bc-sf-filter-container">
+          <div class="bc-sf-filter-block-title bc-sf-filter-block-filter-title"><h3><span>Filter</span></h3><a href="javascript:;" aria-label="Clear" class="bc-sf-filter-clear-all" onclick="clearAllFilterOptions(event)">Clear</a></div>
+          <div id="bc-sf-filter-tree2">
+            {% include 'bc-sf-filter-tree-placeholder' %}
+          </div>
+        </div>
+      </div>	        
 
-  <h2 class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}</h2>
 
-  <ul class="page-width list-view-items">
-    {% for item in search.results %}
-      <li class="list-view-item">
-        {% if item.object_type == 'product' %}
-          {% include 'product-card-list', product: item %}
-        {% else %}
-          <div class="product-card product-card--list">
-            <a href="{{ item.url }}" class="full-width-link">
-              <span class="visually-hidden">{{ item.title }}</span>
-            </a>
-            <div class="list-view-item__link">
-              <div class="list-view-item__image-column">
-                <div class="list-view-item__image-wrapper product-card__image-wrapper">
-                  {% unless item.image == null %}
-                    <img class="list-view-item__image" src="{{ item.image.src | img_url: '600x600' }}" alt="{{ item.image.alt | escape }}">
-                  {% endunless %}
-                </div>
-              </div>
-
-              <div class="list-view-item__title-column">
-                <div class="list-view-item__title" aria-hidden="true">
-                  <span class="product-card__title">{{ item.title }}</span>
-                </div>
-                <div>
-                  {% if item.published_at %}{{ item.published_at | date: format: "date" }} &#8212; {% endif %}
-                  {{ item.content | strip_html | truncate: 200 }}
-                </div>
-              </div>
+      <div class="em-colc-side-list-right">        
+        <div class="bc-custom-drawer-overlay"></div>
+        <div class="bc-custom-filter-sidebar-wrapper">
+          <div class="bc-custom-filter-mobile-header">
+            <div class="bc-sf-filter-block-title bc-sf-filter-block-filter-title"><h3><span>Filter</span></h3><a href="javascript:;" aria-label="Clear" class="bc-sf-filter-clear-all" onclick="clearAllFilterOptions(event)">Clear</a></div>
+            <div class="bc-custom-drawer-close"></div>
+          </div>
+          <div id="bc-sf-filter-tree">
+            {% include 'bc-sf-filter-tree-placeholder' %}
+          </div>
+          <div class="bc-custom-filter-mobile-footer">            
+            <div class="bc-custom-drawer-apply">
+              <button>Apply Filters</button>
             </div>
           </div>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+        </div>
+        <div id="bc-sf-filter-toolbar">
+          <a href='#' id='bc-sf-filter-mobile-button'><img alt="Filter" src="{{ 'slider.png' | asset_img_url: '20x' }}" /> <span> Filter</span></a>
+          <div id="bc-sf-filter-top-sorting">
+              {% include 'bc-sf-filter-skeleton', width: 2 %}
+          </div>
+        </div>
+      <div id="bc-sf-filter-products" class="grid grid--uniform grid--view-items">
+        {% comment %} Fix Shopify search term report {% endcomment %}
+        {% paginate search.results by 2 %}
+          {% if search.performed %}
+            {% for item in search.results %}
+              <div class="grid__item" style="display: none !important"></div>
+            {% endfor %}
+          {% endif %}
+        {% endpaginate %}
+      </div>
 
-  {%- if paginate.pages > 1 -%}
-    {% include 'pagination', paginate: paginate %}
-  {%- endif -%}
-{% endif %}
+      <div id="bc-sf-filter-bottom-pagination">
+        {% include 'bc-sf-filter-skeleton', width: 2 %}
+      </div>
+      <div id="bc-sf-filter-load-more"></div>
+    </div>
+  </div>
+</div>
+</div>
+    
+<script>
+  // Declare bcSfFilterConfig variable
+  var bcSfFilterConfig = {
+    label: {
+      sorting: {% assign temp = 'collections.sorting.title' | t  %} {% unless temp contains 'translation missing'  %} {{ temp | json }} {% else %} "Sorting" {% endunless %},
+      sorting_best_selling: "Best Selling" ,
+      sorting_featured: "Featured",
+      sorting_title_ascending: "Alphabetically, A-Z",
+      sorting_title_descending: "Alphabetically, Z-A",
+      sorting_price_ascending:"Lowest Price",
+      sorting_price_descending:"Highest Price",
+      sorting_date_ascending:"Date, Old to New",
+      sorting_date_descending:"Date, New to Old",
+      sorting_relevance:"Relevance",
+      search_general_title: {{ 'general.search.title' | t | json }},
+      search_result_empty: {% assign temp = 'general.search.no_results' | t %} {% unless temp contains 'translation missing'  %} {{ temp | json }} {% else %} "Try checking your spelling or using different words." {% endunless %},
+      search_result_number_one: {{ 'general.search.results_with_count.one' | t | json }},
+      search_result_number_other: {{ 'general.search.results_with_count.other' | t | json }},
 
-{% if search.results_count < 2  %}
-  <div class="search--less-than-2-results"></div>
-{% endif %}
+      sale: {{ 'products.product.on_sale' | t | json }},
+      sale_price: {{ 'products.product.sale_price' | t | json }},
+      sold_out: {{ 'products.product.sold_out' | t | json }},
+      vendor: {{ 'products.product.vendor' | t |json }},
+      regular_price: {{ 'products.product.regular_price' | t | json }},
+      items_with_count_one: {{ 'collections.general.items_with_count.one' | t | json}},
+      items_with_count_other: {{ 'collections.general.items_with_count.other' | t | json }},
+      current_page: {{ 'general.pagination.current_page' | t | json }},
+    },
+    custom: {
+      products_per_page: 24,
+      products_per_row: 4,
+      product_grid_class: 'grid__item small--one-half medium-up--one-quarter',
+      max_height: 250,
+      vendor_enable: true,
+      layout: "grid"
+    }
+  };
 
-{% endpaginate %}
+  var bcSfFilterTemplate = {
+    'soldOutClass': 'product-price--sold-out grid-view-item--sold-out',
+
+    // Grid Template
+    'vendorGridHtml': {% render 'bc-sf-filter-html', layout: 'vendorGridHtml' %},
+    'soldOutLabelGridHtml': {% render 'bc-sf-filter-html', layout: 'soldOutLabelGridHtml' %},
+    'productGridItemHtml': {% render 'bc-sf-filter-html', layout: 'productGridItemHtml' %},
+    // List Template
+    'vendorSmallListHtml': {% render 'bc-sf-filter-html', layout: 'vendorSmallListHtml' %},
+    'vendorMediumListHtml': {% render 'bc-sf-filter-html', layout: 'vendorMediumListHtml' %},
+    'saleLabelListHtml': {% render 'bc-sf-filter-html', layout: 'saleLabelListHtml' %},
+    'soldOutLabelListHtml': {% render 'bc-sf-filter-html', layout: 'soldOutLabelListHtml' %},
+    'productListItemHtml':  {% render 'bc-sf-filter-html', layout: 'productListItemHtml' %},
+      
+      // Pagination Template
+    'previousActiveHtml': {% render 'bc-sf-filter-html', layout: 'previousActiveHtml' %},
+    'previousDisabledHtml': {% render 'bc-sf-filter-html', layout: 'previousDisabledHtml' %},
+    'nextActiveHtml': {% render 'bc-sf-filter-html', layout: 'nextActiveHtml' %},
+    'nextDisabledHtml': {% render 'bc-sf-filter-html', layout: 'nextDisabledHtml' %},
+    'paginateHtml': {% render 'bc-sf-filter-html', layout: 'paginateHtml' %},
+
+    // Sorting Template
+    'sortingHtml': {% render 'bc-sf-filter-html', layout: 'sortingHtml' %},
+  };
+</script>

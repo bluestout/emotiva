@@ -9,6 +9,13 @@
     {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
+  {% comment %} BoostCommerce product item JSON data {% endcomment %}
+  
+    {%- if template contains 'collection' or template contains 'search' -%}
+      {% render 'bc-sf-filter-json', product: product %}
+    {%- endif -%}
+    
+
   <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}">
     <span class="visually-hidden">{{ product.title }}</span>
   </a>

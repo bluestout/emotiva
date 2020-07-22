@@ -117,6 +117,13 @@
 
 
   {{ content_for_header }}
+  
+
+<!--begin-bc-sf-filter-css-->
+  {% include 'bc-sf-filter-style' %}
+<!--end-bc-sf-filter-css-->
+
+
 </head>
 
 
@@ -209,5 +216,21 @@
 </script>    
 
 <!-- End of klaviyo's Back in Stock Widget -->
+
+<!--begin-bc-sf-filter-js-->
+  {% include 'bc-sf-filter' %}
+<!--end-bc-sf-filter-js-->
+{% comment %} Init BC Action List {% endcomment %}
+<!--start-bc-al-init-->
+  {% include 'bc-al-init' %}
+<!--end-bc-al-init-->
+{% comment %} Init Recently Viewed Products {% endcomment %}
+<!-- start-bc-recently-viewed-product-init -->
+  {% include 'bc-recently-viewed-product-init' %}
+<!-- end-bc-recently-viewed-product-init -->
+{% comment %} Init Most Popular Widgets {% endcomment %}
+<!--start-bc-most-popular-product-init-->
+  {% include 'bc-most-popular-product-init' %}
+<!--end-bc-most-popular-product-init-->
 </body>
 </html>

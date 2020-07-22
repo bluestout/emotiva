@@ -99,7 +99,7 @@
         "type": "collection",
         "settings": {
           "title": "Latest Products",
-          "collection": "newest-products",
+          "collection": "all",
           "grid": 4,
           "rows": 1,
           "show_vendor": false,
@@ -939,7 +939,6 @@
           "settings": {
             "align_logo": "left",
             "logo": "",
-            "logo_max_width": 135,
             "main_linklist": "main-menu",
             "message": true,
             "color_bg": "#162950",
