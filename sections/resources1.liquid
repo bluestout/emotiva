@@ -1,0 +1,90 @@
+<div class="em-inner-sidebar-left">
+   {%include "sidebar-resources" %}
+       
+		</div>
+		<div class="em-inner-sidebar-cont-right">
+			<div class="em-inner-sidebar-cont-inn">
+				<div class="em-inner-sidebar-cont-block">
+					<h2 class="em-inner-sidebar-cont-title">{{section.settings.content}}</h2>
+					<div class="em-inner-sidebar-cont-accr">
+						<div id="accordionBilling">
+                            {% for block in section.blocks %}
+							<h3>{{block.settings.title}}</h3>
+							<div>
+								 {{block.settings.description}}
+							</div>
+							{%endfor%}
+						</div>
+					</div>
+				</div>
+				<div class="em-nt-sure-lined-box">
+              <div class="em-nt-sure-lined-inn">
+                  <h3 class="em-nt-sure-lined-title-desk">{{settings.heading_desktop}}</h3>
+                  <h3 class="em-nt-sure-lined-title-mob">{{settings.heading_mobile}}</h3>
+                  <p>{{settings.subheading}}</p>
+                  <div class="em-nt-sure-lined-btn">
+                      <a href="#" class="em-bl-back-btn">Live chat</a>
+                      <a href="tel:{{settings.number}}"class="em-nt-sure-contact-link">{{settings.number}}</a>
+                  </div>
+                  <div class="em-nt-sure-lined-box-img">
+                    <img src="{{settings.image_contact | img_url: "original"}}" />
+                  </div>
+              </div>
+          </div>		  			  
+			</div>
+		</div>
+{% schema %}
+  {
+    "name": "Resources 1",
+    "settings": [
+{
+        "type": "text",
+        "id": "title",
+        "label": "Sidebar Heading",
+        "default": "Content"
+      },
+       {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu"
+      },
+      "default": "main-menu"
+    },
+{
+        "type": "text",
+        "id": "content",
+        "label": "Content Heading",
+        "default": "Product Manuals"
+      }
+],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+          {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Title"
+      },
+{
+        "type": "textarea",
+        "id": "description",
+        "label": "Heading",
+        "default": "Content"
+      }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

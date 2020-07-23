@@ -1,6 +1,8 @@
-<h3 class="em-inner-sidebar-left-title">Resources</h3>
-                <ul class="em-inner-sidebar-link-list">
-                    <li><a class="active" href="https://emotiva.com/pages/resources-1">Product Manuals</a></li>
-                    <li><a href="https://emotiva.com/pages/resources-2">Firmware Downloads</a></li>
-                    <li><a href="https://emotiva.com/pages/resources-3">Video Guides</a></li>
-                </ul>
+<div class="em-inner-sidebar-sec">
+			<h3 class="em-inner-sidebar-left-title">{{section.settings.title}}</h3>
+   {% for link in linklists[section.settings.main_linklist].links %}
+			<ul class="em-inner-sidebar-link-list">
+				<li><a href="{{link.url}}">{{link.title}}</a></li>
+			</ul>
+  {%endfor%}
+		</div>

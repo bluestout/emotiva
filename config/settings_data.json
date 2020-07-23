@@ -91,7 +91,7 @@
           "text_size": "large",
           "title": "Cutting-edge audio products made by people like you",
           "text": "<p>We create exceptionally designed, heigh-performance audio products at prices that more people could afford and enjoy.<\/p>",
-          "button_label": "Explore Product",
+          "button_label": "Explore product",
           "button_link": "#"
         }
       },
@@ -250,7 +250,7 @@
           "shortdesc": "We have one goal: to offer exceptionally designed, high performance products at prices that more people could afford and enjoy.",
           "desc": "<p>Emotiva asked a simple question: \"Why can't we have amazing audio and video sound at price that don't threaten our mortage?\"<\/p>\n\t\t\t\t\t\t\t<p>Emotiva is comprised of true audio enthusiasts, engineers, and product specialists. We run a lean organization without excess overhead and redundant levels of management. Our people are passionate enthusiasts who enjoy the experience of using Emotiva products equally as much as designing and building them.<\/p>",
           "link": "#",
-          "image": "shopify:\/\/shop_images\/abt-us-like-img.jpg"
+          "image": "shopify:\/\/shop_images\/about-us-placeholder_150e402f-2e0d-496b-bb24-77214bc681dc.png"
         }
       },
       "1593596810632": {
@@ -479,13 +479,13 @@
         "type": "light-bg-icon",
         "settings": {
           "title": "Satisfaction Guaranteed",
-          "image_1": "shopify:\/\/shop_images\/fea-icon-01.jpg",
+          "image_1": "shopify:\/\/shop_images\/bottom-gr-bar-icon-1.jpg",
           "desc_1": "Bespoke high-end<br> audio quality",
-          "image_2": "shopify:\/\/shop_images\/fea-icon-02.jpg",
+          "image_2": "shopify:\/\/shop_images\/bottom-gr-bar-icon-2.jpg",
           "desc_2": "Direct to consumer, no<br> retail markups",
-          "image_3": "shopify:\/\/shop_images\/fea-icon-03.jpg",
+          "image_3": "shopify:\/\/shop_images\/bottom-gr-bar-icon-3.jpg",
           "desc_3": "5 years transferrable<br> warranty",
-          "image_4": "shopify:\/\/shop_images\/fea-icon-04.jpg",
+          "image_4": "shopify:\/\/shop_images\/bottom-gr-bar-icon-4.jpg",
           "desc_4": "Upgrade Gear with our<br> Trade-In Program"
         }
       },
@@ -495,7 +495,7 @@
           "1594894913573-0": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/hdmi-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": "#"
             }
@@ -503,7 +503,7 @@
           "1594894913573-1": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/4k-ult-hd-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -511,7 +511,7 @@
           "1594894913573-2": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/velvet-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -519,7 +519,7 @@
           "1594894913573-3": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/dolby-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -527,7 +527,7 @@
           "1594895362165": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/doloby-atom-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -535,7 +535,7 @@
           "1594895380056": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/dirac-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -543,7 +543,7 @@
           "1594895514743": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/logo-916.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -551,7 +551,7 @@
           "1594895528768": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/live-ab-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -559,7 +559,7 @@
           "1594895555209": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/logo-444.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -567,7 +567,7 @@
           "1594895569812": {
             "type": "feature_logo_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hdmi-logo_3fd27b39-1dc7-4b90-a671-2ed7f28f8f73.jpg",
+              "image": "shopify:\/\/shop_images\/dts-logo.jpg",
               "desc": "DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”",
               "link": ""
             }
@@ -651,7 +651,7 @@
         "settings": {
           "title": "Customer Help",
           "subtitle": "Have questions? We have all the answers.",
-          "block_1_heading": "Heading",
+          "block_1_heading": "General FAQ",
           "block_1_title": "Not sure how to make payment or where to buy Emotiva products. We have all the answers.",
           "block_1_subtitle": "How we handle shipping and returns, check <a href=\"#\">Shipping Policy<\/a> and <a href=\"#\">Returns Policy<\/a>.",
           "block_1_image": "shopify:\/\/shop_images\/picto-faq.png",
@@ -739,6 +739,82 @@
         "settings": {
           "title": "Support",
           "main_linklist": "support"
+        }
+      },
+      "resources1": {
+        "type": "resources1",
+        "blocks": {
+          "1595427136763": {
+            "type": "content",
+            "settings": {
+              "title": "Amplifiers",
+              "description": "<ul class=\"em-pro-manual-dn-list\">\n                                    <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                  <li>\n                                        <div class=\"em-pro-manual-dn-block\">\n                                            <a href=\"#\">\n                                                <div class=\"em-pro-manual-dn-block-img\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2572\/6926\/files\/pro-manual-img.jpg?v=1593059562\"><\/div>\n                                                <div class=\"em-pro-manual-dn-block-title\">\n                                                    <h4>XPA Gen 3<\/h4>\n                                                <\/div>\n                                            <\/a>\n                                        <\/div>\n                                    <\/li>\n                                <\/ul>"
+            }
+          },
+          "1595427178733": {
+            "type": "content",
+            "settings": {
+              "title": "Processors",
+              "description": "Content"
+            }
+          },
+          "1595427188987": {
+            "type": "content",
+            "settings": {
+              "title": "Preamplifiers",
+              "description": "<p>We ship free within the contiguous 48 states for all products. Additional shipping charges apply to Alaska, Hawaii, US territories, APO, and FPO addresses. Shipping options and delivery estimates are available at checkout.<\/p>"
+            }
+          },
+          "1595427213068": {
+            "type": "content",
+            "settings": {
+              "title": "DACs",
+              "description": "Content"
+            }
+          },
+          "1595427221692": {
+            "type": "content",
+            "settings": {
+              "title": "Sources",
+              "description": "Content"
+            }
+          },
+          "1595427228761": {
+            "type": "content",
+            "settings": {
+              "title": "Speakers",
+              "description": "Content"
+            }
+          },
+          "1595427235920": {
+            "type": "content",
+            "settings": {
+              "title": "Subwoofers",
+              "description": "Content"
+            }
+          },
+          "1595427244566": {
+            "type": "content",
+            "settings": {
+              "title": "Retired Gear",
+              "description": "Content"
+            }
+          }
+        },
+        "block_order": [
+          "1595427136763",
+          "1595427178733",
+          "1595427188987",
+          "1595427213068",
+          "1595427221692",
+          "1595427228761",
+          "1595427235920",
+          "1595427244566"
+        ],
+        "settings": {
+          "title": "Resources",
+          "main_linklist": "resources",
+          "content": "Product Manuals"
         }
       }
     },
