@@ -1,0 +1,211 @@
+<div class="sin-pro-article-sec-main">
+  <div class="page-width">
+	<div class="colc-article-sec-head">
+		<h3 class="em-hm-section-title">Related Articles</h3>
+		<a href="{{section.settings.link}}" class="bl-text-arw-link">All articles</a>
+	</div>
+	<div class="colc-article-sec-row">
+		<div class="colc-article-sec-col">
+			<div class="colc-article-sec-block">
+				<a href="{{articles[section.settings.article_1].url}}"></a>
+				<div class="colc-article-sec-img">
+					<img src="{{articles[section.settings.article_1].image |img_url: "original"}}" />
+					<span>{{section.settings.blog_1}}</span>
+				</div>
+				<div class="colc-article-sec-cont">
+					<div class="colc-article-sec-cont-cat">{{section.settings.blog_1}}</div>
+					<h3>{{articles[section.settings.article_1].title}}</h3>
+					<p>{{articles[section.settings.article_1].excerpt }}</p>
+					<div class="em-hm-fea-art-block-auth">
+						<div class="em-hm-fea-art-auth-info">
+							<p><img src="{{section.settings.author_1| img_url: 'original'}}">{{articles[section.settings.article_1].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_1].author}}</p>
+							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="colc-article-sec-col">
+			<div class="colc-article-sec-block">
+				<a href="{{articles[section.settings.article_2].url}}"></a>
+				<div class="colc-article-sec-img">
+		        <img src="{{articles[section.settings.article_2].image |img_url: "original"}}" />
+					<span>{{section.settings.blog_2}}</span>
+				</div>
+				<div class="colc-article-sec-cont">
+					<div class="colc-article-sec-cont-cat">{{section.settings.blog_2}}</div>
+					<h3>{{articles[section.settings.article_2].title}}</h3>
+					<p>{{articles[section.settings.article_2].excerpt }}</p>
+					<div class="em-hm-fea-art-block-auth">
+						<div class="em-hm-fea-art-auth-info">
+							<p><img src="{{section.settings.author_2| img_url: 'original'}}"> {{articles[section.settings.article_2].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_2].author}}</p>
+							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="colc-article-sec-col">
+			<div class="colc-article-sec-block">
+				<a href="{{articles[section.settings.article_3].url}}"></a>
+				<div class="colc-article-sec-img">
+					<img src="{{articles[section.settings.article_3].image |img_url: "original"}}" />
+					<span>{{section.settings.blog_3}}</span>
+				</div>
+				<div class="colc-article-sec-cont">
+					<div class="colc-article-sec-cont-cat">{{section.settings.blog_3}}</div>
+					<h3>{{articles[section.settings.article_3].title}}</h3>
+					<p>{{articles[section.settings.article_3].excerpt }}</p>
+					<div class="em-hm-fea-art-block-auth">
+						<div class="em-hm-fea-art-auth-info">
+							<p><img src="{{section.settings.author_3| img_url: 'original'}}"> {{articles[section.settings.article_3].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_3].author}}</p>
+							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="colc-article-sec-bot">
+		<a href="{{section.settings.link}}" class="bl-text-arw-link">All articles</a>
+	</div>
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product's Article ",
+    "settings": [
+{
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+      "type": "text",
+      "id": "blog_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+      "id": "article_1",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Article"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "author_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Author Image"
+          }
+        },
+{
+      "type": "text",
+      "id": "blog_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+      "id": "article_2",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Article"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "author_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Author Image"
+          }
+        },
+{
+      "type": "text",
+      "id": "blog_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Heading"
+      }
+    },
+{
+      "id": "article_3",
+      "type": "article",
+      "label": {
+        "da": "Article",
+        "de": "Article",
+        "en": "Article"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "author_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Author Image"
+          }
+        },
+{
+      "type": "url",
+      "id": "link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "All Article Link"
+      }
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -44,8 +44,8 @@
 				<div class="em-head-top-bar-right">
 					<ul class="em-head-top-bar-rt-list">
 						<li><a herf="#">Live Chat</a></li>
-						<li>1-615-790-6754</li>
-						<li><a href="#">Contact</a></li>
+                      <li><a href="tel:{{settings.number}}">{{settings.number}}</a></li>
+						<li><a href="https://emotiva.com/pages/contact-1">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -56,17 +56,17 @@
 			<div class="em-nav-top-bar-row">
                 <div class="em-nav-top-bar-right">
 					<ul class="em-nav-top-bar-rt-list">
-						<li><a href="#">Sign in</a></li>
-						<li><a href="#" class="em-nav-top-cart">Cart</a></li>
+						<li><a href="/account/login">Sign in</a></li>
+						<li><a href="/cart" class="em-nav-top-cart">Cart</a></li>
 					</ul>
 				</div>
 				<div class="em-nav-top-bar-left">
 					<ul class="em-nav-top-bar-lt-list">	
                   {% for link in linklists[section.settings.main_linklist].links %}
                       {% if link.links != blank %}
-                      <li class="em-nav-listing {%if forloop.index==5%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==6%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7%}ReadCustom em-mega-menu-single{%endif%}"><a href="{{link.url}}">{{link.title}}</a>
+                      <li class="em-nav-listing {%if forloop.index==4%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==6%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7%}ReadCustom em-mega-menu-single{%endif%}"><a href="{{link.url}}">{{link.title}}</a>
                         <div class="em-mega-menu-dd-main">
-                          {%if forloop.index==5 or forloop.index==6%}
+                          {%if forloop.index==4 or forloop.index==6%}
                           <div class="em-mega-menu-dd-main-row">
 	<div class="em-mega-menu-dd-main-left">
 		<ul class="childlist">
@@ -85,15 +85,17 @@
                               </ul>
                           </li>
                           {%else%}
-                        <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
+                        <li {% if childlink.type contains "collection_link" %} {% assign imagepath = childlink.object.handle %} class="hoverworking" data-images="{{ collections[imagepath].image | img_url: "483x191" }}"{%endif%}><a href="{{childlink.url}}">{{childlink.title}}</a></li>
                           {%endif%}
                           {%endif%}
                         {%endfor%}
                         </ul>
 	</div>
-	<div class="em-mega-menu-dd-main-right">
+                            {%if forloop.index==4%}
+	<div class="em-mega-menu-dd-main-right" style="display:none">
 		<img src="{{'imgpsh_fullsize_anim.jpg' | asset_url }}" />
 	</div>
+                            {%endif%}
 </div>
                           {%else%}
                         <ul class="childlist">

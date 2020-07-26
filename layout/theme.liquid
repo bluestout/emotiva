@@ -143,12 +143,14 @@
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
       {{ content_for_layout }}
-  {%if page.handle contains "contact-1" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" or page.handle contains "support-1" or page.handle contains "support-2" or page.handle contains "resources-10" or page.handle contains "resources-1" or page.handle contains "resources-2" or page.handle contains "resources-4"%}
+  {%if page.handle contains "contact-1" or template == "page.landing" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" or page.handle contains "support-1" or page.handle contains "support-2" or page.handle contains "resources-10" or page.handle contains "resources-1" or page.handle contains "resources-2" or page.handle contains "resources-4"%}
  
       {%else%}
         {% section "Newsletter-custom" %}
       {%endif%}
+      {% unless template == "page.landing"%}
       {% section "light-bg-icon" %}
+      {%endunless%}
     </main>
     
 

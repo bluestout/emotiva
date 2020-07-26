@@ -42,6 +42,7 @@
     {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
     <img class="grid-view-item__image" src="{{ preview_image | img_url: image_size, scale: 2 }}" alt="{{ preview_image.alt }}" style="max-width: {{ max_height | times: preview_image.aspect_ratio }}px;">
   </noscript>
+  <div class="coll-description">
   <div class="em-colec-title-price-blk">
   	<div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>	
     <div class="em-colec-title-price-box">{% include 'product-price-listing', product: product, show_vendor: show_vendor %}</div>
@@ -50,5 +51,5 @@
   <div class="CustomProDesc">{{product.metafields.global.type}}</div>
   <span class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span>
   <div class="em-colec-title-price-box em-colec-title-price-box-mob">{% include 'product-price-listing', product: product, show_vendor: show_vendor %}</div>
-
+  </div>
 </div>

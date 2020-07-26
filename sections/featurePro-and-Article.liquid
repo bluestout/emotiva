@@ -12,7 +12,9 @@
 						<p>{{section.settings.description}}</p>
 						<div class="em-hm-fea-pro-price-rate">
 							<p>{{product.price | money}}</p>
-							<div class="em-hm-fea-pro-rating"></div>
+							<div class="em-hm-fea-pro-rating">
+                          {{ product.metafields.stamped.badge }}
+                          </div>
 						</div>
 					</div>
 					<div class="em-hm-pro-art-block-link">

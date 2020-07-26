@@ -2,7 +2,7 @@
   {% if section.settings.title != blank %}
     <div class="section-header text-center title-secright-link">
       <h3 class="em-hm-section-title">{{ section.settings.title | escape }}</h3>
-      <a href="#" class="bl-text-arw-link">All Latest Products</a>
+      <a href="#" class="bl-text-arw-link">All Products</a>
 
 
 
@@ -54,7 +54,7 @@
   </ul>
   
 <div class="hm-latest-pro-sec-mob-bot-link medium-up--hide">
-  <a href="{{ collection.url }}" class="bl-text-arw-link">All Latest Products</a>
+  <a href="{{ collection.url }}" class="bl-text-arw-link">All Products</a>
   </div>
  
   {% if section.settings.show_view_all %}
@@ -92,7 +92,7 @@
     "zh-CN": "特色产品系列",
     "zh-TW": "精選商品系列"
   },
-  "class": "index-section ProducCustomtGrid",
+  "class": "index-section ProducCustomtGrid about-products",
   "settings": [
     {
       "type": "text",
@@ -267,50 +267,6 @@
         "zh-TW": "顯示「檢視全部」按鈕"
       },
       "default": false
-    }
-  ],
-  "presets": [
-    {
-      "name": {
-        "da": "Udvalgt kollektion",
-        "de": "Vorgestellte Kategorie",
-        "en": "Featured collection",
-        "es": "Colección destacada",
-        "fi": "Esittelyssä oleva kokoelma",
-        "fr": "Collection en vedette",
-        "hi": "फ़ीचर्ड कलेक्शन",
-        "it": "Collezione in evidenza",
-        "ja": "特集コレクション",
-        "ko": "추천 컬렉션",
-        "nb": "Utvalgt samling",
-        "nl": "Uitgelichte collectie",
-        "pt-BR": "Coleção em destaque",
-        "pt-PT": "Coleção em destaque",
-        "sv": "Utvald kollektion",
-        "th": "คอลเลกชันแนะนำ",
-        "zh-CN": "特色产品系列",
-        "zh-TW": "精選商品系列"
-      },
-      "category": {
-        "da": "Kollektion",
-        "de": "Kategorie",
-        "en": "Collection",
-        "es": "Colección",
-        "fi": "Kokoelma",
-        "fr": "Collection",
-        "hi": "कलेक्शन",
-        "it": "Collezione",
-        "ja": "コレクション",
-        "ko": "컬렉션",
-        "nb": "Samling",
-        "nl": "Collectie",
-        "pt-BR": "Coleção",
-        "pt-PT": "Coleção",
-        "sv": "Produktserie",
-        "th": "คอลเลกชัน",
-        "zh-CN": "收藏",
-        "zh-TW": "商品系列"
-      }
     }
   ]
 }

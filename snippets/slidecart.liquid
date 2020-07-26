@@ -53,23 +53,25 @@
 
 
   </div>
-  {% endfor %}
-  
-  
-  
-  
-    
-    
-    
+  {% endfor %}  
 
 </div>
+    
 </div>
-	<a href="#" class="button btn-continue-shopping international-cart-element" data-empty-cart="" style="display: none;"><span>Continue Shopping</span></a>
+	
 
   {% endif %}
   
   
   <div data-full-cart="" class="subtotal-block international-cart-element" style="display: block;"> 
+    <div class="em-cart-like-opt-sec-main">
+      <div class="em-cart-like-opt-sec-title">
+        <span>You may also need one of these:</span>
+      </div>
+      <div data-app="eastsideco_cartOffers"></div>
+
+      <div data-app="eastsideco_cartOffers" data-position="product" class="em-cart-like-opt-sec"></div>
+    </div>
     {% if cart.item_count < 1 %}
     <a href="/collections/all" class="button btn-checkout continueshopping"><span>Continue Shopping</span></a>
     {% else %}
@@ -80,7 +82,24 @@
         <span class="cart-subtotal">{{ cart.total_price | money }}</span>
       </div>
     </div>
-    
+    <div class="em-sin-pro-reward-box">
+<p>You will Earn 8.5 Reward Points with this purchase <span class="em-sin-pro-reward-box-info"></span></p>
+<div class="em-sin-pro-reward-popup">
+<div class="em-sin-pro-reward-pop-inn">
+<div class="em-sin-pro-reward-pop-close"></div>
+<h3>Earn Reward Points with Every Purchase</h3>
+<div class="em-sin-pro-reward-pop-desc">
+<ul>
+<li>100 pts = $5</li>
+<li>Spend on future purchases and upgrades</li>
+<li>$100 min for points redeption </li>
+<li>Points expire after 6 months of inactivity</li>
+</ul>
+<img src="{{'picto-rewards_7cf38786-a088-48bf-83fe-a2eeaccd8863.png'| file_url}}" />
+</div>
+</div>
+</div>
+    </div>
       <a href="/checkout" class="button btn-checkout"><span>Proceed to checkout</span></a>
     {% endif %}
   </div>

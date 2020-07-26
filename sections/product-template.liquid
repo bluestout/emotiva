@@ -251,11 +251,11 @@
 
 <div class="em-sin-pro-chat-lined">
 	<div class="em-sin-pro-chat-lined-inn">
-		<div class="em-sin-pro-chat-lined-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/cust-img.jpg?v=1593510030" /></div>
-		<p>Need help? Get in touch and we’ll be glad to help</p>
+		<div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: "original"}}" /></div>
+		<p>{{section.settings.heading_desktop}}</p>
 		<ul>
 			<li><a href="#">Live chat</a></li>
-			<li><a class="em-clc-no">1-615-790-6754</a></li>
+			<li><a class="em-clc-no" href="tel:{{section.settings.number}}">{{section.settings.number}}</a></li>
 		</ul>
 	</div>
 </div>
@@ -705,7 +705,49 @@
         "zh-TW": "啟用影片循環功能"
       },
       "default": false
-    }
+    },
+ {
+        "type": "image_picker",
+        "id": "image_contact",
+        "label": {
+          "da": "Billede for favoritikon",
+          "de": "Favicon-Foto",
+          "en": "Image"
+        },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "64x64px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "heading_desktop",
+        "label": {
+          "da": "Overskrift",
+          "de": "Titel",
+          "en": "Heading"
+        },
+        "default": {
+          "da": "Logoliste",
+          "de": "Logo-Liste",
+          "en": "Heading 1"
+        }
+      },
+      {
+        "type": "text",
+        "id": "number",
+        "label": {
+          "da": "Overskrift",
+          "de": "Titel",
+          "en": "Phone Number"
+        },
+        "default": {
+          "da": "Logoliste",
+          "de": "Logo-Liste",
+          "en": "Phone Number"
+        }
+      }
   ]
 }
 {% endschema %}

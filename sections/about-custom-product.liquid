@@ -1,0 +1,178 @@
+<div class="em-hm-shop-srs-main">
+	<div class="page-width">
+		<div class="em-hm-shop-srs-inn">
+			<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
+			<div class="em-hm-shop-srs-row">
+              {% assign product_1= all_products[section.settings.featured_product_1]%}
+              {% assign product_2= all_products[section.settings.featured_product_2]%}
+              {% assign product_3= all_products[section.settings.featured_product_3]%}
+				<div class="em-hm-shop-srs-block">
+					<div class="em-hm-shop-srs-box">
+						<div class="em-hm-shop-srs-box-img">
+							<h3>{{product_1.title}}</h3>
+                          {%if section.settings.image_1 != blank %}
+							<img src="{{section.settings.image_1 | img_url: "original"}}" />
+                          {%else%}
+                          <img src="{{ product_1.featured_image.src | img_url: 'original' }}" />
+                          {%endif%}
+                      </div>
+						<p>{{section.settings.text_1}}</p>
+						<div class="em-hm-shop-srs-box-btn"><a href="{{product_1.url}}" class="em-bl-back-btn">Explore Products</a></div>
+					</div>
+				</div>
+				<div class="em-hm-shop-srs-block">
+					<div class="em-hm-shop-srs-box">
+						<div class="em-hm-shop-srs-box-img">
+							<h3>{{product_2.title}}</h3>
+                          {%if section.settings.image_2 != blank %}
+							<img src="{{section.settings.image_2 | img_url: "original"}}" />
+                          {%else%}
+                          <img src="{{ product_2.featured_image.src | img_url: 'original' }}" />
+                          {%endif%}
+                      </div>
+						<p>{{section.settings.text_2}}</p>
+						<div class="em-hm-shop-srs-box-btn"><a href="{{product_2.url}}" class="em-bl-back-btn">Explore Products</a></div>
+					</div>
+				</div>
+				<div class="em-hm-shop-srs-block">
+					<div class="em-hm-shop-srs-box">
+						<div class="em-hm-shop-srs-box-img">
+							<h3>{{product_3.title}}</h3>
+                          {%if section.settings.image_3 != blank %}
+							<img src="{{section.settings.image_3 | img_url: "original"}}" />
+                          {%else%}
+                          <img src="{{ product_3.featured_image.src | img_url: 'original' }}" />
+                          {%endif%}
+                      </div>
+						<p>{{section.settings.text_3}}</p>
+						<div class="em-hm-shop-srs-box-btn"><a href="{{product_3.url}}" class="em-bl-back-btn">Explore Products</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>    
+{% schema %}
+  {
+    "name": "Custom Html",
+"class": "CustomtHtml about-custom-product",
+    "settings": [
+{
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Feature Logo list"
+      }
+    },
+{
+      "id": "featured_product_1",
+      "type": "product",
+      "label": {
+        "da": "Product",
+        "de": "Product",
+        "en": "Product"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "text_1",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Description"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_1",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 1"
+          }
+        },
+{
+      "id": "featured_product_2",
+      "type": "product",
+      "label": {
+        "da": "Product",
+        "de": "Product",
+        "en": "Product"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "text_2",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Description"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_2",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 2"
+          }
+        },
+{
+      "id": "featured_product_3",
+      "type": "product",
+      "label": {
+        "da": "Product",
+        "de": "Product",
+        "en": "Product"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "text_3",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Blog Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Description"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image_3",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image 3"
+          }
+        }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

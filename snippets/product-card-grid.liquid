@@ -52,7 +52,8 @@
   <div class="CustomProType">Loudspeaker</div>
   <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>
   <div class="CustomProDesc">Bookshelf Loudspeaker</div>
-   <span class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span>
+   <div class="cust-review-price">
   {% include 'product-price-listing', product: product, show_vendor: show_vendor %}
-
-</div>
+<span class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span>
+  </div>
+     </div>

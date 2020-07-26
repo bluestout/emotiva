@@ -85,12 +85,13 @@
         "type": "hero",
         "settings": {
           "image": "shopify:\/\/shop_images\/home-banner.jpg",
+          "mob_image": "shopify:\/\/shop_images\/home-mob-banner-img.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "large",
           "text_size": "large",
           "title": "Cutting-edge audio products made by people like you",
-          "text": "<p>We create exceptionally designed, heigh-performance audio products at prices that more people could afford and enjoy.<\/p>",
+          "text": "We create exceptionally designed, high-performance audio products at prices that more people could afford and enjoy.",
           "button_label": "Explore product",
           "button_link": "#"
         }
@@ -148,7 +149,7 @@
             "type": "text",
             "settings": {
               "title": "Get In Touch",
-              "text": "<div class=\"footer-g-touch-sec\">\n\t<p><span>Call us<\/span><a>1-615-790-6754<\/a><\/p>\n\t<p><span>Live chat<\/span><a>Start chat<\/a><\/p>\n<\/div>"
+              "text": "<div class=\"footer-g-touch-sec\">\n\t<p><span>Call us<\/span><a>1-615-790-6754<\/a><\/p>\n\t<p class=\"small--hide\"><span>Live chat<\/span><a>Start chat<\/a><\/p>\n<p class=\"footer-g-touch-sec-mob-link medium-up--hide\"><span>Live chat<\/span><a href=\"#\">Contact Us<\/a><\/p>\n<\/div>"
             }
           }
         },
@@ -213,14 +214,18 @@
           "show_share_buttons": false,
           "media_size": "medium",
           "enable_image_zoom": false,
-          "enable_video_looping": false
+          "enable_video_looping": false,
+          "image_contact": "shopify:\/\/shop_images\/cust-img.jpg",
+          "heading_desktop": "Need help? Get in touch and we’ll be glad to help",
+          "number": "1-615-790-6754"
         }
       },
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "heading": "You may also like",
+          "heading": "Other options",
+          "subheading": "You might like these",
           "show_vendor": false
         }
       },
@@ -816,6 +821,100 @@
           "main_linklist": "resources",
           "content": "Product Manuals"
         }
+      },
+      "1595559224976": {
+        "type": "review-widget-slider",
+        "disabled": true,
+        "settings": {}
+      },
+      "pro-article": {
+        "type": "pro-article",
+        "settings": {
+          "title": "Processor Articles",
+          "blog_1": "Press Reviews",
+          "article_1": "test\/test-how-to-choose-the-best-audio-processor",
+          "author_1": "shopify:\/\/shop_images\/cust-img.jpg",
+          "blog_2": "User Reviews",
+          "article_2": "test\/test-how-to-choose-the-best-audio-processor",
+          "author_2": "shopify:\/\/shop_images\/cust-img.jpg",
+          "blog_3": "News",
+          "article_3": "test\/test-how-to-choose-the-best-audio-processor",
+          "author_3": "shopify:\/\/shop_images\/cust-img.jpg",
+          "link": ""
+        }
+      },
+      "about-product": {
+        "type": "about-product",
+        "settings": {
+          "title": "Featured Products",
+          "collection": "all",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "about-custom-product": {
+        "type": "about-custom-product",
+        "settings": {
+          "title": "Shop by Series",
+          "featured_product_1": "cd-100",
+          "text_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "image_1": "shopify:\/\/shop_images\/airmotive-series-img.png",
+          "featured_product_2": "cd-100",
+          "text_2": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "image_2": "shopify:\/\/shop_images\/bas-x-series.png",
+          "featured_product_3": "cd-100",
+          "text_3": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
+          "image_3": ""
+        }
+      },
+      "page-series": {
+        "type": "page-series",
+        "blocks": {
+          "1595664773803": {
+            "type": "content",
+            "settings": {
+              "product": "xpa-dr2",
+              "image": "",
+              "short": "Differential Reference™ Two-Channel Power Amplifier",
+              "long": "The XPA-DR2 is a very high-powered, fully differential, two-channel audiophile power amplifier. The XPA-DR2 delivers 550 watts RMS into 8 Ohms, and 800 watts RMS into 4 Ohms, per channel, and is the ideal choice to power a no-holds-barred stereo music system, or to power the critical front left and right channels of an absolutely awesome surround sound system."
+            }
+          },
+          "1595664832959": {
+            "type": "content",
+            "settings": {
+              "product": "xpa-11-gen3",
+              "image": "",
+              "short": "11 Channel Audiophile Home Theater Power Amplifier",
+              "long": "The XPA-DR2 is a very high-powered, fully differential, two-channel audiophile power amplifier. The XPA-DR2 delivers 550 watts RMS into 8 Ohms, and 800 watts RMS into 4 Ohms, per channel, and is the ideal choice to power a no-holds-barred stereo music system, or to power the critical front left and right channels of an absolutely awesome surround sound system."
+            }
+          },
+          "1595664851930": {
+            "type": "content",
+            "settings": {
+              "product": "xpa-dr2",
+              "image": "",
+              "short": "11 Channel Audiophile Home Theater Power Amplifier",
+              "long": "The XPA-DR2 is a very high-powered, fully differential, two-channel audiophile power amplifier. The XPA-DR2 delivers 550 watts RMS into 8 Ohms, and 800 watts RMS into 4 Ohms, per channel, and is the ideal choice to power a no-holds-barred stereo music system, or to power the critical front left and right channels of an absolutely awesome surround sound system."
+            }
+          }
+        },
+        "block_order": [
+          "1595664773803",
+          "1595664832959",
+          "1595664851930"
+        ],
+        "settings": {
+          "title": "The X-series Range"
+        }
+      },
+      "resources-4": {
+        "type": "resources-4",
+        "settings": {
+          "title": "Resources",
+          "main_linklist": "resources"
+        }
       }
     },
     "content_for_index": [
@@ -826,6 +925,7 @@
       "1593588364429",
       "1593671315988",
       "1593596810632",
+      "1595559224976",
       "1594894913573",
       "1594895865446"
     ]
