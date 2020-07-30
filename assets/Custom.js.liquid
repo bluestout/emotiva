@@ -18,10 +18,10 @@ $(document).ready(function(){
   $(".contact-pg-info-block h5").css("min-height",getnewHHeight);
   console.log(getnewvalue);
   if ($(window).width() < 749) {
-$('.abt-us-award-main ul').slick({
+$('.em-about-award-mob-slider').slick({
   infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2
+  slidesToShow: 1,
+  slidesToScroll: 1
 });
   }
   $("#myBtn").click(function(){
@@ -160,7 +160,7 @@ $('.abt-us-award-main ul').slick({
       collapsible: true,heightStyle: "content"
     });
   $(".em-mob-has-dropdown>a").click(function(){
-  $(this).parents("li").toggleClass("em-mob-has-drop-open");
+  $(this).parent("li").toggleClass("em-mob-has-drop-open");
     $(this).next("ul").toggleClass("em-mob-drop-open");
   }) 
    $('body').on('click', '.em-sin-pro-reward-pop-close', function() {

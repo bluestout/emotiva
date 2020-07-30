@@ -1,0 +1,100 @@
+<div class="em-inner-sidebar-left">
+   {%include "sidebar-resources" %}
+       
+		</div>
+		<div class="em-inner-sidebar-cont-right">
+			<div class="em-inner-sidebar-cont-inn">
+				<div class="em-inner-sidebar-cont-block">
+					<h2 class="em-inner-sidebar-cont-title">{{section.settings.title}}</h2>
+					<div class="em-firmware-link-list">
+                      <ul>
+                         {% for block in section.blocks %}
+                          <li>
+                              <div class="em-firmware-link-block">
+                                  <a href="{{block.settings.file}}">{{block.settings.title}}</a>
+                                  <p>{{block.settings.date}}</p>
+                              </div>
+                          </li>
+                        {%endfor%}
+                          
+                      </ul>
+                  </div>
+				</div>
+				<div class="em-nt-sure-lined-box">
+				  <div class="em-nt-sure-lined-inn">
+					  <h3 class="em-nt-sure-lined-title-desk">Not sure what kind of product is for you?</h3>
+                      <h3 class="em-nt-sure-lined-title-mob">Still need help?</h3>
+					  <p>Start a chat or call us. We'll be glad to help!</p>
+					  <div class="em-nt-sure-lined-btn">
+						  <a href="#" class="em-bl-back-btn" onclick="Smooch.open();">Live chat</a>
+						  <a class="em-nt-sure-contact-link">1-615-790-6754</a>
+					  </div>
+					  <div class="em-nt-sure-lined-box-img">
+                        <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/not-sure-box-img.png?v=1592970646" />
+                      </div>
+				  </div>
+				</div>			  			  
+			</div>
+		</div>
+{% schema %}
+  {
+    "name": "Resources 2",
+    "settings": [
+{
+        "type": "text",
+        "id": "title",
+        "label": "Sidebar Heading",
+        "default": "Content"
+      },
+       {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu"
+      },
+      "default": "main-menu"
+    },
+{
+        "type": "text",
+        "id": "content",
+        "label": "Content Heading",
+        "default": "Firmware Downloads"
+      }
+
+],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+          {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Title"
+      },
+{
+        "type": "text",
+        "id": "date",
+        "label": "Date",
+        "default": "Date"
+      },
+{
+        "type": "text",
+        "id": "file",
+        "label": "File Link",
+        "default": "File Link"
+      }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

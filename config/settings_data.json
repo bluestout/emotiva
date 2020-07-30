@@ -906,14 +906,174 @@
           "1595664851930"
         ],
         "settings": {
-          "title": "The X-series Range"
+          "title": "The X-series Range",
+          "link": ""
         }
       },
       "resources-4": {
         "type": "resources-4",
+        "blocks": {
+          "1595836285011": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          },
+          "1595836305242": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          },
+          "1595836313031": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          },
+          "1595836320588": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          },
+          "1595836325834": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          },
+          "1595836331875": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          },
+          "1595836337968": {
+            "type": "content",
+            "settings": {
+              "Image": "shopify:\/\/shop_images\/ezgif-6-195f1f4fd1ab.jpg",
+              "title": "The Emotiva XPS-1 Phono Preamplifier Tutorials",
+              "time": "10:33",
+              "video": "https:\/\/www.youtube.com\/embed\/j8CklKwQW8I"
+            }
+          }
+        },
+        "block_order": [
+          "1595836285011",
+          "1595836305242",
+          "1595836313031",
+          "1595836320588",
+          "1595836325834",
+          "1595836331875",
+          "1595836337968"
+        ],
         "settings": {
           "title": "Resources",
-          "main_linklist": "resources"
+          "main_linklist": "resources",
+          "content": "Learn how to set up and use Emotiva products"
+        }
+      },
+      "resources2": {
+        "type": "resources2",
+        "blocks": {
+          "1595834384094": {
+            "type": "content",
+            "settings": {
+              "title": "BasX MC-700",
+              "date": "January 6, 2020",
+              "file": "#"
+            }
+          },
+          "1595834402226": {
+            "type": "content",
+            "settings": {
+              "title": "Ego DACs",
+              "date": "December 13, 2019",
+              "file": "#"
+            }
+          },
+          "1595834416983": {
+            "type": "content",
+            "settings": {
+              "title": "Stealth DC-1",
+              "date": "December 13, 2019",
+              "file": "#"
+            }
+          },
+          "1595834433145": {
+            "type": "content",
+            "settings": {
+              "title": "UMC-1",
+              "date": "December 10, 2019",
+              "file": "#"
+            }
+          },
+          "1595834456603": {
+            "type": "content",
+            "settings": {
+              "title": "UMC-200",
+              "date": "October 1, 2019",
+              "file": "#"
+            }
+          },
+          "1595834479274": {
+            "type": "content",
+            "settings": {
+              "title": "XDA-2",
+              "date": "March 12, 2019",
+              "file": "File Link"
+            }
+          },
+          "1595834497739": {
+            "type": "content",
+            "settings": {
+              "title": "RMC-1",
+              "date": "January 5, 2019",
+              "file": "#"
+            }
+          },
+          "1595834515749": {
+            "type": "content",
+            "settings": {
+              "title": "XMC-1",
+              "date": "January 5, 2019",
+              "file": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1595834384094",
+          "1595834402226",
+          "1595834416983",
+          "1595834433145",
+          "1595834456603",
+          "1595834479274",
+          "1595834497739",
+          "1595834515749"
+        ],
+        "settings": {
+          "title": "Resources",
+          "main_linklist": "resources",
+          "content": "Firmware Downloads"
         }
       }
     },

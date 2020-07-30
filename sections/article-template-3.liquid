@@ -21,22 +21,27 @@
   {% endif %}
 </div>
 {%endcomment %}
+{%assign blogarticletitle = article.title%}
 <div class="page-width">
-  <div class="em-read-single-vid-top">
-<div class="em-read-single-vid-inn page-width"><img src="{{article.image | img_url: "master"}}" /></div>
-<div class="em-read-single-vid-det">
+ <div class="em-read-sin-top-sec">
+<div class="em-read-sin-top-left"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/sin-art-img-01.jpg?v=1593083708" /></div>
+<div class="em-read-sin-top-right">
 <div class="em-read-sin-top-cont">
-  {%assign blogarticletitle = article.title%}
 <h4>{{ article.published_at | time_tag: format: 'date' }} {{ 'blogs.article.by_author' | t: author: article.author }}</h4>
 <h3>{{ article.title }}</h3>
-<p>{{article.content}}</p>
-<div class="em-read-single-vid-tags">
-<ul class="em-read-single-gr-lined-btns">
-  {%for tag in article.tags%}
+<p> {{ article.excerpt }}</p>
+</div>
+</div>
+</div>
+<div class="em-read-sin-bot-sec">
+<div class="em-read-sin-bot-sec-inn">
+{{article.content}}
+<div class="em-read-sin-bot-btns">
+<ul>
+    {%for tag in article.tags%}
 <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{tag}}</a></li>
   {%endfor%}
 </ul>
-</div>
 </div>
 </div>
 </div>

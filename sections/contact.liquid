@@ -1,0 +1,61 @@
+{% schema %}
+  {
+    "name": "Contact",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+          {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Title"
+      },
+{
+        "type": "textarea",
+        "id": "description",
+        "label": "Heading",
+        "default": "Content"
+      },
+{
+        "type": "textarea",
+        "id": "short_desc",
+        "label": "Heading",
+        "default": "Short Description"
+      },
+{
+      "type": "image_picker",
+      "id": "icon",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "icon image"
+      }
+    },
+{
+      "type": "url",
+      "id": "link_1",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Button Link"
+      }
+    }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

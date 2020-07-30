@@ -83,15 +83,15 @@
         {%else%}
         <div class="em-nt-sure-lined-box em-nt-sure-lined-box-colc-top">
           <div class="em-nt-sure-lined-inn">
-              <h3 class="em-nt-sure-lined-title-desk">Not sure what kind of product is for you?</h3>
-              <h3 class="em-nt-sure-lined-title-mob">Still need help?</h3>
-              <p>Start a chat or call us. We'll be glad to help!</p>
+              <h3 class="em-nt-sure-lined-title-desk">{{settings.heading_desktop}}</h3>
+              <h3 class="em-nt-sure-lined-title-mob">{{settings.heading_mobile}}</h3>
+              <p>{{settings.subheading}}</p>
               <div class="em-nt-sure-lined-btn">
-                  <a href="#" class="em-bl-back-btn">Live chat</a>
-                  <a href="tel:1-615-790-6754" class="em-nt-sure-contact-link">1-615-790-6754</a>
+                  <a href="#" onclick="Smooch.open();" class="em-bl-back-btn">Live chat</a>
+                  <a href="tel:{{settings.number}}" class="em-nt-sure-contact-link">{{settings.number}}</a>
               </div>
               <div class="em-nt-sure-lined-box-img">
-                <img src="{{'not-sure-box-img.png'| file_url}}">
+                <img src="{{settings.image_contact | img_url: "original"}}">
               </div>
           </div>
         </div>  
@@ -202,16 +202,16 @@
     </div>	
         {%if section.settings.chat_box%}
         <div class="em-nt-sure-lined-box em-nt-sure-lined-box-colc-bot">
-          <div class="em-nt-sure-lined-inn">
-              <h3 class="em-nt-sure-lined-title-desk">Not sure what kind of product is for you?</h3>
-              <h3 class="em-nt-sure-lined-title-mob">Still need help?</h3>
-              <p>Start a chat or call us. We'll be glad to help!</p>
+           <div class="em-nt-sure-lined-inn">
+              <h3 class="em-nt-sure-lined-title-desk">{{settings.heading_desktop}}</h3>
+              <h3 class="em-nt-sure-lined-title-mob">{{settings.heading_mobile}}</h3>
+              <p>{{settings.subheading}}</p>
               <div class="em-nt-sure-lined-btn">
-                  <a href="#" class="em-bl-back-btn">Live chat</a>
-                  <a href="tel:1-615-790-6754" class="em-nt-sure-contact-link">1-615-790-6754</a>
+                  <a href="#" onclick="Smooch.open();" class="em-bl-back-btn">Live chat</a>
+                  <a href="tel:{{settings.number}}" class="em-nt-sure-contact-link">{{settings.number}}</a>
               </div>
               <div class="em-nt-sure-lined-box-img">
-                 <img src="{{'not-sure-box-img.png'| file_url}}">
+                <img src="{{settings.image_contact | img_url: "original"}}">
               </div>
           </div>
         </div>

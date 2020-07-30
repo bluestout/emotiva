@@ -4,79 +4,22 @@
 			<div class="em-inner-sidebar-cont-right">
 			<div class="em-inner-sidebar-cont-inn">
 				<div class="em-inner-sidebar-cont-block">
-					<h2 class="em-inner-sidebar-cont-title">Learn how to set up and use Emotiva products</h2>
+					<h2 class="em-inner-sidebar-cont-title">{{section.settings.content}}</h2>
 					<div class="em-res-video-link-list-sec">
                       <ul class="em-res-video-link-list">
+                            {% for block in section.blocks %}
                           <li>
                               <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
+                                  <div class="em-res-video-block-img"><img src="{{'video-1-img.jpg' | file_url}}" /></div>
                                   <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
+                                      <h3>{{block.settings.title}}</h3>
+                                      <p>{{block.settings.time}}</p>
+                                      <div class="em-res-video-block-vid-play" data-link="{{block.settings.video}}"><img src="{{'icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png'| file_url}}" /></div>
                                   </div>
                               </div>
                           </li>
-                        <li>
-                              <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
-                                  <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
-                                  </div>
-                              </div>
-                          </li>
-                        <li>
-                              <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
-                                  <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
-                                  </div>
-                              </div>
-                          </li>
-                        <li>
-                              <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
-                                  <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
-                                  </div>
-                              </div>
-                          </li>
-                        <li>
-                              <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
-                                  <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
-                                  </div>
-                              </div>
-                          </li>
-                        <li>
-                              <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
-                                  <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
-                                  </div>
-                              </div>
-                          </li>
-                        <li>
-                              <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/video-1-img.jpg?v=1593066650" /></div>
-                                  <div class="em-res-video-block-cont">
-                                      <h3>The Emotiva XPS-1 Phono Preamplifier Tutorials</h3>
-                                      <p>10:33</p>
-                                      <div class="em-res-video-block-vid-play"><img src="https://cdn.shopify.com/s/files/1/2572/6926/files/icon-play_aa21a522-fc2d-45fa-9d49-1505e8176618.png?v=1593066667" /></div>
-                                  </div>
-                              </div>
-                          </li>
+                        {%endfor%}
+                        
                       </ul>
                   </div>
 				</div>			  			  
@@ -102,8 +45,41 @@
         "en": "Menu"
       },
       "default": "main-menu"
-    }
-]
+    },
+{
+        "type": "text",
+        "id": "content",
+        "label": "Content Heading",
+        "default": "Product"
+      }
+],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+
+          {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "The Emotiva XPS-1 Phono Preamplifier Tutorials"
+      },
+{
+        "type": "text",
+        "id": "time",
+        "label": "Time",
+        "default": "10:33"
+      },
+{
+        "type": "text",
+        "id": "video",
+        "label": "Video Link",
+        "default": "https://www.youtube.com/embed/j8CklKwQW8I"
+      }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
