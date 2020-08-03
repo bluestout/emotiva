@@ -1,67 +1,12 @@
-<div class="em-top-head-sec DesktopHeader">
-  
-  {% unless template == "page.landing"%}
-	<div class="em-ext-top-bar"><p>Free Shipping in the USA and CA over $49</p></div>
-  {%endunless%}
-	<div class="em-head-top-bar">
-		<div class="em-container">
-			<div class="em-head-top-bar-row">
-				<div class="em-head-top-bar-left">
-					<div class="em-head-top-bar-logo">
-                      <a href="/">
+<div class="em-top-head-sec-sticky">
+	<div class="em-top-head-sec-sticky-inn">
+		<div class="em-top-head-sec-sticky-logo">
+			<a href="/">
                          <img src="{{section.settings.logo | img_url: "original"}}" />
                       </a>
-                        </div><p>Sound as it should be</p>
-				</div>
-				<div class="em-head-top-bar-middle">
-					<form class="search-form search-bar__form" action="{{ routes.search_url }}" method="get" role="search">
-        <div class="search-form__input-wrapper">
-          <input
-            type="text"
-            name="q"
-            placeholder="{{ 'general.search.placeholder' | t }}"
-            role="combobox"
-            aria-autocomplete="list"
-            aria-owns="predictive-search-results"
-            aria-expanded="false"
-            aria-label="{{ 'general.search.placeholder' | t }}"
-            aria-haspopup="listbox"
-            class="search-form__input search-bar__input"
-            data-predictive-search-drawer-input
-          />
-          <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
-          <div class="predictive-search-wrapper predictive-search-wrapper--drawer" data-predictive-search-mount="drawer"></div>
-        </div>
-
-        <button class="search-bar__submit search-form__submit"
-          type="submit"
-          data-search-form-submit>
-          {% include 'icon-search' %}
-          <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
-        </button>
-      </form>
-				</div>
-				<div class="em-head-top-bar-right">
-					<ul class="em-head-top-bar-rt-list">
-						<li><a onclick="Smooch.open();" herf="#">Live Chat</a></li>
-                      <li><a href="tel:{{settings.number}}">{{settings.number}}</a></li>
-						<li><a href="https://emotiva.com/pages/contact-1">Contact</a></li>
-					</ul>
-				</div>
-			</div>
 		</div>
-	</div>
-	<div class="em-nav-top-bar">
-		<div class="em-container">
-			<div class="em-nav-top-bar-row">
-                <div class="em-nav-top-bar-right">
-					<ul class="em-nav-top-bar-rt-list">
-						<li><a href="/account/login">Sign in</a></li>
-						<li><a href="/cart" class="em-nav-top-cart">Cart</a></li>
-					</ul>
-				</div>
-				<div class="em-nav-top-bar-left">
-					<ul class="em-nav-top-bar-lt-list">	
+		<div class="em-top-head-sec-sticky-nav">
+          <ul class="em-nav-top-bar-lt-list">	
                   {% for link in linklists[section.settings.main_linklist].links %}
                       {% if link.links != blank %}
                       <li class="em-nav-listing {%if forloop.index==4%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==6%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7%}ReadCustom em-mega-menu-single{%endif%}"><a href="{{link.url}}">{{link.title}}</a>
@@ -92,10 +37,8 @@
                         </ul>
 	</div>
                             {%if forloop.index==4%}
-                            {% assign Gethandle = link.object.url | split: "/" | last %}
-				
-	<div class="em-mega-menu-dd-main-right">
-      <img src="{{collections[Gethandle].image | img_url: '570x226'}}" />
+	<div class="em-mega-menu-dd-main-right" style="display:none">
+		<img src="{{'imgpsh_fullsize_anim.jpg' | asset_url }}" />
 	</div>
                             {%endif%}
 </div>
@@ -129,9 +72,17 @@
                       {%endif%}
                   {%endfor%}
                   </ul>
-                 
-				</div>
-			</div>
+		</div>
+		<div class="em-top-head-sec-sticky-right">
+			<ul class="em-nav-top-bar-rt-list">
+              
+              <li> <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
+            {% include 'icon-search' %}
+            <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+          </button></li>
+						<li><a href="/account/login">Sign in</a></li>
+						<li><a href="/cart" class="em-nav-top-cart">Cart</a></li>
+					</ul>
 		</div>
 	</div>
 </div>

@@ -1,4 +1,16 @@
 $(document).ready(function(){ 
+  var aTop = $('.DesktopHeader').height();
+  aTop = aTop+60;
+  $(window).scroll(function(){
+    
+    if($(this).scrollTop()>=aTop){
+        $(".em-top-head-sec-sticky").addClass("em-top-head-sec-sticky-open");
+    }
+    else{
+     $(".em-top-head-sec-sticky").removeClass("em-top-head-sec-sticky-open");
+    }
+  });
+  
   var getPHeight =0;
   var getnewvalue=0;
    var getHHeight =0;
