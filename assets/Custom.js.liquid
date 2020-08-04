@@ -178,13 +178,17 @@ $('.em-about-award-mob-slider').slick({
    $('body').on('click', '.em-sin-pro-reward-pop-close', function() {
     $(".em-sin-pro-reward-popup").removeClass("RewardPop");
   })
-  $(".product-form .em-sin-pro-reward-box").click(function(){
+  $(".product-form .em-sin-pro-reward-box p").click(function(){
   $(".product-form .em-sin-pro-reward-popup").toggleClass("RewardPop");
   })
-  $("#slidingcartmain .em-sin-pro-reward-box").click(function(){
+  
+  $('body').on('click', '#slidingcartmain .em-sin-pro-reward-box p', function() {
   $("#slidingcartmain .em-sin-pro-reward-popup").toggleClass("RewardPop");
   })
-   $(".cart__footer .em-sin-pro-reward-box").click(function(){
+   $('body').on('click', '#slidingcartmain .em-sin-pro-reward-pop-close', function() {
+    $("#slidingcartmain .em-sin-pro-reward-popup").removeClass("RewardPop");
+  })
+   $(".cart__footer .em-sin-pro-reward-box p").click(function(){
  $(".cart__footer  .em-sin-pro-reward-popup").toggleClass("RewardPop");
   })
   $(".moreDesc").on('click',function() {

@@ -286,7 +286,7 @@
 <li>$100 min for points redeption </li>
 <li>Points expire after 6 months of inactivity</li>
 </ul>
-<div class="em-sin-pro-reward-pop-desc-lm-link"><a href="#">Learn more</a></div>
+<div class="em-sin-pro-reward-pop-desc-lm-link"><a href="{{section.settings.link_reward}}">Learn more</a></div>
   <div class="em-reward-cst-img"><?xml version="1.0" encoding="UTF-8"?>
     <svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>B3F9D04C-12D1-42F5-8EB7-69A5B402DDD6@1x</title>
@@ -330,7 +330,7 @@
             <div class="em-cartspecial-ins-sec">
                 <div class="em-cartspecial-ins-box">
                     <label><input type="checkbox" class="CheckNote" /> Include special instructions</label>
-                    <a href="#">Military Discount</a>
+                    <a href="{{section.settings.mil_link}}">Military Discount</a>
                 </div>
                 <div class="em-cartspecial-ins-textarea" style="display:none;">
                      {%- if section.settings.cart_notes_enable -%}
@@ -471,6 +471,34 @@
         "zh-TW": "啟用購物車備註"
       },
       "default": false
+    },
+{
+      "type": "url",
+      "id": "link_reward",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Reward Link"
+      }
+    },
+{
+      "type": "url",
+      "id": "mil_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Military Discount Link"
+      }
     }
   ]
 }

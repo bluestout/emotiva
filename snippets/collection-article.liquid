@@ -2,23 +2,23 @@
   <div class="page-width">
 	<div class="colc-article-sec-head">
 		<h3 class="em-hm-section-title">Processor Articles</h3>
-		<a href="#" class="bl-text-arw-link">All articles</a>
+		<a href="{{section.settings.link}}" class="bl-text-arw-link">All articles</a>
 	</div>
 	<div class="colc-article-sec-row">
 		<div class="colc-article-sec-col">
 			<div class="colc-article-sec-block">
-				<a href="#"></a>
+				<a href="{{articles[section.settings.article_1].url}}"></a>
 				<div class="colc-article-sec-img">
-					<img src="{{'articles-1.jpg'| file_url}}" />
-					<span>Press Reviews</span>
+					<img src="{{articles[section.settings.article_1].image |img_url: "original"}}" />
+					<span>{{section.settings.blog_1}}</span>
 				</div>
 				<div class="colc-article-sec-cont">
-					<div class="colc-article-sec-cont-cat">Press Reviews</div>
-					<h3>How to choose the best audio processor?</h3>
-					<p>"Overall, the experience with the T1+ was a satisfying one and they can make for an excellent sub $750 pair of Audiophile towers."</p>
+					<div class="colc-article-sec-cont-cat">{{section.settings.blog_1}}</div>
+					<h3>{{articles[section.settings.article_1].title}}</h3>
+					<p>{{articles[section.settings.article_1].excerpt }}</p>
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
-							<p><img src="{{'auth-img.png'| file_url}}"> January 6, 2020<br>by John</p>
+							<p><img src="{{section.settings.author_1| img_url: 'original'}}">{{articles[section.settings.article_1].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_1].author}}</p>
 							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 						</div>
 					</div>
@@ -27,18 +27,18 @@
 		</div>
 		<div class="colc-article-sec-col">
 			<div class="colc-article-sec-block">
-				<a href="#"></a>
+				<a href="{{articles[section.settings.article_2].url}}"></a>
 				<div class="colc-article-sec-img">
-		        <img src="{{'articles-2.jpg'| file_url}}" />
-					<span>User Reviews</span>
+		        <img src="{{articles[section.settings.article_2].image |img_url: "original"}}" />
+					<span>{{section.settings.blog_2}}</span>
 				</div>
 				<div class="colc-article-sec-cont">
-					<div class="colc-article-sec-cont-cat">User Reviews</div>
-					<h3>XMC-1 Reviewed by The Audio Squad Blog</h3>
-					<p>"T1+ was a satisfying one and they can make for an excellent sub $750 pair of Audiophile towers. These would be an excellent pair of speakers for someone who is already an Audiophile."</p>
+					<div class="colc-article-sec-cont-cat">{{section.settings.blog_2}}</div>
+					<h3>{{articles[section.settings.article_2].title}}</h3>
+					<p>{{articles[section.settings.article_2].excerpt }}</p>
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
-							<p><img src="{{'auth-img.png'| file_url}}"> January 6, 2020<br>by John</p>
+							<p><img src="{{section.settings.author_2| img_url: 'original'}}"> {{articles[section.settings.article_2].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_2].author}}</p>
 							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 						</div>
 					</div>
@@ -47,18 +47,18 @@
 		</div>
 		<div class="colc-article-sec-col">
 			<div class="colc-article-sec-block">
-				<a href="#"></a>
+				<a href="{{articles[section.settings.article_3].url}}"></a>
 				<div class="colc-article-sec-img">
-					<img src="{{'articles-3.jpg'| file_url}}" />
-					<span>News</span>
+					<img src="{{articles[section.settings.article_3].image |img_url: "original"}}" />
+					<span>{{section.settings.blog_3}}</span>
 				</div>
 				<div class="colc-article-sec-cont">
-					<div class="colc-article-sec-cont-cat">News</div>
-					<h3>Processor 101 Class from our Open House 2019!</h3>
-					<p>"Overall, the experience with the T1+ was a satisfying one and they can make for an excellent sub $750 pair of Audiophile towers."</p>
+					<div class="colc-article-sec-cont-cat">{{section.settings.blog_3}}</div>
+					<h3>{{articles[section.settings.article_3].title}}</h3>
+					<p>{{articles[section.settings.article_3].excerpt }}</p>
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
-							<p><img src="{{'auth-img.png'| file_url}}"> January 6, 2020<br>by John</p>
+							<p><img src="{{section.settings.author_3| img_url: 'original'}}"> {{articles[section.settings.article_3].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_3].author}}</p>
 							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 						</div>
 					</div>
@@ -67,7 +67,7 @@
 		</div>
 	</div>
 	<div class="colc-article-sec-bot">
-		<a href="#" class="bl-text-arw-link">All articles</a>
+		<a href="{{section.settings.link}}" class="bl-text-arw-link">All articles</a>
 	</div>
 </div>
 </div>
