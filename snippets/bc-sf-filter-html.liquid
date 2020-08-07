@@ -2,7 +2,7 @@
 {%- case layout -%}
 
 {%- when 'productGridItemHtml' -%}
-<div class="grid__item [[itemGridWidthClass]]"> 
+<li class="grid__item [[itemGridWidthClass]]"> 
   <script class="bc-sf-filter-product-script" data-id="bc-product-json-[[itemId]]" type="application/json">[[itemJson]]</script> 
   <div class="grid-view-item [[itemSoldOutClass]] product-card"> 
     <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="[[itemUrl]]"> 
@@ -10,11 +10,16 @@
     </a> 
     [[imageStyle]] 
     [[itemImages]] 
-    <div class="h4 grid-view-item__title">[[itemTitle]]</div> 
-    [[itemPrice]] 
-    <span class="stamped-product-reviews-badge" data-id="[[itemId]]"></span>
+    <div class="coll-description">
+      <div class="em-colec-title-price-blk">
+        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">[[itemTitle]]</div> 
+        <div class="em-colec-title-price-box">[[itemPrice]]</div>
+      </div>
+      <div class="CustomProDesc">[[itemMetafield]]</div>
+      <span class="stamped-product-reviews-badge" data-id="[[itemId]]"></span>
+    </div>
   </div> 
-</div>
+</li>
 
 {%- when 'productListItemHtml' -%}
 <li href="[[itemUrl]]" class="list-view-item"> 

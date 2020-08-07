@@ -1,13 +1,4 @@
-<div class="em-articl-sub-nav-sec">
-  <div class="em-articl-sub-nav-list">
-    <ul>
-          {%for tag in article.tags%}
-      <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{tag}}</a></li>
-      {%endfor%}
-    </ul>
-  </div>
-</div>
-{%comment %}
+{%comment %}  
 <div class="section-header text-center">
   <h1 class="article__title" id="title-0">{{ article.title }}</h1>
   {% if section.settings.blog_show_author %}
@@ -21,15 +12,16 @@
   {% endif %}
 </div>
 {%endcomment %}
+{% assign articleDescription = article.content | split:"<!-- split -->"%}
 <div class="page-width">
   <div class="em-read-single-vid-top">
-<div class="em-read-single-vid-inn page-width"><img src="{{article.image | img_url: "master"}}" /></div>
+<div class="em-read-single-vid-inn page-width">{{ articleDescription[0] }}</div>
 <div class="em-read-single-vid-det">
 <div class="em-read-sin-top-cont">
   {%assign blogarticletitle = article.title%}
 <h4>{{ article.published_at | time_tag: format: 'date' }} {{ 'blogs.article.by_author' | t: author: article.author }}</h4>
 <h3>{{ article.title }}</h3>
-<p>{{article.content}}</p>
+<p>{{ articleDescription[1] }}</p>
 <div class="em-read-single-vid-tags">
 <ul class="em-read-single-gr-lined-btns">
   {%for tag in article.tags%}

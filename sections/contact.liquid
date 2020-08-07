@@ -1,7 +1,100 @@
+<div class="contact-pg-main-sec">
+		<h3 class="inr-page-main-title">{{section.settings.maintitle}}</h3>
+		<p class="inr-page-sub-title">{{section.settings.subtitle}}</p>
+		<div class="gray-back-block-row ">
+          {% for block in section.blocks %}
+			<div class="gray-back-block-box {%if forloop.index == 3%}medium-up--hide{%endif%}">
+				<div class="contact-pg-info-block">
+					<div class="contact-pg-info-img"><img src="{{block.settings.icon | img_url: "original" }}" /></div>
+					<h3>{{block.settings.title}}</h3>
+					<p>{{block.settings.description}}</p> 
+					<h5>{{block.settings.short_desc}}</h5>
+					<div class="contact-pg-info-btn"><a href="{{block.settings.link_1}}" class="em-bl-back-btn">Start live chat</a></div>
+				</div>
+			</div>
+          {%endfor%}
+			
+          	
+		</div>
+	</div>
+	<div class="contact-layered-cont-sec" style="background-image: url('{{section.settings.banner_desk | img_url: "original"}}');">
+      <div class="contact-layered-cont-sec-mob" style="background-image: url('{{section.settings.banner_mobile | img_url: "original"}}');">
+		<div class="contact-layered-cont-upr">
+          <h3>{{section.settings.banner_title}}</h3>
+			<p>{{section.settings.banner_subtitle}}</p>
+			<div class="contact-layered-cont-btn"><a href="{{section.settings.banner_link}}" class="em-bl-back-btn">Go to Emotiva Lounge</a></div>
+		</div>
+	</div>
+  </div>
 {% schema %}
   {
     "name": "Contact",
-    "settings": [],
+    "settings": [
+ {
+        "type": "text",
+        "id": "maintitle",
+        "label": "Heading",
+        "default": "Title"
+      },
+ {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Heading",
+        "default": "Sub Title"
+      },
+{
+        "type": "header",
+        "content": {
+          "da": "Tekst",
+          "de": "Text",
+          "en": "Banner Block"
+        }
+      },
+{
+        "type": "text",
+        "id": "banner_title",
+        "label": "Heading",
+        "default": "Banner Title"
+      },
+ {
+        "type": "text",
+        "id": "banner_subtitle",
+        "label": "Heading",
+        "default": "Banner Sub Title"
+      },
+{
+      "type": "image_picker",
+      "id": "banner_desk",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Banner for Desktop"
+      }
+    },
+{
+      "type": "image_picker",
+      "id": "banner_mobile",
+      "label": {
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Banner for Mobile"
+      }
+    },
+{
+      "type": "url",
+      "id": "banner_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Button Link"
+      }
+    }
+],
     "blocks": [
       {
         "type": "content",

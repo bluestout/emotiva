@@ -79,11 +79,11 @@ BCSfFilter.prototype.buildProductGridItem = function(data) {
 
   // Build Image style
   var imageStyle = buildImageStyle(data);
-  itemHtml = itemHtml.replace(/{{imageStyle}}/g, imageStyle);
+  itemHtml = itemHtml.replace(/{{imageStyle}}/g, '');
 
   // Add Images
   var aspect_ratio = '';
-  var itemImagesHtml = '<div id="' + wrapperId + '" class="grid-view-item__image-wrapper js">';
+  var itemImagesHtml = '<div id="' + wrapperId + '" class="grid-view-item__image-wrapper product-card__image-wrapper js">';
   itemImagesHtml += '<div style="padding-top:';
   if (images.length > 0) {
     aspect_ratio = images[0]['width'] / images[0]['height'];
@@ -118,6 +118,9 @@ BCSfFilter.prototype.buildProductGridItem = function(data) {
 
   // Add data json
   itemHtml = itemHtml.replace(/{{itemJson}}/g, JSON.stringify(data.json));
+  
+  // Item Metafield
+  itemHtml = itemHtml.replace(/{{itemMetafield}}/g, this.getProductMetafield(data, 'global', 'type') || '');
 
   // Add main attribute
   itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
@@ -447,8 +450,10 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
 jQ.fn.stickTo = function(startElement) {
     /* constants */    
     var showingHeader = true;
-    var $headerHeight = 178;
-    var $marginTop = -27;    
+    var isSearchPage = bcsffilter.isSearchPage();
+    var $headerHeight = isSearchPage ? 0 : 64;
+    var $toolbarMargin = 50;
+    var $marginTop = 300;    
     var $window = jQ(window);  
     var $startElement = jQ(startElement);               
     var _this = this;          
@@ -473,8 +478,10 @@ jQ.fn.stickTo = function(startElement) {
         var scrollTop = $window.scrollTop();                        
         var scrollBottom = scrollTop + $windowHeight;  
         var isScrollingDown = (scrollTop > lastScrollTop);
+        /* save last scroll position */
+		lastScrollTop = $window.scrollTop();
         
-        var endPos = $contentPositionTop + $contentHeight - $marginTop;        
+        var endPos = $contentTop + $contentHeight;        
       
         if (sidebarHeight > $contentHeight) {
           _this.removeClass('bc-sf-filter-stick');            
@@ -485,7 +492,7 @@ jQ.fn.stickTo = function(startElement) {
           return;
         }
       
-      	if (scrollTop <= $contentTop) { /* Initial Position */
+      	if (scrollTop <= ($contentTop - $marginTop)) { /* Initial Position */
             _this.removeClass('bc-sf-filter-stick');            
             _this.css({
               position: 'initial',
@@ -494,30 +501,20 @@ jQ.fn.stickTo = function(startElement) {
           
           jQ('#bc-sf-filter-toolbar').removeAttr('style');
           return;
-        } else if (scrollTop > ($contentTop + $contentHeight - 200)) {
+        } else if (!isSearchPage || scrollTop > $contentTop) {                    
           jQ('#bc-sf-filter-toolbar').css({
                 position: 'absolute',
-    			top: ($contentTop + $contentHeight - 200),                
+                top: isSearchPage ? (scrollTop - $contentTop + $toolbarMargin) : (scrollTop - $contentPositionTop - $toolbarMargin),                
                 right: 0,
-    			width: '75%',
-    			background: '#fff',
-    			'z-index': '10'
-          });
-          
-        } else {
-          jQ('#bc-sf-filter-toolbar').css({
-                position: 'absolute',
-    			top: (scrollTop - $divTop),                
-                right: 0,
-    			width: '75%',
+    			width: '100%',
     			background: '#fff',    
     			'z-index': '10'
           });
         }  
       	
       
-        if ((scrollBottom >= endPos) && !(scrollTop <= (endPos - sidebarHeight))) { /* End Position  */          
-            var absolutePos = endPos - sidebarHeight;
+        if (scrollBottom >= endPos && sidebarBottom >= endPos && (isScrollingDown || scrollTop > sidebarTop)) { /* End Position  */          
+            var absolutePos = endPos - sidebarHeight - $marginTop;
             if (absolutePos > 0) {
               _this.removeClass('bc-sf-filter-stick');              
               _this.css({
@@ -543,7 +540,7 @@ jQ.fn.stickTo = function(startElement) {
                 bottom: 'unset'
               });          
             }
-          } else if (scrollBottom >= sidebarBottom && scrollTop > $contentTop) { /* Sticky sidebar */            
+          } else if (scrollBottom >= sidebarBottom && scrollTop > sidebarTop) { /* Sticky sidebar */            
               _this.addClass('bc-sf-filter-stick');                          
 
               _this.css({
@@ -573,10 +570,8 @@ jQ.fn.stickTo = function(startElement) {
                 width: width
             });
           }
-        }
-         
-        /* save last scroll position */
-				lastScrollTop = $window.scrollTop();
+        }         
+        
     };
   
     /* on window resize */

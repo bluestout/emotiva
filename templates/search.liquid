@@ -63,21 +63,24 @@
               {% include 'bc-sf-filter-skeleton', width: 2 %}
           </div>
         </div>
-      <div id="bc-sf-filter-products" class="grid grid--uniform grid--view-items">
-        {% comment %} Fix Shopify search term report {% endcomment %}
-        {% paginate search.results by 2 %}
-          {% if search.performed %}
-            {% for item in search.results %}
-              <div class="grid__item" style="display: none !important"></div>
-            {% endfor %}
-          {% endif %}
-        {% endpaginate %}
-      </div>
+        <div class="ProductGrid">
+        <ul id="bc-sf-filter-products" class="grid grid--uniform grid--view-items">
+          {% comment %} Fix Shopify search term report {% endcomment %}
+          {% paginate search.results by 2 %}
+            {% if search.performed %}
+              {% for item in search.results %}
+                <div class="grid__item" style="display: none !important"></div>
+              {% endfor %}
+            {% endif %}
+          {% endpaginate %}
+        </ul>
+        
 
       <div id="bc-sf-filter-bottom-pagination">
         {% include 'bc-sf-filter-skeleton', width: 2 %}
       </div>
       <div id="bc-sf-filter-load-more"></div>
+          </div>
     </div>
   </div>
 </div>
@@ -113,10 +116,10 @@
     },
     custom: {
       products_per_page: 24,
-      products_per_row: 4,
-      product_grid_class: 'grid__item small--one-half medium-up--one-quarter',
+      products_per_row: 3,
+      product_grid_class: 'grid__item small--one-half medium-up--one-third',
       max_height: 250,
-      vendor_enable: true,
+      vendor_enable: false,
       layout: "grid"
     }
   };

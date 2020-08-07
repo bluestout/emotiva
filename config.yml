@@ -3,4 +3,3 @@ development:
   theme_id: "81221648427"
   store: emotiva1.myshopify.com
   ignore_files:
-    - config/settings_data.json

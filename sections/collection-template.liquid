@@ -8,7 +8,7 @@
   {% when 5 %}
     {%- assign max_height = 195 -%}
 {% endcase %}
-
+ 	  
 {% if section.settings.layout == 'grid' %}
   {%- assign limit = section.settings.grid | times: section.settings.rows -%}
 {% else %}
@@ -22,7 +22,7 @@
 			<div class="em-colc-pg-top-upr-left">
 				<div class="em-colc-pg-top-upr-cont">
                     <h3><span id="bc-sf-filter-collection-header">{{collection.title}}</span> <div class="em-colc-pg-top-upr-img"><img src="{{'collection-img.png'|file_url}}" /></div></h3>
-					<p id="bc-sf-filter-collection-description">{{collection.description}}</p>
+					<p id="bc-sf-filter-collection-description">{{collection.metafields.global.short}}</p>
 				</div>
 			</div>
 			<div class="em-colc-pg-top-upr-right">
@@ -252,10 +252,10 @@
     },
     custom: {
       products_per_page: {% if limit %} {{ limit | json }} {% else %} 24 {% endif %},
-      products_per_row: {% if products_per_row %} {{ products_per_row }} {% else %} 4 {% endif %},
+      products_per_row: {% if section.settings.grid %} {{ section.settings.grid | json }} {% else %} 3 {% endif %},
       product_grid_class: {% if grid_item_width %} 'grid__item {{ grid_item_width }}' {% else %} 'grid__item small--one-half medium-up--one-quarter' {% endif %},
       max_height: {% if max_height %} {{ max_height | json }} {% else %} 250 {% endif %},
-      vendor_enable: {% if section.settings.show_vendor %} {{ section.settings.show_vendor | json }} {% else %} false {% endif %},
+      vendor_enable: false,
       layout: {% if section.settings.layout %} {{ section.settings.layout | json }} {% else %} "grid" {% endif %}
     }
   };

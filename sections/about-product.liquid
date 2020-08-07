@@ -1,15 +1,16 @@
+{%- assign collection = collections[section.settings.collection] -%}
 <div class="page-width ProductGrid">
   {% if section.settings.title != blank %}
     <div class="section-header text-center title-secright-link">
       <h3 class="em-hm-section-title">{{ section.settings.title | escape }}</h3>
-      <a href="#" class="bl-text-arw-link">All Products</a>
+      <a href="{{ collection.url }}" class="bl-text-arw-link">All Products</a>
 
 
 
   </div>
   {% endif %}
 
-  {%- assign collection = collections[section.settings.collection] -%}
+  
 
   {% case section.settings.grid %}
     {% when 2 %}

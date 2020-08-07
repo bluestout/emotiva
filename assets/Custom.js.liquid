@@ -175,28 +175,33 @@ $('.em-about-award-mob-slider').slick({
   $(this).parent("li").toggleClass("em-mob-has-drop-open");
     $(this).next("ul").toggleClass("em-mob-drop-open");
   }) 
-   $('body').on('click', '.em-sin-pro-reward-pop-close', function() {
-    $(".em-sin-pro-reward-popup").removeClass("RewardPop");
-  })
-  $(".product-form .em-sin-pro-reward-box p").click(function(){
-  $(".product-form .em-sin-pro-reward-popup").toggleClass("RewardPop");
-  })
+//    $('body').on('click', '.em-sin-pro-reward-pop-close', function() {
+//     $(".em-sin-pro-reward-popup").removeClass("RewardPop");
+//   })
+//   $(".product-form .em-sin-pro-reward-main").mouseenter(function(){
+//   $(".product-form .em-sin-pro-reward-popup").addClass("RewardPop");
+//   })
+//   $(".product-form .em-sin-pro-reward-main").mouseleave(function(){
+//   $(".product-form .em-sin-pro-reward-popup").removeClass("RewardPop");
+//   })
   
-  $('body').on('click', '#slidingcartmain .em-sin-pro-reward-box p', function() {
-  $("#slidingcartmain .em-sin-pro-reward-popup").toggleClass("RewardPop");
-  })
-   $('body').on('click', '#slidingcartmain .em-sin-pro-reward-pop-close', function() {
-    $("#slidingcartmain .em-sin-pro-reward-popup").removeClass("RewardPop");
-  })
-   $(".cart__footer .em-sin-pro-reward-box p").click(function(){
- $(".cart__footer  .em-sin-pro-reward-popup").toggleClass("RewardPop");
-  })
+//   $('body').on('click', '#slidingcartmain .em-sin-pro-reward-box p span', function() {
+//   $("#slidingcartmain .em-sin-pro-reward-popup").toggleClass("RewardPop");
+//   })
+//    $('body').on('click', '#slidingcartmain .em-sin-pro-reward-pop-close', function() {
+//     $("#slidingcartmain .em-sin-pro-reward-popup").removeClass("RewardPop");
+//   })
+//    $(".cart__footer .em-sin-pro-reward-box p span").click(function(){
+//  $(".cart__footer  .em-sin-pro-reward-popup").toggleClass("RewardPop");
+//   })
   $(".moreDesc").on('click',function() {
-    $('html, body').animate({
-        'scrollTop' : $("#CustomProtabs").position().top
-    });
+    $(".lessDesc").hide();
+    $(".FullDesc").show();
 });
-  
+ $(".lessBtn").on('click',function() {
+  $(".lessDesc").show();
+    $(".FullDesc").hide();
+ })
   
   $(".CustomMainSlide").slick({
       slidesToShow: 1,

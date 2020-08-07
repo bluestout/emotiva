@@ -92,10 +92,21 @@
                         </ul>
 	</div>
                             {%if forloop.index==4%}
-                            {% assign Gethandle = link.object.url | split: "/" | last %}
-				
+                             {% assign Gethandle = link.object.url | split: "/" | last %}
+				 
 	<div class="em-mega-menu-dd-main-right">
-      <img src="{{collections[Gethandle].image | img_url: '570x226'}}" />
+    <div class="dd-menu-qz-img-con">
+	<img src="{{section.settings.quiz_image| img_url: 'original'}}" />
+	<div class="dd-menu-qz-img-con-upr">
+		<div class="dd-menu-qz-img-con-upr-inn">
+			<h3>{{section.settings.quiz_heading}}</h3>
+			<p>{{section.settings.quiz_subheading}}</p>
+		</div>
+		<div class="dd-menu-qz-img-con-upr-btn">
+			<a href="{{section.settings.quiz_link}}" class="em-bl-back-btn" aria-label="Explore Product">Take a quiz</a>
+		</div>
+	</div>
+</div>
 	</div>
                             {%endif%}
 </div>

@@ -1482,6 +1482,28 @@
           "de": "Logo-Liste",
           "en": "Phone Number"
         }
+      },
+      {
+        "type": "header",
+        "content": {
+          "da": "SoMe-konti",
+          "de": "Social Media",
+          "en": "Reward Link"
+        }
+      },
+      {
+        "type": "url",
+        "id": "reward_link",
+        "label": {
+          "da": "Link",
+          "de": "Link",
+          "en": "Reward Link"
+        },
+        "info": {
+          "da": "Valgfri",
+          "de": "Optional",
+          "en": "Optional"
+        }
       }
     ]
   }

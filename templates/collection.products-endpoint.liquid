@@ -1,0 +1,31 @@
+{% comment %} Please don’t update this content {% endcomment %}
+
+{% layout none %}
+{% paginate collection.products by 50 %}
+  {
+    "products":
+      [
+        {% for product in collection.products %}
+          {
+            "id":{{ product.id }},
+            "position":{{ forloop.index }},
+            "metafields":[
+              
+              {% comment %}
+                Single Metafield
+              {% endcomment %}
+              {% assign v_type = product.metafields.global["type"] %}
+              {% if v_type != blank %}
+                {
+                  "namespace": "global",
+                  "key": "type",
+                  "value": {{ v_type | json }}
+                },
+              {% endif %}
+        
+            ]
+          },
+        {% endfor %}
+      ]
+  }
+{% endpaginate %}
