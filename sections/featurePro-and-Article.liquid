@@ -5,6 +5,7 @@
 				<div class="em-hm-pro-art-block">
                  {% assign product= all_products[section.settings.featured_product]%}
 					<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
+                  <a href="{{product.url}}">
 					<div class="em-hm-fea-pro-block">
 						<div class="em-hm-fea-pro-img">{%if section.settings.pro_img != blank %}<img src="{{section.settings.pro_img | img_url: "original"}}" />{%else%}<img src="{{ product.featured_image.src | img_url: 'original' }}" />{%endif%}</div>
 						<h3>{{product.title}}</h3>
@@ -17,8 +18,9 @@
                           </div>
 						</div>
 					</div>
+                  </a>
 					<div class="em-hm-pro-art-block-link">
-						<a href="{{product.url}}" class="bl-text-arw-link">All Products</a>
+						<a href="{{section.settings.coll_link}}" class="bl-text-arw-link">All Products</a>
 					</div>
 				</div>
 				<div class="em-hm-pro-art-block">
@@ -69,7 +71,7 @@
 						</a>
 					</div>
 					<div class="em-hm-pro-art-block-link">
-						<a href="{{section.settings.link_1}}" class="bl-text-arw-link">All Products</a>
+						<a href="{{section.settings.link_1}}" class="bl-text-arw-link">All Articles</a>
 					</div>
 				</div>
 			</div>
@@ -146,6 +148,20 @@
             "en": "Product Image"
           }
         },
+{
+      "type": "url",
+      "id": "coll_link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Collection Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional"
+      }
+    },
 {
 
       "type": "text",

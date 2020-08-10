@@ -1,4 +1,6 @@
 $(document).ready(function(){ 
+    var ListHtml = $(".custom_blogs").html();
+  $(".BlogCustomize").html(ListHtml);
   var aTop = $('.DesktopHeader').height();
   aTop = aTop+60;
   $(window).scroll(function(){

@@ -40,6 +40,7 @@
     "heading_mobile": "Still need help?",
     "subheading": "Start a chat or call us. We'll be glad to help!",
     "number": "1-615-790-6754",
+    "reward_link": "",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -68,15 +69,15 @@
           "heading_1": "X Series",
           "image_1": "shopify:\/\/shop_images\/x-series-img.png",
           "desc_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
-          "link_1": "#",
+          "link_1": "shopify:\/\/pages\/series-2",
           "heading_2": "Airmotive Series",
           "image_2": "shopify:\/\/shop_images\/airmotive-series-img.png",
           "desc_2": "Airmotiv Speakers combines meticulous design, extensive testing, and in-depth listening tests with a wide variety of musical material.",
-          "link_2": "#",
+          "link_2": "https:\/\/emotiva.com\/pages\/airmotiv",
           "heading_3": "BasX Series",
           "image_3": "shopify:\/\/shop_images\/bas-x-series.png",
           "desc_3": "Excellent sound quality, all the most useful and essential features, and rock-solid performance for a lifetime.",
-          "link_3": "#",
+          "link_3": "https:\/\/emotiva.com\/pages\/basx",
           "message": false,
           "home_page_only": false,
           "message_text": "",
@@ -97,14 +98,14 @@
           "title": "Cutting-edge audio products made by people like you",
           "text": "We create exceptionally designed, high-performance audio products at prices that more people could afford and enjoy.",
           "button_label": "Explore product",
-          "button_link": "#"
+          "button_link": "shopify:\/\/collections\/all"
         }
       },
       "collection": {
         "type": "collection",
         "settings": {
           "title": "Latest Products",
-          "collection": "all",
+          "collection": "frontpage",
           "grid": 4,
           "rows": 1,
           "show_vendor": false,
@@ -153,7 +154,7 @@
             "type": "text",
             "settings": {
               "title": "Get In Touch",
-              "text": "<div class=\"footer-g-touch-sec\">\n\t<p><span>Call us<\/span><a href=\"tel:1-615-790-6754\">1-615-790-6754<\/a><\/p>\n\t<p class=\"small--hide\"><span>Live chat<\/span><a>Start chat<\/a><\/p>\n<p class=\"footer-g-touch-sec-mob-link medium-up--hide\"><span>Live chat<\/span><a href=\"#\">Contact Us<\/a><\/p>\n<\/div>"
+              "text": "<div class=\"footer-g-touch-sec\">\n\t<p><span>Call us<\/span><a href=\"tel:1-615-790-6754\">1-615-790-6754<\/a><\/p>\n\t<p class=\"small--hide\"><span>Live chat<\/span><a onclick=\"Smooch.open();\" href=\"#\">Start chat<\/a><\/p>\n<p class=\"footer-g-touch-sec-mob-link medium-up--hide\"><span>Live chat<\/span><a href=\"#\">Contact Us<\/a><\/p>\n<\/div>"
             }
           }
         },
@@ -219,7 +220,6 @@
           "media_size": "medium",
           "enable_image_zoom": false,
           "enable_video_looping": false,
-          "link_reward": "",
           "link_faq": "",
           "image_contact": "shopify:\/\/shop_images\/cust-img.jpg",
           "heading_desktop": "Need help? Get in touch and we’ll be glad to help",
@@ -241,16 +241,16 @@
           "title": "Latest Reads",
           "blog_1": "Processors",
           "image_1": "shopify:\/\/shop_images\/read-3.jpg",
-          "article_1": "reviews\/xpa-dr-3-review-by-life-of-bliss",
+          "article_1": "info-hub-1\/rmc-1-rmc-1l-and-xmc-2-firmware-2-0-now-available",
           "blog_2": "News",
           "image_2": "shopify:\/\/shop_images\/read-2.jpg",
-          "article_2": "info-hub-1\/steve-guttenberg-reviews-the-airmotiv-t-zero-towers",
+          "article_2": "info-hub-1\/say-hello-to-ipod-1-000-songs-in-your-pocket",
           "blog_3": "Press Reviews",
           "image_3": "shopify:\/\/shop_images\/read-1.jpg",
-          "article_3": "reviews\/hifi-brothers-review-the-erc-4-cd-player",
+          "article_3": "reviews\/spare-change-reviews-the-powerful-rmc-1-cinema-processor-and-xpa-dr3-amplifier",
           "blog_4": "Products",
           "image_4": "shopify:\/\/shop_images\/read-4.jpg",
-          "article_4": "info-hub-1\/life-of-bliss-reviews-the-xpa-dr-3-amplifier"
+          "article_4": "info-hub-1\/airmotiv-b1-speaker-shootout"
         }
       },
       "1593588364429": {
@@ -260,7 +260,7 @@
           "subtitle": "We're just like you",
           "shortdesc": "We have one goal: to offer exceptionally designed, high performance products at prices that more people could afford and enjoy.",
           "desc": "<p>Emotiva asked a simple question: \"Why can't we have amazing audio and video sound at price that don't threaten our mortage?\"<\/p>\n\t\t\t\t\t\t\t<p>Emotiva is comprised of true audio enthusiasts, engineers, and product specialists. We run a lean organization without excess overhead and redundant levels of management. Our people are passionate enthusiasts who enjoy the experience of using Emotiva products equally as much as designing and building them.<\/p>",
-          "link": "#",
+          "link": "shopify:\/\/pages\/about-us-2",
           "image": "shopify:\/\/shop_images\/about-us-placeholder_150e402f-2e0d-496b-bb24-77214bc681dc.png"
         }
       },
@@ -272,20 +272,21 @@
           "description": "The RMC-1 is a state-of-the-art surround sound processor - designed from the ground up to serve as the nerve center of a modern home theater or surround sound music system.",
           "featured_product": "rmc-1",
           "pro_img": "shopify:\/\/shop_images\/product-featured-1-sml.png",
+          "coll_link": "shopify:\/\/collections\/12-subwoofer",
           "title_2": "Featured Article",
           "blog_1": "Loudspeakers",
           "image_1": "shopify:\/\/shop_images\/news-1.jpg",
           "author_1": "shopify:\/\/shop_images\/cust-img.jpg",
-          "article_1": "info-hub-1\/vinyl-back-with-a-vengeance",
+          "article_1": "test\/test-how-to-choose-the-best-audio-processor",
           "blog_2": "Press Reviews",
           "image_2": "shopify:\/\/shop_images\/news-2.jpg",
           "author_2": "shopify:\/\/shop_images\/cust-img.jpg",
-          "article_2": "reviews\/xpa-dr-3-review-by-life-of-bliss",
+          "article_2": "info-hub-1\/xmc-1-to-xmc-2-trade-in-and-upgrade-program",
           "blog_3": "News",
           "image_3": "shopify:\/\/shop_images\/news-3-1.jpg",
           "author_3": "shopify:\/\/shop_images\/cust-img.jpg",
-          "article_3": "info-hub-1\/emotiva-dirac-live-2-installation-guide",
-          "link_1": ""
+          "article_3": "info-hub-1\/processor-walkthrough-class-from-our-open-house-2019",
+          "link_1": "shopify:\/\/blogs\/latest"
         }
       },
       "1593671315988": {
@@ -464,19 +465,47 @@
           "1594456297802": {
             "type": "quote",
             "settings": {
-              "getblog": "test-1"
+              "getblog": "test"
             }
           },
           "1594456304067": {
             "type": "quote",
             "settings": {
-              "getblog": "test-2"
+              "getblog": "test"
+            }
+          },
+          "1596913051529": {
+            "type": "quote",
+            "settings": {
+              "getblog": "test"
+            }
+          },
+          "1596913068306": {
+            "type": "quote",
+            "settings": {
+              "getblog": "test"
+            }
+          },
+          "1596913074345": {
+            "type": "quote",
+            "settings": {
+              "getblog": "test"
+            }
+          },
+          "1596913082103": {
+            "type": "quote",
+            "settings": {
+              "getblog": "test"
             }
           }
         },
         "block_order": [
           "1594456297802",
-          "1594456304067"
+          "1594456304067",
+          "1596913051529",
+          "1596913068306",
+          "1596913074345",
+          "1596913082103"
         ],
         "settings": {
           "article": "info-hub-1\/processor-quick-start-guide"
@@ -604,13 +633,13 @@
         "type": "custom-html",
         "settings": {
           "title": "Shop by Series",
-          "featured_product_1": "cd-100",
+          "featured_product_1": "cd-players",
           "text_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
           "image_1": "shopify:\/\/shop_images\/airmotive-series-img.png",
-          "featured_product_2": "cd-100",
+          "featured_product_2": "subwoofers",
           "text_2": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
           "image_2": "shopify:\/\/shop_images\/bas-x-series.png",
-          "featured_product_3": "cd-100",
+          "featured_product_3": "loudspeakers",
           "text_3": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
           "image_3": ""
         }
@@ -620,7 +649,6 @@
         "settings": {
           "cart_ajax_enable": true,
           "cart_notes_enable": true,
-          "link_reward": "",
           "mil_link": ""
         }
       },
@@ -666,7 +694,7 @@
           "subtitle": "Have questions? We have all the answers.",
           "block_1_heading": "General FAQ",
           "block_1_title": "Not sure how to make payment or where to buy Emotiva products. We have all the answers.",
-          "block_1_subtitle": "How we handle shipping and returns, check <a href=\"#\">Shipping Policy<\/a> and <a href=\"#\">Returns Policy<\/a>.",
+          "block_1_subtitle": "How we handle shipping and returns, check <a href=\"https:\/\/emotiva.com\/pages\/customer-center2\">Shipping Policy<\/a> and <a href=\"#\">Returns Policy<\/a>.",
           "block_1_image": "shopify:\/\/shop_images\/picto-faq.png",
           "block_1_link": "shopify:\/\/pages\/customer-center1",
           "block_2_heading": "Reward Credit",
@@ -738,14 +766,14 @@
           "block_2_link": "",
           "block_3_heading": "Service & repair",
           "block_3_title": "Our goal is to provide you with exceptional service for your Emotiva products. Let us help.",
-          "block_3_subtitle": "<a href=\"#\">See warranty information<\/a>",
+          "block_3_subtitle": "<a href=\"https:\/\/emotiva.com\/pages\/support-1\">See warranty information<\/a>",
           "block_3_image": "shopify:\/\/shop_images\/picto-service.png",
           "block_3_link": "shopify:\/\/pages\/resources-10",
           "banner_title": "Get help in the Emotiva Lounge",
           "banner_subtitle": "Emotiva Community connects you with other owners and product experts. Get help, product tips and tricks. Or, see how others are using our products. Ask questions — and share your own experiences.",
           "banner_image": "shopify:\/\/shop_images\/ezgif-7-ab7d0affdac0.jpg",
-          "banner_link": "",
-          "contact_link": ""
+          "banner_link": "https:\/\/emotivalounge.proboards.com\/",
+          "contact_link": "https:\/\/emotiva.com\/pages\/support"
         }
       },
       "resources10": {
@@ -1085,10 +1113,10 @@
           "article_1": "test\/test-how-to-choose-the-best-audio-processor",
           "author_1": "shopify:\/\/shop_images\/cust-img.jpg",
           "blog_2": "User Reviews",
-          "article_2": "test\/test-how-to-choose-the-best-audio-processor",
+          "article_2": "info-hub-1\/firmware-1-8-is-now-available",
           "author_2": "shopify:\/\/shop_images\/cust-img.jpg",
           "blog_3": "News",
-          "article_3": "test\/test-how-to-choose-the-best-audio-processor",
+          "article_3": "info-hub-1\/rmc-1-rmc-1l-and-xmc-2-firmware-2-0-now-available",
           "author_3": "shopify:\/\/shop_images\/cust-img.jpg",
           "link": "#"
         }
@@ -1103,7 +1131,7 @@
               "description": "Interested in Emotiva? Our team is here to answer your questions and get your new system started.",
               "short_desc": "Monday - Friday<br>10 am - 8 pm EST",
               "icon": "shopify:\/\/shop_images\/picto-sales.png",
-              "link_1": "#"
+              "link_1": ""
             }
           },
           "1596605663783": {
@@ -1111,7 +1139,7 @@
             "settings": {
               "title": "Support",
               "description": "We're here to help with setup, control, and system performance.",
-              "short_desc": "For product  manuals and firmware downloads, visit <a href=\"#\">Resources Center<\/a>.",
+              "short_desc": "For product  manuals and firmware downloads, visit <a href=\"https:\/\/emotiva.com\/pages\/resources-1\">Resources Center<\/a>.",
               "icon": "shopify:\/\/shop_images\/picto-support.png",
               "link_1": ""
             }
@@ -1139,7 +1167,7 @@
           "banner_subtitle": "Emotiva Community connects you with other owners and product experts. Get help, product tips and tricks. Or, see how others are using our products. Ask questions — and share your own experiences.",
           "banner_desk": "shopify:\/\/shop_images\/lounge-bg_e171bd46-3ca2-446d-8bca-831db0ca72f9.jpg",
           "banner_mobile": "shopify:\/\/shop_images\/ezgif-6-ab7d0affdac0.jpg",
-          "banner_link": ""
+          "banner_link": "https:\/\/emotivalounge.proboards.com\/"
         }
       }
     },

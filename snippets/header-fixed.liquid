@@ -73,7 +73,7 @@
                   {%endfor%}
                   </ul>
 		</div>
-      {% if tempplate contains "article" %}
+     
 		<div class="em-top-head-sec-sticky-right">
 			<ul class="em-nav-top-bar-rt-list">
               
@@ -84,9 +84,10 @@
 						<li><a href="/account/login">Sign in</a></li>
 						<li><a href="/cart" class="em-nav-top-cart">Cart</a></li>
 					</ul>
-		</div> 
-      {%endif%}
+		</div>  
+      
 	</div>
+   {% if template contains "article" %}
   <div class="em-articl-sub-nav-sec">
   <div class="em-articl-sub-nav-list">
     <ul>
@@ -96,4 +97,14 @@
     </ul>
   </div>
 </div>
+  {%elsif template contains "blog.custom" %}
+   <div class="em-articl-sub-nav-sec">
+  <div class="em-articl-sub-nav-list">
+    <ul class="BlogCustomize">
+     
+          
+    </ul>
+  </div>
+</div>
+  {%endif%}
 </div>

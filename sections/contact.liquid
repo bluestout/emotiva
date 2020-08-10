@@ -9,7 +9,7 @@
 					<h3>{{block.settings.title}}</h3>
 					<p>{{block.settings.description}}</p> 
 					<h5>{{block.settings.short_desc}}</h5>
-					<div class="contact-pg-info-btn"><a href="{{block.settings.link_1}}" class="em-bl-back-btn">Start live chat</a></div>
+					<div class="contact-pg-info-btn"><a  {% if block.settings.link_1 == blank %} href="#" onclick="Smooch.open();" {%else%} href="{{block.settings.link_1}}"{%endif%} class="em-bl-back-btn">Start live chat</a></div>
 				</div>
 			</div>
           {%endfor%}
