@@ -633,15 +633,15 @@
         "type": "custom-html",
         "settings": {
           "title": "Shop by Series",
-          "featured_product_1": "cd-players",
+          "featured_product_1": "x-series",
           "text_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
-          "image_1": "shopify:\/\/shop_images\/airmotive-series-img.png",
-          "featured_product_2": "subwoofers",
+          "image_1": "shopify:\/\/shop_images\/x-series-img.png",
+          "featured_product_2": "airmotiv",
           "text_2": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
-          "image_2": "shopify:\/\/shop_images\/bas-x-series.png",
-          "featured_product_3": "loudspeakers",
+          "image_2": "shopify:\/\/shop_images\/airmotive-series-img.png",
+          "featured_product_3": "basx-series",
           "text_3": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
-          "image_3": ""
+          "image_3": "shopify:\/\/shop_images\/bas-x-series.png"
         }
       },
       "cart-template": {
@@ -894,15 +894,15 @@
         "type": "about-custom-product",
         "settings": {
           "title": "Shop by Series",
-          "featured_product_1": "cd-100",
+          "featured_product_1": "x-series",
           "text_1": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
           "image_1": "shopify:\/\/shop_images\/airmotive-series-img.png",
-          "featured_product_2": "cd-100",
+          "featured_product_2": "airmotiv",
           "text_2": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
           "image_2": "shopify:\/\/shop_images\/bas-x-series.png",
-          "featured_product_3": "cd-100",
+          "featured_product_3": "basx-series",
           "text_3": "Our finest line of products - audiophile music and home theater components that take on the best without breaking your budget.",
-          "image_3": ""
+          "image_3": "shopify:\/\/shop_images\/bas-x-series.png"
         }
       },
       "page-series": {
@@ -1118,7 +1118,7 @@
           "blog_3": "News",
           "article_3": "info-hub-1\/rmc-1-rmc-1l-and-xmc-2-firmware-2-0-now-available",
           "author_3": "shopify:\/\/shop_images\/cust-img.jpg",
-          "link": "#"
+          "link": "shopify:\/\/blogs\/latest"
         }
       },
       "contact": {

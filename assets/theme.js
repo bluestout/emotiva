@@ -753,9 +753,13 @@ slate.Variants = (function() {
       this._updateSKU(variant);
       this.currentVariant = variant;
 
+      $('.affirm-as-low-as').attr('data-amount',variant.price);
+      affirm.ui.refresh(); 
+
       if (this.enableHistoryState) {
         this._updateHistoryState(variant);
       }
+      
     },
 
     /**

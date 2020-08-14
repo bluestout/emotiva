@@ -124,7 +124,25 @@
 <!--end-bc-sf-filter-css-->
 
 <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=JydVVR"></script>
-</head>
+
+  <!-- Anti-flicker snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-W98R37M':true});</script>
+
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W98R37M');</script>
+<!-- End Google Tag Manager -->
+  
+  </head>
 
 
 {% include 'globo.formbuilder.scripts' %}
@@ -142,6 +160,28 @@
   <div class="page-container drawer-page-content" id="PageContainer">
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      {% if template contains "article" %}
+  <div class="em-articl-sub-nav-sec">
+  <div class="em-articl-sub-nav-list">
+    <ul>
+         {% for link in linklists['blogs'].links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+  {%elsif template contains "blog.custom" %}
+   <div class="em-articl-sub-nav-sec">
+  <div class="em-articl-sub-nav-list">
+    <ul class="BlogCustomize">
+     {% for link in linklists['blogs'].links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+          
+    </ul>
+  </div>
+</div>
+  {%endif%}
       {%if page.handle contains "support-2" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" %}
        <div class="mobile-pages-breadcrumb">
  <div class="page-width">

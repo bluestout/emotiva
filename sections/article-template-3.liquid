@@ -1,12 +1,4 @@
-<div class="em-articl-sub-nav-sec">
-  <div class="em-articl-sub-nav-list">
-    <ul>
-          {%for tag in article.tags%}
-      <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{tag}}</a></li>
-      {%endfor%}
-    </ul>
-  </div>
-</div>
+
 {%comment %}
 <div class="section-header text-center">
   <h1 class="article__title" id="title-0">{{ article.title }}</h1>

@@ -39,12 +39,18 @@
                 <div class="em-read-innr-hm-sec-block">
                   <h2 class="em-read-innr-hm-sec-cat"><a href="{{ blogs[block.settings.getblog].url }}">{{ blogs[block.settings.getblog].title }}</a></h2>
                   {% for article in blogs[block.settings.getblog].articles limit:1 %}
-                  <div class="em-read-innr-hm-sec-block-img em-img-block-hvr-zoom"><img src="{{ article.image.src | img_url: 'original' }}" /></div>
+                  <div class="em-read-innr-hm-sec-block-img em-img-block-hvr-zoom">
+                    <a href="{{ article.url }}">
+                    <img src="{{ article.image.src | img_url: 'original' }}" />
+                    </a>
+                      </div>
                   <div class="em-read-innr-hm-sec-block-info">
+                    <a href="{{article.url}}" class="em-read-innr-hm-sec-block-info-link">
                     <h3>{{ article.title}}</h3>
                     <p>{{ article.excerpt}}</p>
                     <div class="em-read-innr-hm-sec-block-date">{{ article.published_at | date: '%B %d, %Y ' }} by {{ article.author }}</div>
-                  </div>
+                    </a>
+                      </div>
                   {% endfor %}
                   <div class="em-read-innr-hm-sec-block-art-list">
                     {% for article in blogs[block.settings.getblog].articles limit: 2 offset:1 %}

@@ -3,9 +3,9 @@
 		<div class="em-hm-shop-srs-inn">
 			<h3 class="em-hm-section-title">{{section.settings.title}}</h3>
 			<div class="em-hm-shop-srs-row">
-              {% assign product_1= all_products[section.settings.featured_product_1]%}
-              {% assign product_2= all_products[section.settings.featured_product_2]%}
-              {% assign product_3= all_products[section.settings.featured_product_3]%}
+              {% assign product_1= collections[section.settings.featured_product_1]%}
+              {% assign product_2= collections[section.settings.featured_product_2]%}
+              {% assign product_3= collections[section.settings.featured_product_3]%}
 				<div class="em-hm-shop-srs-block">
 					<div class="em-hm-shop-srs-box">
 						<div class="em-hm-shop-srs-box-img">
@@ -13,13 +13,13 @@
                           {%if section.settings.image_1 != blank %}
 							<img src="{{section.settings.image_1 | img_url: "original"}}" />
                           {%else%}
-                          <img src="{{ product_1.featured_image.src | img_url: 'original' }}" />
+                          <img src="{{ product_1.image | img_url: 'original' }}" />
                           {%endif%}
                       </div>
 						<p>{{section.settings.text_1}}</p>
 						<div class="em-hm-shop-srs-box-btn"><a href="{{product_1.url}}" class="em-bl-back-btn">Explore Products</a></div>
 					</div>
-				</div>
+				</div>  
 				<div class="em-hm-shop-srs-block">
 					<div class="em-hm-shop-srs-box">
 						<div class="em-hm-shop-srs-box-img">
@@ -27,7 +27,7 @@
                           {%if section.settings.image_2 != blank %}
 							<img src="{{section.settings.image_2 | img_url: "original"}}" />
                           {%else%}
-                          <img src="{{ product_2.featured_image.src | img_url: 'original' }}" />
+                           <img src="{{ product_2.image | img_url: 'original' }}" />
                           {%endif%}
                       </div>
 						<p>{{section.settings.text_2}}</p>
@@ -41,7 +41,7 @@
                           {%if section.settings.image_3 != blank %}
 							<img src="{{section.settings.image_3 | img_url: "original"}}" />
                           {%else%}
-                          <img src="{{ product_3.featured_image.src | img_url: 'original' }}" />
+                          <img src="{{ product_3.image | img_url: 'original' }}" />
                           {%endif%}
                       </div>
 						<p>{{section.settings.text_3}}</p>
@@ -73,11 +73,11 @@
     },
 {
       "id": "featured_product_1",
-      "type": "product",
+      "type": "collection",
       "label": {
         "da": "Product",
         "de": "Product",
-        "en": "Product"
+        "en": "collection"
       }
     },
 {
@@ -105,11 +105,11 @@
         },
 {
       "id": "featured_product_2",
-      "type": "product",
+      "type": "collection",
       "label": {
         "da": "Product",
         "de": "Product",
-        "en": "Product"
+        "en": "collection"
       }
     },
 {
@@ -137,11 +137,11 @@
         },
 {
       "id": "featured_product_3",
-      "type": "product",
+      "type": "collection",
       "label": {
         "da": "Product",
         "de": "Product",
-        "en": "Product"
+        "en": "collection"
       }
     },
 {

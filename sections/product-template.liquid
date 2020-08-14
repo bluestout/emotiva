@@ -134,7 +134,8 @@
         <div class="em-product-single-rev-rating"><span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">{{ product.metafields.stamped.badge }}</span></div> 
         <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
-          </div>
+          <p class="affirm-as-low-as" data-page-type="product" data-amount="{{product.price}}"></p>
+        </div>
 {%comment%}
           {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product__policies rte" data-product-policies>

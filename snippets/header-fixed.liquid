@@ -85,23 +85,25 @@
 						<li><a href="/cart" class="em-nav-top-cart">Cart</a></li>
 					</ul>
 		</div>  
-      
+       
 	</div>
-   {% if template contains "article" %}
+  {% if template contains "article" %}
   <div class="em-articl-sub-nav-sec">
   <div class="em-articl-sub-nav-list">
     <ul>
-          {%for tag in article.tags%}
-      <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{tag}}</a></li>
-      {%endfor%}
-    </ul>
+         {% for link in linklists['blogs'].links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul> 
   </div>
 </div>
   {%elsif template contains "blog.custom" %}
    <div class="em-articl-sub-nav-sec">
   <div class="em-articl-sub-nav-list">
     <ul class="BlogCustomize">
-     
+     {% for link in linklists['blogs'].links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
           
     </ul>
   </div>
