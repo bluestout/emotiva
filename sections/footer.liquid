@@ -140,7 +140,7 @@
 <footer class="site-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
     <div class="FooterLogo">
-      <img src="https://cdn.shopify.com/s/files/1/2572/6926/t/29/assets/imgpsh_fullsize_anim.png" />
+      <img src="{{section.settings.image | img_url: "165x25"}}" />
     </div>
     <div class="site-footer__content DesktopFooter">
       {%- for block in section.blocks -%}
@@ -375,6 +375,20 @@
   },
   "max_blocks": 6,
   "settings": [
+{
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Logo Image"
+          },
+        "info": {
+          "da": "165 x 25px",
+          "de": "165 x 25px",
+          "en": "165 x 25px"
+        }
+        },
     {
       "type": "header",
       "content": {

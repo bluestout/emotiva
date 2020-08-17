@@ -36,14 +36,15 @@
   {%- if page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
-
+ 
   {% include 'social-meta-tags' %}
-
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {{ 'Custom.css' | asset_url | stylesheet_tag }}
    {{ 'jquery-ui.css' | asset_url | stylesheet_tag }}
   {{ 'slidecart.css' | asset_url | stylesheet_tag }}
+  
    {{ 'custompopup.css' | asset_url | stylesheet_tag }}
+
   <script>
     var theme = {
       breakpoints: {
@@ -111,8 +112,10 @@
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'slidecart.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'jquery-ui.js' | asset_url }}" defer="defer"></script>
+  {%unless template contains "index" %}
   <script src="{{ 'pageScript.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'custompopup.js' | asset_url }}" defer="defer"></script>
+  {%endunless%}
   <script src="{{ 'Custom.js' | asset_url }}" defer="defer"></script>
 
 
@@ -142,6 +145,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W98R37M');</script>
 <!-- End Google Tag Manager -->
   
+  <script type="text/javascript">
+  (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/C6NTmtWEZTidMNpCtHQIuzOKSuJ2KlCmswsJKKIS/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+  </script>
   </head>
 
 

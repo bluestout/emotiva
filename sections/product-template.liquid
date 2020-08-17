@@ -4,7 +4,7 @@
   data-section-type="product"
   data-enable-history-state="true" 
   data-ajax-enabled="{{ settings.enable_ajax }}"
->   
+>    
   {% include "breadcrumbs" %}
   {% comment %}
     Get first variant, or deep linked one
@@ -131,7 +131,39 @@
           </div>
         
         {%endif%}
-        <div class="em-product-single-rev-rating"><span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">{{ product.metafields.stamped.badge }}</span></div> 
+        <div class="em-product-single-rev-rating">
+        <!-- Yopto -->
+          <div class="yotpo bottomLine"
+              data-appkey="C6NTmtWEZTidMNpCtHQIuzOKSuJ2KlCmswsJKKIS"
+              data-domain="{{shop.permanent_domain | escape }}"
+              data-product-id="{{ product.id }}"
+              data-product-models="{{ product.id }}"
+              data-name="{{ product.title | escape }}"
+              data-url="{{ shop.url }}{{ product.url }}"
+              data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+              data-description="{{ product.description | escape }}"
+              data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+            {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+            {%- assign time_now = 'now' | date: '%s' %}
+            {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+            {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+            {%- assign yotpo_bottomline_last_updated = product.metafields.yotpo.bottomline_update_time | date: '%s' %}
+            {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+            {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+              {%- assign yotpo_bottomline_obsolete = false %}
+            {%- else %}
+              {%- assign yotpo_bottomline_obsolete = true %}
+            {%- endif %}
+            {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+              {{ product.metafields.yotpo.bottomline }}
+            {%- endif %}
+          </div>
+
+          <!--Stamp.io-->
+          <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">
+            {{ product.metafields.stamped.badge }}
+          </span>
+        </div> 
         <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
           <p class="affirm-as-low-as" data-page-type="product" data-amount="{{product.price}}"></p>
@@ -300,6 +332,25 @@
 </div>
 <div class="em-sin-pro-ReviewSection">
   <div class="page-width">
+    <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" data-price="{{ variant.price | money_without_currency }}"
+      data-currency=“{{ shop.currency }}” data-description=“{{ product.description | escape }}“>
+      {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+      {%- assign time_now = 'now' | date: '%s' %}
+      {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+      {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+      {%- assign yotpo_main_widget_last_updated = product.metafields.yotpo.main_widget_update_time | date: '%s' %}
+      {%- assign diff_seconds_from_last_main_widget_update = time_now | minus: yotpo_main_widget_last_updated %}
+      {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_main_widget_last_updated and diff_seconds_from_last_main_widget_update < 86400 -%}
+        {%- assign yotpo_main_widget_obsolete = false %}
+      {%- else %}
+        {%- assign yotpo_main_widget_obsolete = true %}
+      {%- endif %}
+      {%- if yotpo_offload_content == 'yes' and yotpo_main_widget_obsolete != true -%}
+        {%- for field in product.metafields.yotpo_reviews -%}
+          {{ field | last }}
+        {%- endfor -%}
+      {%- endif %}
+    </div>
     <div class="ReviewSection">
       <h2 class="em-ReviewSection-title">Product Reviews</h2>
       <div id="stamped-main-widget"   

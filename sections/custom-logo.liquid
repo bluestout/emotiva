@@ -6,14 +6,14 @@
 						<div class="em-logo-inf-slider-inn">
                           {% for block in section.blocks %}
                           <a href="{{block.settings.link}}">
-                            <img src="{{ block.settings.image | img_url: 'original'}}" />
+                            <img src="{{ block.settings.image | img_url: '130x100'}}" />
                           </a>
                           {%endfor%}
 						</div>
 						<div class="em-logo-inf-slider-inn">
 							 {% for block in section.blocks %}
                           <a href="{{block.settings.link}}">
-                            <img src="{{ block.settings.image | img_url: 'original'}}" />
+                            <img src="{{ block.settings.image | img_url: '130x100'}}" />
                           </a>
                           {%endfor%}
                       </div>
@@ -62,7 +62,12 @@
             "da": "Billede",
             "de": "Foto",
             "en": "Image"
-          }
+          },
+        "info": {
+          "da": "130 x 100px",
+          "de": "130 x 100px",
+          "en": "130 x 100px"
+        }
         },
         {
           "type": "url",
