@@ -83,6 +83,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data) {
 
   // Add Images
   var aspect_ratio = '';
+  var thumburl = this.getFeaturedImage(images, '300x300');
   var itemImagesHtml = '<div id="' + wrapperId + '" class="grid-view-item__image-wrapper product-card__image-wrapper js">';
   itemImagesHtml += '<div style="padding-top:';
   if (images.length > 0) {
@@ -94,7 +95,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data) {
   itemImagesHtml += '%;">';
   itemImagesHtml += '<img id="' + imgId + '" ' +
     'class="grid-view-item__image lazyload" ' +
-    'src="' + this.getFeaturedImage(images, '300x300') + '" ' +
+    'src="' + thumburl + '" ' +
     'data-src="' + this.getFeaturedImage(images, '{width}x') + '" ' +
     'data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" ' +
     'data-aspectratio="' + aspect_ratio + '" ' +
@@ -121,6 +122,20 @@ BCSfFilter.prototype.buildProductGridItem = function(data) {
   
   // Item Metafield
   itemHtml = itemHtml.replace(/{{itemMetafield}}/g, this.getProductMetafield(data, 'global', 'type') || '');
+  
+  // Build Domain
+  itemHtml = itemHtml.replace(/{{itemDomain}}/g, this.escape(bcSfFilterConfig.shop.domain));
+
+  // Build Description
+  var itemDescription = data.description;
+  itemDescription = itemDescription.substr(0, itemDescription.indexOf('##highlights##'));
+  itemHtml = itemHtml.replace(/{{itemDescription}}/g, itemDescription);
+
+  // Build Tags
+  itemHtml = itemHtml.replace(/{{itemTags}}/g, this.escape(data.tags.join(';')));
+  
+  // Build ThumbUrl
+  itemHtml = itemHtml.replace(/{{itemThumbUrl}}/g, thumburl);
 
   // Add main attribute
   itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
@@ -424,10 +439,10 @@ BCSfFilter.prototype.buildExtrasProductList = function(data, eventType) {
     productSelector.addClass('grid grid--uniform grid--view-items');
   }
   
-  // Integrate Stamped.io Reviews
-  if (typeof StampedFn !== 'undefined' && typeof StampedFn.loadBadges == 'function') {
-          StampedFn.loadBadges();
-  }  
+  if (typeof Yotpo !== 'undefined') {
+      var api = new Yotpo.API(yotpo);
+      api.refreshWidgets();
+  }
 };
 
 // Build Additional Elements
