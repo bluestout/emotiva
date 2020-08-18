@@ -11,9 +11,9 @@
 						<div class="em-hm-shop-srs-box-img">
 							<h3>{{product_1.title}}</h3>
                           {%if section.settings.image_1 != blank %}
-							<img src="{{section.settings.image_1 | img_url: "large"}}" />
+							<img class="lazyload" data-src="{{section.settings.image_1 | img_url: "large"}}" />
                           {%else%}
-                          <img src="{{ product_1.image | img_url: 'large' }}" />
+                          <img class="lazyload" data-src="{{ product_1.image | img_url: 'large' }}" />
                           {%endif%}
                       </div>
 						<p>{{section.settings.text_1}}</p>
@@ -25,9 +25,9 @@
 						<div class="em-hm-shop-srs-box-img">
 							<h3>{{product_2.title}}</h3>
                           {%if section.settings.image_2 != blank %}
-							<img src="{{section.settings.image_2 | img_url: "large"}}" />
+							<img class="lazyload" data-src="{{section.settings.image_2 | img_url: "large"}}" />
                           {%else%}
-                          <img src="{{ product_2.image | img_url: 'large' }}" />
+                          <img class="lazyload" data-src="{{ product_2.image | img_url: 'large' }}" />
                           {%endif%}
                       </div>
 						<p>{{section.settings.text_2}}</p>
@@ -39,9 +39,9 @@
 						<div class="em-hm-shop-srs-box-img">
 							<h3>{{product_3.title}}</h3>
                           {%if section.settings.image_3 != blank %}
-							<img src="{{section.settings.image_3 | img_url: "large"}}" />
+							<img class="lazyload" data-src="{{section.settings.image_3 | img_url: "large"}}" />
                           {%else%}
-                          <img src="{{ product_3.image | img_url: 'large' }}" />
+                          <img class="lazyload" data-src="{{ product_3.image | img_url: 'large' }}" />
                           {%endif%}
                       </div>
 						<p>{{section.settings.text_3}}</p>

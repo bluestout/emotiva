@@ -160,9 +160,9 @@
           </div>
 
           <!--Stamp.io-->
-          <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">
+         <!-- <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: block;">
             {{ product.metafields.stamped.badge }}
-          </span>
+          </span>-->
         </div> 
         <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
@@ -287,7 +287,7 @@
 
 <div class="em-sin-pro-chat-lined">
 	<div class="em-sin-pro-chat-lined-inn">
-		<div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: "original"}}" /></div>
+		<div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: "small"}}" /></div>
 		<p>{{section.settings.heading_desktop}}</p>
 		<ul>
 			<li><a href="#" onclick="Smooch.open();">Live chat</a></li>
@@ -353,7 +353,7 @@
     </div>
     <div class="ReviewSection">
       <h2 class="em-ReviewSection-title">Product Reviews</h2>
-      <div id="stamped-main-widget"   
+     <!--<div id="stamped-main-widget"   
            data-widget-style="standard" 
            data-product-id="{{ product.id }}"   
            data-name="{{ product.title | escape }}"   
@@ -363,7 +363,7 @@
            data-product-sku="{{product.handle}}"
            data-product-type="{{product.type}}">   
         {{ product.metafields.stamped.reviews }}   
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

@@ -112,7 +112,8 @@
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'slidecart.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'jquery-ui.js' | asset_url }}" defer="defer"></script>
-  {%unless template contains "index" %}
+  
+  {%unless template contains "index" or template contains "product" %}
   <script src="{{ 'pageScript.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'custompopup.js' | asset_url }}" defer="defer"></script>
   {%endunless%}

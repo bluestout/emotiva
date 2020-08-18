@@ -7,9 +7,9 @@
 				<div class="em-hm-fea-block">
 					<div class="em-hm-fea-block-inn">
                       	<a href="{{block.settings.link}}" class="em-hm-fea-mob-link"></a>
-					    <img src="{{ block.settings.image | img_url: 'original'}}" />
+					    <img class="lazyload" data-src="{{ block.settings.image | img_url: 'original'}}" />
 						<div class="em-hm-fea-block-hover">
-							<img src="{{ block.settings.image | img_url: 'original'}}" />
+							<img class="lazyload" data-src="{{ block.settings.image | img_url: 'original'}}" />
                           <p>{{block.settings.desc}}</p>
 							<div class="em-hm-fea-block-hvr-btn"><a href="{{block.settings.link}}" class="em-bl-back-btn">Show Products</a></div>
 						</div>
