@@ -5,7 +5,7 @@
           <div class="em-sin-pro-dbl-lined-upr">
               <h3 class="em-sin-pro-dbl-lined-title">Complete Your Audio Solution</h3>
               <h5 class="em-sin-pro-dbl-lined-sb-title">These products work great with RMC-1</h5>
-              <a href="{{product.metafields.global.link}}" class="bl-text-arw-link">See more</a>
+              <a href="{%if product.metafields.global.link != blank  %}{{shop.url}}/collections/{{product.metafields.global.link}}{%endif%}" class="bl-text-arw-link">See more</a>
           </div>
           <div class="em-sin-pro-dbl-lined-lwr">
             <div class="em-sin-pro-dbl-lined-lwr-row">
@@ -13,7 +13,7 @@
               {%for handle in prohandle %}
               <div class="CompleteLoop-box">
                 <div class="CompleteLoop">
-                  <a href="#" class="em-block-overlay-link"></a>
+                  <a href="{{all_products[handle].url}}" class="em-block-overlay-link"></a>
                   <div class="em-img-block-hvr-zoom CompleteImage">
                     <img src="{{all_products[handle].featured_image | img_url: "large"}}">
                     <div class="CompleteImage-title">{{all_products[handle].metafields.global.type}}</div>
@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="em-single-pro-comp-sol-mob-link">
-              <a href="#" class="bl-text-arw-link">See more</a>	
+              <a href="{%if product.metafields.global.link != blank  %}{{shop.url}}/collections/{{product.metafields.global.link}}{%endif%}" class="bl-text-arw-link">See more</a>	
           </div>
 
       </div>

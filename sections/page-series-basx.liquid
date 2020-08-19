@@ -1,0 +1,162 @@
+<div class="em-series-range-sec">
+		<div class="page-width">
+			<h3 class="em-series-range-title">{{section.settings.title}}</h3>
+            {% for block in section.blocks %}
+           {% assign product= all_products[block.settings.product]%}
+			<div class="em-series-range-white-blk">
+              {% unless forloop.first%}
+              <div class="em-series-range-white-cont-logo em-series-range-white-logo-mob">
+                  <ul>
+                    <li><img src="{{'dtx-logo.jpg'| file_url}}" /></li>
+                    <li><img src="{{'dloby-img.jpg' | file_url  }}" /></li>
+                  </ul>					
+                </div>
+              {%endunless%}
+				<div class="em-series-range-white-img">
+                  {%if block.settings.image %}
+                  <img src="{{block.settings.image | img_url: "original"}}" />
+			{%else%}
+                  <img src="{{ product.featured_image.src | img_url: 'original' }}" />
+              {%endif%}
+                  </div>
+              <div class="em-series-range-white-cont">
+					<h3>{{product.title}}</h3>
+					<h5>{{block.settings.short}}</h5>
+					<p>{{block.settings.long}}</p>
+					<div class="em-series-range-cont-prc-rate">
+						<div class="em-series-range-cont-price">{{product.price| money}}</div>
+                      {% comment %} <span class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span> {% endcomment %}
+                      <!-- Yopto -->
+                      <div class="yotpo bottomLine"
+                          data-appkey="C6NTmtWEZTidMNpCtHQIuzOKSuJ2KlCmswsJKKIS"
+                          data-domain="{{shop.permanent_domain | escape }}"
+                          data-product-id="{{ product.id }}"
+                          data-product-models="{{ product.id }}"
+                          data-name="{{ product.title | escape }}"
+                          data-url="{{ shop.url }}{{ product.url }}"
+                          data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+                          data-description="{{ product.description | escape }}"
+                          data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+                        {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+                        {%- assign time_now = 'now' | date: '%s' %}
+                        {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+                        {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+                        {%- assign yotpo_bottomline_last_updated = product.metafields.yotpo.bottomline_update_time | date: '%s' %}
+                        {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+                        {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+                          {%- assign yotpo_bottomline_obsolete = false %}
+                        {%- else %}
+                          {%- assign yotpo_bottomline_obsolete = true %}
+                        {%- endif %}
+                        {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+                          {{ product.metafields.yotpo.bottomline }}
+                        {%- endif %}
+                      </div>
+                      
+					</div>
+					<div class="em-series-range-cont-btn"><a href="{{product.url}}" class="em-bl-back-btn">Explore</a></div>
+				</div>
+			</div>
+          {%endfor%}
+			
+			
+			<div class="em-series-range-sec-btn"><a href="{{section.settings.link}}" class="em-bl-lined-btn">Explore All Products</a></div>
+		</div>
+	</div>
+{% schema %}
+  {
+    "name": "page series",
+    "settings": [
+{
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "The X-series Range"
+      }
+    },
+{
+      "type": "url",
+      "id": "link",
+      "label": {
+        "da": "Link",
+        "de": "Link",
+        "en": "Link"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Collection"
+      }
+    }
+]
+,
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+          
+{
+      "id": "product",
+      "type": "product",
+      "label": {
+        "da": "Product",
+        "de": "Product",
+        "en": "Product"
+      }
+    },
+{
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image Optional"
+          }
+        },
+{
+      "type": "textarea",
+      "id": "short",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Short Description"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Short Description"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "long",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Long Description"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "Long Description"
+      }
+    }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

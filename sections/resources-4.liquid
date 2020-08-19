@@ -10,7 +10,8 @@
                             {% for block in section.blocks %}
                           <li>
                               <div class="em-res-video-block">
-                                  <div class="em-res-video-block-img"><img src="{{'video-1-img.jpg' | file_url}}" /></div>
+                                  {% comment %} <div class="em-res-video-block-img"><img src="{{'video-1-img.jpg' | file_url}}" /></div> {% endcomment %}
+                                  <div class="em-res-video-block-img"><img src="{{ block.settings.image | img_url: '385x217'}}" /></div> 
                                   <div class="em-res-video-block-cont">
                                       <h3>{{block.settings.title}}</h3>
                                       <p>{{block.settings.time}}</p>
@@ -76,6 +77,12 @@
         "id": "video",
         "label": "Video Link",
         "default": "https://www.youtube.com/embed/j8CklKwQW8I"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label":"Image",
+        "info": "385 x 217px"
       }
         ]
       }
