@@ -1,7 +1,8 @@
 $(document).ready(function(){ 
  var getprice = $(".cartTotal").html();
- 
-        if(getprice >49)
+ var shipPrice = $(".ShipPrice").val();
+  shipPrice = parseInt(shipPrice);
+        if(getprice >shipPrice)
         {
           console.log("show");
         $(".ShippingText").show();
@@ -118,8 +119,9 @@ $(document).ready(function(){
             
         priceget = (theme.Currency.formatMoney(dataa.total_price));
         priceget = priceget.replace("$","");
-            console.log(priceget);
-        if(priceget >49)
+            var shipPrice = $(".ShipPrice").val();
+  shipPrice = parseInt(shipPrice);
+        if(priceget >shipPrice)
         {
           console.log("show");
         $(".ShippingText").show();
@@ -181,7 +183,9 @@ $(document).ready(function(){
             var priceget = (dataa.total_price);
         priceget = (theme.Currency.formatMoney(dataa.total_price));
         priceget = priceget.replace("$","");
-        if(priceget >49)
+            var shipPrice = $(".ShipPrice").val();
+  shipPrice = parseInt(shipPrice);
+        if(priceget >shipPrice)
         {
           console.log("show");
         $(".ShippingText").show();

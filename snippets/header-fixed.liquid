@@ -2,7 +2,9 @@
 	<div class="em-top-head-sec-sticky-inn">
 		<div class="em-top-head-sec-sticky-logo">
 			<a href="/">
-                         <img src="{{section.settings.logo | img_url: "original"}}" />
+                         {% comment %} <img src="{{section.settings.logo | img_url: "original"}}" /> {% endcomment %}
+                         <img src="{{'emotiva@1x.svg' | asset_url}}" />
+                         
                       </a>
 		</div>
 		<div class="em-top-head-sec-sticky-nav">

@@ -500,7 +500,9 @@ jQ.fn.stickTo = function(startElement) {
         /* save last scroll position */
 		lastScrollTop = $window.scrollTop();
         
-        var endPos = $contentTop + $contentHeight;        
+        var endPos = $contentTop + $contentHeight;                
+      
+        
       
         if (sidebarHeight > $contentHeight) {
           _this.removeClass('bc-sf-filter-stick');            
@@ -508,6 +510,21 @@ jQ.fn.stickTo = function(startElement) {
             position: 'initial',
             width: '100%'
           });
+          return;
+        }
+      
+      	if (scrollBottom >= endPos) { /* End Position  */          
+            var absolutePos = $contentHeight - sidebarHeight;
+            if (absolutePos > 0) {
+              _this.removeClass('bc-sf-filter-stick');              
+              _this.css({
+                  position: 'absolute',
+                  top: absolutePos,
+                  bottom: 'unset',
+                  width: width
+              });
+            }          
+          
           return;
         }
       
@@ -532,20 +549,7 @@ jQ.fn.stickTo = function(startElement) {
         }  
       	
       
-        if (scrollBottom >= endPos && sidebarBottom >= endPos && (isScrollingDown || scrollTop > sidebarTop)) { /* End Position  */          
-            var absolutePos = $contentHeight - sidebarHeight;
-            if (absolutePos > 0) {
-              _this.removeClass('bc-sf-filter-stick');              
-              _this.css({
-                  position: 'absolute',
-                  top: absolutePos,
-                  bottom: 'unset',
-                  width: width
-              });
-            }          
-          
-          return;
-        }
+        
         
             
         /* when scrolling down */  

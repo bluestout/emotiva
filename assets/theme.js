@@ -5565,6 +5565,7 @@ theme.Cart = (function() {
         'aria-label',
         theme.strings.removeLabel.replace('[product]', title)
       );
+      
     },
 
     _setQuantityInputs: function($item, item, index) {
@@ -5893,7 +5894,20 @@ theme.Cart = (function() {
       var quantity = lineItem.data('cart-item-quantity');
       var url = lineItem.attr(attributes.cartItemUrl);
       var title = lineItem.attr(attributes.cartItemTitle);
-
+var priceGetting = $(".cart-subtotal__price").html();
+      priceGetting = priceGetting.replace("$","");
+      priceGetting = priceGetting.replace(" USD","");
+       var shipPrice = $(".ShipPrice").val();
+  shipPrice = parseInt(shipPrice);
+      if(priceGetting >shipPrice)
+        {
+          console.log("show");
+        $(".ShippingText").show();
+        }
+        else{
+          console.log("hide");
+          $(".ShippingText").hide();
+        }
       return theme.strings.removedItemMessage
         .replace('[quantity]', quantity)
         .replace(

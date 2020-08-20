@@ -9,7 +9,8 @@
 			 	<div class="em-head-top-bar-left">
 					<div class="em-head-top-bar-logo">
                       <a href="/">
-                         <img src="{{section.settings.logo | img_url: "original"}}" />
+                         {% comment %} <img src="{{section.settings.logo | img_url: "original"}}" /> {% endcomment %}
+                         <img src="{{'emotiva@1x.svg' | asset_url}}" />
                       </a>
                         </div><p>Sound as it should be</p>
 				</div>

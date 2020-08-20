@@ -140,7 +140,9 @@
 <footer class="site-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
     <div class="FooterLogo">
-      <img src="{{section.settings.image | img_url: "165x25"}}" />
+      {% comment %} <img src="{{section.settings.image | img_url: "165x25"}}" /> {% endcomment %}
+      <img src="{{'emotiva@1x.svg' | asset_url}}" />
+      
     </div>
     <div class="site-footer__content DesktopFooter">
       {%- for block in section.blocks -%}

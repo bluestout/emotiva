@@ -377,7 +377,7 @@
   </div>
 </div>
 
-
+<input style="display:none;" type="text" value="{{section.settings.ship_price}}" class="ShipPrice">
 
 {% schema %}
 {
@@ -402,6 +402,20 @@
     "zh-TW": "購物車頁面"
   },
   "settings": [
+{
+      "type": "text",
+      "id": "ship_price",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Free Shipping Price"
+      },
+      "default": {
+        "da": "Logoliste",
+        "de": "Logo-Liste",
+        "en": "49"
+      }
+    },
     {
       "type": "checkbox",
       "id": "cart_ajax_enable",

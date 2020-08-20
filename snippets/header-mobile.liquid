@@ -65,7 +65,8 @@
 		</div>
 		<div class="em-mob-header-bot-middle">
 			<div class="em-mob-header-logo">
-              <a href="/"> <img src="{{section.settings.logo | img_url: "original"}}" /></a>
+              {% comment %} <a href="/"> <img src="{{section.settings.logo | img_url: "original"}}" /></a> {% endcomment %}
+              <a href="/"> <img src="{{'emotiva@1x.svg' | asset_url}}" /></a>
 			</div>
 		</div>
 		<div class="em-mob-header-bot-right">

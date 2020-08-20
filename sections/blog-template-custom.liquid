@@ -3,7 +3,9 @@
       <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{tag}}</a></li>
       {%endfor%}
 </ul>
+
 <div class="page-width">
+  {% if current_tags == blank %}
 	<div class="em-read-sin-top-sec">
 		<div class="em-read-sin-top-left">
 			<img src="{{ articles[section.settings.article].image.src | img_url: 'original' }}" />
@@ -67,14 +69,48 @@
 			</div>
 		</div>
 	</div>
+  {% else %}
+  
+  <div class="em-read-innr-hm-sec-main">
+    <div class="em-read-innr-hm-sec-inn">
+      <div class="em-read-innr-hm-sec-row">
+
+        {% for article in blog.articles %}
+        <div class="em-read-innr-hm-sec-col">
+          <div class="em-read-innr-hm-sec-block">
+            
+            
+            <div class="em-read-innr-hm-sec-block-img em-img-block-hvr-zoom">
+              <a href="{{ article.url }}">
+                <img src="{{ article.image.src | img_url: 'original' }}" />
+              </a>
+            </div>
+            <div class="em-read-innr-hm-sec-block-info">
+              <a href="{{article.url}}" class="em-read-innr-hm-sec-block-info-link">
+                <h3>{{ article.title}}</h3>
+                <p>{{ article.excerpt}}</p>
+                <div class="em-read-innr-hm-sec-block-date">{{ article.published_at | date: '%B %d, %Y ' }} by {{ article.author }}</div>
+              </a>
+            </div>
+            
+           
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  {% endif %}
 	<div class="em-read-sin-explore-sec">
 		<h3>Explore All Tags</h3>
 		<ul class="em-read-sin-explore-list">
           
           {% for block in section.blocks %}
           {% for article in blogs[block.settings.getblog].articles %}
+          {% assign handliget = article.handle %}
           {% for tag in article.tags %}
-          <li>{{ tag | link_to_tag: tag }}</li>
+          <li><a href="https://emotiva.com/blogs/{{block.settings.getblog}}/tagged/{{tag | handle}}">{{tag}}</a></li>
           {% endfor %}
           {% endfor %}
           {% endfor %}
