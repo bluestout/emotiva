@@ -65,7 +65,7 @@
 					<ul class="em-nav-top-bar-lt-list">	
                   {% for link in linklists[section.settings.main_linklist].links %}
                       {% if link.links != blank %}
-                      <li class="em-nav-listing {%if forloop.index==4%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==6%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7%}ReadCustom em-mega-menu-single{%endif%}"><a href="{{link.url}}">{{link.title}}</a>
+                      <li class="em-nav-listing {%if forloop.index==4%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==6%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7%}ReadCustom em-mega-menu-single{%endif%}"><a>{{link.title}}</a>
                         <div class="em-mega-menu-dd-main">
                           {%if forloop.index==4 or forloop.index==6%}
                           <div class="em-mega-menu-dd-main-row">

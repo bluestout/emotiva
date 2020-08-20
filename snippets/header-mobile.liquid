@@ -25,33 +25,33 @@
                 <ul>
                   {%for link in linklists[section.settings.main_linklist].links%}
                    {% if link.links != blank %}
-                    <li class="childmobile em-mob-has-dropdown"><a href="{{link.url}}">{{link.title}}</a>
-                  <ul class="childlistmobile">
+                    <li class="childmobile em-mob-has-dropdown"><a >{{link.title}}</a>
+                      <ul class="childlistmobile">
                        {% for childlink in link.links %}
                           {%if childlink.handle == "has-dropdown" %}
-                          <li>
-                          {%include "admin-menu"%}
-	</li>
+                            <li>
+                              {%include "admin-menu"%}
+                            </li>
                           {%else%}
-                          {% if childlink.links != blank %}
-                            <li class="em-mob-has-dropdown"><a href="{{childlink.url}}">{{childlink.title}}</a>
-                          <ul class="SubChilListmobile">
-                            {% for subchildlink in childlink.links %}
-                            <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
-                            {%endfor%}
-                              </ul>
-                          </li>
-                          {%else%}
-                        <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
-                          {%endif%}
+                            {% if childlink.links != blank %}
+                              <li class="em-mob-has-dropdown"><a href="{{childlink.url}}">{{childlink.title}}</a>
+                                <ul class="SubChilListmobile">
+                                    {% for subchildlink in childlink.links %}
+                                    <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
+                                    {%endfor%}
+                                  </ul>
+                              </li>
+                            {%else%}
+                              <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
+                            {%endif%}
                           {%endif%}
                         {%endfor%}
-                        </ul>
-                  </li>
-                      {%else%}
-                  <li><a href="{{link.url}}">{{link.title}}</a></li>
-                      {%endif%}
-                    {%endfor%}
+                      </ul>
+                    </li>
+                  {%else%}
+                    <li><a href="{{link.url}}">{{link.title}}</a></li>
+                  {%endif%}
+                  {%endfor%}
                 </ul>
             </div>
             <div class="em-mob-toggle-menu-bot">
