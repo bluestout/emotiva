@@ -17,10 +17,10 @@
 				<p>{{ articles[section.settings.article].excerpt }}</p>
 				<div class="em-read-sin-article-tags">
 					<ul>
-                      {% for tag in articles[section.settings.article].tags %}
-                      <li>{{ tag | link_to_tag: tag }}</li>
-                      {% endfor %}
-						
+            {% assign blog_url = articles[section.settings.article].url | split: '/' %}
+            {% for tag in articles[section.settings.article].tags %}
+            <li><a href="{{ blog_url[2]}}/tagged/{{ tag | handle }}">{{tag}}</a></li>
+            {% endfor %}
 					</ul>
 				</div>
 				<div class="em-read-sin-article-btn">
@@ -107,15 +107,30 @@
 		<ul class="em-read-sin-explore-list">
           
           {% for block in section.blocks %}
-          {% for article in blogs[block.settings.getblog].articles %}
-          {% assign handliget = article.handle %}
-          {% for tag in article.tags %}
-          <li><a href="https://emotiva.com/blogs/{{block.settings.getblog}}/tagged/{{tag | handle}}">{{tag}}</a></li>
+            {% assign tags_str = "" %}
+            {% for article in blogs[block.settings.getblog].articles %}
+              {% for tag in article.tags %}
+                {% assign isExitTag = false %}
+                {% assign tags_list = tags_str | split: "/" %}
+                {% for member in tags_list %}
+                  {% assign tag_handle =  tag | handle %}
+                  {% if member contains tag_handle %}
+                    {% assign isExitTag = true %}
+                  {%endif%}
+                {% endfor %}
+                {% if isExitTag == false %}
+                  {% assign tag_handle =  tag | handle %}
+                  {% assign tags_str = tags_str | append: tag_handle %}
+                  {% assign tags_str = tags_str | append: '/' %}
+                {%endif%}
+              {% endfor %}
+            {% endfor %}
+            {% assign blog_url = blogs[block.settings.getblog].url | split: '/' %}
+            {% assign tags_list = tags_str | split: "/" %}
+            {% for member in tags_list %}
+              <li><a href="{{ blog_url[2]}}/tagged/{{ member }}">{{member}}</a></li>
+            {% endfor %} 
           {% endfor %}
-          {% endfor %}
-          {% endfor %}
-
-			
 		</ul>
 	</div>
 </div>
