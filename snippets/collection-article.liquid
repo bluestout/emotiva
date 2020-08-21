@@ -9,8 +9,12 @@
 			<div class="colc-article-sec-block">
 				<a href="{{articles[section.settings.article_1].url}}"></a>
 				<div class="colc-article-sec-img">
+                  {% if articles[section.settings.article_1].image %}
 					<img class="lazyload" data-src="{{articles[section.settings.article_1].image |img_url: "large"}}" />
-					<span>{{section.settings.blog_1}}</span>
+				{%else%}
+                  <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+                  {%endif%}
+                  <span>{{section.settings.blog_1}}</span>
 				</div>
 				<div class="colc-article-sec-cont">
 					<div class="colc-article-sec-cont-cat">{{section.settings.blog_1}}</div>
@@ -29,7 +33,11 @@
 			<div class="colc-article-sec-block">
 				<a href="{{articles[section.settings.article_2].url}}"></a>
 				<div class="colc-article-sec-img">
-		        <img class="lazyload" data-src="{{articles[section.settings.article_2].image |img_url: "large"}}" />
+		        {% if articles[section.settings.article_2].image %}
+					<img class="lazyload" data-src="{{articles[section.settings.article_2].image |img_url: "large"}}" />
+				{%else%}
+                  <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+                  {%endif%}
 					<span>{{section.settings.blog_2}}</span>
 				</div>
 				<div class="colc-article-sec-cont">
@@ -49,7 +57,11 @@
 			<div class="colc-article-sec-block">
 				<a href="{{articles[section.settings.article_3].url}}"></a>
 				<div class="colc-article-sec-img">
+					{% if articles[section.settings.article_3].image %}
 					<img class="lazyload" data-src="{{articles[section.settings.article_3].image |img_url: "large"}}" />
+				{%else%}
+                  <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+                  {%endif%}
 					<span>{{section.settings.blog_3}}</span>
 				</div>
 				<div class="colc-article-sec-cont">

@@ -213,6 +213,9 @@ $(document).ready(function(){
     $('body').on('click', '.em-sin-pro-reward-box', function() {
   $(this).next(".em-sin-pro-reward-popup").toggleClass("RewardPop");
   })
+     $('body').on('click', '#slidingcartmain .em-sin-pro-reward-box', function() {
+  $(this).children(".em-sin-pro-reward-popup").toggleClass("RewardPop");
+  })
   }
 //    $('body').on('click', '.em-sin-pro-reward-pop-close', function() {
 //     $(".em-sin-pro-reward-popup").removeClass("RewardPop");

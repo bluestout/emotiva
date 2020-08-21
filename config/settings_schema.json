@@ -1506,5 +1506,28 @@
         }
       }
     ]
+  },
+  {
+    "name": {
+      "da": "Meddelelse for læg i indkøbskurven",
+      "de": "Benachrichtigung für „Zum Warenkorb hinzufügen“",
+      "en": "Global  Article Image"
+    },
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "global_image",
+        "label": {
+          "da": "Billede for favoritikon",
+          "de": "Favicon-Foto",
+          "en": "Global image"
+        },
+        "info": {
+          "da": "Skaleres ned til 32 x 32 px",
+          "de": "Wird in der Größe 32 x 32 px angezeigt",
+          "en": "800x800px"
+        }
+      }
+    ]
   }
 ]

@@ -38,15 +38,32 @@
 </div>
 </div>
 <div class="em-read-rel-article-sec">
-<div class="page-width">
+<div class="page-width-custom">
 <div class="em-read-rel-article-inn">
 <h3 class="em-read-rel-article-title">Other articles you might be interested in</h3>
 <div class="em-read-rel-article-row">
+  {% assign limitget = false %}
   {% for article in blog.articles limit: 3 %}
+  {% if article.title == blogarticletitle %}
+  {% assign limitget = true %}
+  {%endif%}
+  {%endfor%}
+ {%if limitget == true%}
+  {% assign limitnumber = 4 %}
+  {%else%}
+  {% assign limitnumber = 3 %}
+  {% endif %}
+  {% for article in blog.articles limit: limitnumber %}
     {% unless article.title == blogarticletitle %}
 <div class="em-read-rel-article-block">
 <div class="em-read-rel-article-box">
-<div class="em-read-rel-article-img"><img src="{{article.image | img_url: "original"}}" /></div>
+<div class="em-read-rel-article-img">
+   {% if article.image %}
+  <img src="{{article.image | img_url: "original"}}" />
+  {%else%}
+   <img src="{{settings.global_image | img_url: "original"}}" />
+  {%endif%}
+  </div>
 <div class="em-read-rel-article-date">{{ article.published_at | time_tag: format: 'date' }} {{ 'blogs.article.by_author' | t: author: article.author }}</div>
 <h3>{{ article.title }}</h3>
 <p>{%- if article.excerpt.size > 0 -%}
