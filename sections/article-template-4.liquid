@@ -13,23 +13,15 @@
 </div>
 {%endcomment %}
 {% assign articleDescription = article.content | split:"<!-- split -->"%}
-{% assign hasVideo = false %}
-{% if article.content contains "www.youtube.com/embed/" %}
-  {% assign hasVideo = true %}
-{% endif %}
 <div class="page-width">
   <div class="em-read-single-vid-top">
-    {% if hasVideo == true %}
-    <div class="em-read-single-vid-inn">{{ article.content }}</div>
-    {% endif %}
+    <div class="em-read-single-vid-inn">{{ articleDescription[0] }}</div>
     <div class="em-read-single-vid-det">
       <div class="em-read-sin-top-cont">
         {%assign blogarticletitle = article.title%}
         <h4>{{ article.published_at | time_tag: format: 'date' }} {{ 'blogs.article.by_author' | t: author: article.author }}</h4>
         <h3>{{ article.title }}</h3>
-        {% if hasVideo == false %}
-        <p>{{ article.content }}</p>
-        {% endif %}
+        <p>{{ articleDescription[1] }}</p>
         <div class="em-read-single-vid-tags">
           <ul class="em-read-single-gr-lined-btns">
             {%for tag in article.tags%}

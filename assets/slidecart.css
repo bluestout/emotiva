@@ -66,6 +66,7 @@
 }
 .inline-cart .line-item-container {
   max-height: 341px;
+  min-height: 130px;/*FS added*/
   overflow-y: scroll;
 }
 .inline-cart .line-item-container .line-item {
