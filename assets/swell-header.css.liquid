@@ -1,0 +1,265 @@
+.swell-header-container {
+	background-image: url({{"swell-header-banner.jpg" | asset_url}});
+	background-size: cover;
+	background-repeat: no-repeat;
+    justify-content: center;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  	height: 60rem;
+  	display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+}
+.swell-header-details {
+		margin-top: 10rem;
+		width: 47%;
+
+}
+.swell-header-points {
+	text-align: center;
+    margin-top: 1rem;
+    font-weight: bold !important;
+    font-size: 25px !important;
+    margin-left: -3rem;
+}
+.swell-header-details h1 {
+	text-shadow: 0 0 7px rgba(0, 0, 0, 0.65);
+  	font-family: Roboto;
+  	font-size: 45px;
+  	font-weight: bold;
+ 	color: white;
+	line-height: 1.3;
+	    margin-bottom: .5rem;
+}
+.swell-header-details p {
+	color: white;
+    width: 80%;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.65);
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+}
+.swell-header-text {
+	display: flex;
+    justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	 margin-bottom: 2rem;
+} 
+.swell-header-btn button {
+	width: 32%;
+    border: 0;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: bold;
+    padding: .6rem;
+    margin-top: 1rem;
+}
+.swell-header-btn button:nth-of-type(1){
+	 background-color: #003e71;
+	 color: white;
+	 margin-right: .3rem;
+}
+.swell-header-btn button:nth-of-type(2) {
+	 background-color:white;
+	 color: #003e71;
+}
+.swell-header-login-details {
+	    margin-top: 2rem;
+	    border-top: 1px solid;
+        padding-top: 2rem;
+        width: 85%;
+}
+.swell-header-login-details h2{
+	    margin-bottom: 0;
+}
+.swell-header-how-it-works {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31rem;
+}
+.swell-header-how-it-works-text {
+	width: 100%;
+	display: flex;
+	 font-family: Arial;
+	 text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+.swell-header-how-it-works-text p {
+	    margin-bottom: 0;
+}
+.swell-header-how-it-works-text h3 {
+	margin: 0 2%;
+    font-weight: bold;
+    font-size: 22px;
+}
+.swell-header-how-it-works-container {
+	width: 35%;
+	color: white;
+}
+.swell-steps {
+	display: flex;
+}
+.swell-step {
+	background: #00457c;
+    transform: skewX(-10deg) !important;
+    margin: 0 1%;
+    width: 50%;
+}
+.swell-step-text {
+	transform: skewX(10deg) !important;
+	margin-left: 1.5rem;
+	margin: 9% 12%;
+}
+.swell-step-text h1 {
+	font-family: Roboto;
+    font-size: 46.5px;
+    border-bottom: 3px solid;
+    width: 30%;
+    font-weight: bold;
+        margin-bottom: 15px;
+}
+.swell-step-text h4 {
+	font-family: Roboto;
+    font-size: 16.5px;
+    font-weight: bold;
+    margin-bottom: 2px;
+
+}
+.swell-step-text p {
+	font-family: Arial;
+    font-size: 12px;
+    line-height: 1.3;
+}
+.swell-header-login-details h2 {
+	font-family: Roboto;
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.swell-header-login-container {
+	    padding-left: 5rem;
+}
+.swell-header-btn {
+	margin-left: 3rem;
+}
+.swell-header-btn button {
+	    height: 2.5rem;
+	    width: 34%;
+}
+@media only screen and (max-width: 1100px){
+	.swell-header-details {
+		width: 55%;
+	}
+	.swell-header-login-container {
+	        padding-left: 2rem;
+	}
+}
+@media only screen and (max-width: 910px){
+	.swell-header-container {
+		background-image: url({{"swell-header-mob.jpg" | asset_url}});
+		height: unset;
+		flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	.swell-header-login-container {
+		background-image: url({{"swell-header-mob-login.jpg" | asset_url}});
+		 background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+	}
+	.swell-header-btn {
+		display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: column;
+	}
+	.swell-header-btn button {
+		width: 55%;
+    	border: 0;
+    	font-family: Lato;
+    	font-size: 18px;
+    	font-weight: bold;
+    	padding: .8rem;
+    	margin-top: 1rem;
+	}
+	.swell-header-details {
+		width: 80%;
+		 margin-top: 3rem;
+	}
+	.swell-header-how-it-works {
+		    margin-top: 7rem;
+		        margin-bottom: 3rem;
+	}
+	.swell-header-how-it-works-container {
+		width: unset;
+	}
+	.swell-steps {
+		justify-content: center;
+	}
+	.swell-header-login-details {
+		margin-bottom: 3rem;
+	}
+}
+@media only screen and (max-width: 590px){
+	.swell-header-details {
+    	width: 93%;
+	}
+	.swell-header-btn button {
+		width: 65%;
+    	padding: .5rem;
+	}
+	.swell-header-details h1 {
+		font-size: 40px;
+	}
+	.swell-header-details p {
+		font-size: 18px;
+		    width: 90%;
+	}
+}
+@media only screen and (max-width: 440px){
+	.swell-header-details h1 {
+		font-size: 30px;
+	}
+	.swell-header-details p {
+		font-size: 15px;
+	}
+	.swell-header-btn button {
+		font-size: 17px;
+		width: 76%;
+	}
+	.swell-header-how-it-works {
+    	margin-top: 5rem;
+	}
+	.swell-step {
+		width: 41%;
+	}
+	.swell-step-text h1 {
+	    font-size: 38px
+	}
+	.swell-step-text {
+		margin: 8% 9%;
+	}
+	.swell-step-text h4 {
+		    font-size: 13px;
+		     margin-bottom: 4px;
+
+	}
+	.swell-header-login-details h2 {
+		font-size: 26px;
+	}
+	.swell-header-login-container {
+		    padding-left: 0rem;
+
+	}
+}

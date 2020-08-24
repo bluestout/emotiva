@@ -55,3 +55,19 @@
     </div>
   </div>
 </div>
+{{"swell-account.css" | asset_url | stylesheet_tag}}
+<div class="swell-account">
+   <div class="swell-rewards">
+    <div class="swell-account-text">
+      MY REWARD
+    </div>
+{% include "swell-header" %}
+{% include "swell-vip-tiers" %}
+{% include "swell-redemption-discount" %}
+</div>
+{% include "swell-referral" %}
+</div>
+{{ "//code.jquery.com/jquery-3.3.1.min.js" | script_tag }}
+{{ "swell-defenitions.js" | asset_url | script_tag }} 
+{{ "swell-referral-page.js" | asset_url | script_tag }}
+{{ "swell-rewards.js" | asset_url | script_tag }}

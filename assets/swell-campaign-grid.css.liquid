@@ -1,0 +1,148 @@
+.swell-campaign-grid-container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+   
+}
+.swell-campaign-grid-container h1 {
+	text-align: center;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+}
+.swell-campaign-grid-options {
+	 display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.swell-campaign {
+	width: 23.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    margin: 1% 0;
+}
+.swell-campaign-text h5 {
+	margin-bottom: 0;
+	font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.swell-campaign-text p {
+	font-family: Arial;
+    font-size: 16px;
+    color: white;
+}
+.swell-campaign-text {
+	text-align: center;
+	position: relative;
+}
+#campaign-444496 i {
+  content: url({{'swell-create-account.svg' | asset_url }});
+}
+#campaign-444497 i{
+  content: url({{'swell-per-1-spent.svg' | asset_url }});
+}
+#campaign-444498 i{
+  content:url({{ 'swell-birthday-bonus.svg' | asset_url }});
+}
+#campaign-496631 i{
+  content: url({{'swell-review-product.svg' | asset_url }});
+}
+#campaign-444502  {
+  display: none;
+}
+#campaign-496632 i{
+  content:url({{ 'swell-instagram.svg' | asset_url }});
+}
+#campaign-496633 i {
+  content: url({{'swell-facebook.svg' | asset_url }});
+}
+#campaign-496634 i {
+  content:url({{ 'swell-read-our-blog.svg' | asset_url }});
+}
+.swell-campaign:last-of-type i {
+   content:url({{ 'swell-logo.svg' | asset_url }});
+   width: 50%;
+}
+.swell-campaign:nth-of-type(3n+3) {
+	background-color: #656565;
+}
+.swell-campaign:nth-of-type(6n+2) {
+	background-color: #002855;
+}
+.swell-campaign:nth-of-type(6n+1) {
+	background-color: #005daa;
+}
+.swell-campaign:nth-of-type(9) {
+	background-color: #f5f5f5;
+}
+.swell-campaign:nth-of-type(4) {
+	background-color:  #002855;
+}
+.swell-campaign i {
+	width: 44px;
+	margin-bottom: 1rem;
+	
+}
+.swell-campaign-points {
+	position: absolute;
+	font-size: 9px;
+    color: white;
+    font-weight: bold;
+    top: 24%;
+    right: 33%;
+}
+.swell-campaign:nth-of-type(1) .swell-campaign-points {
+	top: 17%;
+    right: 37%;
+}
+.swell-campaign:nth-of-type(2) .swell-campaign-points {
+	top: 24%;
+    right: 39%;
+}
+.swell-campaign:nth-of-type(6) .swell-campaign-points {
+	top: 23%;
+    right: 39.5%;
+}
+.swell-campaign:nth-of-type(7) .swell-campaign-points {
+	top: 23%;
+    right: 37%;
+}
+.swell-campaign:nth-of-type(8) .swell-campaign-points {
+	top: 24%;
+    right: 40%;
+}
+@media only screen and (max-width: 790px) {
+	.swell-campaign {
+   	 	width: 48%;
+   	}
+   	.swell-campaign-grid-container h1 {
+   		    font-size: 24px;
+   	}
+   	.swell-campaign-grid-container {
+   		margin-top: 4rem;
+   	}
+}
+@media only screen and (max-width: 425px) {
+	.swell-campaign-text p {
+   	 	font-size: 14px;
+   	}
+   	.swell-campaign-text h5 {
+   		font-size: 16px;
+   	}
+   	.swell-campaign {
+   		height: 9rem;
+   	}
+}

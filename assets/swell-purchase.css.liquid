@@ -1,0 +1,164 @@
+.swell-purchase-show {
+display: flex;
+}
+.swell-purchase-hidden {
+	display: none;
+}
+.swell-purchase {
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	right: 0;
+    background-color: rgba(0, 0, 0, 0.93);
+	z-index: 3333;
+	position: fixed;
+}
+.swell-purchase-img {
+	width: 100%;
+	background-image: url({{'swell-purchase-popup.jpg' | asset_url}});
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 15rem;
+}
+.swell-purchase-text .swell-popup-close {
+	margin-bottom: 2rem;
+    margin-left: 3.5rem;
+    position: unset;
+}
+.swell-purchase-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+}
+.swell-purchase .swell-referral-banner,.swell-purchase .swell-referral-history {
+	display: none;
+}
+.swell-purchase  .swell-referral-details-container {
+	background-color:white;
+	color: black;
+
+} 
+.swell-purchase  .swell-referral-details {
+	width: 95%;
+}
+.swell-purchase .swell-referral-mail input[type="text"] {
+	border: 1px solid #b4bbc3;
+}
+.swell-purchase .swell-referral-mail p {
+	    margin-bottom: 2rem
+}
+.swell-purchase  .Message {
+	content: url({{'swell-purchase-message.svg' | asset_url }});
+}
+.swell-purchase  .Tweet {
+	content: url({{'swell-purchase-tweet.svg' | asset_url }});
+}
+.swell-purchase  .SMS {
+	content: url({{'swell-purchase-sms.svg' | asset_url }});
+}
+.swell-purchase  .Share  {
+	content: url({{'swell-purchase-share.svg' | asset_url }});
+}
+.swell-purchase  .swell-share-link {
+	color: black;
+}
+.swell-purchase .swell-share-link-text {
+	margin-bottom: 1rem;
+}
+.swell-purchase .swell-referral-text p {
+	font-size: 16px;
+}
+.swell-purchase .swell-referral-text h1 {
+	font-size: 32px;
+}
+.swell-purchase .swell-purchase-text p {
+	 font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+/*.swell-purchase .swell-popup-close {
+	    top: 12%;
+	        font-size: 32px;
+}*/
+@media only screen and (max-width: 1200px){
+	.swell-purchase .swell-referral-mail {
+    	margin-bottom: 0;
+	}
+	.swell-purchase .swell-referral-mail input[type="submit"] {
+		    margin-left: .8rem;
+		    width: 20%!important;
+
+	}
+	.swell-purchase .swell-referral-mail input[type="text"] {
+    	width: 55% !important;
+    	font-size: 12px;
+	}
+	.swell-purchase-img {
+		    height: 11rem;
+	}
+	.swell-purchase .swell-referral-text h1 {
+    	text-shadow:unset;
+    }
+    .swell-purchase .swell-purchase-body {
+    	width: 60%;
+    }
+    	.swell-purchase .swell-share-container {
+    	width: 80%;
+	}
+}
+@media only screen and (max-width: 700px){
+	.swell-purchase-img {
+		display: none;
+	}
+	.swell-purchase .swell-referral-mail input[type="text"] {
+   	 	width: 80% !important;
+   	 	padding: 0;
+   	}
+   	.swell-purchase .swell-referral-mail input[type="submit"]  {
+		width: 80% !important;
+		margin-left: 0;
+   	}
+   	.swell-purchase .swell-share-container {
+    	width: 100%;
+	}
+
+}
+@media only screen and (max-width: 550px){
+.swell-purchase .swell-purchase-body {
+    width: 90%;
+	}
+	.swell-purchase .swell-referral-mail input[type="text"] {
+   	 	width: 100% !important;
+   	 
+   	}
+   	.swell-purchase .swell-referral-mail input[type="submit"]  {
+		width: 100% !important;
+	
+   	}
+	.swell-purchase .swell-referral-text h1 {
+    	font-size: 27px;
+	}
+	.swell-purchase .swell-share-link {
+    	font-size: 10px;
+	}
+	.swell-purchase .swell-referral-text p {
+		border-bottom: unset;
+		    margin-bottom: 0;
+	}
+	.swell-purchase .swell-referral-mail p {
+    	margin-bottom: 1rem;
+	}
+
+}

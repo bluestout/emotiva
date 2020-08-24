@@ -1,0 +1,23 @@
+
+$(window).on('load', () => {
+	(() => {
+	  $(document).ready(() => {
+		$(document).on("swell:initialized", () => {
+			console.log("swell:initialized");
+			
+				 new CampaignGrid(swellAPI.getActiveCampaigns()).renderCampaignGrid();
+		});
+		$(document).on("swell:setup", () => {
+			console.log("swell:setup"); 
+				
+			   new VIPTiers(
+			   	swellAPI.getVipTiers(),
+			   	swellDefenitions.baseVIPTier,
+			   	swellDefenitions.vipTiersSetting,
+			   	swellAPI.getCustomerDetails()
+			   	 ).renderVIPTiers();
+			   
+		});
+	  });
+	}).call(this);
+})

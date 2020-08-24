@@ -1,0 +1,35 @@
+class CampaignGrid {
+	constructor(campaignList) {
+		this.campaignList = campaignList;
+	}
+	renderCampaignGrid() {
+		console.log(this.campaignList);
+		this.campaignList.forEach(campaign=> {
+ 			$(".swell-campaign-grid-options").append(
+ 					$("<div>").append(
+                    	$("<div>").addClass("swell-campaign-text").append(
+                    		$("<i>").addClass("swell-campaign-icon"),
+                    		$("<div>").text(campaign.rewardPoints).addClass("swell-campaign-points"),
+ 							$("<h5>").text(campaign.rewardText),
+ 							$("<p>").text(campaign.title)
+ 						)
+ 					).attr('id', `campaign-${campaign.id}`)
+ 					.addClass("swell-campaign").addClass("swell-campaign-link").attr({
+ 						"data-campaign-id": campaign.id,
+						"data-display-mode": "modal"
+				}),
+ 			)
+ 		
+ 		})
+ 		$(".swell-campaign-grid-options").append(
+ 					$("<div>").append(
+                    	$("<div>").addClass("swell-campaign-text").append(
+                    		$("<i>").addClass("swell-campaign-icon")
+            
+ 						)).addClass("swell-campaign"))
+ 		//$("#campaign-487205").insertBefore($(".swell-campaign:nth-of-type(1)")).append($("<img>").addClass("swell-campaign-img"))
+ 		
+	}
+
+
+}

@@ -1,0 +1,26 @@
+const referral = new Referral(swellDefenitions.referralForms, swellDefenitions.referralShareLinks);
+$(window).on('load', () => {
+	(() => {
+	  $(document).ready(() => {
+		$(document).on("swell:initialized", () => {
+			console.log("swell:initialized");
+			referral.showReferralForm();
+
+		});
+		$(document).on("swell:setup", () => {
+			console.log("swell:setup");
+			 referral.revealForm(
+			 	swellAPI.getCustomerDetails(),
+			 	swellDefenitions.referralForms.newUserForm.formType, 
+			 	swellDefenitions.referralForms.existingUserForm.formType);
+
+
+			 if (swellAPI.getCustomerDetails().referrals.length > 0) {
+			 	 console.log("lll");
+			 	new ReferralHistory(swellAPI.getCustomerDetails()).renderReferralHistory();
+			 }
+			
+		});
+	  });
+	}).call(this);
+})

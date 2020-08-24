@@ -1,0 +1,154 @@
+class Referral {
+	constructor(referralForms, shareLinks) {
+		this.referralForms = referralForms ;
+		this.shareLinks = shareLinks;
+	}
+	revealForm(customer, newUserElementClass, existingUserElementClass) {
+ 		if (customer.email === undefined) {
+ 			 $(`.${newUserElementClass}`).addClass("showing-form");
+
+ 		} else {
+ 			$(`.${existingUserElementClass}`).addClass("showing-form");
+ 		} 
+	}
+	renderReferralForm(form , onSubmit) {
+		$(".swell-referral-mail").append(
+			$("<form>").addClass(form.formType).append(
+				$("<label>").append(
+					$("<input>", {
+						type: form.inputType,
+						placeholder: form.placeholder
+					}),
+					$("<input>", {
+						type: "submit",
+						value: form.submitText
+					})
+		    )
+		).addClass("hidden-form").submit((e) => onSubmit(e))
+		)
+	
+	 form.formType === "existing" ?  this.renderShareLinks(form.formType)  : "";
+    }
+	showReferralForm() {
+		this.renderReferralForm(this.referralForms.newUserForm , this.onClientEmailSubmit);
+		this.renderReferralForm(this.referralForms.existingUserForm , this.onFriendEmailSubmit);
+    }
+    renderShareLinks(formClass) {
+		$(`.${formClass}`).append(
+			// $("<div>").addClass("swell-copy-link").append(
+			// $("<p>").text("Here's your unique referral link:").addClass("swell-copy-link-text"),
+			// $("<div>").addClass("swell-copy-link-for-code").append(
+			// $("<input>", {
+			// 			type: "text",
+			// 			value: swellAPI.getCustomerDetails().referralLink,
+			// 			disabled: "disabled"
+			// 		}).addClass("swell-link-code"),)
+			// 		.click(() => {
+			// 		navigator.clipboard.writeText(swellAPI.getCustomerDetails().referralLink),
+			// 		$(".swell-link-code").removeAttr("disabled").select().attr({disabled: "disabled"})
+			// 	})
+			// 	),
+			$("<div>").addClass("swell-share-container").append(
+			$("<div>").text("You can also share your link with the buttons below.").addClass("swell-share-link-text"),
+			$("<div>").addClass("swell-share-links-container")))
+		this.shareLinks.forEach((shareLink, index) => {
+			$(".swell-share-links-container").append(
+				$("<div>").append(
+					$("<i>").addClass(shareLink.text),
+					// $("<img>", {
+					// 	src: shareLink.icon
+					// }),
+					$("<a>", {
+						href: shareLink.href,
+						text: shareLink.text,
+					}).addClass("swell-share-link").addClass(shareLink.class),
+				).addClass("swell-share-link-div"),	
+			)
+			if (shareLink.text === "SMS") {
+				$(`.swell-share-link-div:nth-of-type(${index+1})`).addClass("swell-share-link-sms")
+			}
+		})
+		
+		$(".swell-share-links-container").append(
+			$("<div>").append(
+				$("<i>").addClass("fa fa-link"),
+				$("<a>", {
+						href: "javascript:void(0)",
+						text: "Copy Link" ,
+					}).addClass("swell-share-link").addClass("swell-share-referral-copy-link").click(this.copyLinkClick)
+			).addClass("swell-share-link-div"),
+		)		
+	}
+	copyLinkClick() {
+	$("body").append(
+		$("<div>").addClass("swell-popup-background").append(
+			$("<div>").addClass("swell-popup-body").append(
+				$("<div>").addClass("swell-popup-img"),
+				$("<div>").addClass("swell-popup-text").append(
+					$("<div>").addClass("swell-popup-close").text("X").click(() => {
+						$(".swell-popup-background").remove();
+					}),
+					$("<input>", {
+						type: "text",
+						value: swellAPI.getCustomerDetails().referralLink,
+						disabled: "disabled"
+					}).addClass("swell-link-code"),
+
+					$("<div>").text("COPY LINK").addClass("swell-copy-link-btn")
+					.click(() => {
+					navigator.clipboard.writeText(swellAPI.getCustomerDetails().referralLink),
+					$(".swell-link-code").removeAttr("disabled").select().attr({disabled: "disabled"});
+				
+					}),
+					$("<p>").text("Copy link and share with your friends."),)
+				
+			)
+		)
+	)
+	}
+	onClientEmailSubmit(e) {
+	e.preventDefault();
+	let customerInput = $("form.new input");
+
+	let onSuccess = function() {
+		$(".swell-form-error").remove();
+		$("form.new").removeClass("showing-form").addClass("hidden-form");
+		$("form.existing").removeClass("hidden-form").addClass("showing-form");
+		
+	}
+
+	let onError = function() {
+		$(".swell-form-error").remove();
+		$("form.new label").append(
+		    	$("<p>").text("Oops...something went wrong!").addClass("swell-form-error")
+		)
+	}
+	swellAPI.identifyReferrer(customerInput.val(), onSuccess, onError);	
+	}
+	onFriendEmailSubmit(e) {
+	e.preventDefault();
+	let referredCustomersInput = $("form.existing input");
+	let emails = referredCustomersInput.val().split(",");
+	let onSuccess = function() {
+		$(".swell-form-error").remove();
+		$("form.existing").append(
+			$("<div>").addClass("swell-popup-background").append(
+			$("<div>").addClass("swell-popup-body").append(
+			$("<div>").addClass("swell-popup-img"),
+			$("<div>").addClass("swell-popup-text").append(
+				$("<div>").text("x").addClass("swell-popup-close").click(() =>{ $(".swell-popup-background").remove()}),
+			$("<h2>").text("Thanks!"),
+			$("<p>").text("The email was submitted!"),
+					
+		    ))).addClass("swell-thanks")
+	    )
+	}
+	let onError = function() {
+		$(".swell-form-error").remove();
+		$("form.existing label").append(
+		    	$("<p>").text("Oops...something went wrong!").addClass("swell-form-error")
+		)
+	}
+	swellAPI.sendReferralEmails(emails, onSuccess, onError);
+	}
+}

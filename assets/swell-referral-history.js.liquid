@@ -1,0 +1,32 @@
+class ReferralHistory {
+	constructor(customer) {
+		this.customer = customer;
+
+	}
+	renderReferralHistory() {
+		$(".swell-referral-history").addClass("showing-form");
+		$(".swell-referral-history-table").append(
+			$("<table>").addClass("history-table").append(
+				$("<thead>").append(
+					$("<tr>").append(
+						$("<td>").text("Email"),
+						$("<td>").text("Status"),
+					)
+			    ),
+			    $("<tbody>")
+	        )
+	    );this.populateReferredEmails();
+	}
+ 	
+ 	populateReferredEmails() {
+ 		this.customer.referrals.forEach(referral => {
+ 			$(".swell-referral-history-table table tbody").append(
+ 				$("<tr>").append(
+						$("<td>").text(referral.email),
+						$("<td>").text(referral.completedAt === null ? "invited" : "Purchased ($20 earned)")
+					)
+ 			)
+
+ 		})
+ 	}
+}

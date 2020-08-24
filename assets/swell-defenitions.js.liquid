@@ -1,0 +1,59 @@
+const swellDefenitions = {
+	vipTiersSetting : [
+	{
+		option:[" ", "One-time Coupon","One-time Coupon"]
+	},
+	{
+		option:[" "," ","VIP T-Shirt"]
+	},
+	
+	],
+	baseVIPTier: {name: "Silver", id: "base-tier-id", pointsMultiplier: "1.0", swellrequiredAmountSpent: "0"},
+	referralForms: {
+		newUserForm: {
+			inputType: "text",
+			submitText: "NEXT",
+			placeholder: "Your email...",
+			formType: "new"
+		},
+		existingUserForm: {
+			inputType: "text",
+			submitText: "SEND",
+			labelText: "Now, enter your friends' emails below:",
+			placeholder: " Your friends' emails (separated by commas)",
+			formType: "existing"
+		}
+	},
+	referralShareLinks: [	
+		{
+			class: "swell-share-referral-facebook",
+			href: "javascript:void(0)",
+			//icon: "fa fa-facebook-f",
+			icon: "{{ "swell-facebook.svg" | asset_url}}",
+			text: "Share"
+		}, 
+		{
+			class: "swell-share-referral-messenger",
+			href: "javascript:void(0)",
+			//icon: "fab fa-facebook-messenger",
+			icon: "{{ "swell-message.svg" | asset_url}}",
+			text: "Message"
+		},
+		{
+
+			class: "swell-share-referral-twitter",
+			href: "javascript:void(0)",
+		    //icon: "fa fa-twitter",
+		    icon: "{{ "swell-tweet.svg" | asset_url}}",
+			text: "Tweet"
+		},
+		{
+			class: "swell-share-referral-sms",
+			href: "javascript:void(0)",
+		 	//icon: "far fa-comment-alt",
+		 	icon: "{{ "swell-sms.svg" | asset_url}}",
+			text: "SMS"
+		 },
+
+	],
+}	

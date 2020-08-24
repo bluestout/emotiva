@@ -1,0 +1,36 @@
+
+{{"swell-checkout.css" | asset_url | stylesheet_tag}}
+ 
+               
+   <div class="order-summary__section order-summary__section--swell points-section swell-checkout-page" style="display:none;" data-type="apply-points" id="swell-checkout">
+  <div class="swell-attributes" style="display:none;">
+    <span id="swell-checkout-customer-id">{{ customer.id }}</span>
+    <span id="swell-checkout-customer-email">{{ customer.email }}</span>
+    <span id="swell-checkout-customer-tags">{{ customer.tags | json }}</span>
+    <span id="swell-checkout-total-price-cents">{{ checkout.subtotal_price }}</span>
+    <input id="swell-checkout-points-amount" value="0"></input>
+  </div>
+  <div class="swell-checkout-error-message" id="swell-checkout-error-message-amount" style="display:none;color:red;">Oops, You don't have any drops to redeem yet.</div>
+  <div class="swell-checkout-error-message" id="swell-checkout-error-message-general" style="display:none;color:red;">Sorry something went wrong.  Try again and if the problem persists please contact support.</div>
+  <div class="fieldset">
+    <div class="field swell-checkout-container">
+      <label class="BrandonTextWeb-Bold redeem-credits-title">You have <span class="points-balance-color"><span class="swell-point-balance">0</span> Points </span> </label>
+      <div class="input-holder">
+      </div>
+      <div class="footer-holder" id="swell-checkout-redeem">
+      <span class="BrandonTextWeb-Bold redeem-content">Redeem <strong>
+
+        <span class="points-balance-color "> $<span class="point-balance swell-adjusted-point-balance"></span></span>
+      (<span class=" slider-point-balance"></span> Points)</strong></span>
+      <button type="submit" id="swell-checkout-redeem-btn" class="field__input-btn btn btn--default swell-button">
+        <span class="btn__content visually-hidden-on-mobile ">Apply</span>
+        <svg class="icon-svg icon-svg--size-16 btn__icon shown-on-mobile" aria-hidden="true" focusable="false"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use> </svg>
+        <svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#spinner-button"></use> </svg>
+        <i class="btn__content shown-on-mobile icon icon--arrow"></i>
+        <i style="display:none;" class="fa fa-spinner fa-spin"></i>
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
+             

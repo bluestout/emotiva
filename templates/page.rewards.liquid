@@ -1,0 +1,30 @@
+{%- assign force_secondary_background = true -%}
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+{{"swell-rewards.css" | asset_url | stylesheet_tag}}
+
+<div class="swell-rewards-container">
+        {% include "swell-header" %}
+        {% if customer %}
+        	<div class="swell-rewards">
+        	{% include "swell-vip-tiers" %}
+        	</div>
+        	{% include "swell-redemption-discount" %}
+        	  <div class="swell-rewards">
+        	{% include "swell-campaign-grid" %}
+        	{% include "swell-rewards-referral" %}
+        	</div>
+        {% endif %}
+        {% unless customer %}
+        	<div class="swell-rewards">
+        	{% include "swell-campaign-grid" %}
+        	{% include "swell-rewards-referral" %}
+        	{% include "swell-vip-tiers" %}
+        	</div>
+        	{% include "swell-redemption-discount" %}
+        {% endunless %}
+</div>
+
+{{ "//code.jquery.com/jquery-3.3.1.min.js" | script_tag }}
+{{ "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" | script_tag }}
+{{ "swell-defenitions.js" | asset_url | script_tag }} 
+{{ "swell-rewards.js" | asset_url | script_tag }}

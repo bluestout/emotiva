@@ -1,0 +1,188 @@
+var currentTier;
+class VIPTiers {
+    constructor(vipTiers, baseTier, vipTiersSetting, customer) {
+        this.baseTier = baseTier;
+        this.vipTiers = [this.baseTier, ...vipTiers];
+        this.vipTiersSetting = vipTiersSetting;
+        this.customer = customer;
+    }
+    renderVIPTiers() {
+        this.vipTiers.forEach((vipTier, index1) => {
+            if (
+                vipTier.pointsMultiplier[vipTier.pointsMultiplier.length - 1] ==
+                "0"
+            ) {
+                vipTier.pointsMultiplier = vipTier.pointsMultiplier.substring(
+                    0,
+                    vipTier.pointsMultiplier.length - 2
+                );
+            }
+            console.log(vipTier.name.replace("Tier", ""));
+            $(".swell-vip-tiers-setting").append(
+                $("<div>")
+                    .addClass("swell-table-tier")
+                    .append(
+                        $("<div>").addClass("swell-tier-spend"),
+                        $("<div>").addClass("tier-current"),
+                        $("<p>")
+                            .text(vipTier.name.replace("Tier", ""))
+                            .addClass("swell-tier-name"),
+                        $("<p>").addClass("swell-vip-tier-require-points"),
+                        $("<div>")
+                            .addClass("swell-tier-details")
+                            .append(
+                                $("<p>").text(
+                                    `${vipTier.pointsMultiplier}X Point Multiplier`
+                                )
+                            )
+                    )
+            );
+
+            if (index1 == 0) {
+                console.log(
+                    (
+                        this.vipTiers[index1 + 1].swellrequiredAmountSpent
+                            .substring(1)
+                            .replace(",", "") - 1
+                    ).toString()
+                );
+                //.split(','))-1).toString()
+                $(
+                    `.swell-table-tier:nth-of-type(${
+                        index1 + 1
+                    }) .swell-vip-tier-require-points`
+                ).text(
+                    `$${vipTier.swellrequiredAmountSpent}-$${(
+                        this.vipTiers[index1 + 1].swellrequiredAmountSpent
+                            .substring(1)
+                            .replace(",", "") - 1
+                    ).toString()}`
+                );
+            }
+            if (index1 == 2) {
+                $(
+                    `.swell-table-tier:nth-of-type(${
+                        index1 + 1
+                    }) .swell-vip-tier-require-points`
+                ).text(`${vipTier.swellrequiredAmountSpent}+`);
+            }
+            if (index1 == 1) {
+                console.log(vipTier.swellrequiredAmountSpent);
+                $(
+                    `.swell-table-tier:nth-of-type(${
+                        index1 + 1
+                    }) .swell-vip-tier-require-points`
+                ).text(
+                    `${vipTier.swellrequiredAmountSpent}-$${(
+                        this.vipTiers[index1 + 1].swellrequiredAmountSpent
+                            .substring(1)
+                            .replace(",", "") - 1
+                    ).toString()}`
+                );
+            }
+
+            this.vipTiersSetting.forEach((vipTierSet, index2) => {
+                $(
+                    `.swell-table-tier:nth-of-type(${
+                        index1 + 1
+                    }) .swell-tier-details`
+                ).append($("<p>").text(vipTierSet.option[`${index1}`]));
+            });
+        });
+
+        this.generateTierStatusPointer();
+        console.log(currentTier);
+
+        var newscript = document.createElement("script");
+        newscript.type = "text/javascript";
+        newscript.async = true;
+        newscript.src =
+            "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js";
+        (
+            document.getElementsByTagName("head")[0] ||
+            document.getElementsByTagName("body")[0]
+        ).appendChild(newscript);
+
+        setTimeout(function () {
+            $(".swell-vip-tiers-setting").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: false,
+                            initialSlide: currentTier,
+                        },
+                    },
+                ],
+            });
+        }, 3000);
+    }
+    generateTierStatusPointer() {
+        let vipTiers = swellAPI
+            .getVipTiers()
+            .sort(
+                (a, b) =>
+                    a.swellrequiredPointsEarned - b.swellrequiredPointsEarned
+            );
+
+        if (this.customer.created_at !== undefined) {
+            currentTier = null;
+            this.customer.vipTier === null
+                ? (currentTier = 0)
+                : (currentTier = this.vipTiers
+                      .map((tier) => tier.name)
+                      .indexOf(this.customer.vipTier.name));
+            $(`.swell-table-tier:nth-of-type(${currentTier + 1}) .tier-current`)
+                .text("Current Status")
+                .addClass("swell-tier-current-status");
+            $(`.swell-table-tier:nth-of-type(${currentTier + 1})`).addClass(
+                "swell-current-tier"
+            );
+            $(
+                `.swell-table-tier:nth-of-type(${
+                    currentTier + 1
+                }) .swell-tier-name`
+            ).addClass("current-text");
+            let customerCurrentTierIndex =
+                swellAPI.getCustomerDetails().vipTier === null
+                    ? -1
+                    : swellAPI
+                          .getVipTiers()
+                          .map((tier) => tier.name)
+                          .indexOf(swellAPI.getCustomerDetails().vipTier.name);
+            if (customerCurrentTierIndex + 1 < swellAPI.getVipTiers().length) {
+                let requiredSpent = (
+                    vipTiers[
+                        customerCurrentTierIndex + 1
+                    ].swellrequiredAmountSpent
+                        .substring(1)
+                        .replace(",", "")
+                        .toString() -
+                    (swellAPI.getCustomerDetails().pointsEarned / 100) * 15
+                ).toString();
+                if (requiredSpent.includes(".")) {
+                    var newRequiredSpent =
+                        parseInt(
+                            requiredSpent.substring(
+                                0,
+                                requiredSpent.indexOf(".")
+                            )
+                        ) + 1;
+                    requiredSpent = newRequiredSpent;
+                }
+
+                $(
+                    `.swell-table-tier:nth-of-type(${
+                        currentTier + 2
+                    }) .swell-tier-spend`
+                ).text(`Spend $${requiredSpent}
+                 more to earn ${vipTiers[currentTier].name}`);
+            }
+        }
+    }
+}

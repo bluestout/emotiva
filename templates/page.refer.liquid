@@ -1,0 +1,22 @@
+{%- assign force_secondary_background = true -%}
+
+<!-- <div class="page__content-wrapper">
+  <div class="container">
+    <div class="page__header">
+      <h1 class="page__title h1"></h1>
+    </div>
+
+    <div class="box box--shrinked">
+      <div class="box__content box__content--large-padding rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+ {% include "swell-referral" %}
+
+
+{{ "//code.jquery.com/jquery-3.3.1.min.js" | script_tag }}
+{{ "swell-defenitions.js" | asset_url | script_tag }} 
+{{ "swell-referral-page.js" | asset_url | script_tag }}

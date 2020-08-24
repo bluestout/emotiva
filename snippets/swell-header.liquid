@@ -1,0 +1,56 @@
+{{"swell-header.css" | asset_url | stylesheet_tag}}
+
+<div class="swell-header-container">
+	{% if customer %}<div class="swell-header-login-container">{% endif %}
+	<div class="swell-header-details">
+		<div class="swell-header-text">
+			<h1>EMOTIVA AUDIO 
+				<br>REWARDS PROGRAM</h1>
+			<p>As a Rewards member, you'll get closer to earning exclusive reards every time you shop.</p>
+		</div>
+		{% unless customer %}
+		<div class="swell-header-btn">
+			<button class="swell-join-now-btn" onclick="window.location.href='/account/register'">JOIN NOW</button>
+			<button class="swell-login-btn" onclick="window.location.href='/account'">LOG IN</button>
+			<p class="swell-header-points">100 points = $15</p>
+		</div>
+
+	</div>
+	<div class="swell-header-how-it-works-container">
+	<div class="swell-header-how-it-works">
+		<div class="swell-header-how-it-works-text"><p>Earn</p> <h3>20 points</h3> <p>when you join!</p></div>
+		<div class="swell-steps">
+		<div class="swell-step">
+			<div class="swell-step-text">
+				<h1>1</h1>
+				<h4>EARN POINTS</h4>
+				<p>Earn points every time you shop.</p>
+			</div>
+		</div>
+		<div class="swell-step">
+			<div class="swell-step-text">
+            	<h1>2</h1>
+				<h4>REDEEM POINTS</h4>
+				<p>Redeem points for exclusive discounts.</p>
+			</div>
+		</div></div>
+
+		</div>
+	</div>
+{% endunless %}
+	{% if customer %}
+	<div class="swell-header-login">
+		<div class="swell-header-login-details">
+			<h2>Hi {{customer.first_name}}!</h2> <h2>You have <span class="swell-point-balance"></span> Points.</h2>
+			<div class="swell-header-btn">
+				<button class="swell-header-btn-login" onclick="window.location.href='/cart'">REDEEM NOW </button>
+				<button class="swell-header-btn-login swell-history-link" >REWARDS HISTORY </button>
+
+				<p class="swell-header-points">100 points = $15</p>
+			</div>	
+			</div>
+	</div>
+	{% endif %}
+
+{% if customer %}</div></div>{% endif %}
+</div>

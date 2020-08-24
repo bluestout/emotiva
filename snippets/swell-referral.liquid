@@ -1,0 +1,34 @@
+{{"swell-referral.css" | asset_url | stylesheet_tag}}
+{{"swell-referral-history.css" | asset_url | stylesheet_tag}}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<div class="swell-referral-container">
+	<div class=" swell-referral-banner">
+		<div class="swell-referral-img-mob"></div>
+		<div class="swell-referral-title">
+			<h1>REFER A FRIEND</h1>
+		</div>
+	</div>
+	<div class="swell-referral-details-container">
+	<div class="swell-referral-details">
+		<div class="swell-referral-text">
+			<div class="swell-referral-text-h1">
+			<h1>GIVE $50</h1><h1>, </h1> <h1>GET $20 IN POINTS</h1>
+			</div>
+			<p>Give your friends $50 off on their first order of $350+ and get $20 in pointsfor each successful referral.
+			</p>
+		
+		</div>
+		<div class="swell-referral-mail">
+			<p>Now, enter your email to get started.</p>
+		</div>
+	</div>
+	<div class="swell-referral-history hidden-form">
+		{% include "swell-referral-history" %} 
+	</div>
+</div>
+</div>
+</body>
+{{"swell-referral.js" | asset_url | script_tag}}
+{{"swell-referral-history.js" | asset_url | script_tag}}

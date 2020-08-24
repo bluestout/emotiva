@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+<style>
+.ca-notification  .popup{
+    display:none;
+}
+.ca-notification .popup {
+    position: absolute;
+    background: #f3f3f3;
+    color: #000;
+    padding: 10px;
+    max-width: 500px;
+    /* display: none; */
+    top: 70px;
+    left: 0px;
+    z-index: 99;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+}
+ td.product__description:hover .popup {
+    display: block;
+}
+.notification-text{
+   color:#f3f3f3;
+}
+.ca-notification .popup:before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid  transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #f3f3f3;
+    position: absolute;
+    top: -20px;
+    width: 0;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+td.product__description {
+  position: relative;
+  overflow: visible;
+}
+.order-summary__section{
+  overflow:visible !important;
+}
+      
+.no-js .order-summary__section__content,.order-summary__section__content {
+  overflow: visible!important;
+  z-index: 9;
+}
+      
+@media screen and (min-width: 1200px) {
+   .ca-notification	.popup {
+    width: 400px; 
+    left: -80px;
+}
+}
+@media screen and (min-width: 1280px) {
+   .ca-notification.popup {
+    width: 500px; 
+    left: -110px;
+   }
+}
+</style> 
+    
+
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W98R37M');</script>
+<!-- End Google Tag Manager -->
+<script src="https://cdn.swellrewards.com/loader/WZ2usUmthJFkMk8tgU2aQw.js"></script>
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <div class="banner" data-header>
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </div>
+
+    {{ order_summary_toggle }}
+
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main" role="main">
+          <div class="main__header">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </div>
+          <div class="main__content">
+            {{ content_for_layout }}
+          </div>
+          <div class="main__footer">
+            {{ content_for_footer }}
+          </div>
+        </div>
+        <div class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+           
+            {{ content_for_order_summary }}
+             {%if checkout.total_price >= 10000 %}
+                <div class="swell-checkout">
+                   {% include "swell-checkout" %}
+              </div>
+              {% endif %}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    
+
+    {{ tracking_code }}
+<script type="text/javascript">
+window.onload = function(e){ 
+   function myFunction(){
+       var selectedVal = document.getElementById("checkout_shipping_address_province").value = this.value;
+       if(selectedVal == 'California'){
+         createCookie("shipping_address_province",selectedVal);
+         //caNotification();
+       }
+       else{
+         createCookie("shipping_address_province","",'Thu, 01 Jan 1970 00:00:01 GMT');
+       }
+    } 
+      var element =  document.getElementById('checkout_shipping_address_province');
+      if (typeof(element) != 'undefined' && element != null)
+        {
+            document.getElementById("checkout_shipping_address_province").addEventListener("change", myFunction);
+        }
+
+      var temp_cok= readCookie('shipping_address_province');
+      if(temp_cok == 'California' && temp_cok != undefined) {
+            caNotification();
+      }
+}
+  
+var caNotification = function(){
+  var tablearray = document.querySelectorAll(".order-summary__section__content .product-table tbody tr"); 
+  var i = 0 , len = tablearray.length , exclude = ['485900779563','485899042859'] ; 
+  for(; i < len ; i++ ){
+    //console.log(i);
+    var tr = tablearray[ i ] , id = tr.getAttribute("data-product-id"); 
+    if(exclude.indexOf(id)>-1) continue ;  	
+    var td = tr.getElementsByClassName("product__description") ; 
+    if(!td.length) continue; td[0].innerHTML+="<div class='ca-notification'><span class='notification-text'>CA Prop 65 Consumer Notice</span><div class='popup'>⚠️ WARNING: This product can expose you to chemicals including nickel and Di-isodecyl phthalate, which are known to the State of California to cause cancer or birth defects or other reproductive harm.<br />For more information visit www.p65warnings.ca.gov.</div></div>";       
+  }
+}
+
+  var createCookie = function(name,value,days){
+      	var expires = "";
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days*24*60*60*1000));
+			expires = "; expires=" + date.toUTCString();
+		}
+		document.cookie = name + "=" + value + expires + "; path=/";
+  }
+  var readCookie=function(name){
+      	var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+  }  
+
+</script>
+ 
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W98R37M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    {% include "swell-post-purchase" %}
+  </body>
+</html>
+{{ "//code.jquery.com/jquery-3.3.1.min.js" | script_tag }}
+{{ "swell-defenitions.js" | asset_url | script_tag }} 
+{{"swell-referral-page.js" | asset_url | script_tag}}
+{{"swell-purchase.js" | asset_url | script_tag}}
+{{"swell-checkout.js" | asset_url | script_tag}}
+
+

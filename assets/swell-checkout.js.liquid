@@ -1,0 +1,111 @@
+
+if(window.location.href.indexOf("checkout") > -1 && window.location.href.indexOf("thank_you") == -1) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+
+      var range_script = document.createElement("script");
+      range_script.src = "https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js";
+      document.getElementsByTagName("head")[0].appendChild(range_script);
+}
+
+// initialize slider.....
+$(document).on("swell:setup", function() {
+  var centsPerPoint = spapi.variableRedemptionOption ? spapi.variableRedemptionOption.discount_rate_cents : 1;
+  var cartTotal = Swell.Checkout.getAmountDiscountedCents() + Swell.Checkout.getCheckoutTotalPriceCents();
+  var customerAccountBal = (spapi.customer.adjusted_points_balance * centsPerPoint) / 100 
+  var cartTotalAmmount = cartTotal/100
+
+  $(".input-holder").append('<input type="range" class="swell-range-slider" min="0" max="' + customerAccountBal + '" step="0.1" value="'+ customerAccountBal + '">');
+
+  slider_value = parseFloat($(".swell-range-slider").val());
+  
+  if (slider_value > cartTotalAmmount)
+  {
+    balanceAvailable = parseFloat((cartTotalAmmount / centsPerPoint) * 100.0);
+    $(".swell-adjusted-point-balance").html(cartTotalAmmount.toFixed(2));
+  }
+  else
+  {
+    balanceAvailable = parseFloat((slider_value / centsPerPoint) * 100.0);
+    $(".swell-adjusted-point-balance").html(slider_value.toFixed(2));
+  }
+  balanceAvailable = Math.ceil(balanceAvailable);
+  
+
+  $("#swell-checkout-points-amount").val(balanceAvailable);
+  $(".slider-point-balance").html(balanceAvailable);
+
+  $('input[type="range"]').rangeslider({
+    polyfill: false,
+    // Default CSS classes
+    rangeClass: 'rangeslider',
+    disabledClass: 'rangeslider--disabled',
+    horizontalClass: 'rangeslider--horizontal',
+    verticalClass: 'rangeslider--vertical',
+    fillClass: 'rangeslider__fill',
+    handleClass: 'rangeslider__handle',
+
+    // Callback function
+    onInit: function() {},
+
+    // Callback function
+    onSlide: function(position, value) {},
+
+    // Callback function
+    onSlideEnd: function(position, value) {}
+  });
+
+
+  $( ".swell-range-slider" ).change(function() {
+    $(".swell-range-slider").attr('step', 1);
+    var points_balance = Swell.Checkout.getCheckoutTotalPriceCents()/100;
+    var centsPerPoint = spapi.variableRedemptionOption.discount_rate_cents;
+    slider_value = parseFloat($(".swell-range-slider").val());
+    if (slider_value > cartTotalAmmount)
+    {
+      balanceAvailable = parseFloat((cartTotalAmmount / centsPerPoint) * 100.0);
+    $(".swell-adjusted-point-balance").html(cartTotalAmmount.toFixed(2));
+    }
+    else
+    {
+      balanceAvailable = parseFloat((slider_value / centsPerPoint) * 100.0);
+    $(".swell-adjusted-point-balance").html(slider_value.toFixed(2));
+    }
+    
+    balanceAvailable = Math.ceil(balanceAvailable);
+    $("#swell-checkout-points-amount").val(balanceAvailable.toFixed(2));
+    $(".slider-point-balance").html(balanceAvailable);
+
+    
+    //set slider max value
+    if (parseInt($(".swell-range-slider").val()) == parseInt($(".swell-range-slider").attr('max')))
+    {
+      $(".swell-range-slider").attr('step', 0.1);
+      slider_value = customerAccountBal;
+      if (slider_value > cartTotalAmmount)
+      {
+        balanceAvailable = parseFloat((cartTotalAmmount / centsPerPoint) * 100.0);
+    $(".swell-adjusted-point-balance").html(cartTotalAmmount.toFixed(2));
+      }
+      else
+      {
+        balanceAvailable = parseFloat((slider_value / centsPerPoint) * 100.0);
+    $(".swell-adjusted-point-balance").html(slider_value.toFixed(2));
+      }
+      balanceAvailable = Math.ceil(balanceAvailable);
+     
+      $("#swell-checkout-points-amount").val(balanceAvailable);
+      $(".slider-point-balance").html(balanceAvailable);
+    }
+
+  });
+  //reset the last redeemPoints
+  $(document).on("swell:redemption", function(){
+    var lastRedeemPoints = $("#swell-checkout-points-amount").val();
+    setTimeout(function(){
+      $("#swell-checkout-points-amount").val(lastRedeemPoints);
+    }, 200);         
+  });
+}); 

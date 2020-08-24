@@ -1,0 +1,25 @@
+const referral1 = new Referral(swellDefenitions.referralForms, swellDefenitions.referralShareLinks)
+
+if (window.location.href.indexOf("thank_you") > -1)
+ {
+       $(document).on("swell:initialized", () => {
+         console.log("swell:initialized");
+         $(".swell-purchase").addClass("swell-purchase-show");
+         $(".swell-purchase").removeClass("swell-purchase-hidden");
+         referral1.showReferralForm();
+         $(".swell-purchase-text").append(
+           $("<div>").addClass("swell-popup-close").text("✕").click(() => {
+                 $(".swell-purchase").remove()
+             }),
+             $("<p>").text("THANKS!")
+            )
+       });
+       $(document).one("swell:setup", () => {
+         console.log("swell:setup");
+         referral1.revealForm(
+        swellAPI.getCustomerDetails(),
+        swellDefenitions.referralForms.newUserForm.formType, 
+        swellDefenitions.referralForms.existingUserForm.formType);
+       });
+
+}
