@@ -1,4 +1,17 @@
 $(document).ready(function(){ 
+  console.log("checkinginn");
+    $("form#RegisterForm").submit(function(e){
+
+    console.log("testt");
+    var pass = $("form#RegisterForm input#RegisterForm-password").val();
+    var confirmpass = $("form#RegisterForm input.reset_pass").val();
+    if(pass == confirmpass){}else{
+      e.preventDefault();
+      $(".passerror").show();
+      setTimeout(function(){ $(".passerror").hide(); }, 3000);
+
+    }
+  })
  var getprice = $(".cartTotal").html();
  var shipPrice = $(".ShipPrice").val();
   shipPrice = parseInt(shipPrice);
@@ -119,12 +132,15 @@ $(document).ready(function(){
             
         priceget = (theme.Currency.formatMoney(dataa.total_price));
         priceget = priceget.replace("$","");
+            priceget = priceget.replace(",","");
             var shipPrice = $(".ShipPrice").val();
   shipPrice = parseInt(shipPrice);
+            console.log("priceget "+priceget);
         if(priceget >shipPrice)
         {
           console.log("show");
         $(".ShippingText").show();
+          
         }
         else{
           console.log("hide");
@@ -183,6 +199,7 @@ $(document).ready(function(){
             var priceget = (dataa.total_price);
         priceget = (theme.Currency.formatMoney(dataa.total_price));
         priceget = priceget.replace("$","");
+             priceget = priceget.replace(",","");
             var shipPrice = $(".ShipPrice").val();
   shipPrice = parseInt(shipPrice);
         if(priceget >shipPrice)

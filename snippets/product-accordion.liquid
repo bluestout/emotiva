@@ -1,18 +1,40 @@
 <div id="Proaccordion">
-  <h3>{{product.metafields.sf_product_tabs.tab_1_title}}</h3> 
-  <div>
-    {{product.metafields.sf_product_tabs.tab_1_content}}
-    {% comment %} <div class="Btn-more"><button  id="myBtn">Show more</button></div> {% endcomment %}
+  {% if product.metafields.sf_product_tabs.tab_1_title != blank %}
+    <h3>{{product.metafields.sf_product_tabs.tab_1_title}}</h3> 
+    <div>
+      {{product.metafields.sf_product_tabs.tab_1_content}} 
+      {% comment %} <div class="Btn-more"><button  id="myBtn">Show more</button></div> {% endcomment %}
+    </div>
+  {% endif %}
+  {% if product.metafields.sf_product_tabs.tab_2_title != blank %}
+    <h3>{{product.metafields.sf_product_tabs.tab_2_title}}</h3>
+    <div>
+    {{product.metafields.sf_product_tabs.tab_2_content}}
+    </div>
+  {% endif %}
+  {% if product.metafields.sf_product_tabs.tab_3_title != blank %}
+    <h3>{{product.metafields.sf_product_tabs.tab_3_title}}</h3>
+    <div>
+      {{product.metafields.sf_product_tabs.tab_3_content}}
+    </div>
+  {% endif %}
+  {% if product.metafields.sf_product_tabs.tab_4_title != blank %}
+    <h3>{{product.metafields.sf_product_tabs.tab_4_title}}</h3>
+    <div>
+      {{product.metafields.sf_product_tabs.tab_4_content}}
+    </div>
+  {% endif %}
+  {% if product.metafields.sf_product_tabs.tab_5_title != blank %}
+    <h3>{{product.metafields.sf_product_tabs.tab_5_title}}</h3>
+    <div>
+      {{product.metafields.sf_product_tabs.tab_5_content}}
+    </div>
+  {% endif %}
+  <h3 id="pp_accor-6">Prop 65</h3>
+  <div id="pp_accor_content-6">
+    <p>WARNING: This product can expose you to chemicals including nickel and Di-siodecyl phthalate, which are known to the State of California to cause cancer or birth defects or other reproductive harm.</p>
+    <p>For more information visit <a href="https://www.p65warnings.ca.gov/" target="_blank">www.p65warnings.ca.gov</a>.</p>
   </div>
-  <h3>{{product.metafields.sf_product_tabs.tab_2_title}}</h3>
-  <div>
-   {{product.metafields.sf_product_tabs.tab_2_content}}
-  </div>
-  <h3>{{product.metafields.sf_product_tabs.tab_3_title}}</h3>
-  <div>
-    {{product.metafields.sf_product_tabs.tab_3_content}}
-  </div>
-  
   {% comment %} <h3>Overview</h3>
   <div>
  {{product.metafields.global.overview}}

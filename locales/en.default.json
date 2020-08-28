@@ -271,10 +271,10 @@
       "delete_confirm": "Are you sure you wish to delete this address?"
     },
     "login": {
-      "title": "Login",
+      "title": "Welcome back",
       "email": "Email",
       "password": "Password",
-      "forgot_password": "Forgot your password?",
+      "forgot_password": "Forgot?",
       "sign_in": "Sign In",
       "guest_title": "Continue as a guest",
       "guest_continue": "Continue"
@@ -326,12 +326,12 @@
       "submit": "Reset Password"
     },
     "register": {
-      "title": "Create Account",
+      "title": "Create an account",
       "first_name": "First Name",
       "last_name": "Last Name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Create account"
     }
   },
   "homepage": {

@@ -6,10 +6,12 @@
         {{ 'customer.recover_password.success' | t }}
       </div>
 
-      <div id="CustomerLoginForm" class="form-vertical">
-
+      <div id="CustomerLoginForm" class="form-vertical em-signup-form-sec">
+		<div class="em-log-reg-form-title-sec">
+          <h3>Sign in</h3>
         <h1 id="LoginHeading" class="text-center">{{ 'customer.login.title' | t }}</h1>
-
+		<p>Please enter your credentials to log in to your account</p>
+        </div>
         {% form 'customer_login', novalidate: 'novalidate' %}
 
           {%- if form.errors -%}
@@ -19,8 +21,8 @@
             </div>
           {%- endif -%}
 
-          <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
-          <input
+        <div class="em-log-reg-form-field-sec">
+          <input placeholder="Enter your email"
             type="email"
             name="customer[email]"
             id="CustomerEmail"
@@ -32,10 +34,10 @@
               aria-invalid="true"
             {%- endif -%}
             >
-
+        </div>
           {% if form.password_needed %}
-            <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
-            <input
+            <div class="em-log-reg-form-field-sec em-log-reg-form-field-sec-fg">
+            <input placeholder="Enter your password"
               type="password"
               value=""
               name="customer[password]"
@@ -45,19 +47,22 @@
                 aria-invalid="true"
               {%- endif -%}
             >
-          {% endif %}
-
-          <div class="text-center">
+              <div class="text-center em-log-reg-form-field-fg-link">
             {% if form.password_needed %}
               <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
             {% endif %}
 
-            <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
-
-            <p>
-              {{ 'layout.customer.create_account' | t | customer_register_link }}
-            </p>
+            
           </div>
+        </div>
+        <div class="em-log-reg-form-field-btn">
+            <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
+            </div>
+          {% endif %}
+<p class="text-center CreateAccount">
+              <a href="/account/register" id="customer_register_link">Create account</a>
+            </p>
+          
 
         {% endform %}
       </div>
@@ -79,8 +84,8 @@
               <span class="hide reset-password-success"></span>
             {% endif %}
 
-            <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
-            <input
+            <div class="em-log-reg-form-field-sec">
+            <input placeholder="Enter your email"
               type="email"
               value=""
               name="email"
@@ -93,6 +98,7 @@
                 aria-describedby="RecoverEmail-email-error"
               {%- endif -%}
               >
+          </div>
             {%- if form.errors -%}
               <span id="RecoverEmail-email-error" class="input-error-message">
                 <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
@@ -103,8 +109,10 @@
 
             <div class="text-center">
               <p>
+                <div class="em-log-reg-form-field-btn">
                 <input type="submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
-              </p>
+              </div>
+                  </p>
 
               <a href="#LoginHeading" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</a>
             </div>

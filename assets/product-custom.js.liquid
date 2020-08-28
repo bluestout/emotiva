@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  /***********************SHIPPING CHANGE ON BASES OF IP ************************/
+  $.getJSON('https://ipapi.co/json/', function(data) {
+    var country_code = (JSON.stringify(data.country_code));
+    var region_code = (JSON.stringify(data.region_code));
+    if(country_code != '"US"' && region_code != '"CA"'){
+      $(".ui-tabs-nav li:last").hide();
+      $("#pp_accor-6").hide();
+      $("#pp_accor_content-6").hide();
+    }
+  });
+})

@@ -1,0 +1,117 @@
+<div class="em-error-pg-main-sec">
+	<div class="em-error-pg-main-title">
+		<h1>{{section.settings.title}}</h1>
+		<p>{{section.settings.description}}</p>
+	</div>
+	<div class="em-error-pg-main-product">
+		<ul class="em-error-pg-main-product-list">
+          {% for block in section.blocks limit: section.blocks.size %}
+          {%- assign collection = collections[block.settings.collection] -%}
+			<li>
+				<a href="{{collection.url}}">
+					<div class="em-error-pg-main-product-block">
+						<div class="em-error-pg-main-product-img"><img src="{{collection.image | img_url: "original"}}" /></div>
+                      <h3><span>{{collection.title}}</span></h3>
+					</div>
+				</a>
+			</li>
+          {%endfor%}
+			
+		</ul>
+	</div>
+	<div class="em-error-pg-main-bot"><p>Or <a href="/">go back to the hemepage</a> and try again.</p></div>
+</div> 
+
+{% schema %}
+{
+  "name": {
+    "da": "Kollektionsliste",
+    "de": "Kategorien-Liste",
+    "en": "Collection list"
+  },
+  "class": "index-section",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading"
+      },
+      "default": {
+        "da": "Kollektionsliste",
+        "de": "Kategorien-Liste",
+        "en": "Collection list"
+      }
+    },
+{
+      "type": "textarea",
+      "id": "description",
+      "label": {
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Description"
+      },
+      "default": {
+        "da": "Kollektionsliste",
+        "de": "Kategorien-Liste",
+        "en": "Collection list"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "featured_collection",
+      "name": {
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection"
+      },
+      "settings": [
+        {
+          "label": {
+            "da": "Kollektion",
+            "de": "Kategorie",
+            "en": "Collection"
+          },
+          "id": "collection",
+          "type": "collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "da": "Kollektionsliste",
+        "de": "Kategorien-Liste",
+        "en": "Collection list"
+      },
+      "category": {
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection"
+      },
+      "blocks": [
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -5425,8 +5425,280 @@ span.lessBtn {
     color: #15b1ec;
     margin: 0 0 0 5px;
 }
+.passerror {
+    color: red;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 2px;
+}
 /*dev css ends*/
-
+/*register/login page starts*/
+.em-signup-form-sec{
+	width: 100%;
+  max-width: 310px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.em-log-reg-form-title-sec{
+	text-align: center;
+  margin-bottom: 18px;
+}
+.em-log-reg-form-title-sec h3{
+	font-weight: 400;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 50px;
+}
+.em-log-reg-form-title-sec h1{
+	font-weight: 700;
+  color: #000;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+.em-log-reg-form-title-sec p{
+	font-weight: 400;
+  color: #667175;
+  font-size: 13px;
+  line-height: 19px;
+}
+.em-log-reg-form-field-sec label{
+	display: none;
+}
+.em-log-reg-form-field-sec input[type='text'],
+.em-log-reg-form-field-sec input[type='email'],
+.em-log-reg-form-field-sec input[type='password']{
+	width: 100%;
+  height: 38px;
+  border: 1px solid #cacecf;
+  line-height: 38px;
+  font-size: 15px;
+  color: #000;
+  border-radius: 0px;
+  margin-bottom: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.em-log-reg-form-field-sec input[type='text']:focus,
+.em-log-reg-form-field-sec input[type='email']:focus,
+.em-log-reg-form-field-sec input[type='password']:focus{
+	border-color: #91999b;
+}
+.em-log-reg-form-field-err-msg{
+	font-size: 13px;
+  line-height: 19px;
+  color: #EC421D !important;
+  margin-bottom: 10px;
+  display: none;
+}
+.em-log-reg-form-field-sec.em-log-reg-form-field-err input[type='text'],
+.em-log-reg-form-field-sec.em-log-reg-form-field-err input[type='email'],
+.em-log-reg-form-field-sec.em-log-reg-form-field-err input[type='password']{
+	border: 1px solid #EC421D !important;
+}
+.em-log-reg-form-field-sec.em-log-reg-form-field-err .em-log-reg-form-field-err-msg{
+	display: block;
+}
+.em-log-reg-form-field-sec input::-webkit-input-placeholder {
+  font-size: 15px !important;
+  color: #667175 !important;
+  opacity: .4 !important;
+}
+.em-log-reg-form-field-sec input::-ms-input-placeholder {
+  font-size: 15px !important;
+  color: #667175 !important;
+  opacity: .4 !important;
+}
+.em-log-reg-form-field-sec input::placeholder {
+  font-size: 15px !important;
+  color: #667175 !important;
+  opacity: .4 !important;
+}
+.em-log-reg-form-field-btn input[type='submit']{
+	font-size: 13px !important;
+  line-height: 45px !important;
+  font-family: 'neutrif_pro' !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  background-color: #1EB1EB !important; 
+  border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -webkit-border-radius: 2px !important;
+  padding: 0 !important;
+  width: 100% !important;
+  border: none !important;
+  outline: none !important;
+  text-transform: none;
+  font-weight: 400 !important;
+  margin-bottom: 5px !important;
+  display: block;
+}
+.CreateAccount{
+	margin-top: 15px;
+  text-align: center;
+}
+.CreateAccount #customer_register_link{
+	text-decoration: underline;
+}
+.CreateAccount #customer_register_link:hover{
+	text-decoration: none;
+}
+.em-log-reg-form-fill-info{
+	font-size: 12px;
+  line-height: 15px;
+  color: #667175;
+  opacity: .70;
+  margin-bottom: 15px;
+}
+.em-log-reg-form-field-sec-fg{
+	position: relative;  
+}
+.em-log-reg-form-field-sec-fg input[type='password']{
+	padding-right: 60px;
+}
+.em-log-reg-form-field-fg-link{
+	position: absolute;
+  right: 15px;
+  top: 7px;
+}
+.em-log-reg-form-field-fg-link p{
+	margin: 0;
+}
+.em-log-reg-form-field-fg-link a{
+	font-size: 13px;
+  line-height: 19px;
+  color: #667175;
+  text-decoration: underline;
+}
+.em-log-reg-form-field-fg-link a:hover{
+	text-decoration: none;
+}
+/*register/login page ends*/
+/*error page starts*/
+.em-error-pg-main-sec{
+	margin: 0;
+}
+.em-error-pg-main-title{
+	text-align: center;
+  margin-bottom: 75px;
+}
+.em-error-pg-main-title h1{
+	font-size: 40px;
+  line-height: 52px;
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 40px 0
+}
+.em-error-pg-main-title p{
+	font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  margin: 0
+}
+.em-error-pg-main-product-list{
+	display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.em-error-pg-main-product-list li{
+	-ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  padding: 0 3px;
+}
+.em-error-pg-main-product-block{
+	background-color: #F0F1F2;
+  border: 1px solid #F0F1F2;
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-product-block:hover{
+	background-color: #fff;
+  border: 1px solid #25B1EA;
+}
+.em-error-pg-main-product-block h3{
+	font-size: 20px;
+  line-height: 26px;
+  color: #000;
+  padding: 0 10px;
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+.em-error-pg-main-product-block:hover h3{
+	color: #25B1EA;
+}
+.em-error-pg-main-product-block h3 span{
+	display: inline-block;
+  position: relative;
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-product-block:hover h3 span{
+	padding-right: 15px;
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-product-block:hover h3 span:after{
+  opacity: 1;
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-product-block h3 span:after{
+	width: 6px;
+  height: 6px;
+  border-left: 1px solid #25B1EA; 
+  border-bottom: 1px solid #25B1EA;
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  opacity: 0;
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-product-img{
+	padding-top: 74.88%;
+  position: relative;  
+  overflow: hidden;
+  
+}
+.em-error-pg-main-product-img img{
+	position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-product-block:hover .em-error-pg-main-product-img img{
+  transform: scale(1.05) translate(0,-50%);
+  -moz-transform: scale(1.05) translate(0,-50%);
+  -webkit-transform: scale(1.05) translate(0,-50%);
+  transition: all 0.25s ease-out;
+}
+.em-error-pg-main-bot{
+	margin-top: 74px;
+  margin-bottom: 220px;
+}
+.em-error-pg-main-bot p{
+	font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+.em-error-pg-main-bot p a{
+	color: #25B1EA;
+}
+/*error page ends*/
 
 /*responsive starts*/
 @media (max-width: 1199px){
@@ -5654,6 +5926,12 @@ span.lessBtn {
   }
 }
 @media(min-width:750px) and (max-width:991px){
+  .em-error-pg-main-product-list li {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 10px;  
+  }
   .dd-menu-qz-img-con .dd-menu-qz-img-con-upr{
   	padding-right: 0px;
   }
@@ -5775,6 +6053,15 @@ span.lessBtn {
   }
 }
 @media(max-width:749px){
+  .em-error-pg-main-bot{
+  	margin: 50px 0px;
+  }
+  .em-error-pg-main-product-list li {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 10px;  
+  }
   .em-top-head-sec-sticky{
   	display: none !important
   }
@@ -8051,6 +8338,11 @@ span.lessBtn {
 @media(max-width:400px){
   .em-hm-shop-srs-box-img img{
   	max-width: 60%;
+  }
+  .em-error-pg-main-product-list li{
+	-ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 @media(max-width:359px){
