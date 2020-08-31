@@ -9,7 +9,13 @@
     {% if product.metafields.sf_product_tabs.tab_3_title != blank %}
       <li><a href="#tabs-3">{{product.metafields.sf_product_tabs.tab_3_title}}</a></li>
     {% endif %}
-    <li><a href="#tabs-4">Prop 65</a></li>
+    {% if product.metafields.sf_product_tabs.tab_4_title != blank %}
+      <li><a href="#tabs-4">{{product.metafields.sf_product_tabs.tab_4_title}}</a></li>
+    {% endif %}
+    {% if product.metafields.sf_product_tabs.tab_5_title != blank %}
+      <li><a href="#tabs-5">{{product.metafields.sf_product_tabs.tab_5_title}}</a></li>
+    {% endif %}
+    <li><a href="#tabs-6">Prop 65</a></li>
   </ul>
   {% if product.metafields.sf_product_tabs.tab_1_content != blank %}
     <div id="tabs-1">
@@ -36,9 +42,16 @@
     {{product.metafields.sf_product_tabs.tab_5_content}}
     </div>
   {% endif %}
-  <div id="tabs-6">
-    <p>WARNING: This product can expose you to chemicals including nickel and Di-siodecyl phthalate, which are known to the State of California to cause cancer or birth defects or other reproductive harm.</p>
-    <p>For more information visit <a href="https://www.p65warnings.ca.gov/" target="_blank">www.p65warnings.ca.gov</a>.</p>
+  <div id="tabs-6" >
+    <div class="cst_65_warning">
+      <div class="cst_65_icon">
+        <img src="{{'warning-sign.svg' | asset_url}}" />
+      </div>
+      <div>
+        <p>WARNING: This product can expose you to chemicals including nickel and Di-siodecyl phthalate, which are known to the State of California to cause cancer or birth defects or other reproductive harm.</p>
+        <label>For more information visit <a href="https://www.p65warnings.ca.gov/" target="_blank">www.p65warnings.ca.gov</a>.</label>
+      </div>
+    </div>
   </div>
   {% comment %} <ul> 
     <li><a href="#tabs-1">Overview</a></li>
