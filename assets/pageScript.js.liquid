@@ -8,6 +8,9 @@ $(".em-inner-sidebar-link-list li").each(function(){
    $(this).children("a").removeClass("active");
   }
 })
+$( "#accordionCareers" ).accordion({
+      collapsible: true,heightStyle: "content",header: "h3", active: false
+});
 var HeightGet = $("#shopify-section-header").height();
 console.log("Height" +HeightGet);
 $(".em-landing-pg-img").css("top",HeightGet);

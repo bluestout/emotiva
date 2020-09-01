@@ -8,20 +8,20 @@
         <h1 class="text-center">{{ 'customer.register.title' | t }}</h1>
           <p>If you do not yet have an account on emotiva.com, create it and your purchase will be faster and more convenient</p>
         </div>
-
+ 
         {%- assign formId = 'RegisterForm' -%}
-        {% form 'create_customer', id: formId, novalidate: 'novalidate' %}
+        {% form 'create_customer', id: formId%}
           {% include 'form-status', form: form, form_id: formId %}
 			<div class="em-log-reg-form-field-sec">
           
-          <input placeholder="Enter your first name" type="text" name="customer[first_name]" id="{{ formId }}-FirstName" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocomplete="given-name">
+          <input  placeholder="Enter your first name" type="text" name="customer[first_name]" id="{{ formId }}-FirstName" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocomplete="given-name" required="required">
         </div>
         <div class="em-log-reg-form-field-sec">
           
-          <input  placeholder="Enter your last name" type="text" name="customer[last_name]" id="{{ formId }}-LastName" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocomplete="family-name">
+          <input  required="required" placeholder="Enter your last name" type="text" name="customer[last_name]" id="{{ formId }}-LastName" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocomplete="family-name">
         </div>
         <div class="em-log-reg-form-field-sec">
-          <input placeholder="Enter your email"
+          <input required="required" placeholder="Enter your email"
             type="email"
             name="customer[email]"
             id="{{ formId }}-email"
@@ -46,7 +46,7 @@
           {%- endif -%}
         </div>
         <div class="em-log-reg-form-field-sec">
-          <input placeholder="Create Password"
+          <input required="required" placeholder="Create Password"
             type="password"
             name="customer[password]"
             id="{{ formId }}-password"
@@ -66,7 +66,7 @@
           {%- endif -%}
         </div>
         <div class="em-log-reg-form-field-sec">
-<input type="password" class="reset_pass" placeholder="Repeat password" />
+<input required="required" type="password" class="reset_pass" placeholder="Repeat password" />
           <div class="passerror" style="display:none;">Password should match.</div>
         </div>
         <div class="em-log-reg-form-fill-info">Combine upper- na lowercase letters, numbers and special characters for strong passsword</div>
