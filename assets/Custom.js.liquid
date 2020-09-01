@@ -1,4 +1,12 @@
 $(document).ready(function(){ 
+  /******************************/
+  /**********career form***********/
+  /******************************/
+  $("#cst_career_btn").click(function(){
+    $("#cst_career_btn").css("display","none");
+    $("#cst_career_form").css("display","block");
+  })
+  
   console.log("checkinginn");
 //     $("form#RegisterForm").submit(function(e){
 
@@ -333,4 +341,5 @@ $('.em-about-award-mob-slider').slick({
     focusOnSelect: true,
     variableWidth: true
   });
+  
 }
