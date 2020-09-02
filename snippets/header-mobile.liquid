@@ -16,8 +16,13 @@
                 </div>
                 <div class="em-mob-toggle-menu-sign">
                     <ul>
-                        <li><a href="/account/register">Sign Up</a></li>
-                        <li><a href="/account/login">Sign In</a></li>
+                         {%if customer %}
+                          <li><a href="/account">Account</a></li>
+                         {%else%}
+                          <li><a href="/account/register">Sign Up</a></li>
+                          <li><a href="/account/login">Sign In</a></li>
+                         {%endif%}
+                        
                     </ul>
                 </div>
             </div>

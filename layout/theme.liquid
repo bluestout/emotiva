@@ -42,7 +42,7 @@
   {{ 'Custom.css' | asset_url | stylesheet_tag }}
    {{ 'jquery-ui.css' | asset_url | stylesheet_tag }}
   {{ 'slidecart.css' | asset_url | stylesheet_tag }}
-  
+  {{ 'swatch.css' | asset_url | stylesheet_tag }}
    {{ 'custompopup.css' | asset_url | stylesheet_tag }}
 
   <script>
@@ -191,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 {% include 'globo.formbuilder.scripts' %}
-<body class="template-{{ request.page_type | handle }} {% if template == "page.landing"%} CustomLanding{%endif%} {% if template == "page.resources3"%} no-side-bar-mob-title{%endif%}">
+<body class="{%if template =="product.gift"%} custom-gift-body{%endif%} template-{{ request.page_type | handle }} {% if template == "page.landing"%} CustomLanding{%endif%} {% if template == "page.resources3"%} no-side-bar-mob-title{%endif%}">
 {% include 'slidecart' %}
   {%include "video-popup" %}
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {%endif%}
       {{ content_for_layout }}
      
-  {%if page.handle contains "contact-1" or template == "404" or template == "customers/register" or template == "customers/login" or template == "page.landing" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" or page.handle contains "support-1" or page.handle contains "support-2" or page.handle contains "resources-10" or page.handle contains "resources-1" or page.handle contains "resources-2" or page.handle contains "resources-4"%}
+  {%if page.handle contains "contact-1" or template =="product.gift"or template == "404" or template == "customers/register" or template == "customers/login" or template == "page.landing" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" or page.handle contains "support-1" or page.handle contains "support-2" or page.handle contains "resources-10" or page.handle contains "resources-1" or page.handle contains "resources-2" or page.handle contains "resources-4"%}
  
       {%else%}
         {% section "Newsletter-custom" %}
