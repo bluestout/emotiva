@@ -292,6 +292,20 @@ header.site-header{
   line-height: 21px;
   color: #000;
   font-weight: 700;
+  position: relative;
+}
+.em-nav-top-bar-rt-list > li > a span{
+	position: absolute;
+    right: -6px;
+    top: -10px;
+    background: #000;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    font-size: 10px;
 }
 a.em-nav-top-cart{
 	padding-right: 30px;
@@ -7594,6 +7608,20 @@ span.lessBtn {
     width: 24px;
     height:18px;
     display: block;
+    position: relative;
+  }
+  .em-mob-header-right-cart .em-mob-header-right-cart-icon span{
+	position: absolute;
+    right: -6px;
+    top: -10px;
+    background: #000;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    font-size: 10px;
   }
   .em-mob-header-right-search-icon {
     background: url(icon-search@1x.svg) 0 0 no-repeat;
@@ -8933,7 +8961,12 @@ span.lessBtn {
 {
   display: none !important;
 }
-
+@media(max-width:749px){
+  .cst_yotpo_photo_gallery
+  {
+      padding-left: 22px;
+  }
+}
 
 
 .cst_yotpo_instagram_gallery .yotpo-pictures-widget
