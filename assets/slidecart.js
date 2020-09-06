@@ -32,10 +32,13 @@ $(document).ready(function(){
 $(window).load(function(){
 
   $('body').on('click', '.em-nav-top-cart', function(e){
-
+var getpath = window.location.pathname;
+    if(getpath=="/cart")
+    {}else{
     e.preventDefault();
     $("#overlay").addClass("is-active");
     $(".inline-cart").addClass("is-active");
+    }
   })
 
   $('body').on('click', '.close-cart-img', function(e){

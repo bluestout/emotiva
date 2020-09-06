@@ -5895,10 +5895,15 @@ theme.Cart = (function() {
       var url = lineItem.attr(attributes.cartItemUrl);
       var title = lineItem.attr(attributes.cartItemTitle);
 var priceGetting = $(".cart-subtotal__price").html();
+      var numberCount = $(".countget").html();
       priceGetting = priceGetting.replace("$","");
       priceGetting = priceGetting.replace(" USD","");
        var shipPrice = $(".ShipPrice").val();
   shipPrice = parseInt(shipPrice);
+      var actualnumber = (numberCount-quantity);
+            $('.countget').html(actualnumber);
+                $('.MobileCart').html(actualnumber);
+                $('.fixedCart').html(actualnumber);
       if(priceGetting >shipPrice)
         {
           console.log("show");
@@ -5929,9 +5934,13 @@ var priceGetting = $(".cart-subtotal__price").html();
       if (quantity > 0) {
         this.$cartCountBubble.removeClass(classes.hide);
         this.$cartCount.html(quantity);
+       
       } else {
         this.$cartCountBubble.addClass(classes.hide);
         this.$cartCount.html('');
+            $('.countget').html("0");
+                $('.MobileCart').html("0");
+                $('.fixedCart').html("0");
       }
     },
 
