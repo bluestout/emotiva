@@ -793,6 +793,27 @@ function onInteractWithFilterOptionValue(event, element, filterType, displayType
     }
 }
 
+BCSfFilter.prototype.afterBuildFilterTree = function(data, filterTreeId) {
+    // Wrap all filter option blocks for styling
+    jQ(this.getSelector('filterTree') + filterTreeId).children().wrapAll('<div id="bc-sf-filter-options-wrapper"></div>');
+    // Box Style
+    this.buildFilterOptionBoxStyle(null, filterTreeId);
+    // Add scroll bar for block has long content, except the filter option which is range
+    this.buildFilterShowMore();
+    // Collapse all filter options by default
+    if (!this.checkIsFullWidthMobile()) this.collapseFilterOption();
+
+    // Hide filter tree and fix the product list style when the filter has no data
+    this.buildFilterTreeStyleNoFilterData(data, filterTreeId);
+	
+    jQ(".bc-sf-filter-option-value").each(function(index){
+      var itemText = jQ(this).text();
+      var itemTextFormated = itemText.replace(/-/g," ");
+      jQ(this).text(itemTextFormated);
+    });
+  
+};
+
 // Build Default layout
 BCSfFilter.prototype.buildDefaultElements=function(){var isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream,isSafari=/Safari/.test(navigator.userAgent),isBackButton=window.performance&&window.performance.navigation&&2==window.performance.navigation.type;if(!(isiOS&&isSafari&&isBackButton)){var self=this,url=window.location.href.split("?")[0],searchQuery=self.isSearchPage()&&self.queryParams.hasOwnProperty("q")?"&q="+self.queryParams.q:"";window.location.replace(url+"?view=bc-original"+searchQuery)}};
 
