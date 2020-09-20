@@ -49,9 +49,9 @@
     {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
     <img class="grid-view-item__image" src="{{ preview_image | img_url: image_size, scale: 2 }}" alt="{{ preview_image.alt }}" style="max-width: {{ max_height | times: preview_image.aspect_ratio }}px;">
   </noscript>
-  <div class="CustomProType">Loudspeaker</div>
+  {% comment %} <div class="CustomProType">Loudspeaker</div> {% endcomment %}
   <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>
-  <div class="CustomProDesc">Bookshelf Loudspeaker</div>
+  <div class="CustomProDesc">{{product.metafields.global.type}}</div>
    <div class="cust-review-price">
   {% include 'product-price-listing', product: product, show_vendor: show_vendor %}
   {% comment %} <span class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span> {% endcomment %}

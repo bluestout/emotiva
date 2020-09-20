@@ -375,10 +375,10 @@
   "products": {
     "product": {
       "regular_price": "Regular price",
-      "sold_out": "Sold out",
+      "sold_out": "Temporarily unavailable",
       "unavailable": "Unavailable",
       "availability": "Availability",
-      "on_sale": "Sale",
+      "on_sale": "Close out",
       "from_lowest_price_html": "from {{ lowest_price }}",
       "sale_price": "Sale price",
       "quantity": "Quantity",

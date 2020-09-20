@@ -8,7 +8,7 @@
                       </a>
 		</div>
 		<div class="em-top-head-sec-sticky-nav">
-          <ul class="em-nav-top-bar-lt-list">	
+          <ul class="em-nav-top-bar-lt-list">
                   {% for link in linklists[section.settings.main_linklist].links %}
                       {% if link.links != blank %}
                       <li class="em-nav-listing {%if forloop.index==4%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==7%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 6 or forloop.index== 8%}ReadCustom em-mega-menu-single{%endif%}"><a>{{link.title}}</a>
@@ -97,7 +97,7 @@
   <div class="em-articl-sub-nav-sec">
   <div class="em-articl-sub-nav-list">
     <ul>
-         {% for link in linklists['blogs'].links %}
+         {% for link in linklists['bs-blogs'].links %}
       <li><a href="{{ link.url }}">{{ link.title }}</a></li>
       {% endfor %}
     </ul> 
@@ -107,7 +107,7 @@
    <div class="em-articl-sub-nav-sec">
   <div class="em-articl-sub-nav-list">
     <ul class="BlogCustomize">
-     {% for link in linklists['blogs'].links %}
+     {% for link in linklists['bs-blogs'].links %}
       <li><a href="{{ link.url }}">{{ link.title }}</a></li>
       {% endfor %}
           
