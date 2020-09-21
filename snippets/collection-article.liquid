@@ -1,3 +1,6 @@
+{%if collection.metafields.global.rel_articles != blank  %}
+  {% assign arthandle = collection.metafields.global.rel_articles | split: ","%}
+{% endif %}
 <div class="colc-article-sec-main">
   <div class="page-width">
 	<div class="colc-article-sec-head">
@@ -7,22 +10,46 @@
 	<div class="colc-article-sec-row">
 		<div class="colc-article-sec-col">
 			<div class="colc-article-sec-block">
-				<a href="{{articles[section.settings.article_1].url}}"></a>
+				{% if arthandle[0] %}
+					<a href="{{articles[arthandle[0]].url}}"></a>
+				{% else %}
+					<a href="{{articles[section.settings.article_1].url}}"></a>
+				{%endif %}
 				<div class="colc-article-sec-img">
-                  {% if articles[section.settings.article_1].image %}
-					<img class="lazyload" data-src="{{articles[section.settings.article_1].image |img_url: "large"}}" />
+        {% if arthandle[0] %}
+					{% if articles[arthandle[0]].image %}
+						<img class="lazyload" data-src="{{articles[arthandle[0]].image |img_url: "large"}}" />
+					{%else%}
+						<img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+					{%endif%}
 				{%else%}
-                  <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
-                  {%endif%}
-                  <span>{{section.settings.blog_1}}</span>
+					{% if articles[section.settings.article_1].image %}
+						<img class="lazyload" data-src="{{articles[section.settings.article_1].image |img_url: "large"}}" />
+					{%else%}
+						<img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+					{%endif%}
+				{% endif %}
+                  {% comment %} <span>{{section.settings.blog_1}}</span> {% endcomment %}
 				</div>
 				<div class="colc-article-sec-cont">
-					<div class="colc-article-sec-cont-cat">{{section.settings.blog_1}}</div>
-					<h3>{{articles[section.settings.article_1].title}}</h3>
-					<p>{{articles[section.settings.article_1].excerpt }}</p>
+					{% comment %} <div class="colc-article-sec-cont-cat">{{section.settings.blog_1}}</div> {% endcomment %}
+					{% if arthandle[0] %}
+            <h3>{{articles[arthandle[0]].title}}</h3>
+          {% else %}
+            <h3>{{articles[section.settings.article_1].title}}</h3>
+          {%endif %}
+					{% if arthandle[0] %}
+            <p>{{articles[arthandle[0]].excerpt }}</p>
+          {% else %}
+            <p>{{articles[section.settings.article_1].excerpt }}</p>
+          {%endif %}
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
-							<p><img class="lazyload" data-src="{{section.settings.author_1| img_url: 'large'}}">{{articles[section.settings.article_1].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_1].author}}</p>
+							{% if arthandle[0] %}
+                <p><img src="{{section.settings.author_1| img_url: '56x56'}}">{{articles[arthandle[0]].published_at | time_tag: format: 'date'}}<br />by {{articles[arthandle[0]].author}}</p>
+              {% else %}
+                <p><img src="{{section.settings.author_1| img_url: '56x56'}}">{{articles[section.settings.article_1].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_1].author}}</p>
+              {%endif %}
 							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 						</div>
 					</div>
@@ -31,22 +58,46 @@
 		</div>
 		<div class="colc-article-sec-col">
 			<div class="colc-article-sec-block">
-				<a href="{{articles[section.settings.article_2].url}}"></a>
+				{% if arthandle[1] %}
+					<a href="{{articles[arthandle[1]].url}}"></a>
+				{% else %}
+					<a href="{{articles[section.settings.article_2].url}}"></a>
+				{%endif %}
 				<div class="colc-article-sec-img">
-		        {% if articles[section.settings.article_2].image %}
-					<img class="lazyload" data-src="{{articles[section.settings.article_2].image |img_url: "large"}}" />
+				{% if arthandle[1] %}
+					{% if articles[arthandle[1]].image %}
+						<img class="lazyload" data-src="{{articles[arthandle[1]].image |img_url: "large"}}" />
+					{%else%}
+						<img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+					{%endif%}
 				{%else%}
-                  <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
-                  {%endif%}
-					<span>{{section.settings.blog_2}}</span>
+					{% if articles[section.settings.article_2].image %}
+						<img class="lazyload" data-src="{{articles[section.settings.article_2].image |img_url: "large"}}" />
+					{%else%}
+						<img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+					{%endif%}
+				{% endif %}
+					{% comment %} <span>{{section.settings.blog_2}}</span> {% endcomment %}
 				</div>
 				<div class="colc-article-sec-cont">
-					<div class="colc-article-sec-cont-cat">{{section.settings.blog_2}}</div>
-					<h3>{{articles[section.settings.article_2].title}}</h3>
-					<p>{{articles[section.settings.article_2].excerpt }}</p>
+					{% comment %} <div class="colc-article-sec-cont-cat">{{section.settings.blog_2}}</div> {% endcomment %}
+					{% if arthandle[1] %}
+            <h3>{{articles[arthandle[1]].title}}</h3>
+          {% else %}
+            <h3>{{articles[section.settings.article_2].title}}</h3>
+          {%endif %}
+					{% if arthandle[1] %}
+            <p>{{articles[arthandle[1]].excerpt }}</p>
+          {% else %}
+            <p>{{articles[section.settings.article_2].excerpt }}</p>
+          {%endif %}
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
-							<p><img class="lazyload" data-src="{{section.settings.author_2| img_url: 'large'}}"> {{articles[section.settings.article_2].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_2].author}}</p>
+							{% if arthandle[1] %}
+                <p><img src="{{section.settings.author_2| img_url: '56x56'}}">{{articles[arthandle[1]].published_at | time_tag: format: 'date'}}<br />by {{articles[arthandle[1]].author}}</p>
+              {% else %}
+                <p><img src="{{section.settings.author_2| img_url: '56x56'}}">{{articles[section.settings.article_2].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_2].author}}</p>
+              {%endif %}
 							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 						</div>
 					</div>
@@ -55,22 +106,46 @@
 		</div>
 		<div class="colc-article-sec-col">
 			<div class="colc-article-sec-block">
-				<a href="{{articles[section.settings.article_3].url}}"></a>
+				{% if arthandle[2] %}
+					<a href="{{articles[arthandle[2]].url}}"></a>
+				{% else %}
+					<a href="{{articles[section.settings.article_3].url}}"></a>
+				{%endif %}
 				<div class="colc-article-sec-img">
-					{% if articles[section.settings.article_3].image %}
-					<img class="lazyload" data-src="{{articles[section.settings.article_3].image |img_url: "large"}}" />
-				{%else%}
-                  <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
-                  {%endif%}
-					<span>{{section.settings.blog_3}}</span>
+					{% if arthandle[2] %}
+            {% if articles[arthandle[2]].image %}
+					   <img class="lazyload" data-src="{{articles[arthandle[2]].image |img_url: "large"}}" />
+            {%else%}
+              <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+            {%endif%}
+          {%else%}
+            {% if articles[section.settings.article_3].image %}
+					  	<img class="lazyload" data-src="{{articles[section.settings.article_3].image |img_url: "large"}}" />
+            {%else%}
+              <img class="lazyload" data-src="{{settings.global_image |img_url: "large"}}" />
+            {%endif%}
+          {% endif %}
+					{% comment %} <span>{{section.settings.blog_3}}</span> {% endcomment %}
 				</div>
 				<div class="colc-article-sec-cont">
-					<div class="colc-article-sec-cont-cat">{{section.settings.blog_3}}</div>
-					<h3>{{articles[section.settings.article_3].title}}</h3>
-					<p>{{articles[section.settings.article_3].excerpt }}</p>
+					{% comment %} <div class="colc-article-sec-cont-cat">{{section.settings.blog_3}}</div> {% endcomment %}
+					{% if arthandle[2] %}
+            <h3>{{articles[arthandle[2]].title}}</h3>
+          {% else %}
+            <h3>{{articles[section.settings.article_3].title}}</h3>
+          {%endif %}
+					{% if arthandle[2] %}
+            <p>{{articles[arthandle[2]].excerpt }}</p>
+          {% else %}
+            <p>{{articles[section.settings.article_3].excerpt }}</p>
+          {%endif %}
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
-							<p><img class="lazyload" data-src="{{section.settings.author_3| img_url: 'large'}}"> {{articles[section.settings.article_3].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_3].author}}</p>
+							{% if arthandle[2] %}
+                <p><img src="{{section.settings.author_3| img_url: '56x56'}}">{{articles[arthandle[2]].published_at | time_tag: format: 'date'}}<br />by {{articles[arthandle[2]].author}}</p>
+              {% else %}
+                <p><img src="{{section.settings.author_3| img_url: '56x56'}}">{{articles[section.settings.article_3].published_at | time_tag: format: 'date'}}<br />by {{articles[section.settings.article_3].author}}</p>
+              {%endif %}
 							<div class="em-hm-fea-art-auth-link"><span class="bl-text-arw-link">Read</span></div>
 						</div>
 					</div>
