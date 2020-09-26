@@ -122,8 +122,8 @@
       <div class="product-single__meta">
 
         <h1 class="product-single__title">{{ product.title }}</h1>
-        {%if product.metafields.global.meta != blank %}
-        <div class="ProMeta">{{product.metafields.global.meta}}</div>
+        {%if product.metafields.global.type != blank %}
+        <div class="ProMeta">{{product.metafields.global.type}}</div>
         {%endif%}
         {%if product.metafields.global.short != blank %}
         <div class="ShortDesc"><p class="lessDesc">{{product.metafields.global.short | truncate: 100}}<span class="moreDesc">More</span></p>
@@ -287,7 +287,7 @@
 
 <div class="em-sin-pro-chat-lined">
 	<div class="em-sin-pro-chat-lined-inn">
-		<div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: "small"}}" /></div>
+		<div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: '56x56'}}" /></div>
 		<p>{{section.settings.heading_desktop}}</p>
 		<ul>
 			<li><a href="#" onclick="Smooch.open();">Live chat</a></li>

@@ -4,8 +4,8 @@
       <div class="em-sin-pro-dbl-lined-inn">
           <div class="em-sin-pro-dbl-lined-upr">
               <h3 class="em-sin-pro-dbl-lined-title">Complete Your Audio Solution</h3>
-              <h5 class="em-sin-pro-dbl-lined-sb-title">These products work great with RMC-1</h5>
-              <a href="{%if product.metafields.global.link != blank  %}{{shop.url}}/collections/{{product.metafields.global.link}}{%endif%}" class="bl-text-arw-link">See more</a>
+              <h5 class="em-sin-pro-dbl-lined-sb-title">These products work great with {{product.title}}</h5>
+              <a href="{{shop.url}}/collections/all?sort=price-descending" class="bl-text-arw-link">See more</a>
           </div>
           <div class="em-sin-pro-dbl-lined-lwr">
             <div class="em-sin-pro-dbl-lined-lwr-row">
@@ -16,12 +16,12 @@
                   <a href="{{all_products[handle].url}}" class="em-block-overlay-link"></a>
                   <div class="em-img-block-hvr-zoom CompleteImage">
                     <img src="{{all_products[handle].featured_image | img_url: "large"}}">
-                    <div class="CompleteImage-title">{{all_products[handle].metafields.global.type}}</div>
+                    {% comment %} <div class="CompleteImage-title">{{all_products[handle].metafields.global.type}}</div> {% endcomment %}
                   </div>
                   <div class="completeDes">
-                    <div class="CompleteImage-title-mob">Loudspeakers</div>
+                    {% comment %} <div class="CompleteImage-title-mob">Loudspeakers</div> {% endcomment %}
                     <div class="CompleteTitle">{{all_products[handle].title}}</div>
-                    <div class="CompleteTitle-subline">{{all_products[handle].metafields.global.meta}}</div>
+                    <div class="CompleteTitle-subline">{{all_products[handle].metafields.global.type}}</div>
                     <div class="completeDes-price-review">
                     	<div class="completeDes-price-box">{{all_products[handle].price| money}}</div>
                       	<div class="completeDes-review-box"> 
@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="em-single-pro-comp-sol-mob-link">
-              <a href="{%if product.metafields.global.link != blank  %}{{shop.url}}/collections/{{product.metafields.global.link}}{%endif%}" class="bl-text-arw-link">See more</a>	
+              <a href="{{shop.url}}/collections/all?sort=price-descending" class="bl-text-arw-link">See more</a>	
           </div>
 
       </div>

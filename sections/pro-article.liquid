@@ -39,9 +39,13 @@
             <h3>{{articles[section.settings.article_1].title}}</h3>
           {%endif %}
 					{% if arthandle[0] %}
-            <p>{{articles[arthandle[0]].excerpt }}</p>
+            {% unless articles[arthandle[0]].excerpt contains '<iframe src=' or articles[arthandle[0]].excerpt contains '<img src=' %}
+              <p>{{ articles[arthandle[0]].excerpt}}</p>
+            {% endunless %}
           {% else %}
+           {% unless articles[section.settings.article_1].excerpt contains '<iframe src=' or articles[section.settings.article_1].excerpt contains '<img src=' %}
             <p>{{articles[section.settings.article_1].excerpt }}</p>
+            {% endunless %}
           {%endif %}
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
@@ -87,9 +91,13 @@
             <h3>{{articles[section.settings.article_2].title}}</h3>
           {%endif %}
 					{% if arthandle[1] %}
-            <p>{{articles[arthandle[1]].excerpt }}</p>
+            {% unless articles[arthandle[1]].excerpt contains '<iframe src=' or articles[arthandle[1]].excerpt contains '<img src=' %}
+              <p>{{ articles[arthandle[1]].excerpt}}</p>
+            {% endunless %}
           {% else %}
+           {% unless articles[section.settings.article_2].excerpt contains '<iframe src=' or articles[section.settings.article_2].excerpt contains '<img src=' %}
             <p>{{articles[section.settings.article_2].excerpt }}</p>
+            {% endunless %}
           {%endif %}
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
@@ -135,10 +143,14 @@
             <h3>{{articles[section.settings.article_3].title}}</h3>
           {%endif %}
 					{% if arthandle[2] %}
-            <p>{{articles[arthandle[2]].excerpt }}</p>
+            {% unless articles[arthandle[2]].excerpt contains '<iframe src=' or articles[arthandle[2]].excerpt contains '<img src=' %}
+              <p>{{ articles[arthandle[2]].excerpt}}</p>
+            {% endunless %}
           {% else %}
+           {% unless articles[section.settings.article_3].excerpt contains '<iframe src=' or articles[section.settings.article_3].excerpt contains '<img src=' %}
             <p>{{articles[section.settings.article_3].excerpt }}</p>
-          {%endif %}
+            {% endunless %}
+          {% endif %}
 					<div class="em-hm-fea-art-block-auth">
 						<div class="em-hm-fea-art-auth-info">
 							{% if arthandle[2] %}

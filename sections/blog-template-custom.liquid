@@ -14,7 +14,13 @@
 			<div class="em-read-sin-top-cont">
 				<h4>{{ articles[section.settings.article].published_at | date: '%B %d, %Y ' }} by {{ articles[section.settings.article].author }}</h4>
 				<h3>{{ articles[section.settings.article].title }}</h3>
-				<p>{{ articles[section.settings.article].excerpt }}</p>
+        {% if articles[section.settings.article].excerpt contains '<iframe' %}
+          {% assign excerpt1 = articles[section.settings.article].excerpt | split: "<iframe" %}
+          {% assign excerpt2 = articles[section.settings.article].excerpt | split: "</iframe>" %}
+          <p>{{ excerpt1[0] }}<br>{{excerpt2[1]}}</p>
+        {% else %}
+          <p>{{ articles[section.settings.article].excerpt }}</p>
+        {% endif %}
 				<div class="em-read-sin-article-tags">
 					<ul>
             {% assign blog_url = articles[section.settings.article].url | split: '/' %}
@@ -40,39 +46,44 @@
               <div class="em-read-innr-hm-sec-col">
                 <div class="em-read-innr-hm-sec-block">
                   <h2 class="em-read-innr-hm-sec-cat"><a href="{{ blogs[block.settings.getblog].url }}">{{ blogs[block.settings.getblog].title }}</a></h2>
-                  {% for article in blogs[block.settings.getblog].articles limit:1 %}
-                  <div class="em-read-innr-hm-sec-block-img em-img-block-hvr-zoom">
-                    <a href="{{ article.url }}">
-                      {%if article.image.src %}
-                    <img src="{{ article.image.src | img_url: 'original' }}" />
-                      {%else%}
-                     <img src="{{settings.global_image | img_url: "original"}}" >
-                      {%endif%}
-                    </a>
-                      </div>
-                  <div class="em-read-innr-hm-sec-block-info">
-                    <a href="{{article.url}}" class="em-read-innr-hm-sec-block-info-link">
-                    <h3>{{ article.title}}</h3>
-                    <p>{{ article.excerpt}}</p>
-                    <div class="em-read-innr-hm-sec-block-date">{{ article.published_at | date: '%B %d, %Y ' }} by {{ article.author }}</div>
-                    </a>
-                      </div>
-                  {% endfor %}
-                  <div class="em-read-innr-hm-sec-block-art-list">
-                    {% for article in blogs[block.settings.getblog].articles limit: 2 offset:1 %}
-                    <div class="em-read-innr-hm-sec-block-bot-art">
+                  {% if blogs[block.settings.getblog].articles_count > 0%}
+                    {% for article in blogs[block.settings.getblog].articles limit:1 %}
+                    <div class="em-read-innr-hm-sec-block-img em-img-block-hvr-zoom">
                       <a href="{{ article.url }}">
                         {%if article.image.src %}
-                    <img src="{{ article.image.src | img_url: 'original' }}" />
-                      {%else%}
-                     <img src="{{settings.global_image | img_url: "original"}}" >
-                      {%endif%}
-                        {{ article.title }}</a>
-                    </div>
+                      <img src="{{ article.image.src | img_url: 'original' }}" />
+                        {%else%}
+                      <img src="{{settings.global_image | img_url: "original"}}" >
+                        {%endif%}
+                      </a>
+                        </div>
+                    <div class="em-read-innr-hm-sec-block-info">
+                      <a href="{{article.url}}" class="em-read-innr-hm-sec-block-info-link">
+                      <h3>{{ article.title}}</h3>
+                      {% unless article.excerpt contains '<iframe src=' or article.excerpt contains '<img src=' %}
+                        <p>{{ article.excerpt}}</p>
+                      {% endunless %}
+                      <div class="em-read-innr-hm-sec-block-date">{{ article.published_at | date: '%B %d, %Y ' }} by {{ article.author }}</div>
+                      </a>
+                        </div>
                     {% endfor %}
-                  </div>
-                  <div class="em-read-innr-hm-sec-block-link"><a href="{{ blogs[block.settings.getblog].url }}" class="bl-text-arw-link">See all in {{ blogs[block.settings.getblog].title }}</a></div>
-                  
+                    <div class="em-read-innr-hm-sec-block-art-list">
+                      {% for article in blogs[block.settings.getblog].articles limit: 2 offset:1 %}
+                      <div class="em-read-innr-hm-sec-block-bot-art">
+                        <a href="{{ article.url }}">
+                          {%if article.image.src %}
+                      <img src="{{ article.image.src | img_url: 'original' }}" />
+                        {%else%}
+                      <img src="{{settings.global_image | img_url: "original"}}" >
+                        {%endif%}
+                          {{ article.title }}</a>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    <div class="em-read-innr-hm-sec-block-link"><a href="{{ blogs[block.settings.getblog].url }}" class="bl-text-arw-link">See all in {{ blogs[block.settings.getblog].title }}</a></div>
+                  {% else %}
+                    <span style="color: #808080;">No articles at the moment</span>
+                  {% endif %}  
                 </div>
               </div>
               {% endfor %}
