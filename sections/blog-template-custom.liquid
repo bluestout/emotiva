@@ -25,7 +25,7 @@
 					<ul>
             {% assign blog_url = articles[section.settings.article].url | split: '/' %}
             {% for tag in articles[section.settings.article].tags %}
-            <li><a href="{{ blog_url[2]}}/tagged/{{ tag | handle }}">{{tag}}</a></li>
+            <li><a href="https://emotiva.com/blogs/{{ blog_url[2]}}/tagged/{{ tag | handle }}">{{tag}}</a></li>
             {% endfor %}
 					</ul>
 				</div>
@@ -60,7 +60,7 @@
                     <div class="em-read-innr-hm-sec-block-info">
                       <a href="{{article.url}}" class="em-read-innr-hm-sec-block-info-link">
                       <h3>{{ article.title}}</h3>
-                      {% unless article.excerpt contains '<iframe src=' or article.excerpt contains '<img src=' %}
+                      {% unless article.excerpt contains '<iframe' or article.excerpt contains '<img' %}
                         <p>{{ article.excerpt}}</p>
                       {% endunless %}
                       <div class="em-read-innr-hm-sec-block-date">{{ article.published_at | date: '%B %d, %Y ' }} by {{ article.author }}</div>
@@ -153,7 +153,7 @@
             {% assign blog_url = blogs[block.settings.getblog].url | split: '/' %}
             {% assign tags_list = tags_str | split: "/" %}
             {% for member in tags_list %}
-              <li><a href="{{ blog_url[2]}}/tagged/{{ member }}">{{member}}</a></li>
+              <li><a href="https://emotiva.com/blogs/{{ blog_url[2]}}/tagged/{{ member }}">{{member}}</a></li>
             {% endfor %} 
           {% endfor %}
 		</ul>
