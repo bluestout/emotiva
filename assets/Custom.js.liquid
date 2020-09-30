@@ -351,16 +351,18 @@ $('.em-about-award-mob-slider').slick({
       fade: true,
       adaptiveHeight: true,
       asNavFor: '.product-single__thumbnails'
-    })
+    });
+    
+
     if ($(window).width() > 749) {
-  $('.product-single__thumbnails').slick({
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    asNavFor: '.CustomMainSlide',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-    variableWidth: true
-  });
-  
-}
+      $('.product-single__thumbnails').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        asNavFor: '.CustomMainSlide',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        variableWidth: true
+      });
+      $('.product-single__thumbnails').slick('slickGoTo','1');
+    }
