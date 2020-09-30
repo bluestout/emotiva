@@ -75,7 +75,7 @@
               <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
             </button>
           {% endif %}
-          <ul class="product-single__thumbnails product-single__thumbnails-{{ section.id }}">
+          <ul class="product-single__thumbnails product-single__thumbnails-{{ section.id }}" data-thumbnail-size="{{product.media.size}}">
             {% for media in product.media %}
               <li class="product-single__thumbnails-item product-single__thumbnails-item--{{ section.settings.media_size }} js">
                 <a href="{{ media.preview_image | img_url: product_image_zoom_size, scale: product_image_scale }}"

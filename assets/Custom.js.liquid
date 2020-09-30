@@ -355,14 +355,30 @@ $('.em-about-award-mob-slider').slick({
     
 
     if ($(window).width() > 749) {
-      $('.product-single__thumbnails').slick({
-        slidesToShow: 8,
-        slidesToScroll: 1,
-        asNavFor: '.CustomMainSlide',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-        variableWidth: true
-      });
-      $('.product-single__thumbnails').slick('slickGoTo','1');
+      var thumbnail_size = $('.product-single__thumbnails').attr("data-thumbnail-size"); 
+      if (thumbnail_size > 7)
+      {
+        $('.product-single__thumbnails').slick({
+          slidesToShow: 8,
+          slidesToScroll: 1,
+          asNavFor: '.CustomMainSlide',
+          dots: false,
+          centerMode: false,
+          focusOnSelect: true,
+          variableWidth: true
+        });
+      }
+      else
+      {
+        $('.product-single__thumbnails').slick({
+          slidesToShow: thumbnail_size,
+          slidesToScroll: 1,
+          asNavFor: '.CustomMainSlide',
+          dots: false,
+          centerMode: false,
+          focusOnSelect: true,
+          variableWidth: true
+        });
+      }
+      $('.product-single__thumbnails').slick('slickGoTo','0');
     }
