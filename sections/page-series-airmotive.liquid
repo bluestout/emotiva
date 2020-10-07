@@ -14,9 +14,9 @@
               {%endunless%}
 				<div class="em-series-range-white-img">
                   {%if block.settings.image %}
-                  <img src="{{block.settings.image | img_url: "original"}}" />
+                  <img src="{{block.settings.image | img_url: '1024x1024'}}" />
 			{%else%}
-                  <img src="{{ product.featured_image.src | img_url: 'original' }}" />
+                  <img src="{{ product.featured_image.src | img_url: '1024x1024' }}" />
               {%endif%}
                   </div>
               <div class="em-series-range-white-cont">
