@@ -1,3 +1,4 @@
+{% if template contains 'article' and blog.metafields.blogfeeder.use_canonical == 'yes' %}{% assign canonical_url = article.metafields.blogfeeder.canonical %}{% endif %}
 <!doctype html>  
 <html class="no-js" lang="{{ shop.locale }}">
 <head>
@@ -120,6 +121,8 @@
   <script src="{{ 'Custom.js' | asset_url }}" defer="defer"></script>
 
 
+  {% include 'buddha-megamenu-before' %}
+  {% include 'buddha-megamenu' %}
   {{ content_for_header }}
   
 
@@ -192,6 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 {% include 'globo.formbuilder.scripts' %}
 <body class="{%if template =="product.gift"%} custom-gift-body{%endif%} template-{{ request.page_type | handle }} {% if template == "page.landing"%} CustomLanding{%endif%} {% if template == "page.resources3"%} no-side-bar-mob-title{%endif%}">
+  {% include 'buddha-megamenu-wireframe' %}
 {% include 'slidecart' %}
   {%include "video-popup" %}
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
