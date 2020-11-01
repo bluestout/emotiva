@@ -9218,3 +9218,108 @@ span.lessBtn {
 {
   margin-bottom: 20px;
 }
+
+/*****************homepage headphone section****************************/
+.em-hm-headphone-main
+{
+}
+.headphone-layered-sec
+{
+  {% comment %} position: relative;
+  padding-top: 37.97%;
+  background-size: cover; {% endcomment %}
+  position: relative;
+  background-size: cover;
+  padding: 70px 100px 70px 100px;
+}
+@media (min-width: 750px){
+  .headphone-layered-sec-mob {
+      background-image: none !important;
+  }
+}
+
+.headphone-layered-cont-upr
+{
+  max-width: 650px;
+  {% comment %} position: absolute;
+  padding: 0 15px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(-35%,-50%);
+  -moz-transform: translate(-35%,-50%);
+  -webkit-transform: translate(-35%,-50%); {% endcomment %}
+}
+
+.headphone-layered-cont-upr h3
+{
+  font-size: 32px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+  margin: 0 0 25px 0;
+}
+
+.headphone-layered-cont-upr .headphone-layered-cont-des
+{
+  font-size: 20px;
+  line-height: 29px;
+  color: #fff;
+  text-align: left;
+  margin: 0 0 35px 0;
+}
+.headphone-layered-cont-btn
+{
+  text-align: left;
+  margin-top: 40px;
+}
+.headphone-layered-cont-upr .em-banner-feature-list
+{
+  justify-content: flex-start;
+}
+.headphone-layered-cont-upr .em-banner-feature-list p
+{
+  color: #fff;
+}
+@media (max-width: 749px)
+{
+  .em-hm-headphone-main .page-width
+  {
+    padding: 0;
+  }
+  .headphone-layered-sec {
+      padding-top: 0;
+      background-image: none;
+      background-position: 50% 50%;
+      padding: 0;/*added*/
+  }
+  .headphone-layered-sec-mob {
+      position: relative;
+      {% comment %} padding-top: 137.56%; {% endcomment %}
+      background-size: cover;
+      background-position: right;
+      padding: 400px 30px 30px 30px;/*added*/
+  }
+  .headphone-layered-cont-upr
+  {
+    {% comment %} transform: translate(0%,-50%);
+    -moz-transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%); {% endcomment %}
+  }
+  .headphone-layered-cont-upr h3
+  {
+    font-size: 26px;
+    text-align: center;
+  }
+  .headphone-layered-cont-upr .headphone-layered-cont-des
+  {
+    font-size: 16px;
+    text-align: center;
+  }
+  .headphone-layered-cont-btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
