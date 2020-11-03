@@ -1,6 +1,6 @@
 development:
   password: b5b7a0b0f544c77c6d379741d4593244
-  theme_id: "81221648427"
+  theme_id: "83882639403"
   store: emotiva1.myshopify.com
   ignore_files:
       - config/settings_data.json
