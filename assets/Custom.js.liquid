@@ -333,7 +333,26 @@ $(document).ready(function(){
     $("body").removeClass("mobilemenu-open");
       $('.em-toggle-menu-fade-lr').remove();
   })
-})
+  
+  
+  $(document).on('click', '.em-pg-discount-bar-close', function(){
+    console.log('close button clicked');
+    localStorage.setItem('close_footer_banner', '1');
+    $('.em-pg-bot-discount-bar').css('display', 'none');
+  });
+  
+  
+  var get_local_str_footer_bnr = localStorage.getItem('close_footer_banner');
+  if(get_local_str_footer_bnr =="1"){
+    $('.em-pg-bot-discount-bar').css('display','none');
+  } else{
+    $('.em-pg-bot-discount-bar').css('display', 'block');
+  }
+  
+  
+}); // end document ready
+
+
 $( "#CustomaccordionFoot" ).accordion({
       collapsible: true,heightStyle: "content"
     });

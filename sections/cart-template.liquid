@@ -236,7 +236,7 @@
             {%- if cart.cart_level_discount_applications.size > 0 -%}
               {%- assign cartDiscounts = cart.cart_level_discount_applications -%}
             {%- endif -%}
-            <div{% if cart.cart_level_discount_applications.size == 0 %} class="hide"{% endif %} data-cart-discount-wrapper>
+            <div {% if cart.cart_level_discount_applications.size == 0 %} class="hide"{% endif %} data-cart-discount-wrapper>
               <div class="order-discount-card-wrapper" data-cart-discount>
                 {%- for discount_application in cartDiscounts -%}
                   <span class="order-discount order-discount--title order-discount--cart">
@@ -248,10 +248,40 @@
                 {%- endfor -%}
               </div>
             </div>
-           <div class="ShippingText">
-  <span class="Title">Shipping</span>
-  <span class="ShipValue">Free</span>
-          </div>
+            <div class="em-reward-holiday-progress-block" style="padding: 10px 20px 10px 20px;">
+              {% assign progres_val =  cart.total_price | divided_by: 100 %}
+                {% for item in cart.items %}
+                {% if item.product.tags contains 'excluded-reward-holiday' %}
+                  {% assign item_val =  item.original_line_price | divided_by: 100 %}
+                  {% assign progres_val =  progres_val | minus: item_val %}
+                {% endif %}
+              {% endfor %} 
+              <div class="em-reward-holiday-progress-block-left" style="text-align: left;    width: 70%;">
+                <div class="em-reward-holiday-slider-outer">
+                  <div class="em-reward-holiday-slider-inner" style="width: {% if progres_val > 99 %}100%{%else%}{{progres_val}}%{%endif%}"></div>
+                </div>
+                {% comment %} <progress id="file" value="{{ progres_val }}" max="100"></progress><br> {% endcomment %}
+                {% if progres_val > 99 %}
+                  Congrats! You'll earn <b>20% back</b> on this order towards a future purchase!
+                {% else %}
+                  {% assign progres_remain =  100 | minus: progres_val%}
+                  You are <b>${{progres_remain}}</b> away from 20% reward
+                {% endif %}
+              </div>
+              <div class="em-reward-holiday-progress-block-right">
+              {% if progres_val > 99 %}
+                <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/promo-badge-active.png?v=1604650660"
+                  width="62px" height="44px"/>  
+              {% else %}
+                <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/promo-badge-mini-cart.png?v=1604648642"
+                width="62px" height="44px"/>
+              {% endif %}
+              </div>
+            </div>
+            <div class="ShippingText">
+              <span class="Title">Shipping</span>
+              <span class="ShipValue">Free</span>
+            </div>
 
             <div class="cart-subtotal">
               <span class="cart-subtotal__title">{{ 'cart.general.subtotal' | t }}</span>

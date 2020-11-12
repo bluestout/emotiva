@@ -164,6 +164,17 @@
             {{ product.metafields.stamped.badge }}
           </span> {% endcomment %}
         </div> 
+        {% if product.tags contains 'excluded-reward-holiday'%}
+        <div class="excluded-reward-holiday-block">
+          <span>Excluded from Emobucks Holiday promotion.</span>
+        </div>
+        <style>
+          #ju_Con_635241, #ju_Con_635235
+          {
+            display: none !important;
+          }
+        </style>
+        {% endif %}
         <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
           <p class="affirm-as-low-as" data-page-type="product" data-amount="{{product.price}}"></p>

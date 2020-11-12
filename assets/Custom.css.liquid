@@ -130,18 +130,22 @@ header.site-header{
   padding-right: 0px;
 }
 .em-top-head-sec .em-ext-top-bar{
-	background-color: #000;
+	{% comment %} background-color: #000; {% endcomment %}
+  background-color: #B7E3FD;
   padding: 7px;
 }
 .em-top-head-sec .em-ext-top-bar p{
 	font-size: 13px;
   line-height: 16px;
-  color: #fff;
+  {% comment %} color: #fff; {% endcomment %}
+  color: #000;
   text-align: center;
 }
 .em-top-head-sec .em-head-top-bar{
 	padding: 20px 55px;
   border-bottom: 1px solid rgba(102,113,117,0.1);
+  background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflakes.jpg?v=1604638025);
+  background-size: contain;
 }
 .em-head-top-bar-row:after{
 	clear: both;
@@ -1763,6 +1767,16 @@ footer.site-footer{
   margin-top: 0px;
   padding-bottom: 10px;
 }
+footer.site-footer .page-width{
+	background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflake-foot.jpg?v=1604638479);
+  background-size: cover;
+}
+@media (max-width: 749px)
+{
+  footer.site-footer .page-width{
+    background-image: unset;
+  } 
+}
 footer.site-footer h4, footer.site-footer .h4{
 	font-size: 14px;
   line-height: 18px;
@@ -2601,7 +2615,7 @@ footer .site-footer__hr{
   background-size: 22px auto;
 }
 .inline-cart.em-cst-cart-slide .em-car-sl-content .line-item-container{
-	height: calc(100vh - 290px);/*FS change 535 upsell mini cart*/
+	height: calc(100vh - 380px);/*FS change 535 upsell mini cart*/
   overflow-y: auto;	 
   max-height: none;
 }
@@ -6299,6 +6313,9 @@ span.lessBtn {
     margin-left: -55px;
     margin-right: -55px;
   }
+  .template-product .product-single__media-group > .thumbnails-wrapper .product-single__thumbnails .product-single__thumbnails-item .product-single__thumbnail-image{
+	min-width: 50px;
+  }
   /*dev css starts*/
   .em-sin-pro-reward-box:hover .em-sin-pro-reward-popup {
       display: block;
@@ -7683,13 +7700,15 @@ span.lessBtn {
   	font-size: 12px;
     line-height: 15px;
     margin: 0;
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #B7E3FD;
     padding: 6px;
     text-align: center;
   }
   .em-mob-header-bot-sec{
   	padding: 15px 15px 13px;
+    background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflakes.jpg?v=1604638025);
+    background-size: contain;
   }
   .em-mob-header-menu-icon{
   	font-size: 12px;
@@ -7909,6 +7928,11 @@ span.lessBtn {
   footer.site-footer .site-footer__content.DesktopFooter{
   	display: none;
   }
+  .MobileFooter
+  {
+    background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflake-foot_mob.jpg?v=1604639405);
+    background-size: cover;
+  }
   .MobileFooter .CustomInfoFoot > h3{
   	font-size: 14px;
     line-height: 18px;
@@ -7954,6 +7978,7 @@ span.lessBtn {
   .MobileFooter .ui-accordion .ui-accordion-content{
   	padding: 0 0 40px 0;
     border: none !important;
+    background: transparent;
   }
   .MobileFooter .footer-g-touch-sec{
   	margin-bottom: 25px;
@@ -9323,4 +9348,104 @@ span.lessBtn {
     margin-top: 10px;
     text-align: center;
   }
+}
+/*****************homepage festival hero section****************************/
+@media (min-width: 750px)
+{
+  .cst-hero-festival{
+    padding-bottom: 0px;
+  }
+  .cst-hero-festival .em-home-banner-overlay
+  {
+    top: 73px;
+    left: 102px;
+    text-align: left;
+    right: unset;
+    transform: translate(0,0%);
+    -moz-transform: translate(0,0%);
+    -webkit-transform: translate(0,0%);
+  }
+  .cst-hero-festival .em-home-banner-btn
+  {
+    text-align: left;
+  }
+  .cst-hero-festival .em-home-banner-promo
+  {
+    position: absolute;
+    bottom: 42px;
+    right: 85px;
+  }
+  .cst-hero-festival .em-home-banner-promo a
+  {
+    opacity: 0.65;
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 749px)
+{
+  .cst-hero-festival .em-home-banner-promo
+  {
+     text-align: center;
+  }
+  .cst-hero-festival .em-home-banner-promo a
+  {
+    opacity: 0.65;
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+/******************product page excluded-reward-holiday-block****************************/
+.excluded-reward-holiday-block
+{
+    font-size: 13px;
+    line-height: 19px;
+    color: #667175;
+    margin: 20px 0 20px 0;
+}
+.excluded-reward-holiday-block span
+{
+  border: 1px solid #CBCED1;
+  padding: 2px 10px;
+}
+/******************mini cart reward holiday progress block****************************/
+.em-reward-holiday-progress-block
+{
+  background-color: rgba(183,227,253,0.4);
+  display: flex;
+  padding: 10px 20px 10px 40px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.em-reward-holiday-progress-block-left
+{
+  width: 80%;
+}
+.em-reward-holiday-progress-block-left progress
+{
+  width: 100%;
+}
+.em-reward-holiday-progress-block-right
+{
+  display: flex;
+  align-items: center;
+}
+.em-reward-holiday-slider-outer
+{
+  height: 10px;
+    width: 100%;
+    background-color: #cbdce6;
+    border-radius: 30px;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.em-reward-holiday-slider-inner
+{
+    height: 10px;
+    width: 63%;
+    background-color: #1EB1EB;
+    border-radius: 30px;
+  
 }

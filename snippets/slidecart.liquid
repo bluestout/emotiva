@@ -15,56 +15,70 @@
   {% if cart.item_count < 1 %}
 	<p class="empty-cart-title international-cart-element" data-empty-cart="">Your cart is empty.</p>
   {% else %}
-	
-  <div data-cart-contents="" class="em-car-sl-content">
-
-<div class="line-item-container">
-    
-  
-  
-  {% for item in cart.items %}
-  <div class="line-item">
-    <div class="line-item-image">
-
-      <a href="{{ item.url }}">
-        <img alt="{{ item.image.alt | escape }}" src="{{ item | img_url: '1024x1024' }}">
-      </a>
-
-    </div>
-
-    <div class="line-item-content">
-      <h4 class="line-item-title"><a href="{{ item.url }}">{{ item.title }}</a>
-        </h4>    
-      <div class="line-item-remove">
-        <div class="ProMetaslide">{{item.metafields.global.type}}</div>
-  <div class="line-item-price">
-        {% if item.variant.compare_at_price > item.price %}
-        
-        <span class="strikeprice">{{ item.variant.compare_at_price | money }}</span>
-        {% endif %}
-    
-        <span class="flow-price">{{ item.price | money }}</span>
-    
-        <div class="yousavepricesliding yousaveprice">
-          {% if item.variant.compare_at_price > item.price %}You save {{ item.variant.compare_at_price | minus: item.price | times: 100.0 | divided_by: item.variant.compare_at_price | money_without_currency | times: 100 | remove: '.0'}}%{% endif %}
-        </div>
-      </div>    
-  <a rel="{{ item.id }}" class="remove-item" onclick="remove({{ forloop.index  }},0)">Remove</a> 
+	<div class="em-reward-holiday-progress-block">
+    {% assign progres_val =  cart.total_price | divided_by: 100 %}
+      {% for item in cart.items %}
+      {% if item.product.tags contains 'excluded-reward-holiday' %}
+        {% assign item_val =  item.original_line_price | divided_by: 100 %}
+        {% assign progres_val =  progres_val | minus: item_val %}
+      {% endif %}
+    {% endfor %} 
+    <div class="em-reward-holiday-progress-block-left">
+      <div class="em-reward-holiday-slider-outer">
+        <div class="em-reward-holiday-slider-inner" style="width: {% if progres_val > 99 %}100%{%else%}{{progres_val}}%{%endif%}"></div>
       </div>
+      {% comment %} <progress id="file" value="{{ progres_val }}" max="100"></progress><br> {% endcomment %}
+      {% if progres_val > 99 %}
+        Congrats! You'll earn <b>20% back</b> on this order towards a future purchase!
+      {% else %}
+        {% assign progres_remain =  100 | minus: progres_val%}
+        You are <b>${{progres_remain}}</b> away from 20% reward
+      {% endif %}
     </div>
-
-
-
+    <div class="em-reward-holiday-progress-block-right">
+    {% if progres_val > 99 %}
+      <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/promo-badge-active.png?v=1604650660"
+        width="62px" height="44px"/>  
+    {% else %}
+      <img src="https://cdn.shopify.com/s/files/1/2572/6926/files/promo-badge-mini-cart.png?v=1604648642"
+      width="62px" height="44px"/>
+    {% endif %}
+    </div>
   </div>
-  {% endfor %}  
+  <div data-cart-contents="" class="em-car-sl-content">
+    <div class="line-item-container">
+      {% for item in cart.items %}
+      <div class="line-item">
+        <div class="line-item-image">
+          <a href="{{ item.url }}">
+            <img alt="{{ item.image.alt | escape }}" src="{{ item | img_url: '1024x1024' }}">
+          </a>
+        </div>
 
-</div>
+        <div class="line-item-content">
+          <h4 class="line-item-title"><a href="{{ item.url }}">{{ item.title }}</a>
+            </h4>    
+          <div class="line-item-remove">
+            <div class="ProMetaslide">{{item.metafields.global.type}}</div>
+            <div class="line-item-price">
+              {% if item.variant.compare_at_price > item.price %}
+              <span class="strikeprice">{{ item.variant.compare_at_price | money }}</span>
+              {% endif %}
+      
+              <span class="flow-price">{{ item.price | money }}</span>
     
-</div>
-	
-
+              <div class="yousavepricesliding yousaveprice">
+                {% if item.variant.compare_at_price > item.price %}You save {{ item.variant.compare_at_price | minus: item.price | times: 100.0 | divided_by: item.variant.compare_at_price | money_without_currency | times: 100 | remove: '.0'}}%{% endif %}
+              </div>
+            </div>    
+            <a rel="{{ item.id }}" class="remove-item" onclick="remove({{ forloop.index  }},0)">Remove</a> 
+          </div>
+        </div>
+      </div>
+      {% endfor %}  
+    </div>  
+  </div>
   {% endif %}
-  
   
   <div data-full-cart="" class="subtotal-block international-cart-element" style="display: block;"> 
     <div class="em-cart-like-opt-sec-main"><!-- hide upsell right now-->
