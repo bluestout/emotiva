@@ -262,7 +262,7 @@
                 </div>
                 {% comment %} <progress id="file" value="{{ progres_val }}" max="100"></progress><br> {% endcomment %}
                 {% if progres_val > 99 %}
-                  Congrats! You'll earn <b>20% back</b> on this order towards a future purchase!
+                  Congrats! You'll earn <b>20% back</b> from this order towards a future purchase!
                 {% else %}
                   {% assign progres_remain =  100 | minus: progres_val%}
                   You are <b>${{progres_remain}}</b> away from 20% reward
