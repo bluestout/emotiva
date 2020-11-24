@@ -139,6 +139,29 @@ function remove(line, quantity){
     }
   });
 }
+function updatedAjaxMiniCart(cartdata){
+  console.log("TestupdatedAjaxMiniCart: ", cartdata);
+  $('.site-header__cart #CartCount').html(cartdata.item_count);
+  $.ajax({
+    type: "GET",
+    url: "/cart",
+    dataType: 'html',
+
+    success: function(data) 
+    {
+      
+      var minicartdata=$(data).filter('#slidingcartmain').html();
+      var countnumb=$(data).find('.countget').html();
+      $('#slidingcartmain').html(minicartdata);
+      
+      $('.countget').html(countnumb);
+      $('.MobileCart').html(countnumb);
+      $('.fixedCart').html(countnumb);
+      $("#overlay").addClass("is-active");
+      $(".inline-cart").addClass("is-active");
+    }
+  });
+}
 $(document).ready(function(){
   $("img.closebar").click(function(){
     $(this).hide();
@@ -159,26 +182,119 @@ $(document).ready(function(){
           url: '/cart.js',
           dataType: 'json',
           success: function(cartdata){
-            $('.site-header__cart #CartCount').html(cartdata.item_count);
-            $.ajax({
-              type: "GET",
-              url: "/cart",
-              dataType: 'html',
+            console.log("Test Ori: ", cartdata);
 
-              success: function(data) 
+            var DiracKit2020 =[16832128253995,
+              30876874539051,
+              30719023448107,
+              13618405146667,
+              16281657278507,
+              16172352471083
+              ];
+            var isDiracKit2020 = false;
+            for(var i=0; i < cartdata.items.length; i++)  
+            {
+              for(var j=0; j < DiracKit2020.length; j++)  
               {
-                
-                var minicartdata=$(data).filter('#slidingcartmain').html();
-                var countnumb=$(data).find('.countget').html();
-                $('#slidingcartmain').html(minicartdata);
-                
-                $('.countget').html(countnumb);
-                $('.MobileCart').html(countnumb);
-                $('.fixedCart').html(countnumb);
-                $("#overlay").addClass("is-active");
-                $(".inline-cart").addClass("is-active");
+                if(cartdata.items[i].variant_id == DiracKit2020[j])
+                {
+                  isDiracKit2020 = true;
+                }
               }
-            });
+            }
+            for(var i=0; i < cartdata.items.length; i++)  
+            {
+              if(cartdata.items[i].variant_id == 31900805333035)
+              {
+                isDiracKit2020 = false; 
+              }
+            }
+            console.log("isDiracKit2020: ", isDiracKit2020);
+            //isDiracKit2020 = false;//test
+            if(isDiracKit2020)
+            {
+              $.ajax({
+                type: 'POST',
+                url: '/cart/add.js',
+                data: {
+                  quantity: 1,
+                  id: 31900805333035
+                },
+                dataType: 'json', 
+                success: function (cartdata) { 
+                  updatedAjaxMiniCart(cartdata);
+                  // $('.site-header__cart #CartCount').html(cartdata.item_count);
+                  // $.ajax({
+                  //   type: "GET",
+                  //   url: "/cart",
+                  //   dataType: 'html',
+
+                  //   success: function(data) 
+                  //   {
+                      
+                  //     var minicartdata=$(data).filter('#slidingcartmain').html();
+                  //     var countnumb=$(data).find('.countget').html();
+                  //     $('#slidingcartmain').html(minicartdata);
+                      
+                  //     $('.countget').html(countnumb);
+                  //     $('.MobileCart').html(countnumb);
+                  //     $('.fixedCart').html(countnumb);
+                  //     $("#overlay").addClass("is-active");
+                  //     $(".inline-cart").addClass("is-active");
+                  //   }
+                  // });
+                },
+                error: function(resp) 
+                {
+                  updatedAjaxMiniCart(cartdata);
+                  // $('.site-header__cart #CartCount').html(cartdata.item_count);
+                  // $.ajax({
+                  //   type: "GET",
+                  //   url: "/cart",
+                  //   dataType: 'html',
+
+                  //   success: function(data) 
+                  //   {
+                      
+                  //     var minicartdata=$(data).filter('#slidingcartmain').html();
+                  //     var countnumb=$(data).find('.countget').html();
+                  //     $('#slidingcartmain').html(minicartdata);
+                      
+                  //     $('.countget').html(countnumb);
+                  //     $('.MobileCart').html(countnumb);
+                  //     $('.fixedCart').html(countnumb);
+                  //     $("#overlay").addClass("is-active");
+                  //     $(".inline-cart").addClass("is-active");
+                  //   }
+                  // });
+                } 
+              });
+            }
+            else
+            {
+              updatedAjaxMiniCart(cartdata);
+              // $('.site-header__cart #CartCount').html(cartdata.item_count);
+              // $.ajax({
+              //   type: "GET",
+              //   url: "/cart",
+              //   dataType: 'html',
+
+              //   success: function(data) 
+              //   {
+                  
+              //     var minicartdata=$(data).filter('#slidingcartmain').html();
+              //     var countnumb=$(data).find('.countget').html();
+              //     $('#slidingcartmain').html(minicartdata);
+                  
+              //     $('.countget').html(countnumb);
+              //     $('.MobileCart').html(countnumb);
+              //     $('.fixedCart').html(countnumb);
+              //     $("#overlay").addClass("is-active");
+              //     $(".inline-cart").addClass("is-active");
+              //   }
+              // });
+            }
+            
           }
 
         });
