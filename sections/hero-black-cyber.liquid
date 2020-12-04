@@ -1,9 +1,13 @@
 <div data-section-id="{{ section.id }}" data-section-type="hero-section">
 <div class="em-home-banner-main">
 <div class="em-home-banner-inn">
-<img class="lazyload desk-banner-custm small--hide" data-src="{{section.settings.image | img_url: '2048x2048'}}" />
-  <img class="lazyload mobile-banner-custm medium-up--hide" data-src="{{section.settings.mob_image | img_url: 'original'}}" />
-
+  <img class="lazyload desk-banner-custm small--hide" data-src="{{section.settings.image | img_url: '2048x2048'}}" />
+  <div style="position: relative;">
+    <img class="lazyload mobile-banner-custm medium-up--hide" data-src="{{section.settings.mob_image | img_url: 'original'}}" />
+    <div class="em-home-banner-promo mob-show">
+      <a href="https://emotiva.com/pages/terms-and-conditions">Terms and Conditions</a>
+    </div>
+  </div>
 <div class="em-home-banner-overlay desk-show">
   <div class="title_button_block">
     {%- if section.settings.title != blank -%}
@@ -28,6 +32,9 @@
   <div class="em-home-banner-btn mob-show">
     <a href="{{ section.settings.button_link }}" class="em-bl-back-btn" aria-label="Explore Product"> {{ section.settings.button_label | escape }}</a>
   </div>
+</div>
+<div class="em-home-banner-promo desk-show">
+  <a href="https://emotiva.com/pages/terms-and-conditions">Terms and Conditions</a></div>
 </div>
 
 </div>
