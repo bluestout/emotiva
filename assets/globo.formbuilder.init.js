@@ -1,1 +1,1 @@
-typeof Globo.FormBuilder.initialize !== 'undefined' && Globo.FormBuilder.initialize()
+typeof Globo !== 'undefined' && Globo.FormBuilder.initialize()

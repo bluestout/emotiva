@@ -175,7 +175,7 @@
         </div>
 {% endif %}
           
-{% include "gift-data" %}
+{% comment %} {% include "gift-data" %} {% endcomment %}
             <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
               data-error-message-wrapper
               role="alert"

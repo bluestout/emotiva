@@ -16,7 +16,7 @@ console.log("Height" +HeightGet);
 $(".em-landing-pg-img").css("top",HeightGet);
 $("body").css("padding-top",HeightGet);
 
-if(LinkGet.indexOf("diraclive?contact_posted=true") != -1){
+if(window.location.href.indexOf("diraclive?contact_posted=true") != -1){
   $(".em-landing-pg-main").addClass("em-landing-form-thank-open");
   $("#powerfull_dirac_form_success").addClass("powerfull-dirac-form-success-show");
   $("#powerfull_dirac_form").addClass("powerfull-dirac-form-hide");
