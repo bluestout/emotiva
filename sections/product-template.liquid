@@ -284,25 +284,30 @@
               </div>
             </div>
         </div>
+        {% if product.metafields.global.made_to_order_ship %}
+          <div class="em-sin-pro-cst-ship-made-to-order">
+            <span class="right-circle-mark"></span><p>{{product.metafields.global.made_to_order_ship}}</p>
+          </div>
+        {% endif %}
         <div class="em-sin-pro-cst-ship-warranty">
-	<div class="em-sin-pro-cst-ship-warranty-inn">
-		<div class="em-cart-bot-fea-sec">
-			<ul>
-				<li><img src="{{'icon-free-shipping@1x.svg'| asset_url}}"> Free Shipping</li>
-				<li><img src="{{'icon-warranty.svg'| asset_url}}" width="18px" height="18px">
-                  {% if product.metafields.global.warranty %}
-                    {{product.metafields.global.warranty}}
-                  {% else %}
-                    5 years transferable warranty
-                  {% endif %}
-                </li>
-			</ul>
-		</div>
-		<div class="em-cart-bot-fea-sec-faq"><a href="{{section.settings.link_faq}}">FAQ</a></div>
-	</div>	
-    <div class="em-sin-pro-cst-ship-warranty-inn-copy">
-       <p>We are experiencing longer shipping times due to high volume and carrier delays. Please allow extra time for delivery.</p>
-    </div>
+          <div class="em-sin-pro-cst-ship-warranty-inn">
+            <div class="em-cart-bot-fea-sec">
+              <ul>
+                <li><img src="{{'icon-free-shipping@1x.svg'| asset_url}}"> Free Shipping</li>
+                <li><img src="{{'icon-warranty.svg'| asset_url}}" width="18px" height="18px">
+                          {% if product.metafields.global.warranty %}
+                            {{product.metafields.global.warranty}}
+                          {% else %}
+                            5 years transferable warranty
+                          {% endif %}
+                        </li>
+              </ul>
+            </div>
+            <div class="em-cart-bot-fea-sec-faq"><a href="{{section.settings.link_faq}}">FAQ</a></div>
+          </div>	
+        <div class="em-sin-pro-cst-ship-warranty-inn-copy">
+          <p>We are experiencing longer shipping times due to high volume and carrier delays. Please allow extra time for delivery.</p>
+        </div>
 </div>
 
 <div class="em-sin-pro-chat-lined">
