@@ -248,7 +248,7 @@
                 {%- endfor -%}
               </div>
             </div>
-            <div class="em-reward-holiday-progress-block" style="padding: 10px 20px 10px 20px;">
+            {% comment %} <div class="em-reward-holiday-progress-block" style="padding: 10px 20px 10px 20px;">
               {% assign progres_val =  cart.total_price | divided_by: 100 %}
                 {% for item in cart.items %}
                 {% if item.product.tags contains 'excluded-reward-holiday' %}
@@ -260,7 +260,6 @@
                 <div class="em-reward-holiday-slider-outer">
                   <div class="em-reward-holiday-slider-inner" style="width: {% if progres_val > 99 %}100%{%else%}{{progres_val}}%{%endif%}"></div>
                 </div>
-                {% comment %} <progress id="file" value="{{ progres_val }}" max="100"></progress><br> {% endcomment %}
                 {% if progres_val > 99 %}
                   Congrats! You'll earn <b>20% back</b> from this order towards a future purchase!
                 {% else %}
@@ -277,7 +276,7 @@
                 width="62px" height="44px"/>
               {% endif %}
               </div>
-            </div>
+            </div> {% endcomment %}
             <div class="ShippingText">
               <span class="Title">Shipping</span>
               <span class="ShipValue">Free</span>

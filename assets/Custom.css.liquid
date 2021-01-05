@@ -130,22 +130,22 @@ header.site-header{
   padding-right: 0px;
 }
 .em-top-head-sec .em-ext-top-bar{
-	{% comment %} background-color: #000; {% endcomment %}
-  background-color: #B7E3FD;
+	background-color: #000; 
+  {% comment %} background-color: #B7E3FD; {% endcomment %}
   padding: 7px;
 }
 .em-top-head-sec .em-ext-top-bar p{
 	font-size: 13px;
   line-height: 16px;
-  {% comment %} color: #fff; {% endcomment %}
-  color: #000;
+  color: #fff;
+  {% comment %} color: #000; {% endcomment %}
   text-align: center;
 }
 .em-top-head-sec .em-head-top-bar{
 	padding: 20px 55px;
   border-bottom: 1px solid rgba(102,113,117,0.1);
-  background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflakes.jpg?v=1604638025);
-  background-size: contain;
+  {% comment %} background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflakes.jpg?v=1604638025);
+  background-size: contain; {% endcomment %}
 }
 .em-head-top-bar-row:after{
 	clear: both;
@@ -212,7 +212,7 @@ header.site-header{
   -webkit-border-radius: 2px;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(102,113,117.0.3);
+  color: rgba(102,113,117,0.3);
   padding-right: 18px;
   padding-left: 45px;
   outline: none;
@@ -1768,8 +1768,8 @@ footer.site-footer{
   padding-bottom: 10px;
 }
 footer.site-footer .page-width{
-	background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflake-foot.jpg?v=1604638479);
-  background-size: cover;
+	{% comment %} background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflake-foot.jpg?v=1604638479);
+  background-size: cover; {% endcomment %}
 }
 @media (max-width: 749px)
 {
@@ -2615,7 +2615,7 @@ footer .site-footer__hr{
   background-size: 22px auto;
 }
 .inline-cart.em-cst-cart-slide .em-car-sl-content .line-item-container{
-	height: calc(100vh - 380px);/*FS change 535 upsell mini cart*/
+	height: calc(100vh - 290px);/*FS change 535 upsell mini cart*/
   overflow-y: auto;	 
   max-height: none;
 }
@@ -7719,15 +7719,17 @@ span.lessBtn {
   	font-size: 12px;
     line-height: 15px;
     margin: 0;
-    color: #000;
-    background-color: #B7E3FD;
+    {% comment %} color: #000;
+    background-color: #B7E3FD; {% endcomment %}
+    color: #fff;
+    background-color: #000;
     padding: 6px;
     text-align: center;
   }
   .em-mob-header-bot-sec{
   	padding: 15px 15px 13px;
-    background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflakes.jpg?v=1604638025);
-    background-size: contain;
+    {% comment %} background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflakes.jpg?v=1604638025);
+    background-size: contain; {% endcomment %}
   }
   .em-mob-header-menu-icon{
   	font-size: 12px;
@@ -7949,8 +7951,8 @@ span.lessBtn {
   }
   .MobileFooter
   {
-    background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflake-foot_mob.jpg?v=1604639405);
-    background-size: cover;
+    {% comment %} background-image: url(https://cdn.shopify.com/s/files/1/2572/6926/files/snowflake-foot_mob.jpg?v=1604639405);
+    background-size: cover; {% endcomment %}
   }
   .MobileFooter .CustomInfoFoot > h3{
   	font-size: 14px;
@@ -9376,13 +9378,13 @@ span.lessBtn {
   }
   .cst-hero-festival .em-home-banner-overlay
   {
-    top: 73px;
+    {% comment %} top: 73px; {% endcomment %}
     left: 102px;
     text-align: left;
     right: unset;
-    transform: translate(0,0%);
+    {% comment %} transform: translate(0,0%);
     -moz-transform: translate(0,0%);
-    -webkit-transform: translate(0,0%);
+    -webkit-transform: translate(0,0%); {% endcomment %}
   }
   .cst-hero-festival .em-home-banner-btn
   {
@@ -9412,6 +9414,10 @@ span.lessBtn {
     opacity: 0.65;
     color: #000;
     text-decoration: underline;
+  }
+  .cst-hero-festival .mobile-banner-custm
+  {
+    margin-top: 80px;
   }
 }
 
