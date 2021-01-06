@@ -16,6 +16,11 @@
   {%- assign compare_at_price = current_variant.compare_at_price -%}
   {%- assign price = current_variant.price -%}
 
+  {% assign isDiscontinued = false %}
+  {% if product.tags contains "discontinued" %}
+    {% assign isDiscontinued = true %}
+  {% endif %}
+
   {% case section.settings.media_size %}
     {% when 'small' %}
       {%- assign product_media_width = 'medium-up--one-third' -%}
@@ -39,8 +44,8 @@
   <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
     <div class="grid__item product-single__media-group {{ product_media_width }}{% if section.settings.media_size == 'full' %} product-single__media-group--full{% endif %}" data-product-single-media-group>
       {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
-<ul class="CustomMainSlide">
-     {%include "product-thumbnails" %}
+      <ul class="CustomMainSlide">
+        {%include "product-thumbnails" %}
       </ul>
       <noscript>
         {% capture product_image_size %}{{ height }}x{% endcapture %}
@@ -164,21 +169,23 @@
             {{ product.metafields.stamped.badge }}
           </span> {% endcomment %}
         </div> 
-        {% if product.tags contains 'excluded-reward-holiday'%}
-        <div class="excluded-reward-holiday-block">
-          <span>Excluded from Emobucks Holiday promotion.</span>
-        </div>
-        <style>
-          #ju_Con_635241, #ju_Con_635235
-          {
-            display: none !important;
-          }
-        </style>
+        {%if isDiscontinued == false  %}
+          {% if product.tags contains 'excluded-reward-holiday'%}
+          <div class="excluded-reward-holiday-block">
+            <span>Excluded from Emobucks Holiday promotion.</span>
+          </div>
+          <style>
+            #ju_Con_635241, #ju_Con_635235
+            {
+              display: none !important;
+            }
+          </style>
+          {% endif %}
+          <div class="product__price">
+              {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+            <p class="affirm-as-low-as" data-page-type="product" data-amount="{{product.price}}"></p>
+          </div>
         {% endif %}
-        <div class="product__price">
-            {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
-          <p class="affirm-as-low-as" data-page-type="product" data-amount="{{product.price}}"></p>
-        </div>
 {%comment%}
           {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product__policies rte" data-product-policies>
@@ -192,13 +199,13 @@
           {%- endif -%}
 {%endcomment%}
         
-          {% capture "form_classes" -%}
-            product-form product-form-{{ section.id }}
-            {%- unless section.settings.show_variant_labels %} product-form--hide-variant-labels {% endunless %}
-            {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
-            {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
-          {%- endcapture %}
-
+        {% capture "form_classes" -%}
+          product-form product-form-{{ section.id }}
+          {%- unless section.settings.show_variant_labels %} product-form--hide-variant-labels {% endunless %}
+          {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
+          {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+        {%- endcapture %}
+        {%if isDiscontinued == false  %}
           {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
             {% unless product.has_only_default_variant %}
               <div class="product-form__controls-group CustomSelectBoxes">
@@ -230,8 +237,6 @@
               {% endfor %}
             </select>
 
-          
-
             <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
               data-error-message-wrapper
               role="alert"
@@ -240,113 +245,126 @@
               {% include 'icon-error' %}
               <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
             </div>
-        {%include "reward" %}
-        <div class="Qunat_Cart">
-  {% if section.settings.show_quantity_selector %}
-              <div class="product-form__controls-group">
-                <div class="product-form__item">
-                  <div class="CustomQuant">
-                  <input type='button' value='-' class='pro_qtyminus' field='quantity' min="1" />
-                  <input type="text" id="Quantity-{{ section.id }}"
-                    name="quantity" value="1"
-                    class="qty product-form__input product-form__input--quantity" data-quantity-input
-                  >
-                  <input type='button' value='+' class='pro_qtyplus' field='quantity' max="600000000" />
+            {%include "reward" %}
+            <div class="Qunat_Cart">
+              {% if section.settings.show_quantity_selector %}
+                <div class="product-form__controls-group">
+                  <div class="product-form__item">
+                    <div class="CustomQuant">
+                      <input type='button' value='-' class='pro_qtyminus' field='quantity' min="1" />
+                      <input type="text" id="Quantity-{{ section.id }}"
+                        name="quantity" value="1"
+                        class="qty product-form__input product-form__input--quantity" data-quantity-input
+                      >
+                      <input type='button' value='+' class='pro_qtyplus' field='quantity' max="600000000" />
+                    </div>
                   </div>
                 </div>
+              {% endif %}
+              <div class="product-form__controls-group product-form__controls-group--submit">
+                <div class="product-form__item product-form__item--submit
+                  {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+                  {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+                >
+                  <button type="submit" name="add"
+                    {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+                    aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                    class="btn product-form__cart-submit{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"
+                    {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+                    data-add-to-cart>
+                    <span data-add-to-cart-text>
+                      {% unless current_variant.available %}
+                        {{ 'products.product.sold_out' | t }}
+                      {% else %}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {% endunless %}
+                    </span>
+                    <span class="hide" data-loader>
+                      {% include 'icon-spinner' %}
+                    </span>
+                  </button>
+                  {% if section.settings.enable_payment_button %}
+                    {{ form | payment_button }}
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            {% if product.metafields.global.made_to_order_ship %}
+              <div class="em-sin-pro-cst-ship-made-to-order">
+                <span class="right-circle-mark"></span><p>{{product.metafields.global.made_to_order_ship}}</p>
               </div>
             {% endif %}
-            <div class="product-form__controls-group product-form__controls-group--submit">
-              <div class="product-form__item product-form__item--submit
-                {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
-                {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
-              >
-                <button type="submit" name="add"
-                  {% unless current_variant.available %} aria-disabled="true"{% endunless %}
-                  aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-                  class="btn product-form__cart-submit{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"
-                  {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
-                  data-add-to-cart>
-                  <span data-add-to-cart-text>
-                    {% unless current_variant.available %}
-                      {{ 'products.product.sold_out' | t }}
-                    {% else %}
-                      {{ 'products.product.add_to_cart' | t }}
-                    {% endunless %}
-                  </span>
-                  <span class="hide" data-loader>
-                    {% include 'icon-spinner' %}
-                  </span>
-                </button>
-                {% if section.settings.enable_payment_button %}
-                  {{ form | payment_button }}
-                {% endif %}
+            <div class="em-sin-pro-cst-ship-warranty">
+              <div class="em-sin-pro-cst-ship-warranty-inn">
+                <div class="em-cart-bot-fea-sec">
+                  <ul>
+                    <li><img src="{{'icon-free-shipping@1x.svg'| asset_url}}"> Free Shipping</li>
+                    <li><img src="{{'icon-warranty.svg'| asset_url}}" width="18px" height="18px">
+                              {% if product.metafields.global.warranty %}
+                                {{product.metafields.global.warranty}}
+                              {% else %}
+                                5 years transferable warranty
+                              {% endif %}
+                            </li>
+                  </ul>
+                </div>
+                <div class="em-cart-bot-fea-sec-faq"><a href="{{section.settings.link_faq}}">FAQ</a></div>
+              </div>	
+              <div class="em-sin-pro-cst-ship-warranty-inn-copy">
+                <p>We are experiencing longer shipping times due to high volume and carrier delays. Please allow extra time for delivery.</p>
               </div>
             </div>
-        </div>
-        {% if product.metafields.global.made_to_order_ship %}
-          <div class="em-sin-pro-cst-ship-made-to-order">
-            <span class="right-circle-mark"></span><p>{{product.metafields.global.made_to_order_ship}}</p>
+          {% endform %}
+        {% endif %}
+        {%if isDiscontinued == true  %}
+          <div class="em-pro-cst-discontinue-block">
+            <div class="em-pro-cst-discontinue-block-ini">
+              <span>This product is discontinued.</span> 
+              <a href="#cstExSimPro" class="moreDesc">See similar products</a>
+            </div>
           </div>
         {% endif %}
-        <div class="em-sin-pro-cst-ship-warranty">
-          <div class="em-sin-pro-cst-ship-warranty-inn">
-            <div class="em-cart-bot-fea-sec">
-              <ul>
-                <li><img src="{{'icon-free-shipping@1x.svg'| asset_url}}"> Free Shipping</li>
-                <li><img src="{{'icon-warranty.svg'| asset_url}}" width="18px" height="18px">
-                          {% if product.metafields.global.warranty %}
-                            {{product.metafields.global.warranty}}
-                          {% else %}
-                            5 years transferable warranty
-                          {% endif %}
-                        </li>
-              </ul>
-            </div>
-            <div class="em-cart-bot-fea-sec-faq"><a href="{{section.settings.link_faq}}">FAQ</a></div>
-          </div>	
-        <div class="em-sin-pro-cst-ship-warranty-inn-copy">
-          <p>We are experiencing longer shipping times due to high volume and carrier delays. Please allow extra time for delivery.</p>
+        <div class="em-sin-pro-chat-lined">
+          <div class="em-sin-pro-chat-lined-inn">
+            <div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: '56x56'}}" /></div>
+            <p>{{section.settings.heading_desktop}}</p>
+            <ul>
+              <li><a href="#" onclick="Smooch.open();">Live chat</a></li>
+              <li><a class="em-clc-no" href="tel:{{section.settings.number}}">{{section.settings.number}}</a></li>
+            </ul>
+          </div>
         </div>
-</div>
+      </div>
 
-<div class="em-sin-pro-chat-lined">
-	<div class="em-sin-pro-chat-lined-inn">
-		<div class="em-sin-pro-chat-lined-img"><img src="{{section.settings.image_contact | img_url: '56x56'}}" /></div>
-		<p>{{section.settings.heading_desktop}}</p>
-		<ul>
-			<li><a href="#" onclick="Smooch.open();">Live chat</a></li>
-			<li><a class="em-clc-no" href="tel:{{section.settings.number}}">{{section.settings.number}}</a></li>
-		</ul>
-	</div>
-</div>
-          {% endform %}
-        </div>
+      {%- comment -%}
+        Live region for announcing updated price and availability to screen readers
+      {%- endcomment -%}
+      <p class="visually-hidden" data-product-status
+        aria-live="polite"
+        role="status"
+      ></p>
 
-        {%- comment -%}
-          Live region for announcing updated price and availability to screen readers
-        {%- endcomment -%}
-        <p class="visually-hidden" data-product-status
-          aria-live="polite"
-          role="status"
-        ></p>
-
-        {%- comment -%}
-          Live region for announcing that the product form has been submitted and the
-          product is in the process being added to the cart
-        {%- endcomment -%}
-        <p class="visually-hidden" data-loader-status
-          aria-live="assertive"
-          role="alert"
-          aria-hidden="true"
-        >{{ 'products.product.loader_label' | t }}</p>
+      {%- comment -%}
+        Live region for announcing that the product form has been submitted and the
+        product is in the process being added to the cart
+      {%- endcomment -%}
+      <p class="visually-hidden" data-loader-status
+        aria-live="assertive"
+        role="alert"
+        aria-hidden="true"
+      >{{ 'products.product.loader_label' | t }}</p>
 
         
 
-        {% if section.settings.show_share_buttons %}
-          {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
-        {% endif %}
+      {% if section.settings.show_share_buttons %}
+        {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
+      {% endif %}
     </div>
+    {%if isDiscontinued == true  %}
+      <div class="CustomExplore" id="cstExSimPro">
+        {%include "explore-similar" %}
+      </div>
+    {% endif %} 
     <div class="grid_item cst_yotpo_photo_gallery">
       <div
           class="yotpo yotpo-pictures-widget"

@@ -1,0 +1,71 @@
+{%if product.metafields.global.similar != blank  %}
+<div class="page-width">
+  <div class="em-sin-pro-dbl-lined-sec em-single-pro-comp-sol-sec">
+      <div class="em-sin-pro-dbl-lined-inn">
+          <div class="em-sin-pro-dbl-lined-upr">
+              <h3 class="em-sin-pro-dbl-lined-title">Explore Similar Products</h3>
+          </div>
+          <div class="em-sin-pro-dbl-lined-lwr">
+            <div class="em-sin-pro-dbl-lined-lwr-row">
+              {% assign prohandle = product.metafields.global.similar | split: ","%}
+              {%for handle in prohandle %}
+              <div class="CompleteLoop-box">
+                <div class="CompleteLoop">
+                  <a href="{{all_products[handle].url}}" class="em-block-overlay-link"></a>
+                  <div class="em-img-block-hvr-zoom CompleteImage">
+                    <img src="{{all_products[handle].featured_image | img_url: "large"}}">
+                    {% comment %} <div class="CompleteImage-title">{{all_products[handle].metafields.global.type}}</div> {% endcomment %}
+                  </div>
+                  <div class="completeDes">
+                    {% comment %} <div class="CompleteImage-title-mob">Loudspeakers</div> {% endcomment %}
+                    <div class="CompleteTitle">{{all_products[handle].title}}</div>
+                    <div class="CompleteTitle-subline">{{all_products[handle].metafields.global.type}}</div>
+                    <div class="completeDes-price-review">
+                    	<div class="completeDes-price-box">{{all_products[handle].price| money}}</div>
+                      	<div class="completeDes-review-box"> 
+                        
+                        {% comment %} <span class="stamped-product-reviews-badge" data-product-sku="{{ all_products[handle].handle }}" data-id="{{ all_products[handle].id }}" style="display:block;">{{ all_products[handle].metafields.stamped.badge }}</span> {% endcomment %}
+                        <!-- Yopto -->
+                        <div class="yotpo bottomLine"
+                            data-appkey="C6NTmtWEZTidMNpCtHQIuzOKSuJ2KlCmswsJKKIS"
+                            data-domain="{{shop.permanent_domain | escape }}"
+                            data-product-id="{{ all_products[handle].id }}"
+                            data-product-models="{{ all_products[handle].id }}"
+                            data-name="{{ all_products[handle].title | escape }}"
+                            data-url="{{ shop.url }}{{ all_products[handle].url }}"
+                            data-image-url="{{ all_products[handle].featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+                            data-description="{{ all_products[handle].description | escape }}"
+                            data-bread-crumbs="{% for tag in all_products[handle].tags %}{{ tag | escape }};{% endfor %}">
+                          {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+                          {%- assign time_now = 'now' | date: '%s' %}
+                          {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+                          {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+                          {%- assign yotpo_bottomline_last_updated = all_products[handle].metafields.yotpo.bottomline_update_time | date: '%s' %}
+                          {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+                          {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+                            {%- assign yotpo_bottomline_obsolete = false %}
+                          {%- else %}
+                            {%- assign yotpo_bottomline_obsolete = true %}
+                          {%- endif %}
+                          {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+                            {{ all_products[handle].metafields.yotpo.bottomline }}
+                          {%- endif %}
+                        </div>
+                        </div>
+                    </div>
+                        
+                  </div>
+                </div>
+              </div>
+              {%endfor%}
+            </div>
+          </div>
+          <div class="em-single-pro-comp-sol-mob-link">
+              <a href="{{shop.url}}/collections/all?sort=price-descending" class="bl-text-arw-link">See more</a>	
+          </div>
+
+      </div>
+  </div>
+</div>
+{%endif%}
+
