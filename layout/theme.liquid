@@ -203,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<body class="{%if template =="product.gift"%} custom-gift-body{%endif%} template-{{ request.page_type | handle }} {% if template == "page.landing"%} CustomLanding{%endif%} {% if template == "page.resources3"%} no-side-bar-mob-title{%endif%}">
+<body class="{%if template =="product.gift"%} custom-gift-body{%endif%} template-{{ request.page_type | handle }} {% if template == "page.landing"%} CustomLanding{%endif%} {% if template == "page.earn-reward-credits-with-every-purchase"%} no-side-bar-mob-title{%endif%}">
   {% include 'buddha-megamenu-wireframe' %}
 {% include 'slidecart' %}
   {%include "video-popup" %}
@@ -240,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
   {%endif%}
-      {%if page.handle contains "support-2" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" %}
+      {%if page.handle contains "order-updates-tracking" or page.handle contains "customer-center0" or page.handle contains "general-faq" or page.handle contains "shipping-policy" or page.handle contains "earn-reward-credits-with-every-purchase" %}
        <div class="mobile-pages-breadcrumb">
  <div class="page-width">
 {%include "breadcrumbs" %}
@@ -249,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {%endif%}
       {{ content_for_layout }}
      
-  {%if page.handle contains "contact-1" or template =="product.gift"or template == "404" or template == "customers/register" or template == "customers/login" or template == "page.landing" or page.handle contains "customer-center0" or page.handle contains "customer-center1" or page.handle contains "customer-center2" or page.handle contains "resources3" or page.handle contains "support-1" or page.handle contains "support-2" or page.handle contains "resources-10" or page.handle contains "resources-1" or page.handle contains "resources-2" or page.handle contains "resources-4"%}
+  {%if page.handle contains "contact-1" or template =="product.gift"or template == "404" or template == "customers/register" or template == "customers/login" or template == "page.landing" or page.handle contains "customer-center0" or page.handle contains "general-faq" or page.handle contains "shipping-policy" or page.handle contains "earn-reward-credits-with-every-purchase" or page.handle contains "warranty-information" or page.handle contains "order-updates-tracking" or page.handle contains "service-repair-inquiry" or page.handle contains "product-manuals" or page.handle contains "firmware-downloads" or page.handle contains "video-guides"%}
  
       {%else%}
         {% section "Newsletter-custom" %}
@@ -346,5 +346,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 {% include 'globo.formbuilder.scripts' %}
-<!--Gorgias Chat Widget Start--><script>!function(_){_.GORGIAS_CHAT_APP_ID="1882",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/1882",!0),e.onload=function(n){if(4===e.readyState)if(200===e.status){var t=JSON.parse(e.responseText);if(!t.application||!t.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/1882");if(_.GORGIAS_CHAT_APP=t.application,_.GORGIAS_CHAT_BUNDLE_VERSION=t.bundleVersion,t&&t.texts&&(_.GORGIAS_CHAT_TEXTS=t.texts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",t.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/1882")},e.onerror=function(_){console.error(_)},e.send()}(window||{});</script><script>!function(I){I.IS_SHOPIFY=!0,I.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",I.SHOPIFY_CUSTOMER_ID="{{customer.id}}",I.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});</script><!--Gorgias Chat Widget End--></body>
+<!--Gorgias Chat Widget Start--><script>!function(_){_.GORGIAS_CHAT_APP_ID="1882",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/1882",!0),e.onload=function(t){if(4===e.readyState)if(200===e.status){var n=JSON.parse(e.responseText);if(!n.application||!n.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/1882");if(_.GORGIAS_CHAT_APP=n.application,_.GORGIAS_CHAT_BUNDLE_VERSION=n.bundleVersion,n&&n.texts&&(_.GORGIAS_CHAT_TEXTS=n.texts),n&&n.sspTexts&&(_.GORGIAS_CHAT_SELF_SERVICE_PORTAL_TEXTS=n.sspTexts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",n.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/1882")},e.onerror=function(_){console.error(_)},e.send()}(window||{});</script><script>!function(I){I.IS_SHOPIFY=!0,I.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",I.SHOPIFY_CUSTOMER_ID="{{customer.id}}",I.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});</script><!--Gorgias Chat Widget End--></body>
 </html>
