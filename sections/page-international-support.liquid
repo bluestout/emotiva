@@ -1,0 +1,57 @@
+<div class="em-inner-sidebar-left">
+		{%include "page-sidebar"%}
+</div>
+<div class="em-inner-sidebar-cont-right em-inter-sup-form-pg">
+  <div class="em-inner-sidebar-cont-inn">
+    <div class="em-inner-sidebar-cont-block">
+      <h1 class="em-inner-sidebar-cont-title">International Support</h1>
+        <p>Please provide the information below if you have warranty service needs for the following countries: UK, Sweden, France, Spain, Portugal, Denmark, Benelux, Germany, Austria, Norway, Ireland, and Italy.</p>
+        <div class="em-inner-sidebar-cont-sp-form">
+          <div class="em-inner-sidebar-cont-sp-form-inn">
+            {%include "contact-form-international"%}
+          </div>
+          <div class="em-inner-sidebar-cont-sp-form-inn-info">
+            <p>Emotiva EU Service Center:</p>
+            <p>
+                EG services aps<br>
+                Marielundvej 28, <br>
+                2730 Herlev, <br>
+                Denmark
+            </p>
+            <p>
+                (+45) 7190 6754
+            </p>
+          </div>
+        </div>
+    </div>			  			  
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "International Support",
+    "settings": [
+{
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Content"
+      },
+       {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu"
+      },
+      "default": "main-menu"
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
