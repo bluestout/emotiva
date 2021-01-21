@@ -8,7 +8,9 @@
         <p>Please provide the information below if you have warranty service needs for the following countries: UK, Sweden, France, Spain, Portugal, Denmark, Benelux, Germany, Austria, Norway, Ireland, and Italy.</p>
         <div class="em-inner-sidebar-cont-sp-form">
           <div class="em-inner-sidebar-cont-sp-form-inn">
-            {%include "contact-form-international"%}
+            {% assign powerFullForm = "{formbuilder:31679}" %}
+            {{ powerFullForm }}
+            {% comment %} {%include "contact-form-international"%} {% endcomment %}
           </div>
           <div class="em-inner-sidebar-cont-sp-form-inn-info">
             <p>Emotiva EU Service Center:</p>

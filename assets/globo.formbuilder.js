@@ -1,1 +1,20587 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var i=t[r]={i:r,l:!1,exports:{}};return e[r].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(r,i,function(t){return e[t]}.bind(null,i));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=0)}({"++FP":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["søn","man","tir","ons","tors","fre","lør"],longhand:["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"]},months:{shorthand:["jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"],longhand:["januar","februar","marts","april","maj","juni","juli","august","september","oktober","november","december"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"uge",time_24hr:!0};t.l10ns.da=n;var r=t.l10ns;e.Danish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"+AxM":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Paz","Pzt","Sal","Çar","Per","Cum","Cmt"],longhand:["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]},months:{shorthand:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"],longhand:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" - ",weekAbbreviation:"Hf",scrollTitle:"Artırmak için kaydırın",toggleTitle:"Aç/Kapa",amPM:["ÖÖ","ÖS"],time_24hr:!0};t.l10ns.tr=n;var r=t.l10ns;e.Turkish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"+OV3":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["أحد","اثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"],longhand:["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"]},months:{shorthand:["1","2","3","4","5","6","7","8","9","10","11","12"],longhand:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"]},rangeSeparator:" - "};t.l10ns.ar=n;var r=t.l10ns;e.Arabic=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"+zM+":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Неділя","Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"]},months:{shorthand:["Січ","Лют","Бер","Кві","Тра","Чер","Лип","Сер","Вер","Жов","Лис","Гру"],longhand:["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"]},time_24hr:!0};t.l10ns.uk=n;var r=t.l10ns;e.Ukrainian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"/iph":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Dg","Dl","Dt","Dc","Dj","Dv","Ds"],longhand:["Diumenge","Dilluns","Dimarts","Dimecres","Dijous","Divendres","Dissabte"]},months:{shorthand:["Gen","Febr","Març","Abr","Maig","Juny","Jul","Ag","Set","Oct","Nov","Des"],longhand:["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"]},ordinal:function(e){var t=e%100;if(t>3&&t<21)return"è";switch(t%10){case 1:return"r";case 2:return"n";case 3:return"r";case 4:return"t";default:return"è"}},firstDayOfWeek:1,time_24hr:!0};t.l10ns.cat=n;var r=t.l10ns;e.Catalan=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"/v+a":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"],longhand:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"]},months:{shorthand:["जन","फर","मार्च","अप्रेल","मई","जून","जूलाई","अग","सित","अक्ट","नव","दि"],longhand:["जनवरी ","फरवरी","मार्च","अप्रेल","मई","जून","जूलाई","अगस्त ","सितम्बर","अक्टूबर","नवम्बर","दिसम्बर"]}};t.l10ns.hi=n;var r=t.l10ns;e.Hindi=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},0:function(e,t,n){n("0aX/"),e.exports=n("NlWs")},"0aX/":function(e,t,n){function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function i(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function a(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}var o=n("isxL").Liquid,s=window.Globo||{};s.libs=s.libs||{},s.libs._=n("1bMR"),s.libs.validate=n("a1gY"),s.libs.flatpickr=n("zwY0"),s.libs.Liquid=o,s.FormBuilder=s.FormBuilder||{},s.FormBuilder.init=function(e){e.querySelector(".globo-form").classList.contains("float-form")&&document.body.appendChild(e),e&&e.addEventListener?e.addEventListener("submit",s.FormBuilder.handleSubmit,!1):e&&e.attachEvent&&e.attachEvent("onsubmit",s.FormBuilder.handleSubmit);var t=e.querySelector("form").getAttribute("data-id"),n=s.FormBuilder.forms[t],r=e.querySelector(".globo-formbuilder-wizard");if(r){var i=new s.Wizard(r),a=e.querySelector(".next"),o=e.querySelector(".previous");i.addControls(o,a),i.setStep(0)}var u=document.querySelectorAll('.globo-form-app [data-type="datetime"]');s.FormBuilder.handleDateTimePicker(u);var l=document.querySelectorAll(".globo-form-app .conditional-field");s.FormBuilder.handleConditionalField(l);var c=document.querySelectorAll(".globo-form-app [name]:not([type='file']):not([type='hidden'])");s.FormBuilder.handleHiddenField(n,e,c);var d=e.querySelector(".globo-g-recaptcha");if("undefined"!=typeof grecaptcha&&d)try{var f=grecaptcha.render(d,{sitekey:d.getAttribute("data-sitekey")});d.nextElementSibling.setAttribute("reCaptcha-widget-id",f)}catch(e){}var h=e.querySelectorAll(".globo-form-control"),p={};s.libs._.each(h,(function(e){var t=e.querySelector("label,legend");if(null!==t&&t){var n=e.querySelector("[name]");if(null!==n&&n){var r=n.getAttribute("name").replace("[]","");p[r]=t.querySelector(".label-content").innerHTML}}})),e.querySelector('[name="_keyLabel"]').value=JSON.stringify(p);var g=new CustomEvent("globo.formbuilder.form.loaded",{detail:{form:e}});document.dispatchEvent(g)},s.FormBuilder.showFloatingForm=function(e){e.parentNode.querySelector(".globo-form-app").classList.add("active")},s.FormBuilder.hideFloatingForm=function(e){e.parentNode.querySelector(".globo-form-app").classList.remove("active")},s.FormBuilder.showMessage=function(e){var t=e.querySelector(".content");null!==t&&""!=t.innerHTML&&(e.style.display="block")},s.FormBuilder.handleValidate=function(e){var t=e.querySelector(".block-container"),n={};s.libs._.map(t.querySelectorAll("input, textarea, select"),(function(r){var i=null!==r.getAttribute("presence"),a=null!==r.getAttribute("disabled"),o=null!==r.getAttribute("data-type")&&r.getAttribute("data-type");if(n[r.name]={},a?n[r.name].ignore={}:i&&(n[r.name].presence={message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.required}),"email"==o&&(n[r.name][o]={message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.invalidEmail}),"name"==o&&(n[r.name].format={pattern:"^[ -.A-ￜ]+",flags:"s",message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.invalidName}),"url"==o&&(n[r.name][o]={message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.invalidURL}),"phone"==o&&(n[r.name].format={pattern:"^[+]*[(]{0,1}[0-9+]{1,9}[)]{0,1}[-s.0-9 ]*$",flags:"i",message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.invalidPhone}),"file"==o){var u=!1!==s.FormBuilder.shop.pricing.features.fileUpload?1024*s.FormBuilder.shop.pricing.features.fileUpload:2048;n[r.name][o]={notAllowedExtension:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.fileNotAllowed,sizeLimitMessage:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.fileSizeLimit,allowedExtension:r.getAttribute("data-allowed-extensions").split(","),maxFileSize:u}}if("checkbox"==o&&(n[r.name][o]={requiredMessage:s.FormBuilder.forms[e.getAttribute("data-id")].errorMessage.required},n[r.name][o].isRequired=void 0!==n[r.name].presence),"password"==o){var l=null!==r.getAttribute("data-additional-type")&&r.getAttribute("data-additional-type"),c=null!==r.getAttribute("data-connected-element")&&r.getAttribute("data-connected-element");"confirm-password"===l&&c&&(n[r.name].equality={attribute:c,message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.confirmPasswordNotMatch});var d=!(!r.getAttribute("data-validate-rule")||"false"==r.getAttribute("data-validate-rule"))&&r.getAttribute("data-validate-rule");d&&("advancedValidateRule"===d&&(d=null!==r.getAttribute("data-validate-rule")?r.getAttribute("data-advanced-validate-rule"):""),n[r.name].format={pattern:d,flags:"g",message:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.invalidPassword})}})),null!=e.querySelector(".block-container .globo-g-recaptcha")&&(n.reCaptcha={reCaptcha:{isRequired:!0,requiredMessage:s.FormBuilder.forms[t.getAttribute("data-id")].errorMessage.requiredCaptcha}}),s.libs.validate.validators.file=function(t,n,r){var i=e.querySelector('[name="'+r+'"]'),a=0,o=!0;return s.libs._.each(i.files,(function(e){var t,r,i;a+=e.size,-1===n.allowedExtension.indexOf((t=e.name,r=t.split("\\").pop().split("/").pop(),i=r.lastIndexOf("."),i<1?"":r.substr(i+1)).toLowerCase())&&(o=!1)})),a/1e3>n.maxFileSize?n.sizeLimitMessage:o?null:n.notAllowedExtension},s.libs.validate.validators.checkbox=function(t,n,r,i){if(!n.isRequired)return null;var a=e.querySelectorAll("[name='"+r+"']"),o=!1;return s.libs._.each(a,(function(e){e.checked&&(o=!0)})),o?null:n.requiredMessage},s.libs.validate.validators.reCaptcha=function(t,n,r,i){var a=e.querySelector("[name='"+r+"']");if(a){var o=grecaptcha.getResponse(a.getAttribute("reCaptcha-widget-id"));return a.value=o,""!=a.value?null:n.requiredMessage}return null},s.libs.validate.validators.ignore=function(){return null};var r=s.libs.validate(t,n,{fullMessages:!1});!function(e,t){s.libs._.each(e.querySelectorAll("input[name], select[name], textarea[name]"),(function(e){o(e,t&&t[e.name])}))}(t,r||{}),s.libs._.isEmpty(r,!0)?t.classList.remove("errors"):t.classList.add("errors");for(var i=t.querySelectorAll("input, textarea, select"),a=0;a<i.length;++a)i.item(a).addEventListener("change",(function(e){var r=s.libs.validate(t,n,{fullMessages:!1})||{};s.libs._.isEmpty(r,!0)?t.classList.remove("errors"):t.classList.add("errors"),o(this,r[this.name])}));function o(e,t){var n=function e(t,n){if(!t||t==document)return null;return t.classList.contains(n)?t:e(t.parentNode,n)}(e.parentNode,"globo-form-control"),r=n.querySelector(".messages");!function(e){e.classList.remove("has-error"),e.classList.remove("has-success"),s.libs._.each(e.querySelectorAll(".help-block.error"),(function(e){e.parentNode.removeChild(e)}))}(n),t?(n.classList.add("has-error"),s.libs._.each(t,(function(e){!function(e,t){var n=document.createElement("p");n.classList.add("help-block"),n.classList.add("error"),n.innerText=t,e.appendChild(n)}(r,e)}))):n.classList.add("has-success")}},s.FormBuilder.handleDateTimePicker=function(e){s.libs._.each(e,(function(e){var t,r,i,a,o={enableTime:!0,dateFormat:"Y-m-d H:i",time_24hr:!0},u="H:i";t=e.getAttribute("data-format"),r=e.getAttribute("data-locale"),i=e.getAttribute("dataDateFormat"),a=e.getAttribute("dataTimeFormat");var l=e.getAttribute("limitDateType"),c=e.getAttribute("limitDateSpecificDates"),d=e.getAttribute("limitDateRangeDates"),f=e.getAttribute("limitDateDOWDates");"12h"==a&&(o.time_24hr=!1,u="h:i K"),"date-and-time"==t?o.dateFormat=i+" "+u:"date"==t?(o.enableTime=!1,o.dateFormat=i):"time"==t&&(o.noCalendar=!0,o.dateFormat=u),r&&(o.locale=n("WqZd")("./"+r+".js").default[r]);var h=[];if(l){if(""!=c&&null!=c&&(h=h.concat(c.split(",").map((function(e){return new Date(e)})))),""!=d&&null!=d){var p=d.split(",");h.push({from:new Date(p[0]),to:new Date(p[1])})}if(""!=f&&null!=f){var g=f.split(",").map((function(e){var t=0;switch(e){case"sunday":t=0;break;case"monday":t=1;break;case"tuesday":t=2;break;case"wednesday":t=3;break;case"thursday":t=4;break;case"friday":t=5;break;case"saturday":t=6;break;default:t=0}return t}));h.push((function(e){return g.indexOf(e.getDay())>-1}))}}"disablingDates"==l?o.disable=h:o.enable=h,s.libs.flatpickr(e,o)}))},s.FormBuilder.handleConditionalField=function(e){s.libs._.each(e,(function(e){var t=e.getAttribute("data-connected-id"),n=e.getAttribute("data-connected-value"),r=s.closest(e,"form"),i=r.querySelectorAll('[name="'+t+'"]');i.length||(i=r.querySelectorAll('[name="'+t+'[]"]')),i.length&&s.libs._.each(i,(function(t){t.addEventListener("change",(function(){"checkbox"==this.type?this.value===n&&(this.checked?(e.style.display="block",s.libs._.each(e.querySelectorAll("[name]"),(function(e){e.removeAttribute("disabled","disabled")}))):(e.style.display="",s.libs._.each(e.querySelectorAll("[name]"),(function(e){e.setAttribute("disabled","disabled")})))):"radio"==this.type?this.value===n&&this.checked?(e.style.display="block",s.libs._.each(e.querySelectorAll("[name]"),(function(e){e.removeAttribute("disabled","disabled")}))):(e.style.display="",s.libs._.each(e.querySelectorAll("[name]"),(function(e){e.setAttribute("disabled","disabled")}))):this.value===n?(e.style.display="block",s.libs._.each(e.querySelectorAll("[name]"),(function(e){e.removeAttribute("disabled","disabled")}))):(e.style.display="",s.libs._.each(e.querySelectorAll("[name]"),(function(e){e.setAttribute("disabled","disabled")})));var t=s.closest(e,".panels"),r=s.closest(e,".panel.movingIn");if(r&&(t.style.height=r.offsetHeight+"px"),"checkbox"==this.type&&!this.checked&&this.value==n||"radio"==this.type||"select-one"==this.type){var i=e.querySelectorAll("input[name],select"),a=document.createEvent("HTMLEvents");a.initEvent("change",!1,!0),s.libs._.each(i,(function(e){"checkbox"==e.type||"radio"==e.type?e.checked=!1:e.value="",e.disabled?(e.disabled=!1,e.dispatchEvent(a),e.disabled=!0):e.dispatchEvent(a)}))}}))}))}))},s.FormBuilder.handleHiddenField=function(e,t,n){var r=[];if(void 0===e)return!1;e.elements.forEach((function(e){"group"==e.type&&e.elements.forEach((function(e){"hidden"==e.type&&"dynamic"==e.dataType&&e.dynamicValue.length&&e.dynamicValue.forEach((function(t){t.target=e.id,r.includes(t)||r.push(t)}))})),"hidden"==e.type&&"dynamic"==e.dataType&&e.dynamicValue.length&&e.dynamicValue.forEach((function(t){t.target=e.id,r.includes(t)||r.push(t)}))})),s.libs._.each(n,(function(e){if(void 0!==r.find((function(t){return t.when==e.name||t.when+"[]"==e.name}))){var n=r.find((function(t){return t.when===e.name&&""==t.is}));if(void 0!==n){var i=t.querySelector('[name="'+n.target+'"]');i&&(i.value=n.value)}e.addEventListener("change",(function(n){var i=n.target.value,a=r.find((function(t){if(t.is==i){if(t.when==e.name)return!0;if(t.when+"[]"==e.name&&e.checked)return!0}return!1}));if(void 0!==a){(o=t.querySelector('[name="'+a.target+'"]'))&&(o.value=a.value)}else{var o,s=r.find((function(t){return t.when==e.name||t.when+"[]"==e.name}));if(void 0!==s)(o=t.querySelector('[name="'+s.target+'"]'))&&(o.value="")}}))}}))},s.FormBuilder.handleSubmit=function(e){if(e.preventDefault(),e.stopPropagation(),s.FormBuilder.handleValidate(e.target),s.libs._.isNull(e.target.querySelector(".block-container.errors"))){var t=e.target.querySelector(".action.submit");t.classList.add("loading"),s.xhr(e.target,(function(n){if(t.classList.remove("loading"),"true"==n.success){var r=s.FormBuilder.forms[e.target.getAttribute("data-id")].afterSubmit;if("redirectToPage"==r.action&&(window.location.href=r.redirectUrl),"clearForm"==r.action){e.target.reset(),s.FormBuilder.showMessage(e.target.querySelector(".message.success"));var i=e.target.querySelector(".globo-g-recaptcha");i&&grecaptcha.reset(i.nextElementSibling.getAttribute("reCaptcha-widget-id"));var a=e.target.querySelector(".globo-formbuilder-wizard");if(a)new s.Wizard(a).reset()}"hideForm"==r.action&&(e.target.style.display="none",s.FormBuilder.showMessage(s.libs._.last(e.target.parentNode.querySelectorAll(".message.success"))))}else{var o=e.target.querySelector(".message.error .content"),u=void 0!==n.errors&&n.errors;if(u){for(var l="",c=0;c<Object.keys(u).length;c++)if("string"==typeof u[c])l+='<div class="err-item"><span class="label"></span><span class="err">'+u[c]+"</span></div>";else{var d=e.target.querySelector('[name="_keyLabel"]');d&&(d=JSON.parse(d.value)),void 0!==d[Object.keys(u)[c]]?l+='<div class="err-item"><span class="label">'+d[Object.keys(u)[c]]+'</span> : <span class="err">'+u[Object.keys(u)[c]]+"</span></div>":l+='<div class="err-item"><span class="label"></span><span class="err">'+u[Object.keys(u)[c]]+"</span></div>"}o.innerHTML=l}s.FormBuilder.showMessage(e.target.querySelector(".message.error"))}}))}},s.Wizard=s.Wizard||function(){function e(t){r(this,e),this.wizard=t,this.panels=new s.Panels(this.wizard),this.steps=new s.Steps(this.wizard),this.stepsQuantity=this.steps.getStepsQuantity(),this.currentStep=this.steps.currentStep,this.nextText=t.querySelector(".action.next").getAttribute("data-next-text"),this.submitText=t.querySelector(".action.next").getAttribute("data-submit-text"),this.submittingText=t.querySelector(".action.next").getAttribute("data-submitting-text"),this.concludeControlMoveStepMethod=this.steps.handleConcludeStep.bind(this.steps),this.wizardConclusionMethod=this.handleWizardConclusion.bind(this)}return a(e,[{key:"updateButtonsStatus",value:function(){0===this.currentStep?this.previousControl.classList.add("disabled"):this.previousControl.classList.remove("disabled")}},{key:"updtadeCurrentStep",value:function(e){this.currentStep+=e,this.steps.setCurrentStep(this.currentStep),this.panels.setCurrentStep(this.currentStep),this.handleNextStepButton(),this.updateButtonsStatus()}},{key:"setStep",value:function(e){this.currentStep=e,this.steps.setCurrentStep(this.currentStep),this.panels.setCurrentStep(this.currentStep),this.handleNextStepButton(),this.updateButtonsStatus()}},{key:"handleNextStepButton",value:function(){this.nextControl.type="button",this.nextControl.addEventListener("click",this.nextControlMoveStepMethod),this.currentStep===this.stepsQuantity-1?(this.nextControl.innerHTML=this.submitText,this.nextControl.addEventListener("click",this.wizardConclusionMethod)):(this.nextControl.innerHTML=this.nextText,this.nextControl.removeEventListener("click",this.wizardConclusionMethod))}},{key:"handleWizardConclusion",value:function(){this.wizard.classList.add("completed"),this.nextControl.type="submit"}},{key:"addControls",value:function(e,t){this.previousControl=e,this.nextControl=t,this.previousControlMoveStepMethod=this.moveStep.bind(this,-1),this.nextControlMoveStepMethod=this.moveStep.bind(this,1),e.addEventListener("click",this.previousControlMoveStepMethod),t.addEventListener("click",this.nextControlMoveStepMethod),this.updateButtonsStatus()}},{key:"getCoords",value:function(e){var t=e.getBoundingClientRect(),n=document.body,r=document.documentElement,i=window.pageYOffset||r.scrollTop||n.scrollTop,a=window.pageXOffset||r.scrollLeft||n.scrollLeft,o=r.clientTop||n.clientTop||0,s=r.clientLeft||n.clientLeft||0,u=t.top+i-o,l=t.left+a-s;return{top:Math.round(u),left:Math.round(l)}}},{key:"scrollTop",value:function(){var e=s.closest(this.wizard,".globo-formbuilder");window.scrollTo({behavior:"smooth",left:0,top:this.getCoords(e).top})}},{key:"moveStep",value:function(e){s.FormBuilder.handleValidate(this.wizard),(1!=e||s.libs._.isNull(this.wizard.querySelector(".block-container.errors")))&&(this.scrollTop(),1==e&&this.concludeControlMoveStepMethod(),this.validateMovement(e)&&(this.updtadeCurrentStep(e),this.steps.handleStepsClasses(e)))}},{key:"validateMovement",value:function(e){var t=e>0&&this.currentStep<this.stepsQuantity-1,n=e<0&&this.currentStep>0;return t||n}},{key:"reset",value:function(){var e=this.wizard.querySelector(".next"),t=this.wizard.querySelector(".previous");this.addControls(t,e),this.steps.handleRemoveAllConcludeStep(),this.setStep(0)}}]),e}(),s.Steps=s.Steps||function(){function e(t){r(this,e),this.wizard=t,this.steps=this.getSteps(),this.stepsQuantity=this.getStepsQuantity(),this.currentStep=0}return a(e,[{key:"setCurrentStep",value:function(e){this.currentStep=e}},{key:"getSteps",value:function(){return this.wizard.getElementsByClassName("step")}},{key:"getStepsQuantity",value:function(){return this.getSteps().length}},{key:"handleConcludeStep",value:function(){this.steps[this.currentStep].classList.add("-completed")}},{key:"handleRemoveAllConcludeStep",value:function(){for(var e=0;e<this.stepsQuantity;e++)this.steps[e].classList.remove("-completed")}},{key:"handleStepsClasses",value:function(e){e>0?this.steps[this.currentStep-1].classList.add("-completed"):e<0&&this.steps[this.currentStep].classList.remove("-completed"),this.steps[this.stepsQuantity-1].classList.remove("-completed")}}]),e}(),s.Panels=s.Panels||function(){function e(t){r(this,e),this.wizard=t,this.panelWidth=this.wizard.offsetWidth,this.panelsContainer=this.getPanelsContainer(),this.panels=this.getPanels(),this.currentStep=0,this.updatePanelsPosition(this.currentStep),this.updatePanelsContainerHeight()}return a(e,[{key:"getCurrentPanelHeight",value:function(){return"".concat(this.getPanels()[this.currentStep].offsetHeight,"px")}},{key:"getPanelsContainer",value:function(){return this.wizard.querySelector(".panels")}},{key:"getPanels",value:function(){return this.wizard.getElementsByClassName("panel")}},{key:"updatePanelsContainerHeight",value:function(){this.panelsContainer.style.height=this.getCurrentPanelHeight()}},{key:"updatePanelsPosition",value:function(e){for(var t=this.panels,n=(this.panelWidth,0);n<t.length;n++)t[n].classList.remove("movingIn"),t[n].classList.remove("movingOutBackward"),t[n].classList.remove("movingOutFoward"),t[n].classList.remove("block-container"),n!==e?n<e?t[n].classList.add("movingOutBackward"):n>e&&t[n].classList.add("movingOutFoward"):(t[n].classList.add("movingIn"),t[n].classList.add("block-container"));this.updatePanelsContainerHeight()}},{key:"setCurrentStep",value:function(e){this.currentStep=e,this.updatePanelsPosition(e)}}]),e}(),s.xhr=function(e,t){var n=e.getAttribute("action"),r=e.getAttribute("method");fetch(n,{method:r,body:new FormData(e)}).then((function(e){if(e.ok)return e.json();var t=new Error(e.statusText);throw t.response=e,t})).then((function(e){t(e)}))},s.dismiss=function(e){e.parentNode.style.display="none"},s.closest=function(e,t){var n,r;for(["matches","webkitMatchesSelector","mozMatchesSelector","msMatchesSelector","oMatchesSelector"].some((function(e){return"function"==typeof document.body[e]&&(n=e,!0)}));e;){if((r=e.parentElement)&&r[n](t))return r;e=r}return null},s.idealTextColor=function(e){var t=0===e.indexOf("#")?s.getRGBComponents(e):e.substring(5,e.length-1).replace(/ /g,"").split(",");return 255-(.299*t[0]+.587*t[1]+.114*t[2])<105?"#000000":"#ffffff"},s.getRGBComponents=function(e){var t=e.substring(1,3),n=e.substring(3,5),r=e.substring(5,7);return{R:parseInt(t,16),G:parseInt(n,16),B:parseInt(r,16)}},s.containsText=function(e,t){var n=document.querySelectorAll(e);return Array.prototype.filter.call(n,(function(e){return RegExp(t).test(e.textContent)}))},s.reduceElements=function(e){for(var t=s.libs._.clone(e),n=0;n<e.length;n++){for(var r=!1,i=0;i<=e.length;i++)e[n].contains(e[i])&&!e[i].contains(e[n])&&(r=!0);r&&(t[n]=!1)}return t},s.FormBuilder.initialize=function(){var e=document.getElementById("globo-formbuilder-element").innerHTML,t=document.getElementById("globo-formbuilder-template").innerHTML,n=document.getElementById("globo-formbuilder-dynamicCSS").innerHTML,r=new s.libs.Liquid;r.registerFilter("renderElement",(function(e,t,n){return r.parseAndRenderSync(t,{element:e,configs:n})})),r.registerFilter("parseInt",(function(e){return parseInt(100/e)})),r.registerFilter("optionsToArray",(function(e,t){return e.split(/\r?\n/)})),r.registerFilter("encodeHexColor",(function(e){return void 0!==e&&e.replace("#","%23")})),r.registerFilter("idealTextColor",(function(e){return void 0!==e&&s.idealTextColor(e)})),r.registerFilter("escapeHtml",(function(e){return"string"!=typeof e?e:e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}));var i=document.querySelectorAll(".globo-formbuilder");s.libs._.each(i,(function(i){var a=i.getAttribute("data-id");i.setAttribute("id","globo-formbuilder-"+a),r.parseAndRender(t,{configs:s.FormBuilder.forms[a],partialElement:e,dynamicCSS:n,formId:a,Globo:s}).then((function(e){i.innerHTML=e,s.FormBuilder.init(i)}))}));var a=s.containsText("div","{formbuilder:");a=s.reduceElements(a);var o=/{formbuilder:(.*)}/g,u=[];s.libs._.each(a,(function(i){for(var a;null!==(a=o.exec(i.textContent));)if(a.index===o.lastIndex&&o.lastIndex++,a.length){var l=a[1];if(void 0!==s.FormBuilder.forms[l]&&-1==u.indexOf(l)){var c=r.parseAndRenderSync(t,{configs:s.FormBuilder.forms[l],partialElement:e,dynamicCSS:n,formId:l,Globo:s});i.innerHTML=i.innerHTML.replace("{formbuilder:".concat(l,"}"),'<div class="globo-formbuilder" id="globo-formbuilder-'+l+'" data-id="'+l+'">'+c+"</div>"),u.push(l)}}}));for(var l=0;l<u.length;l++)s.FormBuilder.init(document.querySelector('.globo-formbuilder[data-id="'+u[l]+'"]'))},_.noConflict();var u=document.getElementsByTagName("head")[0].innerHTML;u&&u.indexOf("globo.formbuilder.init.js")>=0&&s.FormBuilder.initialize()},"0kzd":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Жс","Дс","Сc","Ср","Бс","Жм","Сб"],longhand:["Жексенбi","Дүйсенбi","Сейсенбi","Сәрсенбi","Бейсенбi","Жұма","Сенбi"]},months:{shorthand:["Қаң","Ақп","Нау","Сәу","Мам","Мау","Шiл","Там","Қыр","Қаз","Қар","Жел"],longhand:["Қаңтар","Ақпан","Наурыз","Сәуiр","Мамыр","Маусым","Шiлде","Тамыз","Қыркүйек","Қазан","Қараша","Желтоқсан"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Апта",scrollTitle:"Үлкейту үшін айналдырыңыз",toggleTitle:"Ауыстыру үшін басыңыз",amPM:["ТД","ТК"],yearAriaLabel:"Жыл"};t.l10ns.kz=n;var r=t.l10ns;e.Kazakh=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"18gA":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Sv","Pr","Ot","Tr","Ce","Pk","Se"],longhand:["Svētdiena","Pirmdiena","Otrdiena","Trešdiena","Ceturtdiena","Piektdiena","Sestdiena"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jūn","Jūl","Aug","Sep","Okt","Nov","Dec"],longhand:["Janvāris","Februāris","Marts","Aprīlis","Maijs","Jūnijs","Jūlijs","Augusts","Septembris","Oktobris","Novembris","Decembris"]},rangeSeparator:" līdz ",time_24hr:!0};t.l10ns.lv=n;var r=t.l10ns;e.Latvian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"1bMR":function(e,t,n){(function(e,r){var i;(function(){var a,o="Expected a function",s=1,u=2,l=1,c=1/0,d=9007199254740991,f="[object Arguments]",h="[object Array]",p="[object AsyncFunction]",g="[object Boolean]",m="[object Date]",v="[object Error]",w="[object Function]",b="[object GeneratorFunction]",y="[object Number]",k="[object Object]",M="[object Proxy]",S="[object RegExp]",D="[object String]",T=/[&<>"']/g,A=RegExp(T.source),O=/^(?:0|[1-9]\d*)$/,j="object"==typeof e&&e&&e.Object===Object&&e,_="object"==typeof self&&self&&self.Object===Object&&self,x=j||_||Function("return this")();t&&!t.nodeType&&t&&"object"==typeof r&&r&&r.nodeType;function C(e,t){return e.push.apply(e,t),e}function E(e){return function(t){return null==t?a:t[e]}}var P,F=(P={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},function(e){return null==P?a:P[e]});var N,L,J=Array.prototype,z=Object.prototype,I=z.hasOwnProperty,R=0,q=z.toString,H=x._,W=Object.create,B=z.propertyIsEnumerable,Y=x.isFinite,K=(N=Object.keys,L=Object,function(e){return N(L(e))}),V=Math.max;function G(e){return e instanceof Q?e:new Q(e)}var U=function(){function e(){}return function(t){if(!Ve(t))return{};if(W)return W(t);e.prototype=t;var n=new e;return e.prototype=a,n}}();function Q(e,t){this.__wrapped__=e,this.__actions__=[],this.__chain__=!!t}function $(e,t,n){var r=e[t];I.call(e,t)&&qe(r,n)&&(n!==a||t in e)||Z(e,t,n)}function Z(e,t,n){e[t]=n}function X(e,t,n){if("function"!=typeof e)throw new TypeError(o);return setTimeout((function(){e.apply(a,n)}),t)}Q.prototype=U(G.prototype),Q.prototype.constructor=Q;var ee,te,ne=(ee=se,function(e,t){if(null==e)return e;if(!Be(e))return ee(e,t);for(var n=e.length,r=te?n:-1,i=Object(e);(te?r--:++r<n)&&!1!==t(i[r],r,i););return e});function re(e,t,n){for(var r=-1,i=e.length;++r<i;){var o=e[r],s=t(o);if(null!=s&&(u===a?s==s:n(s,u)))var u=s,l=o}return l}function ie(e,t){var n=[];return ne(e,(function(e,r,i){t(e,r,i)&&n.push(e)})),n}function ae(e,t,n,r,i){var a=-1,o=e.length;for(n||(n=De),i||(i=[]);++a<o;){var s=e[a];t>0&&n(s)?t>1?ae(s,t-1,n,r,i):C(i,s):r||(i[i.length]=s)}return i}var oe=function(e){return function(t,n,r){for(var i=-1,a=Object(t),o=r(t),s=o.length;s--;){var u=o[e?s:++i];if(!1===n(a[u],u,a))break}return t}}();function se(e,t){return e&&oe(e,t,it)}function ue(e,t){return ie(t,(function(t){return Ke(e[t])}))}function le(e){return function(e){return q.call(e)}(e)}function ce(e,t){return e>t}var de=ft;function fe(e,t,n,r,i){return e===t||(null==e||null==t||!Ge(e)&&!Ge(t)?e!=e&&t!=t:function(e,t,n,r,i,o){var l=We(e),c=We(t),d=l?h:le(e),p=c?h:le(t),w=(d=d==f?k:d)==k,b=(p=p==f?k:p)==k,M=d==p;o||(o=[]);var T=Fe(o,(function(t){return t[0]==e})),A=Fe(o,(function(e){return e[0]==t}));if(T&&A)return T[1]==t;if(o.push([e,t]),o.push([t,e]),M&&!w){var O=l?function(e,t,n,r,i,o){var l=n&s,c=e.length,d=t.length;if(c!=d&&!(l&&d>c))return!1;var f=-1,h=!0,p=n&u?[]:a;for(;++f<c;){var g=e[f],m=t[f];if(void 0!==a){void 0,h=!1;break}if(p){if(!ye(t,(function(e,t){if(!Ce(p,t)&&(g===e||i(g,e,n,r,o)))return p.push(t)}))){h=!1;break}}else if(g!==m&&!i(g,m,n,r,o)){h=!1;break}}return h}(e,t,n,r,i,o):function(e,t,n,r,i,a,o){switch(n){case g:case m:case y:return qe(+e,+t);case v:return e.name==t.name&&e.message==t.message;case S:case D:return e==t+""}return!1}(e,t,d);return o.pop(),O}if(!(n&s)){var j=w&&I.call(e,"__wrapped__"),_=b&&I.call(t,"__wrapped__");if(j||_){var x=j?e.value():e,C=_?t.value():t;O=i(x,C,n,r,o);return o.pop(),O}}if(!M)return!1;O=function(e,t,n,r,i,o){var u=n&s,l=it(e),c=l.length,d=it(t).length;if(c!=d&&!u)return!1;var f=c;for(;f--;){var h=l[f];if(!(u?h in t:I.call(t,h)))return!1}var p=!0,g=u;for(;++f<c;){h=l[f];var m=e[h],v=t[h];if(!(void 0===a?m===v||i(m,v,n,r,o):void 0)){p=!1;break}g||(g="constructor"==h)}if(p&&!g){var w=e.constructor,b=t.constructor;w!=b&&"constructor"in e&&"constructor"in t&&!("function"==typeof w&&w instanceof w&&"function"==typeof b&&b instanceof b)&&(p=!1)}return p}(e,t,n,r,i,o);return o.pop(),O}(e,t,n,r,fe,i))}function he(e){return"function"==typeof e?e:null==e?ut:("object"==typeof e?me:E)(e)}function pe(e,t){return e<t}function ge(e,t){var n=-1,r=Be(e)?Array(e.length):[];return ne(e,(function(e,i,a){r[++n]=t(e,i,a)})),r}function me(e){var t=K(e);return function(n){var r=t.length;if(null==n)return!r;for(n=Object(n);r--;){var i=t[r];if(!(i in n&&fe(e[i],n[i],s|u)))return!1}return!0}}function ve(e,t){return je(Oe(e,t,ut),e+"")}function we(e,t,n){var r=-1,i=e.length;t<0&&(t=-t>i?0:i+t),(n=n>i?i:n)<0&&(n+=i),i=t>n?0:n-t>>>0,t>>>=0;for(var a=Array(i);++r<i;)a[r]=e[r+t];return a}function be(e){return we(e,0,e.length)}function ye(e,t){var n;return ne(e,(function(e,r,i){return!(n=t(e,r,i))})),!!n}function ke(e,t,n,r){var i=!n;n||(n={});for(var o=-1,s=t.length;++o<s;){var u=t[o],l=r?r(n[u],e[u],u,n,e):a;l===a&&(l=e[u]),i?Z(n,u,l):$(n,u,l)}return n}function Me(e){return ve((function(t,n){var r=-1,i=n.length,o=i>1?n[i-1]:a;for(o=e.length>3&&"function"==typeof o?(i--,o):a,t=Object(t);++r<i;){var s=n[r];s&&e(t,s,r,o)}return t}))}function Se(e,t,n,r){if("function"!=typeof e)throw new TypeError(o);var i=t&l,a=function(e){return function(){var t=arguments,n=U(e.prototype),r=e.apply(n,t);return Ve(r)?r:n}}(e);return function t(){for(var o=-1,s=arguments.length,u=-1,l=r.length,c=Array(l+s),d=this&&this!==x&&this instanceof t?a:e;++u<l;)c[u]=r[u];for(;s--;)c[u++]=arguments[++o];return d.apply(i?n:this,c)}}function De(e){return We(e)||He(e)}function Te(e,t,n){if(!Ve(n))return!1;var r=typeof t;return!!("number"==r?Be(n)&&function(e,t){var n=typeof e;return!!(t=null==t?d:t)&&("number"==n||"symbol"!=n&&O.test(e))&&e>-1&&e%1==0&&e<t}(t,n.length):"string"==r&&t in n)&&qe(n[t],e)}function Ae(e){var t=[];if(null!=e)for(var n in Object(e))t.push(n);return t}function Oe(e,t,n){return t=V(t===a?e.length-1:t,0),function(){for(var r=arguments,i=-1,a=V(r.length-t,0),o=Array(a);++i<a;)o[i]=r[t+i];i=-1;for(var s=Array(t+1);++i<t;)s[i]=r[i];return s[t]=n(o),e.apply(this,s)}}var je=ut;function _e(e){return(null==e?0:e.length)?ae(e,1):[]}function xe(e){return e&&e.length?e[0]:a}function Ce(e,t,n){for(var r=null==e?0:e.length,i=((n="number"==typeof n?n<0?V(r+n,0):n:0)||0)-1,a=t==t;++i<r;){var o=e[i];if(a?o===t:o!=o)return i}return-1}function Ee(e){var t=G(e);return t.__chain__=!0,t}var Pe,Fe=(Pe=function(e,t,n){var r=null==e?0:e.length;if(!r)return-1;var i=null==n?0:Ze(n);return i<0&&(i=V(r+i,0)),function(e,t,n,r){for(var i=e.length,a=n+(r?1:-1);r?a--:++a<i;)if(t(e[a],a,e))return a;return-1}(e,he(t),i)},function(e,t,n){var r=Object(e);if(!Be(e)){var i=he(t);e=it(e),t=function(e){return i(r[e],e,r)}}var o=Pe(e,t,n);return o>-1?r[i?e[o]:o]:a});function Ne(e,t){return ne(e,he(t))}function Le(e,t,n){return function(e,t,n,r,i){return i(e,(function(e,i,a){n=r?(r=!1,e):t(n,e,i,a)})),n}(e,he(t),n,arguments.length<3,ne)}function Je(e,t){var n;if("function"!=typeof t)throw new TypeError(o);return e=Ze(e),function(){return--e>0&&(n=t.apply(this,arguments)),e<=1&&(t=a),n}}var ze=ve((function(e,t,n){return Se(e,32|l,t,n)})),Ie=ve((function(e,t){return X(e,1,t)})),Re=ve((function(e,t,n){return X(e,Xe(t)||0,n)}));function qe(e,t){return e===t||e!=e&&t!=t}var He=de(function(){return arguments}())?de:function(e){return Ge(e)&&I.call(e,"callee")&&!B.call(e,"callee")},We=Array.isArray;function Be(e){return null!=e&&function(e){return"number"==typeof e&&e>-1&&e%1==0&&e<=d}(e.length)&&!Ke(e)}var Ye=function(e){return Ge(e)&&le(e)==m};function Ke(e){if(!Ve(e))return!1;var t=le(e);return t==w||t==b||t==p||t==M}function Ve(e){var t=typeof e;return null!=e&&("object"==t||"function"==t)}function Ge(e){return null!=e&&"object"==typeof e}function Ue(e){return"number"==typeof e||Ge(e)&&le(e)==y}var Qe=function(e){return Ge(e)&&le(e)==S};function $e(e){return"string"==typeof e||!We(e)&&Ge(e)&&le(e)==D}var Ze=Number,Xe=Number;function et(e){return"string"==typeof e?e:null==e?"":e+""}var tt=Me((function(e,t){ke(t,K(t),e)})),nt=Me((function(e,t){ke(t,Ae(t),e)}));var rt=ve((function(e,t){e=Object(e);var n=-1,r=t.length,i=r>2?t[2]:a;for(i&&Te(t[0],t[1],i)&&(r=1);++n<r;)for(var o=t[n],s=at(o),u=-1,l=s.length;++u<l;){var c=s[u],d=e[c];(d===a||qe(d,z[c])&&!I.call(e,c))&&(e[c]=o[c])}return e}));var it=K,at=Ae,ot=function(e){return je(Oe(e,a,_e),e+"")}((function(e,t){return null==e?{}:function(e,t){return e=Object(e),Le(t,(function(t,n){return n in e&&(t[n]=e[n]),t}),{})}(e,t)}));function st(e){return null==e?[]:function(e,t){return ge(t,(function(t){return e[t]}))}(e,it(e))}function ut(e){return e}var lt,ct=he;function dt(e,t,n){var r=it(t),i=ue(t,r);null!=n||Ve(t)&&(i.length||!r.length)||(n=t,t=e,e=this,i=ue(t,it(t)));var a=!(Ve(n)&&"chain"in n&&!n.chain),o=Ke(e);return ne(i,(function(n){var r=t[n];e[n]=r,o&&(e.prototype[n]=function(){var t=this.__chain__;if(a||t){var n=e(this.__wrapped__),i=n.__actions__=be(this.__actions__);return i.push({func:r,args:arguments,thisArg:e}),n.__chain__=t,n}return r.apply(e,C([this.value()],arguments))})})),e}function ft(){}G.assignIn=nt,G.before=Je,G.bind=ze,G.chain=Ee,G.compact=function(e){return ie(e,Boolean)},G.concat=function(){var e=arguments.length;if(!e)return[];for(var t=Array(e-1),n=arguments[0],r=e;r--;)t[r-1]=arguments[r];return C(We(n)?be(n):[n],ae(t,1))},G.create=function(e,t){var n=U(e);return null==t?n:tt(n,t)},G.defaults=rt,G.defer=Ie,G.delay=Re,G.filter=function(e,t){return ie(e,he(t))},G.flatten=_e,G.flattenDeep=function(e){return(null==e?0:e.length)?ae(e,c):[]},G.iteratee=ct,G.keys=it,G.map=function(e,t){return ge(e,he(t))},G.matches=function(e){return me(tt({},e))},G.mixin=dt,G.negate=function(e){if("function"!=typeof e)throw new TypeError(o);return function(){var t=arguments;return!e.apply(this,t)}},G.once=function(e){return Je(2,e)},G.pick=ot,G.slice=function(e,t,n){var r=null==e?0:e.length;return t=null==t?0:+t,n=n===a?r:+n,r?we(e,t,n):[]},G.sortBy=function(e,t){var n=0;return t=he(t),ge(ge(e,(function(e,r,i){return{value:e,index:n++,criteria:t(e,r,i)}})).sort((function(e,t){return function(e,t){if(e!==t){var n=e!==a,r=null===e,i=e==e,o=t!==a,s=null===t,u=t==t;if(!s&&e>t||r&&o&&u||!n&&u||!i)return 1;if(!r&&e<t||s&&n&&i||!o&&i||!u)return-1}return 0}(e.criteria,t.criteria)||e.index-t.index})),E("value"))},G.tap=function(e,t){return t(e),e},G.thru=function(e,t){return t(e)},G.toArray=function(e){return Be(e)?e.length?be(e):[]:st(e)},G.values=st,G.extend=nt,dt(G,G),G.clone=function(e){return Ve(e)?We(e)?be(e):ke(e,K(e)):e},G.escape=function(e){return(e=et(e))&&A.test(e)?e.replace(T,F):e},G.every=function(e,t,n){return function(e,t){var n=!0;return ne(e,(function(e,r,i){return n=!!t(e,r,i)})),n}(e,he(t=n?a:t))},G.find=Fe,G.forEach=Ne,G.has=function(e,t){return null!=e&&I.call(e,t)},G.head=xe,G.identity=ut,G.indexOf=Ce,G.isArguments=He,G.isArray=We,G.isBoolean=function(e){return!0===e||!1===e||Ge(e)&&le(e)==g},G.isDate=Ye,G.isEmpty=function(e){return Be(e)&&(We(e)||$e(e)||Ke(e.splice)||He(e))?!e.length:!K(e).length},G.isEqual=function(e,t){return fe(e,t)},G.isFinite=function(e){return"number"==typeof e&&Y(e)},G.isFunction=Ke,G.isNaN=function(e){return Ue(e)&&e!=+e},G.isNull=function(e){return null===e},G.isNumber=Ue,G.isObject=Ve,G.isRegExp=Qe,G.isString=$e,G.isUndefined=function(e){return e===a},G.last=function(e){var t=null==e?0:e.length;return t?e[t-1]:a},G.max=function(e){return e&&e.length?re(e,ut,ce):a},G.min=function(e){return e&&e.length?re(e,ut,pe):a},G.noConflict=function(){return x._===this&&(x._=H),this},G.noop=ft,G.reduce=Le,G.result=function(e,t,n){var r=null==e?a:e[t];return r===a&&(r=n),Ke(r)?r.call(e):r},G.size=function(e){return null==e?0:(e=Be(e)?e:K(e)).length},G.some=function(e,t,n){return ye(e,he(t=n?a:t))},G.uniqueId=function(e){var t=++R;return et(e)+t},G.each=Ne,G.first=xe,dt(G,(lt={},se(G,(function(e,t){I.call(G.prototype,t)||(lt[t]=e)})),lt),{chain:!1}),G.VERSION="4.17.15",ne(["pop","join","replace","reverse","split","push","shift","sort","splice","unshift"],(function(e){var t=(/^(?:replace|split)$/.test(e)?String.prototype:J)[e],n=/^(?:push|sort|unshift)$/.test(e)?"tap":"thru",r=/^(?:pop|join|replace|shift)$/.test(e);G.prototype[e]=function(){var e=arguments;if(r&&!this.__chain__){var i=this.value();return t.apply(We(i)?i:[],e)}return this[n]((function(n){return t.apply(We(n)?n:[],e)}))}})),G.prototype.toJSON=G.prototype.valueOf=G.prototype.value=function(){return e=this.__wrapped__,Le(this.__actions__,(function(e,t){return t.func.apply(t.thisArg,C([e],t.args))}),e);var e},x._=G,(i=function(){return G}.call(t,n,t,r))===a||(r.exports=i)}).call(this)}).call(this,n("yLpj"),n("YuTi")(e))},"31E+":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Не","По","Вт","Ср","Че","Пе","Са"],longhand:["Недела","Понеделник","Вторник","Среда","Четврток","Петок","Сабота"]},months:{shorthand:["Јан","Фев","Мар","Апр","Мај","Јун","Јул","Авг","Сеп","Окт","Ное","Дек"],longhand:["Јануари","Февруари","Март","Април","Мај","Јуни","Јули","Август","Септември","Октомври","Ноември","Декември"]},firstDayOfWeek:1,weekAbbreviation:"Нед.",rangeSeparator:" до ",time_24hr:!0};t.l10ns.mk=n;var r=t.l10ns;e.Macedonian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"3BxJ":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["周日","周一","周二","周三","周四","周五","周六"],longhand:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]},months:{shorthand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],longhand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},rangeSeparator:" 至 ",weekAbbreviation:"周",scrollTitle:"滚动切换",toggleTitle:"点击切换 12/24 小时时制"};t.l10ns.zh=n;var r=t.l10ns;e.Mandarin=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"3Jt2":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Sun","Mán","Týs","Mik","Hós","Frí","Ley"],longhand:["Sunnudagur","Mánadagur","Týsdagur","Mikudagur","Hósdagur","Fríggjadagur","Leygardagur"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","Apríl","Mai","Juni","Juli","August","Septembur","Oktobur","Novembur","Desembur"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"vika",scrollTitle:"Rulla fyri at broyta",toggleTitle:"Trýst fyri at skifta",yearAriaLabel:"Ár",time_24hr:!0};t.l10ns.fo=n;var r=t.l10ns;e.Faroese=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"3uVB":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["zo","ma","di","wo","do","vr","za"],longhand:["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"]},months:{shorthand:["jan","feb","mrt","apr","mei","jun","jul","aug","sept","okt","nov","dec"],longhand:["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"]},firstDayOfWeek:1,weekAbbreviation:"wk",rangeSeparator:" tot ",scrollTitle:"Scroll voor volgende / vorige",toggleTitle:"Klik om te wisselen",time_24hr:!0,ordinal:function(e){return 1===e||8===e||e>=20?"ste":"de"}};t.l10ns.nl=n;var r=t.l10ns;e.Dutch=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"5Q0x":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["អាទិត្យ","ចន្ទ","អង្គារ","ពុធ","ព្រហស.","សុក្រ","សៅរ៍"],longhand:["អាទិត្យ","ចន្ទ","អង្គារ","ពុធ","ព្រហស្បតិ៍","សុក្រ","សៅរ៍"]},months:{shorthand:["មករា","កុម្ភះ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"],longhand:["មករា","កុម្ភះ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"]},ordinal:function(){return""},firstDayOfWeek:1,rangeSeparator:" ដល់ ",weekAbbreviation:"សប្តាហ៍",scrollTitle:"រំកិលដើម្បីបង្កើន",toggleTitle:"ចុចដើម្បីផ្លាស់ប្ដូរ",yearAriaLabel:"ឆ្នាំ",time_24hr:!0};t.l10ns.km=n;var r=t.l10ns;e.Khmer=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"5p1B":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Да","Мя","Лх","Пү","Ба","Бя","Ня"],longhand:["Даваа","Мягмар","Лхагва","Пүрэв","Баасан","Бямба","Ням"]},months:{shorthand:["1-р сар","2-р сар","3-р сар","4-р сар","5-р сар","6-р сар","7-р сар","8-р сар","9-р сар","10-р сар","11-р сар","12-р сар"],longhand:["Нэгдүгээр сар","Хоёрдугаар сар","Гуравдугаар сар","Дөрөвдүгээр сар","Тавдугаар сар","Зургаадугаар сар","Долдугаар сар","Наймдугаар сар","Есдүгээр сар","Аравдугаар сар","Арваннэгдүгээр сар","Арванхоёрдугаар сар"]},rangeSeparator:"-с ",time_24hr:!0};t.l10ns.mn=n;var r=t.l10ns;e.Mongolian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"6Cpa":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["রবি","সোম","মঙ্গল","বুধ","বৃহস্পতি","শুক্র","শনি"],longhand:["রবিবার","সোমবার","মঙ্গলবার","বুধবার","বৃহস্পতিবার","শুক্রবার","শনিবার"]},months:{shorthand:["জানু","ফেব্রু","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগ","সেপ্টে","অক্টো","নভে","ডিসে"],longhand:["জানুয়ারী","ফেব্রুয়ারী","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগস্ট","সেপ্টেম্বর","অক্টোবর","নভেম্বর","ডিসেম্বর"]}};t.l10ns.bn=n;var r=t.l10ns;e.Bangla=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"9De2":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Неделя","Понеделник","Вторник","Сряда","Четвъртък","Петък","Събота"]},months:{shorthand:["Яну","Фев","Март","Апр","Май","Юни","Юли","Авг","Сеп","Окт","Ное","Дек"],longhand:["Януари","Февруари","Март","Април","Май","Юни","Юли","Август","Септември","Октомври","Ноември","Декември"]},time_24hr:!0,firstDayOfWeek:1};t.l10ns.bg=n;var r=t.l10ns;e.Bulgarian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},AdcB:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Dom","Lua","Mái","Céa","Déa","Aoi","Sat"],longhand:["Dé Domhnaigh","Dé Luain","Dé Máirt","Dé Céadaoin","Déardaoin","Dé hAoine","Dé Sathairn"]},months:{shorthand:["Ean","Fea","Már","Aib","Bea","Mei","Iúi","Lún","MFo","DFo","Sam","Nol"],longhand:["Eanáir","Feabhra","Márta","Aibreán","Bealtaine","Meitheamh","Iúil","Lúnasa","Meán Fómhair","Deireadh Fómhair","Samhain","Nollaig"]},time_24hr:!0};t.l10ns.hr=n;var r=t.l10ns;e.Irish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},Aid2:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["dim","lun","mar","mer","jeu","ven","sam"],longhand:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},months:{shorthand:["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"],longhand:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},ordinal:function(e){return e>1?"":"er"},rangeSeparator:" au ",weekAbbreviation:"Sem",scrollTitle:"Défiler pour augmenter la valeur",toggleTitle:"Cliquer pour basculer",time_24hr:!0};t.l10ns.fr=n;var r=t.l10ns;e.French=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},AixY:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Min","Sen","Sel","Rab","Kam","Jum","Sab"],longhand:["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"],longhand:["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"]},firstDayOfWeek:1,ordinal:function(){return""},time_24hr:!0,rangeSeparator:" - "};t.l10ns.id=n;var r=t.l10ns;e.Indonesian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},B9Yq:function(e,t){e.exports=function(){throw new Error("define cannot be used indirect")}},DiE8:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Ned","Pon","Uto","Sre","Čet","Pet","Sub"],longhand:["Nedelja","Ponedeljak","Utorak","Sreda","Četvrtak","Petak","Subota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Mart","April","Maj","Jun","Jul","Avgust","Septembar","Oktobar","Novembar","Decembar"]},firstDayOfWeek:1,weekAbbreviation:"Ned.",rangeSeparator:" do ",time_24hr:!0};t.l10ns.sr=n;var r=t.l10ns;e.Serbian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},EBSL:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Ne","Po","Út","St","Čt","Pá","So"],longhand:["Neděle","Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota"]},months:{shorthand:["Led","Ún","Bře","Dub","Kvě","Čer","Čvc","Srp","Zář","Říj","Lis","Pro"],longhand:["Leden","Únor","Březen","Duben","Květen","Červen","Červenec","Srpen","Září","Říjen","Listopad","Prosinec"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" do ",weekAbbreviation:"Týd.",scrollTitle:"Rolujte pro změnu",toggleTitle:"Přepnout dopoledne/odpoledne",amPM:["dop.","odp."],yearAriaLabel:"Rok",time_24hr:!0};t.l10ns.cs=n;var r=t.l10ns;e.Czech=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"Gt+8":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["So","Mo","Di","Mi","Do","Fr","Sa"],longhand:["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"]},months:{shorthand:["Jän","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"],longhand:["Jänner","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]},firstDayOfWeek:1,weekAbbreviation:"KW",rangeSeparator:" bis ",scrollTitle:"Zum Ändern scrollen",toggleTitle:"Zum Umschalten klicken"};t.l10ns.at=n;var r=t.l10ns;e.Austria=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},Io36:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],longhand:["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"]},months:{shorthand:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],longhand:["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]},rangeSeparator:" até ",time_24hr:!0};t.l10ns.pt=n;var r=t.l10ns;e.Portuguese=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},JSva:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Sun","Mán","Þri","Mið","Fim","Fös","Lau"],longhand:["Sunnudagur","Mánudagur","Þriðjudagur","Miðvikudagur","Fimmtudagur","Föstudagur","Laugardagur"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maí","Jún","Júl","Ágú","Sep","Okt","Nóv","Des"],longhand:["Janúar","Febrúar","Mars","Apríl","Maí","Júní","Júlí","Ágúst","September","Október","Nóvember","Desember"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"vika",yearAriaLabel:"Ár",time_24hr:!0};t.l10ns.is=n;var r=t.l10ns;e.Icelandic=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},JrQ3:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Di","Hë","Ma","Më","En","Pr","Sh"],longhand:["E Diel","E Hënë","E Martë","E Mërkurë","E Enjte","E Premte","E Shtunë"]},months:{shorthand:["Jan","Shk","Mar","Pri","Maj","Qer","Kor","Gus","Sht","Tet","Nën","Dhj"],longhand:["Janar","Shkurt","Mars","Prill","Maj","Qershor","Korrik","Gusht","Shtator","Tetor","Nëntor","Dhjetor"]},time_24hr:!0};t.l10ns.sq=n;var r=t.l10ns;e.Albanian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},Jt8t:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["So","Mo","Di","Mi","Do","Fr","Sa"],longhand:["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"]},months:{shorthand:["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"],longhand:["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]},firstDayOfWeek:1,weekAbbreviation:"KW",rangeSeparator:" bis ",scrollTitle:"Zum Ändern scrollen",toggleTitle:"Zum Umschalten klicken",time_24hr:!0};t.l10ns.de=n;var r=t.l10ns;e.German=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"KV+S":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["V","H","K","Sz","Cs","P","Szo"],longhand:["Vasárnap","Hétfő","Kedd","Szerda","Csütörtök","Péntek","Szombat"]},months:{shorthand:["Jan","Feb","Már","Ápr","Máj","Jún","Júl","Aug","Szep","Okt","Nov","Dec"],longhand:["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"]},ordinal:function(){return"."},weekAbbreviation:"Hét",scrollTitle:"Görgessen",toggleTitle:"Kattintson a váltáshoz",rangeSeparator:" - ",time_24hr:!0};t.l10ns.hu=n;var r=t.l10ns;e.Hungarian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},NlWs:function(e,t){},Ombb:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["週日","週一","週二","週三","週四","週五","週六"],longhand:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]},months:{shorthand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],longhand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},rangeSeparator:" 至 ",weekAbbreviation:"週",scrollTitle:"滾動切換",toggleTitle:"點擊切換 12/24 小時時制"};t.l10ns.zh_tw=n;var r=t.l10ns;e.MandarinTraditional=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},QM5T:function(e,t,n){!function(e){"use strict";var t={weekdays:{shorthand:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],longhand:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},months:{shorthand:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],longhand:["January","February","March","April","May","June","July","August","September","October","November","December"]},daysInMonth:[31,28,31,30,31,30,31,31,30,31,30,31],firstDayOfWeek:0,ordinal:function(e){var t=e%100;if(t>3&&t<21)return"th";switch(t%10){case 1:return"st";case 2:return"nd";case 3:return"rd";default:return"th"}},rangeSeparator:" to ",weekAbbreviation:"Wk",scrollTitle:"Scroll to increment",toggleTitle:"Click to toggle",amPM:["AM","PM"],yearAriaLabel:"Year",hourAriaLabel:"Hour",minuteAriaLabel:"Minute",time_24hr:!1};e.default=t,e.english=t,Object.defineProperty(e,"__esModule",{value:!0})}(t)},QhH9:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["א","ב","ג","ד","ה","ו","ש"],longhand:["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"]},months:{shorthand:["ינו׳","פבר׳","מרץ","אפר׳","מאי","יוני","יולי","אוג׳","ספט׳","אוק׳","נוב׳","דצמ׳"],longhand:["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"]},rangeSeparator:" אל ",time_24hr:!0};t.l10ns.he=n;var r=t.l10ns;e.Hebrew=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},SEQC:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["နွေ","လာ","ဂါ","ဟူး","ကြာ","သော","နေ"],longhand:["တနင်္ဂနွေ","တနင်္လာ","အင်္ဂါ","ဗုဒ္ဓဟူး","ကြာသပတေး","သောကြာ","စနေ"]},months:{shorthand:["ဇန်","ဖေ","မတ်","ပြီ","မေ","ဇွန်","လိုင်","သြ","စက်","အောက်","နို","ဒီ"],longhand:["ဇန်နဝါရီ","ဖေဖော်ဝါရီ","မတ်","ဧပြီ","မေ","ဇွန်","ဇူလိုင်","သြဂုတ်","စက်တင်ဘာ","အောက်တိုဘာ","နိုဝင်ဘာ","ဒီဇင်ဘာ"]},firstDayOfWeek:1,ordinal:function(){return""},time_24hr:!0};t.l10ns.my=n;var r=t.l10ns;e.Burmese=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},SYT2:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"],longhand:["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]},months:{shorthand:["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],longhand:["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]},ordinal:function(){return"º"},firstDayOfWeek:1,rangeSeparator:" a ",time_24hr:!0};t.l10ns.es=n;var r=t.l10ns;e.Spanish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},Ton7:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Sul","Llun","Maw","Mer","Iau","Gwe","Sad"],longhand:["Dydd Sul","Dydd Llun","Dydd Mawrth","Dydd Mercher","Dydd Iau","Dydd Gwener","Dydd Sadwrn"]},months:{shorthand:["Ion","Chwef","Maw","Ebr","Mai","Meh","Gorff","Awst","Medi","Hyd","Tach","Rhag"],longhand:["Ionawr","Chwefror","Mawrth","Ebrill","Mai","Mehefin","Gorffennaf","Awst","Medi","Hydref","Tachwedd","Rhagfyr"]},firstDayOfWeek:1,ordinal:function(e){return 1===e?"af":2===e?"ail":3===e||4===e?"ydd":5===e||6===e?"ed":e>=7&&e<=10||12==e||15==e||18==e||20==e?"fed":11==e||13==e||14==e||16==e||17==e||19==e?"eg":e>=21&&e<=39?"ain":""},time_24hr:!0};t.l10ns.cy=n;var r=t.l10ns;e.Welsh=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},UMqg:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["日","月","火","水","木","金","土"],longhand:["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"]},months:{shorthand:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],longhand:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]},time_24hr:!0,rangeSeparator:" から ",firstDayOfWeek:1};t.l10ns.ja=n;var r=t.l10ns;e.Japanese=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},V7ZE:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,rangeSeparator:" ĝis ",weekAbbreviation:"Sem",scrollTitle:"Rulumu por pligrandigi la valoron",toggleTitle:"Klaku por ŝalti",weekdays:{shorthand:["Dim","Lun","Mar","Mer","Ĵaŭ","Ven","Sab"],longhand:["dimanĉo","lundo","mardo","merkredo","ĵaŭdo","vendredo","sabato"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aŭg","Sep","Okt","Nov","Dec"],longhand:["januaro","februaro","marto","aprilo","majo","junio","julio","aŭgusto","septembro","oktobro","novembro","decembro"]},ordinal:function(){return"-a"},time_24hr:!0};t.l10ns.eo=n;var r=t.l10ns;e.Esperanto=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},VEU4:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["일","월","화","수","목","금","토"],longhand:["일요일","월요일","화요일","수요일","목요일","금요일","토요일"]},months:{shorthand:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],longhand:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]},ordinal:function(){return"일"},rangeSeparator:" ~ "};t.l10ns.ko=n;var r=t.l10ns;e.Korean=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},W8vW:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Κυ","Δε","Τρ","Τε","Πέ","Πα","Σά"],longhand:["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο"]},months:{shorthand:["Ιαν","Φεβ","Μάρ","Απρ","Μάι","Ιού","Ιού","Αύγ","Σεπ","Οκτ","Νοέ","Δεκ"],longhand:["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάιος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"]},firstDayOfWeek:1,ordinal:function(){return""},weekAbbreviation:"Εβδ",rangeSeparator:" έως ",scrollTitle:"Μετακυλήστε για προσαύξηση",toggleTitle:"Κάντε κλικ για αλλαγή",amPM:["ΠΜ","ΜΜ"]};t.l10ns.gr=n;var r=t.l10ns;e.Greek=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},WqZd:function(e,t,n){var r={"./ar.js":"+OV3","./at.js":"Gt+8","./az.js":"il6R","./be.js":"oAMl","./bg.js":"9De2","./bn.js":"6Cpa","./bs.js":"uezu","./cat.js":"/iph","./cs.js":"EBSL","./cy.js":"Ton7","./da.js":"++FP","./de.js":"Jt8t","./default.js":"QM5T","./eo.js":"V7ZE","./es.js":"SYT2","./et.js":"gRVh","./fa.js":"eHtV","./fi.js":"ewub","./fo.js":"3Jt2","./fr.js":"Aid2","./ga.js":"AdcB","./gr.js":"W8vW","./he.js":"QhH9","./hi.js":"/v+a","./hr.js":"j+gB","./hu.js":"KV+S","./id.js":"AixY","./index.js":"y/pk","./is.js":"JSva","./it.js":"rmDh","./ja.js":"UMqg","./ka.js":"p01/","./km.js":"5Q0x","./ko.js":"VEU4","./kz.js":"0kzd","./lt.js":"YLy/","./lv.js":"18gA","./mk.js":"31E+","./mn.js":"5p1B","./ms.js":"fvCo","./my.js":"SEQC","./nl.js":"3uVB","./no.js":"uHQq","./pa.js":"wGah","./pl.js":"tXmi","./pt.js":"Io36","./ro.js":"ZV7w","./ru.js":"b/zg","./si.js":"fV5r","./sk.js":"cntR","./sl.js":"ks2o","./sq.js":"JrQ3","./sr-cyr.js":"z+zT","./sr.js":"DiE8","./sv.js":"mNSI","./th.js":"hSGY","./tr.js":"+AxM","./uk.js":"+zM+","./vn.js":"yAt/","./zh-tw.js":"Ombb","./zh.js":"3BxJ"};function i(e){var t=a(e);return n(t)}function a(e){if(!n.o(r,e)){var t=new Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t}return r[e]}i.keys=function(){return Object.keys(r)},i.resolve=a,e.exports=i,i.id="WqZd"},"YLy/":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["S","Pr","A","T","K","Pn","Š"],longhand:["Sekmadienis","Pirmadienis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis"]},months:{shorthand:["Sau","Vas","Kov","Bal","Geg","Bir","Lie","Rgp","Rgs","Spl","Lap","Grd"],longhand:["Sausis","Vasaris","Kovas","Balandis","Gegužė","Birželis","Liepa","Rugpjūtis","Rugsėjis","Spalis","Lapkritis","Gruodis"]},firstDayOfWeek:1,ordinal:function(){return"-a"},weekAbbreviation:"Sav",scrollTitle:"Keisti laiką pelės rateliu",toggleTitle:"Perjungti laiko formatą",time_24hr:!0};t.l10ns.lt=n;var r=t.l10ns;e.Lithuanian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},YuTi:function(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),e.webpackPolyfill=1),e}},ZV7w:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Dum","Lun","Mar","Mie","Joi","Vin","Sâm"],longhand:["Duminică","Luni","Marți","Miercuri","Joi","Vineri","Sâmbătă"]},months:{shorthand:["Ian","Feb","Mar","Apr","Mai","Iun","Iul","Aug","Sep","Oct","Noi","Dec"],longhand:["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"]},firstDayOfWeek:1,time_24hr:!0,ordinal:function(){return""}};t.l10ns.ro=n;var r=t.l10ns;e.Romanian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},a1gY:function(e,t,n){(function(e){(function(e,t,r){"use strict";var i=function(e,t,n){n=a.extend({},a.options,n);var r=a.runValidations(e,t,n);if(r.some((function(e){return a.isPromise(e.error)})))throw new Error("Use validate.async if you want support for promises");return i.processValidationResults(r,n)},a=i;a.extend=function(e){return[].slice.call(arguments,1).forEach((function(t){for(var n in t)e[n]=t[n]})),e},a.extend(i,{version:{major:0,minor:13,patch:1,metadata:null,toString:function(){var e=a.format("%{major}.%{minor}.%{patch}",a.version);return a.isEmpty(a.version.metadata)||(e+="+"+a.version.metadata),e}},Promise:"undefined"!=typeof Promise?Promise:null,EMPTY_STRING_REGEXP:/^\s*$/,runValidations:function(e,t,n){var r,i,o,s,u,l,c,d=[];for(r in(a.isDomElement(e)||a.isJqueryElement(e))&&(e=a.collectFormValues(e)),t)for(i in o=a.getDeepObjectValue(e,r),s=a.result(t[r],o,e,r,n,t)){if(!(u=a.validators[i]))throw c=a.format("Unknown validator %{name}",{name:i}),new Error(c);l=s[i],(l=a.result(l,o,e,r,n,t))&&d.push({attribute:r,value:o,validator:i,globalOptions:n,attributes:e,options:l,error:u.call(u,o,l,r,e,n)})}return d},processValidationResults:function(e,t){e=a.pruneEmptyErrors(e,t),e=a.expandMultipleErrors(e,t),e=a.convertErrorMessages(e,t);var n=t.format||"grouped";if("function"!=typeof a.formatters[n])throw new Error(a.format("Unknown format %{format}",t));return e=a.formatters[n](e),a.isEmpty(e)?void 0:e},async:function(e,t,n){var r=(n=a.extend({},a.async.options,n)).wrapErrors||function(e){return e};!1!==n.cleanAttributes&&(e=a.cleanAttributes(e,t));var i=a.runValidations(e,t,n);return new a.Promise((function(o,s){a.waitForResults(i).then((function(){var u=a.processValidationResults(i,n);u?s(new r(u,n,e,t)):o(e)}),(function(e){s(e)}))}))},single:function(e,t,n){return n=a.extend({},a.single.options,n,{format:"flat",fullMessages:!1}),a({single:e},{single:t},n)},waitForResults:function(e){return e.reduce((function(e,t){return a.isPromise(t.error)?e.then((function(){return t.error.then((function(e){t.error=e||null}))})):e}),new a.Promise((function(e){e()})))},result:function(e){var t=[].slice.call(arguments,1);return"function"==typeof e&&(e=e.apply(null,t)),e},isNumber:function(e){return"number"==typeof e&&!isNaN(e)},isFunction:function(e){return"function"==typeof e},isInteger:function(e){return a.isNumber(e)&&e%1==0},isBoolean:function(e){return"boolean"==typeof e},isObject:function(e){return e===Object(e)},isDate:function(e){return e instanceof Date},isDefined:function(e){return null!=e},isPromise:function(e){return!!e&&a.isFunction(e.then)},isJqueryElement:function(e){return e&&a.isString(e.jquery)},isDomElement:function(e){return!!e&&(!(!e.querySelectorAll||!e.querySelector)&&(!(!a.isObject(document)||e!==document)||("object"==typeof HTMLElement?e instanceof HTMLElement:e&&"object"==typeof e&&null!==e&&1===e.nodeType&&"string"==typeof e.nodeName)))},isEmpty:function(e){var t;if(!a.isDefined(e))return!0;if(a.isFunction(e))return!1;if(a.isString(e))return a.EMPTY_STRING_REGEXP.test(e);if(a.isArray(e))return 0===e.length;if(a.isDate(e))return!1;if(a.isObject(e)){for(t in e)return!1;return!0}return!1},format:a.extend((function(e,t){return a.isString(e)?e.replace(a.format.FORMAT_REGEXP,(function(e,n,r){return"%"===n?"%{"+r+"}":String(t[r])})):e}),{FORMAT_REGEXP:/(%?)%\{([^\}]+)\}/g}),prettify:function(e){return a.isNumber(e)?100*e%1==0?""+e:parseFloat(Math.round(100*e)/100).toFixed(2):a.isArray(e)?e.map((function(e){return a.prettify(e)})).join(", "):a.isObject(e)?a.isDefined(e.toString)?e.toString():JSON.stringify(e):(e=""+e).replace(/([^\s])\.([^\s])/g,"$1 $2").replace(/\\+/g,"").replace(/[_-]/g," ").replace(/([a-z])([A-Z])/g,(function(e,t,n){return t+" "+n.toLowerCase()})).toLowerCase()},stringifyValue:function(e,t){return(t&&t.prettify||a.prettify)(e)},isString:function(e){return"string"==typeof e},isArray:function(e){return"[object Array]"==={}.toString.call(e)},isHash:function(e){return a.isObject(e)&&!a.isArray(e)&&!a.isFunction(e)},contains:function(e,t){return!!a.isDefined(e)&&(a.isArray(e)?-1!==e.indexOf(t):t in e)},unique:function(e){return a.isArray(e)?e.filter((function(e,t,n){return n.indexOf(e)==t})):e},forEachKeyInKeypath:function(e,t,n){if(a.isString(t)){var r,i="",o=!1;for(r=0;r<t.length;++r)switch(t[r]){case".":o?(o=!1,i+="."):(e=n(e,i,!1),i="");break;case"\\":o?(o=!1,i+="\\"):o=!0;break;default:o=!1,i+=t[r]}return n(e,i,!0)}},getDeepObjectValue:function(e,t){if(a.isObject(e))return a.forEachKeyInKeypath(e,t,(function(e,t){if(a.isObject(e))return e[t]}))},collectFormValues:function(e,t){var n,r,i,o,s,u,l={};if(a.isJqueryElement(e)&&(e=e[0]),!e)return l;for(t=t||{},o=e.querySelectorAll("input[name], textarea[name]"),n=0;n<o.length;++n)if(i=o.item(n),!a.isDefined(i.getAttribute("data-ignored"))){var c=i.name.replace(/\./g,"\\\\.");u=a.sanitizeFormValue(i.value,t),"number"===i.type?u=u?+u:null:"checkbox"===i.type?i.attributes.value?i.checked||(u=l[c]||null):u=i.checked:"radio"===i.type&&(i.checked||(u=l[c]||null)),l[c]=u}for(o=e.querySelectorAll("select[name]"),n=0;n<o.length;++n)if(i=o.item(n),!a.isDefined(i.getAttribute("data-ignored"))){if(i.multiple)for(r in u=[],i.options)(s=i.options[r])&&s.selected&&u.push(a.sanitizeFormValue(s.value,t));else{var d=void 0!==i.options[i.selectedIndex]?i.options[i.selectedIndex].value:"";u=a.sanitizeFormValue(d,t)}l[i.name]=u}return l},sanitizeFormValue:function(e,t){return t.trim&&a.isString(e)&&(e=e.trim()),!1!==t.nullify&&""===e?null:e},capitalize:function(e){return a.isString(e)?e[0].toUpperCase()+e.slice(1):e},pruneEmptyErrors:function(e){return e.filter((function(e){return!a.isEmpty(e.error)}))},expandMultipleErrors:function(e){var t=[];return e.forEach((function(e){a.isArray(e.error)?e.error.forEach((function(n){t.push(a.extend({},e,{error:n}))})):t.push(e)})),t},convertErrorMessages:function(e,t){var n=[],r=(t=t||{}).prettify||a.prettify;return e.forEach((function(e){var i=a.result(e.error,e.value,e.attribute,e.options,e.attributes,e.globalOptions);a.isString(i)?("^"===i[0]?i=i.slice(1):!1!==t.fullMessages&&(i=a.capitalize(r(e.attribute))+" "+i),i=i.replace(/\\\^/g,"^"),i=a.format(i,{value:a.stringifyValue(e.value,t)}),n.push(a.extend({},e,{error:i}))):n.push(e)})),n},groupErrorsByAttribute:function(e){var t={};return e.forEach((function(e){var n=t[e.attribute];n?n.push(e):t[e.attribute]=[e]})),t},flattenErrorsToArray:function(e){return e.map((function(e){return e.error})).filter((function(e,t,n){return n.indexOf(e)===t}))},cleanAttributes:function(e,t){function n(e,t,n){return a.isObject(e[t])?e[t]:e[t]=!!n||{}}return a.isObject(t)&&a.isObject(e)?function e(t,n){if(!a.isObject(t))return t;var r,i,o=a.extend({},t);for(i in t)r=n[i],a.isObject(r)?o[i]=e(o[i],r):r||delete o[i];return o}(e,t=function(e){var t,r={};for(t in e)e[t]&&a.forEachKeyInKeypath(r,t,n);return r}(t)):{}},exposeModule:function(e,t,n,r,i){n?(r&&r.exports&&(n=r.exports=e),n.validate=e):(t.validate=e,e.isFunction(i)&&i.amd&&i([],(function(){return e})))},warn:function(e){"undefined"!=typeof console&&console.warn&&console.warn("[validate.js] "+e)},error:function(e){"undefined"!=typeof console&&console.error&&console.error("[validate.js] "+e)}}),i.validators={presence:function(e,t){if(!1!==(t=a.extend({},this.options,t)).allowEmpty?!a.isDefined(e):a.isEmpty(e))return t.message||this.message||"can't be blank"},length:function(e,t,n){if(a.isDefined(e)){var r,i=(t=a.extend({},this.options,t)).is,o=t.maximum,s=t.minimum,u=[],l=(e=(t.tokenizer||function(e){return e})(e)).length;return a.isNumber(l)?(a.isNumber(i)&&l!==i&&(r=t.wrongLength||this.wrongLength||"is the wrong length (should be %{count} characters)",u.push(a.format(r,{count:i}))),a.isNumber(s)&&l<s&&(r=t.tooShort||this.tooShort||"is too short (minimum is %{count} characters)",u.push(a.format(r,{count:s}))),a.isNumber(o)&&l>o&&(r=t.tooLong||this.tooLong||"is too long (maximum is %{count} characters)",u.push(a.format(r,{count:o}))),u.length>0?t.message||u:void 0):t.message||this.notValid||"has an incorrect length"}},numericality:function(e,t,n,r,i){if(a.isDefined(e)){var o,s,u=[],l={greaterThan:function(e,t){return e>t},greaterThanOrEqualTo:function(e,t){return e>=t},equalTo:function(e,t){return e===t},lessThan:function(e,t){return e<t},lessThanOrEqualTo:function(e,t){return e<=t},divisibleBy:function(e,t){return e%t==0}},c=(t=a.extend({},this.options,t)).prettify||i&&i.prettify||a.prettify;if(a.isString(e)&&t.strict){var d="^-?(0|[1-9]\\d*)";if(t.onlyInteger||(d+="(\\.\\d+)?"),d+="$",!new RegExp(d).test(e))return t.message||t.notValid||this.notValid||this.message||"must be a valid number"}if(!0!==t.noStrings&&a.isString(e)&&!a.isEmpty(e)&&(e=+e),!a.isNumber(e))return t.message||t.notValid||this.notValid||this.message||"is not a number";if(t.onlyInteger&&!a.isInteger(e))return t.message||t.notInteger||this.notInteger||this.message||"must be an integer";for(o in l)if(s=t[o],a.isNumber(s)&&!l[o](e,s)){var f="not"+a.capitalize(o),h=t[f]||this[f]||this.message||"must be %{type} %{count}";u.push(a.format(h,{count:s,type:c(o)}))}return t.odd&&e%2!=1&&u.push(t.notOdd||this.notOdd||this.message||"must be odd"),t.even&&e%2!=0&&u.push(t.notEven||this.notEven||this.message||"must be even"),u.length?t.message||u:void 0}},datetime:a.extend((function(e,t){if(!a.isFunction(this.parse)||!a.isFunction(this.format))throw new Error("Both the parse and format functions needs to be set to use the datetime/date validator");if(a.isDefined(e)){var n,r=[],i=(t=a.extend({},this.options,t)).earliest?this.parse(t.earliest,t):NaN,o=t.latest?this.parse(t.latest,t):NaN;return e=this.parse(e,t),isNaN(e)||t.dateOnly&&e%864e5!=0?(n=t.notValid||t.message||this.notValid||"must be a valid date",a.format(n,{value:arguments[0]})):(!isNaN(i)&&e<i&&(n=t.tooEarly||t.message||this.tooEarly||"must be no earlier than %{date}",n=a.format(n,{value:this.format(e,t),date:this.format(i,t)}),r.push(n)),!isNaN(o)&&e>o&&(n=t.tooLate||t.message||this.tooLate||"must be no later than %{date}",n=a.format(n,{date:this.format(o,t),value:this.format(e,t)}),r.push(n)),r.length?a.unique(r):void 0)}}),{parse:null,format:null}),date:function(e,t){return t=a.extend({},t,{dateOnly:!0}),a.validators.datetime.call(a.validators.datetime,e,t)},format:function(e,t){(a.isString(t)||t instanceof RegExp)&&(t={pattern:t});var n,r=(t=a.extend({},this.options,t)).message||this.message||"is invalid",i=t.pattern;if(a.isDefined(e))return a.isString(e)?(a.isString(i)&&(i=new RegExp(t.pattern,t.flags)),(n=i.exec(e))&&n[0].length==e.length?void 0:r):r},inclusion:function(e,t){if(a.isDefined(e)&&(a.isArray(t)&&(t={within:t}),t=a.extend({},this.options,t),!a.contains(t.within,e))){var n=t.message||this.message||"^%{value} is not included in the list";return a.format(n,{value:e})}},exclusion:function(e,t){if(a.isDefined(e)&&(a.isArray(t)&&(t={within:t}),t=a.extend({},this.options,t),a.contains(t.within,e))){var n=t.message||this.message||"^%{value} is restricted";return a.isString(t.within[e])&&(e=t.within[e]),a.format(n,{value:e})}},email:a.extend((function(e,t){var n=(t=a.extend({},this.options,t)).message||this.message||"is not a valid email";if(a.isDefined(e))return a.isString(e)&&this.PATTERN.exec(e)?void 0:n}),{PATTERN:/^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/i}),equality:function(e,t,n,r,i){if(a.isDefined(e)){a.isString(t)&&(t={attribute:t});var o=(t=a.extend({},this.options,t)).message||this.message||"is not equal to %{attribute}";if(a.isEmpty(t.attribute)||!a.isString(t.attribute))throw new Error("The attribute must be a non empty string");var s=a.getDeepObjectValue(r,t.attribute),u=t.comparator||function(e,t){return e===t},l=t.prettify||i&&i.prettify||a.prettify;return u(e,s,t,n,r)?void 0:a.format(o,{attribute:l(t.attribute)})}},url:function(e,t){if(a.isDefined(e)){var n=(t=a.extend({},this.options,t)).message||this.message||"is not a valid url",r=t.schemes||this.schemes||["http","https"],i=t.allowLocal||this.allowLocal||!1,o=t.allowDataUrl||this.allowDataUrl||!1;if(!a.isString(e))return n;var s="^(?:(?:"+r.join("|")+")://)(?:\\S+(?::\\S*)?@)?(?:",u="(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))";if(i?u+="?":s+="(?!(?:10|127)(?:\\.\\d{1,3}){3})(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})",s+="(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*"+u+")(?::\\d{2,5})?(?:[/?#]\\S*)?$",o){s="(?:"+s+")|(?:^data:(?:\\w+\\/[-+.\\w]+(?:;[\\w=]+)*)?(?:;base64)?,[A-Za-z0-9-_.!~\\*'();\\/?:@&=+$,%]*$)"}return new RegExp(s,"i").exec(e)?void 0:n}},type:a.extend((function(e,t,n,r,i){if(a.isString(t)&&(t={type:t}),a.isDefined(e)){var o,s=a.extend({},this.options,t),u=s.type;if(!a.isDefined(u))throw new Error("No type was specified");if(o=a.isFunction(u)?u:this.types[u],!a.isFunction(o))throw new Error("validate.validators.type.types."+u+" must be a function.");if(!o(e,s,n,r,i)){var l=t.message||this.messages[u]||this.message||s.message||(a.isFunction(u)?"must be of the correct type":"must be of type %{type}");return a.isFunction(l)&&(l=l(e,t,n,r,i)),a.format(l,{attribute:a.prettify(n),type:u})}}}),{types:{object:function(e){return a.isObject(e)&&!a.isArray(e)},array:a.isArray,integer:a.isInteger,number:a.isNumber,string:a.isString,date:a.isDate,boolean:a.isBoolean},messages:{}})},i.formatters={detailed:function(e){return e},flat:a.flattenErrorsToArray,grouped:function(e){var t;for(t in e=a.groupErrorsByAttribute(e))e[t]=a.flattenErrorsToArray(e[t]);return e},constraint:function(e){var t;for(t in e=a.groupErrorsByAttribute(e))e[t]=e[t].map((function(e){return e.validator})).sort();return e}},i.exposeModule(i,this,e,t,n("B9Yq"))}).call(this,t,e,n("B9Yq"))}).call(this,n("YuTi")(e))},"b/zg":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"]},months:{shorthand:["Янв","Фев","Март","Апр","Май","Июнь","Июль","Авг","Сен","Окт","Ноя","Дек"],longhand:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Нед.",scrollTitle:"Прокрутите для увеличения",toggleTitle:"Нажмите для переключения",amPM:["ДП","ПП"],yearAriaLabel:"Год",time_24hr:!0};t.l10ns.ru=n;var r=t.l10ns;e.Russian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},cntR:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Ned","Pon","Ut","Str","Štv","Pia","Sob"],longhand:["Nedeľa","Pondelok","Utorok","Streda","Štvrtok","Piatok","Sobota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Máj","Jún","Júl","Aug","Sep","Okt","Nov","Dec"],longhand:["Január","Február","Marec","Apríl","Máj","Jún","Júl","August","September","Október","November","December"]},firstDayOfWeek:1,rangeSeparator:" do ",time_24hr:!0,ordinal:function(){return"."}};t.l10ns.sk=n;var r=t.l10ns;e.Slovak=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},eHtV:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["یک","دو","سه","چهار","پنج","جمعه","شنبه"],longhand:["یک‌شنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنچ‌شنبه","جمعه","شنبه"]},months:{shorthand:["ژانویه","فوریه","مارس","آوریل","مه","ژوئن","ژوئیه","اوت","سپتامبر","اکتبر","نوامبر","دسامبر"],longhand:["ژانویه","فوریه","مارس","آوریل","مه","ژوئن","ژوئیه","اوت","سپتامبر","اکتبر","نوامبر","دسامبر"]},firstDayOfWeek:6,ordinal:function(){return""}};t.l10ns.fa=n;var r=t.l10ns;e.Persian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},ewub:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Su","Ma","Ti","Ke","To","Pe","La"],longhand:["Sunnuntai","Maanantai","Tiistai","Keskiviikko","Torstai","Perjantai","Lauantai"]},months:{shorthand:["Tammi","Helmi","Maalis","Huhti","Touko","Kesä","Heinä","Elo","Syys","Loka","Marras","Joulu"],longhand:["Tammikuu","Helmikuu","Maaliskuu","Huhtikuu","Toukokuu","Kesäkuu","Heinäkuu","Elokuu","Syyskuu","Lokakuu","Marraskuu","Joulukuu"]},ordinal:function(){return"."},time_24hr:!0};t.l10ns.fi=n;var r=t.l10ns;e.Finnish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},fV5r:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["ඉ","ස","අ","බ","බ්‍ර","සි","සෙ"],longhand:["ඉරිදා","සඳුදා","අඟහරුවාදා","බදාදා","බ්‍රහස්පතින්දා","සිකුරාදා","සෙනසුරාදා"]},months:{shorthand:["ජන","පෙබ","මාර්","අප්‍රේ","මැයි","ජුනි","ජූලි","අගෝ","සැප්","ඔක්","නොවැ","දෙසැ"],longhand:["ජනවාරි","පෙබරවාරි","මාර්තු","අප්‍රේල්","මැයි","ජුනි","ජූලි","අගෝස්තු","සැප්තැම්බර්","ඔක්තෝබර්","නොවැම්බර්","දෙසැම්බර්"]},time_24hr:!0};t.l10ns.si=n;var r=t.l10ns;e.Sinhala=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},fvCo:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n=t.l10ns;e.Malaysian={weekdays:{shorthand:["Min","Isn","Sel","Rab","Kha","Jum","Sab"],longhand:["Minggu","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"]},months:{shorthand:["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogo","Sep","Okt","Nov","Dis"],longhand:["Januari","Februari","Mac","April","Mei","Jun","Julai","Ogos","September","Oktober","November","Disember"]},firstDayOfWeek:1,ordinal:function(){return""}},e.default=n,Object.defineProperty(e,"__esModule",{value:!0})}(t)},gRVh:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["P","E","T","K","N","R","L"],longhand:["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"]},months:{shorthand:["Jaan","Veebr","Märts","Apr","Mai","Juuni","Juuli","Aug","Sept","Okt","Nov","Dets"],longhand:["Jaanuar","Veebruar","Märts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"]},firstDayOfWeek:1,ordinal:function(){return"."},weekAbbreviation:"Näd",rangeSeparator:" kuni ",scrollTitle:"Keri, et suurendada",toggleTitle:"Klõpsa, et vahetada",time_24hr:!0};t.l10ns.et=n;var r=t.l10ns;e.Estonian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},hSGY:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["อา","จ","อ","พ","พฤ","ศ","ส"],longhand:["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"]},months:{shorthand:["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."],longhand:["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"]},firstDayOfWeek:1,rangeSeparator:" ถึง ",scrollTitle:"เลื่อนเพื่อเพิ่มหรือลด",toggleTitle:"คลิกเพื่อเปลี่ยน",time_24hr:!0,ordinal:function(){return""}};t.l10ns.th=n;var r=t.l10ns;e.Thai=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},il6R:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Baz","BzE","ÇAx","Çər","CAx","Cüm","Şən"],longhand:["Bazar","Bazar ertəsi","Çərşənbə axşamı","Çərşənbə","Cümə axşamı","Cümə","Şənbə"]},months:{shorthand:["Yan","Fev","Mar","Apr","May","İyn","İyl","Avq","Sen","Okt","Noy","Dek"],longhand:["Yanvar","Fevral","Mart","Aprel","May","İyun","İyul","Avqust","Sentyabr","Oktyabr","Noyabr","Dekabr"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" - ",weekAbbreviation:"Hf",scrollTitle:"Artırmaq üçün sürüşdürün",toggleTitle:"Aç / Bağla",amPM:["GƏ","GS"],time_24hr:!0};t.l10ns.az=n;var r=t.l10ns;e.Azerbaijan=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},isxL:function(e,t,n){!function(e){"use strict";var t=function(e,n){return(t=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var n in t)t.hasOwnProperty(n)&&(e[n]=t[n])})(e,n)};function n(e,n){function r(){this.constructor=e}t(e,n),e.prototype=null===n?Object.create(n):(r.prototype=n.prototype,new r)}var r=function(){return(r=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var i in t=arguments[n])Object.prototype.hasOwnProperty.call(t,i)&&(e[i]=t[i]);return e}).apply(this,arguments)};function i(e,t,n,r){return new(n||(n=Promise))((function(i,a){function o(e){try{u(r.next(e))}catch(e){a(e)}}function s(e){try{u(r.throw(e))}catch(e){a(e)}}function u(e){e.done?i(e.value):new n((function(t){t(e.value)})).then(o,s)}u((r=r.apply(e,t||[])).next())}))}function a(e,t){var n,r,i,a,o={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return a={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a;function s(a){return function(s){return function(a){if(n)throw new TypeError("Generator is already executing.");for(;o;)try{if(n=1,r&&(i=2&a[0]?r.return:a[0]?r.throw||((i=r.return)&&i.call(r),0):r.next)&&!(i=i.call(r,a[1])).done)return i;switch(r=0,i&&(a=[2&a[0],i.value]),a[0]){case 0:case 1:i=a;break;case 4:return o.label++,{value:a[1],done:!1};case 5:o.label++,r=a[1],a=[0];continue;case 7:a=o.ops.pop(),o.trys.pop();continue;default:if(!(i=(i=o.trys).length>0&&i[i.length-1])&&(6===a[0]||2===a[0])){o=0;continue}if(3===a[0]&&(!i||a[1]>i[0]&&a[1]<i[3])){o.label=a[1];break}if(6===a[0]&&o.label<i[1]){o.label=i[1],i=a;break}if(i&&o.label<i[2]){o.label=i[2],o.ops.push(a);break}i[2]&&o.ops.pop(),o.trys.pop();continue}a=t.call(e,o)}catch(e){a=[6,e],r=0}finally{n=i=0}if(5&a[0])throw a[1];return{value:a[0]?a[1]:void 0,done:!0}}([a,s])}}}function o(e){var t="function"==typeof Symbol&&e[Symbol.iterator],n=0;return t?t.call(e):{next:function(){return e&&n>=e.length&&(e=void 0),{value:e&&e[n++],done:!e}}}}function s(e,t){var n="function"==typeof Symbol&&e[Symbol.iterator];if(!n)return e;var r,i,a=n.call(e),o=[];try{for(;(void 0===t||t-- >0)&&!(r=a.next()).done;)o.push(r.value)}catch(e){i={error:e}}finally{try{r&&!r.done&&(n=a.return)&&n.call(a)}finally{if(i)throw i.error}}return o}function u(){for(var e=[],t=0;t<arguments.length;t++)e=e.concat(s(arguments[t]));return e}var l=function(){function e(){}return e.prototype.valueOf=function(){},e.prototype.liquidMethodMissing=function(e){},e}(),c=Object.prototype.toString;function d(e){return"[object String]"===c.call(e)}function f(e){return"function"==typeof e}function h(e){return m(e=p(e))?"":String(e)}function p(e){return e instanceof l?e.valueOf():e}function g(e){return"number"==typeof e}function m(e){return null==e}function v(e){return"[object Array]"===c.call(e)}function w(e,t){for(var n in e=e||{})if(e.hasOwnProperty(n)&&!1===t(e[n],n,e))break;return e}function b(e){return e[e.length-1]}function y(e){var t=typeof e;return null!==e&&("object"===t||"function"===t)}function k(e,t,n){void 0===n&&(n=1);for(var r=[],i=e;i<t;i+=n)r.push(i);return r}function M(e,t,n){void 0===n&&(n=" ");for(var r=t-(e=String(e)).length;r-- >0;)e=n+e;return e}var S=function(e){function t(t,n){var r=e.call(this,t.message)||this;return r.originalError=t,r.token=n,r}return n(t,e),t.prototype.update=function(){var e,t,n,r,i=this.originalError,a=(e=this.token,t=e.input.split("\n"),n=Math.max(e.line-2,1),r=Math.min(e.line+3,t.length),k(n,r+1).map((function(n){return(n===e.line?">> ":"   ")+M(String(n),String(r).length)+"| "+t[n-1]})).join("\n"));this.message=function(e,t){return t.file&&(e+=", file:"+t.file),e+=", line:"+t.line+", col:"+t.col}(i.message,this.token),this.stack=this.message+"\n"+a+"\n"+this.stack+"\nFrom "+i.stack},t}(Error),D=function(e){function t(t,n){var r=e.call(this,new Error(t),n)||this;return r.name="TokenizationError",e.prototype.update.call(r),r}return n(t,e),t}(S),T=function(e){function t(t,n){var r=e.call(this,t,n)||this;return r.name="ParseError",r.message=t.message,e.prototype.update.call(r),r}return n(t,e),t}(S),A=function(e){function t(t,n){var r=e.call(this,t,n.token)||this;return r.name="RenderError",r.message=t.message,e.prototype.update.call(r),r}return n(t,e),t.is=function(e){return e instanceof t},t}(S),O=function(e){function t(t){var n=e.call(this,t)||this;return n.name="AssertionError",n.message=t+"",n}return n(t,e),t}(Error);function j(e,t){if(!e)throw new O(t=t||"expect "+e+" to be true")}var _={root:["."],cache:!1,extname:"",dynamicPartials:!0,trimTagRight:!1,trimTagLeft:!1,trimOutputRight:!1,trimOutputLeft:!1,greedy:!0,tagDelimiterLeft:"{%",tagDelimiterRight:"%}",outputDelimiterLeft:"{{",outputDelimiterRight:"}}",strictFilters:!1,strictVariables:!1};function x(e){return(e=e||{}).hasOwnProperty("root")&&(e.root=E(e.root)),e}function C(e){return r({},_,e)}function E(e){return v(e)?e:d(e)?[e]:[]}var P=function(){function e(e,t,n){void 0===e&&(e={}),void 0===n&&(n=!1),this.scopes=[{}],this.registers={},this.sync=n,this.opts=C(t),this.environments=e}return e.prototype.getRegister=function(e,t){return void 0===t&&(t={}),this.registers[e]=this.registers[e]||t},e.prototype.setRegister=function(e,t){return this.registers[e]=t},e.prototype.getAll=function(){return u([this.environments],this.scopes).reduce((function(e,t){return r(e,t)}),{})},e.prototype.get=function(e){var t,n,r=this.parseProp(e),i=this.findScope(r[0])||this.environments;try{for(var a=o(r),s=a.next();!s.done;s=a.next()){var u=s.value;if(m(i=F(i,u))&&this.opts.strictVariables)throw new TypeError("undefined variable: "+u)}}catch(e){t={error:e}}finally{try{s&&!s.done&&(n=a.return)&&n.call(a)}finally{if(t)throw t.error}}return i},e.prototype.push=function(e){return this.scopes.push(e)},e.prototype.pop=function(){return this.scopes.pop()},e.prototype.front=function(){return this.scopes[0]},e.prototype.findScope=function(e){for(var t=this.scopes.length-1;t>=0;t--){var n=this.scopes[t];if(e in n)return n}return null},e.prototype.parseProp=function(e){e=String(e);for(var t,n=[],r="",i=0;i<e.length;)switch(e[i]){case"[":o();var a=e[i+1];/['"]/.test(a)?(j(-1!==(t=e.indexOf(a,i+2)),"unbalanced "+a+": "+e),r=e.slice(i+2,t),o(),i=t+2):(j(-1!==(t=N(e,i+1)),"unbalanced []: "+e),r=e.slice(i+1,t),/^[+-]?\d+$/.test(r)||(r=String(this.get(r))),o(),i=t+1);break;case".":o(),i++;break;default:r+=e[i++]}if(o(),!n.length)throw new TypeError('invalid path:"'+e+'"');return n;function o(){r.length&&n.push(r),r=""}},e}();function F(e,t){return m(e)?e:(e=function e(t){return t&&f(t.toLiquid)?e(t.toLiquid()):t}(e))instanceof l?f(e[t])?e[t]():e.hasOwnProperty(t)?e[t]:e.liquidMethodMissing(t):"size"===t?function(e){return v(e)||d(e)?e.length:e.size}(e):"first"===t?function(e){return v(e)?e[0]:e.first}(e):"last"===t?function(e){return v(e)?e[e.length-1]:e.last}(e):e[t]}function N(e,t){for(var n=1,r=t;r<e.length;r++)if("["===e[r]&&n++,"]"===e[r]&&0==--n)return r;return-1}var L={readFile:function(e){return i(this,void 0,void 0,(function(){return a(this,(function(t){return[2,new Promise((function(t,n){var r=new XMLHttpRequest;r.onload=function(){r.status>=200&&r.status<300?t(r.responseText):n(new Error(r.statusText))},r.onerror=function(){n(new Error("An error occurred whilst receiving the response."))},r.open("GET",e),r.send()}))]}))}))},resolve:function(e,t,n){return e.length&&"/"!==b(e)&&(e+="/"),function(e,t){var n=document.createElement("base");n.href=e;var r=document.getElementsByTagName("head")[0];r.insertBefore(n,r.firstChild);var i=document.createElement("a");i.href=t;var a=i.href;return r.removeChild(n),a}(e,t).replace(/^(\w+:\/\/[^/]+)(\/[^?]+)/,(function(e,t,r){var i=r.split("/").pop();return/\.\w+$/.test(i)?e:t+r+n}))},exists:function(){return i(this,void 0,void 0,(function(){return a(this,(function(e){return[2,!0]}))}))},existsSync:function(){return!0},readFileSync:function(e){var t=new XMLHttpRequest;if(t.open("GET",e,!1),t.send(),t.status<200||t.status>=300)throw new Error(t.statusText);return t.responseText}},J=function(e,t,n,r,i){this.trimLeft=!1,this.trimRight=!1,this.type="notset",this.col=r,this.line=n,this.raw=e,this.value=e,this.input=t,this.file=i},z=function(e){function t(t,n,r,i,a,o,s,u){var l=e.call(this,t,r,i,a,u)||this,c="-"===n[0],d="-"===b(n);return l.value=n.slice(c?1:0,d?-1:n.length).trim(),l.trimLeft=c||o,l.trimRight=d||s,l}return n(t,e),t}(J),I=new RegExp(/'[^']*'/.source+"|"+/"[^"]*"/.source),R=/[+-]?(?:\d+\.?\d*|\.?\d+)/,q=/[\w-]+[?]?/,H=new RegExp("\\[(?:"+I.source+"|[\\w-\\.]+)\\]"),W=new RegExp("(?:"+I.source+"|"+/true|false/.source+"|"+R.source+")"),B=new RegExp(q.source+"(?:\\."+q.source+"|"+H.source+")*"),Y=new RegExp("(?:"+B.source+"|"+R.source+")"),K=new RegExp("\\("+Y.source+"\\.\\."+Y.source+"\\)"),V=new RegExp("\\(("+Y.source+")\\.\\.("+Y.source+")\\)"),G=new RegExp("(?:"+B.source+"|"+W.source+"|"+K.source+")"),U=new RegExp("(?:"+q.source+")\\s*:\\s*(?:"+G.source+")"),Q=new RegExp("("+q.source+")\\s*:\\s*("+G.source+")","g"),$=new RegExp("^\\s*("+q.source+")\\s*([\\s\\S]*?)\\s*$"),Z=new RegExp("^"+I.source+"$"),X=new RegExp("^"+V.source+"$"),ee=function(e){function t(t,n,r,i,a,o,s){var u=e.call(this,t,n,r,i,a,o.trimTagLeft,o.trimTagRight,s)||this;u.type="tag";var l=u.value.match($);if(!l)throw new D("illegal tag syntax",u);return u.name=l[1],u.args=l[2],u}return n(t,e),t.is=function(e){return"tag"===e.type},t}(z),te=function(e){function t(t,n,r,i,a){var o=e.call(this,t,n,r,i,a)||this;return o.type="html",o.value=t,o}return n(t,e),t.is=function(e){return"html"===e.type},t}(J);function ne(e,t){if(e&&te.is(e)){var n=t?/\s+$/g:/[\t\r ]*$/g;e.value=e.value.replace(n,"")}}function re(e,t){if(e&&te.is(e)){var n=t?/^\s+/g:/^[\t\r ]*\n?/g;e.value=e.value.replace(n,"")}}var ie,ae=function(e){function t(t,n,r,i,a,o,s){var u=e.call(this,t,n,r,i,a,o.trimOutputLeft,o.trimOutputRight,s)||this;return u.type="output",u}return n(t,e),t.is=function(e){return"output"===e.type},t}(z);function oe(e){return e}!function(e){e[e.HTML=0]="HTML",e[e.OUTPUT=1]="OUTPUT",e[e.TAG=2]="TAG"}(ie||(ie={}));var se=function(){function e(e){this.options=C(e)}return e.prototype.tokenize=function(e,t){for(var n=[],i=this.options,a=i.tagDelimiterLeft,o=i.tagDelimiterRight,s=i.outputDelimiterLeft,u=i.outputDelimiterRight,l=0,c=1,d=ie.HTML,f="",h=0,p=1,g=1;l<e.length;){if("\n"===e[l]&&(c++,h=l+1),d===ie.HTML){if(e.substr(l,s.length)===s){f&&n.push(new te(oe(f),e,p,g,t)),f=s,p=c,g=l-h+1,l+=s.length,d=ie.OUTPUT;continue}if(e.substr(l,a.length)===a){f&&n.push(new te(oe(f),e,p,g,t)),f=a,p=c,g=l-h+1,l+=a.length,d=ie.TAG;continue}}else{if(d===ie.OUTPUT&&e.substr(l,u.length)===u){f+=u,n.push(new ae(oe(f),f.slice(s.length,-u.length),e,p,g,this.options,t)),f="",p=c,g=(l+=u.length)-h+1,d=ie.HTML;continue}if(e.substr(l,o.length)===o){f+=o,n.push(new ee(oe(f),f.slice(a.length,-o.length),e,p,g,this.options,t)),f="",p=c,g=(l+=o.length)-h+1,d=ie.HTML;continue}}f+=e[l++]}if(d!==ie.HTML){var m=d===ie.OUTPUT?"output":"tag",v=f.length>16?f.slice(0,13)+"...":f;throw new D(m+' "'+v+'" not closed',new J(oe(f),e,p,g,t))}return f&&n.push(new te(oe(f),e,p,g,t)),function(e,t){t=r({greedy:!0},t);for(var n=!1,i=0;i<e.length;i++){var a=e[i];!n&&a.trimLeft&&ne(e[i-1],t.greedy),ee.is(a)&&("raw"===a.name?n=!0:"endraw"===a.name&&(n=!1)),!n&&a.trimRight&&re(e[i+1],t.greedy)}}(n,this.options),n},e}(),ue=function(){function e(){this.html="",this.break=!1,this.continue=!1}return e.prototype.write=function(e){this.html+=e},e}(),le=function(){function e(){}return e.prototype.renderTemplates=function(e,t,n){var r,i,s,u,l,c,d,f;return void 0===n&&(n=new ue),a(this,(function(a){switch(a.label){case 0:a.trys.push([0,7,8,9]),r=o(e),i=r.next(),a.label=1;case 1:if(i.done)return[3,6];s=i.value,a.label=2;case 2:return a.trys.push([2,4,,5]),[4,s.render(t,n)];case 3:return(u=a.sent())&&n.write(u),n.break||n.continue?[3,6]:[3,5];case 4:throw l=a.sent(),A.is(l)?l:new A(l,s);case 5:return i=r.next(),[3,1];case 6:return[3,9];case 7:return c=a.sent(),d={error:c},[3,9];case 8:try{i&&!i.done&&(f=r.return)&&f.call(r)}finally{if(d)throw d.error}return[7];case 9:return[2,n.html]}}))},e}(),ce=function(e){this.token=e},de=function(e){function t(){return null!==e&&e.apply(this,arguments)||this}return n(t,e),t.prototype.equals=function(e){return d(e)||v(e)?0===e.length:!!y(e)&&0===Object.keys(e).length},t.prototype.gt=function(){return!1},t.prototype.geq=function(){return!1},t.prototype.lt=function(){return!1},t.prototype.leq=function(){return!1},t.prototype.valueOf=function(){return""},t}(l),fe=function(e){function t(){return null!==e&&e.apply(this,arguments)||this}return n(t,e),t.prototype.equals=function(t){return!1===t||!!m(p(t))||(d(t)?/^\s*$/.test(t):e.prototype.equals.call(this,t))},t}(de),he=function(e){function t(){return null!==e&&e.apply(this,arguments)||this}return n(t,e),t.prototype.equals=function(e){return m(p(e))||e instanceof fe},t.prototype.gt=function(){return!1},t.prototype.geq=function(){return!1},t.prototype.lt=function(){return!1},t.prototype.leq=function(){return!1},t.prototype.valueOf=function(){return null},t}(l),pe=function(){function e(e){this.str=e}return e.prototype.evaluate=function(e){var t=function(e){return"true"===(e=e.trim())||"false"!==e&&("nil"===e||"null"===e?new he:"empty"===e?new de:"blank"===e?new fe:isNaN(Number(e))?'"'!==e[0]&&"'"!==e[0]||e[0]!==b(e)?void 0:e.slice(1,-1):Number(e))}(this.str);return void 0!==t?t:e.get(this.str)},e.prototype.value=function(e){return p(this.evaluate(e))},e}();function ge(e,t){var n,r,i;return a(this,(function(a){switch(a.label){case 0:return(n=e.match(X))?[4,new pe(n[1]).value(t)]:[3,3];case 1:return r=a.sent(),[4,new pe(n[2]).value(t)];case 2:return i=a.sent(),[2,k(+r,+i+1)];case 3:return[2]}}))}function me(e){return e&&f(e.equals)}function ve(e){return!we(e)}function we(e){return!1===e||null==e}var be={"==":1,"!=":1,">":1,"<":1,">=":1,"<=":1,contains:1,and:0,or:0},ye={"==":function(e,t){return me(e)?e.equals(t):me(t)?t.equals(e):e===t},"!=":function(e,t){return me(e)?!e.equals(t):me(t)?!t.equals(e):e!==t},">":function(e,t){return me(e)?e.gt(t):me(t)?t.lt(e):e>t},"<":function(e,t){return me(e)?e.lt(t):me(t)?t.gt(e):e<t},">=":function(e,t){return me(e)?e.geq(t):me(t)?t.leq(e):e>=t},"<=":function(e,t){return me(e)?e.leq(t):me(t)?t.geq(e):e<=t},contains:function(e,t){return!(!e||!f(e.indexOf))&&e.indexOf(t)>-1},and:function(e,t){return ve(e)&&ve(t)},or:function(e,t){return ve(e)||ve(t)}},ke=Object.keys(be);function Me(e){return ke.includes(e)}var Se,De=function(){function e(e){void 0===e&&(e=""),this.operands=[],this.postfix=u(function(e){var t,n,r,i,s,u,l;return a(this,(function(c){switch(c.label){case 0:t=[],c.label=1;case 1:c.trys.push([1,10,11,12]),n=o(function(e){var t,n,r,i,o;return a(this,(function(a){switch(a.label){case 0:t=e.length,n="",r={'"':'"',"'":"'","[":"]","(":")"},i=0,a.label=1;case 1:if(!(i<t))return[3,8];switch(o=e[i]){case"[":case'"':case"'":return[3,2];case" ":case"\t":case"\n":return[3,3]}return[3,6];case 2:for(n+=o;i+1<t&&(n+=e[++i],e[i]!==r[o]););return[3,7];case 3:return n?[4,n]:[3,5];case 4:a.sent(),a.label=5;case 5:return n="",[3,7];case 6:n+=o,a.label=7;case 7:return i++,[3,1];case 8:return n?[4,n]:[3,10];case 9:a.sent(),a.label=10;case 10:return[2]}}))}(e)),r=n.next(),c.label=2;case 2:if(r.done)return[3,9];if(!Me(i=r.value))return[3,6];c.label=3;case 3:return t.length&&be[t[t.length-1]]>be[i]?[4,t.pop()]:[3,5];case 4:return c.sent(),[3,3];case 5:return t.push(i),[3,8];case 6:return[4,i];case 7:c.sent(),c.label=8;case 8:return r=n.next(),[3,2];case 9:return[3,12];case 10:return s=c.sent(),u={error:s},[3,12];case 11:try{r&&!r.done&&(l=n.return)&&l.call(n)}finally{if(u)throw u.error}return[7];case 12:return t.length?[4,t.pop()]:[3,14];case 13:return c.sent(),[3,12];case 14:return[2]}}))}(e))}return e.prototype.evaluate=function(e){var t,n,r,i,s,u,l,c,d,f;return a(this,(function(a){switch(a.label){case 0:j(e,"unable to evaluate: context not defined"),a.label=1;case 1:a.trys.push([1,9,10,11]),t=o(this.postfix),n=t.next(),a.label=2;case 2:return n.done?[3,8]:Me(r=n.value)?(this.evaluateOnce(r),[3,7]):[3,3];case 3:return function(e){return"("===e[0]&&")"===e[e.length-1]}(r)?(s=(i=this.operands).push,[4,ge(r,e)]):[3,5];case 4:return s.apply(i,[a.sent()]),[3,7];case 5:return l=(u=this.operands).push,[4,new pe(r).evaluate(e)];case 6:l.apply(u,[a.sent()]),a.label=7;case 7:return n=t.next(),[3,2];case 8:return[3,11];case 9:return c=a.sent(),d={error:c},[3,11];case 10:try{n&&!n.done&&(f=t.return)&&f.call(t)}finally{if(d)throw d.error}return[7];case 11:return[2,this.operands[0]]}}))},e.prototype.value=function(e){var t;return a(this,(function(n){switch(n.label){case 0:return t=p,[4,this.evaluate(e)];case 1:return[2,t.apply(void 0,[n.sent()])]}}))},e.prototype.evaluateOnce=function(e){var t=this.operands.pop(),n=this.operands.pop(),r=ye[e](n,t);this.operands.push(r)},e}(),Te=function(){function e(e,t){this.handlers={},this.stopRequested=!1,this.tokens=e,this.parseToken=t}return e.prototype.on=function(e,t){return this.handlers[e]=t,this},e.prototype.trigger=function(e,t){var n=this.handlers[e];return!!n&&(n(t),!0)},e.prototype.start=function(){var e;for(this.trigger("start");!this.stopRequested&&(e=this.tokens.shift());)if(!(this.trigger("token",e)||ee.is(e)&&this.trigger("tag:"+e.name,e))){var t=this.parseToken(e,this.tokens);this.trigger("template",t)}return this.stopRequested||this.trigger("end"),this},e.prototype.stop=function(){return this.stopRequested=!0,this},e}(),Ae=function(){function e(){}return e.parse=function(t){var n,r=new e;for(Q.lastIndex=0;n=Q.exec(t);){var i=n[1],a=n[2];r[i]=a}return r},e.create=function(t,n){var r,i,s,u,l,c,d,f,h;return a(this,(function(a){switch(a.label){case 0:r=e.parse(t),a.label=1;case 1:a.trys.push([1,6,7,8]),i=o(Object.keys(r)),s=i.next(),a.label=2;case 2:return s.done?[3,5]:(u=s.value,l=r,c=u,[4,new De(r[u]).evaluate(n)]);case 3:l[c]=a.sent(),a.label=4;case 4:return s=i.next(),[3,2];case 5:return[3,8];case 6:return d=a.sent(),f={error:d},[3,8];case 7:try{s&&!s.done&&(h=i.return)&&h.call(i)}finally{if(f)throw f.error}return[7];case 8:return[2,r]}}))},e}(),Oe=function(e){function t(n,r,i){var a=e.call(this,n)||this;a.name=n.name;var o=t.impls[n.name];return j(o,"tag "+n.name+" not found"),a.impl=Object.create(o),a.impl.liquid=i,a.impl.parse&&a.impl.parse(n,r),a}return n(t,e),t.prototype.render=function(e,t){var n,r;return a(this,(function(i){switch(i.label){case 0:return[4,Ae.create(this.token.args,e)];case 1:return n=i.sent(),f((r=this.impl).render)?[4,r.render(e,n,t)]:[3,3];case 2:return[2,i.sent()];case 3:return[2]}}))},t.register=function(e,n){t.impls[e]=n},t.clear=function(){t.impls={}},t.impls={},t}(ce),je=function(){function e(t,n,r){var i=e.impls[t];if(!i&&r)throw new TypeError("undefined filter: "+t);this.name=t,this.impl=i||function(e){return e},this.args=n}return e.prototype.render=function(e,t){var n,r,i,s,l,c,d,f,h,p,g,m;return a(this,(function(a){switch(a.label){case 0:n=[],a.label=1;case 1:a.trys.push([1,8,9,10]),r=o(this.args),i=r.next(),a.label=2;case 2:return i.done?[3,7]:v(s=i.value)?(c=(l=n).push,d=[s[0]],[4,new De(s[1]).evaluate(t)]):[3,4];case 3:return c.apply(l,[d.concat([a.sent()])]),[3,6];case 4:return h=(f=n).push,[4,new De(s).evaluate(t)];case 5:h.apply(f,[a.sent()]),a.label=6;case 6:return i=r.next(),[3,2];case 7:return[3,10];case 8:return p=a.sent(),g={error:p},[3,10];case 9:try{i&&!i.done&&(m=r.return)&&m.call(r)}finally{if(g)throw g.error}return[7];case 10:return[2,this.impl.apply({context:t},u([e],n))]}}))},e.register=function(t,n){e.impls[t]=n},e.clear=function(){e.impls={}},e.impls={},e}(),_e=function(){function e(t,n){this.filters=[];var r=e.tokenize(t);this.strictFilters=n,this.initial=r[0],this.parseFilters(r,1)}return e.prototype.parseFilters=function(e,t){for(var n=t;n<e.length;)if("|"===e[n]){for(var r=++n;n<e.length&&"|"!==e[n];)n++;this.parseFilter(e,r,n)}else n++},e.prototype.parseFilter=function(e,t,n){for(var r,i,a=e[t],o=[],s=t+1;s<n+1;s++)s===n||","===e[s]?((r||i)&&o.push(r?[r,i]:i),i=r=void 0):":"===e[s]?(r=i,i=void 0):void 0===i&&(i=e[s]);this.filters.push(new je(a,o,this.strictFilters))},e.prototype.value=function(e){var t,n,r,i,s,u;return a(this,(function(a){switch(a.label){case 0:return[4,new De(this.initial).evaluate(e)];case 1:t=a.sent(),a.label=2;case 2:a.trys.push([2,7,8,9]),n=o(this.filters),r=n.next(),a.label=3;case 3:return r.done?[3,6]:[4,r.value.render(t,e)];case 4:t=a.sent(),a.label=5;case 5:return r=n.next(),[3,3];case 6:return[3,9];case 7:return i=a.sent(),s={error:i},[3,9];case 8:try{r&&!r.done&&(u=n.return)&&u.call(n)}finally{if(s)throw s.error}return[7];case 9:return[2,t]}}))},e.tokenize=function(e){for(var t=[],n=0;n<e.length;){var r=e[n];if('"'===r||"'"===r){var i=n;for(n+=2;n<e.length&&e[n-1]!==r;++n);t.push(e.slice(i,n))}else if(/\s/.test(r))n++;else if(/[|,:]/.test(r))t.push(e[n++]);else{i=n++;for(var a=void 0;n<e.length&&!/[|,:\s]/.test(a=e[n]);++n)if('"'===a||"'"===a)for(n+=2;n<e.length&&e[n-1]!==a;++n);t.push(e.slice(i,n))}}return t},e}(),xe=function(e){function t(t,n){var r=e.call(this,t)||this;return r.value=new _e(t.value,n),r}return n(t,e),t.prototype.render=function(e,t){var n;return a(this,(function(r){switch(r.label){case 0:return[4,this.value.value(e)];case 1:return n=r.sent(),t.write(h(p(n))),[2]}}))},t}(ce),Ce=function(e){function t(t){var n=e.call(this,t)||this;return n.str=t.value,n}return n(t,e),t.prototype.render=function(e,t){return a(this,(function(e){return t.write(this.str),[2]}))},t}(ce),Ee=function(){function e(e){this.liquid=e}return e.prototype.parse=function(e){for(var t,n=[];t=e.shift();)n.push(this.parseToken(t,e));return n},e.prototype.parseToken=function(e,t){try{return ee.is(e)?new Oe(e,t,this.liquid):ae.is(e)?new xe(e,this.liquid.options.strictFilters):new Ce(e)}catch(t){throw new T(t,e)}},e.prototype.parseStream=function(e){var t=this;return new Te(e,(function(e,n){return t.parseToken(e,n)}))},e}(),Pe=new RegExp("("+q.source+")\\s*=([^]*)"),Fe={parse:function(e){var t=e.args.match(Pe);j(t,"illegal token "+e.raw),this.key=t[1],this.value=t[2]},render:function(e){var t,n;return a(this,(function(r){switch(r.label){case 0:return t=e.front(),n=this.key,[4,this.liquid._evalValue(this.value,e)];case 1:return t[n]=r.sent(),[2]}}))}},Ne=function(e){function t(t){var n=e.call(this)||this;return n.i=0,n.length=t,n}return n(t,e),t.prototype.next=function(){this.i++},t.prototype.index0=function(){return this.i},t.prototype.index=function(){return this.i+1},t.prototype.first=function(){return 0===this.i},t.prototype.last=function(){return this.i===this.length-1},t.prototype.rindex=function(){return this.length-this.i},t.prototype.rindex0=function(){return this.length-this.i-1},t.prototype.valueOf=function(){return JSON.stringify(this)},t}(l),Le=new RegExp("^("+q.source+")\\s+in\\s+("+G.source+")(?:\\s+"+U.source+")*(?:\\s+(reversed))?(?:\\s+"+U.source+")*$"),Je={type:"block",parse:function(e,t){var n,r=this,i=Le.exec(e.args);j(i,"illegal tag: "+e.raw),this.variable=i[1],this.collection=i[2],this.reversed=!!i[3],this.templates=[],this.elseTemplates=[];var a=this.liquid.parser.parseStream(t).on("start",(function(){return n=r.templates})).on("tag:else",(function(){return n=r.elseTemplates})).on("tag:endfor",(function(){return a.stop()})).on("template",(function(e){return n.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")}));a.start()},render:function(e,t,n){var r,i,s,u,l,c,f,h,p,g,m;return a(this,(function(a){switch(a.label){case 0:return r=this.liquid.renderer,[4,new De(this.collection).value(e)];case 1:return v(i=a.sent())||(d(i)&&i.length>0?i=[i]:y(i)&&(i=Object.keys(i).map((function(e){return[e,i[e]]})))),v(i)&&i.length?[3,3]:[4,r.renderTemplates(this.elseTemplates,e,n)];case 2:return a.sent(),[2];case 3:s=t.offset||0,u=void 0===t.limit?i.length:t.limit,i=i.slice(s,s+u),this.reversed&&i.reverse(),l={forloop:new Ne(i.length)},e.push(l),a.label=4;case 4:a.trys.push([4,9,10,11]),c=o(i),f=c.next(),a.label=5;case 5:return f.done?[3,8]:(h=f.value,l[this.variable]=h,[4,r.renderTemplates(this.templates,e,n)]);case 6:if(a.sent(),n.break)return n.break=!1,[3,8];n.continue=!1,l.forloop.next(),a.label=7;case 7:return f=c.next(),[3,5];case 8:return[3,11];case 9:return p=a.sent(),g={error:p},[3,11];case 10:try{f&&!f.done&&(m=c.return)&&m.call(c)}finally{if(g)throw g.error}return[7];case 11:return e.pop(),[2]}}))}},ze=new RegExp("("+q.source+")"),Ie={parse:function(e,t){var n=this,r=e.args.match(ze);j(r,e.args+" not valid identifier"),this.variable=r[1],this.templates=[];var i=this.liquid.parser.parseStream(t);i.on("tag:endcapture",(function(){return i.stop()})).on("template",(function(e){return n.templates.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")})),i.start()},render:function(e){var t;return a(this,(function(n){switch(n.label){case 0:return[4,this.liquid.renderer.renderTemplates(this.templates,e)];case 1:return t=n.sent(),e.front()[this.variable]=t,[2]}}))}},Re={parse:function(e,t){var n=this;this.cond=e.args,this.cases=[],this.elseTemplates=[];var r=[],i=this.liquid.parser.parseStream(t).on("tag:when",(function(e){n.cases.push({val:e.args,templates:r=[]})})).on("tag:else",(function(){return r=n.elseTemplates})).on("tag:endcase",(function(){return i.stop()})).on("template",(function(e){return r.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")}));i.start()},render:function(e,t,n){var r,i,o,s,u;return a(this,(function(t){switch(t.label){case 0:r=this.liquid.renderer,i=0,t.label=1;case 1:return i<this.cases.length?(o=this.cases[i],[4,new De(o.val).value(e)]):[3,6];case 2:return s=t.sent(),[4,new De(this.cond).value(e)];case 3:return u=t.sent(),s!==u?[3,5]:[4,r.renderTemplates(o.templates,e,n)];case 4:return t.sent(),[2];case 5:return i++,[3,1];case 6:return[4,r.renderTemplates(this.elseTemplates,e,n)];case 7:return t.sent(),[2]}}))}},qe={parse:function(e,t){var n=this.liquid.parser.parseStream(t);n.on("token",(function(e){"endcomment"===e.name&&n.stop()})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")})),n.start()}};!function(e){e[e.OUTPUT=0]="OUTPUT",e[e.STORE=1]="STORE"}(Se||(Se={}));var He=Se,We=/[^\s,]+/,Be=new RegExp("with\\s+("+G.source+")"),Ye={parse:function(e){var t=We.exec(e.args);t&&(this.staticValue=t[0]),(t=G.exec(e.args))&&(this.value=t[0]),(t=Be.exec(e.args))&&(this.with=t[1])},render:function(e,t,n){var r,i,o,s,u,l,c;return a(this,(function(a){switch(a.label){case 0:return e.opts.dynamicPartials?Z.exec(this.value)?(i=this.value.slice(1,-1),[4,this.liquid._parseAndRender(i,e.getAll(),e.opts,e.sync)]):[3,2]:[3,5];case 1:return r=a.sent(),[3,4];case 2:return[4,new De(this.value).value(e)];case 3:r=a.sent(),a.label=4;case 4:return[3,6];case 5:r=this.staticValue,a.label=6;case 6:return j(r,"cannot include with empty filename"),o=e.getRegister("blocks"),s=e.getRegister("blockMode"),e.setRegister("blocks",{}),e.setRegister("blockMode",He.OUTPUT),this.with?(u=t,l=r,[4,new De(this.with).evaluate(e)]):[3,8];case 7:u[l]=a.sent(),a.label=8;case 8:return[4,this.liquid._parseFile(r,e.opts,e.sync)];case 9:return c=a.sent(),e.push(t),[4,this.liquid.renderer.renderTemplates(c,e,n)];case 10:return a.sent(),e.pop(),e.setRegister("blocks",o),e.setRegister("blockMode",s),[2]}}))}},Ke=/[^\s,]+/,Ve=new RegExp("with\\s+("+G.source+")"),Ge={parse:function(e){var t=Ke.exec(e.args);t&&(this.staticValue=t[0]),(t=G.exec(e.args))&&(this.value=t[0]),(t=Ve.exec(e.args))&&(this.with=t[1])},render:function(e,t,n){var r,i,o,s,u,l,c,d;return a(this,(function(a){switch(a.label){case 0:return e.opts.dynamicPartials?Z.exec(this.value)?(i=this.value.slice(1,-1),[4,this.liquid._parseAndRender(i,e.getAll(),e.opts,e.sync)]):[3,2]:[3,5];case 1:return r=a.sent(),[3,4];case 2:return[4,new De(this.value).value(e)];case 3:r=a.sent(),a.label=4;case 4:return[3,6];case 5:r=this.staticValue,a.label=6;case 6:return j(r,"cannot render with empty filename"),o=e.getRegister("blocks"),s=e.getRegister("blockMode"),(u=new P({},e.opts,e.sync)).setRegister("blocks",{}),u.setRegister("blockMode",He.OUTPUT),this.with?(l=t,c=r,[4,new De(this.with).evaluate(e)]):[3,8];case 7:l[c]=a.sent(),a.label=8;case 8:return u.push(t),[4,this.liquid._parseFile(r,u.opts,u.sync)];case 9:return d=a.sent(),[4,this.liquid.renderer.renderTemplates(d,u,n)];case 10:return a.sent(),u.setRegister("blocks",o),u.setRegister("blockMode",s),[2]}}))}},Ue={parse:function(e){var t=e.args.match(q);j(t,"illegal identifier "+e.args),this.variable=t[0]},render:function(e,t,n){var r=e.environments;g(r[this.variable])||(r[this.variable]=0),n.write(h(--r[this.variable]))}},Qe=new RegExp("^(?:("+G.source+")\\s*:\\s*)?(.*)$"),$e=new RegExp(G.source,"g"),Ze={parse:function(e){var t=Qe.exec(e.args);j(t,"illegal tag: "+e.raw),this.group=new De(t[1]);var n=t[2];for(this.candidates=[];t=$e.exec(n);)this.candidates.push(t[0]);j(this.candidates.length,"empty candidates: "+e.raw)},render:function(e,t,n){var r,i,o,s,u,l;return a(this,(function(t){switch(t.label){case 0:return[4,this.group.value(e)];case 1:return r=t.sent(),i="cycle:"+r+":"+this.candidates.join(","),o=e.getRegister("cycle"),void 0===(s=o[i])&&(s=o[i]=0),u=this.candidates[s],s=(s+1)%this.candidates.length,o[i]=s,[4,new De(u).value(e)];case 2:return l=t.sent(),n.write(l),[2]}}))}},Xe={parse:function(e,t){var n,r=this;this.branches=[],this.elseTemplates=[];var i=this.liquid.parser.parseStream(t).on("start",(function(){return r.branches.push({cond:e.args,templates:n=[]})})).on("tag:elsif",(function(e){r.branches.push({cond:e.args,templates:n=[]})})).on("tag:else",(function(){return n=r.elseTemplates})).on("tag:endif",(function(){return i.stop()})).on("template",(function(e){return n.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")}));i.start()},render:function(e,t,n){var r,i,s,u,l,c,d;return a(this,(function(t){switch(t.label){case 0:r=this.liquid.renderer,t.label=1;case 1:t.trys.push([1,7,8,9]),i=o(this.branches),s=i.next(),t.label=2;case 2:return s.done?[3,6]:(u=s.value,[4,new De(u.cond).value(e)]);case 3:return ve(t.sent())?[4,r.renderTemplates(u.templates,e,n)]:[3,5];case 4:return t.sent(),[2];case 5:return s=i.next(),[3,2];case 6:return[3,9];case 7:return l=t.sent(),c={error:l},[3,9];case 8:try{s&&!s.done&&(d=i.return)&&d.call(i)}finally{if(c)throw c.error}return[7];case 9:return[4,r.renderTemplates(this.elseTemplates,e,n)];case 10:return t.sent(),[2]}}))}},et={parse:function(e){var t=e.args.match(q);j(t,"illegal identifier "+e.args),this.variable=t[0]},render:function(e,t,n){var r=e.environments;g(r[this.variable])||(r[this.variable]=0);var i=r[this.variable];r[this.variable]++,n.write(h(i))}},tt=/\S+/,nt={parse:function(e,t){var n=tt.exec(e.args);n&&(this.staticLayout=n[0]),(n=G.exec(e.args))&&(this.layout=n[0]),this.tpls=this.liquid.parser.parse(t)},render:function(e,t,n){var r,i,o,s,u,l,c;return a(this,(function(a){switch(a.label){case 0:return e.opts.dynamicPartials?[4,new De(this.layout).value(e)]:[3,2];case 1:return i=a.sent(),[3,3];case 2:i=this.staticLayout,a.label=3;case 3:return j(r=i,"cannot apply layout with empty filename"),e.setRegister("blockMode",He.STORE),o=e.getRegister("blocks"),[4,(s=this.liquid.renderer).renderTemplates(this.tpls,e)];case 4:return u=a.sent(),void 0===o[""]&&(o[""]=u),[4,this.liquid._parseFile(r,e.opts,e.sync)];case 5:return l=a.sent(),e.push(t),e.setRegister("blockMode",He.OUTPUT),[4,s.renderTemplates(l,e)];case 6:return c=a.sent(),e.pop(),n.write(c),[2]}}))}},rt={parse:function(e,t){var n=this,r=/\w+/.exec(e.args);this.block=r?r[0]:"",this.tpls=[];var i=this.liquid.parser.parseStream(t).on("tag:endblock",(function(){return i.stop()})).on("template",(function(e){return n.tpls.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")}));i.start()},render:function(e,t,n){var r,i,o,s,u;return a(this,(function(t){switch(t.label){case 0:return r=e.getRegister("blocks"),i=r[this.block],o=this.liquid.renderer,void 0===i?[3,1]:(u=i,[3,3]);case 1:return[4,o.renderTemplates(this.tpls,e)];case 2:u=t.sent(),t.label=3;case 3:return s=u,e.getRegister("blockMode",He.OUTPUT)===He.STORE?(r[this.block]=s,[2]):(n.write(s),[2])}}))}},it={parse:function(e,t){var n=this;this.tokens=[];var r=this.liquid.parser.parseStream(t);r.on("token",(function(e){"endraw"===e.name?r.stop():n.tokens.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")})),r.start()},render:function(){return this.tokens.map((function(e){return e.raw})).join("")}},at=function(e){function t(t,n){var r=e.call(this,t)||this;return r.length=t,r.cols=n,r}return n(t,e),t.prototype.row=function(){return Math.floor(this.i/this.cols)+1},t.prototype.col0=function(){return this.i%this.cols},t.prototype.col=function(){return this.col0()+1},t.prototype.col_first=function(){return 0===this.col0()},t.prototype.col_last=function(){return this.col()===this.cols},t}(Ne),ot=new RegExp("^("+q.source+")\\s+in\\s+("+G.source+")(?:\\s+"+U.source+")*$"),st={assign:Fe,for:Je,capture:Ie,case:Re,comment:qe,include:Ye,render:Ge,decrement:Ue,increment:et,cycle:Ze,if:Xe,layout:nt,block:rt,raw:it,tablerow:{parse:function(e,t){var n,r=this,i=ot.exec(e.args);j(i,"illegal tag: "+e.raw),this.variable=i[1],this.collection=i[2],this.templates=[];var a=this.liquid.parser.parseStream(t).on("start",(function(){return n=r.templates})).on("tag:endtablerow",(function(){return a.stop()})).on("template",(function(e){return n.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")}));a.start()},render:function(e,t,n){var r,i,o,s,u,l,c,d;return a(this,(function(a){switch(a.label){case 0:return[4,new De(this.collection).value(e)];case 1:r=a.sent()||[],i=t.offset||0,o=void 0===t.limit?r.length:t.limit,r=r.slice(i,i+o),s=t.cols||r.length,u=this.liquid.renderer,l=new at(r.length,s),c={tablerowloop:l},e.push(c),d=0,a.label=2;case 2:return d<r.length?(c[this.variable]=r[d],0===l.col0()&&(1!==l.row()&&n.write("</tr>"),n.write('<tr class="row'+l.row()+'">')),n.write('<td class="col'+l.col()+'">'),[4,u.renderTemplates(this.templates,e,n)]):[3,5];case 3:a.sent(),n.write("</td>"),a.label=4;case 4:return d++,l.next(),[3,2];case 5:return r.length&&n.write("</tr>"),e.pop(),[2]}}))}},unless:{parse:function(e,t){var n,r=this;this.templates=[],this.elseTemplates=[];var i=this.liquid.parser.parseStream(t).on("start",(function(){n=r.templates,r.cond=e.args})).on("tag:else",(function(){return n=r.elseTemplates})).on("tag:endunless",(function(){return i.stop()})).on("template",(function(e){return n.push(e)})).on("end",(function(){throw new Error("tag "+e.raw+" not closed")}));i.start()},render:function(e,t,n){var r;return a(this,(function(t){switch(t.label){case 0:return r=this.liquid.renderer,[4,new De(this.cond).value(e)];case 1:return[4,we(t.sent())?r.renderTemplates(this.templates,e,n):r.renderTemplates(this.elseTemplates,e,n)];case 2:return t.sent(),[2]}}))}},break:{render:function(e,t,n){n.break=!0}},continue:{render:function(e,t,n){n.continue=!0}}},ut={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&#34;","'":"&#39;"},lt={"&amp;":"&","&lt;":"<","&gt;":">","&#34;":'"',"&#39;":"'"};function ct(e){return h(e).replace(/&|<|>|"|'/g,(function(e){return ut[e]}))}var dt={escape:ct,escape_once:function(e){return ct(function(e){return String(e).replace(/&(amp|lt|gt|#34|#39);/g,(function(e){return lt[e]}))}(e))},newline_to_br:function(e){return e.replace(/\n/g,"<br />")},strip_html:function(e){return e.replace(/<script.*?<\/script>|<!--.*?-->|<style.*?<\/style>|<.*?>/g,"")}},ft={append:function(e,t){return h(e)+h(t)},prepend:function(e,t){return h(t)+h(e)},capitalize:function(e){return(e=h(e)).charAt(0).toUpperCase()+e.slice(1)},lstrip:function(e){return h(e).replace(/^\s+/,"")},downcase:function(e){return h(e).toLowerCase()},upcase:function(e){return h(e).toUpperCase()},remove:function(e,t){return h(e).split(t).join("")},remove_first:function(e,t){return h(e).replace(t,"")},replace:function(e,t,n){return h(e).split(t).join(n)},replace_first:function(e,t,n){return h(e).replace(t,n)},rstrip:function(e){return h(e).replace(/\s+$/,"")},split:function(e,t){return h(e).split(t)},strip:function(e){return h(e).trim()},strip_newlines:function(e){return h(e).replace(/\n/g,"")},truncate:function(e,t,n){return void 0===t&&(t=50),void 0===n&&(n="..."),(e=h(e)).length<=t?e:e.substr(0,t-n.length)+n},truncatewords:function(e,t,n){void 0===t&&(t=15),void 0===n&&(n="...");var r=e.split(/\s+/),i=r.slice(0,t).join(" ");return r.length>=t&&(i+=n),i}},ht=String.prototype.toLowerCase,pt={abs:function(e){return Math.abs(e)},at_least:function(e,t){return Math.max(e,t)},at_most:function(e,t){return Math.min(e,t)},ceil:function(e){return Math.ceil(e)},divided_by:function(e,t){return e/t},floor:function(e){return Math.floor(e)},minus:function(e,t){return e-t},modulo:function(e,t){return e%t},round:function(e,t){void 0===t&&(t=0);var n=Math.pow(10,t);return Math.round(e*n)/n},plus:function(e,t){return Number(e)+Number(t)},sort_natural:function(e,t){return e&&e.sort?void 0!==t?u(e).sort((function(e,n){return gt(e[t],n[t])})):u(e).sort(gt):[]},times:function(e,t){return e*t}};function gt(e,t){return t?e?(e=ht.call(e))<(t=ht.call(t))?-1:e>t?1:0:1:-1}var mt={url_decode:function(e){return e.split("+").map(decodeURIComponent).join(" ")},url_encode:function(e){return e.split(" ").map(encodeURIComponent).join("+")}},vt={join:function(e,t){return e.join(void 0===t?" ":t)},last:function(e){return v(e)?b(e):""},first:function(e){return v(e)?e[0]:""},map:function(e,t){return e.map((function(e){return e[t]}))},reverse:function(e){return u(e).reverse()},sort:function(e,t){return e.sort(t)},size:function(e){return e&&e.length||0},concat:function(e,t){return Array.prototype.concat.call(e,t)},slice:function(e,t,n){return void 0===n&&(n=1),t=t<0?e.length+t:t,e.slice(t,t+n)},uniq:function(e){var t={};return(e||[]).filter((function(e){return!t.hasOwnProperty(String(e))&&(t[String(e)]=!0,!0)}))},where:function(e,t,n){return e.filter((function(e){return void 0===n?ve(e[t]):e[t]===n}))}},wt=["January","February","March","April","May","June","July","August","September","October","November","December"],bt=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],yt=wt.map(St),kt=bt.map(St),Mt={1:"st",2:"nd",3:"rd",default:"th"};function St(e){return e.slice(0,3)}var Dt={daysInMonth:function(e){return[31,Dt.isLeapYear(e)?29:28,31,30,31,30,31,31,30,31,30,31]},getDayOfYear:function(e){for(var t=0,n=0;n<e.getMonth();++n)t+=Dt.daysInMonth(e)[n];return t+e.getDate()},getWeekOfYear:function(e,t){var n=this.getDayOfYear(e)+(t-e.getDay()),r=7-new Date(e.getFullYear(),0,1).getDay()+t;return M(String(Math.floor((n-r)/7)+1),2,"0")},isLeapYear:function(e){var t=e.getFullYear();return!(0!=(3&t)||!(t%100||t%400==0&&t))},getSuffix:function(e){var t=e.getDate().toString(),n=parseInt(t.slice(-1));return Mt[n]||Mt.default},century:function(e){return parseInt(e.getFullYear().toString().substring(0,2),10)}},Tt={a:function(e){return kt[e.getDay()]},A:function(e){return bt[e.getDay()]},b:function(e){return yt[e.getMonth()]},B:function(e){return wt[e.getMonth()]},c:function(e){return e.toLocaleString()},C:function(e){return Dt.century(e)},d:function(e){return M(e.getDate(),2,"0")},e:function(e){return M(e.getDate(),2)},H:function(e){return M(e.getHours(),2,"0")},I:function(e){return M(String(e.getHours()%12||12),2,"0")},j:function(e){return M(Dt.getDayOfYear(e),3,"0")},k:function(e){return M(e.getHours(),2)},l:function(e){return M(String(e.getHours()%12||12),2)},L:function(e){return M(e.getMilliseconds(),3,"0")},m:function(e){return M(e.getMonth()+1,2,"0")},M:function(e){return M(e.getMinutes(),2,"0")},p:function(e){return e.getHours()<12?"AM":"PM"},P:function(e){return e.getHours()<12?"am":"pm"},q:function(e){return Dt.getSuffix(e)},s:function(e){return Math.round(e.valueOf()/1e3)},S:function(e){return M(e.getSeconds(),2,"0")},u:function(e){return e.getDay()||7},U:function(e){return Dt.getWeekOfYear(e,0)},w:function(e){return e.getDay()},W:function(e){return Dt.getWeekOfYear(e,1)},x:function(e){return e.toLocaleDateString()},X:function(e){return e.toLocaleTimeString()},y:function(e){return e.getFullYear().toString().substring(2,4)},Y:function(e){return e.getFullYear()},z:function(e){var t=e.getTimezoneOffset()/60*100;return(t>0?"-":"+")+M(String(Math.abs(t)),4,"0")},"%":function(){return"%"}};Tt.h=Tt.b,Tt.N=Tt.L;var At=r({},dt,ft,pt,mt,{date:function(e,t){var n=e;return"now"===e?n=new Date:g(e)?n=new Date(1e3*e):d(e)&&(n=/^\d+$/.test(e)?new Date(1e3*+e):new Date(e)),function(e){return e instanceof Date&&!isNaN(e.getTime())}(n)?function(e,t){for(var n="",r=t;;){var i=/%./g,a=i.exec(r);if(!a)return n+r;n+=r.slice(0,i.lastIndex-2),r=r.slice(i.lastIndex);var o=a[0].charAt(1),s=Tt[o];n+=s?s(e):"%"+o}}(n,t):e}},{default:function(e,t){return we(p(e))||""===e?t:e}},vt);function Ot(e){var t={then:function(t){return t(e)},catch:function(){return t}};return t}function jt(e){var t={then:function(n,r){return r?r(e):t},catch:function(t){return t(e)}};return t}function _t(e){return function(e){return e&&f(e.then)}(e)?e:function(e){return e&&f(e.next)&&f(e.throw)&&f(e.return)}(e)?function t(n){var r;try{r=e.next(n)}catch(e){return jt(e)}return r.done?Ot(r.value):_t(r.value).then(t,(function(n){var r;try{r=e.throw(n)}catch(e){return jt(e)}return r.done?Ot(r.value):t(r.value)}))}():Ot(e)}function xt(e){var t;return _t(e).then((function(e){return Ot(t=e)})).catch((function(e){throw e})),t}var Ct=function(){function e(e){var t=this;void 0===e&&(e={}),this.cache={},this.options=C(x(e)),this.parser=new Ee(this),this.renderer=new le,this.tokenizer=new se(this.options),this.fs=e.fs||L,w(st,(function(e,n){return t.registerTag(n,e)})),w(At,(function(e,n){return t.registerFilter(n,e)}))}return e.prototype.parse=function(e,t){var n=this.tokenizer.tokenize(e,t);return this.parser.parse(n)},e.prototype._render=function(e,t,n,i){var a=r({},this.options,x(n)),o=new P(t,a,i);return this.renderer.renderTemplates(e,o)},e.prototype.render=function(e,t,n){return i(this,void 0,void 0,(function(){return a(this,(function(r){return[2,_t(this._render(e,t,n,!1))]}))}))},e.prototype.renderSync=function(e,t,n){return xt(this._render(e,t,n,!0))},e.prototype._parseAndRender=function(e,t,n,r){var i=this.parse(e);return this._render(i,t,n,r)},e.prototype.parseAndRender=function(e,t,n){return i(this,void 0,void 0,(function(){return a(this,(function(r){return[2,_t(this._parseAndRender(e,t,n,!1))]}))}))},e.prototype.parseAndRenderSync=function(e,t,n){return xt(this._parseAndRender(e,t,n,!0))},e.prototype._parseFile=function(e,t,n){var i,s,u,l,c,d,f,h,p,g,m,v,w=this;return a(this,(function(a){switch(a.label){case 0:i=r({},this.options,x(t)),s=i.root.map((function(t){return w.fs.resolve(t,e,i.extname)})),void 0!==L.fallback&&void 0!==(c=L.fallback(e))&&s.push(c),a.label=1;case 1:a.trys.push([1,11,12,13]),u=o(s),l=u.next(),a.label=2;case 2:return l.done?[3,10]:(c=l.value,this.options.cache&&this.cache[c]?[2,this.cache[c]]:n?(d=this.fs.existsSync(c),[3,5]):[3,3]);case 3:return[4,this.fs.exists(c)];case 4:d=a.sent(),a.label=5;case 5:return d?(h=this.parse,n?(p=L.readFileSync(c),[3,8]):[3,6]):[3,9];case 6:return[4,this.fs.readFile(c)];case 7:p=a.sent(),a.label=8;case 8:return f=h.apply(this,[p,c]),[2,this.cache[c]=f];case 9:return l=u.next(),[3,2];case 10:return[3,13];case 11:return g=a.sent(),m={error:g},[3,13];case 12:try{l&&!l.done&&(v=u.return)&&v.call(u)}finally{if(m)throw m.error}return[7];case 13:throw this.lookupError(e,i.root)}}))},e.prototype.parseFile=function(e,t){return i(this,void 0,void 0,(function(){return a(this,(function(n){return[2,_t(this._parseFile(e,t,!1))]}))}))},e.prototype.parseFileSync=function(e,t){return xt(this._parseFile(e,t,!0))},e.prototype.renderFile=function(e,t,n){return i(this,void 0,void 0,(function(){var r;return a(this,(function(i){switch(i.label){case 0:return[4,this.parseFile(e,n)];case 1:return r=i.sent(),[2,this.render(r,t,n)]}}))}))},e.prototype.renderFileSync=function(e,t,n){var r=x(n),i=this.parseFileSync(e,r);return this.renderSync(i,t,n)},e.prototype._evalValue=function(e,t){return new _e(e,this.options.strictFilters).value(t)},e.prototype.evalValue=function(e,t){return i(this,void 0,void 0,(function(){return a(this,(function(n){return[2,_t(this._evalValue(e,t))]}))}))},e.prototype.evalValueSync=function(e,t){return xt(this._evalValue(e,t))},e.prototype.registerFilter=function(e,t){return je.register(e,t)},e.prototype.registerTag=function(e,t){return Oe.register(e,t)},e.prototype.plugin=function(t){return t.call(this,e)},e.prototype.express=function(){var e=this;return function(t,n,r){var i={root:u(E(this.root),e.options.root)};e.renderFile(t,n,i).then((function(e){return r(null,e)}),r)}},e.prototype.lookupError=function(e,t){var n=new Error("ENOENT");return n.message='ENOENT: Failed to lookup "'+e+'" in "'+t+'"',n.code="ENOENT",n},e.prototype.getTemplate=function(e,t){return i(this,void 0,void 0,(function(){return a(this,(function(n){return[2,this.parseFile(e,t)]}))}))},e.prototype.getTemplateSync=function(e,t){return this.parseFileSync(e,t)},e}();e.AssertionError=O,e.Context=P,e.Drop=l,e.Emitter=ue,e.Expression=De,e.Hash=Ae,e.Liquid=Ct,e.ParseError=T,e.ParseStream=Te,e.TagToken=ee,e.Token=J,e.TokenizationError=D,e.isFalsy=we,e.isTruthy=ve,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"j+gB":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"],longhand:["Nedjelja","Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak","Subota"]},months:{shorthand:["Sij","Velj","Ožu","Tra","Svi","Lip","Srp","Kol","Ruj","Lis","Stu","Pro"],longhand:["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpanj","Kolovoz","Rujan","Listopad","Studeni","Prosinac"]},time_24hr:!0};t.l10ns.hr=n;var r=t.l10ns;e.Croatian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},ks2o:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Ned","Pon","Tor","Sre","Čet","Pet","Sob"],longhand:["Nedelja","Ponedeljek","Torek","Sreda","Četrtek","Petek","Sobota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Marec","April","Maj","Junij","Julij","Avgust","September","Oktober","November","December"]},firstDayOfWeek:1,rangeSeparator:" do ",time_24hr:!0,ordinal:function(){return"."}};t.l10ns.sl=n;var r=t.l10ns;e.Slovenian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},mNSI:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekAbbreviation:"v",weekdays:{shorthand:["Sön","Mån","Tis","Ons","Tor","Fre","Lör"],longhand:["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec"],longhand:["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]},time_24hr:!0,ordinal:function(){return"."}};t.l10ns.sv=n;var r=t.l10ns;e.Swedish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},oAMl:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Нд","Пн","Аў","Ср","Чц","Пт","Сб"],longhand:["Нядзеля","Панядзелак","Аўторак","Серада","Чацвер","Пятніца","Субота"]},months:{shorthand:["Сту","Лют","Сак","Кра","Тра","Чэр","Ліп","Жні","Вер","Кас","Ліс","Сне"],longhand:["Студзень","Люты","Сакавік","Красавік","Травень","Чэрвень","Ліпень","Жнівень","Верасень","Кастрычнік","Лістапад","Снежань"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Тыд.",scrollTitle:"Пракруціце для павелічэння",toggleTitle:"Націсніце для пераключэння",amPM:["ДП","ПП"],yearAriaLabel:"Год",time_24hr:!0};t.l10ns.be=n;var r=t.l10ns;e.Belarusian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"p01/":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["კვ","ორ","სა","ოთ","ხუ","პა","შა"],longhand:["კვირა","ორშაბათი","სამშაბათი","ოთხშაბათი","ხუთშაბათი","პარასკევი","შაბათი"]},months:{shorthand:["იან","თებ","მარ","აპრ","მაი","ივნ","ივლ","აგვ","სექ","ოქტ","ნოე","დეკ"],longhand:["იანვარი","თებერვალი","მარტი","აპრილი","მაისი","ივნისი","ივლისი","აგვისტო","სექტემბერი","ოქტომბერი","ნოემბერი","დეკემბერი"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"კვ.",scrollTitle:"დასქროლეთ გასადიდებლად",toggleTitle:"დააკლიკეთ გადართვისთვის",amPM:["AM","PM"],yearAriaLabel:"წელი",time_24hr:!0};t.l10ns.ka=n;var r=t.l10ns;e.Georgian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},rmDh:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Dom","Lun","Mar","Mer","Gio","Ven","Sab"],longhand:["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"]},months:{shorthand:["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"],longhand:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"]},firstDayOfWeek:1,ordinal:function(){return"°"},rangeSeparator:" al ",weekAbbreviation:"Se",scrollTitle:"Scrolla per aumentare",toggleTitle:"Clicca per cambiare",time_24hr:!0};t.l10ns.it=n;var r=t.l10ns;e.Italian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},tXmi:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Nd","Pn","Wt","Śr","Cz","Pt","So"],longhand:["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"]},months:{shorthand:["Sty","Lut","Mar","Kwi","Maj","Cze","Lip","Sie","Wrz","Paź","Lis","Gru"],longhand:["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"]},rangeSeparator:" do ",weekAbbreviation:"tydz.",scrollTitle:"Przewiń, aby zwiększyć",toggleTitle:"Kliknij, aby przełączyć",firstDayOfWeek:1,time_24hr:!0,ordinal:function(){return"."}};t.l10ns.pl=n;var r=t.l10ns;e.Polish=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},uHQq:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Søn","Man","Tir","Ons","Tor","Fre","Lør"],longhand:["Søndag","Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"]},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"Uke",scrollTitle:"Scroll for å endre",toggleTitle:"Klikk for å veksle",time_24hr:!0,ordinal:function(){return"."}};t.l10ns.no=n;var r=t.l10ns;e.Norwegian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},uezu:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={firstDayOfWeek:1,weekdays:{shorthand:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"],longhand:["Nedjelja","Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak","Subota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Mart","April","Maj","Juni","Juli","Avgust","Septembar","Oktobar","Novembar","Decembar"]},time_24hr:!0};t.l10ns.bs=n;var r=t.l10ns;e.Bosnian=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},wGah:function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["ਐਤ","ਸੋਮ","ਮੰਗਲ","ਬੁੱਧ","ਵੀਰ","ਸ਼ੁੱਕਰ","ਸ਼ਨਿੱਚਰ"],longhand:["ਐਤਵਾਰ","ਸੋਮਵਾਰ","ਮੰਗਲਵਾਰ","ਬੁੱਧਵਾਰ","ਵੀਰਵਾਰ","ਸ਼ੁੱਕਰਵਾਰ","ਸ਼ਨਿੱਚਰਵਾਰ"]},months:{shorthand:["ਜਨ","ਫ਼ਰ","ਮਾਰ","ਅਪ੍ਰੈ","ਮਈ","ਜੂਨ","ਜੁਲਾ","ਅਗ","ਸਤੰ","ਅਕ","ਨਵੰ","ਦਸੰ"],longhand:["ਜਨਵਰੀ","ਫ਼ਰਵਰੀ","ਮਾਰਚ","ਅਪ੍ਰੈਲ","ਮਈ","ਜੂਨ","ਜੁਲਾਈ","ਅਗਸਤ","ਸਤੰਬਰ","ਅਕਤੂਬਰ","ਨਵੰਬਰ","ਦਸੰਬਰ"]},time_24hr:!0};t.l10ns.pa=n;var r=t.l10ns;e.Punjabi=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"y/pk":function(e,t,n){!function(e){"use strict";var t=function(){return(t=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var i in t=arguments[n])Object.prototype.hasOwnProperty.call(t,i)&&(e[i]=t[i]);return e}).apply(this,arguments)},n="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},r={weekdays:{shorthand:["أحد","اثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"],longhand:["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"]},months:{shorthand:["1","2","3","4","5","6","7","8","9","10","11","12"],longhand:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"]},rangeSeparator:" - "};n.l10ns.ar=r,n.l10ns;var i="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},a={weekdays:{shorthand:["So","Mo","Di","Mi","Do","Fr","Sa"],longhand:["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"]},months:{shorthand:["Jän","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"],longhand:["Jänner","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]},firstDayOfWeek:1,weekAbbreviation:"KW",rangeSeparator:" bis ",scrollTitle:"Zum Ändern scrollen",toggleTitle:"Zum Umschalten klicken"};i.l10ns.at=a,i.l10ns;var o="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},s={weekdays:{shorthand:["Baz","BzE","ÇAx","Çər","CAx","Cüm","Şən"],longhand:["Bazar","Bazar ertəsi","Çərşənbə axşamı","Çərşənbə","Cümə axşamı","Cümə","Şənbə"]},months:{shorthand:["Yan","Fev","Mar","Apr","May","İyn","İyl","Avq","Sen","Okt","Noy","Dek"],longhand:["Yanvar","Fevral","Mart","Aprel","May","İyun","İyul","Avqust","Sentyabr","Oktyabr","Noyabr","Dekabr"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" - ",weekAbbreviation:"Hf",scrollTitle:"Artırmaq üçün sürüşdürün",toggleTitle:"Aç / Bağla",amPM:["GƏ","GS"],time_24hr:!0};o.l10ns.az=s,o.l10ns;var u="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},l={weekdays:{shorthand:["Нд","Пн","Аў","Ср","Чц","Пт","Сб"],longhand:["Нядзеля","Панядзелак","Аўторак","Серада","Чацвер","Пятніца","Субота"]},months:{shorthand:["Сту","Лют","Сак","Кра","Тра","Чэр","Ліп","Жні","Вер","Кас","Ліс","Сне"],longhand:["Студзень","Люты","Сакавік","Красавік","Травень","Чэрвень","Ліпень","Жнівень","Верасень","Кастрычнік","Лістапад","Снежань"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Тыд.",scrollTitle:"Пракруціце для павелічэння",toggleTitle:"Націсніце для пераключэння",amPM:["ДП","ПП"],yearAriaLabel:"Год",time_24hr:!0};u.l10ns.be=l,u.l10ns;var c="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},d={firstDayOfWeek:1,weekdays:{shorthand:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"],longhand:["Nedjelja","Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak","Subota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Mart","April","Maj","Juni","Juli","Avgust","Septembar","Oktobar","Novembar","Decembar"]},time_24hr:!0};c.l10ns.bs=d,c.l10ns;var f="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},h={weekdays:{shorthand:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Неделя","Понеделник","Вторник","Сряда","Четвъртък","Петък","Събота"]},months:{shorthand:["Яну","Фев","Март","Апр","Май","Юни","Юли","Авг","Сеп","Окт","Ное","Дек"],longhand:["Януари","Февруари","Март","Април","Май","Юни","Юли","Август","Септември","Октомври","Ноември","Декември"]},time_24hr:!0,firstDayOfWeek:1};f.l10ns.bg=h,f.l10ns;var p="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},g={weekdays:{shorthand:["রবি","সোম","মঙ্গল","বুধ","বৃহস্পতি","শুক্র","শনি"],longhand:["রবিবার","সোমবার","মঙ্গলবার","বুধবার","বৃহস্পতিবার","শুক্রবার","শনিবার"]},months:{shorthand:["জানু","ফেব্রু","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগ","সেপ্টে","অক্টো","নভে","ডিসে"],longhand:["জানুয়ারী","ফেব্রুয়ারী","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগস্ট","সেপ্টেম্বর","অক্টোবর","নভেম্বর","ডিসেম্বর"]}};p.l10ns.bn=g,p.l10ns;var m="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},v={weekdays:{shorthand:["Dg","Dl","Dt","Dc","Dj","Dv","Ds"],longhand:["Diumenge","Dilluns","Dimarts","Dimecres","Dijous","Divendres","Dissabte"]},months:{shorthand:["Gen","Febr","Març","Abr","Maig","Juny","Jul","Ag","Set","Oct","Nov","Des"],longhand:["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"]},ordinal:function(e){var t=e%100;if(t>3&&t<21)return"è";switch(t%10){case 1:return"r";case 2:return"n";case 3:return"r";case 4:return"t";default:return"è"}},firstDayOfWeek:1,time_24hr:!0};m.l10ns.cat=v,m.l10ns;var w="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},b={weekdays:{shorthand:["Ne","Po","Út","St","Čt","Pá","So"],longhand:["Neděle","Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota"]},months:{shorthand:["Led","Ún","Bře","Dub","Kvě","Čer","Čvc","Srp","Zář","Říj","Lis","Pro"],longhand:["Leden","Únor","Březen","Duben","Květen","Červen","Červenec","Srpen","Září","Říjen","Listopad","Prosinec"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" do ",weekAbbreviation:"Týd.",scrollTitle:"Rolujte pro změnu",toggleTitle:"Přepnout dopoledne/odpoledne",amPM:["dop.","odp."],yearAriaLabel:"Rok",time_24hr:!0};w.l10ns.cs=b,w.l10ns;var y="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},k={weekdays:{shorthand:["Sul","Llun","Maw","Mer","Iau","Gwe","Sad"],longhand:["Dydd Sul","Dydd Llun","Dydd Mawrth","Dydd Mercher","Dydd Iau","Dydd Gwener","Dydd Sadwrn"]},months:{shorthand:["Ion","Chwef","Maw","Ebr","Mai","Meh","Gorff","Awst","Medi","Hyd","Tach","Rhag"],longhand:["Ionawr","Chwefror","Mawrth","Ebrill","Mai","Mehefin","Gorffennaf","Awst","Medi","Hydref","Tachwedd","Rhagfyr"]},firstDayOfWeek:1,ordinal:function(e){return 1===e?"af":2===e?"ail":3===e||4===e?"ydd":5===e||6===e?"ed":e>=7&&e<=10||12==e||15==e||18==e||20==e?"fed":11==e||13==e||14==e||16==e||17==e||19==e?"eg":e>=21&&e<=39?"ain":""},time_24hr:!0};y.l10ns.cy=k,y.l10ns;var M="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},S={weekdays:{shorthand:["søn","man","tir","ons","tors","fre","lør"],longhand:["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"]},months:{shorthand:["jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"],longhand:["januar","februar","marts","april","maj","juni","juli","august","september","oktober","november","december"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"uge",time_24hr:!0};M.l10ns.da=S,M.l10ns;var D="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},T={weekdays:{shorthand:["So","Mo","Di","Mi","Do","Fr","Sa"],longhand:["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"]},months:{shorthand:["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"],longhand:["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]},firstDayOfWeek:1,weekAbbreviation:"KW",rangeSeparator:" bis ",scrollTitle:"Zum Ändern scrollen",toggleTitle:"Zum Umschalten klicken",time_24hr:!0};D.l10ns.de=T,D.l10ns;var A={weekdays:{shorthand:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],longhand:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},months:{shorthand:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],longhand:["January","February","March","April","May","June","July","August","September","October","November","December"]},daysInMonth:[31,28,31,30,31,30,31,31,30,31,30,31],firstDayOfWeek:0,ordinal:function(e){var t=e%100;if(t>3&&t<21)return"th";switch(t%10){case 1:return"st";case 2:return"nd";case 3:return"rd";default:return"th"}},rangeSeparator:" to ",weekAbbreviation:"Wk",scrollTitle:"Scroll to increment",toggleTitle:"Click to toggle",amPM:["AM","PM"],yearAriaLabel:"Year",hourAriaLabel:"Hour",minuteAriaLabel:"Minute",time_24hr:!1},O="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},j={firstDayOfWeek:1,rangeSeparator:" ĝis ",weekAbbreviation:"Sem",scrollTitle:"Rulumu por pligrandigi la valoron",toggleTitle:"Klaku por ŝalti",weekdays:{shorthand:["Dim","Lun","Mar","Mer","Ĵaŭ","Ven","Sab"],longhand:["dimanĉo","lundo","mardo","merkredo","ĵaŭdo","vendredo","sabato"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aŭg","Sep","Okt","Nov","Dec"],longhand:["januaro","februaro","marto","aprilo","majo","junio","julio","aŭgusto","septembro","oktobro","novembro","decembro"]},ordinal:function(){return"-a"},time_24hr:!0};O.l10ns.eo=j,O.l10ns;var _="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},x={weekdays:{shorthand:["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"],longhand:["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]},months:{shorthand:["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],longhand:["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]},ordinal:function(){return"º"},firstDayOfWeek:1,rangeSeparator:" a ",time_24hr:!0};_.l10ns.es=x,_.l10ns;var C="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},E={weekdays:{shorthand:["P","E","T","K","N","R","L"],longhand:["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"]},months:{shorthand:["Jaan","Veebr","Märts","Apr","Mai","Juuni","Juuli","Aug","Sept","Okt","Nov","Dets"],longhand:["Jaanuar","Veebruar","Märts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"]},firstDayOfWeek:1,ordinal:function(){return"."},weekAbbreviation:"Näd",rangeSeparator:" kuni ",scrollTitle:"Keri, et suurendada",toggleTitle:"Klõpsa, et vahetada",time_24hr:!0};C.l10ns.et=E,C.l10ns;var P="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},F={weekdays:{shorthand:["یک","دو","سه","چهار","پنج","جمعه","شنبه"],longhand:["یک‌شنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنچ‌شنبه","جمعه","شنبه"]},months:{shorthand:["ژانویه","فوریه","مارس","آوریل","مه","ژوئن","ژوئیه","اوت","سپتامبر","اکتبر","نوامبر","دسامبر"],longhand:["ژانویه","فوریه","مارس","آوریل","مه","ژوئن","ژوئیه","اوت","سپتامبر","اکتبر","نوامبر","دسامبر"]},firstDayOfWeek:6,ordinal:function(){return""}};P.l10ns.fa=F,P.l10ns;var N="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},L={firstDayOfWeek:1,weekdays:{shorthand:["Su","Ma","Ti","Ke","To","Pe","La"],longhand:["Sunnuntai","Maanantai","Tiistai","Keskiviikko","Torstai","Perjantai","Lauantai"]},months:{shorthand:["Tammi","Helmi","Maalis","Huhti","Touko","Kesä","Heinä","Elo","Syys","Loka","Marras","Joulu"],longhand:["Tammikuu","Helmikuu","Maaliskuu","Huhtikuu","Toukokuu","Kesäkuu","Heinäkuu","Elokuu","Syyskuu","Lokakuu","Marraskuu","Joulukuu"]},ordinal:function(){return"."},time_24hr:!0};N.l10ns.fi=L,N.l10ns;var J="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},z={weekdays:{shorthand:["Sun","Mán","Týs","Mik","Hós","Frí","Ley"],longhand:["Sunnudagur","Mánadagur","Týsdagur","Mikudagur","Hósdagur","Fríggjadagur","Leygardagur"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","Apríl","Mai","Juni","Juli","August","Septembur","Oktobur","Novembur","Desembur"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"vika",scrollTitle:"Rulla fyri at broyta",toggleTitle:"Trýst fyri at skifta",yearAriaLabel:"Ár",time_24hr:!0};J.l10ns.fo=z,J.l10ns;var I="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},R={firstDayOfWeek:1,weekdays:{shorthand:["dim","lun","mar","mer","jeu","ven","sam"],longhand:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},months:{shorthand:["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"],longhand:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},ordinal:function(e){return e>1?"":"er"},rangeSeparator:" au ",weekAbbreviation:"Sem",scrollTitle:"Défiler pour augmenter la valeur",toggleTitle:"Cliquer pour basculer",time_24hr:!0};I.l10ns.fr=R,I.l10ns;var q="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},H={weekdays:{shorthand:["Κυ","Δε","Τρ","Τε","Πέ","Πα","Σά"],longhand:["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο"]},months:{shorthand:["Ιαν","Φεβ","Μάρ","Απρ","Μάι","Ιού","Ιού","Αύγ","Σεπ","Οκτ","Νοέ","Δεκ"],longhand:["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάιος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"]},firstDayOfWeek:1,ordinal:function(){return""},weekAbbreviation:"Εβδ",rangeSeparator:" έως ",scrollTitle:"Μετακυλήστε για προσαύξηση",toggleTitle:"Κάντε κλικ για αλλαγή",amPM:["ΠΜ","ΜΜ"]};q.l10ns.gr=H,q.l10ns;var W="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},B={weekdays:{shorthand:["א","ב","ג","ד","ה","ו","ש"],longhand:["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"]},months:{shorthand:["ינו׳","פבר׳","מרץ","אפר׳","מאי","יוני","יולי","אוג׳","ספט׳","אוק׳","נוב׳","דצמ׳"],longhand:["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"]},rangeSeparator:" אל ",time_24hr:!0};W.l10ns.he=B,W.l10ns;var Y="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},K={weekdays:{shorthand:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"],longhand:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"]},months:{shorthand:["जन","फर","मार्च","अप्रेल","मई","जून","जूलाई","अग","सित","अक्ट","नव","दि"],longhand:["जनवरी ","फरवरी","मार्च","अप्रेल","मई","जून","जूलाई","अगस्त ","सितम्बर","अक्टूबर","नवम्बर","दिसम्बर"]}};Y.l10ns.hi=K,Y.l10ns;var V="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},G={firstDayOfWeek:1,weekdays:{shorthand:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"],longhand:["Nedjelja","Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak","Subota"]},months:{shorthand:["Sij","Velj","Ožu","Tra","Svi","Lip","Srp","Kol","Ruj","Lis","Stu","Pro"],longhand:["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpanj","Kolovoz","Rujan","Listopad","Studeni","Prosinac"]},time_24hr:!0};V.l10ns.hr=G,V.l10ns;var U="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Q={firstDayOfWeek:1,weekdays:{shorthand:["V","H","K","Sz","Cs","P","Szo"],longhand:["Vasárnap","Hétfő","Kedd","Szerda","Csütörtök","Péntek","Szombat"]},months:{shorthand:["Jan","Feb","Már","Ápr","Máj","Jún","Júl","Aug","Szep","Okt","Nov","Dec"],longhand:["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"]},ordinal:function(){return"."},weekAbbreviation:"Hét",scrollTitle:"Görgessen",toggleTitle:"Kattintson a váltáshoz",rangeSeparator:" - ",time_24hr:!0};U.l10ns.hu=Q,U.l10ns;var $="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Z={weekdays:{shorthand:["Min","Sen","Sel","Rab","Kam","Jum","Sab"],longhand:["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"],longhand:["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"]},firstDayOfWeek:1,ordinal:function(){return""},time_24hr:!0,rangeSeparator:" - "};$.l10ns.id=Z,$.l10ns;var X="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ee={weekdays:{shorthand:["Sun","Mán","Þri","Mið","Fim","Fös","Lau"],longhand:["Sunnudagur","Mánudagur","Þriðjudagur","Miðvikudagur","Fimmtudagur","Föstudagur","Laugardagur"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maí","Jún","Júl","Ágú","Sep","Okt","Nóv","Des"],longhand:["Janúar","Febrúar","Mars","Apríl","Maí","Júní","Júlí","Ágúst","September","Október","Nóvember","Desember"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"vika",yearAriaLabel:"Ár",time_24hr:!0};X.l10ns.is=ee,X.l10ns;var te="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ne={weekdays:{shorthand:["Dom","Lun","Mar","Mer","Gio","Ven","Sab"],longhand:["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"]},months:{shorthand:["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"],longhand:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"]},firstDayOfWeek:1,ordinal:function(){return"°"},rangeSeparator:" al ",weekAbbreviation:"Se",scrollTitle:"Scrolla per aumentare",toggleTitle:"Clicca per cambiare",time_24hr:!0};te.l10ns.it=ne,te.l10ns;var re="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ie={weekdays:{shorthand:["日","月","火","水","木","金","土"],longhand:["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"]},months:{shorthand:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],longhand:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]},time_24hr:!0,rangeSeparator:" から ",firstDayOfWeek:1};re.l10ns.ja=ie,re.l10ns;var ae="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},oe={weekdays:{shorthand:["კვ","ორ","სა","ოთ","ხუ","პა","შა"],longhand:["კვირა","ორშაბათი","სამშაბათი","ოთხშაბათი","ხუთშაბათი","პარასკევი","შაბათი"]},months:{shorthand:["იან","თებ","მარ","აპრ","მაი","ივნ","ივლ","აგვ","სექ","ოქტ","ნოე","დეკ"],longhand:["იანვარი","თებერვალი","მარტი","აპრილი","მაისი","ივნისი","ივლისი","აგვისტო","სექტემბერი","ოქტომბერი","ნოემბერი","დეკემბერი"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"კვ.",scrollTitle:"დასქროლეთ გასადიდებლად",toggleTitle:"დააკლიკეთ გადართვისთვის",amPM:["AM","PM"],yearAriaLabel:"წელი",time_24hr:!0};ae.l10ns.ka=oe,ae.l10ns;var se="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ue={weekdays:{shorthand:["일","월","화","수","목","금","토"],longhand:["일요일","월요일","화요일","수요일","목요일","금요일","토요일"]},months:{shorthand:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],longhand:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]},ordinal:function(){return"일"},rangeSeparator:" ~ "};se.l10ns.ko=ue,se.l10ns;var le="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ce={weekdays:{shorthand:["អាទិត្យ","ចន្ទ","អង្គារ","ពុធ","ព្រហស.","សុក្រ","សៅរ៍"],longhand:["អាទិត្យ","ចន្ទ","អង្គារ","ពុធ","ព្រហស្បតិ៍","សុក្រ","សៅរ៍"]},months:{shorthand:["មករា","កុម្ភះ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"],longhand:["មករា","កុម្ភះ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"]},ordinal:function(){return""},firstDayOfWeek:1,rangeSeparator:" ដល់ ",weekAbbreviation:"សប្តាហ៍",scrollTitle:"រំកិលដើម្បីបង្កើន",toggleTitle:"ចុចដើម្បីផ្លាស់ប្ដូរ",yearAriaLabel:"ឆ្នាំ",time_24hr:!0};le.l10ns.km=ce,le.l10ns;var de="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},fe={weekdays:{shorthand:["Жс","Дс","Сc","Ср","Бс","Жм","Сб"],longhand:["Жексенбi","Дүйсенбi","Сейсенбi","Сәрсенбi","Бейсенбi","Жұма","Сенбi"]},months:{shorthand:["Қаң","Ақп","Нау","Сәу","Мам","Мау","Шiл","Там","Қыр","Қаз","Қар","Жел"],longhand:["Қаңтар","Ақпан","Наурыз","Сәуiр","Мамыр","Маусым","Шiлде","Тамыз","Қыркүйек","Қазан","Қараша","Желтоқсан"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Апта",scrollTitle:"Үлкейту үшін айналдырыңыз",toggleTitle:"Ауыстыру үшін басыңыз",amPM:["ТД","ТК"],yearAriaLabel:"Жыл"};de.l10ns.kz=fe,de.l10ns;var he="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},pe={weekdays:{shorthand:["S","Pr","A","T","K","Pn","Š"],longhand:["Sekmadienis","Pirmadienis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis"]},months:{shorthand:["Sau","Vas","Kov","Bal","Geg","Bir","Lie","Rgp","Rgs","Spl","Lap","Grd"],longhand:["Sausis","Vasaris","Kovas","Balandis","Gegužė","Birželis","Liepa","Rugpjūtis","Rugsėjis","Spalis","Lapkritis","Gruodis"]},firstDayOfWeek:1,ordinal:function(){return"-a"},weekAbbreviation:"Sav",scrollTitle:"Keisti laiką pelės rateliu",toggleTitle:"Perjungti laiko formatą",time_24hr:!0};he.l10ns.lt=pe,he.l10ns;var ge="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},me={firstDayOfWeek:1,weekdays:{shorthand:["Sv","Pr","Ot","Tr","Ce","Pk","Se"],longhand:["Svētdiena","Pirmdiena","Otrdiena","Trešdiena","Ceturtdiena","Piektdiena","Sestdiena"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jūn","Jūl","Aug","Sep","Okt","Nov","Dec"],longhand:["Janvāris","Februāris","Marts","Aprīlis","Maijs","Jūnijs","Jūlijs","Augusts","Septembris","Oktobris","Novembris","Decembris"]},rangeSeparator:" līdz ",time_24hr:!0};ge.l10ns.lv=me,ge.l10ns;var ve="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},we={weekdays:{shorthand:["Не","По","Вт","Ср","Че","Пе","Са"],longhand:["Недела","Понеделник","Вторник","Среда","Четврток","Петок","Сабота"]},months:{shorthand:["Јан","Фев","Мар","Апр","Мај","Јун","Јул","Авг","Сеп","Окт","Ное","Дек"],longhand:["Јануари","Февруари","Март","Април","Мај","Јуни","Јули","Август","Септември","Октомври","Ноември","Декември"]},firstDayOfWeek:1,weekAbbreviation:"Нед.",rangeSeparator:" до ",time_24hr:!0};ve.l10ns.mk=we,ve.l10ns;var be="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ye={firstDayOfWeek:1,weekdays:{shorthand:["Да","Мя","Лх","Пү","Ба","Бя","Ня"],longhand:["Даваа","Мягмар","Лхагва","Пүрэв","Баасан","Бямба","Ням"]},months:{shorthand:["1-р сар","2-р сар","3-р сар","4-р сар","5-р сар","6-р сар","7-р сар","8-р сар","9-р сар","10-р сар","11-р сар","12-р сар"],longhand:["Нэгдүгээр сар","Хоёрдугаар сар","Гуравдугаар сар","Дөрөвдүгээр сар","Тавдугаар сар","Зургаадугаар сар","Долдугаар сар","Наймдугаар сар","Есдүгээр сар","Аравдугаар сар","Арваннэгдүгээр сар","Арванхоёрдугаар сар"]},rangeSeparator:"-с ",time_24hr:!0};be.l10ns.mn=ye,be.l10ns;var ke="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}};ke.l10ns;var Me="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Se={weekdays:{shorthand:["နွေ","လာ","ဂါ","ဟူး","ကြာ","သော","နေ"],longhand:["တနင်္ဂနွေ","တနင်္လာ","အင်္ဂါ","ဗုဒ္ဓဟူး","ကြာသပတေး","သောကြာ","စနေ"]},months:{shorthand:["ဇန်","ဖေ","မတ်","ပြီ","မေ","ဇွန်","လိုင်","သြ","စက်","အောက်","နို","ဒီ"],longhand:["ဇန်နဝါရီ","ဖေဖော်ဝါရီ","မတ်","ဧပြီ","မေ","ဇွန်","ဇူလိုင်","သြဂုတ်","စက်တင်ဘာ","အောက်တိုဘာ","နိုဝင်ဘာ","ဒီဇင်ဘာ"]},firstDayOfWeek:1,ordinal:function(){return""},time_24hr:!0};Me.l10ns.my=Se,Me.l10ns;var De="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Te={weekdays:{shorthand:["zo","ma","di","wo","do","vr","za"],longhand:["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"]},months:{shorthand:["jan","feb","mrt","apr","mei","jun","jul","aug","sept","okt","nov","dec"],longhand:["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"]},firstDayOfWeek:1,weekAbbreviation:"wk",rangeSeparator:" tot ",scrollTitle:"Scroll voor volgende / vorige",toggleTitle:"Klik om te wisselen",time_24hr:!0,ordinal:function(e){return 1===e||8===e||e>=20?"ste":"de"}};De.l10ns.nl=Te,De.l10ns;var Ae="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Oe={weekdays:{shorthand:["Søn","Man","Tir","Ons","Tor","Fre","Lør"],longhand:["Søndag","Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"]},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"Uke",scrollTitle:"Scroll for å endre",toggleTitle:"Klikk for å veksle",time_24hr:!0,ordinal:function(){return"."}};Ae.l10ns.no=Oe,Ae.l10ns;var je="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},_e={weekdays:{shorthand:["ਐਤ","ਸੋਮ","ਮੰਗਲ","ਬੁੱਧ","ਵੀਰ","ਸ਼ੁੱਕਰ","ਸ਼ਨਿੱਚਰ"],longhand:["ਐਤਵਾਰ","ਸੋਮਵਾਰ","ਮੰਗਲਵਾਰ","ਬੁੱਧਵਾਰ","ਵੀਰਵਾਰ","ਸ਼ੁੱਕਰਵਾਰ","ਸ਼ਨਿੱਚਰਵਾਰ"]},months:{shorthand:["ਜਨ","ਫ਼ਰ","ਮਾਰ","ਅਪ੍ਰੈ","ਮਈ","ਜੂਨ","ਜੁਲਾ","ਅਗ","ਸਤੰ","ਅਕ","ਨਵੰ","ਦਸੰ"],longhand:["ਜਨਵਰੀ","ਫ਼ਰਵਰੀ","ਮਾਰਚ","ਅਪ੍ਰੈਲ","ਮਈ","ਜੂਨ","ਜੁਲਾਈ","ਅਗਸਤ","ਸਤੰਬਰ","ਅਕਤੂਬਰ","ਨਵੰਬਰ","ਦਸੰਬਰ"]},time_24hr:!0};je.l10ns.pa=_e,je.l10ns;var xe="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ce={weekdays:{shorthand:["Nd","Pn","Wt","Śr","Cz","Pt","So"],longhand:["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"]},months:{shorthand:["Sty","Lut","Mar","Kwi","Maj","Cze","Lip","Sie","Wrz","Paź","Lis","Gru"],longhand:["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"]},rangeSeparator:" do ",weekAbbreviation:"tydz.",scrollTitle:"Przewiń, aby zwiększyć",toggleTitle:"Kliknij, aby przełączyć",firstDayOfWeek:1,time_24hr:!0,ordinal:function(){return"."}};xe.l10ns.pl=Ce,xe.l10ns;var Ee="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Pe={weekdays:{shorthand:["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],longhand:["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"]},months:{shorthand:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],longhand:["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]},rangeSeparator:" até ",time_24hr:!0};Ee.l10ns.pt=Pe,Ee.l10ns;var Fe="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ne={weekdays:{shorthand:["Dum","Lun","Mar","Mie","Joi","Vin","Sâm"],longhand:["Duminică","Luni","Marți","Miercuri","Joi","Vineri","Sâmbătă"]},months:{shorthand:["Ian","Feb","Mar","Apr","Mai","Iun","Iul","Aug","Sep","Oct","Noi","Dec"],longhand:["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"]},firstDayOfWeek:1,time_24hr:!0,ordinal:function(){return""}};Fe.l10ns.ro=Ne,Fe.l10ns;var Le="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Je={weekdays:{shorthand:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"]},months:{shorthand:["Янв","Фев","Март","Апр","Май","Июнь","Июль","Авг","Сен","Окт","Ноя","Дек"],longhand:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Нед.",scrollTitle:"Прокрутите для увеличения",toggleTitle:"Нажмите для переключения",amPM:["ДП","ПП"],yearAriaLabel:"Год",time_24hr:!0};Le.l10ns.ru=Je,Le.l10ns;var ze="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ie={weekdays:{shorthand:["ඉ","ස","අ","බ","බ්‍ර","සි","සෙ"],longhand:["ඉරිදා","සඳුදා","අඟහරුවාදා","බදාදා","බ්‍රහස්පතින්දා","සිකුරාදා","සෙනසුරාදා"]},months:{shorthand:["ජන","පෙබ","මාර්","අප්‍රේ","මැයි","ජුනි","ජූලි","අගෝ","සැප්","ඔක්","නොවැ","දෙසැ"],longhand:["ජනවාරි","පෙබරවාරි","මාර්තු","අප්‍රේල්","මැයි","ජුනි","ජූලි","අගෝස්තු","සැප්තැම්බර්","ඔක්තෝබර්","නොවැම්බර්","දෙසැම්බර්"]},time_24hr:!0};ze.l10ns.si=Ie,ze.l10ns;var Re="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},qe={weekdays:{shorthand:["Ned","Pon","Ut","Str","Štv","Pia","Sob"],longhand:["Nedeľa","Pondelok","Utorok","Streda","Štvrtok","Piatok","Sobota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Máj","Jún","Júl","Aug","Sep","Okt","Nov","Dec"],longhand:["Január","Február","Marec","Apríl","Máj","Jún","Júl","August","September","Október","November","December"]},firstDayOfWeek:1,rangeSeparator:" do ",time_24hr:!0,ordinal:function(){return"."}};Re.l10ns.sk=qe,Re.l10ns;var He="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},We={weekdays:{shorthand:["Ned","Pon","Tor","Sre","Čet","Pet","Sob"],longhand:["Nedelja","Ponedeljek","Torek","Sreda","Četrtek","Petek","Sobota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Marec","April","Maj","Junij","Julij","Avgust","September","Oktober","November","December"]},firstDayOfWeek:1,rangeSeparator:" do ",time_24hr:!0,ordinal:function(){return"."}};He.l10ns.sl=We,He.l10ns;var Be="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ye={weekdays:{shorthand:["Di","Hë","Ma","Më","En","Pr","Sh"],longhand:["E Diel","E Hënë","E Martë","E Mërkurë","E Enjte","E Premte","E Shtunë"]},months:{shorthand:["Jan","Shk","Mar","Pri","Maj","Qer","Kor","Gus","Sht","Tet","Nën","Dhj"],longhand:["Janar","Shkurt","Mars","Prill","Maj","Qershor","Korrik","Gusht","Shtator","Tetor","Nëntor","Dhjetor"]},time_24hr:!0};Be.l10ns.sq=Ye,Be.l10ns;var Ke="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ve={weekdays:{shorthand:["Ned","Pon","Uto","Sre","Čet","Pet","Sub"],longhand:["Nedelja","Ponedeljak","Utorak","Sreda","Četvrtak","Petak","Subota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Mart","April","Maj","Jun","Jul","Avgust","Septembar","Oktobar","Novembar","Decembar"]},firstDayOfWeek:1,weekAbbreviation:"Ned.",rangeSeparator:" do ",time_24hr:!0};Ke.l10ns.sr=Ve,Ke.l10ns;var Ge="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ue={firstDayOfWeek:1,weekAbbreviation:"v",weekdays:{shorthand:["Sön","Mån","Tis","Ons","Tor","Fre","Lör"],longhand:["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec"],longhand:["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]},time_24hr:!0,ordinal:function(){return"."}};Ge.l10ns.sv=Ue,Ge.l10ns;var Qe="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},$e={weekdays:{shorthand:["อา","จ","อ","พ","พฤ","ศ","ส"],longhand:["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"]},months:{shorthand:["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."],longhand:["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"]},firstDayOfWeek:1,rangeSeparator:" ถึง ",scrollTitle:"เลื่อนเพื่อเพิ่มหรือลด",toggleTitle:"คลิกเพื่อเปลี่ยน",time_24hr:!0,ordinal:function(){return""}};Qe.l10ns.th=$e,Qe.l10ns;var Ze="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Xe={weekdays:{shorthand:["Paz","Pzt","Sal","Çar","Per","Cum","Cmt"],longhand:["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]},months:{shorthand:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"],longhand:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" - ",weekAbbreviation:"Hf",scrollTitle:"Artırmak için kaydırın",toggleTitle:"Aç/Kapa",amPM:["ÖÖ","ÖS"],time_24hr:!0};Ze.l10ns.tr=Xe,Ze.l10ns;var et="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},tt={firstDayOfWeek:1,weekdays:{shorthand:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Неділя","Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"]},months:{shorthand:["Січ","Лют","Бер","Кві","Тра","Чер","Лип","Сер","Вер","Жов","Лис","Гру"],longhand:["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"]},time_24hr:!0};et.l10ns.uk=tt,et.l10ns;var nt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},rt={weekdays:{shorthand:["CN","T2","T3","T4","T5","T6","T7"],longhand:["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"]},months:{shorthand:["Th1","Th2","Th3","Th4","Th5","Th6","Th7","Th8","Th9","Th10","Th11","Th12"],longhand:["Tháng một","Tháng hai","Tháng ba","Tháng tư","Tháng năm","Tháng sáu","Tháng bảy","Tháng tám","Tháng chín","Tháng mười","Tháng 11","Tháng 12"]},firstDayOfWeek:1,rangeSeparator:" đến "};nt.l10ns.vn=rt,nt.l10ns;var it="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},at={weekdays:{shorthand:["周日","周一","周二","周三","周四","周五","周六"],longhand:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]},months:{shorthand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],longhand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},rangeSeparator:" 至 ",weekAbbreviation:"周",scrollTitle:"滚动切换",toggleTitle:"点击切换 12/24 小时时制"};it.l10ns.zh=at,it.l10ns;var ot="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},st={weekdays:{shorthand:["週日","週一","週二","週三","週四","週五","週六"],longhand:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]},months:{shorthand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],longhand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},rangeSeparator:" 至 ",weekAbbreviation:"週",scrollTitle:"滾動切換",toggleTitle:"點擊切換 12/24 小時時制"};ot.l10ns.zh_tw=st,ot.l10ns;var ut={ar:r,at:a,az:s,be:l,bg:h,bn:g,bs:d,cat:v,cs:b,cy:k,da:S,de:T,default:t({},A),en:A,eo:j,es:x,et:E,fa:F,fi:L,fo:z,fr:R,gr:H,he:B,hi:K,hr:G,hu:Q,id:Z,is:ee,it:ne,ja:ie,ka:oe,ko:ue,km:ce,kz:fe,lt:pe,lv:me,mk:we,mn:ye,ms:{weekdays:{shorthand:["Min","Isn","Sel","Rab","Kha","Jum","Sab"],longhand:["Minggu","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"]},months:{shorthand:["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogo","Sep","Okt","Nov","Dis"],longhand:["Januari","Februari","Mac","April","Mei","Jun","Julai","Ogos","September","Oktober","November","Disember"]},firstDayOfWeek:1,ordinal:function(){return""}},my:Se,nl:Te,no:Oe,pa:_e,pl:Ce,pt:Pe,ro:Ne,ru:Je,si:Ie,sk:qe,sl:We,sq:Ye,sr:Ve,sv:Ue,th:$e,tr:Xe,uk:tt,vn:rt,zh:at,zh_tw:st};e.default=ut,Object.defineProperty(e,"__esModule",{value:!0})}(t)},"yAt/":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["CN","T2","T3","T4","T5","T6","T7"],longhand:["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"]},months:{shorthand:["Th1","Th2","Th3","Th4","Th5","Th6","Th7","Th8","Th9","Th10","Th11","Th12"],longhand:["Tháng một","Tháng hai","Tháng ba","Tháng tư","Tháng năm","Tháng sáu","Tháng bảy","Tháng tám","Tháng chín","Tháng mười","Tháng 11","Tháng 12"]},firstDayOfWeek:1,rangeSeparator:" đến "};t.l10ns.vn=n;var r=t.l10ns;e.Vietnamese=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},yLpj:function(e,t){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(e){"object"==typeof window&&(n=window)}e.exports=n},"z+zT":function(e,t,n){!function(e){"use strict";var t="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},n={weekdays:{shorthand:["Нед","Пон","Уто","Сре","Чет","Пет","Суб"],longhand:["Недеља","Понедељак","Уторак","Среда","Четвртак","Петак","Субота"]},months:{shorthand:["Јан","Феб","Мар","Апр","Мај","Јун","Јул","Авг","Сеп","Окт","Нов","Дец"],longhand:["Јануар","Фебруар","Март","Април","Мај","Јун","Јул","Август","Септембар","Октобар","Новембар","Децембар"]},firstDayOfWeek:1,weekAbbreviation:"Нед.",rangeSeparator:" до "};t.l10ns.sr=n;var r=t.l10ns;e.SerbianCyrillic=n,e.default=r,Object.defineProperty(e,"__esModule",{value:!0})}(t)},zwY0:function(e,t,n){e.exports=function(){"use strict";var e=function(){return(e=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var i in t=arguments[n])Object.prototype.hasOwnProperty.call(t,i)&&(e[i]=t[i]);return e}).apply(this,arguments)},t=["onChange","onClose","onDayCreate","onDestroy","onKeyDown","onMonthChange","onOpen","onParseConfig","onReady","onValueUpdate","onYearChange","onPreCalendarPosition"],n={_disable:[],_enable:[],allowInput:!1,altFormat:"F j, Y",altInput:!1,altInputClass:"form-control input",animate:"object"==typeof window&&-1===window.navigator.userAgent.indexOf("MSIE"),ariaDateFormat:"F j, Y",clickOpens:!0,closeOnSelect:!0,conjunction:", ",dateFormat:"Y-m-d",defaultHour:12,defaultMinute:0,defaultSeconds:0,disable:[],disableMobile:!1,enable:[],enableSeconds:!1,enableTime:!1,errorHandler:function(e){return"undefined"!=typeof console&&console.warn(e)},getWeek:function(e){var t=new Date(e.getTime());t.setHours(0,0,0,0),t.setDate(t.getDate()+3-(t.getDay()+6)%7);var n=new Date(t.getFullYear(),0,4);return 1+Math.round(((t.getTime()-n.getTime())/864e5-3+(n.getDay()+6)%7)/7)},hourIncrement:1,ignoredFocusElements:[],inline:!1,locale:"default",minuteIncrement:5,mode:"single",monthSelectorType:"dropdown",nextArrow:"<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z' /></svg>",noCalendar:!1,now:new Date,onChange:[],onClose:[],onDayCreate:[],onDestroy:[],onKeyDown:[],onMonthChange:[],onOpen:[],onParseConfig:[],onReady:[],onValueUpdate:[],onYearChange:[],onPreCalendarPosition:[],plugins:[],position:"auto",positionElement:void 0,prevArrow:"<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z' /></svg>",shorthandCurrentMonth:!1,showMonths:1,static:!1,time_24hr:!1,weekNumbers:!1,wrap:!1},r={weekdays:{shorthand:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],longhand:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},months:{shorthand:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],longhand:["January","February","March","April","May","June","July","August","September","October","November","December"]},daysInMonth:[31,28,31,30,31,30,31,31,30,31,30,31],firstDayOfWeek:0,ordinal:function(e){var t=e%100;if(t>3&&t<21)return"th";switch(t%10){case 1:return"st";case 2:return"nd";case 3:return"rd";default:return"th"}},rangeSeparator:" to ",weekAbbreviation:"Wk",scrollTitle:"Scroll to increment",toggleTitle:"Click to toggle",amPM:["AM","PM"],yearAriaLabel:"Year",hourAriaLabel:"Hour",minuteAriaLabel:"Minute",time_24hr:!1},i=function(e){return("0"+e).slice(-2)},a=function(e){return!0===e?1:0};function o(e,t,n){var r;return void 0===n&&(n=!1),function(){var i=this,a=arguments;null!==r&&clearTimeout(r),r=window.setTimeout((function(){r=null,n||e.apply(i,a)}),t),n&&!r&&e.apply(i,a)}}var s=function(e){return e instanceof Array?e:[e]};function u(e,t,n){if(!0===n)return e.classList.add(t);e.classList.remove(t)}function l(e,t,n){var r=window.document.createElement(e);return t=t||"",n=n||"",r.className=t,void 0!==n&&(r.textContent=n),r}function c(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function d(e,t){var n=l("div","numInputWrapper"),r=l("input","numInput "+e),i=l("span","arrowUp"),a=l("span","arrowDown");if(-1===navigator.userAgent.indexOf("MSIE 9.0")?r.type="number":(r.type="text",r.pattern="\\d*"),void 0!==t)for(var o in t)r.setAttribute(o,t[o]);return n.appendChild(r),n.appendChild(i),n.appendChild(a),n}var f=function(){},h=function(e,t,n){return n.months[t?"shorthand":"longhand"][e]},p={D:f,F:function(e,t,n){e.setMonth(n.months.longhand.indexOf(t))},G:function(e,t){e.setHours(parseFloat(t))},H:function(e,t){e.setHours(parseFloat(t))},J:function(e,t){e.setDate(parseFloat(t))},K:function(e,t,n){e.setHours(e.getHours()%12+12*a(new RegExp(n.amPM[1],"i").test(t)))},M:function(e,t,n){e.setMonth(n.months.shorthand.indexOf(t))},S:function(e,t){e.setSeconds(parseFloat(t))},U:function(e,t){return new Date(1e3*parseFloat(t))},W:function(e,t,n){var r=parseInt(t),i=new Date(e.getFullYear(),0,2+7*(r-1),0,0,0,0);return i.setDate(i.getDate()-i.getDay()+n.firstDayOfWeek),i},Y:function(e,t){e.setFullYear(parseFloat(t))},Z:function(e,t){return new Date(t)},d:function(e,t){e.setDate(parseFloat(t))},h:function(e,t){e.setHours(parseFloat(t))},i:function(e,t){e.setMinutes(parseFloat(t))},j:function(e,t){e.setDate(parseFloat(t))},l:f,m:function(e,t){e.setMonth(parseFloat(t)-1)},n:function(e,t){e.setMonth(parseFloat(t)-1)},s:function(e,t){e.setSeconds(parseFloat(t))},u:function(e,t){return new Date(parseFloat(t))},w:f,y:function(e,t){e.setFullYear(2e3+parseFloat(t))}},g={D:"(\\w+)",F:"(\\w+)",G:"(\\d\\d|\\d)",H:"(\\d\\d|\\d)",J:"(\\d\\d|\\d)\\w+",K:"",M:"(\\w+)",S:"(\\d\\d|\\d)",U:"(.+)",W:"(\\d\\d|\\d)",Y:"(\\d{4})",Z:"(.+)",d:"(\\d\\d|\\d)",h:"(\\d\\d|\\d)",i:"(\\d\\d|\\d)",j:"(\\d\\d|\\d)",l:"(\\w+)",m:"(\\d\\d|\\d)",n:"(\\d\\d|\\d)",s:"(\\d\\d|\\d)",u:"(.+)",w:"(\\d\\d|\\d)",y:"(\\d{2})"},m={Z:function(e){return e.toISOString()},D:function(e,t,n){return t.weekdays.shorthand[m.w(e,t,n)]},F:function(e,t,n){return h(m.n(e,t,n)-1,!1,t)},G:function(e,t,n){return i(m.h(e,t,n))},H:function(e){return i(e.getHours())},J:function(e,t){return void 0!==t.ordinal?e.getDate()+t.ordinal(e.getDate()):e.getDate()},K:function(e,t){return t.amPM[a(e.getHours()>11)]},M:function(e,t){return h(e.getMonth(),!0,t)},S:function(e){return i(e.getSeconds())},U:function(e){return e.getTime()/1e3},W:function(e,t,n){return n.getWeek(e)},Y:function(e){return e.getFullYear()},d:function(e){return i(e.getDate())},h:function(e){return e.getHours()%12?e.getHours()%12:12},i:function(e){return i(e.getMinutes())},j:function(e){return e.getDate()},l:function(e,t){return t.weekdays.longhand[e.getDay()]},m:function(e){return i(e.getMonth()+1)},n:function(e){return e.getMonth()+1},s:function(e){return e.getSeconds()},u:function(e){return e.getTime()},w:function(e){return e.getDay()},y:function(e){return String(e.getFullYear()).substring(2)}},v=function(e){var t=e.config,i=void 0===t?n:t,a=e.l10n,o=void 0===a?r:a;return function(e,t,n){var r=n||o;return void 0!==i.formatDate?i.formatDate(e,t,r):t.split("").map((function(t,n,a){return m[t]&&"\\"!==a[n-1]?m[t](e,r,i):"\\"!==t?t:""})).join("")}},w=function(e){var t=e.config,i=void 0===t?n:t,a=e.l10n,o=void 0===a?r:a;return function(e,t,r,a){if(0===e||e){var s,u=a||o,l=e;if(e instanceof Date)s=new Date(e.getTime());else if("string"!=typeof e&&void 0!==e.toFixed)s=new Date(e);else if("string"==typeof e){var c=t||(i||n).dateFormat,d=String(e).trim();if("today"===d)s=new Date,r=!0;else if(/Z$/.test(d)||/GMT$/.test(d))s=new Date(e);else if(i&&i.parseDate)s=i.parseDate(e,c);else{s=i&&i.noCalendar?new Date((new Date).setHours(0,0,0,0)):new Date((new Date).getFullYear(),0,1,0,0,0,0);for(var f=void 0,h=[],m=0,v=0,w="";m<c.length;m++){var b=c[m],y="\\"===b,k="\\"===c[m-1]||y;if(g[b]&&!k){w+=g[b];var M=new RegExp(w).exec(e);M&&(f=!0)&&h["Y"!==b?"push":"unshift"]({fn:p[b],val:M[++v]})}else y||(w+=".");h.forEach((function(e){var t=e.fn,n=e.val;return s=t(s,n,u)||s}))}s=f?s:void 0}}if(s instanceof Date&&!isNaN(s.getTime()))return!0===r&&s.setHours(0,0,0,0),s;i.errorHandler(new Error("Invalid date provided: "+l))}}};function b(e,t,n){return void 0===n&&(n=!0),!1!==n?new Date(e.getTime()).setHours(0,0,0,0)-new Date(t.getTime()).setHours(0,0,0,0):e.getTime()-t.getTime()}var y=function(e,t,n){return e>Math.min(t,n)&&e<Math.max(t,n)},k={DAY:864e5};"function"!=typeof Object.assign&&(Object.assign=function(e){for(var t=[],n=1;n<arguments.length;n++)t[n-1]=arguments[n];if(!e)throw TypeError("Cannot convert undefined or null to object");for(var r=function(t){t&&Object.keys(t).forEach((function(n){return e[n]=t[n]}))},i=0,a=t;i<a.length;i++){var o=a[i];r(o)}return e});var M=300;function S(f,p){var m={config:e({},n,T.defaultConfig),l10n:r};function S(e){return e.bind(m)}function D(){var e=m.config;!1===e.weekNumbers&&1===e.showMonths||!0!==e.noCalendar&&window.requestAnimationFrame((function(){if(void 0!==m.calendarContainer&&(m.calendarContainer.style.visibility="hidden",m.calendarContainer.style.display="block"),void 0!==m.daysContainer){var t=(m.days.offsetWidth+1)*e.showMonths;m.daysContainer.style.width=t+"px",m.calendarContainer.style.width=t+(void 0!==m.weekWrapper?m.weekWrapper.offsetWidth:0)+"px",m.calendarContainer.style.removeProperty("visibility"),m.calendarContainer.style.removeProperty("display")}}))}function A(e){0===m.selectedDates.length&&ie(),void 0!==e&&"blur"!==e.type&&function(e){e.preventDefault();var t="keydown"===e.type,n=e.target;void 0!==m.amPM&&e.target===m.amPM&&(m.amPM.textContent=m.l10n.amPM[a(m.amPM.textContent===m.l10n.amPM[0])]);var r=parseFloat(n.getAttribute("min")),o=parseFloat(n.getAttribute("max")),s=parseFloat(n.getAttribute("step")),u=parseInt(n.value,10),l=e.delta||(t?38===e.which?1:-1:0),c=u+s*l;if(void 0!==n.value&&2===n.value.length){var d=n===m.hourElement,f=n===m.minuteElement;c<r?(c=o+c+a(!d)+(a(d)&&a(!m.amPM)),f&&J(void 0,-1,m.hourElement)):c>o&&(c=n===m.hourElement?c-o-a(!m.amPM):r,f&&J(void 0,1,m.hourElement)),m.amPM&&d&&(1===s?c+u===23:Math.abs(c-u)>s)&&(m.amPM.textContent=m.l10n.amPM[a(m.amPM.textContent===m.l10n.amPM[0])]),n.value=i(c)}}(e);var t=m._input.value;O(),be(),m._input.value!==t&&m._debouncedChange()}function O(){if(void 0!==m.hourElement&&void 0!==m.minuteElement){var e,t,n=(parseInt(m.hourElement.value.slice(-2),10)||0)%24,r=(parseInt(m.minuteElement.value,10)||0)%60,i=void 0!==m.secondElement?(parseInt(m.secondElement.value,10)||0)%60:0;void 0!==m.amPM&&(e=n,t=m.amPM.textContent,n=e%12+12*a(t===m.l10n.amPM[1]));var o=void 0!==m.config.minTime||m.config.minDate&&m.minDateHasTime&&m.latestSelectedDateObj&&0===b(m.latestSelectedDateObj,m.config.minDate,!0);if(void 0!==m.config.maxTime||m.config.maxDate&&m.maxDateHasTime&&m.latestSelectedDateObj&&0===b(m.latestSelectedDateObj,m.config.maxDate,!0)){var s=void 0!==m.config.maxTime?m.config.maxTime:m.config.maxDate;(n=Math.min(n,s.getHours()))===s.getHours()&&(r=Math.min(r,s.getMinutes())),r===s.getMinutes()&&(i=Math.min(i,s.getSeconds()))}if(o){var u=void 0!==m.config.minTime?m.config.minTime:m.config.minDate;(n=Math.max(n,u.getHours()))===u.getHours()&&(r=Math.max(r,u.getMinutes())),r===u.getMinutes()&&(i=Math.max(i,u.getSeconds()))}x(n,r,i)}}function j(e){var t=e||m.latestSelectedDateObj;t&&x(t.getHours(),t.getMinutes(),t.getSeconds())}function _(){var e=m.config.defaultHour,t=m.config.defaultMinute,n=m.config.defaultSeconds;if(void 0!==m.config.minDate){var r=m.config.minDate.getHours(),i=m.config.minDate.getMinutes();(e=Math.max(e,r))===r&&(t=Math.max(i,t)),e===r&&t===i&&(n=m.config.minDate.getSeconds())}if(void 0!==m.config.maxDate){var a=m.config.maxDate.getHours(),o=m.config.maxDate.getMinutes();(e=Math.min(e,a))===a&&(t=Math.min(o,t)),e===a&&t===o&&(n=m.config.maxDate.getSeconds())}x(e,t,n)}function x(e,t,n){void 0!==m.latestSelectedDateObj&&m.latestSelectedDateObj.setHours(e%24,t,n||0,0),m.hourElement&&m.minuteElement&&!m.isMobile&&(m.hourElement.value=i(m.config.time_24hr?e:(12+e)%12+12*a(e%12==0)),m.minuteElement.value=i(t),void 0!==m.amPM&&(m.amPM.textContent=m.l10n.amPM[a(e>=12)]),void 0!==m.secondElement&&(m.secondElement.value=i(n)))}function C(e){var t=parseInt(e.target.value)+(e.delta||0);(t/1e3>1||"Enter"===e.key&&!/[^\d]/.test(t.toString()))&&Z(t)}function E(e,t,n,r){return t instanceof Array?t.forEach((function(t){return E(e,t,n,r)})):e instanceof Array?e.forEach((function(e){return E(e,t,n,r)})):(e.addEventListener(t,n,r),void m._handlers.push({element:e,event:t,handler:n,options:r}))}function P(e){return function(t){1===t.which&&e(t)}}function F(){pe("onChange")}function N(e,t){var n=void 0!==e?m.parseDate(e):m.latestSelectedDateObj||(m.config.minDate&&m.config.minDate>m.now?m.config.minDate:m.config.maxDate&&m.config.maxDate<m.now?m.config.maxDate:m.now),r=m.currentYear,i=m.currentMonth;try{void 0!==n&&(m.currentYear=n.getFullYear(),m.currentMonth=n.getMonth())}catch(e){e.message="Invalid date supplied: "+n,m.config.errorHandler(e)}t&&m.currentYear!==r&&(pe("onYearChange"),B()),!t||m.currentYear===r&&m.currentMonth===i||pe("onMonthChange"),m.redraw()}function L(e){~e.target.className.indexOf("arrow")&&J(e,e.target.classList.contains("arrowUp")?1:-1)}function J(e,t,n){var r=e&&e.target,i=n||r&&r.parentNode&&r.parentNode.firstChild,a=ge("increment");a.delta=t,i&&i.dispatchEvent(a)}function z(e,t,n,r){var i=X(t,!0),a=l("span","flatpickr-day "+e,t.getDate().toString());return a.dateObj=t,a.$i=r,a.setAttribute("aria-label",m.formatDate(t,m.config.ariaDateFormat)),-1===e.indexOf("hidden")&&0===b(t,m.now)&&(m.todayDateElem=a,a.classList.add("today"),a.setAttribute("aria-current","date")),i?(a.tabIndex=-1,me(t)&&(a.classList.add("selected"),m.selectedDateElem=a,"range"===m.config.mode&&(u(a,"startRange",m.selectedDates[0]&&0===b(t,m.selectedDates[0],!0)),u(a,"endRange",m.selectedDates[1]&&0===b(t,m.selectedDates[1],!0)),"nextMonthDay"===e&&a.classList.add("inRange")))):a.classList.add("flatpickr-disabled"),"range"===m.config.mode&&function(e){return!("range"!==m.config.mode||m.selectedDates.length<2)&&b(e,m.selectedDates[0])>=0&&b(e,m.selectedDates[1])<=0}(t)&&!me(t)&&a.classList.add("inRange"),m.weekNumbers&&1===m.config.showMonths&&"prevMonthDay"!==e&&n%7==1&&m.weekNumbers.insertAdjacentHTML("beforeend","<span class='flatpickr-day'>"+m.config.getWeek(t)+"</span>"),pe("onDayCreate",a),a}function I(e){e.focus(),"range"===m.config.mode&&ne(e)}function R(e){for(var t=e>0?0:m.config.showMonths-1,n=e>0?m.config.showMonths:-1,r=t;r!=n;r+=e)for(var i=m.daysContainer.children[r],a=e>0?0:i.children.length-1,o=e>0?i.children.length:-1,s=a;s!=o;s+=e){var u=i.children[s];if(-1===u.className.indexOf("hidden")&&X(u.dateObj))return u}}function q(e,t){var n=ee(document.activeElement||document.body),r=void 0!==e?e:n?document.activeElement:void 0!==m.selectedDateElem&&ee(m.selectedDateElem)?m.selectedDateElem:void 0!==m.todayDateElem&&ee(m.todayDateElem)?m.todayDateElem:R(t>0?1:-1);return void 0===r?m._input.focus():n?void function(e,t){for(var n=-1===e.className.indexOf("Month")?e.dateObj.getMonth():m.currentMonth,r=t>0?m.config.showMonths:-1,i=t>0?1:-1,a=n-m.currentMonth;a!=r;a+=i)for(var o=m.daysContainer.children[a],s=n-m.currentMonth===a?e.$i+t:t<0?o.children.length-1:0,u=o.children.length,l=s;l>=0&&l<u&&l!=(t>0?u:-1);l+=i){var c=o.children[l];if(-1===c.className.indexOf("hidden")&&X(c.dateObj)&&Math.abs(e.$i-l)>=Math.abs(t))return I(c)}m.changeMonth(i),q(R(i),0)}(r,t):I(r)}function H(e,t){for(var n=(new Date(e,t,1).getDay()-m.l10n.firstDayOfWeek+7)%7,r=m.utils.getDaysInMonth((t-1+12)%12),i=m.utils.getDaysInMonth(t),a=window.document.createDocumentFragment(),o=m.config.showMonths>1,s=o?"prevMonthDay hidden":"prevMonthDay",u=o?"nextMonthDay hidden":"nextMonthDay",c=r+1-n,d=0;c<=r;c++,d++)a.appendChild(z(s,new Date(e,t-1,c),c,d));for(c=1;c<=i;c++,d++)a.appendChild(z("",new Date(e,t,c),c,d));for(var f=i+1;f<=42-n&&(1===m.config.showMonths||d%7!=0);f++,d++)a.appendChild(z(u,new Date(e,t+1,f%i),f,d));var h=l("div","dayContainer");return h.appendChild(a),h}function W(){if(void 0!==m.daysContainer){c(m.daysContainer),m.weekNumbers&&c(m.weekNumbers);for(var e=document.createDocumentFragment(),t=0;t<m.config.showMonths;t++){var n=new Date(m.currentYear,m.currentMonth,1);n.setMonth(m.currentMonth+t),e.appendChild(H(n.getFullYear(),n.getMonth()))}m.daysContainer.appendChild(e),m.days=m.daysContainer.firstChild,"range"===m.config.mode&&1===m.selectedDates.length&&ne()}}function B(){if(!(m.config.showMonths>1||"dropdown"!==m.config.monthSelectorType)){var e=function(e){return!(void 0!==m.config.minDate&&m.currentYear===m.config.minDate.getFullYear()&&e<m.config.minDate.getMonth()||void 0!==m.config.maxDate&&m.currentYear===m.config.maxDate.getFullYear()&&e>m.config.maxDate.getMonth())};m.monthsDropdownContainer.tabIndex=-1,m.monthsDropdownContainer.innerHTML="";for(var t=0;t<12;t++)if(e(t)){var n=l("option","flatpickr-monthDropdown-month");n.value=new Date(m.currentYear,t).getMonth().toString(),n.textContent=h(t,m.config.shorthandCurrentMonth,m.l10n),n.tabIndex=-1,m.currentMonth===t&&(n.selected=!0),m.monthsDropdownContainer.appendChild(n)}}}function Y(){var e,t=l("div","flatpickr-month"),n=window.document.createDocumentFragment();m.config.showMonths>1||"static"===m.config.monthSelectorType?e=l("span","cur-month"):(m.monthsDropdownContainer=l("select","flatpickr-monthDropdown-months"),E(m.monthsDropdownContainer,"change",(function(e){var t=e.target,n=parseInt(t.value,10);m.changeMonth(n-m.currentMonth),pe("onMonthChange")})),B(),e=m.monthsDropdownContainer);var r=d("cur-year",{tabindex:"-1"}),i=r.getElementsByTagName("input")[0];i.setAttribute("aria-label",m.l10n.yearAriaLabel),m.config.minDate&&i.setAttribute("min",m.config.minDate.getFullYear().toString()),m.config.maxDate&&(i.setAttribute("max",m.config.maxDate.getFullYear().toString()),i.disabled=!!m.config.minDate&&m.config.minDate.getFullYear()===m.config.maxDate.getFullYear());var a=l("div","flatpickr-current-month");return a.appendChild(e),a.appendChild(r),n.appendChild(a),t.appendChild(n),{container:t,yearElement:i,monthElement:e}}function K(){c(m.monthNav),m.monthNav.appendChild(m.prevMonthNav),m.config.showMonths&&(m.yearElements=[],m.monthElements=[]);for(var e=m.config.showMonths;e--;){var t=Y();m.yearElements.push(t.yearElement),m.monthElements.push(t.monthElement),m.monthNav.appendChild(t.container)}m.monthNav.appendChild(m.nextMonthNav)}function V(){m.weekdayContainer?c(m.weekdayContainer):m.weekdayContainer=l("div","flatpickr-weekdays");for(var e=m.config.showMonths;e--;){var t=l("div","flatpickr-weekdaycontainer");m.weekdayContainer.appendChild(t)}return G(),m.weekdayContainer}function G(){if(m.weekdayContainer){var e=m.l10n.firstDayOfWeek,t=m.l10n.weekdays.shorthand.slice();e>0&&e<t.length&&(t=t.splice(e,t.length).concat(t.splice(0,e)));for(var n=m.config.showMonths;n--;)m.weekdayContainer.children[n].innerHTML="\n      <span class='flatpickr-weekday'>\n        "+t.join("</span><span class='flatpickr-weekday'>")+"\n      </span>\n      "}}function U(e,t){void 0===t&&(t=!0);var n=t?e:e-m.currentMonth;n<0&&!0===m._hidePrevMonthArrow||n>0&&!0===m._hideNextMonthArrow||(m.currentMonth+=n,(m.currentMonth<0||m.currentMonth>11)&&(m.currentYear+=m.currentMonth>11?1:-1,m.currentMonth=(m.currentMonth+12)%12,pe("onYearChange"),B()),W(),pe("onMonthChange"),ve())}function Q(e){return!(!m.config.appendTo||!m.config.appendTo.contains(e))||m.calendarContainer.contains(e)}function $(e){if(m.isOpen&&!m.config.inline){var t="function"==typeof(o=e).composedPath?o.composedPath()[0]:o.target,n=Q(t),r=t===m.input||t===m.altInput||m.element.contains(t)||e.path&&e.path.indexOf&&(~e.path.indexOf(m.input)||~e.path.indexOf(m.altInput)),i="blur"===e.type?r&&e.relatedTarget&&!Q(e.relatedTarget):!r&&!n&&!Q(e.relatedTarget),a=!m.config.ignoredFocusElements.some((function(e){return e.contains(t)}));i&&a&&(void 0!==m.timeContainer&&void 0!==m.minuteElement&&void 0!==m.hourElement&&A(),m.close(),"range"===m.config.mode&&1===m.selectedDates.length&&(m.clear(!1),m.redraw()))}var o}function Z(e){if(!(!e||m.config.minDate&&e<m.config.minDate.getFullYear()||m.config.maxDate&&e>m.config.maxDate.getFullYear())){var t=e,n=m.currentYear!==t;m.currentYear=t||m.currentYear,m.config.maxDate&&m.currentYear===m.config.maxDate.getFullYear()?m.currentMonth=Math.min(m.config.maxDate.getMonth(),m.currentMonth):m.config.minDate&&m.currentYear===m.config.minDate.getFullYear()&&(m.currentMonth=Math.max(m.config.minDate.getMonth(),m.currentMonth)),n&&(m.redraw(),pe("onYearChange"),B())}}function X(e,t){void 0===t&&(t=!0);var n=m.parseDate(e,void 0,t);if(m.config.minDate&&n&&b(n,m.config.minDate,void 0!==t?t:!m.minDateHasTime)<0||m.config.maxDate&&n&&b(n,m.config.maxDate,void 0!==t?t:!m.maxDateHasTime)>0)return!1;if(0===m.config.enable.length&&0===m.config.disable.length)return!0;if(void 0===n)return!1;for(var r=m.config.enable.length>0,i=r?m.config.enable:m.config.disable,a=0,o=void 0;a<i.length;a++){if("function"==typeof(o=i[a])&&o(n))return r;if(o instanceof Date&&void 0!==n&&o.getTime()===n.getTime())return r;if("string"==typeof o&&void 0!==n){var s=m.parseDate(o,void 0,!0);return s&&s.getTime()===n.getTime()?r:!r}if("object"==typeof o&&void 0!==n&&o.from&&o.to&&n.getTime()>=o.from.getTime()&&n.getTime()<=o.to.getTime())return r}return!r}function ee(e){return void 0!==m.daysContainer&&-1===e.className.indexOf("hidden")&&m.daysContainer.contains(e)}function te(e){var t=e.target===m._input,n=m.config.allowInput,r=m.isOpen&&(!n||!t),i=m.config.inline&&t&&!n;if(13===e.keyCode&&t){if(n)return m.setDate(m._input.value,!0,e.target===m.altInput?m.config.altFormat:m.config.dateFormat),e.target.blur();m.open()}else if(Q(e.target)||r||i){var a=!!m.timeContainer&&m.timeContainer.contains(e.target);switch(e.keyCode){case 13:a?(e.preventDefault(),A(),le()):ce(e);break;case 27:e.preventDefault(),le();break;case 8:case 46:t&&!m.config.allowInput&&(e.preventDefault(),m.clear());break;case 37:case 39:if(a||t)m.hourElement&&m.hourElement.focus();else if(e.preventDefault(),void 0!==m.daysContainer&&(!1===n||document.activeElement&&ee(document.activeElement))){var o=39===e.keyCode?1:-1;e.ctrlKey?(e.stopPropagation(),U(o),q(R(1),0)):q(void 0,o)}break;case 38:case 40:e.preventDefault();var s=40===e.keyCode?1:-1;m.daysContainer&&void 0!==e.target.$i||e.target===m.input||e.target===m.altInput?e.ctrlKey?(e.stopPropagation(),Z(m.currentYear-s),q(R(1),0)):a||q(void 0,7*s):e.target===m.currentYearElement?Z(m.currentYear-s):m.config.enableTime&&(!a&&m.hourElement&&m.hourElement.focus(),A(e),m._debouncedChange());break;case 9:if(a){var u=[m.hourElement,m.minuteElement,m.secondElement,m.amPM].concat(m.pluginElements).filter((function(e){return e})),l=u.indexOf(e.target);if(-1!==l){var c=u[l+(e.shiftKey?-1:1)];e.preventDefault(),(c||m._input).focus()}}else!m.config.noCalendar&&m.daysContainer&&m.daysContainer.contains(e.target)&&e.shiftKey&&(e.preventDefault(),m._input.focus())}}if(void 0!==m.amPM&&e.target===m.amPM)switch(e.key){case m.l10n.amPM[0].charAt(0):case m.l10n.amPM[0].charAt(0).toLowerCase():m.amPM.textContent=m.l10n.amPM[0],O(),be();break;case m.l10n.amPM[1].charAt(0):case m.l10n.amPM[1].charAt(0).toLowerCase():m.amPM.textContent=m.l10n.amPM[1],O(),be()}(t||Q(e.target))&&pe("onKeyDown",e)}function ne(e){if(1===m.selectedDates.length&&(!e||e.classList.contains("flatpickr-day")&&!e.classList.contains("flatpickr-disabled"))){for(var t=e?e.dateObj.getTime():m.days.firstElementChild.dateObj.getTime(),n=m.parseDate(m.selectedDates[0],void 0,!0).getTime(),r=Math.min(t,m.selectedDates[0].getTime()),i=Math.max(t,m.selectedDates[0].getTime()),a=!1,o=0,s=0,u=r;u<i;u+=k.DAY)X(new Date(u),!0)||(a=a||u>r&&u<i,u<n&&(!o||u>o)?o=u:u>n&&(!s||u<s)&&(s=u));for(var l=0;l<m.config.showMonths;l++)for(var c=m.daysContainer.children[l],d=function(r,i){var u=c.children[r],l=u.dateObj.getTime(),d=o>0&&l<o||s>0&&l>s;return d?(u.classList.add("notAllowed"),["inRange","startRange","endRange"].forEach((function(e){u.classList.remove(e)})),"continue"):a&&!d?"continue":(["startRange","inRange","endRange","notAllowed"].forEach((function(e){u.classList.remove(e)})),void(void 0!==e&&(e.classList.add(t<=m.selectedDates[0].getTime()?"startRange":"endRange"),n<t&&l===n?u.classList.add("startRange"):n>t&&l===n&&u.classList.add("endRange"),l>=o&&(0===s||l<=s)&&y(l,n,t)&&u.classList.add("inRange"))))},f=0,h=c.children.length;f<h;f++)d(f)}}function re(){!m.isOpen||m.config.static||m.config.inline||se()}function ie(){m.setDate(void 0!==m.config.minDate?new Date(m.config.minDate.getTime()):new Date,!0),_(),be()}function ae(e){return function(t){var n=m.config["_"+e+"Date"]=m.parseDate(t,m.config.dateFormat),r=m.config["_"+("min"===e?"max":"min")+"Date"];void 0!==n&&(m["min"===e?"minDateHasTime":"maxDateHasTime"]=n.getHours()>0||n.getMinutes()>0||n.getSeconds()>0),m.selectedDates&&(m.selectedDates=m.selectedDates.filter((function(e){return X(e)})),m.selectedDates.length||"min"!==e||j(n),be()),m.daysContainer&&(ue(),void 0!==n?m.currentYearElement[e]=n.getFullYear().toString():m.currentYearElement.removeAttribute(e),m.currentYearElement.disabled=!!r&&void 0!==n&&r.getFullYear()===n.getFullYear())}}function oe(){"object"!=typeof m.config.locale&&void 0===T.l10ns[m.config.locale]&&m.config.errorHandler(new Error("flatpickr: invalid locale "+m.config.locale)),m.l10n=e({},T.l10ns.default,"object"==typeof m.config.locale?m.config.locale:"default"!==m.config.locale?T.l10ns[m.config.locale]:void 0),g.K="("+m.l10n.amPM[0]+"|"+m.l10n.amPM[1]+"|"+m.l10n.amPM[0].toLowerCase()+"|"+m.l10n.amPM[1].toLowerCase()+")",void 0===e({},p,JSON.parse(JSON.stringify(f.dataset||{}))).time_24hr&&void 0===T.defaultConfig.time_24hr&&(m.config.time_24hr=m.l10n.time_24hr),m.formatDate=v(m),m.parseDate=w({config:m.config,l10n:m.l10n})}function se(e){if(void 0!==m.calendarContainer){pe("onPreCalendarPosition");var t=e||m._positionElement,n=Array.prototype.reduce.call(m.calendarContainer.children,(function(e,t){return e+t.offsetHeight}),0),r=m.calendarContainer.offsetWidth,i=m.config.position.split(" "),a=i[0],o=i.length>1?i[1]:null,s=t.getBoundingClientRect(),l=window.innerHeight-s.bottom,c="above"===a||"below"!==a&&l<n&&s.top>n,d=window.pageYOffset+s.top+(c?-n-2:t.offsetHeight+2);if(u(m.calendarContainer,"arrowTop",!c),u(m.calendarContainer,"arrowBottom",c),!m.config.inline){var f=window.pageXOffset+s.left-(null!=o&&"center"===o?(r-s.width)/2:0),h=window.document.body.offsetWidth-(window.pageXOffset+s.right),p=f+r>window.document.body.offsetWidth,g=h+r>window.document.body.offsetWidth;if(u(m.calendarContainer,"rightMost",p),!m.config.static)if(m.calendarContainer.style.top=d+"px",p)if(g){var v=document.styleSheets[0];if(void 0===v)return;var w=window.document.body.offsetWidth,b=Math.max(0,w/2-r/2),y=v.cssRules.length,k="{left:"+s.left+"px;right:auto;}";u(m.calendarContainer,"rightMost",!1),u(m.calendarContainer,"centerMost",!0),v.insertRule(".flatpickr-calendar.centerMost:before,.flatpickr-calendar.centerMost:after"+k,y),m.calendarContainer.style.left=b+"px",m.calendarContainer.style.right="auto"}else m.calendarContainer.style.left="auto",m.calendarContainer.style.right=h+"px";else m.calendarContainer.style.left=f+"px",m.calendarContainer.style.right="auto"}}}function ue(){m.config.noCalendar||m.isMobile||(ve(),W())}function le(){m._input.focus(),-1!==window.navigator.userAgent.indexOf("MSIE")||void 0!==navigator.msMaxTouchPoints?setTimeout(m.close,0):m.close()}function ce(e){e.preventDefault(),e.stopPropagation();var t=function e(t,n){return n(t)?t:t.parentNode?e(t.parentNode,n):void 0}(e.target,(function(e){return e.classList&&e.classList.contains("flatpickr-day")&&!e.classList.contains("flatpickr-disabled")&&!e.classList.contains("notAllowed")}));if(void 0!==t){var n=t,r=m.latestSelectedDateObj=new Date(n.dateObj.getTime()),i=(r.getMonth()<m.currentMonth||r.getMonth()>m.currentMonth+m.config.showMonths-1)&&"range"!==m.config.mode;if(m.selectedDateElem=n,"single"===m.config.mode)m.selectedDates=[r];else if("multiple"===m.config.mode){var a=me(r);a?m.selectedDates.splice(parseInt(a),1):m.selectedDates.push(r)}else"range"===m.config.mode&&(2===m.selectedDates.length&&m.clear(!1,!1),m.latestSelectedDateObj=r,m.selectedDates.push(r),0!==b(r,m.selectedDates[0],!0)&&m.selectedDates.sort((function(e,t){return e.getTime()-t.getTime()})));if(O(),i){var o=m.currentYear!==r.getFullYear();m.currentYear=r.getFullYear(),m.currentMonth=r.getMonth(),o&&(pe("onYearChange"),B()),pe("onMonthChange")}if(ve(),W(),be(),m.config.enableTime&&setTimeout((function(){return m.showTimeInput=!0}),50),i||"range"===m.config.mode||1!==m.config.showMonths?void 0!==m.selectedDateElem&&void 0===m.hourElement&&m.selectedDateElem&&m.selectedDateElem.focus():I(n),void 0!==m.hourElement&&void 0!==m.hourElement&&m.hourElement.focus(),m.config.closeOnSelect){var s="single"===m.config.mode&&!m.config.enableTime,u="range"===m.config.mode&&2===m.selectedDates.length&&!m.config.enableTime;(s||u)&&le()}F()}}m.parseDate=w({config:m.config,l10n:m.l10n}),m._handlers=[],m.pluginElements=[],m.loadedPlugins=[],m._bind=E,m._setHoursFromDate=j,m._positionCalendar=se,m.changeMonth=U,m.changeYear=Z,m.clear=function(e,t){void 0===e&&(e=!0),void 0===t&&(t=!0),m.input.value="",void 0!==m.altInput&&(m.altInput.value=""),void 0!==m.mobileInput&&(m.mobileInput.value=""),m.selectedDates=[],m.latestSelectedDateObj=void 0,!0===t&&(m.currentYear=m._initialDate.getFullYear(),m.currentMonth=m._initialDate.getMonth()),m.showTimeInput=!1,!0===m.config.enableTime&&_(),m.redraw(),e&&pe("onChange")},m.close=function(){m.isOpen=!1,m.isMobile||(void 0!==m.calendarContainer&&m.calendarContainer.classList.remove("open"),void 0!==m._input&&m._input.classList.remove("active")),pe("onClose")},m._createElement=l,m.destroy=function(){void 0!==m.config&&pe("onDestroy");for(var e=m._handlers.length;e--;){var t=m._handlers[e];t.element.removeEventListener(t.event,t.handler,t.options)}if(m._handlers=[],m.mobileInput)m.mobileInput.parentNode&&m.mobileInput.parentNode.removeChild(m.mobileInput),m.mobileInput=void 0;else if(m.calendarContainer&&m.calendarContainer.parentNode)if(m.config.static&&m.calendarContainer.parentNode){var n=m.calendarContainer.parentNode;if(n.lastChild&&n.removeChild(n.lastChild),n.parentNode){for(;n.firstChild;)n.parentNode.insertBefore(n.firstChild,n);n.parentNode.removeChild(n)}}else m.calendarContainer.parentNode.removeChild(m.calendarContainer);m.altInput&&(m.input.type="text",m.altInput.parentNode&&m.altInput.parentNode.removeChild(m.altInput),delete m.altInput),m.input&&(m.input.type=m.input._type,m.input.classList.remove("flatpickr-input"),m.input.removeAttribute("readonly"),m.input.value=""),["_showTimeInput","latestSelectedDateObj","_hideNextMonthArrow","_hidePrevMonthArrow","__hideNextMonthArrow","__hidePrevMonthArrow","isMobile","isOpen","selectedDateElem","minDateHasTime","maxDateHasTime","days","daysContainer","_input","_positionElement","innerContainer","rContainer","monthNav","todayDateElem","calendarContainer","weekdayContainer","prevMonthNav","nextMonthNav","monthsDropdownContainer","currentMonthElement","currentYearElement","navigationCurrentMonth","selectedDateElem","config"].forEach((function(e){try{delete m[e]}catch(e){}}))},m.isEnabled=X,m.jumpToDate=N,m.open=function(e,t){if(void 0===t&&(t=m._positionElement),!0===m.isMobile)return e&&(e.preventDefault(),e.target&&e.target.blur()),void 0!==m.mobileInput&&(m.mobileInput.focus(),m.mobileInput.click()),void pe("onOpen");if(!m._input.disabled&&!m.config.inline){var n=m.isOpen;m.isOpen=!0,n||(m.calendarContainer.classList.add("open"),m._input.classList.add("active"),pe("onOpen"),se(t)),!0===m.config.enableTime&&!0===m.config.noCalendar&&(0===m.selectedDates.length&&ie(),!1!==m.config.allowInput||void 0!==e&&m.timeContainer.contains(e.relatedTarget)||setTimeout((function(){return m.hourElement.select()}),50))}},m.redraw=ue,m.set=function(e,n){if(null!==e&&"object"==typeof e)for(var r in Object.assign(m.config,e),e)void 0!==de[r]&&de[r].forEach((function(e){return e()}));else m.config[e]=n,void 0!==de[e]?de[e].forEach((function(e){return e()})):t.indexOf(e)>-1&&(m.config[e]=s(n));m.redraw(),be(!1)},m.setDate=function(e,t,n){if(void 0===t&&(t=!1),void 0===n&&(n=m.config.dateFormat),0!==e&&!e||e instanceof Array&&0===e.length)return m.clear(t);fe(e,n),m.showTimeInput=m.selectedDates.length>0,m.latestSelectedDateObj=m.selectedDates[m.selectedDates.length-1],m.redraw(),N(),j(),0===m.selectedDates.length&&m.clear(!1),be(t),t&&pe("onChange")},m.toggle=function(e){if(!0===m.isOpen)return m.close();m.open(e)};var de={locale:[oe,G],showMonths:[K,D,V],minDate:[N],maxDate:[N]};function fe(e,t){var n=[];if(e instanceof Array)n=e.map((function(e){return m.parseDate(e,t)}));else if(e instanceof Date||"number"==typeof e)n=[m.parseDate(e,t)];else if("string"==typeof e)switch(m.config.mode){case"single":case"time":n=[m.parseDate(e,t)];break;case"multiple":n=e.split(m.config.conjunction).map((function(e){return m.parseDate(e,t)}));break;case"range":n=e.split(m.l10n.rangeSeparator).map((function(e){return m.parseDate(e,t)}))}else m.config.errorHandler(new Error("Invalid date supplied: "+JSON.stringify(e)));m.selectedDates=n.filter((function(e){return e instanceof Date&&X(e,!1)})),"range"===m.config.mode&&m.selectedDates.sort((function(e,t){return e.getTime()-t.getTime()}))}function he(e){return e.slice().map((function(e){return"string"==typeof e||"number"==typeof e||e instanceof Date?m.parseDate(e,void 0,!0):e&&"object"==typeof e&&e.from&&e.to?{from:m.parseDate(e.from,void 0),to:m.parseDate(e.to,void 0)}:e})).filter((function(e){return e}))}function pe(e,t){if(void 0!==m.config){var n=m.config[e];if(void 0!==n&&n.length>0)for(var r=0;n[r]&&r<n.length;r++)n[r](m.selectedDates,m.input.value,m,t);"onChange"===e&&(m.input.dispatchEvent(ge("change")),m.input.dispatchEvent(ge("input")))}}function ge(e){var t=document.createEvent("Event");return t.initEvent(e,!0,!0),t}function me(e){for(var t=0;t<m.selectedDates.length;t++)if(0===b(m.selectedDates[t],e))return""+t;return!1}function ve(){m.config.noCalendar||m.isMobile||!m.monthNav||(m.yearElements.forEach((function(e,t){var n=new Date(m.currentYear,m.currentMonth,1);n.setMonth(m.currentMonth+t),m.config.showMonths>1||"static"===m.config.monthSelectorType?m.monthElements[t].textContent=h(n.getMonth(),m.config.shorthandCurrentMonth,m.l10n)+" ":m.monthsDropdownContainer.value=n.getMonth().toString(),e.value=n.getFullYear().toString()})),m._hidePrevMonthArrow=void 0!==m.config.minDate&&(m.currentYear===m.config.minDate.getFullYear()?m.currentMonth<=m.config.minDate.getMonth():m.currentYear<m.config.minDate.getFullYear()),m._hideNextMonthArrow=void 0!==m.config.maxDate&&(m.currentYear===m.config.maxDate.getFullYear()?m.currentMonth+1>m.config.maxDate.getMonth():m.currentYear>m.config.maxDate.getFullYear()))}function we(e){return m.selectedDates.map((function(t){return m.formatDate(t,e)})).filter((function(e,t,n){return"range"!==m.config.mode||m.config.enableTime||n.indexOf(e)===t})).join("range"!==m.config.mode?m.config.conjunction:m.l10n.rangeSeparator)}function be(e){void 0===e&&(e=!0),void 0!==m.mobileInput&&m.mobileFormatStr&&(m.mobileInput.value=void 0!==m.latestSelectedDateObj?m.formatDate(m.latestSelectedDateObj,m.mobileFormatStr):""),m.input.value=we(m.config.dateFormat),void 0!==m.altInput&&(m.altInput.value=we(m.config.altFormat)),!1!==e&&pe("onValueUpdate")}function ye(e){var t=m.prevMonthNav.contains(e.target),n=m.nextMonthNav.contains(e.target);t||n?U(t?-1:1):m.yearElements.indexOf(e.target)>=0?e.target.select():e.target.classList.contains("arrowUp")?m.changeYear(m.currentYear+1):e.target.classList.contains("arrowDown")&&m.changeYear(m.currentYear-1)}return function(){m.element=m.input=f,m.isOpen=!1,function(){var r=["wrap","weekNumbers","allowInput","clickOpens","time_24hr","enableTime","noCalendar","altInput","shorthandCurrentMonth","inline","static","enableSeconds","disableMobile"],i=e({},p,JSON.parse(JSON.stringify(f.dataset||{}))),a={};m.config.parseDate=i.parseDate,m.config.formatDate=i.formatDate,Object.defineProperty(m.config,"enable",{get:function(){return m.config._enable},set:function(e){m.config._enable=he(e)}}),Object.defineProperty(m.config,"disable",{get:function(){return m.config._disable},set:function(e){m.config._disable=he(e)}});var o="time"===i.mode;if(!i.dateFormat&&(i.enableTime||o)){var u=T.defaultConfig.dateFormat||n.dateFormat;a.dateFormat=i.noCalendar||o?"H:i"+(i.enableSeconds?":S":""):u+" H:i"+(i.enableSeconds?":S":"")}if(i.altInput&&(i.enableTime||o)&&!i.altFormat){var l=T.defaultConfig.altFormat||n.altFormat;a.altFormat=i.noCalendar||o?"h:i"+(i.enableSeconds?":S K":" K"):l+" h:i"+(i.enableSeconds?":S":"")+" K"}i.altInputClass||(m.config.altInputClass=m.input.className+" "+m.config.altInputClass),Object.defineProperty(m.config,"minDate",{get:function(){return m.config._minDate},set:ae("min")}),Object.defineProperty(m.config,"maxDate",{get:function(){return m.config._maxDate},set:ae("max")});var c=function(e){return function(t){m.config["min"===e?"_minTime":"_maxTime"]=m.parseDate(t,"H:i:S")}};Object.defineProperty(m.config,"minTime",{get:function(){return m.config._minTime},set:c("min")}),Object.defineProperty(m.config,"maxTime",{get:function(){return m.config._maxTime},set:c("max")}),"time"===i.mode&&(m.config.noCalendar=!0,m.config.enableTime=!0),Object.assign(m.config,a,i);for(var d=0;d<r.length;d++)m.config[r[d]]=!0===m.config[r[d]]||"true"===m.config[r[d]];for(t.filter((function(e){return void 0!==m.config[e]})).forEach((function(e){m.config[e]=s(m.config[e]||[]).map(S)})),m.isMobile=!m.config.disableMobile&&!m.config.inline&&"single"===m.config.mode&&!m.config.disable.length&&!m.config.enable.length&&!m.config.weekNumbers&&/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),d=0;d<m.config.plugins.length;d++){var h=m.config.plugins[d](m)||{};for(var g in h)t.indexOf(g)>-1?m.config[g]=s(h[g]).map(S).concat(m.config[g]):void 0===i[g]&&(m.config[g]=h[g])}pe("onParseConfig")}(),oe(),m.input=m.config.wrap?f.querySelector("[data-input]"):f,m.input?(m.input._type=m.input.type,m.input.type="text",m.input.classList.add("flatpickr-input"),m._input=m.input,m.config.altInput&&(m.altInput=l(m.input.nodeName,m.config.altInputClass),m._input=m.altInput,m.altInput.placeholder=m.input.placeholder,m.altInput.disabled=m.input.disabled,m.altInput.required=m.input.required,m.altInput.tabIndex=m.input.tabIndex,m.altInput.type="text",m.input.setAttribute("type","hidden"),!m.config.static&&m.input.parentNode&&m.input.parentNode.insertBefore(m.altInput,m.input.nextSibling)),m.config.allowInput||m._input.setAttribute("readonly","readonly"),m._positionElement=m.config.positionElement||m._input):m.config.errorHandler(new Error("Invalid input element specified")),function(){m.selectedDates=[],m.now=m.parseDate(m.config.now)||new Date;var e=m.config.defaultDate||("INPUT"!==m.input.nodeName&&"TEXTAREA"!==m.input.nodeName||!m.input.placeholder||m.input.value!==m.input.placeholder?m.input.value:null);e&&fe(e,m.config.dateFormat),m._initialDate=m.selectedDates.length>0?m.selectedDates[0]:m.config.minDate&&m.config.minDate.getTime()>m.now.getTime()?m.config.minDate:m.config.maxDate&&m.config.maxDate.getTime()<m.now.getTime()?m.config.maxDate:m.now,m.currentYear=m._initialDate.getFullYear(),m.currentMonth=m._initialDate.getMonth(),m.selectedDates.length>0&&(m.latestSelectedDateObj=m.selectedDates[0]),void 0!==m.config.minTime&&(m.config.minTime=m.parseDate(m.config.minTime,"H:i")),void 0!==m.config.maxTime&&(m.config.maxTime=m.parseDate(m.config.maxTime,"H:i")),m.minDateHasTime=!!m.config.minDate&&(m.config.minDate.getHours()>0||m.config.minDate.getMinutes()>0||m.config.minDate.getSeconds()>0),m.maxDateHasTime=!!m.config.maxDate&&(m.config.maxDate.getHours()>0||m.config.maxDate.getMinutes()>0||m.config.maxDate.getSeconds()>0),Object.defineProperty(m,"showTimeInput",{get:function(){return m._showTimeInput},set:function(e){m._showTimeInput=e,m.calendarContainer&&u(m.calendarContainer,"showTimeInput",e),m.isOpen&&se()}})}(),m.utils={getDaysInMonth:function(e,t){return void 0===e&&(e=m.currentMonth),void 0===t&&(t=m.currentYear),1===e&&(t%4==0&&t%100!=0||t%400==0)?29:m.l10n.daysInMonth[e]}},m.isMobile||function(){var e=window.document.createDocumentFragment();if(m.calendarContainer=l("div","flatpickr-calendar"),m.calendarContainer.tabIndex=-1,!m.config.noCalendar){if(e.appendChild((m.monthNav=l("div","flatpickr-months"),m.yearElements=[],m.monthElements=[],m.prevMonthNav=l("span","flatpickr-prev-month"),m.prevMonthNav.innerHTML=m.config.prevArrow,m.nextMonthNav=l("span","flatpickr-next-month"),m.nextMonthNav.innerHTML=m.config.nextArrow,K(),Object.defineProperty(m,"_hidePrevMonthArrow",{get:function(){return m.__hidePrevMonthArrow},set:function(e){m.__hidePrevMonthArrow!==e&&(u(m.prevMonthNav,"flatpickr-disabled",e),m.__hidePrevMonthArrow=e)}}),Object.defineProperty(m,"_hideNextMonthArrow",{get:function(){return m.__hideNextMonthArrow},set:function(e){m.__hideNextMonthArrow!==e&&(u(m.nextMonthNav,"flatpickr-disabled",e),m.__hideNextMonthArrow=e)}}),m.currentYearElement=m.yearElements[0],ve(),m.monthNav)),m.innerContainer=l("div","flatpickr-innerContainer"),m.config.weekNumbers){var t=function(){m.calendarContainer.classList.add("hasWeeks");var e=l("div","flatpickr-weekwrapper");e.appendChild(l("span","flatpickr-weekday",m.l10n.weekAbbreviation));var t=l("div","flatpickr-weeks");return e.appendChild(t),{weekWrapper:e,weekNumbers:t}}(),n=t.weekWrapper,r=t.weekNumbers;m.innerContainer.appendChild(n),m.weekNumbers=r,m.weekWrapper=n}m.rContainer=l("div","flatpickr-rContainer"),m.rContainer.appendChild(V()),m.daysContainer||(m.daysContainer=l("div","flatpickr-days"),m.daysContainer.tabIndex=-1),W(),m.rContainer.appendChild(m.daysContainer),m.innerContainer.appendChild(m.rContainer),e.appendChild(m.innerContainer)}m.config.enableTime&&e.appendChild(function(){m.calendarContainer.classList.add("hasTime"),m.config.noCalendar&&m.calendarContainer.classList.add("noCalendar"),m.timeContainer=l("div","flatpickr-time"),m.timeContainer.tabIndex=-1;var e=l("span","flatpickr-time-separator",":"),t=d("flatpickr-hour",{"aria-label":m.l10n.hourAriaLabel});m.hourElement=t.getElementsByTagName("input")[0];var n=d("flatpickr-minute",{"aria-label":m.l10n.minuteAriaLabel});if(m.minuteElement=n.getElementsByTagName("input")[0],m.hourElement.tabIndex=m.minuteElement.tabIndex=-1,m.hourElement.value=i(m.latestSelectedDateObj?m.latestSelectedDateObj.getHours():m.config.time_24hr?m.config.defaultHour:function(e){switch(e%24){case 0:case 12:return 12;default:return e%12}}(m.config.defaultHour)),m.minuteElement.value=i(m.latestSelectedDateObj?m.latestSelectedDateObj.getMinutes():m.config.defaultMinute),m.hourElement.setAttribute("step",m.config.hourIncrement.toString()),m.minuteElement.setAttribute("step",m.config.minuteIncrement.toString()),m.hourElement.setAttribute("min",m.config.time_24hr?"0":"1"),m.hourElement.setAttribute("max",m.config.time_24hr?"23":"12"),m.minuteElement.setAttribute("min","0"),m.minuteElement.setAttribute("max","59"),m.timeContainer.appendChild(t),m.timeContainer.appendChild(e),m.timeContainer.appendChild(n),m.config.time_24hr&&m.timeContainer.classList.add("time24hr"),m.config.enableSeconds){m.timeContainer.classList.add("hasSeconds");var r=d("flatpickr-second");m.secondElement=r.getElementsByTagName("input")[0],m.secondElement.value=i(m.latestSelectedDateObj?m.latestSelectedDateObj.getSeconds():m.config.defaultSeconds),m.secondElement.setAttribute("step",m.minuteElement.getAttribute("step")),m.secondElement.setAttribute("min","0"),m.secondElement.setAttribute("max","59"),m.timeContainer.appendChild(l("span","flatpickr-time-separator",":")),m.timeContainer.appendChild(r)}return m.config.time_24hr||(m.amPM=l("span","flatpickr-am-pm",m.l10n.amPM[a((m.latestSelectedDateObj?m.hourElement.value:m.config.defaultHour)>11)]),m.amPM.title=m.l10n.toggleTitle,m.amPM.tabIndex=-1,m.timeContainer.appendChild(m.amPM)),m.timeContainer}()),u(m.calendarContainer,"rangeMode","range"===m.config.mode),u(m.calendarContainer,"animate",!0===m.config.animate),u(m.calendarContainer,"multiMonth",m.config.showMonths>1),m.calendarContainer.appendChild(e);var o=void 0!==m.config.appendTo&&void 0!==m.config.appendTo.nodeType;if((m.config.inline||m.config.static)&&(m.calendarContainer.classList.add(m.config.inline?"inline":"static"),m.config.inline&&(!o&&m.element.parentNode?m.element.parentNode.insertBefore(m.calendarContainer,m._input.nextSibling):void 0!==m.config.appendTo&&m.config.appendTo.appendChild(m.calendarContainer)),m.config.static)){var s=l("div","flatpickr-wrapper");m.element.parentNode&&m.element.parentNode.insertBefore(s,m.element),s.appendChild(m.element),m.altInput&&s.appendChild(m.altInput),s.appendChild(m.calendarContainer)}m.config.static||m.config.inline||(void 0!==m.config.appendTo?m.config.appendTo:window.document.body).appendChild(m.calendarContainer)}(),function(){if(m.config.wrap&&["open","close","toggle","clear"].forEach((function(e){Array.prototype.forEach.call(m.element.querySelectorAll("[data-"+e+"]"),(function(t){return E(t,"click",m[e])}))})),m.isMobile)!function(){var e=m.config.enableTime?m.config.noCalendar?"time":"datetime-local":"date";m.mobileInput=l("input",m.input.className+" flatpickr-mobile"),m.mobileInput.step=m.input.getAttribute("step")||"any",m.mobileInput.tabIndex=1,m.mobileInput.type=e,m.mobileInput.disabled=m.input.disabled,m.mobileInput.required=m.input.required,m.mobileInput.placeholder=m.input.placeholder,m.mobileFormatStr="datetime-local"===e?"Y-m-d\\TH:i:S":"date"===e?"Y-m-d":"H:i:S",m.selectedDates.length>0&&(m.mobileInput.defaultValue=m.mobileInput.value=m.formatDate(m.selectedDates[0],m.mobileFormatStr)),m.config.minDate&&(m.mobileInput.min=m.formatDate(m.config.minDate,"Y-m-d")),m.config.maxDate&&(m.mobileInput.max=m.formatDate(m.config.maxDate,"Y-m-d")),m.input.type="hidden",void 0!==m.altInput&&(m.altInput.type="hidden");try{m.input.parentNode&&m.input.parentNode.insertBefore(m.mobileInput,m.input.nextSibling)}catch(e){}E(m.mobileInput,"change",(function(e){m.setDate(e.target.value,!1,m.mobileFormatStr),pe("onChange"),pe("onClose")}))}();else{var e=o(re,50);m._debouncedChange=o(F,M),m.daysContainer&&!/iPhone|iPad|iPod/i.test(navigator.userAgent)&&E(m.daysContainer,"mouseover",(function(e){"range"===m.config.mode&&ne(e.target)})),E(window.document.body,"keydown",te),m.config.inline||m.config.static||E(window,"resize",e),void 0!==window.ontouchstart?E(window.document,"touchstart",$):E(window.document,"mousedown",P($)),E(window.document,"focus",$,{capture:!0}),!0===m.config.clickOpens&&(E(m._input,"focus",m.open),E(m._input,"mousedown",P(m.open))),void 0!==m.daysContainer&&(E(m.monthNav,"mousedown",P(ye)),E(m.monthNav,["keyup","increment"],C),E(m.daysContainer,"mousedown",P(ce))),void 0!==m.timeContainer&&void 0!==m.minuteElement&&void 0!==m.hourElement&&(E(m.timeContainer,["increment"],A),E(m.timeContainer,"blur",A,{capture:!0}),E(m.timeContainer,"mousedown",P(L)),E([m.hourElement,m.minuteElement],["focus","click"],(function(e){return e.target.select()})),void 0!==m.secondElement&&E(m.secondElement,"focus",(function(){return m.secondElement&&m.secondElement.select()})),void 0!==m.amPM&&E(m.amPM,"mousedown",P((function(e){A(e),F()}))))}}(),(m.selectedDates.length||m.config.noCalendar)&&(m.config.enableTime&&j(m.config.noCalendar?m.latestSelectedDateObj||m.config.minDate:void 0),be(!1)),D(),m.showTimeInput=m.selectedDates.length>0||m.config.noCalendar;var r=/^((?!chrome|android).)*safari/i.test(navigator.userAgent);!m.isMobile&&r&&se(),pe("onReady")}(),m}function D(e,t){for(var n=Array.prototype.slice.call(e).filter((function(e){return e instanceof HTMLElement})),r=[],i=0;i<n.length;i++){var a=n[i];try{if(null!==a.getAttribute("data-fp-omit"))continue;void 0!==a._flatpickr&&(a._flatpickr.destroy(),a._flatpickr=void 0),a._flatpickr=S(a,t||{}),r.push(a._flatpickr)}catch(e){console.error(e)}}return 1===r.length?r[0]:r}"undefined"!=typeof HTMLElement&&"undefined"!=typeof HTMLCollection&&"undefined"!=typeof NodeList&&(HTMLCollection.prototype.flatpickr=NodeList.prototype.flatpickr=function(e){return D(this,e)},HTMLElement.prototype.flatpickr=function(e){return D([this],e)});var T=function(e,t){return"string"==typeof e?D(window.document.querySelectorAll(e),t):e instanceof Node?D([e],t):D(e,t)};return T.defaultConfig={},T.l10ns={en:e({},r),default:e({},r)},T.localize=function(t){T.l10ns.default=e({},T.l10ns.default,t)},T.setDefaults=function(t){T.defaultConfig=e({},T.defaultConfig,t)},T.parseDate=w({}),T.formatDate=v({}),T.compareDates=b,"undefined"!=typeof jQuery&&void 0!==jQuery.fn&&(jQuery.fn.flatpickr=function(e){return D(this,e)}),Date.prototype.fp_incr=function(e){return new Date(this.getFullYear(),this.getMonth(),this.getDate()+("string"==typeof e?parseInt(e,10):e))},"undefined"!=typeof window&&(window.flatpickr=T),T}()}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./node_modules/flatpickr/dist/flatpickr.js":
+/*!**************************************************!*\
+  !*** ./node_modules/flatpickr/dist/flatpickr.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* flatpickr v4.6.3, @license MIT */
+(function (global, factory) {
+     true ? module.exports = factory() :
+    undefined;
+}(this, function () { 'use strict';
+
+    /*! *****************************************************************************
+    Copyright (c) Microsoft Corporation. All rights reserved.
+    Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+    this file except in compliance with the License. You may obtain a copy of the
+    License at http://www.apache.org/licenses/LICENSE-2.0
+
+    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+    WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+    MERCHANTABLITY OR NON-INFRINGEMENT.
+
+    See the Apache Version 2.0 License for specific language governing permissions
+    and limitations under the License.
+    ***************************************************************************** */
+
+    var __assign = function() {
+        __assign = Object.assign || function __assign(t) {
+            for (var s, i = 1, n = arguments.length; i < n; i++) {
+                s = arguments[i];
+                for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+            }
+            return t;
+        };
+        return __assign.apply(this, arguments);
+    };
+
+    var HOOKS = [
+        "onChange",
+        "onClose",
+        "onDayCreate",
+        "onDestroy",
+        "onKeyDown",
+        "onMonthChange",
+        "onOpen",
+        "onParseConfig",
+        "onReady",
+        "onValueUpdate",
+        "onYearChange",
+        "onPreCalendarPosition",
+    ];
+    var defaults = {
+        _disable: [],
+        _enable: [],
+        allowInput: false,
+        altFormat: "F j, Y",
+        altInput: false,
+        altInputClass: "form-control input",
+        animate: typeof window === "object" &&
+            window.navigator.userAgent.indexOf("MSIE") === -1,
+        ariaDateFormat: "F j, Y",
+        clickOpens: true,
+        closeOnSelect: true,
+        conjunction: ", ",
+        dateFormat: "Y-m-d",
+        defaultHour: 12,
+        defaultMinute: 0,
+        defaultSeconds: 0,
+        disable: [],
+        disableMobile: false,
+        enable: [],
+        enableSeconds: false,
+        enableTime: false,
+        errorHandler: function (err) {
+            return typeof console !== "undefined" && console.warn(err);
+        },
+        getWeek: function (givenDate) {
+            var date = new Date(givenDate.getTime());
+            date.setHours(0, 0, 0, 0);
+            // Thursday in current week decides the year.
+            date.setDate(date.getDate() + 3 - ((date.getDay() + 6) % 7));
+            // January 4 is always in week 1.
+            var week1 = new Date(date.getFullYear(), 0, 4);
+            // Adjust to Thursday in week 1 and count number of weeks from date to week1.
+            return (1 +
+                Math.round(((date.getTime() - week1.getTime()) / 86400000 -
+                    3 +
+                    ((week1.getDay() + 6) % 7)) /
+                    7));
+        },
+        hourIncrement: 1,
+        ignoredFocusElements: [],
+        inline: false,
+        locale: "default",
+        minuteIncrement: 5,
+        mode: "single",
+        monthSelectorType: "dropdown",
+        nextArrow: "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z' /></svg>",
+        noCalendar: false,
+        now: new Date(),
+        onChange: [],
+        onClose: [],
+        onDayCreate: [],
+        onDestroy: [],
+        onKeyDown: [],
+        onMonthChange: [],
+        onOpen: [],
+        onParseConfig: [],
+        onReady: [],
+        onValueUpdate: [],
+        onYearChange: [],
+        onPreCalendarPosition: [],
+        plugins: [],
+        position: "auto",
+        positionElement: undefined,
+        prevArrow: "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z' /></svg>",
+        shorthandCurrentMonth: false,
+        showMonths: 1,
+        static: false,
+        time_24hr: false,
+        weekNumbers: false,
+        wrap: false
+    };
+
+    var english = {
+        weekdays: {
+            shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            longhand: [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ]
+        },
+        daysInMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+        firstDayOfWeek: 0,
+        ordinal: function (nth) {
+            var s = nth % 100;
+            if (s > 3 && s < 21)
+                return "th";
+            switch (s % 10) {
+                case 1:
+                    return "st";
+                case 2:
+                    return "nd";
+                case 3:
+                    return "rd";
+                default:
+                    return "th";
+            }
+        },
+        rangeSeparator: " to ",
+        weekAbbreviation: "Wk",
+        scrollTitle: "Scroll to increment",
+        toggleTitle: "Click to toggle",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "Year",
+        hourAriaLabel: "Hour",
+        minuteAriaLabel: "Minute",
+        time_24hr: false
+    };
+
+    var pad = function (number) { return ("0" + number).slice(-2); };
+    var int = function (bool) { return (bool === true ? 1 : 0); };
+    /* istanbul ignore next */
+    function debounce(func, wait, immediate) {
+        if (immediate === void 0) { immediate = false; }
+        var timeout;
+        return function () {
+            var context = this, args = arguments;
+            timeout !== null && clearTimeout(timeout);
+            timeout = window.setTimeout(function () {
+                timeout = null;
+                if (!immediate)
+                    func.apply(context, args);
+            }, wait);
+            if (immediate && !timeout)
+                func.apply(context, args);
+        };
+    }
+    var arrayify = function (obj) {
+        return obj instanceof Array ? obj : [obj];
+    };
+
+    function toggleClass(elem, className, bool) {
+        if (bool === true)
+            return elem.classList.add(className);
+        elem.classList.remove(className);
+    }
+    function createElement(tag, className, content) {
+        var e = window.document.createElement(tag);
+        className = className || "";
+        content = content || "";
+        e.className = className;
+        if (content !== undefined)
+            e.textContent = content;
+        return e;
+    }
+    function clearNode(node) {
+        while (node.firstChild)
+            node.removeChild(node.firstChild);
+    }
+    function findParent(node, condition) {
+        if (condition(node))
+            return node;
+        else if (node.parentNode)
+            return findParent(node.parentNode, condition);
+        return undefined; // nothing found
+    }
+    function createNumberInput(inputClassName, opts) {
+        var wrapper = createElement("div", "numInputWrapper"), numInput = createElement("input", "numInput " + inputClassName), arrowUp = createElement("span", "arrowUp"), arrowDown = createElement("span", "arrowDown");
+        if (navigator.userAgent.indexOf("MSIE 9.0") === -1) {
+            numInput.type = "number";
+        }
+        else {
+            numInput.type = "text";
+            numInput.pattern = "\\d*";
+        }
+        if (opts !== undefined)
+            for (var key in opts)
+                numInput.setAttribute(key, opts[key]);
+        wrapper.appendChild(numInput);
+        wrapper.appendChild(arrowUp);
+        wrapper.appendChild(arrowDown);
+        return wrapper;
+    }
+    function getEventTarget(event) {
+        if (typeof event.composedPath === "function") {
+            var path = event.composedPath();
+            return path[0];
+        }
+        return event.target;
+    }
+
+    var doNothing = function () { return undefined; };
+    var monthToStr = function (monthNumber, shorthand, locale) { return locale.months[shorthand ? "shorthand" : "longhand"][monthNumber]; };
+    var revFormat = {
+        D: doNothing,
+        F: function (dateObj, monthName, locale) {
+            dateObj.setMonth(locale.months.longhand.indexOf(monthName));
+        },
+        G: function (dateObj, hour) {
+            dateObj.setHours(parseFloat(hour));
+        },
+        H: function (dateObj, hour) {
+            dateObj.setHours(parseFloat(hour));
+        },
+        J: function (dateObj, day) {
+            dateObj.setDate(parseFloat(day));
+        },
+        K: function (dateObj, amPM, locale) {
+            dateObj.setHours((dateObj.getHours() % 12) +
+                12 * int(new RegExp(locale.amPM[1], "i").test(amPM)));
+        },
+        M: function (dateObj, shortMonth, locale) {
+            dateObj.setMonth(locale.months.shorthand.indexOf(shortMonth));
+        },
+        S: function (dateObj, seconds) {
+            dateObj.setSeconds(parseFloat(seconds));
+        },
+        U: function (_, unixSeconds) { return new Date(parseFloat(unixSeconds) * 1000); },
+        W: function (dateObj, weekNum, locale) {
+            var weekNumber = parseInt(weekNum);
+            var date = new Date(dateObj.getFullYear(), 0, 2 + (weekNumber - 1) * 7, 0, 0, 0, 0);
+            date.setDate(date.getDate() - date.getDay() + locale.firstDayOfWeek);
+            return date;
+        },
+        Y: function (dateObj, year) {
+            dateObj.setFullYear(parseFloat(year));
+        },
+        Z: function (_, ISODate) { return new Date(ISODate); },
+        d: function (dateObj, day) {
+            dateObj.setDate(parseFloat(day));
+        },
+        h: function (dateObj, hour) {
+            dateObj.setHours(parseFloat(hour));
+        },
+        i: function (dateObj, minutes) {
+            dateObj.setMinutes(parseFloat(minutes));
+        },
+        j: function (dateObj, day) {
+            dateObj.setDate(parseFloat(day));
+        },
+        l: doNothing,
+        m: function (dateObj, month) {
+            dateObj.setMonth(parseFloat(month) - 1);
+        },
+        n: function (dateObj, month) {
+            dateObj.setMonth(parseFloat(month) - 1);
+        },
+        s: function (dateObj, seconds) {
+            dateObj.setSeconds(parseFloat(seconds));
+        },
+        u: function (_, unixMillSeconds) {
+            return new Date(parseFloat(unixMillSeconds));
+        },
+        w: doNothing,
+        y: function (dateObj, year) {
+            dateObj.setFullYear(2000 + parseFloat(year));
+        }
+    };
+    var tokenRegex = {
+        D: "(\\w+)",
+        F: "(\\w+)",
+        G: "(\\d\\d|\\d)",
+        H: "(\\d\\d|\\d)",
+        J: "(\\d\\d|\\d)\\w+",
+        K: "",
+        M: "(\\w+)",
+        S: "(\\d\\d|\\d)",
+        U: "(.+)",
+        W: "(\\d\\d|\\d)",
+        Y: "(\\d{4})",
+        Z: "(.+)",
+        d: "(\\d\\d|\\d)",
+        h: "(\\d\\d|\\d)",
+        i: "(\\d\\d|\\d)",
+        j: "(\\d\\d|\\d)",
+        l: "(\\w+)",
+        m: "(\\d\\d|\\d)",
+        n: "(\\d\\d|\\d)",
+        s: "(\\d\\d|\\d)",
+        u: "(.+)",
+        w: "(\\d\\d|\\d)",
+        y: "(\\d{2})"
+    };
+    var formats = {
+        // get the date in UTC
+        Z: function (date) { return date.toISOString(); },
+        // weekday name, short, e.g. Thu
+        D: function (date, locale, options) {
+            return locale.weekdays.shorthand[formats.w(date, locale, options)];
+        },
+        // full month name e.g. January
+        F: function (date, locale, options) {
+            return monthToStr(formats.n(date, locale, options) - 1, false, locale);
+        },
+        // padded hour 1-12
+        G: function (date, locale, options) {
+            return pad(formats.h(date, locale, options));
+        },
+        // hours with leading zero e.g. 03
+        H: function (date) { return pad(date.getHours()); },
+        // day (1-30) with ordinal suffix e.g. 1st, 2nd
+        J: function (date, locale) {
+            return locale.ordinal !== undefined
+                ? date.getDate() + locale.ordinal(date.getDate())
+                : date.getDate();
+        },
+        // AM/PM
+        K: function (date, locale) { return locale.amPM[int(date.getHours() > 11)]; },
+        // shorthand month e.g. Jan, Sep, Oct, etc
+        M: function (date, locale) {
+            return monthToStr(date.getMonth(), true, locale);
+        },
+        // seconds 00-59
+        S: function (date) { return pad(date.getSeconds()); },
+        // unix timestamp
+        U: function (date) { return date.getTime() / 1000; },
+        W: function (date, _, options) {
+            return options.getWeek(date);
+        },
+        // full year e.g. 2016
+        Y: function (date) { return date.getFullYear(); },
+        // day in month, padded (01-30)
+        d: function (date) { return pad(date.getDate()); },
+        // hour from 1-12 (am/pm)
+        h: function (date) { return (date.getHours() % 12 ? date.getHours() % 12 : 12); },
+        // minutes, padded with leading zero e.g. 09
+        i: function (date) { return pad(date.getMinutes()); },
+        // day in month (1-30)
+        j: function (date) { return date.getDate(); },
+        // weekday name, full, e.g. Thursday
+        l: function (date, locale) {
+            return locale.weekdays.longhand[date.getDay()];
+        },
+        // padded month number (01-12)
+        m: function (date) { return pad(date.getMonth() + 1); },
+        // the month number (1-12)
+        n: function (date) { return date.getMonth() + 1; },
+        // seconds 0-59
+        s: function (date) { return date.getSeconds(); },
+        // Unix Milliseconds
+        u: function (date) { return date.getTime(); },
+        // number of the day of the week
+        w: function (date) { return date.getDay(); },
+        // last two digits of year e.g. 16 for 2016
+        y: function (date) { return String(date.getFullYear()).substring(2); }
+    };
+
+    var createDateFormatter = function (_a) {
+        var _b = _a.config, config = _b === void 0 ? defaults : _b, _c = _a.l10n, l10n = _c === void 0 ? english : _c;
+        return function (dateObj, frmt, overrideLocale) {
+            var locale = overrideLocale || l10n;
+            if (config.formatDate !== undefined) {
+                return config.formatDate(dateObj, frmt, locale);
+            }
+            return frmt
+                .split("")
+                .map(function (c, i, arr) {
+                return formats[c] && arr[i - 1] !== "\\"
+                    ? formats[c](dateObj, locale, config)
+                    : c !== "\\"
+                        ? c
+                        : "";
+            })
+                .join("");
+        };
+    };
+    var createDateParser = function (_a) {
+        var _b = _a.config, config = _b === void 0 ? defaults : _b, _c = _a.l10n, l10n = _c === void 0 ? english : _c;
+        return function (date, givenFormat, timeless, customLocale) {
+            if (date !== 0 && !date)
+                return undefined;
+            var locale = customLocale || l10n;
+            var parsedDate;
+            var dateOrig = date;
+            if (date instanceof Date)
+                parsedDate = new Date(date.getTime());
+            else if (typeof date !== "string" &&
+                date.toFixed !== undefined // timestamp
+            )
+                // create a copy
+                parsedDate = new Date(date);
+            else if (typeof date === "string") {
+                // date string
+                var format = givenFormat || (config || defaults).dateFormat;
+                var datestr = String(date).trim();
+                if (datestr === "today") {
+                    parsedDate = new Date();
+                    timeless = true;
+                }
+                else if (/Z$/.test(datestr) ||
+                    /GMT$/.test(datestr) // datestrings w/ timezone
+                )
+                    parsedDate = new Date(date);
+                else if (config && config.parseDate)
+                    parsedDate = config.parseDate(date, format);
+                else {
+                    parsedDate =
+                        !config || !config.noCalendar
+                            ? new Date(new Date().getFullYear(), 0, 1, 0, 0, 0, 0)
+                            : new Date(new Date().setHours(0, 0, 0, 0));
+                    var matched = void 0, ops = [];
+                    for (var i = 0, matchIndex = 0, regexStr = ""; i < format.length; i++) {
+                        var token_1 = format[i];
+                        var isBackSlash = token_1 === "\\";
+                        var escaped = format[i - 1] === "\\" || isBackSlash;
+                        if (tokenRegex[token_1] && !escaped) {
+                            regexStr += tokenRegex[token_1];
+                            var match = new RegExp(regexStr).exec(date);
+                            if (match && (matched = true)) {
+                                ops[token_1 !== "Y" ? "push" : "unshift"]({
+                                    fn: revFormat[token_1],
+                                    val: match[++matchIndex]
+                                });
+                            }
+                        }
+                        else if (!isBackSlash)
+                            regexStr += "."; // don't really care
+                        ops.forEach(function (_a) {
+                            var fn = _a.fn, val = _a.val;
+                            return (parsedDate = fn(parsedDate, val, locale) || parsedDate);
+                        });
+                    }
+                    parsedDate = matched ? parsedDate : undefined;
+                }
+            }
+            /* istanbul ignore next */
+            if (!(parsedDate instanceof Date && !isNaN(parsedDate.getTime()))) {
+                config.errorHandler(new Error("Invalid date provided: " + dateOrig));
+                return undefined;
+            }
+            if (timeless === true)
+                parsedDate.setHours(0, 0, 0, 0);
+            return parsedDate;
+        };
+    };
+    /**
+     * Compute the difference in dates, measured in ms
+     */
+    function compareDates(date1, date2, timeless) {
+        if (timeless === void 0) { timeless = true; }
+        if (timeless !== false) {
+            return (new Date(date1.getTime()).setHours(0, 0, 0, 0) -
+                new Date(date2.getTime()).setHours(0, 0, 0, 0));
+        }
+        return date1.getTime() - date2.getTime();
+    }
+    var isBetween = function (ts, ts1, ts2) {
+        return ts > Math.min(ts1, ts2) && ts < Math.max(ts1, ts2);
+    };
+    var duration = {
+        DAY: 86400000
+    };
+
+    if (typeof Object.assign !== "function") {
+        Object.assign = function (target) {
+            var args = [];
+            for (var _i = 1; _i < arguments.length; _i++) {
+                args[_i - 1] = arguments[_i];
+            }
+            if (!target) {
+                throw TypeError("Cannot convert undefined or null to object");
+            }
+            var _loop_1 = function (source) {
+                if (source) {
+                    Object.keys(source).forEach(function (key) { return (target[key] = source[key]); });
+                }
+            };
+            for (var _a = 0, args_1 = args; _a < args_1.length; _a++) {
+                var source = args_1[_a];
+                _loop_1(source);
+            }
+            return target;
+        };
+    }
+
+    var DEBOUNCED_CHANGE_MS = 300;
+    function FlatpickrInstance(element, instanceConfig) {
+        var self = {
+            config: __assign({}, defaults, flatpickr.defaultConfig),
+            l10n: english
+        };
+        self.parseDate = createDateParser({ config: self.config, l10n: self.l10n });
+        self._handlers = [];
+        self.pluginElements = [];
+        self.loadedPlugins = [];
+        self._bind = bind;
+        self._setHoursFromDate = setHoursFromDate;
+        self._positionCalendar = positionCalendar;
+        self.changeMonth = changeMonth;
+        self.changeYear = changeYear;
+        self.clear = clear;
+        self.close = close;
+        self._createElement = createElement;
+        self.destroy = destroy;
+        self.isEnabled = isEnabled;
+        self.jumpToDate = jumpToDate;
+        self.open = open;
+        self.redraw = redraw;
+        self.set = set;
+        self.setDate = setDate;
+        self.toggle = toggle;
+        function setupHelperFunctions() {
+            self.utils = {
+                getDaysInMonth: function (month, yr) {
+                    if (month === void 0) { month = self.currentMonth; }
+                    if (yr === void 0) { yr = self.currentYear; }
+                    if (month === 1 && ((yr % 4 === 0 && yr % 100 !== 0) || yr % 400 === 0))
+                        return 29;
+                    return self.l10n.daysInMonth[month];
+                }
+            };
+        }
+        function init() {
+            self.element = self.input = element;
+            self.isOpen = false;
+            parseConfig();
+            setupLocale();
+            setupInputs();
+            setupDates();
+            setupHelperFunctions();
+            if (!self.isMobile)
+                build();
+            bindEvents();
+            if (self.selectedDates.length || self.config.noCalendar) {
+                if (self.config.enableTime) {
+                    setHoursFromDate(self.config.noCalendar
+                        ? self.latestSelectedDateObj || self.config.minDate
+                        : undefined);
+                }
+                updateValue(false);
+            }
+            setCalendarWidth();
+            self.showTimeInput =
+                self.selectedDates.length > 0 || self.config.noCalendar;
+            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            /* TODO: investigate this further
+        
+              Currently, there is weird positioning behavior in safari causing pages
+              to scroll up. https://github.com/chmln/flatpickr/issues/563
+        
+              However, most browsers are not Safari and positioning is expensive when used
+              in scale. https://github.com/chmln/flatpickr/issues/1096
+            */
+            if (!self.isMobile && isSafari) {
+                positionCalendar();
+            }
+            triggerEvent("onReady");
+        }
+        function bindToInstance(fn) {
+            return fn.bind(self);
+        }
+        function setCalendarWidth() {
+            var config = self.config;
+            if (config.weekNumbers === false && config.showMonths === 1)
+                return;
+            else if (config.noCalendar !== true) {
+                window.requestAnimationFrame(function () {
+                    if (self.calendarContainer !== undefined) {
+                        self.calendarContainer.style.visibility = "hidden";
+                        self.calendarContainer.style.display = "block";
+                    }
+                    if (self.daysContainer !== undefined) {
+                        var daysWidth = (self.days.offsetWidth + 1) * config.showMonths;
+                        self.daysContainer.style.width = daysWidth + "px";
+                        self.calendarContainer.style.width =
+                            daysWidth +
+                                (self.weekWrapper !== undefined
+                                    ? self.weekWrapper.offsetWidth
+                                    : 0) +
+                                "px";
+                        self.calendarContainer.style.removeProperty("visibility");
+                        self.calendarContainer.style.removeProperty("display");
+                    }
+                });
+            }
+        }
+        /**
+         * The handler for all events targeting the time inputs
+         */
+        function updateTime(e) {
+            if (self.selectedDates.length === 0) {
+                setDefaultTime();
+            }
+            if (e !== undefined && e.type !== "blur") {
+                timeWrapper(e);
+            }
+            var prevValue = self._input.value;
+            setHoursFromInputs();
+            updateValue();
+            if (self._input.value !== prevValue) {
+                self._debouncedChange();
+            }
+        }
+        function ampm2military(hour, amPM) {
+            return (hour % 12) + 12 * int(amPM === self.l10n.amPM[1]);
+        }
+        function military2ampm(hour) {
+            switch (hour % 24) {
+                case 0:
+                case 12:
+                    return 12;
+                default:
+                    return hour % 12;
+            }
+        }
+        /**
+         * Syncs the selected date object time with user's time input
+         */
+        function setHoursFromInputs() {
+            if (self.hourElement === undefined || self.minuteElement === undefined)
+                return;
+            var hours = (parseInt(self.hourElement.value.slice(-2), 10) || 0) % 24, minutes = (parseInt(self.minuteElement.value, 10) || 0) % 60, seconds = self.secondElement !== undefined
+                ? (parseInt(self.secondElement.value, 10) || 0) % 60
+                : 0;
+            if (self.amPM !== undefined) {
+                hours = ampm2military(hours, self.amPM.textContent);
+            }
+            var limitMinHours = self.config.minTime !== undefined ||
+                (self.config.minDate &&
+                    self.minDateHasTime &&
+                    self.latestSelectedDateObj &&
+                    compareDates(self.latestSelectedDateObj, self.config.minDate, true) ===
+                        0);
+            var limitMaxHours = self.config.maxTime !== undefined ||
+                (self.config.maxDate &&
+                    self.maxDateHasTime &&
+                    self.latestSelectedDateObj &&
+                    compareDates(self.latestSelectedDateObj, self.config.maxDate, true) ===
+                        0);
+            if (limitMaxHours) {
+                var maxTime = self.config.maxTime !== undefined
+                    ? self.config.maxTime
+                    : self.config.maxDate;
+                hours = Math.min(hours, maxTime.getHours());
+                if (hours === maxTime.getHours())
+                    minutes = Math.min(minutes, maxTime.getMinutes());
+                if (minutes === maxTime.getMinutes())
+                    seconds = Math.min(seconds, maxTime.getSeconds());
+            }
+            if (limitMinHours) {
+                var minTime = self.config.minTime !== undefined
+                    ? self.config.minTime
+                    : self.config.minDate;
+                hours = Math.max(hours, minTime.getHours());
+                if (hours === minTime.getHours())
+                    minutes = Math.max(minutes, minTime.getMinutes());
+                if (minutes === minTime.getMinutes())
+                    seconds = Math.max(seconds, minTime.getSeconds());
+            }
+            setHours(hours, minutes, seconds);
+        }
+        /**
+         * Syncs time input values with a date
+         */
+        function setHoursFromDate(dateObj) {
+            var date = dateObj || self.latestSelectedDateObj;
+            if (date)
+                setHours(date.getHours(), date.getMinutes(), date.getSeconds());
+        }
+        function setDefaultHours() {
+            var hours = self.config.defaultHour;
+            var minutes = self.config.defaultMinute;
+            var seconds = self.config.defaultSeconds;
+            if (self.config.minDate !== undefined) {
+                var minHr = self.config.minDate.getHours();
+                var minMinutes = self.config.minDate.getMinutes();
+                hours = Math.max(hours, minHr);
+                if (hours === minHr)
+                    minutes = Math.max(minMinutes, minutes);
+                if (hours === minHr && minutes === minMinutes)
+                    seconds = self.config.minDate.getSeconds();
+            }
+            if (self.config.maxDate !== undefined) {
+                var maxHr = self.config.maxDate.getHours();
+                var maxMinutes = self.config.maxDate.getMinutes();
+                hours = Math.min(hours, maxHr);
+                if (hours === maxHr)
+                    minutes = Math.min(maxMinutes, minutes);
+                if (hours === maxHr && minutes === maxMinutes)
+                    seconds = self.config.maxDate.getSeconds();
+            }
+            setHours(hours, minutes, seconds);
+        }
+        /**
+         * Sets the hours, minutes, and optionally seconds
+         * of the latest selected date object and the
+         * corresponding time inputs
+         * @param {Number} hours the hour. whether its military
+         *                 or am-pm gets inferred from config
+         * @param {Number} minutes the minutes
+         * @param {Number} seconds the seconds (optional)
+         */
+        function setHours(hours, minutes, seconds) {
+            if (self.latestSelectedDateObj !== undefined) {
+                self.latestSelectedDateObj.setHours(hours % 24, minutes, seconds || 0, 0);
+            }
+            if (!self.hourElement || !self.minuteElement || self.isMobile)
+                return;
+            self.hourElement.value = pad(!self.config.time_24hr
+                ? ((12 + hours) % 12) + 12 * int(hours % 12 === 0)
+                : hours);
+            self.minuteElement.value = pad(minutes);
+            if (self.amPM !== undefined)
+                self.amPM.textContent = self.l10n.amPM[int(hours >= 12)];
+            if (self.secondElement !== undefined)
+                self.secondElement.value = pad(seconds);
+        }
+        /**
+         * Handles the year input and incrementing events
+         * @param {Event} event the keyup or increment event
+         */
+        function onYearInput(event) {
+            var year = parseInt(event.target.value) + (event.delta || 0);
+            if (year / 1000 > 1 ||
+                (event.key === "Enter" && !/[^\d]/.test(year.toString()))) {
+                changeYear(year);
+            }
+        }
+        /**
+         * Essentially addEventListener + tracking
+         * @param {Element} element the element to addEventListener to
+         * @param {String} event the event name
+         * @param {Function} handler the event handler
+         */
+        function bind(element, event, handler, options) {
+            if (event instanceof Array)
+                return event.forEach(function (ev) { return bind(element, ev, handler, options); });
+            if (element instanceof Array)
+                return element.forEach(function (el) { return bind(el, event, handler, options); });
+            element.addEventListener(event, handler, options);
+            self._handlers.push({
+                element: element,
+                event: event,
+                handler: handler,
+                options: options
+            });
+        }
+        /**
+         * A mousedown handler which mimics click.
+         * Minimizes latency, since we don't need to wait for mouseup in most cases.
+         * Also, avoids handling right clicks.
+         *
+         * @param {Function} handler the event handler
+         */
+        function onClick(handler) {
+            return function (evt) {
+                evt.which === 1 && handler(evt);
+            };
+        }
+        function triggerChange() {
+            triggerEvent("onChange");
+        }
+        /**
+         * Adds all the necessary event listeners
+         */
+        function bindEvents() {
+            if (self.config.wrap) {
+                ["open", "close", "toggle", "clear"].forEach(function (evt) {
+                    Array.prototype.forEach.call(self.element.querySelectorAll("[data-" + evt + "]"), function (el) {
+                        return bind(el, "click", self[evt]);
+                    });
+                });
+            }
+            if (self.isMobile) {
+                setupMobile();
+                return;
+            }
+            var debouncedResize = debounce(onResize, 50);
+            self._debouncedChange = debounce(triggerChange, DEBOUNCED_CHANGE_MS);
+            if (self.daysContainer && !/iPhone|iPad|iPod/i.test(navigator.userAgent))
+                bind(self.daysContainer, "mouseover", function (e) {
+                    if (self.config.mode === "range")
+                        onMouseOver(e.target);
+                });
+            bind(window.document.body, "keydown", onKeyDown);
+            if (!self.config.inline && !self.config.static)
+                bind(window, "resize", debouncedResize);
+            if (window.ontouchstart !== undefined)
+                bind(window.document, "touchstart", documentClick);
+            else
+                bind(window.document, "mousedown", onClick(documentClick));
+            bind(window.document, "focus", documentClick, { capture: true });
+            if (self.config.clickOpens === true) {
+                bind(self._input, "focus", self.open);
+                bind(self._input, "mousedown", onClick(self.open));
+            }
+            if (self.daysContainer !== undefined) {
+                bind(self.monthNav, "mousedown", onClick(onMonthNavClick));
+                bind(self.monthNav, ["keyup", "increment"], onYearInput);
+                bind(self.daysContainer, "mousedown", onClick(selectDate));
+            }
+            if (self.timeContainer !== undefined &&
+                self.minuteElement !== undefined &&
+                self.hourElement !== undefined) {
+                var selText = function (e) {
+                    return e.target.select();
+                };
+                bind(self.timeContainer, ["increment"], updateTime);
+                bind(self.timeContainer, "blur", updateTime, { capture: true });
+                bind(self.timeContainer, "mousedown", onClick(timeIncrement));
+                bind([self.hourElement, self.minuteElement], ["focus", "click"], selText);
+                if (self.secondElement !== undefined)
+                    bind(self.secondElement, "focus", function () { return self.secondElement && self.secondElement.select(); });
+                if (self.amPM !== undefined) {
+                    bind(self.amPM, "mousedown", onClick(function (e) {
+                        updateTime(e);
+                        triggerChange();
+                    }));
+                }
+            }
+        }
+        /**
+         * Set the calendar view to a particular date.
+         * @param {Date} jumpDate the date to set the view to
+         * @param {boolean} triggerChange if change events should be triggered
+         */
+        function jumpToDate(jumpDate, triggerChange) {
+            var jumpTo = jumpDate !== undefined
+                ? self.parseDate(jumpDate)
+                : self.latestSelectedDateObj ||
+                    (self.config.minDate && self.config.minDate > self.now
+                        ? self.config.minDate
+                        : self.config.maxDate && self.config.maxDate < self.now
+                            ? self.config.maxDate
+                            : self.now);
+            var oldYear = self.currentYear;
+            var oldMonth = self.currentMonth;
+            try {
+                if (jumpTo !== undefined) {
+                    self.currentYear = jumpTo.getFullYear();
+                    self.currentMonth = jumpTo.getMonth();
+                }
+            }
+            catch (e) {
+                /* istanbul ignore next */
+                e.message = "Invalid date supplied: " + jumpTo;
+                self.config.errorHandler(e);
+            }
+            if (triggerChange && self.currentYear !== oldYear) {
+                triggerEvent("onYearChange");
+                buildMonthSwitch();
+            }
+            if (triggerChange &&
+                (self.currentYear !== oldYear || self.currentMonth !== oldMonth)) {
+                triggerEvent("onMonthChange");
+            }
+            self.redraw();
+        }
+        /**
+         * The up/down arrow handler for time inputs
+         * @param {Event} e the click event
+         */
+        function timeIncrement(e) {
+            if (~e.target.className.indexOf("arrow"))
+                incrementNumInput(e, e.target.classList.contains("arrowUp") ? 1 : -1);
+        }
+        /**
+         * Increments/decrements the value of input associ-
+         * ated with the up/down arrow by dispatching an
+         * "increment" event on the input.
+         *
+         * @param {Event} e the click event
+         * @param {Number} delta the diff (usually 1 or -1)
+         * @param {Element} inputElem the input element
+         */
+        function incrementNumInput(e, delta, inputElem) {
+            var target = e && e.target;
+            var input = inputElem ||
+                (target && target.parentNode && target.parentNode.firstChild);
+            var event = createEvent("increment");
+            event.delta = delta;
+            input && input.dispatchEvent(event);
+        }
+        function build() {
+            var fragment = window.document.createDocumentFragment();
+            self.calendarContainer = createElement("div", "flatpickr-calendar");
+            self.calendarContainer.tabIndex = -1;
+            if (!self.config.noCalendar) {
+                fragment.appendChild(buildMonthNav());
+                self.innerContainer = createElement("div", "flatpickr-innerContainer");
+                if (self.config.weekNumbers) {
+                    var _a = buildWeeks(), weekWrapper = _a.weekWrapper, weekNumbers = _a.weekNumbers;
+                    self.innerContainer.appendChild(weekWrapper);
+                    self.weekNumbers = weekNumbers;
+                    self.weekWrapper = weekWrapper;
+                }
+                self.rContainer = createElement("div", "flatpickr-rContainer");
+                self.rContainer.appendChild(buildWeekdays());
+                if (!self.daysContainer) {
+                    self.daysContainer = createElement("div", "flatpickr-days");
+                    self.daysContainer.tabIndex = -1;
+                }
+                buildDays();
+                self.rContainer.appendChild(self.daysContainer);
+                self.innerContainer.appendChild(self.rContainer);
+                fragment.appendChild(self.innerContainer);
+            }
+            if (self.config.enableTime) {
+                fragment.appendChild(buildTime());
+            }
+            toggleClass(self.calendarContainer, "rangeMode", self.config.mode === "range");
+            toggleClass(self.calendarContainer, "animate", self.config.animate === true);
+            toggleClass(self.calendarContainer, "multiMonth", self.config.showMonths > 1);
+            self.calendarContainer.appendChild(fragment);
+            var customAppend = self.config.appendTo !== undefined &&
+                self.config.appendTo.nodeType !== undefined;
+            if (self.config.inline || self.config.static) {
+                self.calendarContainer.classList.add(self.config.inline ? "inline" : "static");
+                if (self.config.inline) {
+                    if (!customAppend && self.element.parentNode)
+                        self.element.parentNode.insertBefore(self.calendarContainer, self._input.nextSibling);
+                    else if (self.config.appendTo !== undefined)
+                        self.config.appendTo.appendChild(self.calendarContainer);
+                }
+                if (self.config.static) {
+                    var wrapper = createElement("div", "flatpickr-wrapper");
+                    if (self.element.parentNode)
+                        self.element.parentNode.insertBefore(wrapper, self.element);
+                    wrapper.appendChild(self.element);
+                    if (self.altInput)
+                        wrapper.appendChild(self.altInput);
+                    wrapper.appendChild(self.calendarContainer);
+                }
+            }
+            if (!self.config.static && !self.config.inline)
+                (self.config.appendTo !== undefined
+                    ? self.config.appendTo
+                    : window.document.body).appendChild(self.calendarContainer);
+        }
+        function createDay(className, date, dayNumber, i) {
+            var dateIsEnabled = isEnabled(date, true), dayElement = createElement("span", "flatpickr-day " + className, date.getDate().toString());
+            dayElement.dateObj = date;
+            dayElement.$i = i;
+            dayElement.setAttribute("aria-label", self.formatDate(date, self.config.ariaDateFormat));
+            if (className.indexOf("hidden") === -1 &&
+                compareDates(date, self.now) === 0) {
+                self.todayDateElem = dayElement;
+                dayElement.classList.add("today");
+                dayElement.setAttribute("aria-current", "date");
+            }
+            if (dateIsEnabled) {
+                dayElement.tabIndex = -1;
+                if (isDateSelected(date)) {
+                    dayElement.classList.add("selected");
+                    self.selectedDateElem = dayElement;
+                    if (self.config.mode === "range") {
+                        toggleClass(dayElement, "startRange", self.selectedDates[0] &&
+                            compareDates(date, self.selectedDates[0], true) === 0);
+                        toggleClass(dayElement, "endRange", self.selectedDates[1] &&
+                            compareDates(date, self.selectedDates[1], true) === 0);
+                        if (className === "nextMonthDay")
+                            dayElement.classList.add("inRange");
+                    }
+                }
+            }
+            else {
+                dayElement.classList.add("flatpickr-disabled");
+            }
+            if (self.config.mode === "range") {
+                if (isDateInRange(date) && !isDateSelected(date))
+                    dayElement.classList.add("inRange");
+            }
+            if (self.weekNumbers &&
+                self.config.showMonths === 1 &&
+                className !== "prevMonthDay" &&
+                dayNumber % 7 === 1) {
+                self.weekNumbers.insertAdjacentHTML("beforeend", "<span class='flatpickr-day'>" + self.config.getWeek(date) + "</span>");
+            }
+            triggerEvent("onDayCreate", dayElement);
+            return dayElement;
+        }
+        function focusOnDayElem(targetNode) {
+            targetNode.focus();
+            if (self.config.mode === "range")
+                onMouseOver(targetNode);
+        }
+        function getFirstAvailableDay(delta) {
+            var startMonth = delta > 0 ? 0 : self.config.showMonths - 1;
+            var endMonth = delta > 0 ? self.config.showMonths : -1;
+            for (var m = startMonth; m != endMonth; m += delta) {
+                var month = self.daysContainer.children[m];
+                var startIndex = delta > 0 ? 0 : month.children.length - 1;
+                var endIndex = delta > 0 ? month.children.length : -1;
+                for (var i = startIndex; i != endIndex; i += delta) {
+                    var c = month.children[i];
+                    if (c.className.indexOf("hidden") === -1 && isEnabled(c.dateObj))
+                        return c;
+                }
+            }
+            return undefined;
+        }
+        function getNextAvailableDay(current, delta) {
+            var givenMonth = current.className.indexOf("Month") === -1
+                ? current.dateObj.getMonth()
+                : self.currentMonth;
+            var endMonth = delta > 0 ? self.config.showMonths : -1;
+            var loopDelta = delta > 0 ? 1 : -1;
+            for (var m = givenMonth - self.currentMonth; m != endMonth; m += loopDelta) {
+                var month = self.daysContainer.children[m];
+                var startIndex = givenMonth - self.currentMonth === m
+                    ? current.$i + delta
+                    : delta < 0
+                        ? month.children.length - 1
+                        : 0;
+                var numMonthDays = month.children.length;
+                for (var i = startIndex; i >= 0 && i < numMonthDays && i != (delta > 0 ? numMonthDays : -1); i += loopDelta) {
+                    var c = month.children[i];
+                    if (c.className.indexOf("hidden") === -1 &&
+                        isEnabled(c.dateObj) &&
+                        Math.abs(current.$i - i) >= Math.abs(delta))
+                        return focusOnDayElem(c);
+                }
+            }
+            self.changeMonth(loopDelta);
+            focusOnDay(getFirstAvailableDay(loopDelta), 0);
+            return undefined;
+        }
+        function focusOnDay(current, offset) {
+            var dayFocused = isInView(document.activeElement || document.body);
+            var startElem = current !== undefined
+                ? current
+                : dayFocused
+                    ? document.activeElement
+                    : self.selectedDateElem !== undefined && isInView(self.selectedDateElem)
+                        ? self.selectedDateElem
+                        : self.todayDateElem !== undefined && isInView(self.todayDateElem)
+                            ? self.todayDateElem
+                            : getFirstAvailableDay(offset > 0 ? 1 : -1);
+            if (startElem === undefined)
+                return self._input.focus();
+            if (!dayFocused)
+                return focusOnDayElem(startElem);
+            getNextAvailableDay(startElem, offset);
+        }
+        function buildMonthDays(year, month) {
+            var firstOfMonth = (new Date(year, month, 1).getDay() - self.l10n.firstDayOfWeek + 7) % 7;
+            var prevMonthDays = self.utils.getDaysInMonth((month - 1 + 12) % 12);
+            var daysInMonth = self.utils.getDaysInMonth(month), days = window.document.createDocumentFragment(), isMultiMonth = self.config.showMonths > 1, prevMonthDayClass = isMultiMonth ? "prevMonthDay hidden" : "prevMonthDay", nextMonthDayClass = isMultiMonth ? "nextMonthDay hidden" : "nextMonthDay";
+            var dayNumber = prevMonthDays + 1 - firstOfMonth, dayIndex = 0;
+            // prepend days from the ending of previous month
+            for (; dayNumber <= prevMonthDays; dayNumber++, dayIndex++) {
+                days.appendChild(createDay(prevMonthDayClass, new Date(year, month - 1, dayNumber), dayNumber, dayIndex));
+            }
+            // Start at 1 since there is no 0th day
+            for (dayNumber = 1; dayNumber <= daysInMonth; dayNumber++, dayIndex++) {
+                days.appendChild(createDay("", new Date(year, month, dayNumber), dayNumber, dayIndex));
+            }
+            // append days from the next month
+            for (var dayNum = daysInMonth + 1; dayNum <= 42 - firstOfMonth &&
+                (self.config.showMonths === 1 || dayIndex % 7 !== 0); dayNum++, dayIndex++) {
+                days.appendChild(createDay(nextMonthDayClass, new Date(year, month + 1, dayNum % daysInMonth), dayNum, dayIndex));
+            }
+            //updateNavigationCurrentMonth();
+            var dayContainer = createElement("div", "dayContainer");
+            dayContainer.appendChild(days);
+            return dayContainer;
+        }
+        function buildDays() {
+            if (self.daysContainer === undefined) {
+                return;
+            }
+            clearNode(self.daysContainer);
+            // TODO: week numbers for each month
+            if (self.weekNumbers)
+                clearNode(self.weekNumbers);
+            var frag = document.createDocumentFragment();
+            for (var i = 0; i < self.config.showMonths; i++) {
+                var d = new Date(self.currentYear, self.currentMonth, 1);
+                d.setMonth(self.currentMonth + i);
+                frag.appendChild(buildMonthDays(d.getFullYear(), d.getMonth()));
+            }
+            self.daysContainer.appendChild(frag);
+            self.days = self.daysContainer.firstChild;
+            if (self.config.mode === "range" && self.selectedDates.length === 1) {
+                onMouseOver();
+            }
+        }
+        function buildMonthSwitch() {
+            if (self.config.showMonths > 1 ||
+                self.config.monthSelectorType !== "dropdown")
+                return;
+            var shouldBuildMonth = function (month) {
+                if (self.config.minDate !== undefined &&
+                    self.currentYear === self.config.minDate.getFullYear() &&
+                    month < self.config.minDate.getMonth()) {
+                    return false;
+                }
+                return !(self.config.maxDate !== undefined &&
+                    self.currentYear === self.config.maxDate.getFullYear() &&
+                    month > self.config.maxDate.getMonth());
+            };
+            self.monthsDropdownContainer.tabIndex = -1;
+            self.monthsDropdownContainer.innerHTML = "";
+            for (var i = 0; i < 12; i++) {
+                if (!shouldBuildMonth(i))
+                    continue;
+                var month = createElement("option", "flatpickr-monthDropdown-month");
+                month.value = new Date(self.currentYear, i).getMonth().toString();
+                month.textContent = monthToStr(i, self.config.shorthandCurrentMonth, self.l10n);
+                month.tabIndex = -1;
+                if (self.currentMonth === i) {
+                    month.selected = true;
+                }
+                self.monthsDropdownContainer.appendChild(month);
+            }
+        }
+        function buildMonth() {
+            var container = createElement("div", "flatpickr-month");
+            var monthNavFragment = window.document.createDocumentFragment();
+            var monthElement;
+            if (self.config.showMonths > 1 ||
+                self.config.monthSelectorType === "static") {
+                monthElement = createElement("span", "cur-month");
+            }
+            else {
+                self.monthsDropdownContainer = createElement("select", "flatpickr-monthDropdown-months");
+                bind(self.monthsDropdownContainer, "change", function (e) {
+                    var target = e.target;
+                    var selectedMonth = parseInt(target.value, 10);
+                    self.changeMonth(selectedMonth - self.currentMonth);
+                    triggerEvent("onMonthChange");
+                });
+                buildMonthSwitch();
+                monthElement = self.monthsDropdownContainer;
+            }
+            var yearInput = createNumberInput("cur-year", { tabindex: "-1" });
+            var yearElement = yearInput.getElementsByTagName("input")[0];
+            yearElement.setAttribute("aria-label", self.l10n.yearAriaLabel);
+            if (self.config.minDate) {
+                yearElement.setAttribute("min", self.config.minDate.getFullYear().toString());
+            }
+            if (self.config.maxDate) {
+                yearElement.setAttribute("max", self.config.maxDate.getFullYear().toString());
+                yearElement.disabled =
+                    !!self.config.minDate &&
+                        self.config.minDate.getFullYear() === self.config.maxDate.getFullYear();
+            }
+            var currentMonth = createElement("div", "flatpickr-current-month");
+            currentMonth.appendChild(monthElement);
+            currentMonth.appendChild(yearInput);
+            monthNavFragment.appendChild(currentMonth);
+            container.appendChild(monthNavFragment);
+            return {
+                container: container,
+                yearElement: yearElement,
+                monthElement: monthElement
+            };
+        }
+        function buildMonths() {
+            clearNode(self.monthNav);
+            self.monthNav.appendChild(self.prevMonthNav);
+            if (self.config.showMonths) {
+                self.yearElements = [];
+                self.monthElements = [];
+            }
+            for (var m = self.config.showMonths; m--;) {
+                var month = buildMonth();
+                self.yearElements.push(month.yearElement);
+                self.monthElements.push(month.monthElement);
+                self.monthNav.appendChild(month.container);
+            }
+            self.monthNav.appendChild(self.nextMonthNav);
+        }
+        function buildMonthNav() {
+            self.monthNav = createElement("div", "flatpickr-months");
+            self.yearElements = [];
+            self.monthElements = [];
+            self.prevMonthNav = createElement("span", "flatpickr-prev-month");
+            self.prevMonthNav.innerHTML = self.config.prevArrow;
+            self.nextMonthNav = createElement("span", "flatpickr-next-month");
+            self.nextMonthNav.innerHTML = self.config.nextArrow;
+            buildMonths();
+            Object.defineProperty(self, "_hidePrevMonthArrow", {
+                get: function () { return self.__hidePrevMonthArrow; },
+                set: function (bool) {
+                    if (self.__hidePrevMonthArrow !== bool) {
+                        toggleClass(self.prevMonthNav, "flatpickr-disabled", bool);
+                        self.__hidePrevMonthArrow = bool;
+                    }
+                }
+            });
+            Object.defineProperty(self, "_hideNextMonthArrow", {
+                get: function () { return self.__hideNextMonthArrow; },
+                set: function (bool) {
+                    if (self.__hideNextMonthArrow !== bool) {
+                        toggleClass(self.nextMonthNav, "flatpickr-disabled", bool);
+                        self.__hideNextMonthArrow = bool;
+                    }
+                }
+            });
+            self.currentYearElement = self.yearElements[0];
+            updateNavigationCurrentMonth();
+            return self.monthNav;
+        }
+        function buildTime() {
+            self.calendarContainer.classList.add("hasTime");
+            if (self.config.noCalendar)
+                self.calendarContainer.classList.add("noCalendar");
+            self.timeContainer = createElement("div", "flatpickr-time");
+            self.timeContainer.tabIndex = -1;
+            var separator = createElement("span", "flatpickr-time-separator", ":");
+            var hourInput = createNumberInput("flatpickr-hour", {
+                "aria-label": self.l10n.hourAriaLabel
+            });
+            self.hourElement = hourInput.getElementsByTagName("input")[0];
+            var minuteInput = createNumberInput("flatpickr-minute", {
+                "aria-label": self.l10n.minuteAriaLabel
+            });
+            self.minuteElement = minuteInput.getElementsByTagName("input")[0];
+            self.hourElement.tabIndex = self.minuteElement.tabIndex = -1;
+            self.hourElement.value = pad(self.latestSelectedDateObj
+                ? self.latestSelectedDateObj.getHours()
+                : self.config.time_24hr
+                    ? self.config.defaultHour
+                    : military2ampm(self.config.defaultHour));
+            self.minuteElement.value = pad(self.latestSelectedDateObj
+                ? self.latestSelectedDateObj.getMinutes()
+                : self.config.defaultMinute);
+            self.hourElement.setAttribute("step", self.config.hourIncrement.toString());
+            self.minuteElement.setAttribute("step", self.config.minuteIncrement.toString());
+            self.hourElement.setAttribute("min", self.config.time_24hr ? "0" : "1");
+            self.hourElement.setAttribute("max", self.config.time_24hr ? "23" : "12");
+            self.minuteElement.setAttribute("min", "0");
+            self.minuteElement.setAttribute("max", "59");
+            self.timeContainer.appendChild(hourInput);
+            self.timeContainer.appendChild(separator);
+            self.timeContainer.appendChild(minuteInput);
+            if (self.config.time_24hr)
+                self.timeContainer.classList.add("time24hr");
+            if (self.config.enableSeconds) {
+                self.timeContainer.classList.add("hasSeconds");
+                var secondInput = createNumberInput("flatpickr-second");
+                self.secondElement = secondInput.getElementsByTagName("input")[0];
+                self.secondElement.value = pad(self.latestSelectedDateObj
+                    ? self.latestSelectedDateObj.getSeconds()
+                    : self.config.defaultSeconds);
+                self.secondElement.setAttribute("step", self.minuteElement.getAttribute("step"));
+                self.secondElement.setAttribute("min", "0");
+                self.secondElement.setAttribute("max", "59");
+                self.timeContainer.appendChild(createElement("span", "flatpickr-time-separator", ":"));
+                self.timeContainer.appendChild(secondInput);
+            }
+            if (!self.config.time_24hr) {
+                // add self.amPM if appropriate
+                self.amPM = createElement("span", "flatpickr-am-pm", self.l10n.amPM[int((self.latestSelectedDateObj
+                    ? self.hourElement.value
+                    : self.config.defaultHour) > 11)]);
+                self.amPM.title = self.l10n.toggleTitle;
+                self.amPM.tabIndex = -1;
+                self.timeContainer.appendChild(self.amPM);
+            }
+            return self.timeContainer;
+        }
+        function buildWeekdays() {
+            if (!self.weekdayContainer)
+                self.weekdayContainer = createElement("div", "flatpickr-weekdays");
+            else
+                clearNode(self.weekdayContainer);
+            for (var i = self.config.showMonths; i--;) {
+                var container = createElement("div", "flatpickr-weekdaycontainer");
+                self.weekdayContainer.appendChild(container);
+            }
+            updateWeekdays();
+            return self.weekdayContainer;
+        }
+        function updateWeekdays() {
+            if (!self.weekdayContainer) {
+                return;
+            }
+            var firstDayOfWeek = self.l10n.firstDayOfWeek;
+            var weekdays = self.l10n.weekdays.shorthand.slice();
+            if (firstDayOfWeek > 0 && firstDayOfWeek < weekdays.length) {
+                weekdays = weekdays.splice(firstDayOfWeek, weekdays.length).concat(weekdays.splice(0, firstDayOfWeek));
+            }
+            for (var i = self.config.showMonths; i--;) {
+                self.weekdayContainer.children[i].innerHTML = "\n      <span class='flatpickr-weekday'>\n        " + weekdays.join("</span><span class='flatpickr-weekday'>") + "\n      </span>\n      ";
+            }
+        }
+        /* istanbul ignore next */
+        function buildWeeks() {
+            self.calendarContainer.classList.add("hasWeeks");
+            var weekWrapper = createElement("div", "flatpickr-weekwrapper");
+            weekWrapper.appendChild(createElement("span", "flatpickr-weekday", self.l10n.weekAbbreviation));
+            var weekNumbers = createElement("div", "flatpickr-weeks");
+            weekWrapper.appendChild(weekNumbers);
+            return {
+                weekWrapper: weekWrapper,
+                weekNumbers: weekNumbers
+            };
+        }
+        function changeMonth(value, isOffset) {
+            if (isOffset === void 0) { isOffset = true; }
+            var delta = isOffset ? value : value - self.currentMonth;
+            if ((delta < 0 && self._hidePrevMonthArrow === true) ||
+                (delta > 0 && self._hideNextMonthArrow === true))
+                return;
+            self.currentMonth += delta;
+            if (self.currentMonth < 0 || self.currentMonth > 11) {
+                self.currentYear += self.currentMonth > 11 ? 1 : -1;
+                self.currentMonth = (self.currentMonth + 12) % 12;
+                triggerEvent("onYearChange");
+                buildMonthSwitch();
+            }
+            buildDays();
+            triggerEvent("onMonthChange");
+            updateNavigationCurrentMonth();
+        }
+        function clear(triggerChangeEvent, toInitial) {
+            if (triggerChangeEvent === void 0) { triggerChangeEvent = true; }
+            if (toInitial === void 0) { toInitial = true; }
+            self.input.value = "";
+            if (self.altInput !== undefined)
+                self.altInput.value = "";
+            if (self.mobileInput !== undefined)
+                self.mobileInput.value = "";
+            self.selectedDates = [];
+            self.latestSelectedDateObj = undefined;
+            if (toInitial === true) {
+                self.currentYear = self._initialDate.getFullYear();
+                self.currentMonth = self._initialDate.getMonth();
+            }
+            self.showTimeInput = false;
+            if (self.config.enableTime === true) {
+                setDefaultHours();
+            }
+            self.redraw();
+            if (triggerChangeEvent)
+                // triggerChangeEvent is true (default) or an Event
+                triggerEvent("onChange");
+        }
+        function close() {
+            self.isOpen = false;
+            if (!self.isMobile) {
+                if (self.calendarContainer !== undefined) {
+                    self.calendarContainer.classList.remove("open");
+                }
+                if (self._input !== undefined) {
+                    self._input.classList.remove("active");
+                }
+            }
+            triggerEvent("onClose");
+        }
+        function destroy() {
+            if (self.config !== undefined)
+                triggerEvent("onDestroy");
+            for (var i = self._handlers.length; i--;) {
+                var h = self._handlers[i];
+                h.element.removeEventListener(h.event, h.handler, h.options);
+            }
+            self._handlers = [];
+            if (self.mobileInput) {
+                if (self.mobileInput.parentNode)
+                    self.mobileInput.parentNode.removeChild(self.mobileInput);
+                self.mobileInput = undefined;
+            }
+            else if (self.calendarContainer && self.calendarContainer.parentNode) {
+                if (self.config.static && self.calendarContainer.parentNode) {
+                    var wrapper = self.calendarContainer.parentNode;
+                    wrapper.lastChild && wrapper.removeChild(wrapper.lastChild);
+                    if (wrapper.parentNode) {
+                        while (wrapper.firstChild)
+                            wrapper.parentNode.insertBefore(wrapper.firstChild, wrapper);
+                        wrapper.parentNode.removeChild(wrapper);
+                    }
+                }
+                else
+                    self.calendarContainer.parentNode.removeChild(self.calendarContainer);
+            }
+            if (self.altInput) {
+                self.input.type = "text";
+                if (self.altInput.parentNode)
+                    self.altInput.parentNode.removeChild(self.altInput);
+                delete self.altInput;
+            }
+            if (self.input) {
+                self.input.type = self.input._type;
+                self.input.classList.remove("flatpickr-input");
+                self.input.removeAttribute("readonly");
+                self.input.value = "";
+            }
+            [
+                "_showTimeInput",
+                "latestSelectedDateObj",
+                "_hideNextMonthArrow",
+                "_hidePrevMonthArrow",
+                "__hideNextMonthArrow",
+                "__hidePrevMonthArrow",
+                "isMobile",
+                "isOpen",
+                "selectedDateElem",
+                "minDateHasTime",
+                "maxDateHasTime",
+                "days",
+                "daysContainer",
+                "_input",
+                "_positionElement",
+                "innerContainer",
+                "rContainer",
+                "monthNav",
+                "todayDateElem",
+                "calendarContainer",
+                "weekdayContainer",
+                "prevMonthNav",
+                "nextMonthNav",
+                "monthsDropdownContainer",
+                "currentMonthElement",
+                "currentYearElement",
+                "navigationCurrentMonth",
+                "selectedDateElem",
+                "config",
+            ].forEach(function (k) {
+                try {
+                    delete self[k];
+                }
+                catch (_) { }
+            });
+        }
+        function isCalendarElem(elem) {
+            if (self.config.appendTo && self.config.appendTo.contains(elem))
+                return true;
+            return self.calendarContainer.contains(elem);
+        }
+        function documentClick(e) {
+            if (self.isOpen && !self.config.inline) {
+                var eventTarget_1 = getEventTarget(e);
+                var isCalendarElement = isCalendarElem(eventTarget_1);
+                var isInput = eventTarget_1 === self.input ||
+                    eventTarget_1 === self.altInput ||
+                    self.element.contains(eventTarget_1) ||
+                    // web components
+                    // e.path is not present in all browsers. circumventing typechecks
+                    (e.path &&
+                        e.path.indexOf &&
+                        (~e.path.indexOf(self.input) ||
+                            ~e.path.indexOf(self.altInput)));
+                var lostFocus = e.type === "blur"
+                    ? isInput &&
+                        e.relatedTarget &&
+                        !isCalendarElem(e.relatedTarget)
+                    : !isInput &&
+                        !isCalendarElement &&
+                        !isCalendarElem(e.relatedTarget);
+                var isIgnored = !self.config.ignoredFocusElements.some(function (elem) {
+                    return elem.contains(eventTarget_1);
+                });
+                if (lostFocus && isIgnored) {
+                    if (self.timeContainer !== undefined &&
+                        self.minuteElement !== undefined &&
+                        self.hourElement !== undefined) {
+                        updateTime();
+                    }
+                    self.close();
+                    if (self.config.mode === "range" && self.selectedDates.length === 1) {
+                        self.clear(false);
+                        self.redraw();
+                    }
+                }
+            }
+        }
+        function changeYear(newYear) {
+            if (!newYear ||
+                (self.config.minDate && newYear < self.config.minDate.getFullYear()) ||
+                (self.config.maxDate && newYear > self.config.maxDate.getFullYear()))
+                return;
+            var newYearNum = newYear, isNewYear = self.currentYear !== newYearNum;
+            self.currentYear = newYearNum || self.currentYear;
+            if (self.config.maxDate &&
+                self.currentYear === self.config.maxDate.getFullYear()) {
+                self.currentMonth = Math.min(self.config.maxDate.getMonth(), self.currentMonth);
+            }
+            else if (self.config.minDate &&
+                self.currentYear === self.config.minDate.getFullYear()) {
+                self.currentMonth = Math.max(self.config.minDate.getMonth(), self.currentMonth);
+            }
+            if (isNewYear) {
+                self.redraw();
+                triggerEvent("onYearChange");
+                buildMonthSwitch();
+            }
+        }
+        function isEnabled(date, timeless) {
+            if (timeless === void 0) { timeless = true; }
+            var dateToCheck = self.parseDate(date, undefined, timeless); // timeless
+            if ((self.config.minDate &&
+                dateToCheck &&
+                compareDates(dateToCheck, self.config.minDate, timeless !== undefined ? timeless : !self.minDateHasTime) < 0) ||
+                (self.config.maxDate &&
+                    dateToCheck &&
+                    compareDates(dateToCheck, self.config.maxDate, timeless !== undefined ? timeless : !self.maxDateHasTime) > 0))
+                return false;
+            if (self.config.enable.length === 0 && self.config.disable.length === 0)
+                return true;
+            if (dateToCheck === undefined)
+                return false;
+            var bool = self.config.enable.length > 0, array = bool ? self.config.enable : self.config.disable;
+            for (var i = 0, d = void 0; i < array.length; i++) {
+                d = array[i];
+                if (typeof d === "function" &&
+                    d(dateToCheck) // disabled by function
+                )
+                    return bool;
+                else if (d instanceof Date &&
+                    dateToCheck !== undefined &&
+                    d.getTime() === dateToCheck.getTime())
+                    // disabled by date
+                    return bool;
+                else if (typeof d === "string" && dateToCheck !== undefined) {
+                    // disabled by date string
+                    var parsed = self.parseDate(d, undefined, true);
+                    return parsed && parsed.getTime() === dateToCheck.getTime()
+                        ? bool
+                        : !bool;
+                }
+                else if (
+                // disabled by range
+                typeof d === "object" &&
+                    dateToCheck !== undefined &&
+                    d.from &&
+                    d.to &&
+                    dateToCheck.getTime() >= d.from.getTime() &&
+                    dateToCheck.getTime() <= d.to.getTime())
+                    return bool;
+            }
+            return !bool;
+        }
+        function isInView(elem) {
+            if (self.daysContainer !== undefined)
+                return (elem.className.indexOf("hidden") === -1 &&
+                    self.daysContainer.contains(elem));
+            return false;
+        }
+        function onKeyDown(e) {
+            // e.key                      e.keyCode
+            // "Backspace"                        8
+            // "Tab"                              9
+            // "Enter"                           13
+            // "Escape"     (IE "Esc")           27
+            // "ArrowLeft"  (IE "Left")          37
+            // "ArrowUp"    (IE "Up")            38
+            // "ArrowRight" (IE "Right")         39
+            // "ArrowDown"  (IE "Down")          40
+            // "Delete"     (IE "Del")           46
+            var isInput = e.target === self._input;
+            var allowInput = self.config.allowInput;
+            var allowKeydown = self.isOpen && (!allowInput || !isInput);
+            var allowInlineKeydown = self.config.inline && isInput && !allowInput;
+            if (e.keyCode === 13 && isInput) {
+                if (allowInput) {
+                    self.setDate(self._input.value, true, e.target === self.altInput
+                        ? self.config.altFormat
+                        : self.config.dateFormat);
+                    return e.target.blur();
+                }
+                else {
+                    self.open();
+                }
+            }
+            else if (isCalendarElem(e.target) ||
+                allowKeydown ||
+                allowInlineKeydown) {
+                var isTimeObj = !!self.timeContainer &&
+                    self.timeContainer.contains(e.target);
+                switch (e.keyCode) {
+                    case 13:
+                        if (isTimeObj) {
+                            e.preventDefault();
+                            updateTime();
+                            focusAndClose();
+                        }
+                        else
+                            selectDate(e);
+                        break;
+                    case 27: // escape
+                        e.preventDefault();
+                        focusAndClose();
+                        break;
+                    case 8:
+                    case 46:
+                        if (isInput && !self.config.allowInput) {
+                            e.preventDefault();
+                            self.clear();
+                        }
+                        break;
+                    case 37:
+                    case 39:
+                        if (!isTimeObj && !isInput) {
+                            e.preventDefault();
+                            if (self.daysContainer !== undefined &&
+                                (allowInput === false ||
+                                    (document.activeElement && isInView(document.activeElement)))) {
+                                var delta_1 = e.keyCode === 39 ? 1 : -1;
+                                if (!e.ctrlKey)
+                                    focusOnDay(undefined, delta_1);
+                                else {
+                                    e.stopPropagation();
+                                    changeMonth(delta_1);
+                                    focusOnDay(getFirstAvailableDay(1), 0);
+                                }
+                            }
+                        }
+                        else if (self.hourElement)
+                            self.hourElement.focus();
+                        break;
+                    case 38:
+                    case 40:
+                        e.preventDefault();
+                        var delta = e.keyCode === 40 ? 1 : -1;
+                        if ((self.daysContainer && e.target.$i !== undefined) ||
+                            e.target === self.input ||
+                            e.target === self.altInput) {
+                            if (e.ctrlKey) {
+                                e.stopPropagation();
+                                changeYear(self.currentYear - delta);
+                                focusOnDay(getFirstAvailableDay(1), 0);
+                            }
+                            else if (!isTimeObj)
+                                focusOnDay(undefined, delta * 7);
+                        }
+                        else if (e.target === self.currentYearElement) {
+                            changeYear(self.currentYear - delta);
+                        }
+                        else if (self.config.enableTime) {
+                            if (!isTimeObj && self.hourElement)
+                                self.hourElement.focus();
+                            updateTime(e);
+                            self._debouncedChange();
+                        }
+                        break;
+                    case 9:
+                        if (isTimeObj) {
+                            var elems = [
+                                self.hourElement,
+                                self.minuteElement,
+                                self.secondElement,
+                                self.amPM,
+                            ]
+                                .concat(self.pluginElements)
+                                .filter(function (x) { return x; });
+                            var i = elems.indexOf(e.target);
+                            if (i !== -1) {
+                                var target = elems[i + (e.shiftKey ? -1 : 1)];
+                                e.preventDefault();
+                                (target || self._input).focus();
+                            }
+                        }
+                        else if (!self.config.noCalendar &&
+                            self.daysContainer &&
+                            self.daysContainer.contains(e.target) &&
+                            e.shiftKey) {
+                            e.preventDefault();
+                            self._input.focus();
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            if (self.amPM !== undefined && e.target === self.amPM) {
+                switch (e.key) {
+                    case self.l10n.amPM[0].charAt(0):
+                    case self.l10n.amPM[0].charAt(0).toLowerCase():
+                        self.amPM.textContent = self.l10n.amPM[0];
+                        setHoursFromInputs();
+                        updateValue();
+                        break;
+                    case self.l10n.amPM[1].charAt(0):
+                    case self.l10n.amPM[1].charAt(0).toLowerCase():
+                        self.amPM.textContent = self.l10n.amPM[1];
+                        setHoursFromInputs();
+                        updateValue();
+                        break;
+                }
+            }
+            if (isInput || isCalendarElem(e.target)) {
+                triggerEvent("onKeyDown", e);
+            }
+        }
+        function onMouseOver(elem) {
+            if (self.selectedDates.length !== 1 ||
+                (elem &&
+                    (!elem.classList.contains("flatpickr-day") ||
+                        elem.classList.contains("flatpickr-disabled"))))
+                return;
+            var hoverDate = elem
+                ? elem.dateObj.getTime()
+                : self.days.firstElementChild.dateObj.getTime(), initialDate = self.parseDate(self.selectedDates[0], undefined, true).getTime(), rangeStartDate = Math.min(hoverDate, self.selectedDates[0].getTime()), rangeEndDate = Math.max(hoverDate, self.selectedDates[0].getTime());
+            var containsDisabled = false;
+            var minRange = 0, maxRange = 0;
+            for (var t = rangeStartDate; t < rangeEndDate; t += duration.DAY) {
+                if (!isEnabled(new Date(t), true)) {
+                    containsDisabled =
+                        containsDisabled || (t > rangeStartDate && t < rangeEndDate);
+                    if (t < initialDate && (!minRange || t > minRange))
+                        minRange = t;
+                    else if (t > initialDate && (!maxRange || t < maxRange))
+                        maxRange = t;
+                }
+            }
+            for (var m = 0; m < self.config.showMonths; m++) {
+                var month = self.daysContainer.children[m];
+                var _loop_1 = function (i, l) {
+                    var dayElem = month.children[i], date = dayElem.dateObj;
+                    var timestamp = date.getTime();
+                    var outOfRange = (minRange > 0 && timestamp < minRange) ||
+                        (maxRange > 0 && timestamp > maxRange);
+                    if (outOfRange) {
+                        dayElem.classList.add("notAllowed");
+                        ["inRange", "startRange", "endRange"].forEach(function (c) {
+                            dayElem.classList.remove(c);
+                        });
+                        return "continue";
+                    }
+                    else if (containsDisabled && !outOfRange)
+                        return "continue";
+                    ["startRange", "inRange", "endRange", "notAllowed"].forEach(function (c) {
+                        dayElem.classList.remove(c);
+                    });
+                    if (elem !== undefined) {
+                        elem.classList.add(hoverDate <= self.selectedDates[0].getTime()
+                            ? "startRange"
+                            : "endRange");
+                        if (initialDate < hoverDate && timestamp === initialDate)
+                            dayElem.classList.add("startRange");
+                        else if (initialDate > hoverDate && timestamp === initialDate)
+                            dayElem.classList.add("endRange");
+                        if (timestamp >= minRange &&
+                            (maxRange === 0 || timestamp <= maxRange) &&
+                            isBetween(timestamp, initialDate, hoverDate))
+                            dayElem.classList.add("inRange");
+                    }
+                };
+                for (var i = 0, l = month.children.length; i < l; i++) {
+                    _loop_1(i, l);
+                }
+            }
+        }
+        function onResize() {
+            if (self.isOpen && !self.config.static && !self.config.inline)
+                positionCalendar();
+        }
+        function setDefaultTime() {
+            self.setDate(self.config.minDate !== undefined
+                ? new Date(self.config.minDate.getTime())
+                : new Date(), true);
+            setDefaultHours();
+            updateValue();
+        }
+        function open(e, positionElement) {
+            if (positionElement === void 0) { positionElement = self._positionElement; }
+            if (self.isMobile === true) {
+                if (e) {
+                    e.preventDefault();
+                    e.target && e.target.blur();
+                }
+                if (self.mobileInput !== undefined) {
+                    self.mobileInput.focus();
+                    self.mobileInput.click();
+                }
+                triggerEvent("onOpen");
+                return;
+            }
+            if (self._input.disabled || self.config.inline)
+                return;
+            var wasOpen = self.isOpen;
+            self.isOpen = true;
+            if (!wasOpen) {
+                self.calendarContainer.classList.add("open");
+                self._input.classList.add("active");
+                triggerEvent("onOpen");
+                positionCalendar(positionElement);
+            }
+            if (self.config.enableTime === true && self.config.noCalendar === true) {
+                if (self.selectedDates.length === 0) {
+                    setDefaultTime();
+                }
+                if (self.config.allowInput === false &&
+                    (e === undefined ||
+                        !self.timeContainer.contains(e.relatedTarget))) {
+                    setTimeout(function () { return self.hourElement.select(); }, 50);
+                }
+            }
+        }
+        function minMaxDateSetter(type) {
+            return function (date) {
+                var dateObj = (self.config["_" + type + "Date"] = self.parseDate(date, self.config.dateFormat));
+                var inverseDateObj = self.config["_" + (type === "min" ? "max" : "min") + "Date"];
+                if (dateObj !== undefined) {
+                    self[type === "min" ? "minDateHasTime" : "maxDateHasTime"] =
+                        dateObj.getHours() > 0 ||
+                            dateObj.getMinutes() > 0 ||
+                            dateObj.getSeconds() > 0;
+                }
+                if (self.selectedDates) {
+                    self.selectedDates = self.selectedDates.filter(function (d) { return isEnabled(d); });
+                    if (!self.selectedDates.length && type === "min")
+                        setHoursFromDate(dateObj);
+                    updateValue();
+                }
+                if (self.daysContainer) {
+                    redraw();
+                    if (dateObj !== undefined)
+                        self.currentYearElement[type] = dateObj.getFullYear().toString();
+                    else
+                        self.currentYearElement.removeAttribute(type);
+                    self.currentYearElement.disabled =
+                        !!inverseDateObj &&
+                            dateObj !== undefined &&
+                            inverseDateObj.getFullYear() === dateObj.getFullYear();
+                }
+            };
+        }
+        function parseConfig() {
+            var boolOpts = [
+                "wrap",
+                "weekNumbers",
+                "allowInput",
+                "clickOpens",
+                "time_24hr",
+                "enableTime",
+                "noCalendar",
+                "altInput",
+                "shorthandCurrentMonth",
+                "inline",
+                "static",
+                "enableSeconds",
+                "disableMobile",
+            ];
+            var userConfig = __assign({}, instanceConfig, JSON.parse(JSON.stringify(element.dataset || {})));
+            var formats = {};
+            self.config.parseDate = userConfig.parseDate;
+            self.config.formatDate = userConfig.formatDate;
+            Object.defineProperty(self.config, "enable", {
+                get: function () { return self.config._enable; },
+                set: function (dates) {
+                    self.config._enable = parseDateRules(dates);
+                }
+            });
+            Object.defineProperty(self.config, "disable", {
+                get: function () { return self.config._disable; },
+                set: function (dates) {
+                    self.config._disable = parseDateRules(dates);
+                }
+            });
+            var timeMode = userConfig.mode === "time";
+            if (!userConfig.dateFormat && (userConfig.enableTime || timeMode)) {
+                var defaultDateFormat = flatpickr.defaultConfig.dateFormat || defaults.dateFormat;
+                formats.dateFormat =
+                    userConfig.noCalendar || timeMode
+                        ? "H:i" + (userConfig.enableSeconds ? ":S" : "")
+                        : defaultDateFormat + " H:i" + (userConfig.enableSeconds ? ":S" : "");
+            }
+            if (userConfig.altInput &&
+                (userConfig.enableTime || timeMode) &&
+                !userConfig.altFormat) {
+                var defaultAltFormat = flatpickr.defaultConfig.altFormat || defaults.altFormat;
+                formats.altFormat =
+                    userConfig.noCalendar || timeMode
+                        ? "h:i" + (userConfig.enableSeconds ? ":S K" : " K")
+                        : defaultAltFormat + (" h:i" + (userConfig.enableSeconds ? ":S" : "") + " K");
+            }
+            if (!userConfig.altInputClass) {
+                self.config.altInputClass =
+                    self.input.className + " " + self.config.altInputClass;
+            }
+            Object.defineProperty(self.config, "minDate", {
+                get: function () { return self.config._minDate; },
+                set: minMaxDateSetter("min")
+            });
+            Object.defineProperty(self.config, "maxDate", {
+                get: function () { return self.config._maxDate; },
+                set: minMaxDateSetter("max")
+            });
+            var minMaxTimeSetter = function (type) { return function (val) {
+                self.config[type === "min" ? "_minTime" : "_maxTime"] = self.parseDate(val, "H:i:S");
+            }; };
+            Object.defineProperty(self.config, "minTime", {
+                get: function () { return self.config._minTime; },
+                set: minMaxTimeSetter("min")
+            });
+            Object.defineProperty(self.config, "maxTime", {
+                get: function () { return self.config._maxTime; },
+                set: minMaxTimeSetter("max")
+            });
+            if (userConfig.mode === "time") {
+                self.config.noCalendar = true;
+                self.config.enableTime = true;
+            }
+            Object.assign(self.config, formats, userConfig);
+            for (var i = 0; i < boolOpts.length; i++)
+                self.config[boolOpts[i]] =
+                    self.config[boolOpts[i]] === true ||
+                        self.config[boolOpts[i]] === "true";
+            HOOKS.filter(function (hook) { return self.config[hook] !== undefined; }).forEach(function (hook) {
+                self.config[hook] = arrayify(self.config[hook] || []).map(bindToInstance);
+            });
+            self.isMobile =
+                !self.config.disableMobile &&
+                    !self.config.inline &&
+                    self.config.mode === "single" &&
+                    !self.config.disable.length &&
+                    !self.config.enable.length &&
+                    !self.config.weekNumbers &&
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            for (var i = 0; i < self.config.plugins.length; i++) {
+                var pluginConf = self.config.plugins[i](self) || {};
+                for (var key in pluginConf) {
+                    if (HOOKS.indexOf(key) > -1) {
+                        self.config[key] = arrayify(pluginConf[key])
+                            .map(bindToInstance)
+                            .concat(self.config[key]);
+                    }
+                    else if (typeof userConfig[key] === "undefined")
+                        self.config[key] = pluginConf[key];
+                }
+            }
+            triggerEvent("onParseConfig");
+        }
+        function setupLocale() {
+            if (typeof self.config.locale !== "object" &&
+                typeof flatpickr.l10ns[self.config.locale] === "undefined")
+                self.config.errorHandler(new Error("flatpickr: invalid locale " + self.config.locale));
+            self.l10n = __assign({}, flatpickr.l10ns["default"], (typeof self.config.locale === "object"
+                ? self.config.locale
+                : self.config.locale !== "default"
+                    ? flatpickr.l10ns[self.config.locale]
+                    : undefined));
+            tokenRegex.K = "(" + self.l10n.amPM[0] + "|" + self.l10n.amPM[1] + "|" + self.l10n.amPM[0].toLowerCase() + "|" + self.l10n.amPM[1].toLowerCase() + ")";
+            var userConfig = __assign({}, instanceConfig, JSON.parse(JSON.stringify(element.dataset || {})));
+            if (userConfig.time_24hr === undefined &&
+                flatpickr.defaultConfig.time_24hr === undefined) {
+                self.config.time_24hr = self.l10n.time_24hr;
+            }
+            self.formatDate = createDateFormatter(self);
+            self.parseDate = createDateParser({ config: self.config, l10n: self.l10n });
+        }
+        function positionCalendar(customPositionElement) {
+            if (self.calendarContainer === undefined)
+                return;
+            triggerEvent("onPreCalendarPosition");
+            var positionElement = customPositionElement || self._positionElement;
+            var calendarHeight = Array.prototype.reduce.call(self.calendarContainer.children, (function (acc, child) { return acc + child.offsetHeight; }), 0), calendarWidth = self.calendarContainer.offsetWidth, configPos = self.config.position.split(" "), configPosVertical = configPos[0], configPosHorizontal = configPos.length > 1 ? configPos[1] : null, inputBounds = positionElement.getBoundingClientRect(), distanceFromBottom = window.innerHeight - inputBounds.bottom, showOnTop = configPosVertical === "above" ||
+                (configPosVertical !== "below" &&
+                    distanceFromBottom < calendarHeight &&
+                    inputBounds.top > calendarHeight);
+            var top = window.pageYOffset +
+                inputBounds.top +
+                (!showOnTop ? positionElement.offsetHeight + 2 : -calendarHeight - 2);
+            toggleClass(self.calendarContainer, "arrowTop", !showOnTop);
+            toggleClass(self.calendarContainer, "arrowBottom", showOnTop);
+            if (self.config.inline)
+                return;
+            var left = window.pageXOffset +
+                inputBounds.left -
+                (configPosHorizontal != null && configPosHorizontal === "center"
+                    ? (calendarWidth - inputBounds.width) / 2
+                    : 0);
+            var right = window.document.body.offsetWidth - (window.pageXOffset + inputBounds.right);
+            var rightMost = left + calendarWidth > window.document.body.offsetWidth;
+            var centerMost = right + calendarWidth > window.document.body.offsetWidth;
+            toggleClass(self.calendarContainer, "rightMost", rightMost);
+            if (self.config.static)
+                return;
+            self.calendarContainer.style.top = top + "px";
+            if (!rightMost) {
+                self.calendarContainer.style.left = left + "px";
+                self.calendarContainer.style.right = "auto";
+            }
+            else if (!centerMost) {
+                self.calendarContainer.style.left = "auto";
+                self.calendarContainer.style.right = right + "px";
+            }
+            else {
+                var doc = document.styleSheets[0];
+                // some testing environments don't have css support
+                if (doc === undefined)
+                    return;
+                var bodyWidth = window.document.body.offsetWidth;
+                var centerLeft = Math.max(0, bodyWidth / 2 - calendarWidth / 2);
+                var centerBefore = ".flatpickr-calendar.centerMost:before";
+                var centerAfter = ".flatpickr-calendar.centerMost:after";
+                var centerIndex = doc.cssRules.length;
+                var centerStyle = "{left:" + inputBounds.left + "px;right:auto;}";
+                toggleClass(self.calendarContainer, "rightMost", false);
+                toggleClass(self.calendarContainer, "centerMost", true);
+                doc.insertRule(centerBefore + "," + centerAfter + centerStyle, centerIndex);
+                self.calendarContainer.style.left = centerLeft + "px";
+                self.calendarContainer.style.right = "auto";
+            }
+        }
+        function redraw() {
+            if (self.config.noCalendar || self.isMobile)
+                return;
+            updateNavigationCurrentMonth();
+            buildDays();
+        }
+        function focusAndClose() {
+            self._input.focus();
+            if (window.navigator.userAgent.indexOf("MSIE") !== -1 ||
+                navigator.msMaxTouchPoints !== undefined) {
+                // hack - bugs in the way IE handles focus keeps the calendar open
+                setTimeout(self.close, 0);
+            }
+            else {
+                self.close();
+            }
+        }
+        function selectDate(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var isSelectable = function (day) {
+                return day.classList &&
+                    day.classList.contains("flatpickr-day") &&
+                    !day.classList.contains("flatpickr-disabled") &&
+                    !day.classList.contains("notAllowed");
+            };
+            var t = findParent(e.target, isSelectable);
+            if (t === undefined)
+                return;
+            var target = t;
+            var selectedDate = (self.latestSelectedDateObj = new Date(target.dateObj.getTime()));
+            var shouldChangeMonth = (selectedDate.getMonth() < self.currentMonth ||
+                selectedDate.getMonth() >
+                    self.currentMonth + self.config.showMonths - 1) &&
+                self.config.mode !== "range";
+            self.selectedDateElem = target;
+            if (self.config.mode === "single")
+                self.selectedDates = [selectedDate];
+            else if (self.config.mode === "multiple") {
+                var selectedIndex = isDateSelected(selectedDate);
+                if (selectedIndex)
+                    self.selectedDates.splice(parseInt(selectedIndex), 1);
+                else
+                    self.selectedDates.push(selectedDate);
+            }
+            else if (self.config.mode === "range") {
+                if (self.selectedDates.length === 2) {
+                    self.clear(false, false);
+                }
+                self.latestSelectedDateObj = selectedDate;
+                self.selectedDates.push(selectedDate);
+                // unless selecting same date twice, sort ascendingly
+                if (compareDates(selectedDate, self.selectedDates[0], true) !== 0)
+                    self.selectedDates.sort(function (a, b) { return a.getTime() - b.getTime(); });
+            }
+            setHoursFromInputs();
+            if (shouldChangeMonth) {
+                var isNewYear = self.currentYear !== selectedDate.getFullYear();
+                self.currentYear = selectedDate.getFullYear();
+                self.currentMonth = selectedDate.getMonth();
+                if (isNewYear) {
+                    triggerEvent("onYearChange");
+                    buildMonthSwitch();
+                }
+                triggerEvent("onMonthChange");
+            }
+            updateNavigationCurrentMonth();
+            buildDays();
+            updateValue();
+            if (self.config.enableTime)
+                setTimeout(function () { return (self.showTimeInput = true); }, 50);
+            // maintain focus
+            if (!shouldChangeMonth &&
+                self.config.mode !== "range" &&
+                self.config.showMonths === 1)
+                focusOnDayElem(target);
+            else if (self.selectedDateElem !== undefined &&
+                self.hourElement === undefined) {
+                self.selectedDateElem && self.selectedDateElem.focus();
+            }
+            if (self.hourElement !== undefined)
+                self.hourElement !== undefined && self.hourElement.focus();
+            if (self.config.closeOnSelect) {
+                var single = self.config.mode === "single" && !self.config.enableTime;
+                var range = self.config.mode === "range" &&
+                    self.selectedDates.length === 2 &&
+                    !self.config.enableTime;
+                if (single || range) {
+                    focusAndClose();
+                }
+            }
+            triggerChange();
+        }
+        var CALLBACKS = {
+            locale: [setupLocale, updateWeekdays],
+            showMonths: [buildMonths, setCalendarWidth, buildWeekdays],
+            minDate: [jumpToDate],
+            maxDate: [jumpToDate]
+        };
+        function set(option, value) {
+            if (option !== null && typeof option === "object") {
+                Object.assign(self.config, option);
+                for (var key in option) {
+                    if (CALLBACKS[key] !== undefined)
+                        CALLBACKS[key].forEach(function (x) { return x(); });
+                }
+            }
+            else {
+                self.config[option] = value;
+                if (CALLBACKS[option] !== undefined)
+                    CALLBACKS[option].forEach(function (x) { return x(); });
+                else if (HOOKS.indexOf(option) > -1)
+                    self.config[option] = arrayify(value);
+            }
+            self.redraw();
+            updateValue(false);
+        }
+        function setSelectedDate(inputDate, format) {
+            var dates = [];
+            if (inputDate instanceof Array)
+                dates = inputDate.map(function (d) { return self.parseDate(d, format); });
+            else if (inputDate instanceof Date || typeof inputDate === "number")
+                dates = [self.parseDate(inputDate, format)];
+            else if (typeof inputDate === "string") {
+                switch (self.config.mode) {
+                    case "single":
+                    case "time":
+                        dates = [self.parseDate(inputDate, format)];
+                        break;
+                    case "multiple":
+                        dates = inputDate
+                            .split(self.config.conjunction)
+                            .map(function (date) { return self.parseDate(date, format); });
+                        break;
+                    case "range":
+                        dates = inputDate
+                            .split(self.l10n.rangeSeparator)
+                            .map(function (date) { return self.parseDate(date, format); });
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+                self.config.errorHandler(new Error("Invalid date supplied: " + JSON.stringify(inputDate)));
+            self.selectedDates = dates.filter(function (d) { return d instanceof Date && isEnabled(d, false); });
+            if (self.config.mode === "range")
+                self.selectedDates.sort(function (a, b) { return a.getTime() - b.getTime(); });
+        }
+        function setDate(date, triggerChange, format) {
+            if (triggerChange === void 0) { triggerChange = false; }
+            if (format === void 0) { format = self.config.dateFormat; }
+            if ((date !== 0 && !date) || (date instanceof Array && date.length === 0))
+                return self.clear(triggerChange);
+            setSelectedDate(date, format);
+            self.showTimeInput = self.selectedDates.length > 0;
+            self.latestSelectedDateObj =
+                self.selectedDates[self.selectedDates.length - 1];
+            self.redraw();
+            jumpToDate();
+            setHoursFromDate();
+            if (self.selectedDates.length === 0) {
+                self.clear(false);
+            }
+            updateValue(triggerChange);
+            if (triggerChange)
+                triggerEvent("onChange");
+        }
+        function parseDateRules(arr) {
+            return arr
+                .slice()
+                .map(function (rule) {
+                if (typeof rule === "string" ||
+                    typeof rule === "number" ||
+                    rule instanceof Date) {
+                    return self.parseDate(rule, undefined, true);
+                }
+                else if (rule &&
+                    typeof rule === "object" &&
+                    rule.from &&
+                    rule.to)
+                    return {
+                        from: self.parseDate(rule.from, undefined),
+                        to: self.parseDate(rule.to, undefined)
+                    };
+                return rule;
+            })
+                .filter(function (x) { return x; }); // remove falsy values
+        }
+        function setupDates() {
+            self.selectedDates = [];
+            self.now = self.parseDate(self.config.now) || new Date();
+            // Workaround IE11 setting placeholder as the input's value
+            var preloadedDate = self.config.defaultDate ||
+                ((self.input.nodeName === "INPUT" ||
+                    self.input.nodeName === "TEXTAREA") &&
+                    self.input.placeholder &&
+                    self.input.value === self.input.placeholder
+                    ? null
+                    : self.input.value);
+            if (preloadedDate)
+                setSelectedDate(preloadedDate, self.config.dateFormat);
+            self._initialDate =
+                self.selectedDates.length > 0
+                    ? self.selectedDates[0]
+                    : self.config.minDate &&
+                        self.config.minDate.getTime() > self.now.getTime()
+                        ? self.config.minDate
+                        : self.config.maxDate &&
+                            self.config.maxDate.getTime() < self.now.getTime()
+                            ? self.config.maxDate
+                            : self.now;
+            self.currentYear = self._initialDate.getFullYear();
+            self.currentMonth = self._initialDate.getMonth();
+            if (self.selectedDates.length > 0)
+                self.latestSelectedDateObj = self.selectedDates[0];
+            if (self.config.minTime !== undefined)
+                self.config.minTime = self.parseDate(self.config.minTime, "H:i");
+            if (self.config.maxTime !== undefined)
+                self.config.maxTime = self.parseDate(self.config.maxTime, "H:i");
+            self.minDateHasTime =
+                !!self.config.minDate &&
+                    (self.config.minDate.getHours() > 0 ||
+                        self.config.minDate.getMinutes() > 0 ||
+                        self.config.minDate.getSeconds() > 0);
+            self.maxDateHasTime =
+                !!self.config.maxDate &&
+                    (self.config.maxDate.getHours() > 0 ||
+                        self.config.maxDate.getMinutes() > 0 ||
+                        self.config.maxDate.getSeconds() > 0);
+            Object.defineProperty(self, "showTimeInput", {
+                get: function () { return self._showTimeInput; },
+                set: function (bool) {
+                    self._showTimeInput = bool;
+                    if (self.calendarContainer)
+                        toggleClass(self.calendarContainer, "showTimeInput", bool);
+                    self.isOpen && positionCalendar();
+                }
+            });
+        }
+        function setupInputs() {
+            self.input = self.config.wrap
+                ? element.querySelector("[data-input]")
+                : element;
+            /* istanbul ignore next */
+            if (!self.input) {
+                self.config.errorHandler(new Error("Invalid input element specified"));
+                return;
+            }
+            // hack: store previous type to restore it after destroy()
+            self.input._type = self.input.type;
+            self.input.type = "text";
+            self.input.classList.add("flatpickr-input");
+            self._input = self.input;
+            if (self.config.altInput) {
+                // replicate self.element
+                self.altInput = createElement(self.input.nodeName, self.config.altInputClass);
+                self._input = self.altInput;
+                self.altInput.placeholder = self.input.placeholder;
+                self.altInput.disabled = self.input.disabled;
+                self.altInput.required = self.input.required;
+                self.altInput.tabIndex = self.input.tabIndex;
+                self.altInput.type = "text";
+                self.input.setAttribute("type", "hidden");
+                if (!self.config.static && self.input.parentNode)
+                    self.input.parentNode.insertBefore(self.altInput, self.input.nextSibling);
+            }
+            if (!self.config.allowInput)
+                self._input.setAttribute("readonly", "readonly");
+            self._positionElement = self.config.positionElement || self._input;
+        }
+        function setupMobile() {
+            var inputType = self.config.enableTime
+                ? self.config.noCalendar
+                    ? "time"
+                    : "datetime-local"
+                : "date";
+            self.mobileInput = createElement("input", self.input.className + " flatpickr-mobile");
+            self.mobileInput.step = self.input.getAttribute("step") || "any";
+            self.mobileInput.tabIndex = 1;
+            self.mobileInput.type = inputType;
+            self.mobileInput.disabled = self.input.disabled;
+            self.mobileInput.required = self.input.required;
+            self.mobileInput.placeholder = self.input.placeholder;
+            self.mobileFormatStr =
+                inputType === "datetime-local"
+                    ? "Y-m-d\\TH:i:S"
+                    : inputType === "date"
+                        ? "Y-m-d"
+                        : "H:i:S";
+            if (self.selectedDates.length > 0) {
+                self.mobileInput.defaultValue = self.mobileInput.value = self.formatDate(self.selectedDates[0], self.mobileFormatStr);
+            }
+            if (self.config.minDate)
+                self.mobileInput.min = self.formatDate(self.config.minDate, "Y-m-d");
+            if (self.config.maxDate)
+                self.mobileInput.max = self.formatDate(self.config.maxDate, "Y-m-d");
+            self.input.type = "hidden";
+            if (self.altInput !== undefined)
+                self.altInput.type = "hidden";
+            try {
+                if (self.input.parentNode)
+                    self.input.parentNode.insertBefore(self.mobileInput, self.input.nextSibling);
+            }
+            catch (_a) { }
+            bind(self.mobileInput, "change", function (e) {
+                self.setDate(e.target.value, false, self.mobileFormatStr);
+                triggerEvent("onChange");
+                triggerEvent("onClose");
+            });
+        }
+        function toggle(e) {
+            if (self.isOpen === true)
+                return self.close();
+            self.open(e);
+        }
+        function triggerEvent(event, data) {
+            // If the instance has been destroyed already, all hooks have been removed
+            if (self.config === undefined)
+                return;
+            var hooks = self.config[event];
+            if (hooks !== undefined && hooks.length > 0) {
+                for (var i = 0; hooks[i] && i < hooks.length; i++)
+                    hooks[i](self.selectedDates, self.input.value, self, data);
+            }
+            if (event === "onChange") {
+                self.input.dispatchEvent(createEvent("change"));
+                // many front-end frameworks bind to the input event
+                self.input.dispatchEvent(createEvent("input"));
+            }
+        }
+        function createEvent(name) {
+            var e = document.createEvent("Event");
+            e.initEvent(name, true, true);
+            return e;
+        }
+        function isDateSelected(date) {
+            for (var i = 0; i < self.selectedDates.length; i++) {
+                if (compareDates(self.selectedDates[i], date) === 0)
+                    return "" + i;
+            }
+            return false;
+        }
+        function isDateInRange(date) {
+            if (self.config.mode !== "range" || self.selectedDates.length < 2)
+                return false;
+            return (compareDates(date, self.selectedDates[0]) >= 0 &&
+                compareDates(date, self.selectedDates[1]) <= 0);
+        }
+        function updateNavigationCurrentMonth() {
+            if (self.config.noCalendar || self.isMobile || !self.monthNav)
+                return;
+            self.yearElements.forEach(function (yearElement, i) {
+                var d = new Date(self.currentYear, self.currentMonth, 1);
+                d.setMonth(self.currentMonth + i);
+                if (self.config.showMonths > 1 ||
+                    self.config.monthSelectorType === "static") {
+                    self.monthElements[i].textContent =
+                        monthToStr(d.getMonth(), self.config.shorthandCurrentMonth, self.l10n) + " ";
+                }
+                else {
+                    self.monthsDropdownContainer.value = d.getMonth().toString();
+                }
+                yearElement.value = d.getFullYear().toString();
+            });
+            self._hidePrevMonthArrow =
+                self.config.minDate !== undefined &&
+                    (self.currentYear === self.config.minDate.getFullYear()
+                        ? self.currentMonth <= self.config.minDate.getMonth()
+                        : self.currentYear < self.config.minDate.getFullYear());
+            self._hideNextMonthArrow =
+                self.config.maxDate !== undefined &&
+                    (self.currentYear === self.config.maxDate.getFullYear()
+                        ? self.currentMonth + 1 > self.config.maxDate.getMonth()
+                        : self.currentYear > self.config.maxDate.getFullYear());
+        }
+        function getDateStr(format) {
+            return self.selectedDates
+                .map(function (dObj) { return self.formatDate(dObj, format); })
+                .filter(function (d, i, arr) {
+                return self.config.mode !== "range" ||
+                    self.config.enableTime ||
+                    arr.indexOf(d) === i;
+            })
+                .join(self.config.mode !== "range"
+                ? self.config.conjunction
+                : self.l10n.rangeSeparator);
+        }
+        /**
+         * Updates the values of inputs associated with the calendar
+         */
+        function updateValue(triggerChange) {
+            if (triggerChange === void 0) { triggerChange = true; }
+            if (self.mobileInput !== undefined && self.mobileFormatStr) {
+                self.mobileInput.value =
+                    self.latestSelectedDateObj !== undefined
+                        ? self.formatDate(self.latestSelectedDateObj, self.mobileFormatStr)
+                        : "";
+            }
+            self.input.value = getDateStr(self.config.dateFormat);
+            if (self.altInput !== undefined) {
+                self.altInput.value = getDateStr(self.config.altFormat);
+            }
+            if (triggerChange !== false)
+                triggerEvent("onValueUpdate");
+        }
+        function onMonthNavClick(e) {
+            var isPrevMonth = self.prevMonthNav.contains(e.target);
+            var isNextMonth = self.nextMonthNav.contains(e.target);
+            if (isPrevMonth || isNextMonth) {
+                changeMonth(isPrevMonth ? -1 : 1);
+            }
+            else if (self.yearElements.indexOf(e.target) >= 0) {
+                e.target.select();
+            }
+            else if (e.target.classList.contains("arrowUp")) {
+                self.changeYear(self.currentYear + 1);
+            }
+            else if (e.target.classList.contains("arrowDown")) {
+                self.changeYear(self.currentYear - 1);
+            }
+        }
+        function timeWrapper(e) {
+            e.preventDefault();
+            var isKeyDown = e.type === "keydown", input = e.target;
+            if (self.amPM !== undefined && e.target === self.amPM) {
+                self.amPM.textContent =
+                    self.l10n.amPM[int(self.amPM.textContent === self.l10n.amPM[0])];
+            }
+            var min = parseFloat(input.getAttribute("min")), max = parseFloat(input.getAttribute("max")), step = parseFloat(input.getAttribute("step")), curValue = parseInt(input.value, 10), delta = e.delta ||
+                (isKeyDown ? (e.which === 38 ? 1 : -1) : 0);
+            var newValue = curValue + step * delta;
+            if (typeof input.value !== "undefined" && input.value.length === 2) {
+                var isHourElem = input === self.hourElement, isMinuteElem = input === self.minuteElement;
+                if (newValue < min) {
+                    newValue =
+                        max +
+                            newValue +
+                            int(!isHourElem) +
+                            (int(isHourElem) && int(!self.amPM));
+                    if (isMinuteElem)
+                        incrementNumInput(undefined, -1, self.hourElement);
+                }
+                else if (newValue > max) {
+                    newValue =
+                        input === self.hourElement ? newValue - max - int(!self.amPM) : min;
+                    if (isMinuteElem)
+                        incrementNumInput(undefined, 1, self.hourElement);
+                }
+                if (self.amPM &&
+                    isHourElem &&
+                    (step === 1
+                        ? newValue + curValue === 23
+                        : Math.abs(newValue - curValue) > step)) {
+                    self.amPM.textContent =
+                        self.l10n.amPM[int(self.amPM.textContent === self.l10n.amPM[0])];
+                }
+                input.value = pad(newValue);
+            }
+        }
+        init();
+        return self;
+    }
+    /* istanbul ignore next */
+    function _flatpickr(nodeList, config) {
+        // static list
+        var nodes = Array.prototype.slice
+            .call(nodeList)
+            .filter(function (x) { return x instanceof HTMLElement; });
+        var instances = [];
+        for (var i = 0; i < nodes.length; i++) {
+            var node = nodes[i];
+            try {
+                if (node.getAttribute("data-fp-omit") !== null)
+                    continue;
+                if (node._flatpickr !== undefined) {
+                    node._flatpickr.destroy();
+                    node._flatpickr = undefined;
+                }
+                node._flatpickr = FlatpickrInstance(node, config || {});
+                instances.push(node._flatpickr);
+            }
+            catch (e) {
+                console.error(e);
+            }
+        }
+        return instances.length === 1 ? instances[0] : instances;
+    }
+    /* istanbul ignore next */
+    if (typeof HTMLElement !== "undefined" &&
+        typeof HTMLCollection !== "undefined" &&
+        typeof NodeList !== "undefined") {
+        // browser env
+        HTMLCollection.prototype.flatpickr = NodeList.prototype.flatpickr = function (config) {
+            return _flatpickr(this, config);
+        };
+        HTMLElement.prototype.flatpickr = function (config) {
+            return _flatpickr([this], config);
+        };
+    }
+    /* istanbul ignore next */
+    var flatpickr = function (selector, config) {
+        if (typeof selector === "string") {
+            return _flatpickr(window.document.querySelectorAll(selector), config);
+        }
+        else if (selector instanceof Node) {
+            return _flatpickr([selector], config);
+        }
+        else {
+            return _flatpickr(selector, config);
+        }
+    };
+    /* istanbul ignore next */
+    flatpickr.defaultConfig = {};
+    flatpickr.l10ns = {
+        en: __assign({}, english),
+        "default": __assign({}, english)
+    };
+    flatpickr.localize = function (l10n) {
+        flatpickr.l10ns["default"] = __assign({}, flatpickr.l10ns["default"], l10n);
+    };
+    flatpickr.setDefaults = function (config) {
+        flatpickr.defaultConfig = __assign({}, flatpickr.defaultConfig, config);
+    };
+    flatpickr.parseDate = createDateParser({});
+    flatpickr.formatDate = createDateFormatter({});
+    flatpickr.compareDates = compareDates;
+    /* istanbul ignore next */
+    if (typeof jQuery !== "undefined" && typeof jQuery.fn !== "undefined") {
+        jQuery.fn.flatpickr = function (config) {
+            return _flatpickr(this, config);
+        };
+    }
+    // eslint-disable-next-line @typescript-eslint/camelcase
+    Date.prototype.fp_incr = function (days) {
+        return new Date(this.getFullYear(), this.getMonth(), this.getDate() + (typeof days === "string" ? parseInt(days, 10) : days));
+    };
+    if (typeof window !== "undefined") {
+        window.flatpickr = flatpickr;
+    }
+
+    return flatpickr;
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n sync recursive ^\\.\\/.*\\.js$":
+/*!************************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n sync ^\.\/.*\.js$ ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./ar.js": "./node_modules/flatpickr/dist/l10n/ar.js",
+	"./at.js": "./node_modules/flatpickr/dist/l10n/at.js",
+	"./az.js": "./node_modules/flatpickr/dist/l10n/az.js",
+	"./be.js": "./node_modules/flatpickr/dist/l10n/be.js",
+	"./bg.js": "./node_modules/flatpickr/dist/l10n/bg.js",
+	"./bn.js": "./node_modules/flatpickr/dist/l10n/bn.js",
+	"./bs.js": "./node_modules/flatpickr/dist/l10n/bs.js",
+	"./cat.js": "./node_modules/flatpickr/dist/l10n/cat.js",
+	"./cs.js": "./node_modules/flatpickr/dist/l10n/cs.js",
+	"./cy.js": "./node_modules/flatpickr/dist/l10n/cy.js",
+	"./da.js": "./node_modules/flatpickr/dist/l10n/da.js",
+	"./de.js": "./node_modules/flatpickr/dist/l10n/de.js",
+	"./default.js": "./node_modules/flatpickr/dist/l10n/default.js",
+	"./eo.js": "./node_modules/flatpickr/dist/l10n/eo.js",
+	"./es.js": "./node_modules/flatpickr/dist/l10n/es.js",
+	"./et.js": "./node_modules/flatpickr/dist/l10n/et.js",
+	"./fa.js": "./node_modules/flatpickr/dist/l10n/fa.js",
+	"./fi.js": "./node_modules/flatpickr/dist/l10n/fi.js",
+	"./fo.js": "./node_modules/flatpickr/dist/l10n/fo.js",
+	"./fr.js": "./node_modules/flatpickr/dist/l10n/fr.js",
+	"./ga.js": "./node_modules/flatpickr/dist/l10n/ga.js",
+	"./gr.js": "./node_modules/flatpickr/dist/l10n/gr.js",
+	"./he.js": "./node_modules/flatpickr/dist/l10n/he.js",
+	"./hi.js": "./node_modules/flatpickr/dist/l10n/hi.js",
+	"./hr.js": "./node_modules/flatpickr/dist/l10n/hr.js",
+	"./hu.js": "./node_modules/flatpickr/dist/l10n/hu.js",
+	"./id.js": "./node_modules/flatpickr/dist/l10n/id.js",
+	"./index.js": "./node_modules/flatpickr/dist/l10n/index.js",
+	"./is.js": "./node_modules/flatpickr/dist/l10n/is.js",
+	"./it.js": "./node_modules/flatpickr/dist/l10n/it.js",
+	"./ja.js": "./node_modules/flatpickr/dist/l10n/ja.js",
+	"./ka.js": "./node_modules/flatpickr/dist/l10n/ka.js",
+	"./km.js": "./node_modules/flatpickr/dist/l10n/km.js",
+	"./ko.js": "./node_modules/flatpickr/dist/l10n/ko.js",
+	"./kz.js": "./node_modules/flatpickr/dist/l10n/kz.js",
+	"./lt.js": "./node_modules/flatpickr/dist/l10n/lt.js",
+	"./lv.js": "./node_modules/flatpickr/dist/l10n/lv.js",
+	"./mk.js": "./node_modules/flatpickr/dist/l10n/mk.js",
+	"./mn.js": "./node_modules/flatpickr/dist/l10n/mn.js",
+	"./ms.js": "./node_modules/flatpickr/dist/l10n/ms.js",
+	"./my.js": "./node_modules/flatpickr/dist/l10n/my.js",
+	"./nl.js": "./node_modules/flatpickr/dist/l10n/nl.js",
+	"./no.js": "./node_modules/flatpickr/dist/l10n/no.js",
+	"./pa.js": "./node_modules/flatpickr/dist/l10n/pa.js",
+	"./pl.js": "./node_modules/flatpickr/dist/l10n/pl.js",
+	"./pt.js": "./node_modules/flatpickr/dist/l10n/pt.js",
+	"./ro.js": "./node_modules/flatpickr/dist/l10n/ro.js",
+	"./ru.js": "./node_modules/flatpickr/dist/l10n/ru.js",
+	"./si.js": "./node_modules/flatpickr/dist/l10n/si.js",
+	"./sk.js": "./node_modules/flatpickr/dist/l10n/sk.js",
+	"./sl.js": "./node_modules/flatpickr/dist/l10n/sl.js",
+	"./sq.js": "./node_modules/flatpickr/dist/l10n/sq.js",
+	"./sr-cyr.js": "./node_modules/flatpickr/dist/l10n/sr-cyr.js",
+	"./sr.js": "./node_modules/flatpickr/dist/l10n/sr.js",
+	"./sv.js": "./node_modules/flatpickr/dist/l10n/sv.js",
+	"./th.js": "./node_modules/flatpickr/dist/l10n/th.js",
+	"./tr.js": "./node_modules/flatpickr/dist/l10n/tr.js",
+	"./uk.js": "./node_modules/flatpickr/dist/l10n/uk.js",
+	"./vn.js": "./node_modules/flatpickr/dist/l10n/vn.js",
+	"./zh-tw.js": "./node_modules/flatpickr/dist/l10n/zh-tw.js",
+	"./zh.js": "./node_modules/flatpickr/dist/l10n/zh.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/flatpickr/dist/l10n sync recursive ^\\.\\/.*\\.js$";
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ar.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ar.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Arabic = {
+      weekdays: {
+          shorthand: ["أحد", "اثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
+          longhand: [
+              "الأحد",
+              "الاثنين",
+              "الثلاثاء",
+              "الأربعاء",
+              "الخميس",
+              "الجمعة",
+              "السبت",
+          ]
+      },
+      months: {
+          shorthand: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+          longhand: [
+              "يناير",
+              "فبراير",
+              "مارس",
+              "أبريل",
+              "مايو",
+              "يونيو",
+              "يوليو",
+              "أغسطس",
+              "سبتمبر",
+              "أكتوبر",
+              "نوفمبر",
+              "ديسمبر",
+          ]
+      },
+      rangeSeparator: " - "
+  };
+  fp.l10ns.ar = Arabic;
+  var ar = fp.l10ns;
+
+  exports.Arabic = Arabic;
+  exports.default = ar;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/at.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/at.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Austria = {
+      weekdays: {
+          shorthand: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+          longhand: [
+              "Sonntag",
+              "Montag",
+              "Dienstag",
+              "Mittwoch",
+              "Donnerstag",
+              "Freitag",
+              "Samstag",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jän",
+              "Feb",
+              "Mär",
+              "Apr",
+              "Mai",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dez",
+          ],
+          longhand: [
+              "Jänner",
+              "Februar",
+              "März",
+              "April",
+              "Mai",
+              "Juni",
+              "Juli",
+              "August",
+              "September",
+              "Oktober",
+              "November",
+              "Dezember",
+          ]
+      },
+      firstDayOfWeek: 1,
+      weekAbbreviation: "KW",
+      rangeSeparator: " bis ",
+      scrollTitle: "Zum Ändern scrollen",
+      toggleTitle: "Zum Umschalten klicken"
+  };
+  fp.l10ns.at = Austria;
+  var at = fp.l10ns;
+
+  exports.Austria = Austria;
+  exports.default = at;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/az.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/az.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Azerbaijan = {
+      weekdays: {
+          shorthand: ["Baz", "BzE", "ÇAx", "Çər", "CAx", "Cüm", "Şən"],
+          longhand: [
+              "Bazar",
+              "Bazar ertəsi",
+              "Çərşənbə axşamı",
+              "Çərşənbə",
+              "Cümə axşamı",
+              "Cümə",
+              "Şənbə",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Yan",
+              "Fev",
+              "Mar",
+              "Apr",
+              "May",
+              "İyn",
+              "İyl",
+              "Avq",
+              "Sen",
+              "Okt",
+              "Noy",
+              "Dek",
+          ],
+          longhand: [
+              "Yanvar",
+              "Fevral",
+              "Mart",
+              "Aprel",
+              "May",
+              "İyun",
+              "İyul",
+              "Avqust",
+              "Sentyabr",
+              "Oktyabr",
+              "Noyabr",
+              "Dekabr",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return ".";
+      },
+      rangeSeparator: " - ",
+      weekAbbreviation: "Hf",
+      scrollTitle: "Artırmaq üçün sürüşdürün",
+      toggleTitle: "Aç / Bağla",
+      amPM: ["GƏ", "GS"],
+      time_24hr: true
+  };
+  fp.l10ns.az = Azerbaijan;
+  var az = fp.l10ns;
+
+  exports.Azerbaijan = Azerbaijan;
+  exports.default = az;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/be.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/be.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Belarusian = {
+      weekdays: {
+          shorthand: ["Нд", "Пн", "Аў", "Ср", "Чц", "Пт", "Сб"],
+          longhand: [
+              "Нядзеля",
+              "Панядзелак",
+              "Аўторак",
+              "Серада",
+              "Чацвер",
+              "Пятніца",
+              "Субота",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Сту",
+              "Лют",
+              "Сак",
+              "Кра",
+              "Тра",
+              "Чэр",
+              "Ліп",
+              "Жні",
+              "Вер",
+              "Кас",
+              "Ліс",
+              "Сне",
+          ],
+          longhand: [
+              "Студзень",
+              "Люты",
+              "Сакавік",
+              "Красавік",
+              "Травень",
+              "Чэрвень",
+              "Ліпень",
+              "Жнівень",
+              "Верасень",
+              "Кастрычнік",
+              "Лістапад",
+              "Снежань",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      rangeSeparator: " — ",
+      weekAbbreviation: "Тыд.",
+      scrollTitle: "Пракруціце для павелічэння",
+      toggleTitle: "Націсніце для пераключэння",
+      amPM: ["ДП", "ПП"],
+      yearAriaLabel: "Год",
+      time_24hr: true
+  };
+  fp.l10ns.be = Belarusian;
+  var be = fp.l10ns;
+
+  exports.Belarusian = Belarusian;
+  exports.default = be;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/bg.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/bg.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Bulgarian = {
+      weekdays: {
+          shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+          longhand: [
+              "Неделя",
+              "Понеделник",
+              "Вторник",
+              "Сряда",
+              "Четвъртък",
+              "Петък",
+              "Събота",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Яну",
+              "Фев",
+              "Март",
+              "Апр",
+              "Май",
+              "Юни",
+              "Юли",
+              "Авг",
+              "Сеп",
+              "Окт",
+              "Ное",
+              "Дек",
+          ],
+          longhand: [
+              "Януари",
+              "Февруари",
+              "Март",
+              "Април",
+              "Май",
+              "Юни",
+              "Юли",
+              "Август",
+              "Септември",
+              "Октомври",
+              "Ноември",
+              "Декември",
+          ]
+      },
+      time_24hr: true,
+      firstDayOfWeek: 1
+  };
+  fp.l10ns.bg = Bulgarian;
+  var bg = fp.l10ns;
+
+  exports.Bulgarian = Bulgarian;
+  exports.default = bg;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/bn.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/bn.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Bangla = {
+      weekdays: {
+          shorthand: ["রবি", "সোম", "মঙ্গল", "বুধ", "বৃহস্পতি", "শুক্র", "শনি"],
+          longhand: [
+              "রবিবার",
+              "সোমবার",
+              "মঙ্গলবার",
+              "বুধবার",
+              "বৃহস্পতিবার",
+              "শুক্রবার",
+              "শনিবার",
+          ]
+      },
+      months: {
+          shorthand: [
+              "জানু",
+              "ফেব্রু",
+              "মার্চ",
+              "এপ্রিল",
+              "মে",
+              "জুন",
+              "জুলাই",
+              "আগ",
+              "সেপ্টে",
+              "অক্টো",
+              "নভে",
+              "ডিসে",
+          ],
+          longhand: [
+              "জানুয়ারী",
+              "ফেব্রুয়ারী",
+              "মার্চ",
+              "এপ্রিল",
+              "মে",
+              "জুন",
+              "জুলাই",
+              "আগস্ট",
+              "সেপ্টেম্বর",
+              "অক্টোবর",
+              "নভেম্বর",
+              "ডিসেম্বর",
+          ]
+      }
+  };
+  fp.l10ns.bn = Bangla;
+  var bn = fp.l10ns;
+
+  exports.Bangla = Bangla;
+  exports.default = bn;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/bs.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/bs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Bosnian = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+          longhand: [
+              "Nedjelja",
+              "Ponedjeljak",
+              "Utorak",
+              "Srijeda",
+              "Četvrtak",
+              "Petak",
+              "Subota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Maj",
+              "Jun",
+              "Jul",
+              "Avg",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Januar",
+              "Februar",
+              "Mart",
+              "April",
+              "Maj",
+              "Juni",
+              "Juli",
+              "Avgust",
+              "Septembar",
+              "Oktobar",
+              "Novembar",
+              "Decembar",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.bs = Bosnian;
+  var bs = fp.l10ns;
+
+  exports.Bosnian = Bosnian;
+  exports.default = bs;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/cat.js":
+/*!*************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/cat.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Catalan = {
+      weekdays: {
+          shorthand: ["Dg", "Dl", "Dt", "Dc", "Dj", "Dv", "Ds"],
+          longhand: [
+              "Diumenge",
+              "Dilluns",
+              "Dimarts",
+              "Dimecres",
+              "Dijous",
+              "Divendres",
+              "Dissabte",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Gen",
+              "Febr",
+              "Març",
+              "Abr",
+              "Maig",
+              "Juny",
+              "Jul",
+              "Ag",
+              "Set",
+              "Oct",
+              "Nov",
+              "Des",
+          ],
+          longhand: [
+              "Gener",
+              "Febrer",
+              "Març",
+              "Abril",
+              "Maig",
+              "Juny",
+              "Juliol",
+              "Agost",
+              "Setembre",
+              "Octubre",
+              "Novembre",
+              "Desembre",
+          ]
+      },
+      ordinal: function (nth) {
+          var s = nth % 100;
+          if (s > 3 && s < 21)
+              return "è";
+          switch (s % 10) {
+              case 1:
+                  return "r";
+              case 2:
+                  return "n";
+              case 3:
+                  return "r";
+              case 4:
+                  return "t";
+              default:
+                  return "è";
+          }
+      },
+      firstDayOfWeek: 1,
+      time_24hr: true
+  };
+  fp.l10ns.cat = Catalan;
+  var cat = fp.l10ns;
+
+  exports.Catalan = Catalan;
+  exports.default = cat;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/cs.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/cs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Czech = {
+      weekdays: {
+          shorthand: ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"],
+          longhand: [
+              "Neděle",
+              "Pondělí",
+              "Úterý",
+              "Středa",
+              "Čtvrtek",
+              "Pátek",
+              "Sobota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Led",
+              "Ún",
+              "Bře",
+              "Dub",
+              "Kvě",
+              "Čer",
+              "Čvc",
+              "Srp",
+              "Zář",
+              "Říj",
+              "Lis",
+              "Pro",
+          ],
+          longhand: [
+              "Leden",
+              "Únor",
+              "Březen",
+              "Duben",
+              "Květen",
+              "Červen",
+              "Červenec",
+              "Srpen",
+              "Září",
+              "Říjen",
+              "Listopad",
+              "Prosinec",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return ".";
+      },
+      rangeSeparator: " do ",
+      weekAbbreviation: "Týd.",
+      scrollTitle: "Rolujte pro změnu",
+      toggleTitle: "Přepnout dopoledne/odpoledne",
+      amPM: ["dop.", "odp."],
+      yearAriaLabel: "Rok",
+      time_24hr: true
+  };
+  fp.l10ns.cs = Czech;
+  var cs = fp.l10ns;
+
+  exports.Czech = Czech;
+  exports.default = cs;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/cy.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/cy.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Welsh = {
+      weekdays: {
+          shorthand: ["Sul", "Llun", "Maw", "Mer", "Iau", "Gwe", "Sad"],
+          longhand: [
+              "Dydd Sul",
+              "Dydd Llun",
+              "Dydd Mawrth",
+              "Dydd Mercher",
+              "Dydd Iau",
+              "Dydd Gwener",
+              "Dydd Sadwrn",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Ion",
+              "Chwef",
+              "Maw",
+              "Ebr",
+              "Mai",
+              "Meh",
+              "Gorff",
+              "Awst",
+              "Medi",
+              "Hyd",
+              "Tach",
+              "Rhag",
+          ],
+          longhand: [
+              "Ionawr",
+              "Chwefror",
+              "Mawrth",
+              "Ebrill",
+              "Mai",
+              "Mehefin",
+              "Gorffennaf",
+              "Awst",
+              "Medi",
+              "Hydref",
+              "Tachwedd",
+              "Rhagfyr",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function (nth) {
+          if (nth === 1)
+              return "af";
+          if (nth === 2)
+              return "ail";
+          if (nth === 3 || nth === 4)
+              return "ydd";
+          if (nth === 5 || nth === 6)
+              return "ed";
+          if ((nth >= 7 && nth <= 10) ||
+              nth == 12 ||
+              nth == 15 ||
+              nth == 18 ||
+              nth == 20)
+              return "fed";
+          if (nth == 11 ||
+              nth == 13 ||
+              nth == 14 ||
+              nth == 16 ||
+              nth == 17 ||
+              nth == 19)
+              return "eg";
+          if (nth >= 21 && nth <= 39)
+              return "ain";
+          // Inconclusive.
+          return "";
+      },
+      time_24hr: true
+  };
+  fp.l10ns.cy = Welsh;
+  var cy = fp.l10ns;
+
+  exports.Welsh = Welsh;
+  exports.default = cy;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/da.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/da.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Danish = {
+      weekdays: {
+          shorthand: ["søn", "man", "tir", "ons", "tors", "fre", "lør"],
+          longhand: [
+              "søndag",
+              "mandag",
+              "tirsdag",
+              "onsdag",
+              "torsdag",
+              "fredag",
+              "lørdag",
+          ]
+      },
+      months: {
+          shorthand: [
+              "jan",
+              "feb",
+              "mar",
+              "apr",
+              "maj",
+              "jun",
+              "jul",
+              "aug",
+              "sep",
+              "okt",
+              "nov",
+              "dec",
+          ],
+          longhand: [
+              "januar",
+              "februar",
+              "marts",
+              "april",
+              "maj",
+              "juni",
+              "juli",
+              "august",
+              "september",
+              "oktober",
+              "november",
+              "december",
+          ]
+      },
+      ordinal: function () {
+          return ".";
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " til ",
+      weekAbbreviation: "uge",
+      time_24hr: true
+  };
+  fp.l10ns.da = Danish;
+  var da = fp.l10ns;
+
+  exports.Danish = Danish;
+  exports.default = da;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/de.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/de.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var German = {
+      weekdays: {
+          shorthand: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+          longhand: [
+              "Sonntag",
+              "Montag",
+              "Dienstag",
+              "Mittwoch",
+              "Donnerstag",
+              "Freitag",
+              "Samstag",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mär",
+              "Apr",
+              "Mai",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dez",
+          ],
+          longhand: [
+              "Januar",
+              "Februar",
+              "März",
+              "April",
+              "Mai",
+              "Juni",
+              "Juli",
+              "August",
+              "September",
+              "Oktober",
+              "November",
+              "Dezember",
+          ]
+      },
+      firstDayOfWeek: 1,
+      weekAbbreviation: "KW",
+      rangeSeparator: " bis ",
+      scrollTitle: "Zum Ändern scrollen",
+      toggleTitle: "Zum Umschalten klicken",
+      time_24hr: true
+  };
+  fp.l10ns.de = German;
+  var de = fp.l10ns;
+
+  exports.German = German;
+  exports.default = de;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/default.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/default.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var english = {
+      weekdays: {
+          shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          longhand: [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+          ]
+      },
+      daysInMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+      firstDayOfWeek: 0,
+      ordinal: function (nth) {
+          var s = nth % 100;
+          if (s > 3 && s < 21)
+              return "th";
+          switch (s % 10) {
+              case 1:
+                  return "st";
+              case 2:
+                  return "nd";
+              case 3:
+                  return "rd";
+              default:
+                  return "th";
+          }
+      },
+      rangeSeparator: " to ",
+      weekAbbreviation: "Wk",
+      scrollTitle: "Scroll to increment",
+      toggleTitle: "Click to toggle",
+      amPM: ["AM", "PM"],
+      yearAriaLabel: "Year",
+      hourAriaLabel: "Hour",
+      minuteAriaLabel: "Minute",
+      time_24hr: false
+  };
+
+  exports.default = english;
+  exports.english = english;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/eo.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/eo.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Esperanto = {
+      firstDayOfWeek: 1,
+      rangeSeparator: " ĝis ",
+      weekAbbreviation: "Sem",
+      scrollTitle: "Rulumu por pligrandigi la valoron",
+      toggleTitle: "Klaku por ŝalti",
+      weekdays: {
+          shorthand: ["Dim", "Lun", "Mar", "Mer", "Ĵaŭ", "Ven", "Sab"],
+          longhand: [
+              "dimanĉo",
+              "lundo",
+              "mardo",
+              "merkredo",
+              "ĵaŭdo",
+              "vendredo",
+              "sabato",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Maj",
+              "Jun",
+              "Jul",
+              "Aŭg",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "januaro",
+              "februaro",
+              "marto",
+              "aprilo",
+              "majo",
+              "junio",
+              "julio",
+              "aŭgusto",
+              "septembro",
+              "oktobro",
+              "novembro",
+              "decembro",
+          ]
+      },
+      ordinal: function () {
+          return "-a";
+      },
+      time_24hr: true
+  };
+  fp.l10ns.eo = Esperanto;
+  var eo = fp.l10ns;
+
+  exports.Esperanto = Esperanto;
+  exports.default = eo;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/es.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/es.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Spanish = {
+      weekdays: {
+          shorthand: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+          longhand: [
+              "Domingo",
+              "Lunes",
+              "Martes",
+              "Miércoles",
+              "Jueves",
+              "Viernes",
+              "Sábado",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Ene",
+              "Feb",
+              "Mar",
+              "Abr",
+              "May",
+              "Jun",
+              "Jul",
+              "Ago",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dic",
+          ],
+          longhand: [
+              "Enero",
+              "Febrero",
+              "Marzo",
+              "Abril",
+              "Mayo",
+              "Junio",
+              "Julio",
+              "Agosto",
+              "Septiembre",
+              "Octubre",
+              "Noviembre",
+              "Diciembre",
+          ]
+      },
+      ordinal: function () {
+          return "º";
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " a ",
+      time_24hr: true
+  };
+  fp.l10ns.es = Spanish;
+  var es = fp.l10ns;
+
+  exports.Spanish = Spanish;
+  exports.default = es;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/et.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/et.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Estonian = {
+      weekdays: {
+          shorthand: ["P", "E", "T", "K", "N", "R", "L"],
+          longhand: [
+              "Pühapäev",
+              "Esmaspäev",
+              "Teisipäev",
+              "Kolmapäev",
+              "Neljapäev",
+              "Reede",
+              "Laupäev",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jaan",
+              "Veebr",
+              "Märts",
+              "Apr",
+              "Mai",
+              "Juuni",
+              "Juuli",
+              "Aug",
+              "Sept",
+              "Okt",
+              "Nov",
+              "Dets",
+          ],
+          longhand: [
+              "Jaanuar",
+              "Veebruar",
+              "Märts",
+              "Aprill",
+              "Mai",
+              "Juuni",
+              "Juuli",
+              "August",
+              "September",
+              "Oktoober",
+              "November",
+              "Detsember",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return ".";
+      },
+      weekAbbreviation: "Näd",
+      rangeSeparator: " kuni ",
+      scrollTitle: "Keri, et suurendada",
+      toggleTitle: "Klõpsa, et vahetada",
+      time_24hr: true
+  };
+  fp.l10ns.et = Estonian;
+  var et = fp.l10ns;
+
+  exports.Estonian = Estonian;
+  exports.default = et;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/fa.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/fa.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Persian = {
+      weekdays: {
+          shorthand: ["یک", "دو", "سه", "چهار", "پنج", "جمعه", "شنبه"],
+          longhand: [
+              "یک‌شنبه",
+              "دوشنبه",
+              "سه‌شنبه",
+              "چهارشنبه",
+              "پنچ‌شنبه",
+              "جمعه",
+              "شنبه",
+          ]
+      },
+      months: {
+          shorthand: [
+              "ژانویه",
+              "فوریه",
+              "مارس",
+              "آوریل",
+              "مه",
+              "ژوئن",
+              "ژوئیه",
+              "اوت",
+              "سپتامبر",
+              "اکتبر",
+              "نوامبر",
+              "دسامبر",
+          ],
+          longhand: [
+              "ژانویه",
+              "فوریه",
+              "مارس",
+              "آوریل",
+              "مه",
+              "ژوئن",
+              "ژوئیه",
+              "اوت",
+              "سپتامبر",
+              "اکتبر",
+              "نوامبر",
+              "دسامبر",
+          ]
+      },
+      firstDayOfWeek: 6,
+      ordinal: function () {
+          return "";
+      }
+  };
+  fp.l10ns.fa = Persian;
+  var fa = fp.l10ns;
+
+  exports.Persian = Persian;
+  exports.default = fa;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/fi.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/fi.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Finnish = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Su", "Ma", "Ti", "Ke", "To", "Pe", "La"],
+          longhand: [
+              "Sunnuntai",
+              "Maanantai",
+              "Tiistai",
+              "Keskiviikko",
+              "Torstai",
+              "Perjantai",
+              "Lauantai",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Tammi",
+              "Helmi",
+              "Maalis",
+              "Huhti",
+              "Touko",
+              "Kesä",
+              "Heinä",
+              "Elo",
+              "Syys",
+              "Loka",
+              "Marras",
+              "Joulu",
+          ],
+          longhand: [
+              "Tammikuu",
+              "Helmikuu",
+              "Maaliskuu",
+              "Huhtikuu",
+              "Toukokuu",
+              "Kesäkuu",
+              "Heinäkuu",
+              "Elokuu",
+              "Syyskuu",
+              "Lokakuu",
+              "Marraskuu",
+              "Joulukuu",
+          ]
+      },
+      ordinal: function () {
+          return ".";
+      },
+      time_24hr: true
+  };
+  fp.l10ns.fi = Finnish;
+  var fi = fp.l10ns;
+
+  exports.Finnish = Finnish;
+  exports.default = fi;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/fo.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/fo.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Faroese = {
+      weekdays: {
+          shorthand: ["Sun", "Mán", "Týs", "Mik", "Hós", "Frí", "Ley"],
+          longhand: [
+              "Sunnudagur",
+              "Mánadagur",
+              "Týsdagur",
+              "Mikudagur",
+              "Hósdagur",
+              "Fríggjadagur",
+              "Leygardagur",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Mai",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Des",
+          ],
+          longhand: [
+              "Januar",
+              "Februar",
+              "Mars",
+              "Apríl",
+              "Mai",
+              "Juni",
+              "Juli",
+              "August",
+              "Septembur",
+              "Oktobur",
+              "Novembur",
+              "Desembur",
+          ]
+      },
+      ordinal: function () {
+          return ".";
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " til ",
+      weekAbbreviation: "vika",
+      scrollTitle: "Rulla fyri at broyta",
+      toggleTitle: "Trýst fyri at skifta",
+      yearAriaLabel: "Ár",
+      time_24hr: true
+  };
+  fp.l10ns.fo = Faroese;
+  var fo = fp.l10ns;
+
+  exports.Faroese = Faroese;
+  exports.default = fo;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/fr.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/fr.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var French = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"],
+          longhand: [
+              "dimanche",
+              "lundi",
+              "mardi",
+              "mercredi",
+              "jeudi",
+              "vendredi",
+              "samedi",
+          ]
+      },
+      months: {
+          shorthand: [
+              "janv",
+              "févr",
+              "mars",
+              "avr",
+              "mai",
+              "juin",
+              "juil",
+              "août",
+              "sept",
+              "oct",
+              "nov",
+              "déc",
+          ],
+          longhand: [
+              "janvier",
+              "février",
+              "mars",
+              "avril",
+              "mai",
+              "juin",
+              "juillet",
+              "août",
+              "septembre",
+              "octobre",
+              "novembre",
+              "décembre",
+          ]
+      },
+      ordinal: function (nth) {
+          if (nth > 1)
+              return "";
+          return "er";
+      },
+      rangeSeparator: " au ",
+      weekAbbreviation: "Sem",
+      scrollTitle: "Défiler pour augmenter la valeur",
+      toggleTitle: "Cliquer pour basculer",
+      time_24hr: true
+  };
+  fp.l10ns.fr = French;
+  var fr = fp.l10ns;
+
+  exports.French = French;
+  exports.default = fr;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ga.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ga.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Irish = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Dom", "Lua", "Mái", "Céa", "Déa", "Aoi", "Sat"],
+          longhand: [
+              "Dé Domhnaigh",
+              "Dé Luain",
+              "Dé Máirt",
+              "Dé Céadaoin",
+              "Déardaoin",
+              "Dé hAoine",
+              "Dé Sathairn",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Ean",
+              "Fea",
+              "Már",
+              "Aib",
+              "Bea",
+              "Mei",
+              "Iúi",
+              "Lún",
+              "MFo",
+              "DFo",
+              "Sam",
+              "Nol",
+          ],
+          longhand: [
+              "Eanáir",
+              "Feabhra",
+              "Márta",
+              "Aibreán",
+              "Bealtaine",
+              "Meitheamh",
+              "Iúil",
+              "Lúnasa",
+              "Meán Fómhair",
+              "Deireadh Fómhair",
+              "Samhain",
+              "Nollaig",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.hr = Irish;
+  var ga = fp.l10ns;
+
+  exports.Irish = Irish;
+  exports.default = ga;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/gr.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/gr.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Greek = {
+      weekdays: {
+          shorthand: ["Κυ", "Δε", "Τρ", "Τε", "Πέ", "Πα", "Σά"],
+          longhand: [
+              "Κυριακή",
+              "Δευτέρα",
+              "Τρίτη",
+              "Τετάρτη",
+              "Πέμπτη",
+              "Παρασκευή",
+              "Σάββατο",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Ιαν",
+              "Φεβ",
+              "Μάρ",
+              "Απρ",
+              "Μάι",
+              "Ιού",
+              "Ιού",
+              "Αύγ",
+              "Σεπ",
+              "Οκτ",
+              "Νοέ",
+              "Δεκ",
+          ],
+          longhand: [
+              "Ιανουάριος",
+              "Φεβρουάριος",
+              "Μάρτιος",
+              "Απρίλιος",
+              "Μάιος",
+              "Ιούνιος",
+              "Ιούλιος",
+              "Αύγουστος",
+              "Σεπτέμβριος",
+              "Οκτώβριος",
+              "Νοέμβριος",
+              "Δεκέμβριος",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      weekAbbreviation: "Εβδ",
+      rangeSeparator: " έως ",
+      scrollTitle: "Μετακυλήστε για προσαύξηση",
+      toggleTitle: "Κάντε κλικ για αλλαγή",
+      amPM: ["ΠΜ", "ΜΜ"]
+  };
+  fp.l10ns.gr = Greek;
+  var gr = fp.l10ns;
+
+  exports.Greek = Greek;
+  exports.default = gr;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/he.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/he.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Hebrew = {
+      weekdays: {
+          shorthand: ["א", "ב", "ג", "ד", "ה", "ו", "ש"],
+          longhand: ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"]
+      },
+      months: {
+          shorthand: [
+              "ינו׳",
+              "פבר׳",
+              "מרץ",
+              "אפר׳",
+              "מאי",
+              "יוני",
+              "יולי",
+              "אוג׳",
+              "ספט׳",
+              "אוק׳",
+              "נוב׳",
+              "דצמ׳",
+          ],
+          longhand: [
+              "ינואר",
+              "פברואר",
+              "מרץ",
+              "אפריל",
+              "מאי",
+              "יוני",
+              "יולי",
+              "אוגוסט",
+              "ספטמבר",
+              "אוקטובר",
+              "נובמבר",
+              "דצמבר",
+          ]
+      },
+      rangeSeparator: " אל ",
+      time_24hr: true
+  };
+  fp.l10ns.he = Hebrew;
+  var he = fp.l10ns;
+
+  exports.Hebrew = Hebrew;
+  exports.default = he;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/hi.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/hi.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Hindi = {
+      weekdays: {
+          shorthand: ["रवि", "सोम", "मंगल", "बुध", "गुरु", "शुक्र", "शनि"],
+          longhand: [
+              "रविवार",
+              "सोमवार",
+              "मंगलवार",
+              "बुधवार",
+              "गुरुवार",
+              "शुक्रवार",
+              "शनिवार",
+          ]
+      },
+      months: {
+          shorthand: [
+              "जन",
+              "फर",
+              "मार्च",
+              "अप्रेल",
+              "मई",
+              "जून",
+              "जूलाई",
+              "अग",
+              "सित",
+              "अक्ट",
+              "नव",
+              "दि",
+          ],
+          longhand: [
+              "जनवरी ",
+              "फरवरी",
+              "मार्च",
+              "अप्रेल",
+              "मई",
+              "जून",
+              "जूलाई",
+              "अगस्त ",
+              "सितम्बर",
+              "अक्टूबर",
+              "नवम्बर",
+              "दिसम्बर",
+          ]
+      }
+  };
+  fp.l10ns.hi = Hindi;
+  var hi = fp.l10ns;
+
+  exports.Hindi = Hindi;
+  exports.default = hi;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/hr.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/hr.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Croatian = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+          longhand: [
+              "Nedjelja",
+              "Ponedjeljak",
+              "Utorak",
+              "Srijeda",
+              "Četvrtak",
+              "Petak",
+              "Subota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Sij",
+              "Velj",
+              "Ožu",
+              "Tra",
+              "Svi",
+              "Lip",
+              "Srp",
+              "Kol",
+              "Ruj",
+              "Lis",
+              "Stu",
+              "Pro",
+          ],
+          longhand: [
+              "Siječanj",
+              "Veljača",
+              "Ožujak",
+              "Travanj",
+              "Svibanj",
+              "Lipanj",
+              "Srpanj",
+              "Kolovoz",
+              "Rujan",
+              "Listopad",
+              "Studeni",
+              "Prosinac",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.hr = Croatian;
+  var hr = fp.l10ns;
+
+  exports.Croatian = Croatian;
+  exports.default = hr;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/hu.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/hu.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Hungarian = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["V", "H", "K", "Sz", "Cs", "P", "Szo"],
+          longhand: [
+              "Vasárnap",
+              "Hétfő",
+              "Kedd",
+              "Szerda",
+              "Csütörtök",
+              "Péntek",
+              "Szombat",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Már",
+              "Ápr",
+              "Máj",
+              "Jún",
+              "Júl",
+              "Aug",
+              "Szep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Január",
+              "Február",
+              "Március",
+              "Április",
+              "Május",
+              "Június",
+              "Július",
+              "Augusztus",
+              "Szeptember",
+              "Október",
+              "November",
+              "December",
+          ]
+      },
+      ordinal: function () {
+          return ".";
+      },
+      weekAbbreviation: "Hét",
+      scrollTitle: "Görgessen",
+      toggleTitle: "Kattintson a váltáshoz",
+      rangeSeparator: " - ",
+      time_24hr: true
+  };
+  fp.l10ns.hu = Hungarian;
+  var hu = fp.l10ns;
+
+  exports.Hungarian = Hungarian;
+  exports.default = hu;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/id.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/id.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Indonesian = {
+      weekdays: {
+          shorthand: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"],
+          longhand: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Mei",
+              "Jun",
+              "Jul",
+              "Agu",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Des",
+          ],
+          longhand: [
+              "Januari",
+              "Februari",
+              "Maret",
+              "April",
+              "Mei",
+              "Juni",
+              "Juli",
+              "Agustus",
+              "September",
+              "Oktober",
+              "November",
+              "Desember",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      time_24hr: true,
+      rangeSeparator: " - "
+  };
+  fp.l10ns.id = Indonesian;
+  var id = fp.l10ns;
+
+  exports.Indonesian = Indonesian;
+  exports.default = id;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/index.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+     true ? factory(exports) :
+    undefined;
+}(this, function (exports) { 'use strict';
+
+    /*! *****************************************************************************
+    Copyright (c) Microsoft Corporation. All rights reserved.
+    Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+    this file except in compliance with the License. You may obtain a copy of the
+    License at http://www.apache.org/licenses/LICENSE-2.0
+
+    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+    WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+    MERCHANTABLITY OR NON-INFRINGEMENT.
+
+    See the Apache Version 2.0 License for specific language governing permissions
+    and limitations under the License.
+    ***************************************************************************** */
+
+    var __assign = function() {
+        __assign = Object.assign || function __assign(t) {
+            for (var s, i = 1, n = arguments.length; i < n; i++) {
+                s = arguments[i];
+                for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+            }
+            return t;
+        };
+        return __assign.apply(this, arguments);
+    };
+
+    var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Arabic = {
+        weekdays: {
+            shorthand: ["أحد", "اثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
+            longhand: [
+                "الأحد",
+                "الاثنين",
+                "الثلاثاء",
+                "الأربعاء",
+                "الخميس",
+                "الجمعة",
+                "السبت",
+            ]
+        },
+        months: {
+            shorthand: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+            longhand: [
+                "يناير",
+                "فبراير",
+                "مارس",
+                "أبريل",
+                "مايو",
+                "يونيو",
+                "يوليو",
+                "أغسطس",
+                "سبتمبر",
+                "أكتوبر",
+                "نوفمبر",
+                "ديسمبر",
+            ]
+        },
+        rangeSeparator: " - "
+    };
+    fp.l10ns.ar = Arabic;
+    fp.l10ns;
+
+    var fp$1 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Austria = {
+        weekdays: {
+            shorthand: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            longhand: [
+                "Sonntag",
+                "Montag",
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag",
+                "Freitag",
+                "Samstag",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jän",
+                "Feb",
+                "Mär",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dez",
+            ],
+            longhand: [
+                "Jänner",
+                "Februar",
+                "März",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember",
+            ]
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "KW",
+        rangeSeparator: " bis ",
+        scrollTitle: "Zum Ändern scrollen",
+        toggleTitle: "Zum Umschalten klicken"
+    };
+    fp$1.l10ns.at = Austria;
+    fp$1.l10ns;
+
+    var fp$2 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Azerbaijan = {
+        weekdays: {
+            shorthand: ["Baz", "BzE", "ÇAx", "Çər", "CAx", "Cüm", "Şən"],
+            longhand: [
+                "Bazar",
+                "Bazar ertəsi",
+                "Çərşənbə axşamı",
+                "Çərşənbə",
+                "Cümə axşamı",
+                "Cümə",
+                "Şənbə",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Yan",
+                "Fev",
+                "Mar",
+                "Apr",
+                "May",
+                "İyn",
+                "İyl",
+                "Avq",
+                "Sen",
+                "Okt",
+                "Noy",
+                "Dek",
+            ],
+            longhand: [
+                "Yanvar",
+                "Fevral",
+                "Mart",
+                "Aprel",
+                "May",
+                "İyun",
+                "İyul",
+                "Avqust",
+                "Sentyabr",
+                "Oktyabr",
+                "Noyabr",
+                "Dekabr",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        rangeSeparator: " - ",
+        weekAbbreviation: "Hf",
+        scrollTitle: "Artırmaq üçün sürüşdürün",
+        toggleTitle: "Aç / Bağla",
+        amPM: ["GƏ", "GS"],
+        time_24hr: true
+    };
+    fp$2.l10ns.az = Azerbaijan;
+    fp$2.l10ns;
+
+    var fp$3 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Belarusian = {
+        weekdays: {
+            shorthand: ["Нд", "Пн", "Аў", "Ср", "Чц", "Пт", "Сб"],
+            longhand: [
+                "Нядзеля",
+                "Панядзелак",
+                "Аўторак",
+                "Серада",
+                "Чацвер",
+                "Пятніца",
+                "Субота",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Сту",
+                "Лют",
+                "Сак",
+                "Кра",
+                "Тра",
+                "Чэр",
+                "Ліп",
+                "Жні",
+                "Вер",
+                "Кас",
+                "Ліс",
+                "Сне",
+            ],
+            longhand: [
+                "Студзень",
+                "Люты",
+                "Сакавік",
+                "Красавік",
+                "Травень",
+                "Чэрвень",
+                "Ліпень",
+                "Жнівень",
+                "Верасень",
+                "Кастрычнік",
+                "Лістапад",
+                "Снежань",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Тыд.",
+        scrollTitle: "Пракруціце для павелічэння",
+        toggleTitle: "Націсніце для пераключэння",
+        amPM: ["ДП", "ПП"],
+        yearAriaLabel: "Год",
+        time_24hr: true
+    };
+    fp$3.l10ns.be = Belarusian;
+    fp$3.l10ns;
+
+    var fp$4 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Bosnian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedjelja",
+                "Ponedjeljak",
+                "Utorak",
+                "Srijeda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mart",
+                "April",
+                "Maj",
+                "Juni",
+                "Juli",
+                "Avgust",
+                "Septembar",
+                "Oktobar",
+                "Novembar",
+                "Decembar",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$4.l10ns.bs = Bosnian;
+    fp$4.l10ns;
+
+    var fp$5 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Bulgarian = {
+        weekdays: {
+            shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            longhand: [
+                "Неделя",
+                "Понеделник",
+                "Вторник",
+                "Сряда",
+                "Четвъртък",
+                "Петък",
+                "Събота",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Яну",
+                "Фев",
+                "Март",
+                "Апр",
+                "Май",
+                "Юни",
+                "Юли",
+                "Авг",
+                "Сеп",
+                "Окт",
+                "Ное",
+                "Дек",
+            ],
+            longhand: [
+                "Януари",
+                "Февруари",
+                "Март",
+                "Април",
+                "Май",
+                "Юни",
+                "Юли",
+                "Август",
+                "Септември",
+                "Октомври",
+                "Ноември",
+                "Декември",
+            ]
+        },
+        time_24hr: true,
+        firstDayOfWeek: 1
+    };
+    fp$5.l10ns.bg = Bulgarian;
+    fp$5.l10ns;
+
+    var fp$6 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Bangla = {
+        weekdays: {
+            shorthand: ["রবি", "সোম", "মঙ্গল", "বুধ", "বৃহস্পতি", "শুক্র", "শনি"],
+            longhand: [
+                "রবিবার",
+                "সোমবার",
+                "মঙ্গলবার",
+                "বুধবার",
+                "বৃহস্পতিবার",
+                "শুক্রবার",
+                "শনিবার",
+            ]
+        },
+        months: {
+            shorthand: [
+                "জানু",
+                "ফেব্রু",
+                "মার্চ",
+                "এপ্রিল",
+                "মে",
+                "জুন",
+                "জুলাই",
+                "আগ",
+                "সেপ্টে",
+                "অক্টো",
+                "নভে",
+                "ডিসে",
+            ],
+            longhand: [
+                "জানুয়ারী",
+                "ফেব্রুয়ারী",
+                "মার্চ",
+                "এপ্রিল",
+                "মে",
+                "জুন",
+                "জুলাই",
+                "আগস্ট",
+                "সেপ্টেম্বর",
+                "অক্টোবর",
+                "নভেম্বর",
+                "ডিসেম্বর",
+            ]
+        }
+    };
+    fp$6.l10ns.bn = Bangla;
+    fp$6.l10ns;
+
+    var fp$7 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Catalan = {
+        weekdays: {
+            shorthand: ["Dg", "Dl", "Dt", "Dc", "Dj", "Dv", "Ds"],
+            longhand: [
+                "Diumenge",
+                "Dilluns",
+                "Dimarts",
+                "Dimecres",
+                "Dijous",
+                "Divendres",
+                "Dissabte",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Gen",
+                "Febr",
+                "Març",
+                "Abr",
+                "Maig",
+                "Juny",
+                "Jul",
+                "Ag",
+                "Set",
+                "Oct",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Gener",
+                "Febrer",
+                "Març",
+                "Abril",
+                "Maig",
+                "Juny",
+                "Juliol",
+                "Agost",
+                "Setembre",
+                "Octubre",
+                "Novembre",
+                "Desembre",
+            ]
+        },
+        ordinal: function (nth) {
+            var s = nth % 100;
+            if (s > 3 && s < 21)
+                return "è";
+            switch (s % 10) {
+                case 1:
+                    return "r";
+                case 2:
+                    return "n";
+                case 3:
+                    return "r";
+                case 4:
+                    return "t";
+                default:
+                    return "è";
+            }
+        },
+        firstDayOfWeek: 1,
+        time_24hr: true
+    };
+    fp$7.l10ns.cat = Catalan;
+    fp$7.l10ns;
+
+    var fp$8 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Czech = {
+        weekdays: {
+            shorthand: ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"],
+            longhand: [
+                "Neděle",
+                "Pondělí",
+                "Úterý",
+                "Středa",
+                "Čtvrtek",
+                "Pátek",
+                "Sobota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Led",
+                "Ún",
+                "Bře",
+                "Dub",
+                "Kvě",
+                "Čer",
+                "Čvc",
+                "Srp",
+                "Zář",
+                "Říj",
+                "Lis",
+                "Pro",
+            ],
+            longhand: [
+                "Leden",
+                "Únor",
+                "Březen",
+                "Duben",
+                "Květen",
+                "Červen",
+                "Červenec",
+                "Srpen",
+                "Září",
+                "Říjen",
+                "Listopad",
+                "Prosinec",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        rangeSeparator: " do ",
+        weekAbbreviation: "Týd.",
+        scrollTitle: "Rolujte pro změnu",
+        toggleTitle: "Přepnout dopoledne/odpoledne",
+        amPM: ["dop.", "odp."],
+        yearAriaLabel: "Rok",
+        time_24hr: true
+    };
+    fp$8.l10ns.cs = Czech;
+    fp$8.l10ns;
+
+    var fp$9 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Welsh = {
+        weekdays: {
+            shorthand: ["Sul", "Llun", "Maw", "Mer", "Iau", "Gwe", "Sad"],
+            longhand: [
+                "Dydd Sul",
+                "Dydd Llun",
+                "Dydd Mawrth",
+                "Dydd Mercher",
+                "Dydd Iau",
+                "Dydd Gwener",
+                "Dydd Sadwrn",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Ion",
+                "Chwef",
+                "Maw",
+                "Ebr",
+                "Mai",
+                "Meh",
+                "Gorff",
+                "Awst",
+                "Medi",
+                "Hyd",
+                "Tach",
+                "Rhag",
+            ],
+            longhand: [
+                "Ionawr",
+                "Chwefror",
+                "Mawrth",
+                "Ebrill",
+                "Mai",
+                "Mehefin",
+                "Gorffennaf",
+                "Awst",
+                "Medi",
+                "Hydref",
+                "Tachwedd",
+                "Rhagfyr",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function (nth) {
+            if (nth === 1)
+                return "af";
+            if (nth === 2)
+                return "ail";
+            if (nth === 3 || nth === 4)
+                return "ydd";
+            if (nth === 5 || nth === 6)
+                return "ed";
+            if ((nth >= 7 && nth <= 10) ||
+                nth == 12 ||
+                nth == 15 ||
+                nth == 18 ||
+                nth == 20)
+                return "fed";
+            if (nth == 11 ||
+                nth == 13 ||
+                nth == 14 ||
+                nth == 16 ||
+                nth == 17 ||
+                nth == 19)
+                return "eg";
+            if (nth >= 21 && nth <= 39)
+                return "ain";
+            // Inconclusive.
+            return "";
+        },
+        time_24hr: true
+    };
+    fp$9.l10ns.cy = Welsh;
+    fp$9.l10ns;
+
+    var fp$a = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Danish = {
+        weekdays: {
+            shorthand: ["søn", "man", "tir", "ons", "tors", "fre", "lør"],
+            longhand: [
+                "søndag",
+                "mandag",
+                "tirsdag",
+                "onsdag",
+                "torsdag",
+                "fredag",
+                "lørdag",
+            ]
+        },
+        months: {
+            shorthand: [
+                "jan",
+                "feb",
+                "mar",
+                "apr",
+                "maj",
+                "jun",
+                "jul",
+                "aug",
+                "sep",
+                "okt",
+                "nov",
+                "dec",
+            ],
+            longhand: [
+                "januar",
+                "februar",
+                "marts",
+                "april",
+                "maj",
+                "juni",
+                "juli",
+                "august",
+                "september",
+                "oktober",
+                "november",
+                "december",
+            ]
+        },
+        ordinal: function () {
+            return ".";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "uge",
+        time_24hr: true
+    };
+    fp$a.l10ns.da = Danish;
+    fp$a.l10ns;
+
+    var fp$b = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var German = {
+        weekdays: {
+            shorthand: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            longhand: [
+                "Sonntag",
+                "Montag",
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag",
+                "Freitag",
+                "Samstag",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mär",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dez",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "März",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember",
+            ]
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "KW",
+        rangeSeparator: " bis ",
+        scrollTitle: "Zum Ändern scrollen",
+        toggleTitle: "Zum Umschalten klicken",
+        time_24hr: true
+    };
+    fp$b.l10ns.de = German;
+    fp$b.l10ns;
+
+    var english = {
+        weekdays: {
+            shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            longhand: [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ]
+        },
+        daysInMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+        firstDayOfWeek: 0,
+        ordinal: function (nth) {
+            var s = nth % 100;
+            if (s > 3 && s < 21)
+                return "th";
+            switch (s % 10) {
+                case 1:
+                    return "st";
+                case 2:
+                    return "nd";
+                case 3:
+                    return "rd";
+                default:
+                    return "th";
+            }
+        },
+        rangeSeparator: " to ",
+        weekAbbreviation: "Wk",
+        scrollTitle: "Scroll to increment",
+        toggleTitle: "Click to toggle",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "Year",
+        hourAriaLabel: "Hour",
+        minuteAriaLabel: "Minute",
+        time_24hr: false
+    };
+
+    var fp$c = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Esperanto = {
+        firstDayOfWeek: 1,
+        rangeSeparator: " ĝis ",
+        weekAbbreviation: "Sem",
+        scrollTitle: "Rulumu por pligrandigi la valoron",
+        toggleTitle: "Klaku por ŝalti",
+        weekdays: {
+            shorthand: ["Dim", "Lun", "Mar", "Mer", "Ĵaŭ", "Ven", "Sab"],
+            longhand: [
+                "dimanĉo",
+                "lundo",
+                "mardo",
+                "merkredo",
+                "ĵaŭdo",
+                "vendredo",
+                "sabato",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Aŭg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "januaro",
+                "februaro",
+                "marto",
+                "aprilo",
+                "majo",
+                "junio",
+                "julio",
+                "aŭgusto",
+                "septembro",
+                "oktobro",
+                "novembro",
+                "decembro",
+            ]
+        },
+        ordinal: function () {
+            return "-a";
+        },
+        time_24hr: true
+    };
+    fp$c.l10ns.eo = Esperanto;
+    fp$c.l10ns;
+
+    var fp$d = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Spanish = {
+        weekdays: {
+            shorthand: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+            longhand: [
+                "Domingo",
+                "Lunes",
+                "Martes",
+                "Miércoles",
+                "Jueves",
+                "Viernes",
+                "Sábado",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Ene",
+                "Feb",
+                "Mar",
+                "Abr",
+                "May",
+                "Jun",
+                "Jul",
+                "Ago",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dic",
+            ],
+            longhand: [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre",
+            ]
+        },
+        ordinal: function () {
+            return "º";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " a ",
+        time_24hr: true
+    };
+    fp$d.l10ns.es = Spanish;
+    fp$d.l10ns;
+
+    var fp$e = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Estonian = {
+        weekdays: {
+            shorthand: ["P", "E", "T", "K", "N", "R", "L"],
+            longhand: [
+                "Pühapäev",
+                "Esmaspäev",
+                "Teisipäev",
+                "Kolmapäev",
+                "Neljapäev",
+                "Reede",
+                "Laupäev",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jaan",
+                "Veebr",
+                "Märts",
+                "Apr",
+                "Mai",
+                "Juuni",
+                "Juuli",
+                "Aug",
+                "Sept",
+                "Okt",
+                "Nov",
+                "Dets",
+            ],
+            longhand: [
+                "Jaanuar",
+                "Veebruar",
+                "Märts",
+                "Aprill",
+                "Mai",
+                "Juuni",
+                "Juuli",
+                "August",
+                "September",
+                "Oktoober",
+                "November",
+                "Detsember",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        weekAbbreviation: "Näd",
+        rangeSeparator: " kuni ",
+        scrollTitle: "Keri, et suurendada",
+        toggleTitle: "Klõpsa, et vahetada",
+        time_24hr: true
+    };
+    fp$e.l10ns.et = Estonian;
+    fp$e.l10ns;
+
+    var fp$f = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Persian = {
+        weekdays: {
+            shorthand: ["یک", "دو", "سه", "چهار", "پنج", "جمعه", "شنبه"],
+            longhand: [
+                "یک‌شنبه",
+                "دوشنبه",
+                "سه‌شنبه",
+                "چهارشنبه",
+                "پنچ‌شنبه",
+                "جمعه",
+                "شنبه",
+            ]
+        },
+        months: {
+            shorthand: [
+                "ژانویه",
+                "فوریه",
+                "مارس",
+                "آوریل",
+                "مه",
+                "ژوئن",
+                "ژوئیه",
+                "اوت",
+                "سپتامبر",
+                "اکتبر",
+                "نوامبر",
+                "دسامبر",
+            ],
+            longhand: [
+                "ژانویه",
+                "فوریه",
+                "مارس",
+                "آوریل",
+                "مه",
+                "ژوئن",
+                "ژوئیه",
+                "اوت",
+                "سپتامبر",
+                "اکتبر",
+                "نوامبر",
+                "دسامبر",
+            ]
+        },
+        firstDayOfWeek: 6,
+        ordinal: function () {
+            return "";
+        }
+    };
+    fp$f.l10ns.fa = Persian;
+    fp$f.l10ns;
+
+    var fp$g = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Finnish = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Su", "Ma", "Ti", "Ke", "To", "Pe", "La"],
+            longhand: [
+                "Sunnuntai",
+                "Maanantai",
+                "Tiistai",
+                "Keskiviikko",
+                "Torstai",
+                "Perjantai",
+                "Lauantai",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Tammi",
+                "Helmi",
+                "Maalis",
+                "Huhti",
+                "Touko",
+                "Kesä",
+                "Heinä",
+                "Elo",
+                "Syys",
+                "Loka",
+                "Marras",
+                "Joulu",
+            ],
+            longhand: [
+                "Tammikuu",
+                "Helmikuu",
+                "Maaliskuu",
+                "Huhtikuu",
+                "Toukokuu",
+                "Kesäkuu",
+                "Heinäkuu",
+                "Elokuu",
+                "Syyskuu",
+                "Lokakuu",
+                "Marraskuu",
+                "Joulukuu",
+            ]
+        },
+        ordinal: function () {
+            return ".";
+        },
+        time_24hr: true
+    };
+    fp$g.l10ns.fi = Finnish;
+    fp$g.l10ns;
+
+    var fp$h = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Faroese = {
+        weekdays: {
+            shorthand: ["Sun", "Mán", "Týs", "Mik", "Hós", "Frí", "Ley"],
+            longhand: [
+                "Sunnudagur",
+                "Mánadagur",
+                "Týsdagur",
+                "Mikudagur",
+                "Hósdagur",
+                "Fríggjadagur",
+                "Leygardagur",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mars",
+                "Apríl",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "Septembur",
+                "Oktobur",
+                "Novembur",
+                "Desembur",
+            ]
+        },
+        ordinal: function () {
+            return ".";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "vika",
+        scrollTitle: "Rulla fyri at broyta",
+        toggleTitle: "Trýst fyri at skifta",
+        yearAriaLabel: "Ár",
+        time_24hr: true
+    };
+    fp$h.l10ns.fo = Faroese;
+    fp$h.l10ns;
+
+    var fp$i = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var French = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"],
+            longhand: [
+                "dimanche",
+                "lundi",
+                "mardi",
+                "mercredi",
+                "jeudi",
+                "vendredi",
+                "samedi",
+            ]
+        },
+        months: {
+            shorthand: [
+                "janv",
+                "févr",
+                "mars",
+                "avr",
+                "mai",
+                "juin",
+                "juil",
+                "août",
+                "sept",
+                "oct",
+                "nov",
+                "déc",
+            ],
+            longhand: [
+                "janvier",
+                "février",
+                "mars",
+                "avril",
+                "mai",
+                "juin",
+                "juillet",
+                "août",
+                "septembre",
+                "octobre",
+                "novembre",
+                "décembre",
+            ]
+        },
+        ordinal: function (nth) {
+            if (nth > 1)
+                return "";
+            return "er";
+        },
+        rangeSeparator: " au ",
+        weekAbbreviation: "Sem",
+        scrollTitle: "Défiler pour augmenter la valeur",
+        toggleTitle: "Cliquer pour basculer",
+        time_24hr: true
+    };
+    fp$i.l10ns.fr = French;
+    fp$i.l10ns;
+
+    var fp$j = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Greek = {
+        weekdays: {
+            shorthand: ["Κυ", "Δε", "Τρ", "Τε", "Πέ", "Πα", "Σά"],
+            longhand: [
+                "Κυριακή",
+                "Δευτέρα",
+                "Τρίτη",
+                "Τετάρτη",
+                "Πέμπτη",
+                "Παρασκευή",
+                "Σάββατο",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Ιαν",
+                "Φεβ",
+                "Μάρ",
+                "Απρ",
+                "Μάι",
+                "Ιού",
+                "Ιού",
+                "Αύγ",
+                "Σεπ",
+                "Οκτ",
+                "Νοέ",
+                "Δεκ",
+            ],
+            longhand: [
+                "Ιανουάριος",
+                "Φεβρουάριος",
+                "Μάρτιος",
+                "Απρίλιος",
+                "Μάιος",
+                "Ιούνιος",
+                "Ιούλιος",
+                "Αύγουστος",
+                "Σεπτέμβριος",
+                "Οκτώβριος",
+                "Νοέμβριος",
+                "Δεκέμβριος",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        weekAbbreviation: "Εβδ",
+        rangeSeparator: " έως ",
+        scrollTitle: "Μετακυλήστε για προσαύξηση",
+        toggleTitle: "Κάντε κλικ για αλλαγή",
+        amPM: ["ΠΜ", "ΜΜ"]
+    };
+    fp$j.l10ns.gr = Greek;
+    fp$j.l10ns;
+
+    var fp$k = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Hebrew = {
+        weekdays: {
+            shorthand: ["א", "ב", "ג", "ד", "ה", "ו", "ש"],
+            longhand: ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"]
+        },
+        months: {
+            shorthand: [
+                "ינו׳",
+                "פבר׳",
+                "מרץ",
+                "אפר׳",
+                "מאי",
+                "יוני",
+                "יולי",
+                "אוג׳",
+                "ספט׳",
+                "אוק׳",
+                "נוב׳",
+                "דצמ׳",
+            ],
+            longhand: [
+                "ינואר",
+                "פברואר",
+                "מרץ",
+                "אפריל",
+                "מאי",
+                "יוני",
+                "יולי",
+                "אוגוסט",
+                "ספטמבר",
+                "אוקטובר",
+                "נובמבר",
+                "דצמבר",
+            ]
+        },
+        rangeSeparator: " אל ",
+        time_24hr: true
+    };
+    fp$k.l10ns.he = Hebrew;
+    fp$k.l10ns;
+
+    var fp$l = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Hindi = {
+        weekdays: {
+            shorthand: ["रवि", "सोम", "मंगल", "बुध", "गुरु", "शुक्र", "शनि"],
+            longhand: [
+                "रविवार",
+                "सोमवार",
+                "मंगलवार",
+                "बुधवार",
+                "गुरुवार",
+                "शुक्रवार",
+                "शनिवार",
+            ]
+        },
+        months: {
+            shorthand: [
+                "जन",
+                "फर",
+                "मार्च",
+                "अप्रेल",
+                "मई",
+                "जून",
+                "जूलाई",
+                "अग",
+                "सित",
+                "अक्ट",
+                "नव",
+                "दि",
+            ],
+            longhand: [
+                "जनवरी ",
+                "फरवरी",
+                "मार्च",
+                "अप्रेल",
+                "मई",
+                "जून",
+                "जूलाई",
+                "अगस्त ",
+                "सितम्बर",
+                "अक्टूबर",
+                "नवम्बर",
+                "दिसम्बर",
+            ]
+        }
+    };
+    fp$l.l10ns.hi = Hindi;
+    fp$l.l10ns;
+
+    var fp$m = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Croatian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedjelja",
+                "Ponedjeljak",
+                "Utorak",
+                "Srijeda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Sij",
+                "Velj",
+                "Ožu",
+                "Tra",
+                "Svi",
+                "Lip",
+                "Srp",
+                "Kol",
+                "Ruj",
+                "Lis",
+                "Stu",
+                "Pro",
+            ],
+            longhand: [
+                "Siječanj",
+                "Veljača",
+                "Ožujak",
+                "Travanj",
+                "Svibanj",
+                "Lipanj",
+                "Srpanj",
+                "Kolovoz",
+                "Rujan",
+                "Listopad",
+                "Studeni",
+                "Prosinac",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$m.l10ns.hr = Croatian;
+    fp$m.l10ns;
+
+    var fp$n = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Hungarian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["V", "H", "K", "Sz", "Cs", "P", "Szo"],
+            longhand: [
+                "Vasárnap",
+                "Hétfő",
+                "Kedd",
+                "Szerda",
+                "Csütörtök",
+                "Péntek",
+                "Szombat",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Már",
+                "Ápr",
+                "Máj",
+                "Jún",
+                "Júl",
+                "Aug",
+                "Szep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Január",
+                "Február",
+                "Március",
+                "Április",
+                "Május",
+                "Június",
+                "Július",
+                "Augusztus",
+                "Szeptember",
+                "Október",
+                "November",
+                "December",
+            ]
+        },
+        ordinal: function () {
+            return ".";
+        },
+        weekAbbreviation: "Hét",
+        scrollTitle: "Görgessen",
+        toggleTitle: "Kattintson a váltáshoz",
+        rangeSeparator: " - ",
+        time_24hr: true
+    };
+    fp$n.l10ns.hu = Hungarian;
+    fp$n.l10ns;
+
+    var fp$o = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Indonesian = {
+        weekdays: {
+            shorthand: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"],
+            longhand: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Agu",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januari",
+                "Februari",
+                "Maret",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Agustus",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        time_24hr: true,
+        rangeSeparator: " - "
+    };
+    fp$o.l10ns.id = Indonesian;
+    fp$o.l10ns;
+
+    var fp$p = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Icelandic = {
+        weekdays: {
+            shorthand: ["Sun", "Mán", "Þri", "Mið", "Fim", "Fös", "Lau"],
+            longhand: [
+                "Sunnudagur",
+                "Mánudagur",
+                "Þriðjudagur",
+                "Miðvikudagur",
+                "Fimmtudagur",
+                "Föstudagur",
+                "Laugardagur",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maí",
+                "Jún",
+                "Júl",
+                "Ágú",
+                "Sep",
+                "Okt",
+                "Nóv",
+                "Des",
+            ],
+            longhand: [
+                "Janúar",
+                "Febrúar",
+                "Mars",
+                "Apríl",
+                "Maí",
+                "Júní",
+                "Júlí",
+                "Ágúst",
+                "September",
+                "Október",
+                "Nóvember",
+                "Desember",
+            ]
+        },
+        ordinal: function () {
+            return ".";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "vika",
+        yearAriaLabel: "Ár",
+        time_24hr: true
+    };
+    fp$p.l10ns.is = Icelandic;
+    fp$p.l10ns;
+
+    var fp$q = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Italian = {
+        weekdays: {
+            shorthand: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
+            longhand: [
+                "Domenica",
+                "Lunedì",
+                "Martedì",
+                "Mercoledì",
+                "Giovedì",
+                "Venerdì",
+                "Sabato",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Gen",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mag",
+                "Giu",
+                "Lug",
+                "Ago",
+                "Set",
+                "Ott",
+                "Nov",
+                "Dic",
+            ],
+            longhand: [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+                "Agosto",
+                "Settembre",
+                "Ottobre",
+                "Novembre",
+                "Dicembre",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () { return "°"; },
+        rangeSeparator: " al ",
+        weekAbbreviation: "Se",
+        scrollTitle: "Scrolla per aumentare",
+        toggleTitle: "Clicca per cambiare",
+        time_24hr: true
+    };
+    fp$q.l10ns.it = Italian;
+    fp$q.l10ns;
+
+    var fp$r = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Japanese = {
+        weekdays: {
+            shorthand: ["日", "月", "火", "水", "木", "金", "土"],
+            longhand: [
+                "日曜日",
+                "月曜日",
+                "火曜日",
+                "水曜日",
+                "木曜日",
+                "金曜日",
+                "土曜日",
+            ]
+        },
+        months: {
+            shorthand: [
+                "1月",
+                "2月",
+                "3月",
+                "4月",
+                "5月",
+                "6月",
+                "7月",
+                "8月",
+                "9月",
+                "10月",
+                "11月",
+                "12月",
+            ],
+            longhand: [
+                "1月",
+                "2月",
+                "3月",
+                "4月",
+                "5月",
+                "6月",
+                "7月",
+                "8月",
+                "9月",
+                "10月",
+                "11月",
+                "12月",
+            ]
+        },
+        time_24hr: true,
+        rangeSeparator: " から ",
+        firstDayOfWeek: 1
+    };
+    fp$r.l10ns.ja = Japanese;
+    fp$r.l10ns;
+
+    var fp$s = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Georgian = {
+        weekdays: {
+            shorthand: ["კვ", "ორ", "სა", "ოთ", "ხუ", "პა", "შა"],
+            longhand: [
+                "კვირა",
+                "ორშაბათი",
+                "სამშაბათი",
+                "ოთხშაბათი",
+                "ხუთშაბათი",
+                "პარასკევი",
+                "შაბათი",
+            ]
+        },
+        months: {
+            shorthand: [
+                "იან",
+                "თებ",
+                "მარ",
+                "აპრ",
+                "მაი",
+                "ივნ",
+                "ივლ",
+                "აგვ",
+                "სექ",
+                "ოქტ",
+                "ნოე",
+                "დეკ",
+            ],
+            longhand: [
+                "იანვარი",
+                "თებერვალი",
+                "მარტი",
+                "აპრილი",
+                "მაისი",
+                "ივნისი",
+                "ივლისი",
+                "აგვისტო",
+                "სექტემბერი",
+                "ოქტომბერი",
+                "ნოემბერი",
+                "დეკემბერი",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "კვ.",
+        scrollTitle: "დასქროლეთ გასადიდებლად",
+        toggleTitle: "დააკლიკეთ გადართვისთვის",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "წელი",
+        time_24hr: true
+    };
+    fp$s.l10ns.ka = Georgian;
+    fp$s.l10ns;
+
+    var fp$t = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Korean = {
+        weekdays: {
+            shorthand: ["일", "월", "화", "수", "목", "금", "토"],
+            longhand: [
+                "일요일",
+                "월요일",
+                "화요일",
+                "수요일",
+                "목요일",
+                "금요일",
+                "토요일",
+            ]
+        },
+        months: {
+            shorthand: [
+                "1월",
+                "2월",
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월",
+                "11월",
+                "12월",
+            ],
+            longhand: [
+                "1월",
+                "2월",
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월",
+                "11월",
+                "12월",
+            ]
+        },
+        ordinal: function () {
+            return "일";
+        },
+        rangeSeparator: " ~ "
+    };
+    fp$t.l10ns.ko = Korean;
+    fp$t.l10ns;
+
+    var fp$u = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Khmer = {
+        weekdays: {
+            shorthand: ["អាទិត្យ", "ចន្ទ", "អង្គារ", "ពុធ", "ព្រហស.", "សុក្រ", "សៅរ៍"],
+            longhand: [
+                "អាទិត្យ",
+                "ចន្ទ",
+                "អង្គារ",
+                "ពុធ",
+                "ព្រហស្បតិ៍",
+                "សុក្រ",
+                "សៅរ៍",
+            ]
+        },
+        months: {
+            shorthand: [
+                "មករា",
+                "កុម្ភះ",
+                "មីនា",
+                "មេសា",
+                "ឧសភា",
+                "មិថុនា",
+                "កក្កដា",
+                "សីហា",
+                "កញ្ញា",
+                "តុលា",
+                "វិច្ឆិកា",
+                "ធ្នូ",
+            ],
+            longhand: [
+                "មករា",
+                "កុម្ភះ",
+                "មីនា",
+                "មេសា",
+                "ឧសភា",
+                "មិថុនា",
+                "កក្កដា",
+                "សីហា",
+                "កញ្ញា",
+                "តុលា",
+                "វិច្ឆិកា",
+                "ធ្នូ",
+            ]
+        },
+        ordinal: function () {
+            return "";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " ដល់ ",
+        weekAbbreviation: "សប្តាហ៍",
+        scrollTitle: "រំកិលដើម្បីបង្កើន",
+        toggleTitle: "ចុចដើម្បីផ្លាស់ប្ដូរ",
+        yearAriaLabel: "ឆ្នាំ",
+        time_24hr: true
+    };
+    fp$u.l10ns.km = Khmer;
+    fp$u.l10ns;
+
+    var fp$v = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Kazakh = {
+        weekdays: {
+            shorthand: ["Жс", "Дс", "Сc", "Ср", "Бс", "Жм", "Сб"],
+            longhand: [
+                "Жексенбi",
+                "Дүйсенбi",
+                "Сейсенбi",
+                "Сәрсенбi",
+                "Бейсенбi",
+                "Жұма",
+                "Сенбi",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Қаң",
+                "Ақп",
+                "Нау",
+                "Сәу",
+                "Мам",
+                "Мау",
+                "Шiл",
+                "Там",
+                "Қыр",
+                "Қаз",
+                "Қар",
+                "Жел",
+            ],
+            longhand: [
+                "Қаңтар",
+                "Ақпан",
+                "Наурыз",
+                "Сәуiр",
+                "Мамыр",
+                "Маусым",
+                "Шiлде",
+                "Тамыз",
+                "Қыркүйек",
+                "Қазан",
+                "Қараша",
+                "Желтоқсан",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Апта",
+        scrollTitle: "Үлкейту үшін айналдырыңыз",
+        toggleTitle: "Ауыстыру үшін басыңыз",
+        amPM: ["ТД", "ТК"],
+        yearAriaLabel: "Жыл"
+    };
+    fp$v.l10ns.kz = Kazakh;
+    fp$v.l10ns;
+
+    var fp$w = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Lithuanian = {
+        weekdays: {
+            shorthand: ["S", "Pr", "A", "T", "K", "Pn", "Š"],
+            longhand: [
+                "Sekmadienis",
+                "Pirmadienis",
+                "Antradienis",
+                "Trečiadienis",
+                "Ketvirtadienis",
+                "Penktadienis",
+                "Šeštadienis",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Sau",
+                "Vas",
+                "Kov",
+                "Bal",
+                "Geg",
+                "Bir",
+                "Lie",
+                "Rgp",
+                "Rgs",
+                "Spl",
+                "Lap",
+                "Grd",
+            ],
+            longhand: [
+                "Sausis",
+                "Vasaris",
+                "Kovas",
+                "Balandis",
+                "Gegužė",
+                "Birželis",
+                "Liepa",
+                "Rugpjūtis",
+                "Rugsėjis",
+                "Spalis",
+                "Lapkritis",
+                "Gruodis",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "-a";
+        },
+        weekAbbreviation: "Sav",
+        scrollTitle: "Keisti laiką pelės rateliu",
+        toggleTitle: "Perjungti laiko formatą",
+        time_24hr: true
+    };
+    fp$w.l10ns.lt = Lithuanian;
+    fp$w.l10ns;
+
+    var fp$x = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Latvian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"],
+            longhand: [
+                "Svētdiena",
+                "Pirmdiena",
+                "Otrdiena",
+                "Trešdiena",
+                "Ceturtdiena",
+                "Piektdiena",
+                "Sestdiena",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Jūn",
+                "Jūl",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Janvāris",
+                "Februāris",
+                "Marts",
+                "Aprīlis",
+                "Maijs",
+                "Jūnijs",
+                "Jūlijs",
+                "Augusts",
+                "Septembris",
+                "Oktobris",
+                "Novembris",
+                "Decembris",
+            ]
+        },
+        rangeSeparator: " līdz ",
+        time_24hr: true
+    };
+    fp$x.l10ns.lv = Latvian;
+    fp$x.l10ns;
+
+    var fp$y = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Macedonian = {
+        weekdays: {
+            shorthand: ["Не", "По", "Вт", "Ср", "Че", "Пе", "Са"],
+            longhand: [
+                "Недела",
+                "Понеделник",
+                "Вторник",
+                "Среда",
+                "Четврток",
+                "Петок",
+                "Сабота",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Јан",
+                "Фев",
+                "Мар",
+                "Апр",
+                "Мај",
+                "Јун",
+                "Јул",
+                "Авг",
+                "Сеп",
+                "Окт",
+                "Ное",
+                "Дек",
+            ],
+            longhand: [
+                "Јануари",
+                "Февруари",
+                "Март",
+                "Април",
+                "Мај",
+                "Јуни",
+                "Јули",
+                "Август",
+                "Септември",
+                "Октомври",
+                "Ноември",
+                "Декември",
+            ]
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "Нед.",
+        rangeSeparator: " до ",
+        time_24hr: true
+    };
+    fp$y.l10ns.mk = Macedonian;
+    fp$y.l10ns;
+
+    var fp$z = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Mongolian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Да", "Мя", "Лх", "Пү", "Ба", "Бя", "Ня"],
+            longhand: ["Даваа", "Мягмар", "Лхагва", "Пүрэв", "Баасан", "Бямба", "Ням"]
+        },
+        months: {
+            shorthand: [
+                "1-р сар",
+                "2-р сар",
+                "3-р сар",
+                "4-р сар",
+                "5-р сар",
+                "6-р сар",
+                "7-р сар",
+                "8-р сар",
+                "9-р сар",
+                "10-р сар",
+                "11-р сар",
+                "12-р сар",
+            ],
+            longhand: [
+                "Нэгдүгээр сар",
+                "Хоёрдугаар сар",
+                "Гуравдугаар сар",
+                "Дөрөвдүгээр сар",
+                "Тавдугаар сар",
+                "Зургаадугаар сар",
+                "Долдугаар сар",
+                "Наймдугаар сар",
+                "Есдүгээр сар",
+                "Аравдугаар сар",
+                "Арваннэгдүгээр сар",
+                "Арванхоёрдугаар сар",
+            ]
+        },
+        rangeSeparator: "-с ",
+        time_24hr: true
+    };
+    fp$z.l10ns.mn = Mongolian;
+    fp$z.l10ns;
+
+    var fp$A = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Malaysian = {
+        weekdays: {
+            shorthand: ["Min", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
+            longhand: [
+                "Minggu",
+                "Isnin",
+                "Selasa",
+                "Rabu",
+                "Khamis",
+                "Jumaat",
+                "Sabtu",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mac",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Ogo",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dis",
+            ],
+            longhand: [
+                "Januari",
+                "Februari",
+                "Mac",
+                "April",
+                "Mei",
+                "Jun",
+                "Julai",
+                "Ogos",
+                "September",
+                "Oktober",
+                "November",
+                "Disember",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        }
+    };
+    fp$A.l10ns;
+
+    var fp$B = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Burmese = {
+        weekdays: {
+            shorthand: ["နွေ", "လာ", "ဂါ", "ဟူး", "ကြာ", "သော", "နေ"],
+            longhand: [
+                "တနင်္ဂနွေ",
+                "တနင်္လာ",
+                "အင်္ဂါ",
+                "ဗုဒ္ဓဟူး",
+                "ကြာသပတေး",
+                "သောကြာ",
+                "စနေ",
+            ]
+        },
+        months: {
+            shorthand: [
+                "ဇန်",
+                "ဖေ",
+                "မတ်",
+                "ပြီ",
+                "မေ",
+                "ဇွန်",
+                "လိုင်",
+                "သြ",
+                "စက်",
+                "အောက်",
+                "နို",
+                "ဒီ",
+            ],
+            longhand: [
+                "ဇန်နဝါရီ",
+                "ဖေဖော်ဝါရီ",
+                "မတ်",
+                "ဧပြီ",
+                "မေ",
+                "ဇွန်",
+                "ဇူလိုင်",
+                "သြဂုတ်",
+                "စက်တင်ဘာ",
+                "အောက်တိုဘာ",
+                "နိုဝင်ဘာ",
+                "ဒီဇင်ဘာ",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        time_24hr: true
+    };
+    fp$B.l10ns.my = Burmese;
+    fp$B.l10ns;
+
+    var fp$C = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Dutch = {
+        weekdays: {
+            shorthand: ["zo", "ma", "di", "wo", "do", "vr", "za"],
+            longhand: [
+                "zondag",
+                "maandag",
+                "dinsdag",
+                "woensdag",
+                "donderdag",
+                "vrijdag",
+                "zaterdag",
+            ]
+        },
+        months: {
+            shorthand: [
+                "jan",
+                "feb",
+                "mrt",
+                "apr",
+                "mei",
+                "jun",
+                "jul",
+                "aug",
+                "sept",
+                "okt",
+                "nov",
+                "dec",
+            ],
+            longhand: [
+                "januari",
+                "februari",
+                "maart",
+                "april",
+                "mei",
+                "juni",
+                "juli",
+                "augustus",
+                "september",
+                "oktober",
+                "november",
+                "december",
+            ]
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "wk",
+        rangeSeparator: " tot ",
+        scrollTitle: "Scroll voor volgende / vorige",
+        toggleTitle: "Klik om te wisselen",
+        time_24hr: true,
+        ordinal: function (nth) {
+            if (nth === 1 || nth === 8 || nth >= 20)
+                return "ste";
+            return "de";
+        }
+    };
+    fp$C.l10ns.nl = Dutch;
+    fp$C.l10ns;
+
+    var fp$D = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Norwegian = {
+        weekdays: {
+            shorthand: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
+            longhand: [
+                "Søndag",
+                "Mandag",
+                "Tirsdag",
+                "Onsdag",
+                "Torsdag",
+                "Fredag",
+                "Lørdag",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mars",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+            ]
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "Uke",
+        scrollTitle: "Scroll for å endre",
+        toggleTitle: "Klikk for å veksle",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        }
+    };
+    fp$D.l10ns.no = Norwegian;
+    fp$D.l10ns;
+
+    var fp$E = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Punjabi = {
+        weekdays: {
+            shorthand: ["ਐਤ", "ਸੋਮ", "ਮੰਗਲ", "ਬੁੱਧ", "ਵੀਰ", "ਸ਼ੁੱਕਰ", "ਸ਼ਨਿੱਚਰ"],
+            longhand: [
+                "ਐਤਵਾਰ",
+                "ਸੋਮਵਾਰ",
+                "ਮੰਗਲਵਾਰ",
+                "ਬੁੱਧਵਾਰ",
+                "ਵੀਰਵਾਰ",
+                "ਸ਼ੁੱਕਰਵਾਰ",
+                "ਸ਼ਨਿੱਚਰਵਾਰ",
+            ]
+        },
+        months: {
+            shorthand: [
+                "ਜਨ",
+                "ਫ਼ਰ",
+                "ਮਾਰ",
+                "ਅਪ੍ਰੈ",
+                "ਮਈ",
+                "ਜੂਨ",
+                "ਜੁਲਾ",
+                "ਅਗ",
+                "ਸਤੰ",
+                "ਅਕ",
+                "ਨਵੰ",
+                "ਦਸੰ",
+            ],
+            longhand: [
+                "ਜਨਵਰੀ",
+                "ਫ਼ਰਵਰੀ",
+                "ਮਾਰਚ",
+                "ਅਪ੍ਰੈਲ",
+                "ਮਈ",
+                "ਜੂਨ",
+                "ਜੁਲਾਈ",
+                "ਅਗਸਤ",
+                "ਸਤੰਬਰ",
+                "ਅਕਤੂਬਰ",
+                "ਨਵੰਬਰ",
+                "ਦਸੰਬਰ",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$E.l10ns.pa = Punjabi;
+    fp$E.l10ns;
+
+    var fp$F = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Polish = {
+        weekdays: {
+            shorthand: ["Nd", "Pn", "Wt", "Śr", "Cz", "Pt", "So"],
+            longhand: [
+                "Niedziela",
+                "Poniedziałek",
+                "Wtorek",
+                "Środa",
+                "Czwartek",
+                "Piątek",
+                "Sobota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Sty",
+                "Lut",
+                "Mar",
+                "Kwi",
+                "Maj",
+                "Cze",
+                "Lip",
+                "Sie",
+                "Wrz",
+                "Paź",
+                "Lis",
+                "Gru",
+            ],
+            longhand: [
+                "Styczeń",
+                "Luty",
+                "Marzec",
+                "Kwiecień",
+                "Maj",
+                "Czerwiec",
+                "Lipiec",
+                "Sierpień",
+                "Wrzesień",
+                "Październik",
+                "Listopad",
+                "Grudzień",
+            ]
+        },
+        rangeSeparator: " do ",
+        weekAbbreviation: "tydz.",
+        scrollTitle: "Przewiń, aby zwiększyć",
+        toggleTitle: "Kliknij, aby przełączyć",
+        firstDayOfWeek: 1,
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        }
+    };
+    fp$F.l10ns.pl = Polish;
+    fp$F.l10ns;
+
+    var fp$G = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Portuguese = {
+        weekdays: {
+            shorthand: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+            longhand: [
+                "Domingo",
+                "Segunda-feira",
+                "Terça-feira",
+                "Quarta-feira",
+                "Quinta-feira",
+                "Sexta-feira",
+                "Sábado",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Fev",
+                "Mar",
+                "Abr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Ago",
+                "Set",
+                "Out",
+                "Nov",
+                "Dez",
+            ],
+            longhand: [
+                "Janeiro",
+                "Fevereiro",
+                "Março",
+                "Abril",
+                "Maio",
+                "Junho",
+                "Julho",
+                "Agosto",
+                "Setembro",
+                "Outubro",
+                "Novembro",
+                "Dezembro",
+            ]
+        },
+        rangeSeparator: " até ",
+        time_24hr: true
+    };
+    fp$G.l10ns.pt = Portuguese;
+    fp$G.l10ns;
+
+    var fp$H = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Romanian = {
+        weekdays: {
+            shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sâm"],
+            longhand: [
+                "Duminică",
+                "Luni",
+                "Marți",
+                "Miercuri",
+                "Joi",
+                "Vineri",
+                "Sâmbătă",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Ian",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Iun",
+                "Iul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Noi",
+                "Dec",
+            ],
+            longhand: [
+                "Ianuarie",
+                "Februarie",
+                "Martie",
+                "Aprilie",
+                "Mai",
+                "Iunie",
+                "Iulie",
+                "August",
+                "Septembrie",
+                "Octombrie",
+                "Noiembrie",
+                "Decembrie",
+            ]
+        },
+        firstDayOfWeek: 1,
+        time_24hr: true,
+        ordinal: function () {
+            return "";
+        }
+    };
+    fp$H.l10ns.ro = Romanian;
+    fp$H.l10ns;
+
+    var fp$I = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Russian = {
+        weekdays: {
+            shorthand: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            longhand: [
+                "Воскресенье",
+                "Понедельник",
+                "Вторник",
+                "Среда",
+                "Четверг",
+                "Пятница",
+                "Суббота",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Янв",
+                "Фев",
+                "Март",
+                "Апр",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Авг",
+                "Сен",
+                "Окт",
+                "Ноя",
+                "Дек",
+            ],
+            longhand: [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Нед.",
+        scrollTitle: "Прокрутите для увеличения",
+        toggleTitle: "Нажмите для переключения",
+        amPM: ["ДП", "ПП"],
+        yearAriaLabel: "Год",
+        time_24hr: true
+    };
+    fp$I.l10ns.ru = Russian;
+    fp$I.l10ns;
+
+    var fp$J = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Sinhala = {
+        weekdays: {
+            shorthand: ["ඉ", "ස", "අ", "බ", "බ්‍ර", "සි", "සෙ"],
+            longhand: [
+                "ඉරිදා",
+                "සඳුදා",
+                "අඟහරුවාදා",
+                "බදාදා",
+                "බ්‍රහස්පතින්දා",
+                "සිකුරාදා",
+                "සෙනසුරාදා",
+            ]
+        },
+        months: {
+            shorthand: [
+                "ජන",
+                "පෙබ",
+                "මාර්",
+                "අප්‍රේ",
+                "මැයි",
+                "ජුනි",
+                "ජූලි",
+                "අගෝ",
+                "සැප්",
+                "ඔක්",
+                "නොවැ",
+                "දෙසැ",
+            ],
+            longhand: [
+                "ජනවාරි",
+                "පෙබරවාරි",
+                "මාර්තු",
+                "අප්‍රේල්",
+                "මැයි",
+                "ජුනි",
+                "ජූලි",
+                "අගෝස්තු",
+                "සැප්තැම්බර්",
+                "ඔක්තෝබර්",
+                "නොවැම්බර්",
+                "දෙසැම්බර්",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$J.l10ns.si = Sinhala;
+    fp$J.l10ns;
+
+    var fp$K = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Slovak = {
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Ut", "Str", "Štv", "Pia", "Sob"],
+            longhand: [
+                "Nedeľa",
+                "Pondelok",
+                "Utorok",
+                "Streda",
+                "Štvrtok",
+                "Piatok",
+                "Sobota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Máj",
+                "Jún",
+                "Júl",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Január",
+                "Február",
+                "Marec",
+                "Apríl",
+                "Máj",
+                "Jún",
+                "Júl",
+                "August",
+                "September",
+                "Október",
+                "November",
+                "December",
+            ]
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " do ",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        }
+    };
+    fp$K.l10ns.sk = Slovak;
+    fp$K.l10ns;
+
+    var fp$L = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Slovenian = {
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Tor", "Sre", "Čet", "Pet", "Sob"],
+            longhand: [
+                "Nedelja",
+                "Ponedeljek",
+                "Torek",
+                "Sreda",
+                "Četrtek",
+                "Petek",
+                "Sobota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Marec",
+                "April",
+                "Maj",
+                "Junij",
+                "Julij",
+                "Avgust",
+                "September",
+                "Oktober",
+                "November",
+                "December",
+            ]
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " do ",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        }
+    };
+    fp$L.l10ns.sl = Slovenian;
+    fp$L.l10ns;
+
+    var fp$M = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Albanian = {
+        weekdays: {
+            shorthand: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sh"],
+            longhand: [
+                "E Diel",
+                "E Hënë",
+                "E Martë",
+                "E Mërkurë",
+                "E Enjte",
+                "E Premte",
+                "E Shtunë",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Shk",
+                "Mar",
+                "Pri",
+                "Maj",
+                "Qer",
+                "Kor",
+                "Gus",
+                "Sht",
+                "Tet",
+                "Nën",
+                "Dhj",
+            ],
+            longhand: [
+                "Janar",
+                "Shkurt",
+                "Mars",
+                "Prill",
+                "Maj",
+                "Qershor",
+                "Korrik",
+                "Gusht",
+                "Shtator",
+                "Tetor",
+                "Nëntor",
+                "Dhjetor",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$M.l10ns.sq = Albanian;
+    fp$M.l10ns;
+
+    var fp$N = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Serbian = {
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sre", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedelja",
+                "Ponedeljak",
+                "Utorak",
+                "Sreda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mart",
+                "April",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avgust",
+                "Septembar",
+                "Oktobar",
+                "Novembar",
+                "Decembar",
+            ]
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "Ned.",
+        rangeSeparator: " do ",
+        time_24hr: true
+    };
+    fp$N.l10ns.sr = Serbian;
+    fp$N.l10ns;
+
+    var fp$O = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Swedish = {
+        firstDayOfWeek: 1,
+        weekAbbreviation: "v",
+        weekdays: {
+            shorthand: ["Sön", "Mån", "Tis", "Ons", "Tor", "Fre", "Lör"],
+            longhand: [
+                "Söndag",
+                "Måndag",
+                "Tisdag",
+                "Onsdag",
+                "Torsdag",
+                "Fredag",
+                "Lördag",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januari",
+                "Februari",
+                "Mars",
+                "April",
+                "Maj",
+                "Juni",
+                "Juli",
+                "Augusti",
+                "September",
+                "Oktober",
+                "November",
+                "December",
+            ]
+        },
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        }
+    };
+    fp$O.l10ns.sv = Swedish;
+    fp$O.l10ns;
+
+    var fp$P = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Thai = {
+        weekdays: {
+            shorthand: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+            longhand: [
+                "อาทิตย์",
+                "จันทร์",
+                "อังคาร",
+                "พุธ",
+                "พฤหัสบดี",
+                "ศุกร์",
+                "เสาร์",
+            ]
+        },
+        months: {
+            shorthand: [
+                "ม.ค.",
+                "ก.พ.",
+                "มี.ค.",
+                "เม.ย.",
+                "พ.ค.",
+                "มิ.ย.",
+                "ก.ค.",
+                "ส.ค.",
+                "ก.ย.",
+                "ต.ค.",
+                "พ.ย.",
+                "ธ.ค.",
+            ],
+            longhand: [
+                "มกราคม",
+                "กุมภาพันธ์",
+                "มีนาคม",
+                "เมษายน",
+                "พฤษภาคม",
+                "มิถุนายน",
+                "กรกฎาคม",
+                "สิงหาคม",
+                "กันยายน",
+                "ตุลาคม",
+                "พฤศจิกายน",
+                "ธันวาคม",
+            ]
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " ถึง ",
+        scrollTitle: "เลื่อนเพื่อเพิ่มหรือลด",
+        toggleTitle: "คลิกเพื่อเปลี่ยน",
+        time_24hr: true,
+        ordinal: function () {
+            return "";
+        }
+    };
+    fp$P.l10ns.th = Thai;
+    fp$P.l10ns;
+
+    var fp$Q = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Turkish = {
+        weekdays: {
+            shorthand: ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"],
+            longhand: [
+                "Pazar",
+                "Pazartesi",
+                "Salı",
+                "Çarşamba",
+                "Perşembe",
+                "Cuma",
+                "Cumartesi",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Oca",
+                "Şub",
+                "Mar",
+                "Nis",
+                "May",
+                "Haz",
+                "Tem",
+                "Ağu",
+                "Eyl",
+                "Eki",
+                "Kas",
+                "Ara",
+            ],
+            longhand: [
+                "Ocak",
+                "Şubat",
+                "Mart",
+                "Nisan",
+                "Mayıs",
+                "Haziran",
+                "Temmuz",
+                "Ağustos",
+                "Eylül",
+                "Ekim",
+                "Kasım",
+                "Aralık",
+            ]
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        rangeSeparator: " - ",
+        weekAbbreviation: "Hf",
+        scrollTitle: "Artırmak için kaydırın",
+        toggleTitle: "Aç/Kapa",
+        amPM: ["ÖÖ", "ÖS"],
+        time_24hr: true
+    };
+    fp$Q.l10ns.tr = Turkish;
+    fp$Q.l10ns;
+
+    var fp$R = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Ukrainian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            longhand: [
+                "Неділя",
+                "Понеділок",
+                "Вівторок",
+                "Середа",
+                "Четвер",
+                "П'ятниця",
+                "Субота",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Січ",
+                "Лют",
+                "Бер",
+                "Кві",
+                "Тра",
+                "Чер",
+                "Лип",
+                "Сер",
+                "Вер",
+                "Жов",
+                "Лис",
+                "Гру",
+            ],
+            longhand: [
+                "Січень",
+                "Лютий",
+                "Березень",
+                "Квітень",
+                "Травень",
+                "Червень",
+                "Липень",
+                "Серпень",
+                "Вересень",
+                "Жовтень",
+                "Листопад",
+                "Грудень",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$R.l10ns.uk = Ukrainian;
+    fp$R.l10ns;
+
+    var fp$S = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Vietnamese = {
+        weekdays: {
+            shorthand: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+            longhand: [
+                "Chủ nhật",
+                "Thứ hai",
+                "Thứ ba",
+                "Thứ tư",
+                "Thứ năm",
+                "Thứ sáu",
+                "Thứ bảy",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Th1",
+                "Th2",
+                "Th3",
+                "Th4",
+                "Th5",
+                "Th6",
+                "Th7",
+                "Th8",
+                "Th9",
+                "Th10",
+                "Th11",
+                "Th12",
+            ],
+            longhand: [
+                "Tháng một",
+                "Tháng hai",
+                "Tháng ba",
+                "Tháng tư",
+                "Tháng năm",
+                "Tháng sáu",
+                "Tháng bảy",
+                "Tháng tám",
+                "Tháng chín",
+                "Tháng mười",
+                "Tháng 11",
+                "Tháng 12",
+            ]
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " đến "
+    };
+    fp$S.l10ns.vn = Vietnamese;
+    fp$S.l10ns;
+
+    var fp$T = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Mandarin = {
+        weekdays: {
+            shorthand: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            longhand: [
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六",
+            ]
+        },
+        months: {
+            shorthand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ],
+            longhand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ]
+        },
+        rangeSeparator: " 至 ",
+        weekAbbreviation: "周",
+        scrollTitle: "滚动切换",
+        toggleTitle: "点击切换 12/24 小时时制"
+    };
+    fp$T.l10ns.zh = Mandarin;
+    fp$T.l10ns;
+
+    var fp$U = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var MandarinTraditional = {
+        weekdays: {
+            shorthand: ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
+            longhand: [
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六",
+            ]
+        },
+        months: {
+            shorthand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ],
+            longhand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ]
+        },
+        rangeSeparator: " 至 ",
+        weekAbbreviation: "週",
+        scrollTitle: "滾動切換",
+        toggleTitle: "點擊切換 12/24 小時時制"
+    };
+    fp$U.l10ns.zh_tw = MandarinTraditional;
+    fp$U.l10ns;
+
+    var l10n = {
+        ar: Arabic,
+        at: Austria,
+        az: Azerbaijan,
+        be: Belarusian,
+        bg: Bulgarian,
+        bn: Bangla,
+        bs: Bosnian,
+        cat: Catalan,
+        cs: Czech,
+        cy: Welsh,
+        da: Danish,
+        de: German,
+        "default": __assign({}, english),
+        en: english,
+        eo: Esperanto,
+        es: Spanish,
+        et: Estonian,
+        fa: Persian,
+        fi: Finnish,
+        fo: Faroese,
+        fr: French,
+        gr: Greek,
+        he: Hebrew,
+        hi: Hindi,
+        hr: Croatian,
+        hu: Hungarian,
+        id: Indonesian,
+        is: Icelandic,
+        it: Italian,
+        ja: Japanese,
+        ka: Georgian,
+        ko: Korean,
+        km: Khmer,
+        kz: Kazakh,
+        lt: Lithuanian,
+        lv: Latvian,
+        mk: Macedonian,
+        mn: Mongolian,
+        ms: Malaysian,
+        my: Burmese,
+        nl: Dutch,
+        no: Norwegian,
+        pa: Punjabi,
+        pl: Polish,
+        pt: Portuguese,
+        ro: Romanian,
+        ru: Russian,
+        si: Sinhala,
+        sk: Slovak,
+        sl: Slovenian,
+        sq: Albanian,
+        sr: Serbian,
+        sv: Swedish,
+        th: Thai,
+        tr: Turkish,
+        uk: Ukrainian,
+        vn: Vietnamese,
+        zh: Mandarin,
+        zh_tw: MandarinTraditional
+    };
+
+    exports.default = l10n;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/is.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/is.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Icelandic = {
+      weekdays: {
+          shorthand: ["Sun", "Mán", "Þri", "Mið", "Fim", "Fös", "Lau"],
+          longhand: [
+              "Sunnudagur",
+              "Mánudagur",
+              "Þriðjudagur",
+              "Miðvikudagur",
+              "Fimmtudagur",
+              "Föstudagur",
+              "Laugardagur",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Maí",
+              "Jún",
+              "Júl",
+              "Ágú",
+              "Sep",
+              "Okt",
+              "Nóv",
+              "Des",
+          ],
+          longhand: [
+              "Janúar",
+              "Febrúar",
+              "Mars",
+              "Apríl",
+              "Maí",
+              "Júní",
+              "Júlí",
+              "Ágúst",
+              "September",
+              "Október",
+              "Nóvember",
+              "Desember",
+          ]
+      },
+      ordinal: function () {
+          return ".";
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " til ",
+      weekAbbreviation: "vika",
+      yearAriaLabel: "Ár",
+      time_24hr: true
+  };
+  fp.l10ns.is = Icelandic;
+  var is = fp.l10ns;
+
+  exports.Icelandic = Icelandic;
+  exports.default = is;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/it.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/it.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Italian = {
+      weekdays: {
+          shorthand: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
+          longhand: [
+              "Domenica",
+              "Lunedì",
+              "Martedì",
+              "Mercoledì",
+              "Giovedì",
+              "Venerdì",
+              "Sabato",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Gen",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Mag",
+              "Giu",
+              "Lug",
+              "Ago",
+              "Set",
+              "Ott",
+              "Nov",
+              "Dic",
+          ],
+          longhand: [
+              "Gennaio",
+              "Febbraio",
+              "Marzo",
+              "Aprile",
+              "Maggio",
+              "Giugno",
+              "Luglio",
+              "Agosto",
+              "Settembre",
+              "Ottobre",
+              "Novembre",
+              "Dicembre",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () { return "°"; },
+      rangeSeparator: " al ",
+      weekAbbreviation: "Se",
+      scrollTitle: "Scrolla per aumentare",
+      toggleTitle: "Clicca per cambiare",
+      time_24hr: true
+  };
+  fp.l10ns.it = Italian;
+  var it = fp.l10ns;
+
+  exports.Italian = Italian;
+  exports.default = it;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ja.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ja.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Japanese = {
+      weekdays: {
+          shorthand: ["日", "月", "火", "水", "木", "金", "土"],
+          longhand: [
+              "日曜日",
+              "月曜日",
+              "火曜日",
+              "水曜日",
+              "木曜日",
+              "金曜日",
+              "土曜日",
+          ]
+      },
+      months: {
+          shorthand: [
+              "1月",
+              "2月",
+              "3月",
+              "4月",
+              "5月",
+              "6月",
+              "7月",
+              "8月",
+              "9月",
+              "10月",
+              "11月",
+              "12月",
+          ],
+          longhand: [
+              "1月",
+              "2月",
+              "3月",
+              "4月",
+              "5月",
+              "6月",
+              "7月",
+              "8月",
+              "9月",
+              "10月",
+              "11月",
+              "12月",
+          ]
+      },
+      time_24hr: true,
+      rangeSeparator: " から ",
+      firstDayOfWeek: 1
+  };
+  fp.l10ns.ja = Japanese;
+  var ja = fp.l10ns;
+
+  exports.Japanese = Japanese;
+  exports.default = ja;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ka.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ka.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Georgian = {
+      weekdays: {
+          shorthand: ["კვ", "ორ", "სა", "ოთ", "ხუ", "პა", "შა"],
+          longhand: [
+              "კვირა",
+              "ორშაბათი",
+              "სამშაბათი",
+              "ოთხშაბათი",
+              "ხუთშაბათი",
+              "პარასკევი",
+              "შაბათი",
+          ]
+      },
+      months: {
+          shorthand: [
+              "იან",
+              "თებ",
+              "მარ",
+              "აპრ",
+              "მაი",
+              "ივნ",
+              "ივლ",
+              "აგვ",
+              "სექ",
+              "ოქტ",
+              "ნოე",
+              "დეკ",
+          ],
+          longhand: [
+              "იანვარი",
+              "თებერვალი",
+              "მარტი",
+              "აპრილი",
+              "მაისი",
+              "ივნისი",
+              "ივლისი",
+              "აგვისტო",
+              "სექტემბერი",
+              "ოქტომბერი",
+              "ნოემბერი",
+              "დეკემბერი",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      rangeSeparator: " — ",
+      weekAbbreviation: "კვ.",
+      scrollTitle: "დასქროლეთ გასადიდებლად",
+      toggleTitle: "დააკლიკეთ გადართვისთვის",
+      amPM: ["AM", "PM"],
+      yearAriaLabel: "წელი",
+      time_24hr: true
+  };
+  fp.l10ns.ka = Georgian;
+  var ka = fp.l10ns;
+
+  exports.Georgian = Georgian;
+  exports.default = ka;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/km.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/km.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Khmer = {
+      weekdays: {
+          shorthand: ["អាទិត្យ", "ចន្ទ", "អង្គារ", "ពុធ", "ព្រហស.", "សុក្រ", "សៅរ៍"],
+          longhand: [
+              "អាទិត្យ",
+              "ចន្ទ",
+              "អង្គារ",
+              "ពុធ",
+              "ព្រហស្បតិ៍",
+              "សុក្រ",
+              "សៅរ៍",
+          ]
+      },
+      months: {
+          shorthand: [
+              "មករា",
+              "កុម្ភះ",
+              "មីនា",
+              "មេសា",
+              "ឧសភា",
+              "មិថុនា",
+              "កក្កដា",
+              "សីហា",
+              "កញ្ញា",
+              "តុលា",
+              "វិច្ឆិកា",
+              "ធ្នូ",
+          ],
+          longhand: [
+              "មករា",
+              "កុម្ភះ",
+              "មីនា",
+              "មេសា",
+              "ឧសភា",
+              "មិថុនា",
+              "កក្កដា",
+              "សីហា",
+              "កញ្ញា",
+              "តុលា",
+              "វិច្ឆិកា",
+              "ធ្នូ",
+          ]
+      },
+      ordinal: function () {
+          return "";
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " ដល់ ",
+      weekAbbreviation: "សប្តាហ៍",
+      scrollTitle: "រំកិលដើម្បីបង្កើន",
+      toggleTitle: "ចុចដើម្បីផ្លាស់ប្ដូរ",
+      yearAriaLabel: "ឆ្នាំ",
+      time_24hr: true
+  };
+  fp.l10ns.km = Khmer;
+  var km = fp.l10ns;
+
+  exports.Khmer = Khmer;
+  exports.default = km;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ko.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ko.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Korean = {
+      weekdays: {
+          shorthand: ["일", "월", "화", "수", "목", "금", "토"],
+          longhand: [
+              "일요일",
+              "월요일",
+              "화요일",
+              "수요일",
+              "목요일",
+              "금요일",
+              "토요일",
+          ]
+      },
+      months: {
+          shorthand: [
+              "1월",
+              "2월",
+              "3월",
+              "4월",
+              "5월",
+              "6월",
+              "7월",
+              "8월",
+              "9월",
+              "10월",
+              "11월",
+              "12월",
+          ],
+          longhand: [
+              "1월",
+              "2월",
+              "3월",
+              "4월",
+              "5월",
+              "6월",
+              "7월",
+              "8월",
+              "9월",
+              "10월",
+              "11월",
+              "12월",
+          ]
+      },
+      ordinal: function () {
+          return "일";
+      },
+      rangeSeparator: " ~ "
+  };
+  fp.l10ns.ko = Korean;
+  var ko = fp.l10ns;
+
+  exports.Korean = Korean;
+  exports.default = ko;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/kz.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/kz.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Kazakh = {
+      weekdays: {
+          shorthand: ["Жс", "Дс", "Сc", "Ср", "Бс", "Жм", "Сб"],
+          longhand: [
+              "Жексенбi",
+              "Дүйсенбi",
+              "Сейсенбi",
+              "Сәрсенбi",
+              "Бейсенбi",
+              "Жұма",
+              "Сенбi",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Қаң",
+              "Ақп",
+              "Нау",
+              "Сәу",
+              "Мам",
+              "Мау",
+              "Шiл",
+              "Там",
+              "Қыр",
+              "Қаз",
+              "Қар",
+              "Жел",
+          ],
+          longhand: [
+              "Қаңтар",
+              "Ақпан",
+              "Наурыз",
+              "Сәуiр",
+              "Мамыр",
+              "Маусым",
+              "Шiлде",
+              "Тамыз",
+              "Қыркүйек",
+              "Қазан",
+              "Қараша",
+              "Желтоқсан",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      rangeSeparator: " — ",
+      weekAbbreviation: "Апта",
+      scrollTitle: "Үлкейту үшін айналдырыңыз",
+      toggleTitle: "Ауыстыру үшін басыңыз",
+      amPM: ["ТД", "ТК"],
+      yearAriaLabel: "Жыл"
+  };
+  fp.l10ns.kz = Kazakh;
+  var kz = fp.l10ns;
+
+  exports.Kazakh = Kazakh;
+  exports.default = kz;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/lt.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/lt.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Lithuanian = {
+      weekdays: {
+          shorthand: ["S", "Pr", "A", "T", "K", "Pn", "Š"],
+          longhand: [
+              "Sekmadienis",
+              "Pirmadienis",
+              "Antradienis",
+              "Trečiadienis",
+              "Ketvirtadienis",
+              "Penktadienis",
+              "Šeštadienis",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Sau",
+              "Vas",
+              "Kov",
+              "Bal",
+              "Geg",
+              "Bir",
+              "Lie",
+              "Rgp",
+              "Rgs",
+              "Spl",
+              "Lap",
+              "Grd",
+          ],
+          longhand: [
+              "Sausis",
+              "Vasaris",
+              "Kovas",
+              "Balandis",
+              "Gegužė",
+              "Birželis",
+              "Liepa",
+              "Rugpjūtis",
+              "Rugsėjis",
+              "Spalis",
+              "Lapkritis",
+              "Gruodis",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "-a";
+      },
+      weekAbbreviation: "Sav",
+      scrollTitle: "Keisti laiką pelės rateliu",
+      toggleTitle: "Perjungti laiko formatą",
+      time_24hr: true
+  };
+  fp.l10ns.lt = Lithuanian;
+  var lt = fp.l10ns;
+
+  exports.Lithuanian = Lithuanian;
+  exports.default = lt;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/lv.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/lv.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Latvian = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"],
+          longhand: [
+              "Svētdiena",
+              "Pirmdiena",
+              "Otrdiena",
+              "Trešdiena",
+              "Ceturtdiena",
+              "Piektdiena",
+              "Sestdiena",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Mai",
+              "Jūn",
+              "Jūl",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Janvāris",
+              "Februāris",
+              "Marts",
+              "Aprīlis",
+              "Maijs",
+              "Jūnijs",
+              "Jūlijs",
+              "Augusts",
+              "Septembris",
+              "Oktobris",
+              "Novembris",
+              "Decembris",
+          ]
+      },
+      rangeSeparator: " līdz ",
+      time_24hr: true
+  };
+  fp.l10ns.lv = Latvian;
+  var lv = fp.l10ns;
+
+  exports.Latvian = Latvian;
+  exports.default = lv;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/mk.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/mk.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Macedonian = {
+      weekdays: {
+          shorthand: ["Не", "По", "Вт", "Ср", "Че", "Пе", "Са"],
+          longhand: [
+              "Недела",
+              "Понеделник",
+              "Вторник",
+              "Среда",
+              "Четврток",
+              "Петок",
+              "Сабота",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Јан",
+              "Фев",
+              "Мар",
+              "Апр",
+              "Мај",
+              "Јун",
+              "Јул",
+              "Авг",
+              "Сеп",
+              "Окт",
+              "Ное",
+              "Дек",
+          ],
+          longhand: [
+              "Јануари",
+              "Февруари",
+              "Март",
+              "Април",
+              "Мај",
+              "Јуни",
+              "Јули",
+              "Август",
+              "Септември",
+              "Октомври",
+              "Ноември",
+              "Декември",
+          ]
+      },
+      firstDayOfWeek: 1,
+      weekAbbreviation: "Нед.",
+      rangeSeparator: " до ",
+      time_24hr: true
+  };
+  fp.l10ns.mk = Macedonian;
+  var mk = fp.l10ns;
+
+  exports.Macedonian = Macedonian;
+  exports.default = mk;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/mn.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/mn.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Mongolian = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Да", "Мя", "Лх", "Пү", "Ба", "Бя", "Ня"],
+          longhand: ["Даваа", "Мягмар", "Лхагва", "Пүрэв", "Баасан", "Бямба", "Ням"]
+      },
+      months: {
+          shorthand: [
+              "1-р сар",
+              "2-р сар",
+              "3-р сар",
+              "4-р сар",
+              "5-р сар",
+              "6-р сар",
+              "7-р сар",
+              "8-р сар",
+              "9-р сар",
+              "10-р сар",
+              "11-р сар",
+              "12-р сар",
+          ],
+          longhand: [
+              "Нэгдүгээр сар",
+              "Хоёрдугаар сар",
+              "Гуравдугаар сар",
+              "Дөрөвдүгээр сар",
+              "Тавдугаар сар",
+              "Зургаадугаар сар",
+              "Долдугаар сар",
+              "Наймдугаар сар",
+              "Есдүгээр сар",
+              "Аравдугаар сар",
+              "Арваннэгдүгээр сар",
+              "Арванхоёрдугаар сар",
+          ]
+      },
+      rangeSeparator: "-с ",
+      time_24hr: true
+  };
+  fp.l10ns.mn = Mongolian;
+  var mn = fp.l10ns;
+
+  exports.Mongolian = Mongolian;
+  exports.default = mn;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ms.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ms.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Malaysian = {
+      weekdays: {
+          shorthand: ["Min", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
+          longhand: [
+              "Minggu",
+              "Isnin",
+              "Selasa",
+              "Rabu",
+              "Khamis",
+              "Jumaat",
+              "Sabtu",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mac",
+              "Apr",
+              "Mei",
+              "Jun",
+              "Jul",
+              "Ogo",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dis",
+          ],
+          longhand: [
+              "Januari",
+              "Februari",
+              "Mac",
+              "April",
+              "Mei",
+              "Jun",
+              "Julai",
+              "Ogos",
+              "September",
+              "Oktober",
+              "November",
+              "Disember",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      }
+  };
+  var ms = fp.l10ns;
+
+  exports.Malaysian = Malaysian;
+  exports.default = ms;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/my.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/my.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Burmese = {
+      weekdays: {
+          shorthand: ["နွေ", "လာ", "ဂါ", "ဟူး", "ကြာ", "သော", "နေ"],
+          longhand: [
+              "တနင်္ဂနွေ",
+              "တနင်္လာ",
+              "အင်္ဂါ",
+              "ဗုဒ္ဓဟူး",
+              "ကြာသပတေး",
+              "သောကြာ",
+              "စနေ",
+          ]
+      },
+      months: {
+          shorthand: [
+              "ဇန်",
+              "ဖေ",
+              "မတ်",
+              "ပြီ",
+              "မေ",
+              "ဇွန်",
+              "လိုင်",
+              "သြ",
+              "စက်",
+              "အောက်",
+              "နို",
+              "ဒီ",
+          ],
+          longhand: [
+              "ဇန်နဝါရီ",
+              "ဖေဖော်ဝါရီ",
+              "မတ်",
+              "ဧပြီ",
+              "မေ",
+              "ဇွန်",
+              "ဇူလိုင်",
+              "သြဂုတ်",
+              "စက်တင်ဘာ",
+              "အောက်တိုဘာ",
+              "နိုဝင်ဘာ",
+              "ဒီဇင်ဘာ",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      time_24hr: true
+  };
+  fp.l10ns.my = Burmese;
+  var my = fp.l10ns;
+
+  exports.Burmese = Burmese;
+  exports.default = my;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/nl.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/nl.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Dutch = {
+      weekdays: {
+          shorthand: ["zo", "ma", "di", "wo", "do", "vr", "za"],
+          longhand: [
+              "zondag",
+              "maandag",
+              "dinsdag",
+              "woensdag",
+              "donderdag",
+              "vrijdag",
+              "zaterdag",
+          ]
+      },
+      months: {
+          shorthand: [
+              "jan",
+              "feb",
+              "mrt",
+              "apr",
+              "mei",
+              "jun",
+              "jul",
+              "aug",
+              "sept",
+              "okt",
+              "nov",
+              "dec",
+          ],
+          longhand: [
+              "januari",
+              "februari",
+              "maart",
+              "april",
+              "mei",
+              "juni",
+              "juli",
+              "augustus",
+              "september",
+              "oktober",
+              "november",
+              "december",
+          ]
+      },
+      firstDayOfWeek: 1,
+      weekAbbreviation: "wk",
+      rangeSeparator: " tot ",
+      scrollTitle: "Scroll voor volgende / vorige",
+      toggleTitle: "Klik om te wisselen",
+      time_24hr: true,
+      ordinal: function (nth) {
+          if (nth === 1 || nth === 8 || nth >= 20)
+              return "ste";
+          return "de";
+      }
+  };
+  fp.l10ns.nl = Dutch;
+  var nl = fp.l10ns;
+
+  exports.Dutch = Dutch;
+  exports.default = nl;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/no.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/no.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Norwegian = {
+      weekdays: {
+          shorthand: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
+          longhand: [
+              "Søndag",
+              "Mandag",
+              "Tirsdag",
+              "Onsdag",
+              "Torsdag",
+              "Fredag",
+              "Lørdag",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Mai",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Des",
+          ],
+          longhand: [
+              "Januar",
+              "Februar",
+              "Mars",
+              "April",
+              "Mai",
+              "Juni",
+              "Juli",
+              "August",
+              "September",
+              "Oktober",
+              "November",
+              "Desember",
+          ]
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " til ",
+      weekAbbreviation: "Uke",
+      scrollTitle: "Scroll for å endre",
+      toggleTitle: "Klikk for å veksle",
+      time_24hr: true,
+      ordinal: function () {
+          return ".";
+      }
+  };
+  fp.l10ns.no = Norwegian;
+  var no = fp.l10ns;
+
+  exports.Norwegian = Norwegian;
+  exports.default = no;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/pa.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/pa.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Punjabi = {
+      weekdays: {
+          shorthand: ["ਐਤ", "ਸੋਮ", "ਮੰਗਲ", "ਬੁੱਧ", "ਵੀਰ", "ਸ਼ੁੱਕਰ", "ਸ਼ਨਿੱਚਰ"],
+          longhand: [
+              "ਐਤਵਾਰ",
+              "ਸੋਮਵਾਰ",
+              "ਮੰਗਲਵਾਰ",
+              "ਬੁੱਧਵਾਰ",
+              "ਵੀਰਵਾਰ",
+              "ਸ਼ੁੱਕਰਵਾਰ",
+              "ਸ਼ਨਿੱਚਰਵਾਰ",
+          ]
+      },
+      months: {
+          shorthand: [
+              "ਜਨ",
+              "ਫ਼ਰ",
+              "ਮਾਰ",
+              "ਅਪ੍ਰੈ",
+              "ਮਈ",
+              "ਜੂਨ",
+              "ਜੁਲਾ",
+              "ਅਗ",
+              "ਸਤੰ",
+              "ਅਕ",
+              "ਨਵੰ",
+              "ਦਸੰ",
+          ],
+          longhand: [
+              "ਜਨਵਰੀ",
+              "ਫ਼ਰਵਰੀ",
+              "ਮਾਰਚ",
+              "ਅਪ੍ਰੈਲ",
+              "ਮਈ",
+              "ਜੂਨ",
+              "ਜੁਲਾਈ",
+              "ਅਗਸਤ",
+              "ਸਤੰਬਰ",
+              "ਅਕਤੂਬਰ",
+              "ਨਵੰਬਰ",
+              "ਦਸੰਬਰ",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.pa = Punjabi;
+  var pa = fp.l10ns;
+
+  exports.Punjabi = Punjabi;
+  exports.default = pa;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/pl.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/pl.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Polish = {
+      weekdays: {
+          shorthand: ["Nd", "Pn", "Wt", "Śr", "Cz", "Pt", "So"],
+          longhand: [
+              "Niedziela",
+              "Poniedziałek",
+              "Wtorek",
+              "Środa",
+              "Czwartek",
+              "Piątek",
+              "Sobota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Sty",
+              "Lut",
+              "Mar",
+              "Kwi",
+              "Maj",
+              "Cze",
+              "Lip",
+              "Sie",
+              "Wrz",
+              "Paź",
+              "Lis",
+              "Gru",
+          ],
+          longhand: [
+              "Styczeń",
+              "Luty",
+              "Marzec",
+              "Kwiecień",
+              "Maj",
+              "Czerwiec",
+              "Lipiec",
+              "Sierpień",
+              "Wrzesień",
+              "Październik",
+              "Listopad",
+              "Grudzień",
+          ]
+      },
+      rangeSeparator: " do ",
+      weekAbbreviation: "tydz.",
+      scrollTitle: "Przewiń, aby zwiększyć",
+      toggleTitle: "Kliknij, aby przełączyć",
+      firstDayOfWeek: 1,
+      time_24hr: true,
+      ordinal: function () {
+          return ".";
+      }
+  };
+  fp.l10ns.pl = Polish;
+  var pl = fp.l10ns;
+
+  exports.Polish = Polish;
+  exports.default = pl;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/pt.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/pt.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Portuguese = {
+      weekdays: {
+          shorthand: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+          longhand: [
+              "Domingo",
+              "Segunda-feira",
+              "Terça-feira",
+              "Quarta-feira",
+              "Quinta-feira",
+              "Sexta-feira",
+              "Sábado",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Fev",
+              "Mar",
+              "Abr",
+              "Mai",
+              "Jun",
+              "Jul",
+              "Ago",
+              "Set",
+              "Out",
+              "Nov",
+              "Dez",
+          ],
+          longhand: [
+              "Janeiro",
+              "Fevereiro",
+              "Março",
+              "Abril",
+              "Maio",
+              "Junho",
+              "Julho",
+              "Agosto",
+              "Setembro",
+              "Outubro",
+              "Novembro",
+              "Dezembro",
+          ]
+      },
+      rangeSeparator: " até ",
+      time_24hr: true
+  };
+  fp.l10ns.pt = Portuguese;
+  var pt = fp.l10ns;
+
+  exports.Portuguese = Portuguese;
+  exports.default = pt;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ro.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ro.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Romanian = {
+      weekdays: {
+          shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sâm"],
+          longhand: [
+              "Duminică",
+              "Luni",
+              "Marți",
+              "Miercuri",
+              "Joi",
+              "Vineri",
+              "Sâmbătă",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Ian",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Mai",
+              "Iun",
+              "Iul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Noi",
+              "Dec",
+          ],
+          longhand: [
+              "Ianuarie",
+              "Februarie",
+              "Martie",
+              "Aprilie",
+              "Mai",
+              "Iunie",
+              "Iulie",
+              "August",
+              "Septembrie",
+              "Octombrie",
+              "Noiembrie",
+              "Decembrie",
+          ]
+      },
+      firstDayOfWeek: 1,
+      time_24hr: true,
+      ordinal: function () {
+          return "";
+      }
+  };
+  fp.l10ns.ro = Romanian;
+  var ro = fp.l10ns;
+
+  exports.Romanian = Romanian;
+  exports.default = ro;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/ru.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/ru.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Russian = {
+      weekdays: {
+          shorthand: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+          longhand: [
+              "Воскресенье",
+              "Понедельник",
+              "Вторник",
+              "Среда",
+              "Четверг",
+              "Пятница",
+              "Суббота",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Янв",
+              "Фев",
+              "Март",
+              "Апр",
+              "Май",
+              "Июнь",
+              "Июль",
+              "Авг",
+              "Сен",
+              "Окт",
+              "Ноя",
+              "Дек",
+          ],
+          longhand: [
+              "Январь",
+              "Февраль",
+              "Март",
+              "Апрель",
+              "Май",
+              "Июнь",
+              "Июль",
+              "Август",
+              "Сентябрь",
+              "Октябрь",
+              "Ноябрь",
+              "Декабрь",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return "";
+      },
+      rangeSeparator: " — ",
+      weekAbbreviation: "Нед.",
+      scrollTitle: "Прокрутите для увеличения",
+      toggleTitle: "Нажмите для переключения",
+      amPM: ["ДП", "ПП"],
+      yearAriaLabel: "Год",
+      time_24hr: true
+  };
+  fp.l10ns.ru = Russian;
+  var ru = fp.l10ns;
+
+  exports.Russian = Russian;
+  exports.default = ru;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/si.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/si.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Sinhala = {
+      weekdays: {
+          shorthand: ["ඉ", "ස", "අ", "බ", "බ්‍ර", "සි", "සෙ"],
+          longhand: [
+              "ඉරිදා",
+              "සඳුදා",
+              "අඟහරුවාදා",
+              "බදාදා",
+              "බ්‍රහස්පතින්දා",
+              "සිකුරාදා",
+              "සෙනසුරාදා",
+          ]
+      },
+      months: {
+          shorthand: [
+              "ජන",
+              "පෙබ",
+              "මාර්",
+              "අප්‍රේ",
+              "මැයි",
+              "ජුනි",
+              "ජූලි",
+              "අගෝ",
+              "සැප්",
+              "ඔක්",
+              "නොවැ",
+              "දෙසැ",
+          ],
+          longhand: [
+              "ජනවාරි",
+              "පෙබරවාරි",
+              "මාර්තු",
+              "අප්‍රේල්",
+              "මැයි",
+              "ජුනි",
+              "ජූලි",
+              "අගෝස්තු",
+              "සැප්තැම්බර්",
+              "ඔක්තෝබර්",
+              "නොවැම්බර්",
+              "දෙසැම්බර්",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.si = Sinhala;
+  var si = fp.l10ns;
+
+  exports.Sinhala = Sinhala;
+  exports.default = si;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/sk.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/sk.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Slovak = {
+      weekdays: {
+          shorthand: ["Ned", "Pon", "Ut", "Str", "Štv", "Pia", "Sob"],
+          longhand: [
+              "Nedeľa",
+              "Pondelok",
+              "Utorok",
+              "Streda",
+              "Štvrtok",
+              "Piatok",
+              "Sobota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Máj",
+              "Jún",
+              "Júl",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Január",
+              "Február",
+              "Marec",
+              "Apríl",
+              "Máj",
+              "Jún",
+              "Júl",
+              "August",
+              "September",
+              "Október",
+              "November",
+              "December",
+          ]
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " do ",
+      time_24hr: true,
+      ordinal: function () {
+          return ".";
+      }
+  };
+  fp.l10ns.sk = Slovak;
+  var sk = fp.l10ns;
+
+  exports.Slovak = Slovak;
+  exports.default = sk;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/sl.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/sl.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Slovenian = {
+      weekdays: {
+          shorthand: ["Ned", "Pon", "Tor", "Sre", "Čet", "Pet", "Sob"],
+          longhand: [
+              "Nedelja",
+              "Ponedeljek",
+              "Torek",
+              "Sreda",
+              "Četrtek",
+              "Petek",
+              "Sobota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Maj",
+              "Jun",
+              "Jul",
+              "Avg",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Januar",
+              "Februar",
+              "Marec",
+              "April",
+              "Maj",
+              "Junij",
+              "Julij",
+              "Avgust",
+              "September",
+              "Oktober",
+              "November",
+              "December",
+          ]
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " do ",
+      time_24hr: true,
+      ordinal: function () {
+          return ".";
+      }
+  };
+  fp.l10ns.sl = Slovenian;
+  var sl = fp.l10ns;
+
+  exports.Slovenian = Slovenian;
+  exports.default = sl;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/sq.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/sq.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Albanian = {
+      weekdays: {
+          shorthand: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sh"],
+          longhand: [
+              "E Diel",
+              "E Hënë",
+              "E Martë",
+              "E Mërkurë",
+              "E Enjte",
+              "E Premte",
+              "E Shtunë",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Shk",
+              "Mar",
+              "Pri",
+              "Maj",
+              "Qer",
+              "Kor",
+              "Gus",
+              "Sht",
+              "Tet",
+              "Nën",
+              "Dhj",
+          ],
+          longhand: [
+              "Janar",
+              "Shkurt",
+              "Mars",
+              "Prill",
+              "Maj",
+              "Qershor",
+              "Korrik",
+              "Gusht",
+              "Shtator",
+              "Tetor",
+              "Nëntor",
+              "Dhjetor",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.sq = Albanian;
+  var sq = fp.l10ns;
+
+  exports.Albanian = Albanian;
+  exports.default = sq;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/sr-cyr.js":
+/*!****************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/sr-cyr.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var SerbianCyrillic = {
+      weekdays: {
+          shorthand: ["Нед", "Пон", "Уто", "Сре", "Чет", "Пет", "Суб"],
+          longhand: [
+              "Недеља",
+              "Понедељак",
+              "Уторак",
+              "Среда",
+              "Четвртак",
+              "Петак",
+              "Субота",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Јан",
+              "Феб",
+              "Мар",
+              "Апр",
+              "Мај",
+              "Јун",
+              "Јул",
+              "Авг",
+              "Сеп",
+              "Окт",
+              "Нов",
+              "Дец",
+          ],
+          longhand: [
+              "Јануар",
+              "Фебруар",
+              "Март",
+              "Април",
+              "Мај",
+              "Јун",
+              "Јул",
+              "Август",
+              "Септембар",
+              "Октобар",
+              "Новембар",
+              "Децембар",
+          ]
+      },
+      firstDayOfWeek: 1,
+      weekAbbreviation: "Нед.",
+      rangeSeparator: " до "
+  };
+  fp.l10ns.sr = SerbianCyrillic;
+  var srCyr = fp.l10ns;
+
+  exports.SerbianCyrillic = SerbianCyrillic;
+  exports.default = srCyr;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/sr.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/sr.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Serbian = {
+      weekdays: {
+          shorthand: ["Ned", "Pon", "Uto", "Sre", "Čet", "Pet", "Sub"],
+          longhand: [
+              "Nedelja",
+              "Ponedeljak",
+              "Utorak",
+              "Sreda",
+              "Četvrtak",
+              "Petak",
+              "Subota",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Maj",
+              "Jun",
+              "Jul",
+              "Avg",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Januar",
+              "Februar",
+              "Mart",
+              "April",
+              "Maj",
+              "Jun",
+              "Jul",
+              "Avgust",
+              "Septembar",
+              "Oktobar",
+              "Novembar",
+              "Decembar",
+          ]
+      },
+      firstDayOfWeek: 1,
+      weekAbbreviation: "Ned.",
+      rangeSeparator: " do ",
+      time_24hr: true
+  };
+  fp.l10ns.sr = Serbian;
+  var sr = fp.l10ns;
+
+  exports.Serbian = Serbian;
+  exports.default = sr;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/sv.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/sv.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Swedish = {
+      firstDayOfWeek: 1,
+      weekAbbreviation: "v",
+      weekdays: {
+          shorthand: ["Sön", "Mån", "Tis", "Ons", "Tor", "Fre", "Lör"],
+          longhand: [
+              "Söndag",
+              "Måndag",
+              "Tisdag",
+              "Onsdag",
+              "Torsdag",
+              "Fredag",
+              "Lördag",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "Maj",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Okt",
+              "Nov",
+              "Dec",
+          ],
+          longhand: [
+              "Januari",
+              "Februari",
+              "Mars",
+              "April",
+              "Maj",
+              "Juni",
+              "Juli",
+              "Augusti",
+              "September",
+              "Oktober",
+              "November",
+              "December",
+          ]
+      },
+      time_24hr: true,
+      ordinal: function () {
+          return ".";
+      }
+  };
+  fp.l10ns.sv = Swedish;
+  var sv = fp.l10ns;
+
+  exports.Swedish = Swedish;
+  exports.default = sv;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/th.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/th.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Thai = {
+      weekdays: {
+          shorthand: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+          longhand: [
+              "อาทิตย์",
+              "จันทร์",
+              "อังคาร",
+              "พุธ",
+              "พฤหัสบดี",
+              "ศุกร์",
+              "เสาร์",
+          ]
+      },
+      months: {
+          shorthand: [
+              "ม.ค.",
+              "ก.พ.",
+              "มี.ค.",
+              "เม.ย.",
+              "พ.ค.",
+              "มิ.ย.",
+              "ก.ค.",
+              "ส.ค.",
+              "ก.ย.",
+              "ต.ค.",
+              "พ.ย.",
+              "ธ.ค.",
+          ],
+          longhand: [
+              "มกราคม",
+              "กุมภาพันธ์",
+              "มีนาคม",
+              "เมษายน",
+              "พฤษภาคม",
+              "มิถุนายน",
+              "กรกฎาคม",
+              "สิงหาคม",
+              "กันยายน",
+              "ตุลาคม",
+              "พฤศจิกายน",
+              "ธันวาคม",
+          ]
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " ถึง ",
+      scrollTitle: "เลื่อนเพื่อเพิ่มหรือลด",
+      toggleTitle: "คลิกเพื่อเปลี่ยน",
+      time_24hr: true,
+      ordinal: function () {
+          return "";
+      }
+  };
+  fp.l10ns.th = Thai;
+  var th = fp.l10ns;
+
+  exports.Thai = Thai;
+  exports.default = th;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/tr.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/tr.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Turkish = {
+      weekdays: {
+          shorthand: ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"],
+          longhand: [
+              "Pazar",
+              "Pazartesi",
+              "Salı",
+              "Çarşamba",
+              "Perşembe",
+              "Cuma",
+              "Cumartesi",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Oca",
+              "Şub",
+              "Mar",
+              "Nis",
+              "May",
+              "Haz",
+              "Tem",
+              "Ağu",
+              "Eyl",
+              "Eki",
+              "Kas",
+              "Ara",
+          ],
+          longhand: [
+              "Ocak",
+              "Şubat",
+              "Mart",
+              "Nisan",
+              "Mayıs",
+              "Haziran",
+              "Temmuz",
+              "Ağustos",
+              "Eylül",
+              "Ekim",
+              "Kasım",
+              "Aralık",
+          ]
+      },
+      firstDayOfWeek: 1,
+      ordinal: function () {
+          return ".";
+      },
+      rangeSeparator: " - ",
+      weekAbbreviation: "Hf",
+      scrollTitle: "Artırmak için kaydırın",
+      toggleTitle: "Aç/Kapa",
+      amPM: ["ÖÖ", "ÖS"],
+      time_24hr: true
+  };
+  fp.l10ns.tr = Turkish;
+  var tr = fp.l10ns;
+
+  exports.Turkish = Turkish;
+  exports.default = tr;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/uk.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/uk.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Ukrainian = {
+      firstDayOfWeek: 1,
+      weekdays: {
+          shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+          longhand: [
+              "Неділя",
+              "Понеділок",
+              "Вівторок",
+              "Середа",
+              "Четвер",
+              "П'ятниця",
+              "Субота",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Січ",
+              "Лют",
+              "Бер",
+              "Кві",
+              "Тра",
+              "Чер",
+              "Лип",
+              "Сер",
+              "Вер",
+              "Жов",
+              "Лис",
+              "Гру",
+          ],
+          longhand: [
+              "Січень",
+              "Лютий",
+              "Березень",
+              "Квітень",
+              "Травень",
+              "Червень",
+              "Липень",
+              "Серпень",
+              "Вересень",
+              "Жовтень",
+              "Листопад",
+              "Грудень",
+          ]
+      },
+      time_24hr: true
+  };
+  fp.l10ns.uk = Ukrainian;
+  var uk = fp.l10ns;
+
+  exports.Ukrainian = Ukrainian;
+  exports.default = uk;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/vn.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/vn.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Vietnamese = {
+      weekdays: {
+          shorthand: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+          longhand: [
+              "Chủ nhật",
+              "Thứ hai",
+              "Thứ ba",
+              "Thứ tư",
+              "Thứ năm",
+              "Thứ sáu",
+              "Thứ bảy",
+          ]
+      },
+      months: {
+          shorthand: [
+              "Th1",
+              "Th2",
+              "Th3",
+              "Th4",
+              "Th5",
+              "Th6",
+              "Th7",
+              "Th8",
+              "Th9",
+              "Th10",
+              "Th11",
+              "Th12",
+          ],
+          longhand: [
+              "Tháng một",
+              "Tháng hai",
+              "Tháng ba",
+              "Tháng tư",
+              "Tháng năm",
+              "Tháng sáu",
+              "Tháng bảy",
+              "Tháng tám",
+              "Tháng chín",
+              "Tháng mười",
+              "Tháng 11",
+              "Tháng 12",
+          ]
+      },
+      firstDayOfWeek: 1,
+      rangeSeparator: " đến "
+  };
+  fp.l10ns.vn = Vietnamese;
+  var vn = fp.l10ns;
+
+  exports.Vietnamese = Vietnamese;
+  exports.default = vn;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/zh-tw.js":
+/*!***************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/zh-tw.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var MandarinTraditional = {
+      weekdays: {
+          shorthand: ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
+          longhand: [
+              "星期日",
+              "星期一",
+              "星期二",
+              "星期三",
+              "星期四",
+              "星期五",
+              "星期六",
+          ]
+      },
+      months: {
+          shorthand: [
+              "一月",
+              "二月",
+              "三月",
+              "四月",
+              "五月",
+              "六月",
+              "七月",
+              "八月",
+              "九月",
+              "十月",
+              "十一月",
+              "十二月",
+          ],
+          longhand: [
+              "一月",
+              "二月",
+              "三月",
+              "四月",
+              "五月",
+              "六月",
+              "七月",
+              "八月",
+              "九月",
+              "十月",
+              "十一月",
+              "十二月",
+          ]
+      },
+      rangeSeparator: " 至 ",
+      weekAbbreviation: "週",
+      scrollTitle: "滾動切換",
+      toggleTitle: "點擊切換 12/24 小時時制"
+  };
+  fp.l10ns.zh_tw = MandarinTraditional;
+  var zhTw = fp.l10ns;
+
+  exports.MandarinTraditional = MandarinTraditional;
+  exports.default = zhTw;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/zh.js":
+/*!************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/zh.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, function (exports) { 'use strict';
+
+  var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+      ? window.flatpickr
+      : {
+          l10ns: {}
+      };
+  var Mandarin = {
+      weekdays: {
+          shorthand: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+          longhand: [
+              "星期日",
+              "星期一",
+              "星期二",
+              "星期三",
+              "星期四",
+              "星期五",
+              "星期六",
+          ]
+      },
+      months: {
+          shorthand: [
+              "一月",
+              "二月",
+              "三月",
+              "四月",
+              "五月",
+              "六月",
+              "七月",
+              "八月",
+              "九月",
+              "十月",
+              "十一月",
+              "十二月",
+          ],
+          longhand: [
+              "一月",
+              "二月",
+              "三月",
+              "四月",
+              "五月",
+              "六月",
+              "七月",
+              "八月",
+              "九月",
+              "十月",
+              "十一月",
+              "十二月",
+          ]
+      },
+      rangeSeparator: " 至 ",
+      weekAbbreviation: "周",
+      scrollTitle: "滚动切换",
+      toggleTitle: "点击切换 12/24 小时时制"
+  };
+  fp.l10ns.zh = Mandarin;
+  var zh = fp.l10ns;
+
+  exports.Mandarin = Mandarin;
+  exports.default = zh;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/liquidjs/dist/liquid.js":
+/*!**********************************************!*\
+  !*** ./node_modules/liquidjs/dist/liquid.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+ * liquidjs@9.4.2, https://github.com/harttle/liquidjs
+ * (c) 2016-2019 harttle
+ * Released under the MIT License.
+ */
+(function (global, factory) {
+     true ? factory(exports) :
+    undefined;
+}(this, function (exports) { 'use strict';
+
+    /*! *****************************************************************************
+    Copyright (c) Microsoft Corporation. All rights reserved.
+    Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+    this file except in compliance with the License. You may obtain a copy of the
+    License at http://www.apache.org/licenses/LICENSE-2.0
+
+    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+    WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+    MERCHANTABLITY OR NON-INFRINGEMENT.
+
+    See the Apache Version 2.0 License for specific language governing permissions
+    and limitations under the License.
+    ***************************************************************************** */
+    /* global Reflect, Promise */
+
+    var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+
+    function __extends(d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    }
+
+    var __assign = function() {
+        __assign = Object.assign || function __assign(t) {
+            for (var s, i = 1, n = arguments.length; i < n; i++) {
+                s = arguments[i];
+                for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+            }
+            return t;
+        };
+        return __assign.apply(this, arguments);
+    };
+
+    function __awaiter(thisArg, _arguments, P, generator) {
+        return new (P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+            step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+    }
+
+    function __generator(thisArg, body) {
+        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+        function verb(n) { return function (v) { return step([n, v]); }; }
+        function step(op) {
+            if (f) throw new TypeError("Generator is already executing.");
+            while (_) try {
+                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+                if (y = 0, t) op = [op[0] & 2, t.value];
+                switch (op[0]) {
+                    case 0: case 1: t = op; break;
+                    case 4: _.label++; return { value: op[1], done: false };
+                    case 5: _.label++; y = op[1]; op = [0]; continue;
+                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                    default:
+                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                        if (t[2]) _.ops.pop();
+                        _.trys.pop(); continue;
+                }
+                op = body.call(thisArg, _);
+            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+        }
+    }
+
+    function __values(o) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+        if (m) return m.call(o);
+        return {
+            next: function () {
+                if (o && i >= o.length) o = void 0;
+                return { value: o && o[i++], done: !o };
+            }
+        };
+    }
+
+    function __read(o, n) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator];
+        if (!m) return o;
+        var i = m.call(o), r, ar = [], e;
+        try {
+            while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+        }
+        catch (error) { e = { error: error }; }
+        finally {
+            try {
+                if (r && !r.done && (m = i["return"])) m.call(i);
+            }
+            finally { if (e) throw e.error; }
+        }
+        return ar;
+    }
+
+    function __spread() {
+        for (var ar = [], i = 0; i < arguments.length; i++)
+            ar = ar.concat(__read(arguments[i]));
+        return ar;
+    }
+
+    var Drop = /** @class */ (function () {
+        function Drop() {
+        }
+        Drop.prototype.valueOf = function () {
+            return undefined;
+        };
+        Drop.prototype.liquidMethodMissing = function (key) {
+            return undefined;
+        };
+        return Drop;
+    }());
+
+    var toStr = Object.prototype.toString;
+    /*
+     * Checks if value is classified as a String primitive or object.
+     * @param {any} value The value to check.
+     * @return {Boolean} Returns true if value is a string, else false.
+     */
+    function isString(value) {
+        return toStr.call(value) === '[object String]';
+    }
+    function isFunction(value) {
+        return typeof value === 'function';
+    }
+    function stringify(value) {
+        value = toValue(value);
+        return isNil(value) ? '' : String(value);
+    }
+    function toValue(value) {
+        return value instanceof Drop ? value.valueOf() : value;
+    }
+    function isNumber(value) {
+        return typeof value === 'number';
+    }
+    function toLiquid(value) {
+        if (value && isFunction(value.toLiquid))
+            return toLiquid(value.toLiquid());
+        return value;
+    }
+    function isNil(value) {
+        return value === null || value === undefined;
+    }
+    function isArray(value) {
+        // be compatible with IE 8
+        return toStr.call(value) === '[object Array]';
+    }
+    /*
+     * Iterates over own enumerable string keyed properties of an object and invokes iteratee for each property.
+     * The iteratee is invoked with three arguments: (value, key, object).
+     * Iteratee functions may exit iteration early by explicitly returning false.
+     * @param {Object} object The object to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @return {Object} Returns object.
+     */
+    function forOwn(object, iteratee) {
+        object = object || {};
+        for (var k in object) {
+            if (object.hasOwnProperty(k)) {
+                if (iteratee(object[k], k, object) === false)
+                    break;
+            }
+        }
+        return object;
+    }
+    function last(arr) {
+        return arr[arr.length - 1];
+    }
+    /*
+     * Checks if value is the language type of Object.
+     * (e.g. arrays, functions, objects, regexes, new Number(0), and new String(''))
+     * @param {any} value The value to check.
+     * @return {Boolean} Returns true if value is an object, else false.
+     */
+    function isObject(value) {
+        var type = typeof value;
+        return value !== null && (type === 'object' || type === 'function');
+    }
+    function range(start, stop, step) {
+        if (step === void 0) { step = 1; }
+        var arr = [];
+        for (var i = start; i < stop; i += step) {
+            arr.push(i);
+        }
+        return arr;
+    }
+    function padStart(str, length, ch) {
+        if (ch === void 0) { ch = ' '; }
+        str = String(str);
+        var n = length - str.length;
+        while (n-- > 0)
+            str = ch + str;
+        return str;
+    }
+
+    var LiquidError = /** @class */ (function (_super) {
+        __extends(LiquidError, _super);
+        function LiquidError(err, token) {
+            var _this = _super.call(this, err.message) || this;
+            _this.originalError = err;
+            _this.token = token;
+            return _this;
+        }
+        LiquidError.prototype.update = function () {
+            var err = this.originalError;
+            var context = mkContext(this.token);
+            this.message = mkMessage(err.message, this.token);
+            this.stack = this.message + '\n' + context +
+                '\n' + this.stack + '\nFrom ' + err.stack;
+        };
+        return LiquidError;
+    }(Error));
+    var TokenizationError = /** @class */ (function (_super) {
+        __extends(TokenizationError, _super);
+        function TokenizationError(message, token) {
+            var _this = _super.call(this, new Error(message), token) || this;
+            _this.name = 'TokenizationError';
+            _super.prototype.update.call(_this);
+            return _this;
+        }
+        return TokenizationError;
+    }(LiquidError));
+    var ParseError = /** @class */ (function (_super) {
+        __extends(ParseError, _super);
+        function ParseError(err, token) {
+            var _this = _super.call(this, err, token) || this;
+            _this.name = 'ParseError';
+            _this.message = err.message;
+            _super.prototype.update.call(_this);
+            return _this;
+        }
+        return ParseError;
+    }(LiquidError));
+    var RenderError = /** @class */ (function (_super) {
+        __extends(RenderError, _super);
+        function RenderError(err, tpl) {
+            var _this = _super.call(this, err, tpl.token) || this;
+            _this.name = 'RenderError';
+            _this.message = err.message;
+            _super.prototype.update.call(_this);
+            return _this;
+        }
+        RenderError.is = function (obj) {
+            return obj instanceof RenderError;
+        };
+        return RenderError;
+    }(LiquidError));
+    var AssertionError = /** @class */ (function (_super) {
+        __extends(AssertionError, _super);
+        function AssertionError(message) {
+            var _this = _super.call(this, message) || this;
+            _this.name = 'AssertionError';
+            _this.message = message + '';
+            return _this;
+        }
+        return AssertionError;
+    }(Error));
+    function mkContext(token) {
+        var lines = token.input.split('\n');
+        var begin = Math.max(token.line - 2, 1);
+        var end = Math.min(token.line + 3, lines.length);
+        var context = range(begin, end + 1)
+            .map(function (lineNumber) {
+            var indicator = (lineNumber === token.line) ? '>> ' : '   ';
+            var num = padStart(String(lineNumber), String(end).length);
+            var text = lines[lineNumber - 1];
+            return "" + indicator + num + "| " + text;
+        })
+            .join('\n');
+        return context;
+    }
+    function mkMessage(msg, token) {
+        if (token.file)
+            msg += ", file:" + token.file;
+        msg += ", line:" + token.line + ", col:" + token.col;
+        return msg;
+    }
+
+    function assert(predicate, message) {
+        if (!predicate) {
+            message = message || "expect " + predicate + " to be true";
+            throw new AssertionError(message);
+        }
+    }
+
+    var defaultOptions = {
+        root: ['.'],
+        cache: false,
+        extname: '',
+        dynamicPartials: true,
+        trimTagRight: false,
+        trimTagLeft: false,
+        trimOutputRight: false,
+        trimOutputLeft: false,
+        greedy: true,
+        tagDelimiterLeft: '{%',
+        tagDelimiterRight: '%}',
+        outputDelimiterLeft: '{{',
+        outputDelimiterRight: '}}',
+        strictFilters: false,
+        strictVariables: false
+    };
+    function normalize(options) {
+        options = options || {};
+        if (options.hasOwnProperty('root')) {
+            options.root = normalizeStringArray(options.root);
+        }
+        return options;
+    }
+    function applyDefault(options) {
+        return __assign({}, defaultOptions, options);
+    }
+    function normalizeStringArray(value) {
+        if (isArray(value))
+            return value;
+        if (isString(value))
+            return [value];
+        return [];
+    }
+
+    var Context = /** @class */ (function () {
+        function Context(env, opts, sync) {
+            if (env === void 0) { env = {}; }
+            if (sync === void 0) { sync = false; }
+            this.scopes = [{}];
+            this.registers = {};
+            this.sync = sync;
+            this.opts = applyDefault(opts);
+            this.environments = env;
+        }
+        Context.prototype.getRegister = function (key, defaultValue) {
+            if (defaultValue === void 0) { defaultValue = {}; }
+            return (this.registers[key] = this.registers[key] || defaultValue);
+        };
+        Context.prototype.setRegister = function (key, value) {
+            return (this.registers[key] = value);
+        };
+        Context.prototype.getAll = function () {
+            return __spread([this.environments], this.scopes).reduce(function (ctx, val) { return __assign(ctx, val); }, {});
+        };
+        Context.prototype.get = function (path) {
+            var e_1, _a;
+            var paths = this.parseProp(path);
+            var ctx = this.findScope(paths[0]) || this.environments;
+            try {
+                for (var paths_1 = __values(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
+                    var path_1 = paths_1_1.value;
+                    ctx = readProperty(ctx, path_1);
+                    if (isNil(ctx) && this.opts.strictVariables) {
+                        throw new TypeError("undefined variable: " + path_1);
+                    }
+                }
+            }
+            catch (e_1_1) { e_1 = { error: e_1_1 }; }
+            finally {
+                try {
+                    if (paths_1_1 && !paths_1_1.done && (_a = paths_1.return)) _a.call(paths_1);
+                }
+                finally { if (e_1) throw e_1.error; }
+            }
+            return ctx;
+        };
+        Context.prototype.push = function (ctx) {
+            return this.scopes.push(ctx);
+        };
+        Context.prototype.pop = function () {
+            return this.scopes.pop();
+        };
+        Context.prototype.front = function () {
+            return this.scopes[0];
+        };
+        Context.prototype.findScope = function (key) {
+            for (var i = this.scopes.length - 1; i >= 0; i--) {
+                var candidate = this.scopes[i];
+                if (key in candidate) {
+                    return candidate;
+                }
+            }
+            return null;
+        };
+        /*
+         * Parse property access sequence from access string
+         * @example
+         * accessSeq("foo.bar")         // ['foo', 'bar']
+         * accessSeq("foo['bar']")      // ['foo', 'bar']
+         * accessSeq("foo['b]r']")      // ['foo', 'b]r']
+         * accessSeq("foo[bar.coo]")    // ['foo', 'bar'], for bar.coo == 'bar'
+         */
+        Context.prototype.parseProp = function (str) {
+            str = String(str);
+            var seq = [];
+            var name = '';
+            var j;
+            var i = 0;
+            while (i < str.length) {
+                switch (str[i]) {
+                    case '[':
+                        push();
+                        var delemiter = str[i + 1];
+                        if (/['"]/.test(delemiter)) { // foo["bar"]
+                            j = str.indexOf(delemiter, i + 2);
+                            assert(j !== -1, "unbalanced " + delemiter + ": " + str);
+                            name = str.slice(i + 2, j);
+                            push();
+                            i = j + 2;
+                        }
+                        else { // foo[bar.coo]
+                            j = matchRightBracket(str, i + 1);
+                            assert(j !== -1, "unbalanced []: " + str);
+                            name = str.slice(i + 1, j);
+                            if (!/^[+-]?\d+$/.test(name)) { // foo[bar] vs. foo[1]
+                                name = String(this.get(name));
+                            }
+                            push();
+                            i = j + 1;
+                        }
+                        break;
+                    case '.': // foo.bar, foo[0].bar
+                        push();
+                        i++;
+                        break;
+                    default: // foo.bar
+                        name += str[i++];
+                }
+            }
+            push();
+            if (!seq.length) {
+                throw new TypeError("invalid path:\"" + str + "\"");
+            }
+            return seq;
+            function push() {
+                if (name.length)
+                    seq.push(name);
+                name = '';
+            }
+        };
+        return Context;
+    }());
+    function readProperty(obj, key) {
+        if (isNil(obj))
+            return obj;
+        obj = toLiquid(obj);
+        if (obj instanceof Drop) {
+            if (isFunction(obj[key]))
+                return obj[key]();
+            if (obj.hasOwnProperty(key))
+                return obj[key];
+            return obj.liquidMethodMissing(key);
+        }
+        if (key === 'size')
+            return readSize(obj);
+        if (key === 'first')
+            return readFirst(obj);
+        if (key === 'last')
+            return readLast(obj);
+        return obj[key];
+    }
+    function readFirst(obj) {
+        if (isArray(obj))
+            return obj[0];
+        return obj['first'];
+    }
+    function readLast(obj) {
+        if (isArray(obj))
+            return obj[obj.length - 1];
+        return obj['last'];
+    }
+    function readSize(obj) {
+        if (isArray(obj) || isString(obj))
+            return obj.length;
+        return obj['size'];
+    }
+    function matchRightBracket(str, begin) {
+        var stack = 1; // count of '[' - count of ']'
+        for (var i = begin; i < str.length; i++) {
+            if (str[i] === '[') {
+                stack++;
+            }
+            if (str[i] === ']') {
+                stack--;
+                if (stack === 0) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+
+    function domResolve(root, path) {
+        var base = document.createElement('base');
+        base.href = root;
+        var head = document.getElementsByTagName('head')[0];
+        head.insertBefore(base, head.firstChild);
+        var a = document.createElement('a');
+        a.href = path;
+        var resolved = a.href;
+        head.removeChild(base);
+        return resolved;
+    }
+    function resolve(root, filepath, ext) {
+        if (root.length && last(root) !== '/')
+            root += '/';
+        var url = domResolve(root, filepath);
+        return url.replace(/^(\w+:\/\/[^/]+)(\/[^?]+)/, function (str, origin, path) {
+            var last = path.split('/').pop();
+            if (/\.\w+$/.test(last))
+                return str;
+            return origin + path + ext;
+        });
+    }
+    function readFile(url) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, new Promise(function (resolve, reject) {
+                        var xhr = new XMLHttpRequest();
+                        xhr.onload = function () {
+                            if (xhr.status >= 200 && xhr.status < 300) {
+                                resolve(xhr.responseText);
+                            }
+                            else {
+                                reject(new Error(xhr.statusText));
+                            }
+                        };
+                        xhr.onerror = function () {
+                            reject(new Error('An error occurred whilst receiving the response.'));
+                        };
+                        xhr.open('GET', url);
+                        xhr.send();
+                    })];
+            });
+        });
+    }
+    function readFileSync(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, false);
+        xhr.send();
+        if (xhr.status < 200 || xhr.status >= 300) {
+            throw new Error(xhr.statusText);
+        }
+        return xhr.responseText;
+    }
+    function exists() {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, true];
+            });
+        });
+    }
+    function existsSync() {
+        return true;
+    }
+    var fs = { readFile: readFile, resolve: resolve, exists: exists, existsSync: existsSync, readFileSync: readFileSync };
+
+    var Token = /** @class */ (function () {
+        function Token(raw, input, line, col, file) {
+            this.trimLeft = false;
+            this.trimRight = false;
+            this.type = 'notset';
+            this.col = col;
+            this.line = line;
+            this.raw = raw;
+            this.value = raw;
+            this.input = input;
+            this.file = file;
+        }
+        return Token;
+    }());
+
+    var DelimitedToken = /** @class */ (function (_super) {
+        __extends(DelimitedToken, _super);
+        function DelimitedToken(raw, value, input, line, pos, trimLeft, trimRight, file) {
+            var _this = _super.call(this, raw, input, line, pos, file) || this;
+            var tl = value[0] === '-';
+            var tr = last(value) === '-';
+            _this.value = value
+                .slice(tl ? 1 : 0, tr ? -1 : value.length)
+                .trim();
+            _this.trimLeft = tl || trimLeft;
+            _this.trimRight = tr || trimRight;
+            return _this;
+        }
+        return DelimitedToken;
+    }(Token));
+
+    // quote related
+    var singleQuoted = /'[^']*'/;
+    var doubleQuoted = /"[^"]*"/;
+    var quoted = new RegExp(singleQuoted.source + "|" + doubleQuoted.source);
+    // basic types
+    var number = /[+-]?(?:\d+\.?\d*|\.?\d+)/;
+    var bool = /true|false/;
+    // property access
+    var identifier = /[\w-]+[?]?/;
+    var subscript = new RegExp("\\[(?:" + quoted.source + "|[\\w-\\.]+)\\]");
+    var literal = new RegExp("(?:" + quoted.source + "|" + bool.source + "|" + number.source + ")");
+    var variable = new RegExp(identifier.source + "(?:\\." + identifier.source + "|" + subscript.source + ")*");
+    // range related
+    var rangeLimit = new RegExp("(?:" + variable.source + "|" + number.source + ")");
+    var range$1 = new RegExp("\\(" + rangeLimit.source + "\\.\\." + rangeLimit.source + "\\)");
+    var rangeCapture = new RegExp("\\((" + rangeLimit.source + ")\\.\\.(" + rangeLimit.source + ")\\)");
+    var value = new RegExp("(?:" + variable.source + "|" + literal.source + "|" + range$1.source + ")");
+    // hash related
+    var hash = new RegExp("(?:" + identifier.source + ")\\s*:\\s*(?:" + value.source + ")");
+    var hashCapture = new RegExp("(" + identifier.source + ")\\s*:\\s*(" + value.source + ")", 'g');
+    // full match
+    var tagLine = new RegExp("^\\s*(" + identifier.source + ")\\s*([\\s\\S]*?)\\s*$");
+    var quotedLine = new RegExp("^" + quoted.source + "$");
+    var rangeLine = new RegExp("^" + rangeCapture.source + "$");
+
+    var TagToken = /** @class */ (function (_super) {
+        __extends(TagToken, _super);
+        function TagToken(raw, value, input, line, pos, options, file) {
+            var _this = _super.call(this, raw, value, input, line, pos, options.trimTagLeft, options.trimTagRight, file) || this;
+            _this.type = 'tag';
+            var match = _this.value.match(tagLine);
+            if (!match) {
+                throw new TokenizationError("illegal tag syntax", _this);
+            }
+            _this.name = match[1];
+            _this.args = match[2];
+            return _this;
+        }
+        TagToken.is = function (token) {
+            return token.type === 'tag';
+        };
+        return TagToken;
+    }(DelimitedToken));
+
+    var HTMLToken = /** @class */ (function (_super) {
+        __extends(HTMLToken, _super);
+        function HTMLToken(str, input, line, col, file) {
+            var _this = _super.call(this, str, input, line, col, file) || this;
+            _this.type = 'html';
+            _this.value = str;
+            return _this;
+        }
+        HTMLToken.is = function (token) {
+            return token.type === 'html';
+        };
+        return HTMLToken;
+    }(Token));
+
+    function whiteSpaceCtrl(tokens, options) {
+        options = __assign({ greedy: true }, options);
+        var inRaw = false;
+        for (var i = 0; i < tokens.length; i++) {
+            var token = tokens[i];
+            if (!inRaw && token.trimLeft) {
+                trimLeft(tokens[i - 1], options.greedy);
+            }
+            if (TagToken.is(token)) {
+                if (token.name === 'raw')
+                    inRaw = true;
+                else if (token.name === 'endraw')
+                    inRaw = false;
+            }
+            if (!inRaw && token.trimRight) {
+                trimRight(tokens[i + 1], options.greedy);
+            }
+        }
+    }
+    function trimLeft(token, greedy) {
+        if (!token || !HTMLToken.is(token))
+            return;
+        var rLeft = greedy ? /\s+$/g : /[\t\r ]*$/g;
+        token.value = token.value.replace(rLeft, '');
+    }
+    function trimRight(token, greedy) {
+        if (!token || !HTMLToken.is(token))
+            return;
+        var rRight = greedy ? /^\s+/g : /^[\t\r ]*\n?/g;
+        token.value = token.value.replace(rRight, '');
+    }
+
+    var OutputToken = /** @class */ (function (_super) {
+        __extends(OutputToken, _super);
+        function OutputToken(raw, value, input, line, pos, options, file) {
+            var _this = _super.call(this, raw, value, input, line, pos, options.trimOutputLeft, options.trimOutputRight, file) || this;
+            _this.type = 'output';
+            return _this;
+        }
+        OutputToken.is = function (token) {
+            return token.type === 'output';
+        };
+        return OutputToken;
+    }(DelimitedToken));
+
+    function flatten(str) {
+        return str;
+    }
+
+    var ParseState;
+    (function (ParseState) {
+        ParseState[ParseState["HTML"] = 0] = "HTML";
+        ParseState[ParseState["OUTPUT"] = 1] = "OUTPUT";
+        ParseState[ParseState["TAG"] = 2] = "TAG";
+    })(ParseState || (ParseState = {}));
+    var Tokenizer = /** @class */ (function () {
+        function Tokenizer(options) {
+            this.options = applyDefault(options);
+        }
+        Tokenizer.prototype.tokenize = function (input, file) {
+            var tokens = [];
+            var _a = this.options, tagDelimiterLeft = _a.tagDelimiterLeft, tagDelimiterRight = _a.tagDelimiterRight, outputDelimiterLeft = _a.outputDelimiterLeft, outputDelimiterRight = _a.outputDelimiterRight;
+            var p = 0;
+            var curLine = 1;
+            var state = ParseState.HTML;
+            var buffer = '';
+            var lineBegin = 0;
+            var line = 1;
+            var col = 1;
+            while (p < input.length) {
+                if (input[p] === '\n') {
+                    curLine++;
+                    lineBegin = p + 1;
+                }
+                if (state === ParseState.HTML) {
+                    if (input.substr(p, outputDelimiterLeft.length) === outputDelimiterLeft) {
+                        if (buffer)
+                            tokens.push(new HTMLToken(flatten(buffer), input, line, col, file));
+                        buffer = outputDelimiterLeft;
+                        line = curLine;
+                        col = p - lineBegin + 1;
+                        p += outputDelimiterLeft.length;
+                        state = ParseState.OUTPUT;
+                        continue;
+                    }
+                    else if (input.substr(p, tagDelimiterLeft.length) === tagDelimiterLeft) {
+                        if (buffer)
+                            tokens.push(new HTMLToken(flatten(buffer), input, line, col, file));
+                        buffer = tagDelimiterLeft;
+                        line = curLine;
+                        col = p - lineBegin + 1;
+                        p += tagDelimiterLeft.length;
+                        state = ParseState.TAG;
+                        continue;
+                    }
+                }
+                else if (state === ParseState.OUTPUT &&
+                    input.substr(p, outputDelimiterRight.length) === outputDelimiterRight) {
+                    buffer += outputDelimiterRight;
+                    tokens.push(new OutputToken(flatten(buffer), buffer.slice(outputDelimiterLeft.length, -outputDelimiterRight.length), input, line, col, this.options, file));
+                    p += outputDelimiterRight.length;
+                    buffer = '';
+                    line = curLine;
+                    col = p - lineBegin + 1;
+                    state = ParseState.HTML;
+                    continue;
+                }
+                else if (input.substr(p, tagDelimiterRight.length) === tagDelimiterRight) {
+                    buffer += tagDelimiterRight;
+                    tokens.push(new TagToken(flatten(buffer), buffer.slice(tagDelimiterLeft.length, -tagDelimiterRight.length), input, line, col, this.options, file));
+                    p += tagDelimiterRight.length;
+                    buffer = '';
+                    line = curLine;
+                    col = p - lineBegin + 1;
+                    state = ParseState.HTML;
+                    continue;
+                }
+                buffer += input[p++];
+            }
+            if (state !== ParseState.HTML) {
+                var t = state === ParseState.OUTPUT ? 'output' : 'tag';
+                var str = buffer.length > 16 ? buffer.slice(0, 13) + '...' : buffer;
+                throw new TokenizationError(t + " \"" + str + "\" not closed", new Token(flatten(buffer), input, line, col, file));
+            }
+            if (buffer)
+                tokens.push(new HTMLToken(flatten(buffer), input, line, col, file));
+            whiteSpaceCtrl(tokens, this.options);
+            return tokens;
+        };
+        return Tokenizer;
+    }());
+
+    var Emitter = /** @class */ (function () {
+        function Emitter() {
+            this.html = '';
+            this.break = false;
+            this.continue = false;
+        }
+        Emitter.prototype.write = function (html) {
+            this.html += html;
+        };
+        return Emitter;
+    }());
+
+    var Render = /** @class */ (function () {
+        function Render() {
+        }
+        Render.prototype.renderTemplates = function (templates, ctx, emitter) {
+            var templates_1, templates_1_1, tpl, html, e_1, err, e_2_1;
+            var e_2, _a;
+            if (emitter === void 0) { emitter = new Emitter(); }
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _b.trys.push([0, 7, 8, 9]);
+                        templates_1 = __values(templates), templates_1_1 = templates_1.next();
+                        _b.label = 1;
+                    case 1:
+                        if (!!templates_1_1.done) return [3 /*break*/, 6];
+                        tpl = templates_1_1.value;
+                        _b.label = 2;
+                    case 2:
+                        _b.trys.push([2, 4, , 5]);
+                        return [4 /*yield*/, tpl.render(ctx, emitter)];
+                    case 3:
+                        html = _b.sent();
+                        html && emitter.write(html);
+                        if (emitter.break || emitter.continue)
+                            return [3 /*break*/, 6];
+                        return [3 /*break*/, 5];
+                    case 4:
+                        e_1 = _b.sent();
+                        err = RenderError.is(e_1) ? e_1 : new RenderError(e_1, tpl);
+                        throw err;
+                    case 5:
+                        templates_1_1 = templates_1.next();
+                        return [3 /*break*/, 1];
+                    case 6: return [3 /*break*/, 9];
+                    case 7:
+                        e_2_1 = _b.sent();
+                        e_2 = { error: e_2_1 };
+                        return [3 /*break*/, 9];
+                    case 8:
+                        try {
+                            if (templates_1_1 && !templates_1_1.done && (_a = templates_1.return)) _a.call(templates_1);
+                        }
+                        finally { if (e_2) throw e_2.error; }
+                        return [7 /*endfinally*/];
+                    case 9: return [2 /*return*/, emitter.html];
+                }
+            });
+        };
+        return Render;
+    }());
+
+    var Template = /** @class */ (function () {
+        function Template(token) {
+            this.token = token;
+        }
+        return Template;
+    }());
+
+    var EmptyDrop = /** @class */ (function (_super) {
+        __extends(EmptyDrop, _super);
+        function EmptyDrop() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        EmptyDrop.prototype.equals = function (value) {
+            if (isString(value) || isArray(value))
+                return value.length === 0;
+            if (isObject(value))
+                return Object.keys(value).length === 0;
+            return false;
+        };
+        EmptyDrop.prototype.gt = function () {
+            return false;
+        };
+        EmptyDrop.prototype.geq = function () {
+            return false;
+        };
+        EmptyDrop.prototype.lt = function () {
+            return false;
+        };
+        EmptyDrop.prototype.leq = function () {
+            return false;
+        };
+        EmptyDrop.prototype.valueOf = function () {
+            return '';
+        };
+        return EmptyDrop;
+    }(Drop));
+
+    var BlankDrop = /** @class */ (function (_super) {
+        __extends(BlankDrop, _super);
+        function BlankDrop() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        BlankDrop.prototype.equals = function (value) {
+            if (value === false)
+                return true;
+            if (isNil(toValue(value)))
+                return true;
+            if (isString(value))
+                return /^\s*$/.test(value);
+            return _super.prototype.equals.call(this, value);
+        };
+        return BlankDrop;
+    }(EmptyDrop));
+
+    var NullDrop = /** @class */ (function (_super) {
+        __extends(NullDrop, _super);
+        function NullDrop() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        NullDrop.prototype.equals = function (value) {
+            return isNil(toValue(value)) || value instanceof BlankDrop;
+        };
+        NullDrop.prototype.gt = function () {
+            return false;
+        };
+        NullDrop.prototype.geq = function () {
+            return false;
+        };
+        NullDrop.prototype.lt = function () {
+            return false;
+        };
+        NullDrop.prototype.leq = function () {
+            return false;
+        };
+        NullDrop.prototype.valueOf = function () {
+            return null;
+        };
+        return NullDrop;
+    }(Drop));
+
+    function parseLiteral(str) {
+        str = str.trim();
+        if (str === 'true')
+            return true;
+        if (str === 'false')
+            return false;
+        if (str === 'nil' || str === 'null')
+            return new NullDrop();
+        if (str === 'empty')
+            return new EmptyDrop();
+        if (str === 'blank')
+            return new BlankDrop();
+        if (!isNaN(Number(str)))
+            return Number(str);
+        if ((str[0] === '"' || str[0] === "'") && str[0] === last(str))
+            return str.slice(1, -1);
+    }
+
+    var Value = /** @class */ (function () {
+        function Value(str) {
+            this.str = str;
+        }
+        Value.prototype.evaluate = function (ctx) {
+            var literalValue = parseLiteral(this.str);
+            if (literalValue !== undefined) {
+                return literalValue;
+            }
+            return ctx.get(this.str);
+        };
+        Value.prototype.value = function (ctx) {
+            return toValue(this.evaluate(ctx));
+        };
+        return Value;
+    }());
+
+    function isRange(token) {
+        return token[0] === '(' && token[token.length - 1] === ')';
+    }
+    function rangeValue(token, ctx) {
+        var match, low, high;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!(match = token.match(rangeLine))) return [3 /*break*/, 3];
+                    return [4 /*yield*/, new Value(match[1]).value(ctx)];
+                case 1:
+                    low = _a.sent();
+                    return [4 /*yield*/, new Value(match[2]).value(ctx)];
+                case 2:
+                    high = _a.sent();
+                    return [2 /*return*/, range(+low, +high + 1)];
+                case 3: return [2 /*return*/];
+            }
+        });
+    }
+
+    function isComparable(arg) {
+        return arg && isFunction(arg.equals);
+    }
+
+    function isTruthy(val) {
+        return !isFalsy(val);
+    }
+    function isFalsy(val) {
+        return val === false || undefined === val || val === null;
+    }
+
+    var precedence = {
+        '==': 1,
+        '!=': 1,
+        '>': 1,
+        '<': 1,
+        '>=': 1,
+        '<=': 1,
+        'contains': 1,
+        'and': 0,
+        'or': 0
+    };
+    var operatorImpls = {
+        '==': function (l, r) {
+            if (isComparable(l))
+                return l.equals(r);
+            if (isComparable(r))
+                return r.equals(l);
+            return l === r;
+        },
+        '!=': function (l, r) {
+            if (isComparable(l))
+                return !l.equals(r);
+            if (isComparable(r))
+                return !r.equals(l);
+            return l !== r;
+        },
+        '>': function (l, r) {
+            if (isComparable(l))
+                return l.gt(r);
+            if (isComparable(r))
+                return r.lt(l);
+            return l > r;
+        },
+        '<': function (l, r) {
+            if (isComparable(l))
+                return l.lt(r);
+            if (isComparable(r))
+                return r.gt(l);
+            return l < r;
+        },
+        '>=': function (l, r) {
+            if (isComparable(l))
+                return l.geq(r);
+            if (isComparable(r))
+                return r.leq(l);
+            return l >= r;
+        },
+        '<=': function (l, r) {
+            if (isComparable(l))
+                return l.leq(r);
+            if (isComparable(r))
+                return r.geq(l);
+            return l <= r;
+        },
+        'contains': function (l, r) {
+            return l && isFunction(l.indexOf) ? l.indexOf(r) > -1 : false;
+        },
+        'and': function (l, r) { return isTruthy(l) && isTruthy(r); },
+        'or': function (l, r) { return isTruthy(l) || isTruthy(r); }
+    };
+    var list = Object.keys(precedence);
+    function isOperator(token) {
+        return list.includes(token);
+    }
+
+    var Expression = /** @class */ (function () {
+        function Expression(str) {
+            if (str === void 0) { str = ''; }
+            this.operands = [];
+            this.postfix = __spread(toPostfix(str));
+        }
+        Expression.prototype.evaluate = function (ctx) {
+            var _a, _b, token, _c, _d, _e, _f, e_1_1;
+            var e_1, _g;
+            return __generator(this, function (_h) {
+                switch (_h.label) {
+                    case 0:
+                        assert(ctx, 'unable to evaluate: context not defined');
+                        _h.label = 1;
+                    case 1:
+                        _h.trys.push([1, 9, 10, 11]);
+                        _a = __values(this.postfix), _b = _a.next();
+                        _h.label = 2;
+                    case 2:
+                        if (!!_b.done) return [3 /*break*/, 8];
+                        token = _b.value;
+                        if (!isOperator(token)) return [3 /*break*/, 3];
+                        this.evaluateOnce(token);
+                        return [3 /*break*/, 7];
+                    case 3:
+                        if (!isRange(token)) return [3 /*break*/, 5];
+                        _d = (_c = this.operands).push;
+                        return [4 /*yield*/, rangeValue(token, ctx)];
+                    case 4:
+                        _d.apply(_c, [_h.sent()]);
+                        return [3 /*break*/, 7];
+                    case 5:
+                        _f = (_e = this.operands).push;
+                        return [4 /*yield*/, new Value(token).evaluate(ctx)];
+                    case 6:
+                        _f.apply(_e, [_h.sent()]);
+                        _h.label = 7;
+                    case 7:
+                        _b = _a.next();
+                        return [3 /*break*/, 2];
+                    case 8: return [3 /*break*/, 11];
+                    case 9:
+                        e_1_1 = _h.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 11];
+                    case 10:
+                        try {
+                            if (_b && !_b.done && (_g = _a.return)) _g.call(_a);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 11: return [2 /*return*/, this.operands[0]];
+                }
+            });
+        };
+        Expression.prototype.value = function (ctx) {
+            var _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _a = toValue;
+                        return [4 /*yield*/, this.evaluate(ctx)];
+                    case 1: return [2 /*return*/, _a.apply(void 0, [_b.sent()])];
+                }
+            });
+        };
+        Expression.prototype.evaluateOnce = function (token) {
+            var r = this.operands.pop();
+            var l = this.operands.pop();
+            var result = operatorImpls[token](l, r);
+            this.operands.push(result);
+        };
+        return Expression;
+    }());
+    function tokenize(expr) {
+        var N, str, pairs, i, c, _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    N = expr.length;
+                    str = '';
+                    pairs = { '"': '"', "'": "'", '[': ']', '(': ')' };
+                    i = 0;
+                    _b.label = 1;
+                case 1:
+                    if (!(i < N)) return [3 /*break*/, 8];
+                    c = expr[i];
+                    _a = c;
+                    switch (_a) {
+                        case '[': return [3 /*break*/, 2];
+                        case '"': return [3 /*break*/, 2];
+                        case "'": return [3 /*break*/, 2];
+                        case ' ': return [3 /*break*/, 3];
+                        case '\t': return [3 /*break*/, 3];
+                        case '\n': return [3 /*break*/, 3];
+                    }
+                    return [3 /*break*/, 6];
+                case 2:
+                    str += c;
+                    while (i + 1 < N) {
+                        str += expr[++i];
+                        if (expr[i] === pairs[c])
+                            break;
+                    }
+                    return [3 /*break*/, 7];
+                case 3:
+                    if (!str) return [3 /*break*/, 5];
+                    return [4 /*yield*/, str];
+                case 4:
+                    _b.sent();
+                    _b.label = 5;
+                case 5:
+                    str = '';
+                    return [3 /*break*/, 7];
+                case 6:
+                    str += c;
+                    _b.label = 7;
+                case 7:
+                    i++;
+                    return [3 /*break*/, 1];
+                case 8:
+                    if (!str) return [3 /*break*/, 10];
+                    return [4 /*yield*/, str];
+                case 9:
+                    _b.sent();
+                    _b.label = 10;
+                case 10: return [2 /*return*/];
+            }
+        });
+    }
+    function toPostfix(expr) {
+        var ops, _a, _b, token, e_2_1;
+        var e_2, _c;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    ops = [];
+                    _d.label = 1;
+                case 1:
+                    _d.trys.push([1, 10, 11, 12]);
+                    _a = __values(tokenize(expr)), _b = _a.next();
+                    _d.label = 2;
+                case 2:
+                    if (!!_b.done) return [3 /*break*/, 9];
+                    token = _b.value;
+                    if (!isOperator(token)) return [3 /*break*/, 6];
+                    _d.label = 3;
+                case 3:
+                    if (!(ops.length && precedence[ops[ops.length - 1]] > precedence[token])) return [3 /*break*/, 5];
+                    return [4 /*yield*/, ops.pop()];
+                case 4:
+                    _d.sent();
+                    return [3 /*break*/, 3];
+                case 5:
+                    ops.push(token);
+                    return [3 /*break*/, 8];
+                case 6: return [4 /*yield*/, token];
+                case 7:
+                    _d.sent();
+                    _d.label = 8;
+                case 8:
+                    _b = _a.next();
+                    return [3 /*break*/, 2];
+                case 9: return [3 /*break*/, 12];
+                case 10:
+                    e_2_1 = _d.sent();
+                    e_2 = { error: e_2_1 };
+                    return [3 /*break*/, 12];
+                case 11:
+                    try {
+                        if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+                    }
+                    finally { if (e_2) throw e_2.error; }
+                    return [7 /*endfinally*/];
+                case 12:
+                    if (!ops.length) return [3 /*break*/, 14];
+                    return [4 /*yield*/, ops.pop()];
+                case 13:
+                    _d.sent();
+                    return [3 /*break*/, 12];
+                case 14: return [2 /*return*/];
+            }
+        });
+    }
+
+    var ParseStream = /** @class */ (function () {
+        function ParseStream(tokens, parseToken) {
+            this.handlers = {};
+            this.stopRequested = false;
+            this.tokens = tokens;
+            this.parseToken = parseToken;
+        }
+        ParseStream.prototype.on = function (name, cb) {
+            this.handlers[name] = cb;
+            return this;
+        };
+        ParseStream.prototype.trigger = function (event, arg) {
+            var h = this.handlers[event];
+            return h ? (h(arg), true) : false;
+        };
+        ParseStream.prototype.start = function () {
+            this.trigger('start');
+            var token;
+            while (!this.stopRequested && (token = this.tokens.shift())) {
+                if (this.trigger('token', token))
+                    continue;
+                if (TagToken.is(token) && this.trigger("tag:" + token.name, token)) {
+                    continue;
+                }
+                var template = this.parseToken(token, this.tokens);
+                this.trigger('template', template);
+            }
+            if (!this.stopRequested)
+                this.trigger('end');
+            return this;
+        };
+        ParseStream.prototype.stop = function () {
+            this.stopRequested = true;
+            return this;
+        };
+        return ParseStream;
+    }());
+
+    /**
+     * Key-Value Pairs Representing Tag Arguments
+     * Example:
+     *    For the markup `{% include 'head.html' foo='bar' %}`,
+     *    hash['foo'] === 'bar'
+     */
+    var Hash = /** @class */ (function () {
+        function Hash() {
+        }
+        Hash.parse = function (markup) {
+            var instance = new Hash();
+            var match;
+            hashCapture.lastIndex = 0;
+            while ((match = hashCapture.exec(markup))) {
+                var k = match[1];
+                var v = match[2];
+                instance[k] = v;
+            }
+            return instance;
+        };
+        Hash.create = function (markup, ctx) {
+            var instance, _a, _b, key, _c, _d, e_1_1;
+            var e_1, _e;
+            return __generator(this, function (_f) {
+                switch (_f.label) {
+                    case 0:
+                        instance = Hash.parse(markup);
+                        _f.label = 1;
+                    case 1:
+                        _f.trys.push([1, 6, 7, 8]);
+                        _a = __values(Object.keys(instance)), _b = _a.next();
+                        _f.label = 2;
+                    case 2:
+                        if (!!_b.done) return [3 /*break*/, 5];
+                        key = _b.value;
+                        _c = instance;
+                        _d = key;
+                        return [4 /*yield*/, new Expression(instance[key]).evaluate(ctx)];
+                    case 3:
+                        _c[_d] = _f.sent();
+                        _f.label = 4;
+                    case 4:
+                        _b = _a.next();
+                        return [3 /*break*/, 2];
+                    case 5: return [3 /*break*/, 8];
+                    case 6:
+                        e_1_1 = _f.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 8];
+                    case 7:
+                        try {
+                            if (_b && !_b.done && (_e = _a.return)) _e.call(_a);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 8: return [2 /*return*/, instance];
+                }
+            });
+        };
+        return Hash;
+    }());
+
+    var Tag = /** @class */ (function (_super) {
+        __extends(Tag, _super);
+        function Tag(token, tokens, liquid) {
+            var _this = _super.call(this, token) || this;
+            _this.name = token.name;
+            var impl = Tag.impls[token.name];
+            assert(impl, "tag " + token.name + " not found");
+            _this.impl = Object.create(impl);
+            _this.impl.liquid = liquid;
+            if (_this.impl.parse) {
+                _this.impl.parse(token, tokens);
+            }
+            return _this;
+        }
+        Tag.prototype.render = function (ctx, emitter) {
+            var hash, impl;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, Hash.create(this.token.args, ctx)];
+                    case 1:
+                        hash = _a.sent();
+                        impl = this.impl;
+                        if (!isFunction(impl.render)) return [3 /*break*/, 3];
+                        return [4 /*yield*/, impl.render(ctx, hash, emitter)];
+                    case 2: return [2 /*return*/, _a.sent()];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        };
+        Tag.register = function (name, tag) {
+            Tag.impls[name] = tag;
+        };
+        Tag.clear = function () {
+            Tag.impls = {};
+        };
+        Tag.impls = {};
+        return Tag;
+    }(Template));
+
+    var Filter = /** @class */ (function () {
+        function Filter(name, args, strictFilters) {
+            var impl = Filter.impls[name];
+            if (!impl && strictFilters)
+                throw new TypeError("undefined filter: " + name);
+            this.name = name;
+            this.impl = impl || (function (x) { return x; });
+            this.args = args;
+        }
+        Filter.prototype.render = function (value, context) {
+            var argv, _a, _b, arg, _c, _d, _e, _f, _g, e_1_1;
+            var e_1, _h;
+            return __generator(this, function (_j) {
+                switch (_j.label) {
+                    case 0:
+                        argv = [];
+                        _j.label = 1;
+                    case 1:
+                        _j.trys.push([1, 8, 9, 10]);
+                        _a = __values(this.args), _b = _a.next();
+                        _j.label = 2;
+                    case 2:
+                        if (!!_b.done) return [3 /*break*/, 7];
+                        arg = _b.value;
+                        if (!isKeyValuePair(arg)) return [3 /*break*/, 4];
+                        _d = (_c = argv).push;
+                        _e = [arg[0]];
+                        return [4 /*yield*/, new Expression(arg[1]).evaluate(context)];
+                    case 3:
+                        _d.apply(_c, [_e.concat([_j.sent()])]);
+                        return [3 /*break*/, 6];
+                    case 4:
+                        _g = (_f = argv).push;
+                        return [4 /*yield*/, new Expression(arg).evaluate(context)];
+                    case 5:
+                        _g.apply(_f, [_j.sent()]);
+                        _j.label = 6;
+                    case 6:
+                        _b = _a.next();
+                        return [3 /*break*/, 2];
+                    case 7: return [3 /*break*/, 10];
+                    case 8:
+                        e_1_1 = _j.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 10];
+                    case 9:
+                        try {
+                            if (_b && !_b.done && (_h = _a.return)) _h.call(_a);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 10: return [2 /*return*/, this.impl.apply({ context: context }, __spread([value], argv))];
+                }
+            });
+        };
+        Filter.register = function (name, filter) {
+            Filter.impls[name] = filter;
+        };
+        Filter.clear = function () {
+            Filter.impls = {};
+        };
+        Filter.impls = {};
+        return Filter;
+    }());
+    function isKeyValuePair(arr) {
+        return isArray(arr);
+    }
+
+    var Value$1 = /** @class */ (function () {
+        /**
+         * @param str value string, like: "i have a dream | truncate: 3
+         */
+        function Value(str, strictFilters) {
+            this.filters = [];
+            var tokens = Value.tokenize(str);
+            this.strictFilters = strictFilters;
+            this.initial = tokens[0];
+            this.parseFilters(tokens, 1);
+        }
+        Value.prototype.parseFilters = function (tokens, begin) {
+            var i = begin;
+            while (i < tokens.length) {
+                if (tokens[i] !== '|') {
+                    i++;
+                    continue;
+                }
+                var j = ++i;
+                while (i < tokens.length && tokens[i] !== '|')
+                    i++;
+                this.parseFilter(tokens, j, i);
+            }
+        };
+        Value.prototype.parseFilter = function (tokens, begin, end) {
+            var name = tokens[begin];
+            var args = [];
+            var argName, argValue;
+            for (var i = begin + 1; i < end + 1; i++) {
+                if (i === end || tokens[i] === ',') {
+                    if (argName || argValue) {
+                        args.push(argName ? [argName, argValue] : argValue);
+                    }
+                    argValue = argName = undefined;
+                }
+                else if (tokens[i] === ':') {
+                    argName = argValue;
+                    argValue = undefined;
+                }
+                else if (argValue === undefined) {
+                    argValue = tokens[i];
+                }
+            }
+            this.filters.push(new Filter(name, args, this.strictFilters));
+        };
+        Value.prototype.value = function (ctx) {
+            var val, _a, _b, filter, e_1_1;
+            var e_1, _c;
+            return __generator(this, function (_d) {
+                switch (_d.label) {
+                    case 0: return [4 /*yield*/, new Expression(this.initial).evaluate(ctx)];
+                    case 1:
+                        val = _d.sent();
+                        _d.label = 2;
+                    case 2:
+                        _d.trys.push([2, 7, 8, 9]);
+                        _a = __values(this.filters), _b = _a.next();
+                        _d.label = 3;
+                    case 3:
+                        if (!!_b.done) return [3 /*break*/, 6];
+                        filter = _b.value;
+                        return [4 /*yield*/, filter.render(val, ctx)];
+                    case 4:
+                        val = _d.sent();
+                        _d.label = 5;
+                    case 5:
+                        _b = _a.next();
+                        return [3 /*break*/, 3];
+                    case 6: return [3 /*break*/, 9];
+                    case 7:
+                        e_1_1 = _d.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 9];
+                    case 8:
+                        try {
+                            if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 9: return [2 /*return*/, val];
+                }
+            });
+        };
+        Value.tokenize = function (str) {
+            var tokens = [];
+            var i = 0;
+            while (i < str.length) {
+                var ch = str[i];
+                if (ch === '"' || ch === "'") {
+                    var j = i;
+                    for (i += 2; i < str.length && str[i - 1] !== ch; ++i)
+                        ;
+                    tokens.push(str.slice(j, i));
+                }
+                else if (/\s/.test(ch)) {
+                    i++;
+                }
+                else if (/[|,:]/.test(ch)) {
+                    tokens.push(str[i++]);
+                }
+                else {
+                    var j = i++;
+                    var ch_1 = void 0;
+                    for (; i < str.length && !/[|,:\s]/.test(ch_1 = str[i]); ++i) {
+                        if (ch_1 === '"' || ch_1 === "'") {
+                            for (i += 2; i < str.length && str[i - 1] !== ch_1; ++i)
+                                ;
+                        }
+                    }
+                    tokens.push(str.slice(j, i));
+                }
+            }
+            return tokens;
+        };
+        return Value;
+    }());
+
+    var Output = /** @class */ (function (_super) {
+        __extends(Output, _super);
+        function Output(token, strictFilters) {
+            var _this = _super.call(this, token) || this;
+            _this.value = new Value$1(token.value, strictFilters);
+            return _this;
+        }
+        Output.prototype.render = function (ctx, emitter) {
+            var val;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.value.value(ctx)];
+                    case 1:
+                        val = _a.sent();
+                        emitter.write(stringify(toValue(val)));
+                        return [2 /*return*/];
+                }
+            });
+        };
+        return Output;
+    }(Template));
+
+    var HTML = /** @class */ (function (_super) {
+        __extends(HTML, _super);
+        function HTML(token) {
+            var _this = _super.call(this, token) || this;
+            _this.str = token.value;
+            return _this;
+        }
+        HTML.prototype.render = function (ctx, emitter) {
+            return __generator(this, function (_a) {
+                emitter.write(this.str);
+                return [2 /*return*/];
+            });
+        };
+        return HTML;
+    }(Template));
+
+    var Parser = /** @class */ (function () {
+        function Parser(liquid) {
+            this.liquid = liquid;
+        }
+        Parser.prototype.parse = function (tokens) {
+            var token;
+            var templates = [];
+            while ((token = tokens.shift())) {
+                templates.push(this.parseToken(token, tokens));
+            }
+            return templates;
+        };
+        Parser.prototype.parseToken = function (token, remainTokens) {
+            try {
+                if (TagToken.is(token)) {
+                    return new Tag(token, remainTokens, this.liquid);
+                }
+                if (OutputToken.is(token)) {
+                    return new Output(token, this.liquid.options.strictFilters);
+                }
+                return new HTML(token);
+            }
+            catch (e) {
+                throw new ParseError(e, token);
+            }
+        };
+        Parser.prototype.parseStream = function (tokens) {
+            var _this = this;
+            return new ParseStream(tokens, function (token, tokens) { return _this.parseToken(token, tokens); });
+        };
+        return Parser;
+    }());
+
+    var re = new RegExp("(" + identifier.source + ")\\s*=([^]*)");
+    var assign = {
+        parse: function (token) {
+            var match = token.args.match(re);
+            assert(match, "illegal token " + token.raw);
+            this.key = match[1];
+            this.value = match[2];
+        },
+        render: function (ctx) {
+            var _a, _b;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        _a = ctx.front();
+                        _b = this.key;
+                        return [4 /*yield*/, this.liquid._evalValue(this.value, ctx)];
+                    case 1:
+                        _a[_b] = _c.sent();
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var ForloopDrop = /** @class */ (function (_super) {
+        __extends(ForloopDrop, _super);
+        function ForloopDrop(length) {
+            var _this = _super.call(this) || this;
+            _this.i = 0;
+            _this.length = length;
+            return _this;
+        }
+        ForloopDrop.prototype.next = function () {
+            this.i++;
+        };
+        ForloopDrop.prototype.index0 = function () {
+            return this.i;
+        };
+        ForloopDrop.prototype.index = function () {
+            return this.i + 1;
+        };
+        ForloopDrop.prototype.first = function () {
+            return this.i === 0;
+        };
+        ForloopDrop.prototype.last = function () {
+            return this.i === this.length - 1;
+        };
+        ForloopDrop.prototype.rindex = function () {
+            return this.length - this.i;
+        };
+        ForloopDrop.prototype.rindex0 = function () {
+            return this.length - this.i - 1;
+        };
+        ForloopDrop.prototype.valueOf = function () {
+            return JSON.stringify(this);
+        };
+        return ForloopDrop;
+    }(Drop));
+
+    var re$1 = new RegExp("^(" + identifier.source + ")\\s+in\\s+" +
+        ("(" + value.source + ")") +
+        ("(?:\\s+" + hash.source + ")*") +
+        "(?:\\s+(reversed))?" +
+        ("(?:\\s+" + hash.source + ")*$"));
+    var For = {
+        type: 'block',
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            var match = re$1.exec(tagToken.args);
+            assert(match, "illegal tag: " + tagToken.raw);
+            this.variable = match[1];
+            this.collection = match[2];
+            this.reversed = !!match[3];
+            this.templates = [];
+            this.elseTemplates = [];
+            var p;
+            var stream = this.liquid.parser.parseStream(remainTokens)
+                .on('start', function () { return (p = _this.templates); })
+                .on('tag:else', function () { return (p = _this.elseTemplates); })
+                .on('tag:endfor', function () { return stream.stop(); })
+                .on('template', function (tpl) { return p.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx, hash, emitter) {
+            var r, collection, offset, limit, scope, collection_1, collection_1_1, item, e_1_1;
+            var e_1, _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        r = this.liquid.renderer;
+                        return [4 /*yield*/, new Expression(this.collection).value(ctx)];
+                    case 1:
+                        collection = _b.sent();
+                        if (!isArray(collection)) {
+                            if (isString(collection) && collection.length > 0) {
+                                collection = [collection];
+                            }
+                            else if (isObject(collection)) {
+                                collection = Object.keys(collection).map(function (key) { return [key, collection[key]]; });
+                            }
+                        }
+                        if (!(!isArray(collection) || !collection.length)) return [3 /*break*/, 3];
+                        return [4 /*yield*/, r.renderTemplates(this.elseTemplates, ctx, emitter)];
+                    case 2:
+                        _b.sent();
+                        return [2 /*return*/];
+                    case 3:
+                        offset = hash.offset || 0;
+                        limit = (hash.limit === undefined) ? collection.length : hash.limit;
+                        collection = collection.slice(offset, offset + limit);
+                        if (this.reversed)
+                            collection.reverse();
+                        scope = { forloop: new ForloopDrop(collection.length) };
+                        ctx.push(scope);
+                        _b.label = 4;
+                    case 4:
+                        _b.trys.push([4, 9, 10, 11]);
+                        collection_1 = __values(collection), collection_1_1 = collection_1.next();
+                        _b.label = 5;
+                    case 5:
+                        if (!!collection_1_1.done) return [3 /*break*/, 8];
+                        item = collection_1_1.value;
+                        scope[this.variable] = item;
+                        return [4 /*yield*/, r.renderTemplates(this.templates, ctx, emitter)];
+                    case 6:
+                        _b.sent();
+                        if (emitter.break) {
+                            emitter.break = false;
+                            return [3 /*break*/, 8];
+                        }
+                        emitter.continue = false;
+                        scope.forloop.next();
+                        _b.label = 7;
+                    case 7:
+                        collection_1_1 = collection_1.next();
+                        return [3 /*break*/, 5];
+                    case 8: return [3 /*break*/, 11];
+                    case 9:
+                        e_1_1 = _b.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 11];
+                    case 10:
+                        try {
+                            if (collection_1_1 && !collection_1_1.done && (_a = collection_1.return)) _a.call(collection_1);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 11:
+                        ctx.pop();
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var re$2 = new RegExp("(" + identifier.source + ")");
+    var capture = {
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            var match = tagToken.args.match(re$2);
+            assert(match, tagToken.args + " not valid identifier");
+            this.variable = match[1];
+            this.templates = [];
+            var stream = this.liquid.parser.parseStream(remainTokens);
+            stream.on('tag:endcapture', function () { return stream.stop(); })
+                .on('template', function (tpl) { return _this.templates.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx) {
+            var r, html;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        r = this.liquid.renderer;
+                        return [4 /*yield*/, r.renderTemplates(this.templates, ctx)];
+                    case 1:
+                        html = _a.sent();
+                        ctx.front()[this.variable] = html;
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var Case = {
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            this.cond = tagToken.args;
+            this.cases = [];
+            this.elseTemplates = [];
+            var p = [];
+            var stream = this.liquid.parser.parseStream(remainTokens)
+                .on('tag:when', function (token) {
+                _this.cases.push({
+                    val: token.args,
+                    templates: p = []
+                });
+            })
+                .on('tag:else', function () { return (p = _this.elseTemplates); })
+                .on('tag:endcase', function () { return stream.stop(); })
+                .on('template', function (tpl) { return p.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx, hash, emitter) {
+            var r, i, branch, val, cond;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        r = this.liquid.renderer;
+                        i = 0;
+                        _a.label = 1;
+                    case 1:
+                        if (!(i < this.cases.length)) return [3 /*break*/, 6];
+                        branch = this.cases[i];
+                        return [4 /*yield*/, new Expression(branch.val).value(ctx)];
+                    case 2:
+                        val = _a.sent();
+                        return [4 /*yield*/, new Expression(this.cond).value(ctx)];
+                    case 3:
+                        cond = _a.sent();
+                        if (!(val === cond)) return [3 /*break*/, 5];
+                        return [4 /*yield*/, r.renderTemplates(branch.templates, ctx, emitter)];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/];
+                    case 5:
+                        i++;
+                        return [3 /*break*/, 1];
+                    case 6: return [4 /*yield*/, r.renderTemplates(this.elseTemplates, ctx, emitter)];
+                    case 7:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var comment = {
+        parse: function (tagToken, remainTokens) {
+            var stream = this.liquid.parser.parseStream(remainTokens);
+            stream
+                .on('token', function (token) {
+                if (token.name === 'endcomment')
+                    stream.stop();
+            })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        }
+    };
+
+    var BlockMode;
+    (function (BlockMode) {
+        /* store rendered html into blocks */
+        BlockMode[BlockMode["OUTPUT"] = 0] = "OUTPUT";
+        /* output rendered html directly */
+        BlockMode[BlockMode["STORE"] = 1] = "STORE";
+    })(BlockMode || (BlockMode = {}));
+    var BlockMode$1 = BlockMode;
+
+    var staticFileRE = /[^\s,]+/;
+    var withRE = new RegExp("with\\s+(" + value.source + ")");
+    var include = {
+        parse: function (token) {
+            var match = staticFileRE.exec(token.args);
+            if (match)
+                this.staticValue = match[0];
+            match = value.exec(token.args);
+            if (match)
+                this.value = match[0];
+            match = withRE.exec(token.args);
+            if (match)
+                this.with = match[1];
+        },
+        render: function (ctx, hash, emitter) {
+            var filepath, template, originBlocks, originBlockMode, _a, _b, templates;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        if (!ctx.opts.dynamicPartials) return [3 /*break*/, 5];
+                        if (!quotedLine.exec(this.value)) return [3 /*break*/, 2];
+                        template = this.value.slice(1, -1);
+                        return [4 /*yield*/, this.liquid._parseAndRender(template, ctx.getAll(), ctx.opts, ctx.sync)];
+                    case 1:
+                        filepath = _c.sent();
+                        return [3 /*break*/, 4];
+                    case 2: return [4 /*yield*/, new Expression(this.value).value(ctx)];
+                    case 3:
+                        filepath = _c.sent();
+                        _c.label = 4;
+                    case 4: return [3 /*break*/, 6];
+                    case 5:
+                        filepath = this.staticValue;
+                        _c.label = 6;
+                    case 6:
+                        assert(filepath, "cannot include with empty filename");
+                        originBlocks = ctx.getRegister('blocks');
+                        originBlockMode = ctx.getRegister('blockMode');
+                        ctx.setRegister('blocks', {});
+                        ctx.setRegister('blockMode', BlockMode$1.OUTPUT);
+                        if (!this.with) return [3 /*break*/, 8];
+                        _a = hash;
+                        _b = filepath;
+                        return [4 /*yield*/, new Expression(this.with).evaluate(ctx)];
+                    case 7:
+                        _a[_b] = _c.sent();
+                        _c.label = 8;
+                    case 8: return [4 /*yield*/, this.liquid._parseFile(filepath, ctx.opts, ctx.sync)];
+                    case 9:
+                        templates = _c.sent();
+                        ctx.push(hash);
+                        return [4 /*yield*/, this.liquid.renderer.renderTemplates(templates, ctx, emitter)];
+                    case 10:
+                        _c.sent();
+                        ctx.pop();
+                        ctx.setRegister('blocks', originBlocks);
+                        ctx.setRegister('blockMode', originBlockMode);
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var staticFileRE$1 = /[^\s,]+/;
+    var withRE$1 = new RegExp("with\\s+(" + value.source + ")");
+    var render = {
+        parse: function (token) {
+            var match = staticFileRE$1.exec(token.args);
+            if (match)
+                this.staticValue = match[0];
+            match = value.exec(token.args);
+            if (match)
+                this.value = match[0];
+            match = withRE$1.exec(token.args);
+            if (match)
+                this.with = match[1];
+        },
+        render: function (ctx, hash, emitter) {
+            var filepath, template, originBlocks, originBlockMode, childCtx, _a, _b, templates;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        if (!ctx.opts.dynamicPartials) return [3 /*break*/, 5];
+                        if (!quotedLine.exec(this.value)) return [3 /*break*/, 2];
+                        template = this.value.slice(1, -1);
+                        return [4 /*yield*/, this.liquid._parseAndRender(template, ctx.getAll(), ctx.opts, ctx.sync)];
+                    case 1:
+                        filepath = _c.sent();
+                        return [3 /*break*/, 4];
+                    case 2: return [4 /*yield*/, new Expression(this.value).value(ctx)];
+                    case 3:
+                        filepath = _c.sent();
+                        _c.label = 4;
+                    case 4: return [3 /*break*/, 6];
+                    case 5:
+                        filepath = this.staticValue;
+                        _c.label = 6;
+                    case 6:
+                        assert(filepath, "cannot render with empty filename");
+                        originBlocks = ctx.getRegister('blocks');
+                        originBlockMode = ctx.getRegister('blockMode');
+                        childCtx = new Context({}, ctx.opts, ctx.sync);
+                        childCtx.setRegister('blocks', {});
+                        childCtx.setRegister('blockMode', BlockMode$1.OUTPUT);
+                        if (!this.with) return [3 /*break*/, 8];
+                        _a = hash;
+                        _b = filepath;
+                        return [4 /*yield*/, new Expression(this.with).evaluate(ctx)];
+                    case 7:
+                        _a[_b] = _c.sent();
+                        _c.label = 8;
+                    case 8:
+                        childCtx.push(hash);
+                        return [4 /*yield*/, this.liquid._parseFile(filepath, childCtx.opts, childCtx.sync)];
+                    case 9:
+                        templates = _c.sent();
+                        return [4 /*yield*/, this.liquid.renderer.renderTemplates(templates, childCtx, emitter)];
+                    case 10:
+                        _c.sent();
+                        childCtx.setRegister('blocks', originBlocks);
+                        childCtx.setRegister('blockMode', originBlockMode);
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var decrement = {
+        parse: function (token) {
+            var match = token.args.match(identifier);
+            assert(match, "illegal identifier " + token.args);
+            this.variable = match[0];
+        },
+        render: function (context, hash, emitter) {
+            var scope = context.environments;
+            if (!isNumber(scope[this.variable])) {
+                scope[this.variable] = 0;
+            }
+            emitter.write(stringify(--scope[this.variable]));
+        }
+    };
+
+    var groupRE = new RegExp("^(?:(" + value.source + ")\\s*:\\s*)?(.*)$");
+    var candidatesRE = new RegExp(value.source, 'g');
+    var cycle = {
+        parse: function (tagToken) {
+            var match = groupRE.exec(tagToken.args);
+            assert(match, "illegal tag: " + tagToken.raw);
+            this.group = new Expression(match[1]);
+            var candidates = match[2];
+            this.candidates = [];
+            while ((match = candidatesRE.exec(candidates))) {
+                this.candidates.push(match[0]);
+            }
+            assert(this.candidates.length, "empty candidates: " + tagToken.raw);
+        },
+        render: function (ctx, hash, emitter) {
+            var group, fingerprint, groups, idx, candidate, html;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.group.value(ctx)];
+                    case 1:
+                        group = _a.sent();
+                        fingerprint = "cycle:" + group + ":" + this.candidates.join(',');
+                        groups = ctx.getRegister('cycle');
+                        idx = groups[fingerprint];
+                        if (idx === undefined) {
+                            idx = groups[fingerprint] = 0;
+                        }
+                        candidate = this.candidates[idx];
+                        idx = (idx + 1) % this.candidates.length;
+                        groups[fingerprint] = idx;
+                        return [4 /*yield*/, new Expression(candidate).value(ctx)];
+                    case 2:
+                        html = _a.sent();
+                        emitter.write(html);
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var If = {
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            this.branches = [];
+            this.elseTemplates = [];
+            var p;
+            var stream = this.liquid.parser.parseStream(remainTokens)
+                .on('start', function () { return _this.branches.push({
+                cond: tagToken.args,
+                templates: (p = [])
+            }); })
+                .on('tag:elsif', function (token) {
+                _this.branches.push({
+                    cond: token.args,
+                    templates: p = []
+                });
+            })
+                .on('tag:else', function () { return (p = _this.elseTemplates); })
+                .on('tag:endif', function () { return stream.stop(); })
+                .on('template', function (tpl) { return p.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx, hash, emitter) {
+            var r, _a, _b, branch, cond, e_1_1;
+            var e_1, _c;
+            return __generator(this, function (_d) {
+                switch (_d.label) {
+                    case 0:
+                        r = this.liquid.renderer;
+                        _d.label = 1;
+                    case 1:
+                        _d.trys.push([1, 7, 8, 9]);
+                        _a = __values(this.branches), _b = _a.next();
+                        _d.label = 2;
+                    case 2:
+                        if (!!_b.done) return [3 /*break*/, 6];
+                        branch = _b.value;
+                        return [4 /*yield*/, new Expression(branch.cond).value(ctx)];
+                    case 3:
+                        cond = _d.sent();
+                        if (!isTruthy(cond)) return [3 /*break*/, 5];
+                        return [4 /*yield*/, r.renderTemplates(branch.templates, ctx, emitter)];
+                    case 4:
+                        _d.sent();
+                        return [2 /*return*/];
+                    case 5:
+                        _b = _a.next();
+                        return [3 /*break*/, 2];
+                    case 6: return [3 /*break*/, 9];
+                    case 7:
+                        e_1_1 = _d.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 9];
+                    case 8:
+                        try {
+                            if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 9: return [4 /*yield*/, r.renderTemplates(this.elseTemplates, ctx, emitter)];
+                    case 10:
+                        _d.sent();
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var increment = {
+        parse: function (token) {
+            var match = token.args.match(identifier);
+            assert(match, "illegal identifier " + token.args);
+            this.variable = match[0];
+        },
+        render: function (context, hash, emitter) {
+            var scope = context.environments;
+            if (!isNumber(scope[this.variable])) {
+                scope[this.variable] = 0;
+            }
+            var val = scope[this.variable];
+            scope[this.variable]++;
+            emitter.write(stringify(val));
+        }
+    };
+
+    var staticFileRE$2 = /\S+/;
+    var layout = {
+        parse: function (token, remainTokens) {
+            var match = staticFileRE$2.exec(token.args);
+            if (match) {
+                this.staticLayout = match[0];
+            }
+            match = value.exec(token.args);
+            if (match) {
+                this.layout = match[0];
+            }
+            this.tpls = this.liquid.parser.parse(remainTokens);
+        },
+        render: function (ctx, hash, emitter) {
+            var layout, _a, blocks, r, html, templates, partial;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        if (!ctx.opts.dynamicPartials) return [3 /*break*/, 2];
+                        return [4 /*yield*/, new Expression(this.layout).value(ctx)];
+                    case 1:
+                        _a = _b.sent();
+                        return [3 /*break*/, 3];
+                    case 2:
+                        _a = this.staticLayout;
+                        _b.label = 3;
+                    case 3:
+                        layout = _a;
+                        assert(layout, "cannot apply layout with empty filename");
+                        // render the remaining tokens immediately
+                        ctx.setRegister('blockMode', BlockMode$1.STORE);
+                        blocks = ctx.getRegister('blocks');
+                        r = this.liquid.renderer;
+                        return [4 /*yield*/, r.renderTemplates(this.tpls, ctx)];
+                    case 4:
+                        html = _b.sent();
+                        if (blocks[''] === undefined) {
+                            blocks[''] = html;
+                        }
+                        return [4 /*yield*/, this.liquid._parseFile(layout, ctx.opts, ctx.sync)];
+                    case 5:
+                        templates = _b.sent();
+                        ctx.push(hash);
+                        ctx.setRegister('blockMode', BlockMode$1.OUTPUT);
+                        return [4 /*yield*/, r.renderTemplates(templates, ctx)];
+                    case 6:
+                        partial = _b.sent();
+                        ctx.pop();
+                        emitter.write(partial);
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var block = {
+        parse: function (token, remainTokens) {
+            var _this = this;
+            var match = /\w+/.exec(token.args);
+            this.block = match ? match[0] : '';
+            this.tpls = [];
+            var stream = this.liquid.parser.parseStream(remainTokens)
+                .on('tag:endblock', function () { return stream.stop(); })
+                .on('template', function (tpl) { return _this.tpls.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + token.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx, hash, emitter) {
+            var blocks, childDefined, r, html, _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        blocks = ctx.getRegister('blocks');
+                        childDefined = blocks[this.block];
+                        r = this.liquid.renderer;
+                        if (!(childDefined !== undefined)) return [3 /*break*/, 1];
+                        _a = childDefined;
+                        return [3 /*break*/, 3];
+                    case 1: return [4 /*yield*/, r.renderTemplates(this.tpls, ctx)];
+                    case 2:
+                        _a = _b.sent();
+                        _b.label = 3;
+                    case 3:
+                        html = _a;
+                        if (ctx.getRegister('blockMode', BlockMode$1.OUTPUT) === BlockMode$1.STORE) {
+                            blocks[this.block] = html;
+                            return [2 /*return*/];
+                        }
+                        emitter.write(html);
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var raw = {
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            this.tokens = [];
+            var stream = this.liquid.parser.parseStream(remainTokens);
+            stream
+                .on('token', function (token) {
+                if (token.name === 'endraw')
+                    stream.stop();
+                else
+                    _this.tokens.push(token);
+            })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function () {
+            return this.tokens.map(function (token) { return token.raw; }).join('');
+        }
+    };
+
+    var TablerowloopDrop = /** @class */ (function (_super) {
+        __extends(TablerowloopDrop, _super);
+        function TablerowloopDrop(length, cols) {
+            var _this = _super.call(this, length) || this;
+            _this.length = length;
+            _this.cols = cols;
+            return _this;
+        }
+        TablerowloopDrop.prototype.row = function () {
+            return Math.floor(this.i / this.cols) + 1;
+        };
+        TablerowloopDrop.prototype.col0 = function () {
+            return (this.i % this.cols);
+        };
+        TablerowloopDrop.prototype.col = function () {
+            return this.col0() + 1;
+        };
+        TablerowloopDrop.prototype.col_first = function () {
+            return this.col0() === 0;
+        };
+        TablerowloopDrop.prototype.col_last = function () {
+            return this.col() === this.cols;
+        };
+        return TablerowloopDrop;
+    }(ForloopDrop));
+
+    var re$3 = new RegExp("^(" + identifier.source + ")\\s+in\\s+" +
+        ("(" + value.source + ")") +
+        ("(?:\\s+" + hash.source + ")*$"));
+    var tablerow = {
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            var match = re$3.exec(tagToken.args);
+            assert(match, "illegal tag: " + tagToken.raw);
+            this.variable = match[1];
+            this.collection = match[2];
+            this.templates = [];
+            var p;
+            var stream = this.liquid.parser.parseStream(remainTokens)
+                .on('start', function () { return (p = _this.templates); })
+                .on('tag:endtablerow', function () { return stream.stop(); })
+                .on('template', function (tpl) { return p.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx, hash, emitter) {
+            var collection, offset, limit, cols, r, tablerowloop, scope, idx;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, new Expression(this.collection).value(ctx)];
+                    case 1:
+                        collection = (_a.sent()) || [];
+                        offset = hash.offset || 0;
+                        limit = (hash.limit === undefined) ? collection.length : hash.limit;
+                        collection = collection.slice(offset, offset + limit);
+                        cols = hash.cols || collection.length;
+                        r = this.liquid.renderer;
+                        tablerowloop = new TablerowloopDrop(collection.length, cols);
+                        scope = { tablerowloop: tablerowloop };
+                        ctx.push(scope);
+                        idx = 0;
+                        _a.label = 2;
+                    case 2:
+                        if (!(idx < collection.length)) return [3 /*break*/, 5];
+                        scope[this.variable] = collection[idx];
+                        if (tablerowloop.col0() === 0) {
+                            if (tablerowloop.row() !== 1)
+                                emitter.write('</tr>');
+                            emitter.write("<tr class=\"row" + tablerowloop.row() + "\">");
+                        }
+                        emitter.write("<td class=\"col" + tablerowloop.col() + "\">");
+                        return [4 /*yield*/, r.renderTemplates(this.templates, ctx, emitter)];
+                    case 3:
+                        _a.sent();
+                        emitter.write('</td>');
+                        _a.label = 4;
+                    case 4:
+                        idx++, tablerowloop.next();
+                        return [3 /*break*/, 2];
+                    case 5:
+                        if (collection.length)
+                            emitter.write('</tr>');
+                        ctx.pop();
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var unless = {
+        parse: function (tagToken, remainTokens) {
+            var _this = this;
+            this.templates = [];
+            this.elseTemplates = [];
+            var p;
+            var stream = this.liquid.parser.parseStream(remainTokens)
+                .on('start', function () {
+                p = _this.templates;
+                _this.cond = tagToken.args;
+            })
+                .on('tag:else', function () { return (p = _this.elseTemplates); })
+                .on('tag:endunless', function () { return stream.stop(); })
+                .on('template', function (tpl) { return p.push(tpl); })
+                .on('end', function () {
+                throw new Error("tag " + tagToken.raw + " not closed");
+            });
+            stream.start();
+        },
+        render: function (ctx, hash, emitter) {
+            var r, cond;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        r = this.liquid.renderer;
+                        return [4 /*yield*/, new Expression(this.cond).value(ctx)];
+                    case 1:
+                        cond = _a.sent();
+                        return [4 /*yield*/, (isFalsy(cond)
+                                ? r.renderTemplates(this.templates, ctx, emitter)
+                                : r.renderTemplates(this.elseTemplates, ctx, emitter))];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        }
+    };
+
+    var Break = {
+        render: function (ctx, hash, emitter) {
+            emitter.break = true;
+        }
+    };
+
+    var Continue = {
+        render: function (ctx, hash, emitter) {
+            emitter.continue = true;
+        }
+    };
+
+    var tags = {
+        assign: assign, 'for': For, capture: capture, 'case': Case, comment: comment, include: include, render: render, decrement: decrement, increment: increment, cycle: cycle, 'if': If, layout: layout, block: block, raw: raw, tablerow: tablerow, unless: unless, 'break': Break, 'continue': Continue
+    };
+
+    var escapeMap = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&#34;',
+        "'": '&#39;'
+    };
+    var unescapeMap = {
+        '&amp;': '&',
+        '&lt;': '<',
+        '&gt;': '>',
+        '&#34;': '"',
+        '&#39;': "'"
+    };
+    function escape(str) {
+        return stringify(str).replace(/&|<|>|"|'/g, function (m) { return escapeMap[m]; });
+    }
+    function unescape(str) {
+        return String(str).replace(/&(amp|lt|gt|#34|#39);/g, function (m) { return unescapeMap[m]; });
+    }
+    var html = {
+        'escape': escape,
+        'escape_once': function (str) { return escape(unescape(str)); },
+        'newline_to_br': function (v) { return v.replace(/\n/g, '<br />'); },
+        'strip_html': function (v) { return v.replace(/<script.*?<\/script>|<!--.*?-->|<style.*?<\/style>|<.*?>/g, ''); }
+    };
+
+    /**
+     * String related filters
+     *
+     * * prefer stringify() to String() since `undefined`, `null` should eval ''
+     */
+    var str = {
+        'append': function (v, arg) { return stringify(v) + stringify(arg); },
+        'prepend': function (v, arg) { return stringify(arg) + stringify(v); },
+        'capitalize': capitalize,
+        'lstrip': function (v) { return stringify(v).replace(/^\s+/, ''); },
+        'downcase': function (v) { return stringify(v).toLowerCase(); },
+        'upcase': function (str) { return stringify(str).toUpperCase(); },
+        'remove': function (v, arg) { return stringify(v).split(arg).join(''); },
+        'remove_first': function (v, l) { return stringify(v).replace(l, ''); },
+        'replace': replace,
+        'replace_first': replaceFirst,
+        'rstrip': function (str) { return stringify(str).replace(/\s+$/, ''); },
+        'split': function (v, arg) { return stringify(v).split(arg); },
+        'strip': function (v) { return stringify(v).trim(); },
+        'strip_newlines': function (v) { return stringify(v).replace(/\n/g, ''); },
+        'truncate': truncate,
+        'truncatewords': truncateWords
+    };
+    function capitalize(str) {
+        str = stringify(str);
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+    function replace(v, pattern, replacement) {
+        return stringify(v).split(pattern).join(replacement);
+    }
+    function replaceFirst(v, arg1, arg2) {
+        return stringify(v).replace(arg1, arg2);
+    }
+    function truncate(v, l, o) {
+        if (l === void 0) { l = 50; }
+        if (o === void 0) { o = '...'; }
+        v = stringify(v);
+        if (v.length <= l)
+            return v;
+        return v.substr(0, l - o.length) + o;
+    }
+    function truncateWords(v, l, o) {
+        if (l === void 0) { l = 15; }
+        if (o === void 0) { o = '...'; }
+        var arr = v.split(/\s+/);
+        var ret = arr.slice(0, l).join(' ');
+        if (arr.length >= l)
+            ret += o;
+        return ret;
+    }
+
+    var toLowerCase = String.prototype.toLowerCase;
+    var math = {
+        'abs': function (v) { return Math.abs(v); },
+        'at_least': function (v, n) { return Math.max(v, n); },
+        'at_most': function (v, n) { return Math.min(v, n); },
+        'ceil': function (v) { return Math.ceil(v); },
+        'divided_by': function (v, arg) { return v / arg; },
+        'floor': function (v) { return Math.floor(v); },
+        'minus': function (v, arg) { return v - arg; },
+        'modulo': function (v, arg) { return v % arg; },
+        'round': function (v, arg) {
+            if (arg === void 0) { arg = 0; }
+            var amp = Math.pow(10, arg);
+            return Math.round(v * amp) / amp;
+        },
+        'plus': function (v, arg) { return Number(v) + Number(arg); },
+        'sort_natural': sortNatural,
+        'times': function (v, arg) { return v * arg; }
+    };
+    function caseInsensitiveCmp(a, b) {
+        if (!b)
+            return -1;
+        if (!a)
+            return 1;
+        a = toLowerCase.call(a);
+        b = toLowerCase.call(b);
+        if (a < b)
+            return -1;
+        if (a > b)
+            return 1;
+        return 0;
+    }
+    function sortNatural(input, property) {
+        if (!input || !input.sort)
+            return [];
+        if (property !== undefined) {
+            return __spread(input).sort(function (lhs, rhs) { return caseInsensitiveCmp(lhs[property], rhs[property]); });
+        }
+        return __spread(input).sort(caseInsensitiveCmp);
+    }
+
+    var url = {
+        'url_decode': function (x) { return x.split('+').map(decodeURIComponent).join(' '); },
+        'url_encode': function (x) { return x.split(' ').map(encodeURIComponent).join('+'); }
+    };
+
+    var array = {
+        'join': function (v, arg) { return v.join(arg === undefined ? ' ' : arg); },
+        'last': function (v) { return isArray(v) ? last(v) : ''; },
+        'first': function (v) { return isArray(v) ? v[0] : ''; },
+        'map': map,
+        'reverse': function (v) { return __spread(v).reverse(); },
+        'sort': function (v, arg) { return v.sort(arg); },
+        'size': function (v) { return (v && v.length) || 0; },
+        'concat': concat,
+        'slice': slice,
+        'uniq': uniq,
+        'where': where
+    };
+    function map(arr, arg) {
+        return arr.map(function (v) { return v[arg]; });
+    }
+    function concat(v, arg) {
+        return Array.prototype.concat.call(v, arg);
+    }
+    function slice(v, begin, length) {
+        if (length === void 0) { length = 1; }
+        begin = begin < 0 ? v.length + begin : begin;
+        return v.slice(begin, begin + length);
+    }
+    function where(arr, property, value) {
+        return arr.filter(function (obj) { return value === undefined ? isTruthy(obj[property]) : obj[property] === value; });
+    }
+    function uniq(arr) {
+        var u = {};
+        return (arr || []).filter(function (val) {
+            if (u.hasOwnProperty(String(val)))
+                return false;
+            u[String(val)] = true;
+            return true;
+        });
+    }
+
+    var monthNames = [
+        'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+        'September', 'October', 'November', 'December'
+    ];
+    var dayNames = [
+        'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+    ];
+    var monthNamesShort = monthNames.map(abbr);
+    var dayNamesShort = dayNames.map(abbr);
+    var suffixes = {
+        1: 'st',
+        2: 'nd',
+        3: 'rd',
+        'default': 'th'
+    };
+    function abbr(str) {
+        return str.slice(0, 3);
+    }
+    // prototype extensions
+    var _date = {
+        daysInMonth: function (d) {
+            var feb = _date.isLeapYear(d) ? 29 : 28;
+            return [31, feb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        },
+        getDayOfYear: function (d) {
+            var num = 0;
+            for (var i = 0; i < d.getMonth(); ++i) {
+                num += _date.daysInMonth(d)[i];
+            }
+            return num + d.getDate();
+        },
+        getWeekOfYear: function (d, startDay) {
+            // Skip to startDay of this week
+            var now = this.getDayOfYear(d) + (startDay - d.getDay());
+            // Find the first startDay of the year
+            var jan1 = new Date(d.getFullYear(), 0, 1);
+            var then = (7 - jan1.getDay() + startDay);
+            return padStart(String(Math.floor((now - then) / 7) + 1), 2, '0');
+        },
+        isLeapYear: function (d) {
+            var year = d.getFullYear();
+            return !!((year & 3) === 0 && (year % 100 || (year % 400 === 0 && year)));
+        },
+        getSuffix: function (d) {
+            var str = d.getDate().toString();
+            var index = parseInt(str.slice(-1));
+            return suffixes[index] || suffixes['default'];
+        },
+        century: function (d) {
+            return parseInt(d.getFullYear().toString().substring(0, 2), 10);
+        }
+    };
+    var formatCodes = {
+        a: function (d) {
+            return dayNamesShort[d.getDay()];
+        },
+        A: function (d) {
+            return dayNames[d.getDay()];
+        },
+        b: function (d) {
+            return monthNamesShort[d.getMonth()];
+        },
+        B: function (d) {
+            return monthNames[d.getMonth()];
+        },
+        c: function (d) {
+            return d.toLocaleString();
+        },
+        C: function (d) {
+            return _date.century(d);
+        },
+        d: function (d) {
+            return padStart(d.getDate(), 2, '0');
+        },
+        e: function (d) {
+            return padStart(d.getDate(), 2);
+        },
+        H: function (d) {
+            return padStart(d.getHours(), 2, '0');
+        },
+        I: function (d) {
+            return padStart(String(d.getHours() % 12 || 12), 2, '0');
+        },
+        j: function (d) {
+            return padStart(_date.getDayOfYear(d), 3, '0');
+        },
+        k: function (d) {
+            return padStart(d.getHours(), 2);
+        },
+        l: function (d) {
+            return padStart(String(d.getHours() % 12 || 12), 2);
+        },
+        L: function (d) {
+            return padStart(d.getMilliseconds(), 3, '0');
+        },
+        m: function (d) {
+            return padStart(d.getMonth() + 1, 2, '0');
+        },
+        M: function (d) {
+            return padStart(d.getMinutes(), 2, '0');
+        },
+        p: function (d) {
+            return (d.getHours() < 12 ? 'AM' : 'PM');
+        },
+        P: function (d) {
+            return (d.getHours() < 12 ? 'am' : 'pm');
+        },
+        q: function (d) {
+            return _date.getSuffix(d);
+        },
+        s: function (d) {
+            return Math.round(d.valueOf() / 1000);
+        },
+        S: function (d) {
+            return padStart(d.getSeconds(), 2, '0');
+        },
+        u: function (d) {
+            return d.getDay() || 7;
+        },
+        U: function (d) {
+            return _date.getWeekOfYear(d, 0);
+        },
+        w: function (d) {
+            return d.getDay();
+        },
+        W: function (d) {
+            return _date.getWeekOfYear(d, 1);
+        },
+        x: function (d) {
+            return d.toLocaleDateString();
+        },
+        X: function (d) {
+            return d.toLocaleTimeString();
+        },
+        y: function (d) {
+            return d.getFullYear().toString().substring(2, 4);
+        },
+        Y: function (d) {
+            return d.getFullYear();
+        },
+        z: function (d) {
+            var tz = d.getTimezoneOffset() / 60 * 100;
+            return (tz > 0 ? '-' : '+') + padStart(String(Math.abs(tz)), 4, '0');
+        },
+        '%': function () {
+            return '%';
+        }
+    };
+    formatCodes.h = formatCodes.b;
+    formatCodes.N = formatCodes.L;
+    function strftime (d, format) {
+        var output = '';
+        var remaining = format;
+        while (true) {
+            var r = /%./g;
+            var results = r.exec(remaining);
+            // No more format codes. Add the remaining text and return
+            if (!results) {
+                return output + remaining;
+            }
+            // Add the preceding text
+            output += remaining.slice(0, r.lastIndex - 2);
+            remaining = remaining.slice(r.lastIndex);
+            // Add the format code
+            var ch = results[0].charAt(1);
+            var func = formatCodes[ch];
+            output += func ? func(d) : '%' + ch;
+        }
+    }
+
+    var date = {
+        'date': function (v, arg) {
+            var date = v;
+            if (v === 'now') {
+                date = new Date();
+            }
+            else if (isNumber(v)) {
+                date = new Date(v * 1000);
+            }
+            else if (isString(v)) {
+                date = /^\d+$/.test(v) ? new Date(+v * 1000) : new Date(v);
+            }
+            return isValidDate(date) ? strftime(date, arg) : v;
+        }
+    };
+    function isValidDate(date) {
+        return date instanceof Date && !isNaN(date.getTime());
+    }
+
+    var obj = {
+        'default': function (v, arg) {
+            return isFalsy(toValue(v)) || v === '' ? arg : v;
+        }
+    };
+
+    var builtinFilters = __assign({}, html, str, math, url, date, obj, array);
+
+    function mkResolve(value) {
+        var ret = {
+            then: function (resolve) { return resolve(value); },
+            catch: function () { return ret; }
+        };
+        return ret;
+    }
+    function mkReject(err) {
+        var ret = {
+            then: function (resolve, reject) {
+                if (reject)
+                    return reject(err);
+                return ret;
+            },
+            catch: function (reject) { return reject(err); }
+        };
+        return ret;
+    }
+    function isThenable(val) {
+        return val && isFunction(val.then);
+    }
+    function isCustomIterable(val) {
+        return val && isFunction(val.next) && isFunction(val.throw) && isFunction(val.return);
+    }
+    function toThenable(val) {
+        if (isThenable(val))
+            return val;
+        if (isCustomIterable(val))
+            return reduce();
+        return mkResolve(val);
+        function reduce(prev) {
+            var state;
+            try {
+                state = val.next(prev);
+            }
+            catch (err) {
+                return mkReject(err);
+            }
+            if (state.done)
+                return mkResolve(state.value);
+            return toThenable(state.value).then(reduce, function (err) {
+                var state;
+                try {
+                    state = val.throw(err);
+                }
+                catch (e) {
+                    return mkReject(e);
+                }
+                if (state.done)
+                    return mkResolve(state.value);
+                return reduce(state.value);
+            });
+        }
+    }
+    function toValue$1(val) {
+        var ret;
+        toThenable(val)
+            .then(function (x) {
+            ret = x;
+            return mkResolve(ret);
+        })
+            .catch(function (err) {
+            throw err;
+        });
+        return ret;
+    }
+
+    var Liquid = /** @class */ (function () {
+        function Liquid(opts) {
+            var _this = this;
+            if (opts === void 0) { opts = {}; }
+            this.cache = {};
+            this.options = applyDefault(normalize(opts));
+            this.parser = new Parser(this);
+            this.renderer = new Render();
+            this.tokenizer = new Tokenizer(this.options);
+            this.fs = opts.fs || fs;
+            forOwn(tags, function (conf, name) { return _this.registerTag(name, conf); });
+            forOwn(builtinFilters, function (handler, name) { return _this.registerFilter(name, handler); });
+        }
+        Liquid.prototype.parse = function (html, filepath) {
+            var tokens = this.tokenizer.tokenize(html, filepath);
+            return this.parser.parse(tokens);
+        };
+        Liquid.prototype._render = function (tpl, scope, opts, sync) {
+            var options = __assign({}, this.options, normalize(opts));
+            var ctx = new Context(scope, options, sync);
+            return this.renderer.renderTemplates(tpl, ctx);
+        };
+        Liquid.prototype.render = function (tpl, scope, opts) {
+            return __awaiter(this, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    return [2 /*return*/, toThenable(this._render(tpl, scope, opts, false))];
+                });
+            });
+        };
+        Liquid.prototype.renderSync = function (tpl, scope, opts) {
+            return toValue$1(this._render(tpl, scope, opts, true));
+        };
+        Liquid.prototype._parseAndRender = function (html, scope, opts, sync) {
+            var tpl = this.parse(html);
+            return this._render(tpl, scope, opts, sync);
+        };
+        Liquid.prototype.parseAndRender = function (html, scope, opts) {
+            return __awaiter(this, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    return [2 /*return*/, toThenable(this._parseAndRender(html, scope, opts, false))];
+                });
+            });
+        };
+        Liquid.prototype.parseAndRenderSync = function (html, scope, opts) {
+            return toValue$1(this._parseAndRender(html, scope, opts, true));
+        };
+        Liquid.prototype._parseFile = function (file, opts, sync) {
+            var options, paths, filepath, paths_1, paths_1_1, filepath, _a, tpl, _b, _c, e_1_1;
+            var e_1, _d;
+            var _this = this;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        options = __assign({}, this.options, normalize(opts));
+                        paths = options.root.map(function (root) { return _this.fs.resolve(root, file, options.extname); });
+                        if (fs.fallback !== undefined) {
+                            filepath = fs.fallback(file);
+                            if (filepath !== undefined)
+                                paths.push(filepath);
+                        }
+                        _e.label = 1;
+                    case 1:
+                        _e.trys.push([1, 11, 12, 13]);
+                        paths_1 = __values(paths), paths_1_1 = paths_1.next();
+                        _e.label = 2;
+                    case 2:
+                        if (!!paths_1_1.done) return [3 /*break*/, 10];
+                        filepath = paths_1_1.value;
+                        if (this.options.cache && this.cache[filepath])
+                            return [2 /*return*/, this.cache[filepath]];
+                        if (!sync) return [3 /*break*/, 3];
+                        _a = this.fs.existsSync(filepath);
+                        return [3 /*break*/, 5];
+                    case 3: return [4 /*yield*/, this.fs.exists(filepath)];
+                    case 4:
+                        _a = _e.sent();
+                        _e.label = 5;
+                    case 5:
+                        if (!(_a))
+                            return [3 /*break*/, 9];
+                        _b = this.parse;
+                        if (!sync) return [3 /*break*/, 6];
+                        _c = fs.readFileSync(filepath);
+                        return [3 /*break*/, 8];
+                    case 6: return [4 /*yield*/, this.fs.readFile(filepath)];
+                    case 7:
+                        _c = _e.sent();
+                        _e.label = 8;
+                    case 8:
+                        tpl = _b.apply(this, [_c, filepath]);
+                        return [2 /*return*/, (this.cache[filepath] = tpl)];
+                    case 9:
+                        paths_1_1 = paths_1.next();
+                        return [3 /*break*/, 2];
+                    case 10: return [3 /*break*/, 13];
+                    case 11:
+                        e_1_1 = _e.sent();
+                        e_1 = { error: e_1_1 };
+                        return [3 /*break*/, 13];
+                    case 12:
+                        try {
+                            if (paths_1_1 && !paths_1_1.done && (_d = paths_1.return)) _d.call(paths_1);
+                        }
+                        finally { if (e_1) throw e_1.error; }
+                        return [7 /*endfinally*/];
+                    case 13: throw this.lookupError(file, options.root);
+                }
+            });
+        };
+        Liquid.prototype.parseFile = function (file, opts) {
+            return __awaiter(this, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    return [2 /*return*/, toThenable(this._parseFile(file, opts, false))];
+                });
+            });
+        };
+        Liquid.prototype.parseFileSync = function (file, opts) {
+            return toValue$1(this._parseFile(file, opts, true));
+        };
+        Liquid.prototype.renderFile = function (file, ctx, opts) {
+            return __awaiter(this, void 0, void 0, function () {
+                var templates;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0: return [4 /*yield*/, this.parseFile(file, opts)];
+                        case 1:
+                            templates = _a.sent();
+                            return [2 /*return*/, this.render(templates, ctx, opts)];
+                    }
+                });
+            });
+        };
+        Liquid.prototype.renderFileSync = function (file, ctx, opts) {
+            var options = normalize(opts);
+            var templates = this.parseFileSync(file, options);
+            return this.renderSync(templates, ctx, opts);
+        };
+        Liquid.prototype._evalValue = function (str, ctx) {
+            var value = new Value$1(str, this.options.strictFilters);
+            return value.value(ctx);
+        };
+        Liquid.prototype.evalValue = function (str, ctx) {
+            return __awaiter(this, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    return [2 /*return*/, toThenable(this._evalValue(str, ctx))];
+                });
+            });
+        };
+        Liquid.prototype.evalValueSync = function (str, ctx) {
+            return toValue$1(this._evalValue(str, ctx));
+        };
+        Liquid.prototype.registerFilter = function (name, filter) {
+            return Filter.register(name, filter);
+        };
+        Liquid.prototype.registerTag = function (name, tag) {
+            return Tag.register(name, tag);
+        };
+        Liquid.prototype.plugin = function (plugin) {
+            return plugin.call(this, Liquid);
+        };
+        Liquid.prototype.express = function () {
+            var self = this; // eslint-disable-line
+            return function (filePath, ctx, cb) {
+                var opts = { root: __spread(normalizeStringArray(this.root), self.options.root) };
+                self.renderFile(filePath, ctx, opts).then(function (html) { return cb(null, html); }, cb);
+            };
+        };
+        Liquid.prototype.lookupError = function (file, roots) {
+            var err = new Error('ENOENT');
+            err.message = "ENOENT: Failed to lookup \"" + file + "\" in \"" + roots + "\"";
+            err.code = 'ENOENT';
+            return err;
+        };
+        /**
+         * @deprecated use parseFile instead
+         */
+        Liquid.prototype.getTemplate = function (file, opts) {
+            return __awaiter(this, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    return [2 /*return*/, this.parseFile(file, opts)];
+                });
+            });
+        };
+        /**
+         * @deprecated use parseFileSync instead
+         */
+        Liquid.prototype.getTemplateSync = function (file, opts) {
+            return this.parseFileSync(file, opts);
+        };
+        return Liquid;
+    }());
+
+    exports.AssertionError = AssertionError;
+    exports.Context = Context;
+    exports.Drop = Drop;
+    exports.Emitter = Emitter;
+    exports.Expression = Expression;
+    exports.Hash = Hash;
+    exports.Liquid = Liquid;
+    exports.ParseError = ParseError;
+    exports.ParseStream = ParseStream;
+    exports.TagToken = TagToken;
+    exports.Token = Token;
+    exports.TokenizationError = TokenizationError;
+    exports.isFalsy = isFalsy;
+    exports.isTruthy = isTruthy;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+//# sourceMappingURL=liquid.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/core.js":
+/*!*************************************!*\
+  !*** ./node_modules/lodash/core.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * @license
+ * Lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash core -o ./dist/lodash.core.js`
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+;(function() {
+
+  /** Used as a safe reference for `undefined` in pre-ES5 environments. */
+  var undefined;
+
+  /** Used as the semantic version number. */
+  var VERSION = '4.17.15';
+
+  /** Error message constants. */
+  var FUNC_ERROR_TEXT = 'Expected a function';
+
+  /** Used to compose bitmasks for value comparisons. */
+  var COMPARE_PARTIAL_FLAG = 1,
+      COMPARE_UNORDERED_FLAG = 2;
+
+  /** Used to compose bitmasks for function metadata. */
+  var WRAP_BIND_FLAG = 1,
+      WRAP_PARTIAL_FLAG = 32;
+
+  /** Used as references for various `Number` constants. */
+  var INFINITY = 1 / 0,
+      MAX_SAFE_INTEGER = 9007199254740991;
+
+  /** `Object#toString` result references. */
+  var argsTag = '[object Arguments]',
+      arrayTag = '[object Array]',
+      asyncTag = '[object AsyncFunction]',
+      boolTag = '[object Boolean]',
+      dateTag = '[object Date]',
+      errorTag = '[object Error]',
+      funcTag = '[object Function]',
+      genTag = '[object GeneratorFunction]',
+      numberTag = '[object Number]',
+      objectTag = '[object Object]',
+      proxyTag = '[object Proxy]',
+      regexpTag = '[object RegExp]',
+      stringTag = '[object String]';
+
+  /** Used to match HTML entities and HTML characters. */
+  var reUnescapedHtml = /[&<>"']/g,
+      reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
+
+  /** Used to detect unsigned integer values. */
+  var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+  /** Used to map characters to HTML entities. */
+  var htmlEscapes = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  };
+
+  /** Detect free variable `global` from Node.js. */
+  var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+  /** Detect free variable `self`. */
+  var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+  /** Used as a reference to the global object. */
+  var root = freeGlobal || freeSelf || Function('return this')();
+
+  /** Detect free variable `exports`. */
+  var freeExports =  true && exports && !exports.nodeType && exports;
+
+  /** Detect free variable `module`. */
+  var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+
+  /*--------------------------------------------------------------------------*/
+
+  /**
+   * Appends the elements of `values` to `array`.
+   *
+   * @private
+   * @param {Array} array The array to modify.
+   * @param {Array} values The values to append.
+   * @returns {Array} Returns `array`.
+   */
+  function arrayPush(array, values) {
+    array.push.apply(array, values);
+    return array;
+  }
+
+  /**
+   * The base implementation of `_.findIndex` and `_.findLastIndex` without
+   * support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {Function} predicate The function invoked per iteration.
+   * @param {number} fromIndex The index to search from.
+   * @param {boolean} [fromRight] Specify iterating from right to left.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function baseFindIndex(array, predicate, fromIndex, fromRight) {
+    var length = array.length,
+        index = fromIndex + (fromRight ? 1 : -1);
+
+    while ((fromRight ? index-- : ++index < length)) {
+      if (predicate(array[index], index, array)) {
+        return index;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * The base implementation of `_.property` without support for deep paths.
+   *
+   * @private
+   * @param {string} key The key of the property to get.
+   * @returns {Function} Returns the new accessor function.
+   */
+  function baseProperty(key) {
+    return function(object) {
+      return object == null ? undefined : object[key];
+    };
+  }
+
+  /**
+   * The base implementation of `_.propertyOf` without support for deep paths.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @returns {Function} Returns the new accessor function.
+   */
+  function basePropertyOf(object) {
+    return function(key) {
+      return object == null ? undefined : object[key];
+    };
+  }
+
+  /**
+   * The base implementation of `_.reduce` and `_.reduceRight`, without support
+   * for iteratee shorthands, which iterates over `collection` using `eachFunc`.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @param {*} accumulator The initial value.
+   * @param {boolean} initAccum Specify using the first or last element of
+   *  `collection` as the initial value.
+   * @param {Function} eachFunc The function to iterate over `collection`.
+   * @returns {*} Returns the accumulated value.
+   */
+  function baseReduce(collection, iteratee, accumulator, initAccum, eachFunc) {
+    eachFunc(collection, function(value, index, collection) {
+      accumulator = initAccum
+        ? (initAccum = false, value)
+        : iteratee(accumulator, value, index, collection);
+    });
+    return accumulator;
+  }
+
+  /**
+   * The base implementation of `_.values` and `_.valuesIn` which creates an
+   * array of `object` property values corresponding to the property names
+   * of `props`.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @param {Array} props The property names to get values for.
+   * @returns {Object} Returns the array of property values.
+   */
+  function baseValues(object, props) {
+    return baseMap(props, function(key) {
+      return object[key];
+    });
+  }
+
+  /**
+   * Used by `_.escape` to convert characters to HTML entities.
+   *
+   * @private
+   * @param {string} chr The matched character to escape.
+   * @returns {string} Returns the escaped character.
+   */
+  var escapeHtmlChar = basePropertyOf(htmlEscapes);
+
+  /**
+   * Creates a unary function that invokes `func` with its argument transformed.
+   *
+   * @private
+   * @param {Function} func The function to wrap.
+   * @param {Function} transform The argument transform.
+   * @returns {Function} Returns the new function.
+   */
+  function overArg(func, transform) {
+    return function(arg) {
+      return func(transform(arg));
+    };
+  }
+
+  /*--------------------------------------------------------------------------*/
+
+  /** Used for built-in method references. */
+  var arrayProto = Array.prototype,
+      objectProto = Object.prototype;
+
+  /** Used to check objects for own properties. */
+  var hasOwnProperty = objectProto.hasOwnProperty;
+
+  /** Used to generate unique IDs. */
+  var idCounter = 0;
+
+  /**
+   * Used to resolve the
+   * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+   * of values.
+   */
+  var nativeObjectToString = objectProto.toString;
+
+  /** Used to restore the original `_` reference in `_.noConflict`. */
+  var oldDash = root._;
+
+  /** Built-in value references. */
+  var objectCreate = Object.create,
+      propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+  /* Built-in method references for those with the same name as other `lodash` methods. */
+  var nativeIsFinite = root.isFinite,
+      nativeKeys = overArg(Object.keys, Object),
+      nativeMax = Math.max;
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Creates a `lodash` object which wraps `value` to enable implicit method
+   * chain sequences. Methods that operate on and return arrays, collections,
+   * and functions can be chained together. Methods that retrieve a single value
+   * or may return a primitive value will automatically end the chain sequence
+   * and return the unwrapped value. Otherwise, the value must be unwrapped
+   * with `_#value`.
+   *
+   * Explicit chain sequences, which must be unwrapped with `_#value`, may be
+   * enabled using `_.chain`.
+   *
+   * The execution of chained methods is lazy, that is, it's deferred until
+   * `_#value` is implicitly or explicitly called.
+   *
+   * Lazy evaluation allows several methods to support shortcut fusion.
+   * Shortcut fusion is an optimization to merge iteratee calls; this avoids
+   * the creation of intermediate arrays and can greatly reduce the number of
+   * iteratee executions. Sections of a chain sequence qualify for shortcut
+   * fusion if the section is applied to an array and iteratees accept only
+   * one argument. The heuristic for whether a section qualifies for shortcut
+   * fusion is subject to change.
+   *
+   * Chaining is supported in custom builds as long as the `_#value` method is
+   * directly or indirectly included in the build.
+   *
+   * In addition to lodash methods, wrappers have `Array` and `String` methods.
+   *
+   * The wrapper `Array` methods are:
+   * `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
+   *
+   * The wrapper `String` methods are:
+   * `replace` and `split`
+   *
+   * The wrapper methods that support shortcut fusion are:
+   * `at`, `compact`, `drop`, `dropRight`, `dropWhile`, `filter`, `find`,
+   * `findLast`, `head`, `initial`, `last`, `map`, `reject`, `reverse`, `slice`,
+   * `tail`, `take`, `takeRight`, `takeRightWhile`, `takeWhile`, and `toArray`
+   *
+   * The chainable wrapper methods are:
+   * `after`, `ary`, `assign`, `assignIn`, `assignInWith`, `assignWith`, `at`,
+   * `before`, `bind`, `bindAll`, `bindKey`, `castArray`, `chain`, `chunk`,
+   * `commit`, `compact`, `concat`, `conforms`, `constant`, `countBy`, `create`,
+   * `curry`, `debounce`, `defaults`, `defaultsDeep`, `defer`, `delay`,
+   * `difference`, `differenceBy`, `differenceWith`, `drop`, `dropRight`,
+   * `dropRightWhile`, `dropWhile`, `extend`, `extendWith`, `fill`, `filter`,
+   * `flatMap`, `flatMapDeep`, `flatMapDepth`, `flatten`, `flattenDeep`,
+   * `flattenDepth`, `flip`, `flow`, `flowRight`, `fromPairs`, `functions`,
+   * `functionsIn`, `groupBy`, `initial`, `intersection`, `intersectionBy`,
+   * `intersectionWith`, `invert`, `invertBy`, `invokeMap`, `iteratee`, `keyBy`,
+   * `keys`, `keysIn`, `map`, `mapKeys`, `mapValues`, `matches`, `matchesProperty`,
+   * `memoize`, `merge`, `mergeWith`, `method`, `methodOf`, `mixin`, `negate`,
+   * `nthArg`, `omit`, `omitBy`, `once`, `orderBy`, `over`, `overArgs`,
+   * `overEvery`, `overSome`, `partial`, `partialRight`, `partition`, `pick`,
+   * `pickBy`, `plant`, `property`, `propertyOf`, `pull`, `pullAll`, `pullAllBy`,
+   * `pullAllWith`, `pullAt`, `push`, `range`, `rangeRight`, `rearg`, `reject`,
+   * `remove`, `rest`, `reverse`, `sampleSize`, `set`, `setWith`, `shuffle`,
+   * `slice`, `sort`, `sortBy`, `splice`, `spread`, `tail`, `take`, `takeRight`,
+   * `takeRightWhile`, `takeWhile`, `tap`, `throttle`, `thru`, `toArray`,
+   * `toPairs`, `toPairsIn`, `toPath`, `toPlainObject`, `transform`, `unary`,
+   * `union`, `unionBy`, `unionWith`, `uniq`, `uniqBy`, `uniqWith`, `unset`,
+   * `unshift`, `unzip`, `unzipWith`, `update`, `updateWith`, `values`,
+   * `valuesIn`, `without`, `wrap`, `xor`, `xorBy`, `xorWith`, `zip`,
+   * `zipObject`, `zipObjectDeep`, and `zipWith`
+   *
+   * The wrapper methods that are **not** chainable by default are:
+   * `add`, `attempt`, `camelCase`, `capitalize`, `ceil`, `clamp`, `clone`,
+   * `cloneDeep`, `cloneDeepWith`, `cloneWith`, `conformsTo`, `deburr`,
+   * `defaultTo`, `divide`, `each`, `eachRight`, `endsWith`, `eq`, `escape`,
+   * `escapeRegExp`, `every`, `find`, `findIndex`, `findKey`, `findLast`,
+   * `findLastIndex`, `findLastKey`, `first`, `floor`, `forEach`, `forEachRight`,
+   * `forIn`, `forInRight`, `forOwn`, `forOwnRight`, `get`, `gt`, `gte`, `has`,
+   * `hasIn`, `head`, `identity`, `includes`, `indexOf`, `inRange`, `invoke`,
+   * `isArguments`, `isArray`, `isArrayBuffer`, `isArrayLike`, `isArrayLikeObject`,
+   * `isBoolean`, `isBuffer`, `isDate`, `isElement`, `isEmpty`, `isEqual`,
+   * `isEqualWith`, `isError`, `isFinite`, `isFunction`, `isInteger`, `isLength`,
+   * `isMap`, `isMatch`, `isMatchWith`, `isNaN`, `isNative`, `isNil`, `isNull`,
+   * `isNumber`, `isObject`, `isObjectLike`, `isPlainObject`, `isRegExp`,
+   * `isSafeInteger`, `isSet`, `isString`, `isUndefined`, `isTypedArray`,
+   * `isWeakMap`, `isWeakSet`, `join`, `kebabCase`, `last`, `lastIndexOf`,
+   * `lowerCase`, `lowerFirst`, `lt`, `lte`, `max`, `maxBy`, `mean`, `meanBy`,
+   * `min`, `minBy`, `multiply`, `noConflict`, `noop`, `now`, `nth`, `pad`,
+   * `padEnd`, `padStart`, `parseInt`, `pop`, `random`, `reduce`, `reduceRight`,
+   * `repeat`, `result`, `round`, `runInContext`, `sample`, `shift`, `size`,
+   * `snakeCase`, `some`, `sortedIndex`, `sortedIndexBy`, `sortedLastIndex`,
+   * `sortedLastIndexBy`, `startCase`, `startsWith`, `stubArray`, `stubFalse`,
+   * `stubObject`, `stubString`, `stubTrue`, `subtract`, `sum`, `sumBy`,
+   * `template`, `times`, `toFinite`, `toInteger`, `toJSON`, `toLength`,
+   * `toLower`, `toNumber`, `toSafeInteger`, `toString`, `toUpper`, `trim`,
+   * `trimEnd`, `trimStart`, `truncate`, `unescape`, `uniqueId`, `upperCase`,
+   * `upperFirst`, `value`, and `words`
+   *
+   * @name _
+   * @constructor
+   * @category Seq
+   * @param {*} value The value to wrap in a `lodash` instance.
+   * @returns {Object} Returns the new `lodash` wrapper instance.
+   * @example
+   *
+   * function square(n) {
+   *   return n * n;
+   * }
+   *
+   * var wrapped = _([1, 2, 3]);
+   *
+   * // Returns an unwrapped value.
+   * wrapped.reduce(_.add);
+   * // => 6
+   *
+   * // Returns a wrapped value.
+   * var squares = wrapped.map(square);
+   *
+   * _.isArray(squares);
+   * // => false
+   *
+   * _.isArray(squares.value());
+   * // => true
+   */
+  function lodash(value) {
+    return value instanceof LodashWrapper
+      ? value
+      : new LodashWrapper(value);
+  }
+
+  /**
+   * The base implementation of `_.create` without support for assigning
+   * properties to the created object.
+   *
+   * @private
+   * @param {Object} proto The object to inherit from.
+   * @returns {Object} Returns the new object.
+   */
+  var baseCreate = (function() {
+    function object() {}
+    return function(proto) {
+      if (!isObject(proto)) {
+        return {};
+      }
+      if (objectCreate) {
+        return objectCreate(proto);
+      }
+      object.prototype = proto;
+      var result = new object;
+      object.prototype = undefined;
+      return result;
+    };
+  }());
+
+  /**
+   * The base constructor for creating `lodash` wrapper objects.
+   *
+   * @private
+   * @param {*} value The value to wrap.
+   * @param {boolean} [chainAll] Enable explicit method chain sequences.
+   */
+  function LodashWrapper(value, chainAll) {
+    this.__wrapped__ = value;
+    this.__actions__ = [];
+    this.__chain__ = !!chainAll;
+  }
+
+  LodashWrapper.prototype = baseCreate(lodash.prototype);
+  LodashWrapper.prototype.constructor = LodashWrapper;
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Assigns `value` to `key` of `object` if the existing value is not equivalent
+   * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+   * for equality comparisons.
+   *
+   * @private
+   * @param {Object} object The object to modify.
+   * @param {string} key The key of the property to assign.
+   * @param {*} value The value to assign.
+   */
+  function assignValue(object, key, value) {
+    var objValue = object[key];
+    if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+        (value === undefined && !(key in object))) {
+      baseAssignValue(object, key, value);
+    }
+  }
+
+  /**
+   * The base implementation of `assignValue` and `assignMergeValue` without
+   * value checks.
+   *
+   * @private
+   * @param {Object} object The object to modify.
+   * @param {string} key The key of the property to assign.
+   * @param {*} value The value to assign.
+   */
+  function baseAssignValue(object, key, value) {
+    object[key] = value;
+  }
+
+  /**
+   * The base implementation of `_.delay` and `_.defer` which accepts `args`
+   * to provide to `func`.
+   *
+   * @private
+   * @param {Function} func The function to delay.
+   * @param {number} wait The number of milliseconds to delay invocation.
+   * @param {Array} args The arguments to provide to `func`.
+   * @returns {number|Object} Returns the timer id or timeout object.
+   */
+  function baseDelay(func, wait, args) {
+    if (typeof func != 'function') {
+      throw new TypeError(FUNC_ERROR_TEXT);
+    }
+    return setTimeout(function() { func.apply(undefined, args); }, wait);
+  }
+
+  /**
+   * The base implementation of `_.forEach` without support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array|Object} Returns `collection`.
+   */
+  var baseEach = createBaseEach(baseForOwn);
+
+  /**
+   * The base implementation of `_.every` without support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} predicate The function invoked per iteration.
+   * @returns {boolean} Returns `true` if all elements pass the predicate check,
+   *  else `false`
+   */
+  function baseEvery(collection, predicate) {
+    var result = true;
+    baseEach(collection, function(value, index, collection) {
+      result = !!predicate(value, index, collection);
+      return result;
+    });
+    return result;
+  }
+
+  /**
+   * The base implementation of methods like `_.max` and `_.min` which accepts a
+   * `comparator` to determine the extremum value.
+   *
+   * @private
+   * @param {Array} array The array to iterate over.
+   * @param {Function} iteratee The iteratee invoked per iteration.
+   * @param {Function} comparator The comparator used to compare values.
+   * @returns {*} Returns the extremum value.
+   */
+  function baseExtremum(array, iteratee, comparator) {
+    var index = -1,
+        length = array.length;
+
+    while (++index < length) {
+      var value = array[index],
+          current = iteratee(value);
+
+      if (current != null && (computed === undefined
+            ? (current === current && !false)
+            : comparator(current, computed)
+          )) {
+        var computed = current,
+            result = value;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.filter` without support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} predicate The function invoked per iteration.
+   * @returns {Array} Returns the new filtered array.
+   */
+  function baseFilter(collection, predicate) {
+    var result = [];
+    baseEach(collection, function(value, index, collection) {
+      if (predicate(value, index, collection)) {
+        result.push(value);
+      }
+    });
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.flatten` with support for restricting flattening.
+   *
+   * @private
+   * @param {Array} array The array to flatten.
+   * @param {number} depth The maximum recursion depth.
+   * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
+   * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
+   * @param {Array} [result=[]] The initial result value.
+   * @returns {Array} Returns the new flattened array.
+   */
+  function baseFlatten(array, depth, predicate, isStrict, result) {
+    var index = -1,
+        length = array.length;
+
+    predicate || (predicate = isFlattenable);
+    result || (result = []);
+
+    while (++index < length) {
+      var value = array[index];
+      if (depth > 0 && predicate(value)) {
+        if (depth > 1) {
+          // Recursively flatten arrays (susceptible to call stack limits).
+          baseFlatten(value, depth - 1, predicate, isStrict, result);
+        } else {
+          arrayPush(result, value);
+        }
+      } else if (!isStrict) {
+        result[result.length] = value;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * The base implementation of `baseForOwn` which iterates over `object`
+   * properties returned by `keysFunc` and invokes `iteratee` for each property.
+   * Iteratee functions may exit iteration early by explicitly returning `false`.
+   *
+   * @private
+   * @param {Object} object The object to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @param {Function} keysFunc The function to get the keys of `object`.
+   * @returns {Object} Returns `object`.
+   */
+  var baseFor = createBaseFor();
+
+  /**
+   * The base implementation of `_.forOwn` without support for iteratee shorthands.
+   *
+   * @private
+   * @param {Object} object The object to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Object} Returns `object`.
+   */
+  function baseForOwn(object, iteratee) {
+    return object && baseFor(object, iteratee, keys);
+  }
+
+  /**
+   * The base implementation of `_.functions` which creates an array of
+   * `object` function property names filtered from `props`.
+   *
+   * @private
+   * @param {Object} object The object to inspect.
+   * @param {Array} props The property names to filter.
+   * @returns {Array} Returns the function names.
+   */
+  function baseFunctions(object, props) {
+    return baseFilter(props, function(key) {
+      return isFunction(object[key]);
+    });
+  }
+
+  /**
+   * The base implementation of `getTag` without fallbacks for buggy environments.
+   *
+   * @private
+   * @param {*} value The value to query.
+   * @returns {string} Returns the `toStringTag`.
+   */
+  function baseGetTag(value) {
+    return objectToString(value);
+  }
+
+  /**
+   * The base implementation of `_.gt` which doesn't coerce arguments.
+   *
+   * @private
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @returns {boolean} Returns `true` if `value` is greater than `other`,
+   *  else `false`.
+   */
+  function baseGt(value, other) {
+    return value > other;
+  }
+
+  /**
+   * The base implementation of `_.isArguments`.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+   */
+  var baseIsArguments = noop;
+
+  /**
+   * The base implementation of `_.isDate` without Node.js optimizations.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
+   */
+  function baseIsDate(value) {
+    return isObjectLike(value) && baseGetTag(value) == dateTag;
+  }
+
+  /**
+   * The base implementation of `_.isEqual` which supports partial comparisons
+   * and tracks traversed objects.
+   *
+   * @private
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @param {boolean} bitmask The bitmask flags.
+   *  1 - Unordered comparison
+   *  2 - Partial comparison
+   * @param {Function} [customizer] The function to customize comparisons.
+   * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+   * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+   */
+  function baseIsEqual(value, other, bitmask, customizer, stack) {
+    if (value === other) {
+      return true;
+    }
+    if (value == null || other == null || (!isObjectLike(value) && !isObjectLike(other))) {
+      return value !== value && other !== other;
+    }
+    return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
+  }
+
+  /**
+   * A specialized version of `baseIsEqual` for arrays and objects which performs
+   * deep comparisons and tracks traversed objects enabling objects with circular
+   * references to be compared.
+   *
+   * @private
+   * @param {Object} object The object to compare.
+   * @param {Object} other The other object to compare.
+   * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+   * @param {Function} customizer The function to customize comparisons.
+   * @param {Function} equalFunc The function to determine equivalents of values.
+   * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+   * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+   */
+  function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
+    var objIsArr = isArray(object),
+        othIsArr = isArray(other),
+        objTag = objIsArr ? arrayTag : baseGetTag(object),
+        othTag = othIsArr ? arrayTag : baseGetTag(other);
+
+    objTag = objTag == argsTag ? objectTag : objTag;
+    othTag = othTag == argsTag ? objectTag : othTag;
+
+    var objIsObj = objTag == objectTag,
+        othIsObj = othTag == objectTag,
+        isSameTag = objTag == othTag;
+
+    stack || (stack = []);
+    var objStack = find(stack, function(entry) {
+      return entry[0] == object;
+    });
+    var othStack = find(stack, function(entry) {
+      return entry[0] == other;
+    });
+    if (objStack && othStack) {
+      return objStack[1] == other;
+    }
+    stack.push([object, other]);
+    stack.push([other, object]);
+    if (isSameTag && !objIsObj) {
+      var result = (objIsArr)
+        ? equalArrays(object, other, bitmask, customizer, equalFunc, stack)
+        : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
+      stack.pop();
+      return result;
+    }
+    if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
+      var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+          othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+
+      if (objIsWrapped || othIsWrapped) {
+        var objUnwrapped = objIsWrapped ? object.value() : object,
+            othUnwrapped = othIsWrapped ? other.value() : other;
+
+        var result = equalFunc(objUnwrapped, othUnwrapped, bitmask, customizer, stack);
+        stack.pop();
+        return result;
+      }
+    }
+    if (!isSameTag) {
+      return false;
+    }
+    var result = equalObjects(object, other, bitmask, customizer, equalFunc, stack);
+    stack.pop();
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.isRegExp` without Node.js optimizations.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.
+   */
+  function baseIsRegExp(value) {
+    return isObjectLike(value) && baseGetTag(value) == regexpTag;
+  }
+
+  /**
+   * The base implementation of `_.iteratee`.
+   *
+   * @private
+   * @param {*} [value=_.identity] The value to convert to an iteratee.
+   * @returns {Function} Returns the iteratee.
+   */
+  function baseIteratee(func) {
+    if (typeof func == 'function') {
+      return func;
+    }
+    if (func == null) {
+      return identity;
+    }
+    return (typeof func == 'object' ? baseMatches : baseProperty)(func);
+  }
+
+  /**
+   * The base implementation of `_.lt` which doesn't coerce arguments.
+   *
+   * @private
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @returns {boolean} Returns `true` if `value` is less than `other`,
+   *  else `false`.
+   */
+  function baseLt(value, other) {
+    return value < other;
+  }
+
+  /**
+   * The base implementation of `_.map` without support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array} Returns the new mapped array.
+   */
+  function baseMap(collection, iteratee) {
+    var index = -1,
+        result = isArrayLike(collection) ? Array(collection.length) : [];
+
+    baseEach(collection, function(value, key, collection) {
+      result[++index] = iteratee(value, key, collection);
+    });
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.matches` which doesn't clone `source`.
+   *
+   * @private
+   * @param {Object} source The object of property values to match.
+   * @returns {Function} Returns the new spec function.
+   */
+  function baseMatches(source) {
+    var props = nativeKeys(source);
+    return function(object) {
+      var length = props.length;
+      if (object == null) {
+        return !length;
+      }
+      object = Object(object);
+      while (length--) {
+        var key = props[length];
+        if (!(key in object &&
+              baseIsEqual(source[key], object[key], COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG)
+            )) {
+          return false;
+        }
+      }
+      return true;
+    };
+  }
+
+  /**
+   * The base implementation of `_.pick` without support for individual
+   * property identifiers.
+   *
+   * @private
+   * @param {Object} object The source object.
+   * @param {string[]} paths The property paths to pick.
+   * @returns {Object} Returns the new object.
+   */
+  function basePick(object, props) {
+    object = Object(object);
+    return reduce(props, function(result, key) {
+      if (key in object) {
+        result[key] = object[key];
+      }
+      return result;
+    }, {});
+  }
+
+  /**
+   * The base implementation of `_.rest` which doesn't validate or coerce arguments.
+   *
+   * @private
+   * @param {Function} func The function to apply a rest parameter to.
+   * @param {number} [start=func.length-1] The start position of the rest parameter.
+   * @returns {Function} Returns the new function.
+   */
+  function baseRest(func, start) {
+    return setToString(overRest(func, start, identity), func + '');
+  }
+
+  /**
+   * The base implementation of `_.slice` without an iteratee call guard.
+   *
+   * @private
+   * @param {Array} array The array to slice.
+   * @param {number} [start=0] The start position.
+   * @param {number} [end=array.length] The end position.
+   * @returns {Array} Returns the slice of `array`.
+   */
+  function baseSlice(array, start, end) {
+    var index = -1,
+        length = array.length;
+
+    if (start < 0) {
+      start = -start > length ? 0 : (length + start);
+    }
+    end = end > length ? length : end;
+    if (end < 0) {
+      end += length;
+    }
+    length = start > end ? 0 : ((end - start) >>> 0);
+    start >>>= 0;
+
+    var result = Array(length);
+    while (++index < length) {
+      result[index] = array[index + start];
+    }
+    return result;
+  }
+
+  /**
+   * Copies the values of `source` to `array`.
+   *
+   * @private
+   * @param {Array} source The array to copy values from.
+   * @param {Array} [array=[]] The array to copy values to.
+   * @returns {Array} Returns `array`.
+   */
+  function copyArray(source) {
+    return baseSlice(source, 0, source.length);
+  }
+
+  /**
+   * The base implementation of `_.some` without support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} predicate The function invoked per iteration.
+   * @returns {boolean} Returns `true` if any element passes the predicate check,
+   *  else `false`.
+   */
+  function baseSome(collection, predicate) {
+    var result;
+
+    baseEach(collection, function(value, index, collection) {
+      result = predicate(value, index, collection);
+      return !result;
+    });
+    return !!result;
+  }
+
+  /**
+   * The base implementation of `wrapperValue` which returns the result of
+   * performing a sequence of actions on the unwrapped `value`, where each
+   * successive action is supplied the return value of the previous.
+   *
+   * @private
+   * @param {*} value The unwrapped value.
+   * @param {Array} actions Actions to perform to resolve the unwrapped value.
+   * @returns {*} Returns the resolved value.
+   */
+  function baseWrapperValue(value, actions) {
+    var result = value;
+    return reduce(actions, function(result, action) {
+      return action.func.apply(action.thisArg, arrayPush([result], action.args));
+    }, result);
+  }
+
+  /**
+   * Compares values to sort them in ascending order.
+   *
+   * @private
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @returns {number} Returns the sort order indicator for `value`.
+   */
+  function compareAscending(value, other) {
+    if (value !== other) {
+      var valIsDefined = value !== undefined,
+          valIsNull = value === null,
+          valIsReflexive = value === value,
+          valIsSymbol = false;
+
+      var othIsDefined = other !== undefined,
+          othIsNull = other === null,
+          othIsReflexive = other === other,
+          othIsSymbol = false;
+
+      if ((!othIsNull && !othIsSymbol && !valIsSymbol && value > other) ||
+          (valIsSymbol && othIsDefined && othIsReflexive && !othIsNull && !othIsSymbol) ||
+          (valIsNull && othIsDefined && othIsReflexive) ||
+          (!valIsDefined && othIsReflexive) ||
+          !valIsReflexive) {
+        return 1;
+      }
+      if ((!valIsNull && !valIsSymbol && !othIsSymbol && value < other) ||
+          (othIsSymbol && valIsDefined && valIsReflexive && !valIsNull && !valIsSymbol) ||
+          (othIsNull && valIsDefined && valIsReflexive) ||
+          (!othIsDefined && valIsReflexive) ||
+          !othIsReflexive) {
+        return -1;
+      }
+    }
+    return 0;
+  }
+
+  /**
+   * Copies properties of `source` to `object`.
+   *
+   * @private
+   * @param {Object} source The object to copy properties from.
+   * @param {Array} props The property identifiers to copy.
+   * @param {Object} [object={}] The object to copy properties to.
+   * @param {Function} [customizer] The function to customize copied values.
+   * @returns {Object} Returns `object`.
+   */
+  function copyObject(source, props, object, customizer) {
+    var isNew = !object;
+    object || (object = {});
+
+    var index = -1,
+        length = props.length;
+
+    while (++index < length) {
+      var key = props[index];
+
+      var newValue = customizer
+        ? customizer(object[key], source[key], key, object, source)
+        : undefined;
+
+      if (newValue === undefined) {
+        newValue = source[key];
+      }
+      if (isNew) {
+        baseAssignValue(object, key, newValue);
+      } else {
+        assignValue(object, key, newValue);
+      }
+    }
+    return object;
+  }
+
+  /**
+   * Creates a function like `_.assign`.
+   *
+   * @private
+   * @param {Function} assigner The function to assign values.
+   * @returns {Function} Returns the new assigner function.
+   */
+  function createAssigner(assigner) {
+    return baseRest(function(object, sources) {
+      var index = -1,
+          length = sources.length,
+          customizer = length > 1 ? sources[length - 1] : undefined;
+
+      customizer = (assigner.length > 3 && typeof customizer == 'function')
+        ? (length--, customizer)
+        : undefined;
+
+      object = Object(object);
+      while (++index < length) {
+        var source = sources[index];
+        if (source) {
+          assigner(object, source, index, customizer);
+        }
+      }
+      return object;
+    });
+  }
+
+  /**
+   * Creates a `baseEach` or `baseEachRight` function.
+   *
+   * @private
+   * @param {Function} eachFunc The function to iterate over a collection.
+   * @param {boolean} [fromRight] Specify iterating from right to left.
+   * @returns {Function} Returns the new base function.
+   */
+  function createBaseEach(eachFunc, fromRight) {
+    return function(collection, iteratee) {
+      if (collection == null) {
+        return collection;
+      }
+      if (!isArrayLike(collection)) {
+        return eachFunc(collection, iteratee);
+      }
+      var length = collection.length,
+          index = fromRight ? length : -1,
+          iterable = Object(collection);
+
+      while ((fromRight ? index-- : ++index < length)) {
+        if (iteratee(iterable[index], index, iterable) === false) {
+          break;
+        }
+      }
+      return collection;
+    };
+  }
+
+  /**
+   * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+   *
+   * @private
+   * @param {boolean} [fromRight] Specify iterating from right to left.
+   * @returns {Function} Returns the new base function.
+   */
+  function createBaseFor(fromRight) {
+    return function(object, iteratee, keysFunc) {
+      var index = -1,
+          iterable = Object(object),
+          props = keysFunc(object),
+          length = props.length;
+
+      while (length--) {
+        var key = props[fromRight ? length : ++index];
+        if (iteratee(iterable[key], key, iterable) === false) {
+          break;
+        }
+      }
+      return object;
+    };
+  }
+
+  /**
+   * Creates a function that produces an instance of `Ctor` regardless of
+   * whether it was invoked as part of a `new` expression or by `call` or `apply`.
+   *
+   * @private
+   * @param {Function} Ctor The constructor to wrap.
+   * @returns {Function} Returns the new wrapped function.
+   */
+  function createCtor(Ctor) {
+    return function() {
+      // Use a `switch` statement to work with class constructors. See
+      // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+      // for more details.
+      var args = arguments;
+      var thisBinding = baseCreate(Ctor.prototype),
+          result = Ctor.apply(thisBinding, args);
+
+      // Mimic the constructor's `return` behavior.
+      // See https://es5.github.io/#x13.2.2 for more details.
+      return isObject(result) ? result : thisBinding;
+    };
+  }
+
+  /**
+   * Creates a `_.find` or `_.findLast` function.
+   *
+   * @private
+   * @param {Function} findIndexFunc The function to find the collection index.
+   * @returns {Function} Returns the new find function.
+   */
+  function createFind(findIndexFunc) {
+    return function(collection, predicate, fromIndex) {
+      var iterable = Object(collection);
+      if (!isArrayLike(collection)) {
+        var iteratee = baseIteratee(predicate, 3);
+        collection = keys(collection);
+        predicate = function(key) { return iteratee(iterable[key], key, iterable); };
+      }
+      var index = findIndexFunc(collection, predicate, fromIndex);
+      return index > -1 ? iterable[iteratee ? collection[index] : index] : undefined;
+    };
+  }
+
+  /**
+   * Creates a function that wraps `func` to invoke it with the `this` binding
+   * of `thisArg` and `partials` prepended to the arguments it receives.
+   *
+   * @private
+   * @param {Function} func The function to wrap.
+   * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+   * @param {*} thisArg The `this` binding of `func`.
+   * @param {Array} partials The arguments to prepend to those provided to
+   *  the new function.
+   * @returns {Function} Returns the new wrapped function.
+   */
+  function createPartial(func, bitmask, thisArg, partials) {
+    if (typeof func != 'function') {
+      throw new TypeError(FUNC_ERROR_TEXT);
+    }
+    var isBind = bitmask & WRAP_BIND_FLAG,
+        Ctor = createCtor(func);
+
+    function wrapper() {
+      var argsIndex = -1,
+          argsLength = arguments.length,
+          leftIndex = -1,
+          leftLength = partials.length,
+          args = Array(leftLength + argsLength),
+          fn = (this && this !== root && this instanceof wrapper) ? Ctor : func;
+
+      while (++leftIndex < leftLength) {
+        args[leftIndex] = partials[leftIndex];
+      }
+      while (argsLength--) {
+        args[leftIndex++] = arguments[++argsIndex];
+      }
+      return fn.apply(isBind ? thisArg : this, args);
+    }
+    return wrapper;
+  }
+
+  /**
+   * A specialized version of `baseIsEqualDeep` for arrays with support for
+   * partial deep comparisons.
+   *
+   * @private
+   * @param {Array} array The array to compare.
+   * @param {Array} other The other array to compare.
+   * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+   * @param {Function} customizer The function to customize comparisons.
+   * @param {Function} equalFunc The function to determine equivalents of values.
+   * @param {Object} stack Tracks traversed `array` and `other` objects.
+   * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+   */
+  function equalArrays(array, other, bitmask, customizer, equalFunc, stack) {
+    var isPartial = bitmask & COMPARE_PARTIAL_FLAG,
+        arrLength = array.length,
+        othLength = other.length;
+
+    if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+      return false;
+    }
+    var index = -1,
+        result = true,
+        seen = (bitmask & COMPARE_UNORDERED_FLAG) ? [] : undefined;
+
+    // Ignore non-index properties.
+    while (++index < arrLength) {
+      var arrValue = array[index],
+          othValue = other[index];
+
+      var compared;
+      if (compared !== undefined) {
+        if (compared) {
+          continue;
+        }
+        result = false;
+        break;
+      }
+      // Recursively compare arrays (susceptible to call stack limits).
+      if (seen) {
+        if (!baseSome(other, function(othValue, othIndex) {
+              if (!indexOf(seen, othIndex) &&
+                  (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) {
+                return seen.push(othIndex);
+              }
+            })) {
+          result = false;
+          break;
+        }
+      } else if (!(
+            arrValue === othValue ||
+              equalFunc(arrValue, othValue, bitmask, customizer, stack)
+          )) {
+        result = false;
+        break;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * A specialized version of `baseIsEqualDeep` for comparing objects of
+   * the same `toStringTag`.
+   *
+   * **Note:** This function only supports comparing values with tags of
+   * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+   *
+   * @private
+   * @param {Object} object The object to compare.
+   * @param {Object} other The other object to compare.
+   * @param {string} tag The `toStringTag` of the objects to compare.
+   * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+   * @param {Function} customizer The function to customize comparisons.
+   * @param {Function} equalFunc The function to determine equivalents of values.
+   * @param {Object} stack Tracks traversed `object` and `other` objects.
+   * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+   */
+  function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
+    switch (tag) {
+
+      case boolTag:
+      case dateTag:
+      case numberTag:
+        // Coerce booleans to `1` or `0` and dates to milliseconds.
+        // Invalid dates are coerced to `NaN`.
+        return eq(+object, +other);
+
+      case errorTag:
+        return object.name == other.name && object.message == other.message;
+
+      case regexpTag:
+      case stringTag:
+        // Coerce regexes to strings and treat strings, primitives and objects,
+        // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+        // for more details.
+        return object == (other + '');
+
+    }
+    return false;
+  }
+
+  /**
+   * A specialized version of `baseIsEqualDeep` for objects with support for
+   * partial deep comparisons.
+   *
+   * @private
+   * @param {Object} object The object to compare.
+   * @param {Object} other The other object to compare.
+   * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+   * @param {Function} customizer The function to customize comparisons.
+   * @param {Function} equalFunc The function to determine equivalents of values.
+   * @param {Object} stack Tracks traversed `object` and `other` objects.
+   * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+   */
+  function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
+    var isPartial = bitmask & COMPARE_PARTIAL_FLAG,
+        objProps = keys(object),
+        objLength = objProps.length,
+        othProps = keys(other),
+        othLength = othProps.length;
+
+    if (objLength != othLength && !isPartial) {
+      return false;
+    }
+    var index = objLength;
+    while (index--) {
+      var key = objProps[index];
+      if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) {
+        return false;
+      }
+    }
+    var result = true;
+
+    var skipCtor = isPartial;
+    while (++index < objLength) {
+      key = objProps[index];
+      var objValue = object[key],
+          othValue = other[key];
+
+      var compared;
+      // Recursively compare objects (susceptible to call stack limits).
+      if (!(compared === undefined
+            ? (objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack))
+            : compared
+          )) {
+        result = false;
+        break;
+      }
+      skipCtor || (skipCtor = key == 'constructor');
+    }
+    if (result && !skipCtor) {
+      var objCtor = object.constructor,
+          othCtor = other.constructor;
+
+      // Non `Object` object instances with different constructors are not equal.
+      if (objCtor != othCtor &&
+          ('constructor' in object && 'constructor' in other) &&
+          !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
+            typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+        result = false;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * A specialized version of `baseRest` which flattens the rest array.
+   *
+   * @private
+   * @param {Function} func The function to apply a rest parameter to.
+   * @returns {Function} Returns the new function.
+   */
+  function flatRest(func) {
+    return setToString(overRest(func, undefined, flatten), func + '');
+  }
+
+  /**
+   * Checks if `value` is a flattenable `arguments` object or array.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
+   */
+  function isFlattenable(value) {
+    return isArray(value) || isArguments(value);
+  }
+
+  /**
+   * Checks if `value` is a valid array-like index.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+   * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+   */
+  function isIndex(value, length) {
+    var type = typeof value;
+    length = length == null ? MAX_SAFE_INTEGER : length;
+
+    return !!length &&
+      (type == 'number' ||
+        (type != 'symbol' && reIsUint.test(value))) &&
+          (value > -1 && value % 1 == 0 && value < length);
+  }
+
+  /**
+   * Checks if the given arguments are from an iteratee call.
+   *
+   * @private
+   * @param {*} value The potential iteratee value argument.
+   * @param {*} index The potential iteratee index or key argument.
+   * @param {*} object The potential iteratee object argument.
+   * @returns {boolean} Returns `true` if the arguments are from an iteratee call,
+   *  else `false`.
+   */
+  function isIterateeCall(value, index, object) {
+    if (!isObject(object)) {
+      return false;
+    }
+    var type = typeof index;
+    if (type == 'number'
+          ? (isArrayLike(object) && isIndex(index, object.length))
+          : (type == 'string' && index in object)
+        ) {
+      return eq(object[index], value);
+    }
+    return false;
+  }
+
+  /**
+   * This function is like
+   * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+   * except that it includes inherited enumerable properties.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @returns {Array} Returns the array of property names.
+   */
+  function nativeKeysIn(object) {
+    var result = [];
+    if (object != null) {
+      for (var key in Object(object)) {
+        result.push(key);
+      }
+    }
+    return result;
+  }
+
+  /**
+   * Converts `value` to a string using `Object.prototype.toString`.
+   *
+   * @private
+   * @param {*} value The value to convert.
+   * @returns {string} Returns the converted string.
+   */
+  function objectToString(value) {
+    return nativeObjectToString.call(value);
+  }
+
+  /**
+   * A specialized version of `baseRest` which transforms the rest array.
+   *
+   * @private
+   * @param {Function} func The function to apply a rest parameter to.
+   * @param {number} [start=func.length-1] The start position of the rest parameter.
+   * @param {Function} transform The rest array transform.
+   * @returns {Function} Returns the new function.
+   */
+  function overRest(func, start, transform) {
+    start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+    return function() {
+      var args = arguments,
+          index = -1,
+          length = nativeMax(args.length - start, 0),
+          array = Array(length);
+
+      while (++index < length) {
+        array[index] = args[start + index];
+      }
+      index = -1;
+      var otherArgs = Array(start + 1);
+      while (++index < start) {
+        otherArgs[index] = args[index];
+      }
+      otherArgs[start] = transform(array);
+      return func.apply(this, otherArgs);
+    };
+  }
+
+  /**
+   * Sets the `toString` method of `func` to return `string`.
+   *
+   * @private
+   * @param {Function} func The function to modify.
+   * @param {Function} string The `toString` result.
+   * @returns {Function} Returns `func`.
+   */
+  var setToString = identity;
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Creates an array with all falsey values removed. The values `false`, `null`,
+   * `0`, `""`, `undefined`, and `NaN` are falsey.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Array
+   * @param {Array} array The array to compact.
+   * @returns {Array} Returns the new array of filtered values.
+   * @example
+   *
+   * _.compact([0, 1, false, 2, '', 3]);
+   * // => [1, 2, 3]
+   */
+  function compact(array) {
+    return baseFilter(array, Boolean);
+  }
+
+  /**
+   * Creates a new array concatenating `array` with any additional arrays
+   * and/or values.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Array
+   * @param {Array} array The array to concatenate.
+   * @param {...*} [values] The values to concatenate.
+   * @returns {Array} Returns the new concatenated array.
+   * @example
+   *
+   * var array = [1];
+   * var other = _.concat(array, 2, [3], [[4]]);
+   *
+   * console.log(other);
+   * // => [1, 2, 3, [4]]
+   *
+   * console.log(array);
+   * // => [1]
+   */
+  function concat() {
+    var length = arguments.length;
+    if (!length) {
+      return [];
+    }
+    var args = Array(length - 1),
+        array = arguments[0],
+        index = length;
+
+    while (index--) {
+      args[index - 1] = arguments[index];
+    }
+    return arrayPush(isArray(array) ? copyArray(array) : [array], baseFlatten(args, 1));
+  }
+
+  /**
+   * This method is like `_.find` except that it returns the index of the first
+   * element `predicate` returns truthy for instead of the element itself.
+   *
+   * @static
+   * @memberOf _
+   * @since 1.1.0
+   * @category Array
+   * @param {Array} array The array to inspect.
+   * @param {Function} [predicate=_.identity] The function invoked per iteration.
+   * @param {number} [fromIndex=0] The index to search from.
+   * @returns {number} Returns the index of the found element, else `-1`.
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'barney',  'active': false },
+   *   { 'user': 'fred',    'active': false },
+   *   { 'user': 'pebbles', 'active': true }
+   * ];
+   *
+   * _.findIndex(users, function(o) { return o.user == 'barney'; });
+   * // => 0
+   *
+   * // The `_.matches` iteratee shorthand.
+   * _.findIndex(users, { 'user': 'fred', 'active': false });
+   * // => 1
+   *
+   * // The `_.matchesProperty` iteratee shorthand.
+   * _.findIndex(users, ['active', false]);
+   * // => 0
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.findIndex(users, 'active');
+   * // => 2
+   */
+  function findIndex(array, predicate, fromIndex) {
+    var length = array == null ? 0 : array.length;
+    if (!length) {
+      return -1;
+    }
+    var index = fromIndex == null ? 0 : toInteger(fromIndex);
+    if (index < 0) {
+      index = nativeMax(length + index, 0);
+    }
+    return baseFindIndex(array, baseIteratee(predicate, 3), index);
+  }
+
+  /**
+   * Flattens `array` a single level deep.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Array
+   * @param {Array} array The array to flatten.
+   * @returns {Array} Returns the new flattened array.
+   * @example
+   *
+   * _.flatten([1, [2, [3, [4]], 5]]);
+   * // => [1, 2, [3, [4]], 5]
+   */
+  function flatten(array) {
+    var length = array == null ? 0 : array.length;
+    return length ? baseFlatten(array, 1) : [];
+  }
+
+  /**
+   * Recursively flattens `array`.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Array
+   * @param {Array} array The array to flatten.
+   * @returns {Array} Returns the new flattened array.
+   * @example
+   *
+   * _.flattenDeep([1, [2, [3, [4]], 5]]);
+   * // => [1, 2, 3, 4, 5]
+   */
+  function flattenDeep(array) {
+    var length = array == null ? 0 : array.length;
+    return length ? baseFlatten(array, INFINITY) : [];
+  }
+
+  /**
+   * Gets the first element of `array`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @alias first
+   * @category Array
+   * @param {Array} array The array to query.
+   * @returns {*} Returns the first element of `array`.
+   * @example
+   *
+   * _.head([1, 2, 3]);
+   * // => 1
+   *
+   * _.head([]);
+   * // => undefined
+   */
+  function head(array) {
+    return (array && array.length) ? array[0] : undefined;
+  }
+
+  /**
+   * Gets the index at which the first occurrence of `value` is found in `array`
+   * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+   * for equality comparisons. If `fromIndex` is negative, it's used as the
+   * offset from the end of `array`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Array
+   * @param {Array} array The array to inspect.
+   * @param {*} value The value to search for.
+   * @param {number} [fromIndex=0] The index to search from.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   * @example
+   *
+   * _.indexOf([1, 2, 1, 2], 2);
+   * // => 1
+   *
+   * // Search from the `fromIndex`.
+   * _.indexOf([1, 2, 1, 2], 2, 2);
+   * // => 3
+   */
+  function indexOf(array, value, fromIndex) {
+    var length = array == null ? 0 : array.length;
+    if (typeof fromIndex == 'number') {
+      fromIndex = fromIndex < 0 ? nativeMax(length + fromIndex, 0) : fromIndex;
+    } else {
+      fromIndex = 0;
+    }
+    var index = (fromIndex || 0) - 1,
+        isReflexive = value === value;
+
+    while (++index < length) {
+      var other = array[index];
+      if ((isReflexive ? other === value : other !== other)) {
+        return index;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * Gets the last element of `array`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Array
+   * @param {Array} array The array to query.
+   * @returns {*} Returns the last element of `array`.
+   * @example
+   *
+   * _.last([1, 2, 3]);
+   * // => 3
+   */
+  function last(array) {
+    var length = array == null ? 0 : array.length;
+    return length ? array[length - 1] : undefined;
+  }
+
+  /**
+   * Creates a slice of `array` from `start` up to, but not including, `end`.
+   *
+   * **Note:** This method is used instead of
+   * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
+   * returned.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Array
+   * @param {Array} array The array to slice.
+   * @param {number} [start=0] The start position.
+   * @param {number} [end=array.length] The end position.
+   * @returns {Array} Returns the slice of `array`.
+   */
+  function slice(array, start, end) {
+    var length = array == null ? 0 : array.length;
+    start = start == null ? 0 : +start;
+    end = end === undefined ? length : +end;
+    return length ? baseSlice(array, start, end) : [];
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Creates a `lodash` wrapper instance that wraps `value` with explicit method
+   * chain sequences enabled. The result of such sequences must be unwrapped
+   * with `_#value`.
+   *
+   * @static
+   * @memberOf _
+   * @since 1.3.0
+   * @category Seq
+   * @param {*} value The value to wrap.
+   * @returns {Object} Returns the new `lodash` wrapper instance.
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'barney',  'age': 36 },
+   *   { 'user': 'fred',    'age': 40 },
+   *   { 'user': 'pebbles', 'age': 1 }
+   * ];
+   *
+   * var youngest = _
+   *   .chain(users)
+   *   .sortBy('age')
+   *   .map(function(o) {
+   *     return o.user + ' is ' + o.age;
+   *   })
+   *   .head()
+   *   .value();
+   * // => 'pebbles is 1'
+   */
+  function chain(value) {
+    var result = lodash(value);
+    result.__chain__ = true;
+    return result;
+  }
+
+  /**
+   * This method invokes `interceptor` and returns `value`. The interceptor
+   * is invoked with one argument; (value). The purpose of this method is to
+   * "tap into" a method chain sequence in order to modify intermediate results.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Seq
+   * @param {*} value The value to provide to `interceptor`.
+   * @param {Function} interceptor The function to invoke.
+   * @returns {*} Returns `value`.
+   * @example
+   *
+   * _([1, 2, 3])
+   *  .tap(function(array) {
+   *    // Mutate input array.
+   *    array.pop();
+   *  })
+   *  .reverse()
+   *  .value();
+   * // => [2, 1]
+   */
+  function tap(value, interceptor) {
+    interceptor(value);
+    return value;
+  }
+
+  /**
+   * This method is like `_.tap` except that it returns the result of `interceptor`.
+   * The purpose of this method is to "pass thru" values replacing intermediate
+   * results in a method chain sequence.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Seq
+   * @param {*} value The value to provide to `interceptor`.
+   * @param {Function} interceptor The function to invoke.
+   * @returns {*} Returns the result of `interceptor`.
+   * @example
+   *
+   * _('  abc  ')
+   *  .chain()
+   *  .trim()
+   *  .thru(function(value) {
+   *    return [value];
+   *  })
+   *  .value();
+   * // => ['abc']
+   */
+  function thru(value, interceptor) {
+    return interceptor(value);
+  }
+
+  /**
+   * Creates a `lodash` wrapper instance with explicit method chain sequences enabled.
+   *
+   * @name chain
+   * @memberOf _
+   * @since 0.1.0
+   * @category Seq
+   * @returns {Object} Returns the new `lodash` wrapper instance.
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'barney', 'age': 36 },
+   *   { 'user': 'fred',   'age': 40 }
+   * ];
+   *
+   * // A sequence without explicit chaining.
+   * _(users).head();
+   * // => { 'user': 'barney', 'age': 36 }
+   *
+   * // A sequence with explicit chaining.
+   * _(users)
+   *   .chain()
+   *   .head()
+   *   .pick('user')
+   *   .value();
+   * // => { 'user': 'barney' }
+   */
+  function wrapperChain() {
+    return chain(this);
+  }
+
+  /**
+   * Executes the chain sequence to resolve the unwrapped value.
+   *
+   * @name value
+   * @memberOf _
+   * @since 0.1.0
+   * @alias toJSON, valueOf
+   * @category Seq
+   * @returns {*} Returns the resolved unwrapped value.
+   * @example
+   *
+   * _([1, 2, 3]).value();
+   * // => [1, 2, 3]
+   */
+  function wrapperValue() {
+    return baseWrapperValue(this.__wrapped__, this.__actions__);
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Checks if `predicate` returns truthy for **all** elements of `collection`.
+   * Iteration is stopped once `predicate` returns falsey. The predicate is
+   * invoked with three arguments: (value, index|key, collection).
+   *
+   * **Note:** This method returns `true` for
+   * [empty collections](https://en.wikipedia.org/wiki/Empty_set) because
+   * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
+   * elements of empty collections.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} [predicate=_.identity] The function invoked per iteration.
+   * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+   * @returns {boolean} Returns `true` if all elements pass the predicate check,
+   *  else `false`.
+   * @example
+   *
+   * _.every([true, 1, null, 'yes'], Boolean);
+   * // => false
+   *
+   * var users = [
+   *   { 'user': 'barney', 'age': 36, 'active': false },
+   *   { 'user': 'fred',   'age': 40, 'active': false }
+   * ];
+   *
+   * // The `_.matches` iteratee shorthand.
+   * _.every(users, { 'user': 'barney', 'active': false });
+   * // => false
+   *
+   * // The `_.matchesProperty` iteratee shorthand.
+   * _.every(users, ['active', false]);
+   * // => true
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.every(users, 'active');
+   * // => false
+   */
+  function every(collection, predicate, guard) {
+    predicate = guard ? undefined : predicate;
+    return baseEvery(collection, baseIteratee(predicate));
+  }
+
+  /**
+   * Iterates over elements of `collection`, returning an array of all elements
+   * `predicate` returns truthy for. The predicate is invoked with three
+   * arguments: (value, index|key, collection).
+   *
+   * **Note:** Unlike `_.remove`, this method returns a new array.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} [predicate=_.identity] The function invoked per iteration.
+   * @returns {Array} Returns the new filtered array.
+   * @see _.reject
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'barney', 'age': 36, 'active': true },
+   *   { 'user': 'fred',   'age': 40, 'active': false }
+   * ];
+   *
+   * _.filter(users, function(o) { return !o.active; });
+   * // => objects for ['fred']
+   *
+   * // The `_.matches` iteratee shorthand.
+   * _.filter(users, { 'age': 36, 'active': true });
+   * // => objects for ['barney']
+   *
+   * // The `_.matchesProperty` iteratee shorthand.
+   * _.filter(users, ['active', false]);
+   * // => objects for ['fred']
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.filter(users, 'active');
+   * // => objects for ['barney']
+   */
+  function filter(collection, predicate) {
+    return baseFilter(collection, baseIteratee(predicate));
+  }
+
+  /**
+   * Iterates over elements of `collection`, returning the first element
+   * `predicate` returns truthy for. The predicate is invoked with three
+   * arguments: (value, index|key, collection).
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to inspect.
+   * @param {Function} [predicate=_.identity] The function invoked per iteration.
+   * @param {number} [fromIndex=0] The index to search from.
+   * @returns {*} Returns the matched element, else `undefined`.
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'barney',  'age': 36, 'active': true },
+   *   { 'user': 'fred',    'age': 40, 'active': false },
+   *   { 'user': 'pebbles', 'age': 1,  'active': true }
+   * ];
+   *
+   * _.find(users, function(o) { return o.age < 40; });
+   * // => object for 'barney'
+   *
+   * // The `_.matches` iteratee shorthand.
+   * _.find(users, { 'age': 1, 'active': true });
+   * // => object for 'pebbles'
+   *
+   * // The `_.matchesProperty` iteratee shorthand.
+   * _.find(users, ['active', false]);
+   * // => object for 'fred'
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.find(users, 'active');
+   * // => object for 'barney'
+   */
+  var find = createFind(findIndex);
+
+  /**
+   * Iterates over elements of `collection` and invokes `iteratee` for each element.
+   * The iteratee is invoked with three arguments: (value, index|key, collection).
+   * Iteratee functions may exit iteration early by explicitly returning `false`.
+   *
+   * **Note:** As with other "Collections" methods, objects with a "length"
+   * property are iterated like arrays. To avoid this behavior use `_.forIn`
+   * or `_.forOwn` for object iteration.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @alias each
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+   * @returns {Array|Object} Returns `collection`.
+   * @see _.forEachRight
+   * @example
+   *
+   * _.forEach([1, 2], function(value) {
+   *   console.log(value);
+   * });
+   * // => Logs `1` then `2`.
+   *
+   * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+   *   console.log(key);
+   * });
+   * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+   */
+  function forEach(collection, iteratee) {
+    return baseEach(collection, baseIteratee(iteratee));
+  }
+
+  /**
+   * Creates an array of values by running each element in `collection` thru
+   * `iteratee`. The iteratee is invoked with three arguments:
+   * (value, index|key, collection).
+   *
+   * Many lodash methods are guarded to work as iteratees for methods like
+   * `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
+   *
+   * The guarded methods are:
+   * `ary`, `chunk`, `curry`, `curryRight`, `drop`, `dropRight`, `every`,
+   * `fill`, `invert`, `parseInt`, `random`, `range`, `rangeRight`, `repeat`,
+   * `sampleSize`, `slice`, `some`, `sortBy`, `split`, `take`, `takeRight`,
+   * `template`, `trim`, `trimEnd`, `trimStart`, and `words`
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+   * @returns {Array} Returns the new mapped array.
+   * @example
+   *
+   * function square(n) {
+   *   return n * n;
+   * }
+   *
+   * _.map([4, 8], square);
+   * // => [16, 64]
+   *
+   * _.map({ 'a': 4, 'b': 8 }, square);
+   * // => [16, 64] (iteration order is not guaranteed)
+   *
+   * var users = [
+   *   { 'user': 'barney' },
+   *   { 'user': 'fred' }
+   * ];
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.map(users, 'user');
+   * // => ['barney', 'fred']
+   */
+  function map(collection, iteratee) {
+    return baseMap(collection, baseIteratee(iteratee));
+  }
+
+  /**
+   * Reduces `collection` to a value which is the accumulated result of running
+   * each element in `collection` thru `iteratee`, where each successive
+   * invocation is supplied the return value of the previous. If `accumulator`
+   * is not given, the first element of `collection` is used as the initial
+   * value. The iteratee is invoked with four arguments:
+   * (accumulator, value, index|key, collection).
+   *
+   * Many lodash methods are guarded to work as iteratees for methods like
+   * `_.reduce`, `_.reduceRight`, and `_.transform`.
+   *
+   * The guarded methods are:
+   * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
+   * and `sortBy`
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+   * @param {*} [accumulator] The initial value.
+   * @returns {*} Returns the accumulated value.
+   * @see _.reduceRight
+   * @example
+   *
+   * _.reduce([1, 2], function(sum, n) {
+   *   return sum + n;
+   * }, 0);
+   * // => 3
+   *
+   * _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+   *   (result[value] || (result[value] = [])).push(key);
+   *   return result;
+   * }, {});
+   * // => { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
+   */
+  function reduce(collection, iteratee, accumulator) {
+    return baseReduce(collection, baseIteratee(iteratee), accumulator, arguments.length < 3, baseEach);
+  }
+
+  /**
+   * Gets the size of `collection` by returning its length for array-like
+   * values or the number of own enumerable string keyed properties for objects.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object|string} collection The collection to inspect.
+   * @returns {number} Returns the collection size.
+   * @example
+   *
+   * _.size([1, 2, 3]);
+   * // => 3
+   *
+   * _.size({ 'a': 1, 'b': 2 });
+   * // => 2
+   *
+   * _.size('pebbles');
+   * // => 7
+   */
+  function size(collection) {
+    if (collection == null) {
+      return 0;
+    }
+    collection = isArrayLike(collection) ? collection : nativeKeys(collection);
+    return collection.length;
+  }
+
+  /**
+   * Checks if `predicate` returns truthy for **any** element of `collection`.
+   * Iteration is stopped once `predicate` returns truthy. The predicate is
+   * invoked with three arguments: (value, index|key, collection).
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} [predicate=_.identity] The function invoked per iteration.
+   * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+   * @returns {boolean} Returns `true` if any element passes the predicate check,
+   *  else `false`.
+   * @example
+   *
+   * _.some([null, 0, 'yes', false], Boolean);
+   * // => true
+   *
+   * var users = [
+   *   { 'user': 'barney', 'active': true },
+   *   { 'user': 'fred',   'active': false }
+   * ];
+   *
+   * // The `_.matches` iteratee shorthand.
+   * _.some(users, { 'user': 'barney', 'active': false });
+   * // => false
+   *
+   * // The `_.matchesProperty` iteratee shorthand.
+   * _.some(users, ['active', false]);
+   * // => true
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.some(users, 'active');
+   * // => true
+   */
+  function some(collection, predicate, guard) {
+    predicate = guard ? undefined : predicate;
+    return baseSome(collection, baseIteratee(predicate));
+  }
+
+  /**
+   * Creates an array of elements, sorted in ascending order by the results of
+   * running each element in a collection thru each iteratee. This method
+   * performs a stable sort, that is, it preserves the original sort order of
+   * equal elements. The iteratees are invoked with one argument: (value).
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Collection
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {...(Function|Function[])} [iteratees=[_.identity]]
+   *  The iteratees to sort by.
+   * @returns {Array} Returns the new sorted array.
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'fred',   'age': 48 },
+   *   { 'user': 'barney', 'age': 36 },
+   *   { 'user': 'fred',   'age': 40 },
+   *   { 'user': 'barney', 'age': 34 }
+   * ];
+   *
+   * _.sortBy(users, [function(o) { return o.user; }]);
+   * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+   *
+   * _.sortBy(users, ['user', 'age']);
+   * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+   */
+  function sortBy(collection, iteratee) {
+    var index = 0;
+    iteratee = baseIteratee(iteratee);
+
+    return baseMap(baseMap(collection, function(value, key, collection) {
+      return { 'value': value, 'index': index++, 'criteria': iteratee(value, key, collection) };
+    }).sort(function(object, other) {
+      return compareAscending(object.criteria, other.criteria) || (object.index - other.index);
+    }), baseProperty('value'));
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Creates a function that invokes `func`, with the `this` binding and arguments
+   * of the created function, while it's called less than `n` times. Subsequent
+   * calls to the created function return the result of the last `func` invocation.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Function
+   * @param {number} n The number of calls at which `func` is no longer invoked.
+   * @param {Function} func The function to restrict.
+   * @returns {Function} Returns the new restricted function.
+   * @example
+   *
+   * jQuery(element).on('click', _.before(5, addContactToList));
+   * // => Allows adding up to 4 contacts to the list.
+   */
+  function before(n, func) {
+    var result;
+    if (typeof func != 'function') {
+      throw new TypeError(FUNC_ERROR_TEXT);
+    }
+    n = toInteger(n);
+    return function() {
+      if (--n > 0) {
+        result = func.apply(this, arguments);
+      }
+      if (n <= 1) {
+        func = undefined;
+      }
+      return result;
+    };
+  }
+
+  /**
+   * Creates a function that invokes `func` with the `this` binding of `thisArg`
+   * and `partials` prepended to the arguments it receives.
+   *
+   * The `_.bind.placeholder` value, which defaults to `_` in monolithic builds,
+   * may be used as a placeholder for partially applied arguments.
+   *
+   * **Note:** Unlike native `Function#bind`, this method doesn't set the "length"
+   * property of bound functions.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Function
+   * @param {Function} func The function to bind.
+   * @param {*} thisArg The `this` binding of `func`.
+   * @param {...*} [partials] The arguments to be partially applied.
+   * @returns {Function} Returns the new bound function.
+   * @example
+   *
+   * function greet(greeting, punctuation) {
+   *   return greeting + ' ' + this.user + punctuation;
+   * }
+   *
+   * var object = { 'user': 'fred' };
+   *
+   * var bound = _.bind(greet, object, 'hi');
+   * bound('!');
+   * // => 'hi fred!'
+   *
+   * // Bound with placeholders.
+   * var bound = _.bind(greet, object, _, '!');
+   * bound('hi');
+   * // => 'hi fred!'
+   */
+  var bind = baseRest(function(func, thisArg, partials) {
+    return createPartial(func, WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG, thisArg, partials);
+  });
+
+  /**
+   * Defers invoking the `func` until the current call stack has cleared. Any
+   * additional arguments are provided to `func` when it's invoked.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Function
+   * @param {Function} func The function to defer.
+   * @param {...*} [args] The arguments to invoke `func` with.
+   * @returns {number} Returns the timer id.
+   * @example
+   *
+   * _.defer(function(text) {
+   *   console.log(text);
+   * }, 'deferred');
+   * // => Logs 'deferred' after one millisecond.
+   */
+  var defer = baseRest(function(func, args) {
+    return baseDelay(func, 1, args);
+  });
+
+  /**
+   * Invokes `func` after `wait` milliseconds. Any additional arguments are
+   * provided to `func` when it's invoked.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Function
+   * @param {Function} func The function to delay.
+   * @param {number} wait The number of milliseconds to delay invocation.
+   * @param {...*} [args] The arguments to invoke `func` with.
+   * @returns {number} Returns the timer id.
+   * @example
+   *
+   * _.delay(function(text) {
+   *   console.log(text);
+   * }, 1000, 'later');
+   * // => Logs 'later' after one second.
+   */
+  var delay = baseRest(function(func, wait, args) {
+    return baseDelay(func, toNumber(wait) || 0, args);
+  });
+
+  /**
+   * Creates a function that negates the result of the predicate `func`. The
+   * `func` predicate is invoked with the `this` binding and arguments of the
+   * created function.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Function
+   * @param {Function} predicate The predicate to negate.
+   * @returns {Function} Returns the new negated function.
+   * @example
+   *
+   * function isEven(n) {
+   *   return n % 2 == 0;
+   * }
+   *
+   * _.filter([1, 2, 3, 4, 5, 6], _.negate(isEven));
+   * // => [1, 3, 5]
+   */
+  function negate(predicate) {
+    if (typeof predicate != 'function') {
+      throw new TypeError(FUNC_ERROR_TEXT);
+    }
+    return function() {
+      var args = arguments;
+      return !predicate.apply(this, args);
+    };
+  }
+
+  /**
+   * Creates a function that is restricted to invoking `func` once. Repeat calls
+   * to the function return the value of the first invocation. The `func` is
+   * invoked with the `this` binding and arguments of the created function.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Function
+   * @param {Function} func The function to restrict.
+   * @returns {Function} Returns the new restricted function.
+   * @example
+   *
+   * var initialize = _.once(createApplication);
+   * initialize();
+   * initialize();
+   * // => `createApplication` is invoked once
+   */
+  function once(func) {
+    return before(2, func);
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Creates a shallow clone of `value`.
+   *
+   * **Note:** This method is loosely based on the
+   * [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
+   * and supports cloning arrays, array buffers, booleans, date objects, maps,
+   * numbers, `Object` objects, regexes, sets, strings, symbols, and typed
+   * arrays. The own enumerable properties of `arguments` objects are cloned
+   * as plain objects. An empty object is returned for uncloneable values such
+   * as error objects, functions, DOM nodes, and WeakMaps.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to clone.
+   * @returns {*} Returns the cloned value.
+   * @see _.cloneDeep
+   * @example
+   *
+   * var objects = [{ 'a': 1 }, { 'b': 2 }];
+   *
+   * var shallow = _.clone(objects);
+   * console.log(shallow[0] === objects[0]);
+   * // => true
+   */
+  function clone(value) {
+    if (!isObject(value)) {
+      return value;
+    }
+    return isArray(value) ? copyArray(value) : copyObject(value, nativeKeys(value));
+  }
+
+  /**
+   * Performs a
+   * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+   * comparison between two values to determine if they are equivalent.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+   * @example
+   *
+   * var object = { 'a': 1 };
+   * var other = { 'a': 1 };
+   *
+   * _.eq(object, object);
+   * // => true
+   *
+   * _.eq(object, other);
+   * // => false
+   *
+   * _.eq('a', 'a');
+   * // => true
+   *
+   * _.eq('a', Object('a'));
+   * // => false
+   *
+   * _.eq(NaN, NaN);
+   * // => true
+   */
+  function eq(value, other) {
+    return value === other || (value !== value && other !== other);
+  }
+
+  /**
+   * Checks if `value` is likely an `arguments` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+   *  else `false`.
+   * @example
+   *
+   * _.isArguments(function() { return arguments; }());
+   * // => true
+   *
+   * _.isArguments([1, 2, 3]);
+   * // => false
+   */
+  var isArguments = baseIsArguments(function() { return arguments; }()) ? baseIsArguments : function(value) {
+    return isObjectLike(value) && hasOwnProperty.call(value, 'callee') &&
+      !propertyIsEnumerable.call(value, 'callee');
+  };
+
+  /**
+   * Checks if `value` is classified as an `Array` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+   * @example
+   *
+   * _.isArray([1, 2, 3]);
+   * // => true
+   *
+   * _.isArray(document.body.children);
+   * // => false
+   *
+   * _.isArray('abc');
+   * // => false
+   *
+   * _.isArray(_.noop);
+   * // => false
+   */
+  var isArray = Array.isArray;
+
+  /**
+   * Checks if `value` is array-like. A value is considered array-like if it's
+   * not a function and has a `value.length` that's an integer greater than or
+   * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+   * @example
+   *
+   * _.isArrayLike([1, 2, 3]);
+   * // => true
+   *
+   * _.isArrayLike(document.body.children);
+   * // => true
+   *
+   * _.isArrayLike('abc');
+   * // => true
+   *
+   * _.isArrayLike(_.noop);
+   * // => false
+   */
+  function isArrayLike(value) {
+    return value != null && isLength(value.length) && !isFunction(value);
+  }
+
+  /**
+   * Checks if `value` is classified as a boolean primitive or object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a boolean, else `false`.
+   * @example
+   *
+   * _.isBoolean(false);
+   * // => true
+   *
+   * _.isBoolean(null);
+   * // => false
+   */
+  function isBoolean(value) {
+    return value === true || value === false ||
+      (isObjectLike(value) && baseGetTag(value) == boolTag);
+  }
+
+  /**
+   * Checks if `value` is classified as a `Date` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
+   * @example
+   *
+   * _.isDate(new Date);
+   * // => true
+   *
+   * _.isDate('Mon April 23 2012');
+   * // => false
+   */
+  var isDate = baseIsDate;
+
+  /**
+   * Checks if `value` is an empty object, collection, map, or set.
+   *
+   * Objects are considered empty if they have no own enumerable string keyed
+   * properties.
+   *
+   * Array-like values such as `arguments` objects, arrays, buffers, strings, or
+   * jQuery-like collections are considered empty if they have a `length` of `0`.
+   * Similarly, maps and sets are considered empty if they have a `size` of `0`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is empty, else `false`.
+   * @example
+   *
+   * _.isEmpty(null);
+   * // => true
+   *
+   * _.isEmpty(true);
+   * // => true
+   *
+   * _.isEmpty(1);
+   * // => true
+   *
+   * _.isEmpty([1, 2, 3]);
+   * // => false
+   *
+   * _.isEmpty({ 'a': 1 });
+   * // => false
+   */
+  function isEmpty(value) {
+    if (isArrayLike(value) &&
+        (isArray(value) || isString(value) ||
+          isFunction(value.splice) || isArguments(value))) {
+      return !value.length;
+    }
+    return !nativeKeys(value).length;
+  }
+
+  /**
+   * Performs a deep comparison between two values to determine if they are
+   * equivalent.
+   *
+   * **Note:** This method supports comparing arrays, array buffers, booleans,
+   * date objects, error objects, maps, numbers, `Object` objects, regexes,
+   * sets, strings, symbols, and typed arrays. `Object` objects are compared
+   * by their own, not inherited, enumerable properties. Functions and DOM
+   * nodes are compared by strict equality, i.e. `===`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+   * @example
+   *
+   * var object = { 'a': 1 };
+   * var other = { 'a': 1 };
+   *
+   * _.isEqual(object, other);
+   * // => true
+   *
+   * object === other;
+   * // => false
+   */
+  function isEqual(value, other) {
+    return baseIsEqual(value, other);
+  }
+
+  /**
+   * Checks if `value` is a finite primitive number.
+   *
+   * **Note:** This method is based on
+   * [`Number.isFinite`](https://mdn.io/Number/isFinite).
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a finite number, else `false`.
+   * @example
+   *
+   * _.isFinite(3);
+   * // => true
+   *
+   * _.isFinite(Number.MIN_VALUE);
+   * // => true
+   *
+   * _.isFinite(Infinity);
+   * // => false
+   *
+   * _.isFinite('3');
+   * // => false
+   */
+  function isFinite(value) {
+    return typeof value == 'number' && nativeIsFinite(value);
+  }
+
+  /**
+   * Checks if `value` is classified as a `Function` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+   * @example
+   *
+   * _.isFunction(_);
+   * // => true
+   *
+   * _.isFunction(/abc/);
+   * // => false
+   */
+  function isFunction(value) {
+    if (!isObject(value)) {
+      return false;
+    }
+    // The use of `Object#toString` avoids issues with the `typeof` operator
+    // in Safari 9 which returns 'object' for typed arrays and other constructors.
+    var tag = baseGetTag(value);
+    return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+  }
+
+  /**
+   * Checks if `value` is a valid array-like length.
+   *
+   * **Note:** This method is loosely based on
+   * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+   * @example
+   *
+   * _.isLength(3);
+   * // => true
+   *
+   * _.isLength(Number.MIN_VALUE);
+   * // => false
+   *
+   * _.isLength(Infinity);
+   * // => false
+   *
+   * _.isLength('3');
+   * // => false
+   */
+  function isLength(value) {
+    return typeof value == 'number' &&
+      value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+
+  /**
+   * Checks if `value` is the
+   * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+   * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+   * @example
+   *
+   * _.isObject({});
+   * // => true
+   *
+   * _.isObject([1, 2, 3]);
+   * // => true
+   *
+   * _.isObject(_.noop);
+   * // => true
+   *
+   * _.isObject(null);
+   * // => false
+   */
+  function isObject(value) {
+    var type = typeof value;
+    return value != null && (type == 'object' || type == 'function');
+  }
+
+  /**
+   * Checks if `value` is object-like. A value is object-like if it's not `null`
+   * and has a `typeof` result of "object".
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+   * @example
+   *
+   * _.isObjectLike({});
+   * // => true
+   *
+   * _.isObjectLike([1, 2, 3]);
+   * // => true
+   *
+   * _.isObjectLike(_.noop);
+   * // => false
+   *
+   * _.isObjectLike(null);
+   * // => false
+   */
+  function isObjectLike(value) {
+    return value != null && typeof value == 'object';
+  }
+
+  /**
+   * Checks if `value` is `NaN`.
+   *
+   * **Note:** This method is based on
+   * [`Number.isNaN`](https://mdn.io/Number/isNaN) and is not the same as
+   * global [`isNaN`](https://mdn.io/isNaN) which returns `true` for
+   * `undefined` and other non-number values.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is `NaN`, else `false`.
+   * @example
+   *
+   * _.isNaN(NaN);
+   * // => true
+   *
+   * _.isNaN(new Number(NaN));
+   * // => true
+   *
+   * isNaN(undefined);
+   * // => true
+   *
+   * _.isNaN(undefined);
+   * // => false
+   */
+  function isNaN(value) {
+    // An `NaN` primitive is the only value that is not equal to itself.
+    // Perform the `toStringTag` check first to avoid errors with some
+    // ActiveX objects in IE.
+    return isNumber(value) && value != +value;
+  }
+
+  /**
+   * Checks if `value` is `null`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is `null`, else `false`.
+   * @example
+   *
+   * _.isNull(null);
+   * // => true
+   *
+   * _.isNull(void 0);
+   * // => false
+   */
+  function isNull(value) {
+    return value === null;
+  }
+
+  /**
+   * Checks if `value` is classified as a `Number` primitive or object.
+   *
+   * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
+   * classified as numbers, use the `_.isFinite` method.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a number, else `false`.
+   * @example
+   *
+   * _.isNumber(3);
+   * // => true
+   *
+   * _.isNumber(Number.MIN_VALUE);
+   * // => true
+   *
+   * _.isNumber(Infinity);
+   * // => true
+   *
+   * _.isNumber('3');
+   * // => false
+   */
+  function isNumber(value) {
+    return typeof value == 'number' ||
+      (isObjectLike(value) && baseGetTag(value) == numberTag);
+  }
+
+  /**
+   * Checks if `value` is classified as a `RegExp` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.
+   * @example
+   *
+   * _.isRegExp(/abc/);
+   * // => true
+   *
+   * _.isRegExp('/abc/');
+   * // => false
+   */
+  var isRegExp = baseIsRegExp;
+
+  /**
+   * Checks if `value` is classified as a `String` primitive or object.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a string, else `false`.
+   * @example
+   *
+   * _.isString('abc');
+   * // => true
+   *
+   * _.isString(1);
+   * // => false
+   */
+  function isString(value) {
+    return typeof value == 'string' ||
+      (!isArray(value) && isObjectLike(value) && baseGetTag(value) == stringTag);
+  }
+
+  /**
+   * Checks if `value` is `undefined`.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is `undefined`, else `false`.
+   * @example
+   *
+   * _.isUndefined(void 0);
+   * // => true
+   *
+   * _.isUndefined(null);
+   * // => false
+   */
+  function isUndefined(value) {
+    return value === undefined;
+  }
+
+  /**
+   * Converts `value` to an array.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Lang
+   * @param {*} value The value to convert.
+   * @returns {Array} Returns the converted array.
+   * @example
+   *
+   * _.toArray({ 'a': 1, 'b': 2 });
+   * // => [1, 2]
+   *
+   * _.toArray('abc');
+   * // => ['a', 'b', 'c']
+   *
+   * _.toArray(1);
+   * // => []
+   *
+   * _.toArray(null);
+   * // => []
+   */
+  function toArray(value) {
+    if (!isArrayLike(value)) {
+      return values(value);
+    }
+    return value.length ? copyArray(value) : [];
+  }
+
+  /**
+   * Converts `value` to an integer.
+   *
+   * **Note:** This method is loosely based on
+   * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to convert.
+   * @returns {number} Returns the converted integer.
+   * @example
+   *
+   * _.toInteger(3.2);
+   * // => 3
+   *
+   * _.toInteger(Number.MIN_VALUE);
+   * // => 0
+   *
+   * _.toInteger(Infinity);
+   * // => 1.7976931348623157e+308
+   *
+   * _.toInteger('3.2');
+   * // => 3
+   */
+  var toInteger = Number;
+
+  /**
+   * Converts `value` to a number.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to process.
+   * @returns {number} Returns the number.
+   * @example
+   *
+   * _.toNumber(3.2);
+   * // => 3.2
+   *
+   * _.toNumber(Number.MIN_VALUE);
+   * // => 5e-324
+   *
+   * _.toNumber(Infinity);
+   * // => Infinity
+   *
+   * _.toNumber('3.2');
+   * // => 3.2
+   */
+  var toNumber = Number;
+
+  /**
+   * Converts `value` to a string. An empty string is returned for `null`
+   * and `undefined` values. The sign of `-0` is preserved.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to convert.
+   * @returns {string} Returns the converted string.
+   * @example
+   *
+   * _.toString(null);
+   * // => ''
+   *
+   * _.toString(-0);
+   * // => '-0'
+   *
+   * _.toString([1, 2, 3]);
+   * // => '1,2,3'
+   */
+  function toString(value) {
+    if (typeof value == 'string') {
+      return value;
+    }
+    return value == null ? '' : (value + '');
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Assigns own enumerable string keyed properties of source objects to the
+   * destination object. Source objects are applied from left to right.
+   * Subsequent sources overwrite property assignments of previous sources.
+   *
+   * **Note:** This method mutates `object` and is loosely based on
+   * [`Object.assign`](https://mdn.io/Object/assign).
+   *
+   * @static
+   * @memberOf _
+   * @since 0.10.0
+   * @category Object
+   * @param {Object} object The destination object.
+   * @param {...Object} [sources] The source objects.
+   * @returns {Object} Returns `object`.
+   * @see _.assignIn
+   * @example
+   *
+   * function Foo() {
+   *   this.a = 1;
+   * }
+   *
+   * function Bar() {
+   *   this.c = 3;
+   * }
+   *
+   * Foo.prototype.b = 2;
+   * Bar.prototype.d = 4;
+   *
+   * _.assign({ 'a': 0 }, new Foo, new Bar);
+   * // => { 'a': 1, 'c': 3 }
+   */
+  var assign = createAssigner(function(object, source) {
+    copyObject(source, nativeKeys(source), object);
+  });
+
+  /**
+   * This method is like `_.assign` except that it iterates over own and
+   * inherited source properties.
+   *
+   * **Note:** This method mutates `object`.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @alias extend
+   * @category Object
+   * @param {Object} object The destination object.
+   * @param {...Object} [sources] The source objects.
+   * @returns {Object} Returns `object`.
+   * @see _.assign
+   * @example
+   *
+   * function Foo() {
+   *   this.a = 1;
+   * }
+   *
+   * function Bar() {
+   *   this.c = 3;
+   * }
+   *
+   * Foo.prototype.b = 2;
+   * Bar.prototype.d = 4;
+   *
+   * _.assignIn({ 'a': 0 }, new Foo, new Bar);
+   * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
+   */
+  var assignIn = createAssigner(function(object, source) {
+    copyObject(source, nativeKeysIn(source), object);
+  });
+
+  /**
+   * Creates an object that inherits from the `prototype` object. If a
+   * `properties` object is given, its own enumerable string keyed properties
+   * are assigned to the created object.
+   *
+   * @static
+   * @memberOf _
+   * @since 2.3.0
+   * @category Object
+   * @param {Object} prototype The object to inherit from.
+   * @param {Object} [properties] The properties to assign to the object.
+   * @returns {Object} Returns the new object.
+   * @example
+   *
+   * function Shape() {
+   *   this.x = 0;
+   *   this.y = 0;
+   * }
+   *
+   * function Circle() {
+   *   Shape.call(this);
+   * }
+   *
+   * Circle.prototype = _.create(Shape.prototype, {
+   *   'constructor': Circle
+   * });
+   *
+   * var circle = new Circle;
+   * circle instanceof Circle;
+   * // => true
+   *
+   * circle instanceof Shape;
+   * // => true
+   */
+  function create(prototype, properties) {
+    var result = baseCreate(prototype);
+    return properties == null ? result : assign(result, properties);
+  }
+
+  /**
+   * Assigns own and inherited enumerable string keyed properties of source
+   * objects to the destination object for all destination properties that
+   * resolve to `undefined`. Source objects are applied from left to right.
+   * Once a property is set, additional values of the same property are ignored.
+   *
+   * **Note:** This method mutates `object`.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Object
+   * @param {Object} object The destination object.
+   * @param {...Object} [sources] The source objects.
+   * @returns {Object} Returns `object`.
+   * @see _.defaultsDeep
+   * @example
+   *
+   * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+   * // => { 'a': 1, 'b': 2 }
+   */
+  var defaults = baseRest(function(object, sources) {
+    object = Object(object);
+
+    var index = -1;
+    var length = sources.length;
+    var guard = length > 2 ? sources[2] : undefined;
+
+    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+      length = 1;
+    }
+
+    while (++index < length) {
+      var source = sources[index];
+      var props = keysIn(source);
+      var propsIndex = -1;
+      var propsLength = props.length;
+
+      while (++propsIndex < propsLength) {
+        var key = props[propsIndex];
+        var value = object[key];
+
+        if (value === undefined ||
+            (eq(value, objectProto[key]) && !hasOwnProperty.call(object, key))) {
+          object[key] = source[key];
+        }
+      }
+    }
+
+    return object;
+  });
+
+  /**
+   * Checks if `path` is a direct property of `object`.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Object
+   * @param {Object} object The object to query.
+   * @param {Array|string} path The path to check.
+   * @returns {boolean} Returns `true` if `path` exists, else `false`.
+   * @example
+   *
+   * var object = { 'a': { 'b': 2 } };
+   * var other = _.create({ 'a': _.create({ 'b': 2 }) });
+   *
+   * _.has(object, 'a');
+   * // => true
+   *
+   * _.has(object, 'a.b');
+   * // => true
+   *
+   * _.has(object, ['a', 'b']);
+   * // => true
+   *
+   * _.has(other, 'a');
+   * // => false
+   */
+  function has(object, path) {
+    return object != null && hasOwnProperty.call(object, path);
+  }
+
+  /**
+   * Creates an array of the own enumerable property names of `object`.
+   *
+   * **Note:** Non-object values are coerced to objects. See the
+   * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+   * for more details.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Object
+   * @param {Object} object The object to query.
+   * @returns {Array} Returns the array of property names.
+   * @example
+   *
+   * function Foo() {
+   *   this.a = 1;
+   *   this.b = 2;
+   * }
+   *
+   * Foo.prototype.c = 3;
+   *
+   * _.keys(new Foo);
+   * // => ['a', 'b'] (iteration order is not guaranteed)
+   *
+   * _.keys('hi');
+   * // => ['0', '1']
+   */
+  var keys = nativeKeys;
+
+  /**
+   * Creates an array of the own and inherited enumerable property names of `object`.
+   *
+   * **Note:** Non-object values are coerced to objects.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Object
+   * @param {Object} object The object to query.
+   * @returns {Array} Returns the array of property names.
+   * @example
+   *
+   * function Foo() {
+   *   this.a = 1;
+   *   this.b = 2;
+   * }
+   *
+   * Foo.prototype.c = 3;
+   *
+   * _.keysIn(new Foo);
+   * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+   */
+  var keysIn = nativeKeysIn;
+
+  /**
+   * Creates an object composed of the picked `object` properties.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Object
+   * @param {Object} object The source object.
+   * @param {...(string|string[])} [paths] The property paths to pick.
+   * @returns {Object} Returns the new object.
+   * @example
+   *
+   * var object = { 'a': 1, 'b': '2', 'c': 3 };
+   *
+   * _.pick(object, ['a', 'c']);
+   * // => { 'a': 1, 'c': 3 }
+   */
+  var pick = flatRest(function(object, paths) {
+    return object == null ? {} : basePick(object, paths);
+  });
+
+  /**
+   * This method is like `_.get` except that if the resolved value is a
+   * function it's invoked with the `this` binding of its parent object and
+   * its result is returned.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Object
+   * @param {Object} object The object to query.
+   * @param {Array|string} path The path of the property to resolve.
+   * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+   * @returns {*} Returns the resolved value.
+   * @example
+   *
+   * var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+   *
+   * _.result(object, 'a[0].b.c1');
+   * // => 3
+   *
+   * _.result(object, 'a[0].b.c2');
+   * // => 4
+   *
+   * _.result(object, 'a[0].b.c3', 'default');
+   * // => 'default'
+   *
+   * _.result(object, 'a[0].b.c3', _.constant('default'));
+   * // => 'default'
+   */
+  function result(object, path, defaultValue) {
+    var value = object == null ? undefined : object[path];
+    if (value === undefined) {
+      value = defaultValue;
+    }
+    return isFunction(value) ? value.call(object) : value;
+  }
+
+  /**
+   * Creates an array of the own enumerable string keyed property values of `object`.
+   *
+   * **Note:** Non-object values are coerced to objects.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Object
+   * @param {Object} object The object to query.
+   * @returns {Array} Returns the array of property values.
+   * @example
+   *
+   * function Foo() {
+   *   this.a = 1;
+   *   this.b = 2;
+   * }
+   *
+   * Foo.prototype.c = 3;
+   *
+   * _.values(new Foo);
+   * // => [1, 2] (iteration order is not guaranteed)
+   *
+   * _.values('hi');
+   * // => ['h', 'i']
+   */
+  function values(object) {
+    return object == null ? [] : baseValues(object, keys(object));
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Converts the characters "&", "<", ">", '"', and "'" in `string` to their
+   * corresponding HTML entities.
+   *
+   * **Note:** No other characters are escaped. To escape additional
+   * characters use a third-party library like [_he_](https://mths.be/he).
+   *
+   * Though the ">" character is escaped for symmetry, characters like
+   * ">" and "/" don't need escaping in HTML and have no special meaning
+   * unless they're part of a tag or unquoted attribute value. See
+   * [Mathias Bynens's article](https://mathiasbynens.be/notes/ambiguous-ampersands)
+   * (under "semi-related fun fact") for more details.
+   *
+   * When working with HTML you should always
+   * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+   * XSS vectors.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category String
+   * @param {string} [string=''] The string to escape.
+   * @returns {string} Returns the escaped string.
+   * @example
+   *
+   * _.escape('fred, barney, & pebbles');
+   * // => 'fred, barney, &amp; pebbles'
+   */
+  function escape(string) {
+    string = toString(string);
+    return (string && reHasUnescapedHtml.test(string))
+      ? string.replace(reUnescapedHtml, escapeHtmlChar)
+      : string;
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * This method returns the first argument it receives.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Util
+   * @param {*} value Any value.
+   * @returns {*} Returns `value`.
+   * @example
+   *
+   * var object = { 'a': 1 };
+   *
+   * console.log(_.identity(object) === object);
+   * // => true
+   */
+  function identity(value) {
+    return value;
+  }
+
+  /**
+   * Creates a function that invokes `func` with the arguments of the created
+   * function. If `func` is a property name, the created function returns the
+   * property value for a given element. If `func` is an array or object, the
+   * created function returns `true` for elements that contain the equivalent
+   * source properties, otherwise it returns `false`.
+   *
+   * @static
+   * @since 4.0.0
+   * @memberOf _
+   * @category Util
+   * @param {*} [func=_.identity] The value to convert to a callback.
+   * @returns {Function} Returns the callback.
+   * @example
+   *
+   * var users = [
+   *   { 'user': 'barney', 'age': 36, 'active': true },
+   *   { 'user': 'fred',   'age': 40, 'active': false }
+   * ];
+   *
+   * // The `_.matches` iteratee shorthand.
+   * _.filter(users, _.iteratee({ 'user': 'barney', 'active': true }));
+   * // => [{ 'user': 'barney', 'age': 36, 'active': true }]
+   *
+   * // The `_.matchesProperty` iteratee shorthand.
+   * _.filter(users, _.iteratee(['user', 'fred']));
+   * // => [{ 'user': 'fred', 'age': 40 }]
+   *
+   * // The `_.property` iteratee shorthand.
+   * _.map(users, _.iteratee('user'));
+   * // => ['barney', 'fred']
+   *
+   * // Create custom iteratee shorthands.
+   * _.iteratee = _.wrap(_.iteratee, function(iteratee, func) {
+   *   return !_.isRegExp(func) ? iteratee(func) : function(string) {
+   *     return func.test(string);
+   *   };
+   * });
+   *
+   * _.filter(['abc', 'def'], /ef/);
+   * // => ['def']
+   */
+  var iteratee = baseIteratee;
+
+  /**
+   * Creates a function that performs a partial deep comparison between a given
+   * object and `source`, returning `true` if the given object has equivalent
+   * property values, else `false`.
+   *
+   * **Note:** The created function is equivalent to `_.isMatch` with `source`
+   * partially applied.
+   *
+   * Partial comparisons will match empty array and empty object `source`
+   * values against any array or object value, respectively. See `_.isEqual`
+   * for a list of supported value comparisons.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.0.0
+   * @category Util
+   * @param {Object} source The object of property values to match.
+   * @returns {Function} Returns the new spec function.
+   * @example
+   *
+   * var objects = [
+   *   { 'a': 1, 'b': 2, 'c': 3 },
+   *   { 'a': 4, 'b': 5, 'c': 6 }
+   * ];
+   *
+   * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
+   * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+   */
+  function matches(source) {
+    return baseMatches(assign({}, source));
+  }
+
+  /**
+   * Adds all own enumerable string keyed function properties of a source
+   * object to the destination object. If `object` is a function, then methods
+   * are added to its prototype as well.
+   *
+   * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
+   * avoid conflicts caused by modifying the original.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Util
+   * @param {Function|Object} [object=lodash] The destination object.
+   * @param {Object} source The object of functions to add.
+   * @param {Object} [options={}] The options object.
+   * @param {boolean} [options.chain=true] Specify whether mixins are chainable.
+   * @returns {Function|Object} Returns `object`.
+   * @example
+   *
+   * function vowels(string) {
+   *   return _.filter(string, function(v) {
+   *     return /[aeiou]/i.test(v);
+   *   });
+   * }
+   *
+   * _.mixin({ 'vowels': vowels });
+   * _.vowels('fred');
+   * // => ['e']
+   *
+   * _('fred').vowels().value();
+   * // => ['e']
+   *
+   * _.mixin({ 'vowels': vowels }, { 'chain': false });
+   * _('fred').vowels();
+   * // => ['e']
+   */
+  function mixin(object, source, options) {
+    var props = keys(source),
+        methodNames = baseFunctions(source, props);
+
+    if (options == null &&
+        !(isObject(source) && (methodNames.length || !props.length))) {
+      options = source;
+      source = object;
+      object = this;
+      methodNames = baseFunctions(source, keys(source));
+    }
+    var chain = !(isObject(options) && 'chain' in options) || !!options.chain,
+        isFunc = isFunction(object);
+
+    baseEach(methodNames, function(methodName) {
+      var func = source[methodName];
+      object[methodName] = func;
+      if (isFunc) {
+        object.prototype[methodName] = function() {
+          var chainAll = this.__chain__;
+          if (chain || chainAll) {
+            var result = object(this.__wrapped__),
+                actions = result.__actions__ = copyArray(this.__actions__);
+
+            actions.push({ 'func': func, 'args': arguments, 'thisArg': object });
+            result.__chain__ = chainAll;
+            return result;
+          }
+          return func.apply(object, arrayPush([this.value()], arguments));
+        };
+      }
+    });
+
+    return object;
+  }
+
+  /**
+   * Reverts the `_` variable to its previous value and returns a reference to
+   * the `lodash` function.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Util
+   * @returns {Function} Returns the `lodash` function.
+   * @example
+   *
+   * var lodash = _.noConflict();
+   */
+  function noConflict() {
+    if (root._ === this) {
+      root._ = oldDash;
+    }
+    return this;
+  }
+
+  /**
+   * This method returns `undefined`.
+   *
+   * @static
+   * @memberOf _
+   * @since 2.3.0
+   * @category Util
+   * @example
+   *
+   * _.times(2, _.noop);
+   * // => [undefined, undefined]
+   */
+  function noop() {
+    // No operation performed.
+  }
+
+  /**
+   * Generates a unique ID. If `prefix` is given, the ID is appended to it.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Util
+   * @param {string} [prefix=''] The value to prefix the ID with.
+   * @returns {string} Returns the unique ID.
+   * @example
+   *
+   * _.uniqueId('contact_');
+   * // => 'contact_104'
+   *
+   * _.uniqueId();
+   * // => '105'
+   */
+  function uniqueId(prefix) {
+    var id = ++idCounter;
+    return toString(prefix) + id;
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * Computes the maximum value of `array`. If `array` is empty or falsey,
+   * `undefined` is returned.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Math
+   * @param {Array} array The array to iterate over.
+   * @returns {*} Returns the maximum value.
+   * @example
+   *
+   * _.max([4, 2, 8, 6]);
+   * // => 8
+   *
+   * _.max([]);
+   * // => undefined
+   */
+  function max(array) {
+    return (array && array.length)
+      ? baseExtremum(array, identity, baseGt)
+      : undefined;
+  }
+
+  /**
+   * Computes the minimum value of `array`. If `array` is empty or falsey,
+   * `undefined` is returned.
+   *
+   * @static
+   * @since 0.1.0
+   * @memberOf _
+   * @category Math
+   * @param {Array} array The array to iterate over.
+   * @returns {*} Returns the minimum value.
+   * @example
+   *
+   * _.min([4, 2, 8, 6]);
+   * // => 2
+   *
+   * _.min([]);
+   * // => undefined
+   */
+  function min(array) {
+    return (array && array.length)
+      ? baseExtremum(array, identity, baseLt)
+      : undefined;
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  // Add methods that return wrapped values in chain sequences.
+  lodash.assignIn = assignIn;
+  lodash.before = before;
+  lodash.bind = bind;
+  lodash.chain = chain;
+  lodash.compact = compact;
+  lodash.concat = concat;
+  lodash.create = create;
+  lodash.defaults = defaults;
+  lodash.defer = defer;
+  lodash.delay = delay;
+  lodash.filter = filter;
+  lodash.flatten = flatten;
+  lodash.flattenDeep = flattenDeep;
+  lodash.iteratee = iteratee;
+  lodash.keys = keys;
+  lodash.map = map;
+  lodash.matches = matches;
+  lodash.mixin = mixin;
+  lodash.negate = negate;
+  lodash.once = once;
+  lodash.pick = pick;
+  lodash.slice = slice;
+  lodash.sortBy = sortBy;
+  lodash.tap = tap;
+  lodash.thru = thru;
+  lodash.toArray = toArray;
+  lodash.values = values;
+
+  // Add aliases.
+  lodash.extend = assignIn;
+
+  // Add methods to `lodash.prototype`.
+  mixin(lodash, lodash);
+
+  /*------------------------------------------------------------------------*/
+
+  // Add methods that return unwrapped values in chain sequences.
+  lodash.clone = clone;
+  lodash.escape = escape;
+  lodash.every = every;
+  lodash.find = find;
+  lodash.forEach = forEach;
+  lodash.has = has;
+  lodash.head = head;
+  lodash.identity = identity;
+  lodash.indexOf = indexOf;
+  lodash.isArguments = isArguments;
+  lodash.isArray = isArray;
+  lodash.isBoolean = isBoolean;
+  lodash.isDate = isDate;
+  lodash.isEmpty = isEmpty;
+  lodash.isEqual = isEqual;
+  lodash.isFinite = isFinite;
+  lodash.isFunction = isFunction;
+  lodash.isNaN = isNaN;
+  lodash.isNull = isNull;
+  lodash.isNumber = isNumber;
+  lodash.isObject = isObject;
+  lodash.isRegExp = isRegExp;
+  lodash.isString = isString;
+  lodash.isUndefined = isUndefined;
+  lodash.last = last;
+  lodash.max = max;
+  lodash.min = min;
+  lodash.noConflict = noConflict;
+  lodash.noop = noop;
+  lodash.reduce = reduce;
+  lodash.result = result;
+  lodash.size = size;
+  lodash.some = some;
+  lodash.uniqueId = uniqueId;
+
+  // Add aliases.
+  lodash.each = forEach;
+  lodash.first = head;
+
+  mixin(lodash, (function() {
+    var source = {};
+    baseForOwn(lodash, function(func, methodName) {
+      if (!hasOwnProperty.call(lodash.prototype, methodName)) {
+        source[methodName] = func;
+      }
+    });
+    return source;
+  }()), { 'chain': false });
+
+  /*------------------------------------------------------------------------*/
+
+  /**
+   * The semantic version number.
+   *
+   * @static
+   * @memberOf _
+   * @type {string}
+   */
+  lodash.VERSION = VERSION;
+
+  // Add `Array` methods to `lodash.prototype`.
+  baseEach(['pop', 'join', 'replace', 'reverse', 'split', 'push', 'shift', 'sort', 'splice', 'unshift'], function(methodName) {
+    var func = (/^(?:replace|split)$/.test(methodName) ? String.prototype : arrayProto)[methodName],
+        chainName = /^(?:push|sort|unshift)$/.test(methodName) ? 'tap' : 'thru',
+        retUnwrapped = /^(?:pop|join|replace|shift)$/.test(methodName);
+
+    lodash.prototype[methodName] = function() {
+      var args = arguments;
+      if (retUnwrapped && !this.__chain__) {
+        var value = this.value();
+        return func.apply(isArray(value) ? value : [], args);
+      }
+      return this[chainName](function(value) {
+        return func.apply(isArray(value) ? value : [], args);
+      });
+    };
+  });
+
+  // Add chain sequence methods to the `lodash` wrapper.
+  lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wrapperValue;
+
+  /*--------------------------------------------------------------------------*/
+
+  // Some AMD build optimizers, like r.js, check for condition patterns like:
+  if (true) {
+    // Expose Lodash on the global object to prevent errors when Lodash is
+    // loaded by a script tag in the presence of an AMD loader.
+    // See http://requirejs.org/docs/errors.html#mismatch for more details.
+    // Use `_.noConflict` to remove Lodash from the global object.
+    root._ = lodash;
+
+    // Define as an anonymous module so, through path mapping, it can be
+    // referenced as the "underscore" module.
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+      return lodash;
+    }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  }
+  // Check for `exports` after `define` in case a build optimizer adds it.
+  else {}
+}.call(this));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/validate.js/validate.js":
+/*!**********************************************!*\
+  !*** ./node_modules/validate.js/validate.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module) {/*!
+ * validate.js 0.13.1
+ *
+ * (c) 2013-2019 Nicklas Ansman, 2013 Wrapp
+ * Validate.js may be freely distributed under the MIT license.
+ * For all details and documentation:
+ * http://validatejs.org/
+ */
+
+(function(exports, module, define) {
+  "use strict";
+
+  // The main function that calls the validators specified by the constraints.
+  // The options are the following:
+  //   - format (string) - An option that controls how the returned value is formatted
+  //     * flat - Returns a flat array of just the error messages
+  //     * grouped - Returns the messages grouped by attribute (default)
+  //     * detailed - Returns an array of the raw validation data
+  //   - fullMessages (boolean) - If `true` (default) the attribute name is prepended to the error.
+  //
+  // Please note that the options are also passed to each validator.
+  var validate = function(attributes, constraints, options) {
+    options = v.extend({}, v.options, options);
+
+    var results = v.runValidations(attributes, constraints, options)
+      , attr
+      , validator;
+
+    if (results.some(function(r) { return v.isPromise(r.error); })) {
+      throw new Error("Use validate.async if you want support for promises");
+    }
+    return validate.processValidationResults(results, options);
+  };
+
+  var v = validate;
+
+  // Copies over attributes from one or more sources to a single destination.
+  // Very much similar to underscore's extend.
+  // The first argument is the target object and the remaining arguments will be
+  // used as sources.
+  v.extend = function(obj) {
+    [].slice.call(arguments, 1).forEach(function(source) {
+      for (var attr in source) {
+        obj[attr] = source[attr];
+      }
+    });
+    return obj;
+  };
+
+  v.extend(validate, {
+    // This is the version of the library as a semver.
+    // The toString function will allow it to be coerced into a string
+    version: {
+      major: 0,
+      minor: 13,
+      patch: 1,
+      metadata: null,
+      toString: function() {
+        var version = v.format("%{major}.%{minor}.%{patch}", v.version);
+        if (!v.isEmpty(v.version.metadata)) {
+          version += "+" + v.version.metadata;
+        }
+        return version;
+      }
+    },
+
+    // Below is the dependencies that are used in validate.js
+
+    // The constructor of the Promise implementation.
+    // If you are using Q.js, RSVP or any other A+ compatible implementation
+    // override this attribute to be the constructor of that promise.
+    // Since jQuery promises aren't A+ compatible they won't work.
+    Promise: typeof Promise !== "undefined" ? Promise : /* istanbul ignore next */ null,
+
+    EMPTY_STRING_REGEXP: /^\s*$/,
+
+    // Runs the validators specified by the constraints object.
+    // Will return an array of the format:
+    //     [{attribute: "<attribute name>", error: "<validation result>"}, ...]
+    runValidations: function(attributes, constraints, options) {
+      var results = []
+        , attr
+        , validatorName
+        , value
+        , validators
+        , validator
+        , validatorOptions
+        , error;
+
+      if (v.isDomElement(attributes) || v.isJqueryElement(attributes)) {
+        attributes = v.collectFormValues(attributes);
+      }
+
+      // Loops through each constraints, finds the correct validator and run it.
+      for (attr in constraints) {
+        value = v.getDeepObjectValue(attributes, attr);
+        // This allows the constraints for an attribute to be a function.
+        // The function will be called with the value, attribute name, the complete dict of
+        // attributes as well as the options and constraints passed in.
+        // This is useful when you want to have different
+        // validations depending on the attribute value.
+        validators = v.result(constraints[attr], value, attributes, attr, options, constraints);
+
+        for (validatorName in validators) {
+          validator = v.validators[validatorName];
+
+          if (!validator) {
+            error = v.format("Unknown validator %{name}", {name: validatorName});
+            throw new Error(error);
+          }
+
+          validatorOptions = validators[validatorName];
+          // This allows the options to be a function. The function will be
+          // called with the value, attribute name, the complete dict of
+          // attributes as well as the options and constraints passed in.
+          // This is useful when you want to have different
+          // validations depending on the attribute value.
+          validatorOptions = v.result(validatorOptions, value, attributes, attr, options, constraints);
+          if (!validatorOptions) {
+            continue;
+          }
+          results.push({
+            attribute: attr,
+            value: value,
+            validator: validatorName,
+            globalOptions: options,
+            attributes: attributes,
+            options: validatorOptions,
+            error: validator.call(validator,
+                value,
+                validatorOptions,
+                attr,
+                attributes,
+                options)
+          });
+        }
+      }
+
+      return results;
+    },
+
+    // Takes the output from runValidations and converts it to the correct
+    // output format.
+    processValidationResults: function(errors, options) {
+      errors = v.pruneEmptyErrors(errors, options);
+      errors = v.expandMultipleErrors(errors, options);
+      errors = v.convertErrorMessages(errors, options);
+
+      var format = options.format || "grouped";
+
+      if (typeof v.formatters[format] === 'function') {
+        errors = v.formatters[format](errors);
+      } else {
+        throw new Error(v.format("Unknown format %{format}", options));
+      }
+
+      return v.isEmpty(errors) ? undefined : errors;
+    },
+
+    // Runs the validations with support for promises.
+    // This function will return a promise that is settled when all the
+    // validation promises have been completed.
+    // It can be called even if no validations returned a promise.
+    async: function(attributes, constraints, options) {
+      options = v.extend({}, v.async.options, options);
+
+      var WrapErrors = options.wrapErrors || function(errors) {
+        return errors;
+      };
+
+      // Removes unknown attributes
+      if (options.cleanAttributes !== false) {
+        attributes = v.cleanAttributes(attributes, constraints);
+      }
+
+      var results = v.runValidations(attributes, constraints, options);
+
+      return new v.Promise(function(resolve, reject) {
+        v.waitForResults(results).then(function() {
+          var errors = v.processValidationResults(results, options);
+          if (errors) {
+            reject(new WrapErrors(errors, options, attributes, constraints));
+          } else {
+            resolve(attributes);
+          }
+        }, function(err) {
+          reject(err);
+        });
+      });
+    },
+
+    single: function(value, constraints, options) {
+      options = v.extend({}, v.single.options, options, {
+        format: "flat",
+        fullMessages: false
+      });
+      return v({single: value}, {single: constraints}, options);
+    },
+
+    // Returns a promise that is resolved when all promises in the results array
+    // are settled. The promise returned from this function is always resolved,
+    // never rejected.
+    // This function modifies the input argument, it replaces the promises
+    // with the value returned from the promise.
+    waitForResults: function(results) {
+      // Create a sequence of all the results starting with a resolved promise.
+      return results.reduce(function(memo, result) {
+        // If this result isn't a promise skip it in the sequence.
+        if (!v.isPromise(result.error)) {
+          return memo;
+        }
+
+        return memo.then(function() {
+          return result.error.then(function(error) {
+            result.error = error || null;
+          });
+        });
+      }, new v.Promise(function(r) { r(); })); // A resolved promise
+    },
+
+    // If the given argument is a call: function the and: function return the value
+    // otherwise just return the value. Additional arguments will be passed as
+    // arguments to the function.
+    // Example:
+    // ```
+    // result('foo') // 'foo'
+    // result(Math.max, 1, 2) // 2
+    // ```
+    result: function(value) {
+      var args = [].slice.call(arguments, 1);
+      if (typeof value === 'function') {
+        value = value.apply(null, args);
+      }
+      return value;
+    },
+
+    // Checks if the value is a number. This function does not consider NaN a
+    // number like many other `isNumber` functions do.
+    isNumber: function(value) {
+      return typeof value === 'number' && !isNaN(value);
+    },
+
+    // Returns false if the object is not a function
+    isFunction: function(value) {
+      return typeof value === 'function';
+    },
+
+    // A simple check to verify that the value is an integer. Uses `isNumber`
+    // and a simple modulo check.
+    isInteger: function(value) {
+      return v.isNumber(value) && value % 1 === 0;
+    },
+
+    // Checks if the value is a boolean
+    isBoolean: function(value) {
+      return typeof value === 'boolean';
+    },
+
+    // Uses the `Object` function to check if the given argument is an object.
+    isObject: function(obj) {
+      return obj === Object(obj);
+    },
+
+    // Simply checks if the object is an instance of a date
+    isDate: function(obj) {
+      return obj instanceof Date;
+    },
+
+    // Returns false if the object is `null` of `undefined`
+    isDefined: function(obj) {
+      return obj !== null && obj !== undefined;
+    },
+
+    // Checks if the given argument is a promise. Anything with a `then`
+    // function is considered a promise.
+    isPromise: function(p) {
+      return !!p && v.isFunction(p.then);
+    },
+
+    isJqueryElement: function(o) {
+      return o && v.isString(o.jquery);
+    },
+
+    isDomElement: function(o) {
+      if (!o) {
+        return false;
+      }
+
+      if (!o.querySelectorAll || !o.querySelector) {
+        return false;
+      }
+
+      if (v.isObject(document) && o === document) {
+        return true;
+      }
+
+      // http://stackoverflow.com/a/384380/699304
+      /* istanbul ignore else */
+      if (typeof HTMLElement === "object") {
+        return o instanceof HTMLElement;
+      } else {
+        return o &&
+          typeof o === "object" &&
+          o !== null &&
+          o.nodeType === 1 &&
+          typeof o.nodeName === "string";
+      }
+    },
+
+    isEmpty: function(value) {
+      var attr;
+
+      // Null and undefined are empty
+      if (!v.isDefined(value)) {
+        return true;
+      }
+
+      // functions are non empty
+      if (v.isFunction(value)) {
+        return false;
+      }
+
+      // Whitespace only strings are empty
+      if (v.isString(value)) {
+        return v.EMPTY_STRING_REGEXP.test(value);
+      }
+
+      // For arrays we use the length property
+      if (v.isArray(value)) {
+        return value.length === 0;
+      }
+
+      // Dates have no attributes but aren't empty
+      if (v.isDate(value)) {
+        return false;
+      }
+
+      // If we find at least one property we consider it non empty
+      if (v.isObject(value)) {
+        for (attr in value) {
+          return false;
+        }
+        return true;
+      }
+
+      return false;
+    },
+
+    // Formats the specified strings with the given values like so:
+    // ```
+    // format("Foo: %{foo}", {foo: "bar"}) // "Foo bar"
+    // ```
+    // If you want to write %{...} without having it replaced simply
+    // prefix it with % like this `Foo: %%{foo}` and it will be returned
+    // as `"Foo: %{foo}"`
+    format: v.extend(function(str, vals) {
+      if (!v.isString(str)) {
+        return str;
+      }
+      return str.replace(v.format.FORMAT_REGEXP, function(m0, m1, m2) {
+        if (m1 === '%') {
+          return "%{" + m2 + "}";
+        } else {
+          return String(vals[m2]);
+        }
+      });
+    }, {
+      // Finds %{key} style patterns in the given string
+      FORMAT_REGEXP: /(%?)%\{([^\}]+)\}/g
+    }),
+
+    // "Prettifies" the given string.
+    // Prettifying means replacing [.\_-] with spaces as well as splitting
+    // camel case words.
+    prettify: function(str) {
+      if (v.isNumber(str)) {
+        // If there are more than 2 decimals round it to two
+        if ((str * 100) % 1 === 0) {
+          return "" + str;
+        } else {
+          return parseFloat(Math.round(str * 100) / 100).toFixed(2);
+        }
+      }
+
+      if (v.isArray(str)) {
+        return str.map(function(s) { return v.prettify(s); }).join(", ");
+      }
+
+      if (v.isObject(str)) {
+        if (!v.isDefined(str.toString)) {
+          return JSON.stringify(str);
+        }
+
+        return str.toString();
+      }
+
+      // Ensure the string is actually a string
+      str = "" + str;
+
+      return str
+        // Splits keys separated by periods
+        .replace(/([^\s])\.([^\s])/g, '$1 $2')
+        // Removes backslashes
+        .replace(/\\+/g, '')
+        // Replaces - and - with space
+        .replace(/[_-]/g, ' ')
+        // Splits camel cased words
+        .replace(/([a-z])([A-Z])/g, function(m0, m1, m2) {
+          return "" + m1 + " " + m2.toLowerCase();
+        })
+        .toLowerCase();
+    },
+
+    stringifyValue: function(value, options) {
+      var prettify = options && options.prettify || v.prettify;
+      return prettify(value);
+    },
+
+    isString: function(value) {
+      return typeof value === 'string';
+    },
+
+    isArray: function(value) {
+      return {}.toString.call(value) === '[object Array]';
+    },
+
+    // Checks if the object is a hash, which is equivalent to an object that
+    // is neither an array nor a function.
+    isHash: function(value) {
+      return v.isObject(value) && !v.isArray(value) && !v.isFunction(value);
+    },
+
+    contains: function(obj, value) {
+      if (!v.isDefined(obj)) {
+        return false;
+      }
+      if (v.isArray(obj)) {
+        return obj.indexOf(value) !== -1;
+      }
+      return value in obj;
+    },
+
+    unique: function(array) {
+      if (!v.isArray(array)) {
+        return array;
+      }
+      return array.filter(function(el, index, array) {
+        return array.indexOf(el) == index;
+      });
+    },
+
+    forEachKeyInKeypath: function(object, keypath, callback) {
+      if (!v.isString(keypath)) {
+        return undefined;
+      }
+
+      var key = ""
+        , i
+        , escape = false;
+
+      for (i = 0; i < keypath.length; ++i) {
+        switch (keypath[i]) {
+          case '.':
+            if (escape) {
+              escape = false;
+              key += '.';
+            } else {
+              object = callback(object, key, false);
+              key = "";
+            }
+            break;
+
+          case '\\':
+            if (escape) {
+              escape = false;
+              key += '\\';
+            } else {
+              escape = true;
+            }
+            break;
+
+          default:
+            escape = false;
+            key += keypath[i];
+            break;
+        }
+      }
+
+      return callback(object, key, true);
+    },
+
+    getDeepObjectValue: function(obj, keypath) {
+      if (!v.isObject(obj)) {
+        return undefined;
+      }
+
+      return v.forEachKeyInKeypath(obj, keypath, function(obj, key) {
+        if (v.isObject(obj)) {
+          return obj[key];
+        }
+      });
+    },
+
+    // This returns an object with all the values of the form.
+    // It uses the input name as key and the value as value
+    // So for example this:
+    // <input type="text" name="email" value="foo@bar.com" />
+    // would return:
+    // {email: "foo@bar.com"}
+    collectFormValues: function(form, options) {
+      var values = {}
+        , i
+        , j
+        , input
+        , inputs
+        , option
+        , value;
+
+      if (v.isJqueryElement(form)) {
+        form = form[0];
+      }
+
+      if (!form) {
+        return values;
+      }
+
+      options = options || {};
+
+      inputs = form.querySelectorAll("input[name], textarea[name]");
+      for (i = 0; i < inputs.length; ++i) {
+        input = inputs.item(i);
+
+        if (v.isDefined(input.getAttribute("data-ignored"))) {
+          continue;
+        }
+
+        var name = input.name.replace(/\./g, "\\\\.");
+        value = v.sanitizeFormValue(input.value, options);
+        if (input.type === "number") {
+          value = value ? +value : null;
+        } else if (input.type === "checkbox") {
+          if (input.attributes.value) {
+            if (!input.checked) {
+              value = values[name] || null;
+            }
+          } else {
+            value = input.checked;
+          }
+        } else if (input.type === "radio") {
+          if (!input.checked) {
+            value = values[name] || null;
+          }
+        }
+        values[name] = value;
+      }
+
+      inputs = form.querySelectorAll("select[name]");
+      for (i = 0; i < inputs.length; ++i) {
+        input = inputs.item(i);
+        if (v.isDefined(input.getAttribute("data-ignored"))) {
+          continue;
+        }
+
+        if (input.multiple) {
+          value = [];
+          for (j in input.options) {
+            option = input.options[j];
+             if (option && option.selected) {
+              value.push(v.sanitizeFormValue(option.value, options));
+            }
+          }
+        } else {
+          var _val = typeof input.options[input.selectedIndex] !== 'undefined' ? input.options[input.selectedIndex].value : /* istanbul ignore next */ '';
+          value = v.sanitizeFormValue(_val, options);
+        }
+        values[input.name] = value;
+      }
+
+      return values;
+    },
+
+    sanitizeFormValue: function(value, options) {
+      if (options.trim && v.isString(value)) {
+        value = value.trim();
+      }
+
+      if (options.nullify !== false && value === "") {
+        return null;
+      }
+      return value;
+    },
+
+    capitalize: function(str) {
+      if (!v.isString(str)) {
+        return str;
+      }
+      return str[0].toUpperCase() + str.slice(1);
+    },
+
+    // Remove all errors who's error attribute is empty (null or undefined)
+    pruneEmptyErrors: function(errors) {
+      return errors.filter(function(error) {
+        return !v.isEmpty(error.error);
+      });
+    },
+
+    // In
+    // [{error: ["err1", "err2"], ...}]
+    // Out
+    // [{error: "err1", ...}, {error: "err2", ...}]
+    //
+    // All attributes in an error with multiple messages are duplicated
+    // when expanding the errors.
+    expandMultipleErrors: function(errors) {
+      var ret = [];
+      errors.forEach(function(error) {
+        // Removes errors without a message
+        if (v.isArray(error.error)) {
+          error.error.forEach(function(msg) {
+            ret.push(v.extend({}, error, {error: msg}));
+          });
+        } else {
+          ret.push(error);
+        }
+      });
+      return ret;
+    },
+
+    // Converts the error mesages by prepending the attribute name unless the
+    // message is prefixed by ^
+    convertErrorMessages: function(errors, options) {
+      options = options || {};
+
+      var ret = []
+        , prettify = options.prettify || v.prettify;
+      errors.forEach(function(errorInfo) {
+        var error = v.result(errorInfo.error,
+            errorInfo.value,
+            errorInfo.attribute,
+            errorInfo.options,
+            errorInfo.attributes,
+            errorInfo.globalOptions);
+
+        if (!v.isString(error)) {
+          ret.push(errorInfo);
+          return;
+        }
+
+        if (error[0] === '^') {
+          error = error.slice(1);
+        } else if (options.fullMessages !== false) {
+          error = v.capitalize(prettify(errorInfo.attribute)) + " " + error;
+        }
+        error = error.replace(/\\\^/g, "^");
+        error = v.format(error, {
+          value: v.stringifyValue(errorInfo.value, options)
+        });
+        ret.push(v.extend({}, errorInfo, {error: error}));
+      });
+      return ret;
+    },
+
+    // In:
+    // [{attribute: "<attributeName>", ...}]
+    // Out:
+    // {"<attributeName>": [{attribute: "<attributeName>", ...}]}
+    groupErrorsByAttribute: function(errors) {
+      var ret = {};
+      errors.forEach(function(error) {
+        var list = ret[error.attribute];
+        if (list) {
+          list.push(error);
+        } else {
+          ret[error.attribute] = [error];
+        }
+      });
+      return ret;
+    },
+
+    // In:
+    // [{error: "<message 1>", ...}, {error: "<message 2>", ...}]
+    // Out:
+    // ["<message 1>", "<message 2>"]
+    flattenErrorsToArray: function(errors) {
+      return errors
+        .map(function(error) { return error.error; })
+        .filter(function(value, index, self) {
+          return self.indexOf(value) === index;
+        });
+    },
+
+    cleanAttributes: function(attributes, whitelist) {
+      function whitelistCreator(obj, key, last) {
+        if (v.isObject(obj[key])) {
+          return obj[key];
+        }
+        return (obj[key] = last ? true : {});
+      }
+
+      function buildObjectWhitelist(whitelist) {
+        var ow = {}
+          , lastObject
+          , attr;
+        for (attr in whitelist) {
+          if (!whitelist[attr]) {
+            continue;
+          }
+          v.forEachKeyInKeypath(ow, attr, whitelistCreator);
+        }
+        return ow;
+      }
+
+      function cleanRecursive(attributes, whitelist) {
+        if (!v.isObject(attributes)) {
+          return attributes;
+        }
+
+        var ret = v.extend({}, attributes)
+          , w
+          , attribute;
+
+        for (attribute in attributes) {
+          w = whitelist[attribute];
+
+          if (v.isObject(w)) {
+            ret[attribute] = cleanRecursive(ret[attribute], w);
+          } else if (!w) {
+            delete ret[attribute];
+          }
+        }
+        return ret;
+      }
+
+      if (!v.isObject(whitelist) || !v.isObject(attributes)) {
+        return {};
+      }
+
+      whitelist = buildObjectWhitelist(whitelist);
+      return cleanRecursive(attributes, whitelist);
+    },
+
+    exposeModule: function(validate, root, exports, module, define) {
+      if (exports) {
+        if (module && module.exports) {
+          exports = module.exports = validate;
+        }
+        exports.validate = validate;
+      } else {
+        root.validate = validate;
+        if (validate.isFunction(define) && define.amd) {
+          define([], function () { return validate; });
+        }
+      }
+    },
+
+    warn: function(msg) {
+      if (typeof console !== "undefined" && console.warn) {
+        console.warn("[validate.js] " + msg);
+      }
+    },
+
+    error: function(msg) {
+      if (typeof console !== "undefined" && console.error) {
+        console.error("[validate.js] " + msg);
+      }
+    }
+  });
+
+  validate.validators = {
+    // Presence validates that the value isn't empty
+    presence: function(value, options) {
+      options = v.extend({}, this.options, options);
+      if (options.allowEmpty !== false ? !v.isDefined(value) : v.isEmpty(value)) {
+        return options.message || this.message || "can't be blank";
+      }
+    },
+    length: function(value, options, attribute) {
+      // Empty values are allowed
+      if (!v.isDefined(value)) {
+        return;
+      }
+
+      options = v.extend({}, this.options, options);
+
+      var is = options.is
+        , maximum = options.maximum
+        , minimum = options.minimum
+        , tokenizer = options.tokenizer || function(val) { return val; }
+        , err
+        , errors = [];
+
+      value = tokenizer(value);
+      var length = value.length;
+      if(!v.isNumber(length)) {
+        return options.message || this.notValid || "has an incorrect length";
+      }
+
+      // Is checks
+      if (v.isNumber(is) && length !== is) {
+        err = options.wrongLength ||
+          this.wrongLength ||
+          "is the wrong length (should be %{count} characters)";
+        errors.push(v.format(err, {count: is}));
+      }
+
+      if (v.isNumber(minimum) && length < minimum) {
+        err = options.tooShort ||
+          this.tooShort ||
+          "is too short (minimum is %{count} characters)";
+        errors.push(v.format(err, {count: minimum}));
+      }
+
+      if (v.isNumber(maximum) && length > maximum) {
+        err = options.tooLong ||
+          this.tooLong ||
+          "is too long (maximum is %{count} characters)";
+        errors.push(v.format(err, {count: maximum}));
+      }
+
+      if (errors.length > 0) {
+        return options.message || errors;
+      }
+    },
+    numericality: function(value, options, attribute, attributes, globalOptions) {
+      // Empty values are fine
+      if (!v.isDefined(value)) {
+        return;
+      }
+
+      options = v.extend({}, this.options, options);
+
+      var errors = []
+        , name
+        , count
+        , checks = {
+            greaterThan:          function(v, c) { return v > c; },
+            greaterThanOrEqualTo: function(v, c) { return v >= c; },
+            equalTo:              function(v, c) { return v === c; },
+            lessThan:             function(v, c) { return v < c; },
+            lessThanOrEqualTo:    function(v, c) { return v <= c; },
+            divisibleBy:          function(v, c) { return v % c === 0; }
+          }
+        , prettify = options.prettify ||
+          (globalOptions && globalOptions.prettify) ||
+          v.prettify;
+
+      // Strict will check that it is a valid looking number
+      if (v.isString(value) && options.strict) {
+        var pattern = "^-?(0|[1-9]\\d*)";
+        if (!options.onlyInteger) {
+          pattern += "(\\.\\d+)?";
+        }
+        pattern += "$";
+
+        if (!(new RegExp(pattern).test(value))) {
+          return options.message ||
+            options.notValid ||
+            this.notValid ||
+            this.message ||
+            "must be a valid number";
+        }
+      }
+
+      // Coerce the value to a number unless we're being strict.
+      if (options.noStrings !== true && v.isString(value) && !v.isEmpty(value)) {
+        value = +value;
+      }
+
+      // If it's not a number we shouldn't continue since it will compare it.
+      if (!v.isNumber(value)) {
+        return options.message ||
+          options.notValid ||
+          this.notValid ||
+          this.message ||
+          "is not a number";
+      }
+
+      // Same logic as above, sort of. Don't bother with comparisons if this
+      // doesn't pass.
+      if (options.onlyInteger && !v.isInteger(value)) {
+        return options.message ||
+          options.notInteger ||
+          this.notInteger ||
+          this.message ||
+          "must be an integer";
+      }
+
+      for (name in checks) {
+        count = options[name];
+        if (v.isNumber(count) && !checks[name](value, count)) {
+          // This picks the default message if specified
+          // For example the greaterThan check uses the message from
+          // this.notGreaterThan so we capitalize the name and prepend "not"
+          var key = "not" + v.capitalize(name);
+          var msg = options[key] ||
+            this[key] ||
+            this.message ||
+            "must be %{type} %{count}";
+
+          errors.push(v.format(msg, {
+            count: count,
+            type: prettify(name)
+          }));
+        }
+      }
+
+      if (options.odd && value % 2 !== 1) {
+        errors.push(options.notOdd ||
+            this.notOdd ||
+            this.message ||
+            "must be odd");
+      }
+      if (options.even && value % 2 !== 0) {
+        errors.push(options.notEven ||
+            this.notEven ||
+            this.message ||
+            "must be even");
+      }
+
+      if (errors.length) {
+        return options.message || errors;
+      }
+    },
+    datetime: v.extend(function(value, options) {
+      if (!v.isFunction(this.parse) || !v.isFunction(this.format)) {
+        throw new Error("Both the parse and format functions needs to be set to use the datetime/date validator");
+      }
+
+      // Empty values are fine
+      if (!v.isDefined(value)) {
+        return;
+      }
+
+      options = v.extend({}, this.options, options);
+
+      var err
+        , errors = []
+        , earliest = options.earliest ? this.parse(options.earliest, options) : NaN
+        , latest = options.latest ? this.parse(options.latest, options) : NaN;
+
+      value = this.parse(value, options);
+
+      // 86400000 is the number of milliseconds in a day, this is used to remove
+      // the time from the date
+      if (isNaN(value) || options.dateOnly && value % 86400000 !== 0) {
+        err = options.notValid ||
+          options.message ||
+          this.notValid ||
+          "must be a valid date";
+        return v.format(err, {value: arguments[0]});
+      }
+
+      if (!isNaN(earliest) && value < earliest) {
+        err = options.tooEarly ||
+          options.message ||
+          this.tooEarly ||
+          "must be no earlier than %{date}";
+        err = v.format(err, {
+          value: this.format(value, options),
+          date: this.format(earliest, options)
+        });
+        errors.push(err);
+      }
+
+      if (!isNaN(latest) && value > latest) {
+        err = options.tooLate ||
+          options.message ||
+          this.tooLate ||
+          "must be no later than %{date}";
+        err = v.format(err, {
+          date: this.format(latest, options),
+          value: this.format(value, options)
+        });
+        errors.push(err);
+      }
+
+      if (errors.length) {
+        return v.unique(errors);
+      }
+    }, {
+      parse: null,
+      format: null
+    }),
+    date: function(value, options) {
+      options = v.extend({}, options, {dateOnly: true});
+      return v.validators.datetime.call(v.validators.datetime, value, options);
+    },
+    format: function(value, options) {
+      if (v.isString(options) || (options instanceof RegExp)) {
+        options = {pattern: options};
+      }
+
+      options = v.extend({}, this.options, options);
+
+      var message = options.message || this.message || "is invalid"
+        , pattern = options.pattern
+        , match;
+
+      // Empty values are allowed
+      if (!v.isDefined(value)) {
+        return;
+      }
+      if (!v.isString(value)) {
+        return message;
+      }
+
+      if (v.isString(pattern)) {
+        pattern = new RegExp(options.pattern, options.flags);
+      }
+      match = pattern.exec(value);
+      if (!match || match[0].length != value.length) {
+        return message;
+      }
+    },
+    inclusion: function(value, options) {
+      // Empty values are fine
+      if (!v.isDefined(value)) {
+        return;
+      }
+      if (v.isArray(options)) {
+        options = {within: options};
+      }
+      options = v.extend({}, this.options, options);
+      if (v.contains(options.within, value)) {
+        return;
+      }
+      var message = options.message ||
+        this.message ||
+        "^%{value} is not included in the list";
+      return v.format(message, {value: value});
+    },
+    exclusion: function(value, options) {
+      // Empty values are fine
+      if (!v.isDefined(value)) {
+        return;
+      }
+      if (v.isArray(options)) {
+        options = {within: options};
+      }
+      options = v.extend({}, this.options, options);
+      if (!v.contains(options.within, value)) {
+        return;
+      }
+      var message = options.message || this.message || "^%{value} is restricted";
+      if (v.isString(options.within[value])) {
+        value = options.within[value];
+      }
+      return v.format(message, {value: value});
+    },
+    email: v.extend(function(value, options) {
+      options = v.extend({}, this.options, options);
+      var message = options.message || this.message || "is not a valid email";
+      // Empty values are fine
+      if (!v.isDefined(value)) {
+        return;
+      }
+      if (!v.isString(value)) {
+        return message;
+      }
+      if (!this.PATTERN.exec(value)) {
+        return message;
+      }
+    }, {
+      PATTERN: /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/i
+    }),
+    equality: function(value, options, attribute, attributes, globalOptions) {
+      if (!v.isDefined(value)) {
+        return;
+      }
+
+      if (v.isString(options)) {
+        options = {attribute: options};
+      }
+      options = v.extend({}, this.options, options);
+      var message = options.message ||
+        this.message ||
+        "is not equal to %{attribute}";
+
+      if (v.isEmpty(options.attribute) || !v.isString(options.attribute)) {
+        throw new Error("The attribute must be a non empty string");
+      }
+
+      var otherValue = v.getDeepObjectValue(attributes, options.attribute)
+        , comparator = options.comparator || function(v1, v2) {
+          return v1 === v2;
+        }
+        , prettify = options.prettify ||
+          (globalOptions && globalOptions.prettify) ||
+          v.prettify;
+
+      if (!comparator(value, otherValue, options, attribute, attributes)) {
+        return v.format(message, {attribute: prettify(options.attribute)});
+      }
+    },
+    // A URL validator that is used to validate URLs with the ability to
+    // restrict schemes and some domains.
+    url: function(value, options) {
+      if (!v.isDefined(value)) {
+        return;
+      }
+
+      options = v.extend({}, this.options, options);
+
+      var message = options.message || this.message || "is not a valid url"
+        , schemes = options.schemes || this.schemes || ['http', 'https']
+        , allowLocal = options.allowLocal || this.allowLocal || false
+        , allowDataUrl = options.allowDataUrl || this.allowDataUrl || false;
+      if (!v.isString(value)) {
+        return message;
+      }
+
+      // https://gist.github.com/dperini/729294
+      var regex =
+        "^" +
+        // protocol identifier
+        "(?:(?:" + schemes.join("|") + ")://)" +
+        // user:pass authentication
+        "(?:\\S+(?::\\S*)?@)?" +
+        "(?:";
+
+      var tld = "(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))";
+
+      if (allowLocal) {
+        tld += "?";
+      } else {
+        regex +=
+          // IP address exclusion
+          // private & local networks
+          "(?!(?:10|127)(?:\\.\\d{1,3}){3})" +
+          "(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})" +
+          "(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})";
+      }
+
+      regex +=
+          // IP address dotted notation octets
+          // excludes loopback network 0.0.0.0
+          // excludes reserved space >= 224.0.0.0
+          // excludes network & broacast addresses
+          // (first & last IP address of each class)
+          "(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])" +
+          "(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}" +
+          "(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))" +
+        "|" +
+          // host name
+          "(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)" +
+          // domain name
+          "(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*" +
+          tld +
+        ")" +
+        // port number
+        "(?::\\d{2,5})?" +
+        // resource path
+        "(?:[/?#]\\S*)?" +
+      "$";
+
+      if (allowDataUrl) {
+        // RFC 2397
+        var mediaType = "\\w+\\/[-+.\\w]+(?:;[\\w=]+)*";
+        var urlchar = "[A-Za-z0-9-_.!~\\*'();\\/?:@&=+$,%]*";
+        var dataurl = "data:(?:"+mediaType+")?(?:;base64)?,"+urlchar;
+        regex = "(?:"+regex+")|(?:^"+dataurl+"$)";
+      }
+
+      var PATTERN = new RegExp(regex, 'i');
+      if (!PATTERN.exec(value)) {
+        return message;
+      }
+    },
+    type: v.extend(function(value, originalOptions, attribute, attributes, globalOptions) {
+      if (v.isString(originalOptions)) {
+        originalOptions = {type: originalOptions};
+      }
+
+      if (!v.isDefined(value)) {
+        return;
+      }
+
+      var options = v.extend({}, this.options, originalOptions);
+
+      var type = options.type;
+      if (!v.isDefined(type)) {
+        throw new Error("No type was specified");
+      }
+
+      var check;
+      if (v.isFunction(type)) {
+        check = type;
+      } else {
+        check = this.types[type];
+      }
+
+      if (!v.isFunction(check)) {
+        throw new Error("validate.validators.type.types." + type + " must be a function.");
+      }
+
+      if (!check(value, options, attribute, attributes, globalOptions)) {
+        var message = originalOptions.message ||
+          this.messages[type] ||
+          this.message ||
+          options.message ||
+          (v.isFunction(type) ? "must be of the correct type" : "must be of type %{type}");
+
+        if (v.isFunction(message)) {
+          message = message(value, originalOptions, attribute, attributes, globalOptions);
+        }
+
+        return v.format(message, {attribute: v.prettify(attribute), type: type});
+      }
+    }, {
+      types: {
+        object: function(value) {
+          return v.isObject(value) && !v.isArray(value);
+        },
+        array: v.isArray,
+        integer: v.isInteger,
+        number: v.isNumber,
+        string: v.isString,
+        date: v.isDate,
+        boolean: v.isBoolean
+      },
+      messages: {}
+    })
+  };
+
+  validate.formatters = {
+    detailed: function(errors) {return errors;},
+    flat: v.flattenErrorsToArray,
+    grouped: function(errors) {
+      var attr;
+
+      errors = v.groupErrorsByAttribute(errors);
+      for (attr in errors) {
+        errors[attr] = v.flattenErrorsToArray(errors[attr]);
+      }
+      return errors;
+    },
+    constraint: function(errors) {
+      var attr;
+      errors = v.groupErrorsByAttribute(errors);
+      for (attr in errors) {
+        errors[attr] = errors[attr].map(function(result) {
+          return result.validator;
+        }).sort();
+      }
+      return errors;
+    }
+  };
+
+  validate.exposeModule(validate, this, exports, module, __webpack_require__(/*! !webpack amd define */ "./node_modules/webpack/buildin/amd-define.js"));
+}).call(this,
+         true ? /* istanbul ignore next */ exports : undefined,
+         true ? /* istanbul ignore next */ module : undefined,
+        __webpack_require__(/*! !webpack amd define */ "./node_modules/webpack/buildin/amd-define.js"));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/amd-define.js":
+/*!***************************************!*\
+  !*** (webpack)/buildin/amd-define.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/module.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/module.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+
+/***/ "./public/css/form.scss":
+/*!******************************!*\
+  !*** ./public/css/form.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./public/js/form.js":
+/*!***************************!*\
+  !*** ./public/js/form.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+var _require = __webpack_require__(/*! liquidjs */ "./node_modules/liquidjs/dist/liquid.js"),
+    Liquid = _require.Liquid;
+
+var Globo = window.Globo || {};
+Globo.libs = Globo.libs || {};
+Globo.libs._ = __webpack_require__(/*! lodash/core */ "./node_modules/lodash/core.js");
+Globo.libs.validate = __webpack_require__(/*! validate.js */ "./node_modules/validate.js/validate.js");
+Globo.libs.flatpickr = __webpack_require__(/*! flatpickr */ "./node_modules/flatpickr/dist/flatpickr.js");
+Globo.libs.Liquid = Liquid;
+Globo.FormBuilder = Globo.FormBuilder || {};
+
+Globo.FormBuilder.init = function (form) {
+  // If is Floating form, move form to body
+  if (form.querySelector(".globo-form").classList.contains("float-form")) {
+    document.body.appendChild(form);
+  }
+
+  if (form && form.addEventListener) {
+    form.addEventListener("submit", Globo.FormBuilder.handleSubmit, false); //Modern browsers
+  } else if (form && form.attachEvent) {
+    form.attachEvent("onsubmit", Globo.FormBuilder.handleSubmit); //Old IE
+  }
+
+  var formId = form.querySelector('form').getAttribute('data-id');
+  var formData = Globo.FormBuilder.forms[formId]; // For wizard
+
+  var wizardElement = form.querySelector(".globo-formbuilder-wizard");
+
+  if (wizardElement) {
+    var wizard = new Globo.Wizard(wizardElement);
+    var buttonNext = form.querySelector(".next");
+    var buttonPrevious = form.querySelector(".previous");
+    wizard.addControls(buttonPrevious, buttonNext);
+    wizard.setStep(0);
+  } // For datetimepicker
+
+
+  var dateTimeInputs = document.querySelectorAll('.globo-form-app [data-type="datetime"]');
+  Globo.FormBuilder.handleDateTimePicker(dateTimeInputs); // For conditional field
+
+  var conditionalFields = document.querySelectorAll(".globo-form-app .conditional-field");
+  Globo.FormBuilder.handleConditionalField(conditionalFields); // For conditional field
+
+  var allInputsExceptHiddenAndFile = document.querySelectorAll(".globo-form-app [name]:not([type='file']):not([type='hidden'])");
+  Globo.FormBuilder.handleHiddenField(formData, form, allInputsExceptHiddenAndFile); // For Captcha
+
+  var grecaptchaElement = form.querySelector(".globo-g-recaptcha");
+
+  if (typeof grecaptcha !== "undefined" && grecaptchaElement) {
+    try {
+      var widgetId = grecaptcha.render(grecaptchaElement, {
+        sitekey: grecaptchaElement.getAttribute("data-sitekey")
+      });
+      grecaptchaElement.nextElementSibling.setAttribute("reCaptcha-widget-id", widgetId);
+    } catch (error) {}
+  } // For label
+
+
+  var elements = form.querySelectorAll('.globo-form-control');
+  var keyLabel = {};
+
+  Globo.libs._.each(elements, function (element) {
+    var labelEl = element.querySelector('label,legend');
+
+    if (labelEl !== null && labelEl) {
+      var keyEl = element.querySelector('[name]');
+
+      if (keyEl !== null && keyEl) {
+        var key = keyEl.getAttribute('name').replace("[]", "");
+        keyLabel[key] = labelEl.querySelector('.label-content').innerHTML;
+      }
+    }
+  });
+
+  form.querySelector('[name="_keyLabel"]').value = JSON.stringify(keyLabel); // Create the event
+
+  var event = new CustomEvent("globo.formbuilder.form.loaded", {
+    "detail": {
+      form: form
+    }
+  }); // Dispatch/Trigger/Fire the event
+
+  document.dispatchEvent(event);
+};
+
+Globo.FormBuilder.showFloatingForm = function (e) {
+  e.parentNode.querySelector(".globo-form-app").classList.add("active");
+};
+
+Globo.FormBuilder.hideFloatingForm = function (e) {
+  e.parentNode.querySelector(".globo-form-app").classList.remove("active");
+};
+
+Globo.FormBuilder.showMessage = function (el) {
+  var content = el.querySelector(".content");
+
+  if (content !== null && content.innerHTML != "") {
+    el.style.display = 'block';
+  }
+};
+
+Globo.FormBuilder.handleValidate = function (form) {
+  // These are the constraints used to validate the form
+  var panel = form.querySelector(".block-container");
+  var constraints = {};
+
+  Globo.libs._.map(panel.querySelectorAll("input, textarea, select"), function (input) {
+    var isRequired = input.getAttribute("presence") !== null ? true : false;
+    var isDisabled = input.getAttribute("disabled") !== null ? true : false;
+    var type = input.getAttribute("data-type") !== null ? input.getAttribute("data-type") : false;
+    constraints[input.name] = {};
+
+    if (isDisabled) {
+      constraints[input.name]['ignore'] = {};
+    } else if (isRequired) {
+      constraints[input.name].presence = {
+        message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.required
+      };
+    }
+
+    if (type == "email") {
+      constraints[input.name][type] = {
+        message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.invalidEmail
+      };
+    }
+
+    if (type == "name") {
+      constraints[input.name].format = {
+        pattern: "^[ -.A-\uFFDC]+",
+        flags: "s",
+        message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.invalidName
+      };
+    }
+
+    if (type == "url") {
+      constraints[input.name][type] = {
+        message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.invalidURL
+      };
+    }
+
+    if (type == "phone") {
+      constraints[input.name].format = {
+        pattern: "^[+]*[(]{0,1}[0-9+]{1,9}[)]{0,1}[-s.0-9 ]*$",
+        flags: "i",
+        message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.invalidPhone
+      };
+    }
+
+    if (type == "file") {
+      var maxFileSize = Globo.FormBuilder.shop.pricing.features.fileUpload !== false ? Globo.FormBuilder.shop.pricing.features.fileUpload * 1024 : 2048;
+      constraints[input.name][type] = {
+        notAllowedExtension: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.fileNotAllowed,
+        sizeLimitMessage: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.fileSizeLimit,
+        allowedExtension: input.getAttribute("data-allowed-extensions").split(','),
+        maxFileSize: maxFileSize
+      };
+    }
+
+    if (type == "checkbox") {
+      constraints[input.name][type] = {
+        requiredMessage: Globo.FormBuilder.forms[form.getAttribute("data-id")].errorMessage.required
+      };
+      constraints[input.name][type].isRequired = typeof constraints[input.name].presence !== "undefined" ? true : false;
+    }
+
+    if (type == "password") {
+      var addtionalType = input.getAttribute("data-additional-type") !== null ? input.getAttribute("data-additional-type") : false;
+      var connectedElement = input.getAttribute("data-connected-element") !== null ? input.getAttribute("data-connected-element") : false;
+
+      if (addtionalType === 'confirm-password' && connectedElement) {
+        // is confirm password
+        constraints[input.name].equality = {
+          attribute: connectedElement,
+          message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.confirmPasswordNotMatch
+        };
+      } // For validate password
+
+
+      var validate = input.getAttribute("data-validate-rule") && input.getAttribute("data-validate-rule") != 'false' ? input.getAttribute("data-validate-rule") : false;
+
+      if (validate) {
+        if (validate === "advancedValidateRule") {
+          validate = input.getAttribute("data-validate-rule") !== null ? input.getAttribute("data-advanced-validate-rule") : "";
+        }
+
+        constraints[input.name].format = {
+          pattern: validate,
+          flags: "g",
+          message: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.invalidPassword
+        };
+      }
+    }
+  }); // Add reCaptcha Rule
+
+
+  var hasRecaptChaBlock = form.querySelector(".block-container .globo-g-recaptcha") != null ? true : false;
+
+  if (hasRecaptChaBlock) {
+    constraints["reCaptcha"] = {
+      reCaptcha: {
+        isRequired: true,
+        requiredMessage: Globo.FormBuilder.forms[panel.getAttribute("data-id")].errorMessage.requiredCaptcha
+      }
+    };
+  } // Custom File Validation
+
+
+  Globo.libs.validate.validators.file = function (value, options, key) {
+    var filesInput = form.querySelector('[name="' + key + '"]');
+    var filesSize = 0,
+        validExtension = true;
+
+    Globo.libs._.each(filesInput.files, function (f) {
+      filesSize += f.size;
+
+      if (options.allowedExtension.indexOf(getFilePathExtension(f.name).toLowerCase()) === -1) {
+        validExtension = false;
+      }
+    });
+
+    if (filesSize / 1000 > options.maxFileSize) return options.sizeLimitMessage;
+    if (!validExtension) return options.notAllowedExtension;
+    return null;
+  }; // End Custom File validation
+  // Custom Checkbox Validation
+
+
+  Globo.libs.validate.validators.checkbox = function (value, options, key, attributes) {
+    if (!options.isRequired) return null;
+    var inputs = form.querySelectorAll("[name='" + key + "']");
+    var isChecked = false;
+
+    Globo.libs._.each(inputs, function (input) {
+      input.checked && (isChecked = true);
+    });
+
+    return isChecked ? null : options.requiredMessage;
+  }; // End Custom Checkbox Validation
+  // Custom reCaptcha Validation
+
+
+  Globo.libs.validate.validators.reCaptcha = function (value, options, key, attributes) {
+    var responseInput = form.querySelector("[name='" + key + "']");
+
+    if (responseInput) {
+      var response = grecaptcha.getResponse(responseInput.getAttribute("reCaptcha-widget-id"));
+      responseInput.value = response;
+      return responseInput.value != "" ? null : options.requiredMessage;
+    }
+
+    return null;
+  }; // Custom Ignore Validation
+
+
+  Globo.libs.validate.validators.ignore = function () {
+    return null;
+  }; // End Custom reCaptcha Validation
+  // validate the form against the constraints
+
+
+  var errors = Globo.libs.validate(panel, constraints, {
+    fullMessages: false
+  }); // then we update the form to reflect the results
+
+  showErrors(panel, errors || {});
+  !Globo.libs._.isEmpty(errors, true) ? panel.classList.add("errors") : panel.classList.remove("errors"); // Hook up the inputs to validate on the fly
+
+  var inputs = panel.querySelectorAll("input, textarea, select");
+
+  for (var i = 0; i < inputs.length; ++i) {
+    inputs.item(i).addEventListener("change", function (ev) {
+      var errors = Globo.libs.validate(panel, constraints, {
+        fullMessages: false
+      }) || {};
+      !Globo.libs._.isEmpty(errors, true) ? panel.classList.add("errors") : panel.classList.remove("errors");
+      showErrorsForInput(this, errors[this.name]);
+    });
+  } // Updates the inputs with the validation errors
+
+
+  function showErrors(form, errors) {
+    // We loop through all the inputs and show the errors for that input
+    Globo.libs._.each(form.querySelectorAll("input[name], select[name], textarea[name]"), function (input) {
+      // Since the errors can be null if no errors were found we need to handle
+      // that
+      showErrorsForInput(input, errors && errors[input.name]);
+    });
+  } // Shows the errors for a specific input
+
+
+  function showErrorsForInput(input, errors) {
+    // This is the root of the input
+    var formGroup = closestParent(input.parentNode, "globo-form-control"),
+        // Find where the error messages will be insert into
+    messages = formGroup.querySelector(".messages"); // First we remove any old messages and resets the classes
+
+    resetFormGroup(formGroup); // If we have errors
+
+    if (errors) {
+      // we first mark the group has having errors
+      formGroup.classList.add("has-error"); // then we append all the errors
+
+      Globo.libs._.each(errors, function (error) {
+        addError(messages, error);
+      });
+    } else {
+      // otherwise we simply mark it as success
+      formGroup.classList.add("has-success");
+    }
+  } // Recusively finds the closest parent that has the specified class
+
+
+  function closestParent(child, className) {
+    if (!child || child == document) {
+      return null;
+    }
+
+    if (child.classList.contains(className)) {
+      return child;
+    } else {
+      return closestParent(child.parentNode, className);
+    }
+  }
+
+  function resetFormGroup(formGroup) {
+    // Remove the success and error classes
+    formGroup.classList.remove("has-error");
+    formGroup.classList.remove("has-success"); // and remove any old messages
+
+    Globo.libs._.each(formGroup.querySelectorAll(".help-block.error"), function (el) {
+      el.parentNode.removeChild(el);
+    });
+  } // Adds the specified error with the following markup
+  // <p class="help-block error">[message]</p>
+
+
+  function addError(messages, error) {
+    var block = document.createElement("p");
+    block.classList.add("help-block");
+    block.classList.add("error");
+    block.innerText = error;
+    messages.appendChild(block);
+  }
+
+  function getFilePathExtension(path) {
+    var filename = path.split("\\").pop().split("/").pop();
+    var lastIndex = filename.lastIndexOf(".");
+    if (lastIndex < 1) return "";
+    return filename.substr(lastIndex + 1);
+  }
+};
+
+Globo.FormBuilder.handleDateTimePicker = function (elements) {
+  Globo.libs._.each(elements, function (field) {
+    var options = {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      time_24hr: true
+    };
+    var format,
+        locale,
+        dateFormat,
+        timeFormat,
+        t = "H:i";
+    format = field.getAttribute("data-format");
+    locale = field.getAttribute("data-locale");
+    dateFormat = field.getAttribute("dataDateFormat");
+    timeFormat = field.getAttribute("dataTimeFormat");
+    var limitDateType = field.getAttribute("limitDateType");
+    var limitDateSpecificDates = field.getAttribute("limitDateSpecificDates");
+    var limitDateRangeDates = field.getAttribute("limitDateRangeDates");
+    var limitDateDOWDates = field.getAttribute("limitDateDOWDates");
+
+    if (timeFormat == "12h") {
+      options.time_24hr = false;
+      t = "h:i K";
+    }
+
+    if (format == "date-and-time") {
+      options.dateFormat = dateFormat + " " + t;
+    } else if (format == "date") {
+      options.enableTime = false;
+      options.dateFormat = dateFormat;
+    } else if (format == "time") {
+      options.noCalendar = true;
+      options.dateFormat = t;
+    } // Locale 
+
+
+    if (locale) {
+      options.locale = __webpack_require__("./node_modules/flatpickr/dist/l10n sync recursive ^\\.\\/.*\\.js$")("./" + locale + ".js")["default"][locale];
+    }
+
+    var limitDatesOptions = [];
+
+    if (limitDateType) {
+      if (limitDateSpecificDates != '' && limitDateSpecificDates != null) {
+        limitDatesOptions = limitDatesOptions.concat(limitDateSpecificDates.split(",").map(function (x) {
+          return new Date(x);
+        }));
+      }
+
+      if (limitDateRangeDates != '' && limitDateRangeDates != null) {
+        var arrRangeDates = limitDateRangeDates.split(',');
+        limitDatesOptions.push({
+          from: new Date(arrRangeDates[0]),
+          to: new Date(arrRangeDates[1])
+        });
+      }
+
+      if (limitDateDOWDates != '' && limitDateDOWDates != null) {
+        var arrDow = limitDateDOWDates.split(',').map(function (dowText) {
+          var dow = 0;
+
+          switch (dowText) {
+            case "sunday":
+              dow = 0;
+              break;
+
+            case "monday":
+              dow = 1;
+              break;
+
+            case "tuesday":
+              dow = 2;
+              break;
+
+            case "wednesday":
+              dow = 3;
+              break;
+
+            case "thursday":
+              dow = 4;
+              break;
+
+            case "friday":
+              dow = 5;
+              break;
+
+            case "saturday":
+              dow = 6;
+              break;
+
+            default:
+              dow = 0;
+          }
+
+          return dow;
+        });
+        limitDatesOptions.push(function (date) {
+          return arrDow.indexOf(date.getDay()) > -1;
+        });
+      }
+    }
+
+    if (limitDateType == 'disablingDates') {
+      options.disable = limitDatesOptions;
+    } else {
+      options.enable = limitDatesOptions;
+    }
+
+    Globo.libs.flatpickr(field, options);
+  });
+};
+
+Globo.FormBuilder.handleConditionalField = function (elements) {
+  Globo.libs._.each(elements, function (element) {
+    var connectedId = element.getAttribute("data-connected-id");
+    var connectedValue = element.getAttribute("data-connected-value");
+    var parentForm = Globo.closest(element, "form");
+    var controlElements = parentForm.querySelectorAll('[name="' + connectedId + '"]');
+
+    if (!controlElements.length) {
+      controlElements = parentForm.querySelectorAll('[name="' + connectedId + '[]"]');
+    }
+
+    if (controlElements.length) {
+      Globo.libs._.each(controlElements, function (el) {
+        el.addEventListener("change", function () {
+          if (this.type == "checkbox") {
+            if (this.value === connectedValue) {
+              if (this.checked) {
+                element.style.display = "block";
+
+                Globo.libs._.each(element.querySelectorAll('[name]'), function (el) {
+                  el.removeAttribute('disabled', 'disabled');
+                });
+              } else {
+                element.style.display = "";
+
+                Globo.libs._.each(element.querySelectorAll('[name]'), function (el) {
+                  el.setAttribute('disabled', 'disabled');
+                });
+              }
+            }
+          } else if (this.type == "radio") {
+            if (this.value === connectedValue && this.checked) {
+              element.style.display = "block";
+
+              Globo.libs._.each(element.querySelectorAll('[name]'), function (el) {
+                el.removeAttribute('disabled', 'disabled');
+              });
+            } else {
+              element.style.display = "";
+
+              Globo.libs._.each(element.querySelectorAll('[name]'), function (el) {
+                el.setAttribute('disabled', 'disabled');
+              });
+            }
+          } else {
+            if (this.value === connectedValue) {
+              element.style.display = "block";
+
+              Globo.libs._.each(element.querySelectorAll('[name]'), function (el) {
+                el.removeAttribute('disabled', 'disabled');
+              });
+            } else {
+              element.style.display = "";
+
+              Globo.libs._.each(element.querySelectorAll('[name]'), function (el) {
+                el.setAttribute('disabled', 'disabled');
+              });
+            }
+          } // ( Update Panel Height when form is multiple step)
+
+
+          var panels = Globo.closest(element, ".panels");
+          var panel = Globo.closest(element, ".panel.movingIn");
+
+          if (panel) {
+            panels.style.height = panel.offsetHeight + 'px';
+          }
+
+          if (this.type == "checkbox" && !this.checked && this.value == connectedValue || this.type == "radio" || this.type == "select-one") {
+            // Reset input value to make related element response
+            var options = element.querySelectorAll("input[name],select");
+            var eventChange = document.createEvent("HTMLEvents");
+            eventChange.initEvent("change", false, true);
+
+            Globo.libs._.each(options, function (input) {
+              if (input.type == "checkbox" || input.type == "radio") {
+                input.checked = false;
+              } else {
+                input.value = "";
+              }
+
+              if (input.disabled) {
+                input.disabled = false;
+                input.dispatchEvent(eventChange);
+                input.disabled = true;
+              } else {
+                input.dispatchEvent(eventChange);
+              }
+            });
+          }
+        });
+      });
+    }
+  });
+};
+
+Globo.FormBuilder.handleHiddenField = function (form, formDom, elements) {
+  var rules = [];
+
+  if (typeof form === 'undefined') {
+    return false;
+  }
+
+  form.elements.forEach(function (element) {
+    // Nested Element
+    if (element.type == 'group') {
+      element.elements.forEach(function (ele) {
+        if (ele.type == 'hidden' && ele.dataType == 'dynamic' && ele.dynamicValue.length) {
+          ele.dynamicValue.forEach(function (rule) {
+            rule.target = ele.id;
+
+            if (!rules.includes(rule)) {
+              rules.push(rule);
+            }
+          });
+        }
+      });
+    }
+
+    if (element.type == 'hidden' && element.dataType == 'dynamic' && element.dynamicValue.length) {
+      element.dynamicValue.forEach(function (rule) {
+        rule.target = element.id;
+
+        if (!rules.includes(rule)) {
+          rules.push(rule);
+        }
+      });
+    }
+  });
+
+  Globo.libs._.each(elements, function (element) {
+    var isRelatedToHiddenElement = typeof rules.find(function (x) {
+      return x.when == element.name || x.when + '[]' == element.name;
+    }) !== 'undefined' ? true : false;
+
+    if (isRelatedToHiddenElement) {
+      var initialMatch = rules.find(function (x) {
+        return x.when === element.name && x.is == "";
+      });
+
+      if (typeof initialMatch !== 'undefined') {
+        var target = formDom.querySelector('[name="' + initialMatch.target + '"]');
+
+        if (target) {
+          target.value = initialMatch.value;
+        }
+      }
+
+      element.addEventListener("change", function (e) {
+        var val = e.target.value;
+        var match = rules.find(function (x) {
+          if (x.is == val) {
+            if (x.when == element.name) {
+              return true;
+            }
+
+            if (x.when + '[]' == element.name && element.checked) {
+              return true;
+            }
+          }
+
+          return false;
+        });
+
+        if (typeof match !== 'undefined') {
+          var target = formDom.querySelector('[name="' + match.target + '"]');
+
+          if (target) {
+            target.value = match.value;
+          }
+        } else {
+          var related = rules.find(function (x) {
+            return x.when == element.name || x.when + '[]' == element.name;
+          });
+
+          if (typeof related !== 'undefined') {
+            var target = formDom.querySelector('[name="' + related.target + '"]');
+
+            if (target) {
+              target.value = target.getAttribute('data-default-value');
+            }
+          }
+        }
+      });
+    }
+  });
+};
+
+Globo.FormBuilder.handleSubmit = function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  Globo.FormBuilder.handleValidate(e.target);
+  if (!Globo.libs._.isNull(e.target.querySelector(".block-container.errors"))) return; // has error(s)
+
+  var submitButton = e.target.querySelector(".action.submit"); // Make loading button
+
+  submitButton.classList.add("loading");
+  Globo.xhr(e.target, function (response) {
+    submitButton.classList.remove("loading");
+
+    if (response.success == 'true') {
+      var afterSubmit = Globo.FormBuilder.forms[e.target.getAttribute("data-id")].afterSubmit;
+
+      if (afterSubmit.action == "redirectToPage") {
+        window.location.href = afterSubmit.redirectUrl;
+      }
+
+      if (afterSubmit.action == "clearForm") {
+        e.target.reset();
+        Globo.FormBuilder.showMessage(e.target.querySelector(".message.success")); // reset Captcha
+
+        var recaptcha = e.target.querySelector(".globo-g-recaptcha");
+
+        if (recaptcha) {
+          grecaptcha.reset(recaptcha.nextElementSibling.getAttribute("reCaptcha-widget-id"));
+        } // For wizard
+
+
+        var wizardElement = e.target.querySelector(".globo-formbuilder-wizard");
+
+        if (wizardElement) {
+          var wizard = new Globo.Wizard(wizardElement);
+          wizard.reset();
+        }
+      }
+
+      if (afterSubmit.action == "hideForm") {
+        e.target.style.display = "none";
+        Globo.FormBuilder.showMessage(Globo.libs._.last(e.target.parentNode.querySelectorAll(".message.success")));
+      }
+    } else {
+      var message = e.target.querySelector(".message.error .content");
+      var errors = typeof response.errors !== 'undefined' ? response.errors : false;
+
+      if (errors) {
+        var html = '';
+
+        for (var i = 0; i < Object.keys(errors).length; i++) {
+          if (typeof errors[i] === 'string') {
+            html += '<div class="err-item"><span class="label"></span><span class="err">' + errors[i] + '</span></div>';
+          } else {
+            var formData = e.target.querySelector('[name="_keyLabel"]');
+            if (formData) formData = JSON.parse(formData.value);
+            if (typeof formData[Object.keys(errors)[i]] !== 'undefined') html += '<div class="err-item"><span class="label">' + formData[Object.keys(errors)[i]] + '</span> : <span class="err">' + errors[Object.keys(errors)[i]] + '</span></div>';else html += '<div class="err-item"><span class="label"></span><span class="err">' + errors[Object.keys(errors)[i]] + '</span></div>';
+          }
+        }
+
+        message.innerHTML = html;
+      }
+
+      Globo.FormBuilder.showMessage(e.target.querySelector(".message.error"));
+    }
+  });
+};
+
+Globo.Wizard = Globo.Wizard ||
+/*#__PURE__*/
+function () {
+  function Wizard(obj) {
+    _classCallCheck(this, Wizard);
+
+    this.wizard = obj;
+    this.panels = new Globo.Panels(this.wizard);
+    this.steps = new Globo.Steps(this.wizard);
+    this.stepsQuantity = this.steps.getStepsQuantity();
+    this.currentStep = this.steps.currentStep;
+    this.nextText = obj.querySelector(".action.next").getAttribute("data-next-text");
+    this.submitText = obj.querySelector(".action.next").getAttribute("data-submit-text");
+    this.submittingText = obj.querySelector(".action.next").getAttribute("data-submitting-text");
+    this.concludeControlMoveStepMethod = this.steps.handleConcludeStep.bind(this.steps);
+    this.wizardConclusionMethod = this.handleWizardConclusion.bind(this);
+  }
+
+  _createClass(Wizard, [{
+    key: "updateButtonsStatus",
+    value: function updateButtonsStatus() {
+      if (this.currentStep === 0) this.previousControl.classList.add("disabled");else this.previousControl.classList.remove("disabled");
+    }
+  }, {
+    key: "updtadeCurrentStep",
+    value: function updtadeCurrentStep(movement) {
+      this.currentStep += movement;
+      this.steps.setCurrentStep(this.currentStep);
+      this.panels.setCurrentStep(this.currentStep);
+      this.handleNextStepButton();
+      this.updateButtonsStatus();
+    }
+  }, {
+    key: "setStep",
+    value: function setStep(index) {
+      this.currentStep = index;
+      this.steps.setCurrentStep(this.currentStep);
+      this.panels.setCurrentStep(this.currentStep);
+      this.handleNextStepButton();
+      this.updateButtonsStatus();
+    }
+  }, {
+    key: "handleNextStepButton",
+    value: function handleNextStepButton() {
+      this.nextControl.type = 'button';
+      this.nextControl.addEventListener("click", this.nextControlMoveStepMethod);
+
+      if (this.currentStep === this.stepsQuantity - 1) {
+        this.nextControl.innerHTML = this.submitText; // this.nextControl.addEventListener("click", this.concludeControlMoveStepMethod);
+
+        this.nextControl.addEventListener("click", this.wizardConclusionMethod);
+      } else {
+        this.nextControl.innerHTML = this.nextText; // this.nextControl.removeEventListener("click", this.concludeControlMoveStepMethod);
+
+        this.nextControl.removeEventListener("click", this.wizardConclusionMethod);
+      }
+    }
+  }, {
+    key: "handleWizardConclusion",
+    value: function handleWizardConclusion() {
+      this.wizard.classList.add("completed");
+      this.nextControl.type = 'submit';
+    }
+  }, {
+    key: "addControls",
+    value: function addControls(previousControl, nextControl) {
+      this.previousControl = previousControl;
+      this.nextControl = nextControl;
+      this.previousControlMoveStepMethod = this.moveStep.bind(this, -1);
+      this.nextControlMoveStepMethod = this.moveStep.bind(this, 1);
+      previousControl.addEventListener("click", this.previousControlMoveStepMethod);
+      nextControl.addEventListener("click", this.nextControlMoveStepMethod);
+      this.updateButtonsStatus();
+    }
+  }, {
+    key: "getCoords",
+    value: function getCoords(elem) {
+      // crossbrowser version
+      var box = elem.getBoundingClientRect();
+      var body = document.body;
+      var docEl = document.documentElement;
+      var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+      var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+      var clientTop = docEl.clientTop || body.clientTop || 0;
+      var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+      var top = box.top + scrollTop - clientTop;
+      var left = box.left + scrollLeft - clientLeft;
+      return {
+        top: Math.round(top),
+        left: Math.round(left)
+      };
+    }
+  }, {
+    key: "scrollTop",
+    value: function scrollTop() {
+      var focusEl = Globo.closest(this.wizard, '.globo-formbuilder');
+
+      if (Globo.closest(this.wizard, '.globo-formbuilder').querySelector('.float-layout')) {} else {
+        window.scrollTo({
+          'behavior': 'smooth',
+          'left': 0,
+          'top': this.getCoords(focusEl).top
+        });
+      }
+    }
+  }, {
+    key: "moveStep",
+    value: function moveStep(movement) {
+      // Validate before movement
+      Globo.FormBuilder.handleValidate(this.wizard); // If has error and click Next -> return
+
+      if (movement == 1 && !Globo.libs._.isNull(this.wizard.querySelector(".block-container.errors"))) return; //
+
+      this.scrollTop(); // If is Next
+
+      if (movement == 1) {
+        this.concludeControlMoveStepMethod();
+      }
+
+      if (this.validateMovement(movement)) {
+        this.updtadeCurrentStep(movement);
+        this.steps.handleStepsClasses(movement);
+      } else {// throw "This was an invalid movement";
+      }
+    }
+  }, {
+    key: "validateMovement",
+    value: function validateMovement(movement) {
+      var fowardMov = movement > 0 && this.currentStep < this.stepsQuantity - 1;
+      var backMov = movement < 0 && this.currentStep > 0;
+      return fowardMov || backMov;
+    }
+  }, {
+    key: "reset",
+    value: function reset() {
+      var buttonNext = this.wizard.querySelector(".next");
+      var buttonPrevious = this.wizard.querySelector(".previous");
+      this.addControls(buttonPrevious, buttonNext);
+      this.steps.handleRemoveAllConcludeStep();
+      this.setStep(0);
+    }
+  }]);
+
+  return Wizard;
+}();
+
+Globo.Steps = Globo.Steps ||
+/*#__PURE__*/
+function () {
+  function Steps(wizard) {
+    _classCallCheck(this, Steps);
+
+    this.wizard = wizard;
+    this.steps = this.getSteps();
+    this.stepsQuantity = this.getStepsQuantity();
+    this.currentStep = 0;
+  }
+
+  _createClass(Steps, [{
+    key: "setCurrentStep",
+    value: function setCurrentStep(currentStep) {
+      this.currentStep = currentStep;
+    }
+  }, {
+    key: "getSteps",
+    value: function getSteps() {
+      return this.wizard.getElementsByClassName("step");
+    }
+  }, {
+    key: "getStepsQuantity",
+    value: function getStepsQuantity() {
+      return this.getSteps().length;
+    }
+  }, {
+    key: "handleConcludeStep",
+    value: function handleConcludeStep() {
+      this.steps[this.currentStep].classList.add("-completed");
+    }
+  }, {
+    key: "handleRemoveAllConcludeStep",
+    value: function handleRemoveAllConcludeStep() {
+      for (var i = 0; i < this.stepsQuantity; i++) {
+        this.steps[i].classList.remove("-completed");
+      }
+    }
+  }, {
+    key: "handleStepsClasses",
+    value: function handleStepsClasses(movement) {
+      if (movement > 0) this.steps[this.currentStep - 1].classList.add("-completed");else if (movement < 0) this.steps[this.currentStep].classList.remove("-completed");
+      this.steps[this.stepsQuantity - 1].classList.remove("-completed");
+    }
+  }]);
+
+  return Steps;
+}();
+
+Globo.Panels = Globo.Panels ||
+/*#__PURE__*/
+function () {
+  function Panels(wizard) {
+    _classCallCheck(this, Panels);
+
+    this.wizard = wizard;
+    this.panelWidth = this.wizard.offsetWidth;
+    this.panelsContainer = this.getPanelsContainer();
+    this.panels = this.getPanels();
+    this.currentStep = 0;
+    this.updatePanelsPosition(this.currentStep);
+    this.updatePanelsContainerHeight();
+  }
+
+  _createClass(Panels, [{
+    key: "getCurrentPanelHeight",
+    value: function getCurrentPanelHeight() {
+      return "".concat(this.getPanels()[this.currentStep].offsetHeight, "px");
+    }
+  }, {
+    key: "getPanelsContainer",
+    value: function getPanelsContainer() {
+      return this.wizard.querySelector(".panels");
+    }
+  }, {
+    key: "getPanels",
+    value: function getPanels() {
+      return this.wizard.getElementsByClassName("panel");
+    }
+  }, {
+    key: "updatePanelsContainerHeight",
+    value: function updatePanelsContainerHeight() {
+      this.panelsContainer.style.height = this.getCurrentPanelHeight();
+    }
+  }, {
+    key: "updatePanelsPosition",
+    value: function updatePanelsPosition(currentStep) {
+      var panels = this.panels;
+      var panelWidth = this.panelWidth;
+
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].classList.remove("movingIn");
+        panels[i].classList.remove("movingOutBackward");
+        panels[i].classList.remove("movingOutFoward");
+        panels[i].classList.remove("block-container");
+
+        if (i !== currentStep) {
+          if (i < currentStep) panels[i].classList.add("movingOutBackward");else if (i > currentStep) panels[i].classList.add("movingOutFoward");
+        } else {
+          panels[i].classList.add("movingIn");
+          panels[i].classList.add("block-container");
+        }
+      }
+
+      this.updatePanelsContainerHeight();
+    }
+  }, {
+    key: "setCurrentStep",
+    value: function setCurrentStep(currentStep) {
+      this.currentStep = currentStep;
+      this.updatePanelsPosition(currentStep);
+    }
+  }]);
+
+  return Panels;
+}();
+
+Globo.xhr = function (form, callback) {
+  var action = form.getAttribute("action");
+  var method = form.getAttribute("method");
+  fetch(action, {
+    method: method,
+    body: new FormData(form)
+  }).then(function (response) {
+    if (response.ok) {
+      return response.json();
+    } else {
+      var error = new Error(response.statusText);
+      error.response = response;
+      throw error;
+    }
+  }).then(function (response) {
+    callback(response);
+  });
+};
+
+Globo.dismiss = function (e) {
+  e.parentNode.style.display = "none";
+};
+
+Globo.closest = function (el, selector) {
+  var matchesFn; // find vendor prefix
+
+  ["matches", "webkitMatchesSelector", "mozMatchesSelector", "msMatchesSelector", "oMatchesSelector"].some(function (fn) {
+    if (typeof document.body[fn] == "function") {
+      matchesFn = fn;
+      return true;
+    }
+
+    return false;
+  });
+  var parent; // traverse parents
+
+  while (el) {
+    parent = el.parentElement;
+
+    if (parent && parent[matchesFn](selector)) {
+      return parent;
+    }
+
+    el = parent;
+  }
+
+  return null;
+};
+
+Globo.idealTextColor = function (bgColor) {
+  var nThreshold = 105;
+  var components = bgColor.indexOf("#") === 0 ? Globo.getRGBComponents(bgColor) : bgColor.substring(5, bgColor.length - 1).replace(/ /g, "").split(",");
+  var bgDelta = components[0] * 0.299 + components[1] * 0.587 + components[2] * 0.114;
+  return 255 - bgDelta < nThreshold ? "#000000" : "#ffffff";
+};
+
+Globo.getRGBComponents = function (color) {
+  var r = color.substring(1, 3);
+  var g = color.substring(3, 5);
+  var b = color.substring(5, 7);
+  return {
+    R: parseInt(r, 16),
+    G: parseInt(g, 16),
+    B: parseInt(b, 16)
+  };
+};
+
+Globo.containsText = function (selector, text) {
+  var elements = document.querySelectorAll(selector);
+  return Array.prototype.filter.call(elements, function (element) {
+    return RegExp(text).test(element.textContent);
+  });
+};
+
+Globo.reduceElements = function (elements) {
+  var result = Globo.libs._.clone(elements);
+
+  for (var i = 0; i < elements.length; i++) {
+    var isParent = false;
+
+    for (var j = 0; j <= elements.length; j++) {
+      if (elements[i].contains(elements[j]) && !elements[j].contains(elements[i])) {
+        isParent = true;
+      }
+    }
+
+    if (isParent) {
+      result[i] = false;
+    }
+  }
+
+  return result;
+};
+
+Globo.FormBuilder.initialize = function () {
+  var element = document.getElementById("globo-formbuilder-element").innerHTML;
+  var template = document.getElementById("globo-formbuilder-template").innerHTML;
+  var dynamicCSS = document.getElementById("globo-formbuilder-dynamicCSS").innerHTML;
+  var engine = new Globo.libs.Liquid();
+  engine.registerFilter("renderElement", function (element, template, configs) {
+    return engine.parseAndRenderSync(template, {
+      element: element,
+      configs: configs
+    });
+  });
+  engine.registerFilter("parseInt", function (v) {
+    return parseInt(100 / v);
+  });
+  engine.registerFilter("optionsToArray", function (v, c) {
+    return v.split(/\r?\n/);
+  });
+  engine.registerFilter("encodeHexColor", function (v) {
+    return typeof v !== "undefined" && v.replace("#", "%23");
+  });
+  engine.registerFilter("idealTextColor", function (v) {
+    return typeof v !== "undefined" && Globo.idealTextColor(v);
+  });
+  engine.registerFilter("escapeHtml", function (v) {
+    if (typeof v !== "string") return v;
+    return v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  });
+  var forms = document.querySelectorAll(".globo-formbuilder");
+
+  Globo.libs._.each(forms, function (form) {
+    var formId = form.getAttribute("data-id");
+    form.setAttribute('id', 'globo-formbuilder-' + formId);
+    engine.parseAndRender(template, {
+      configs: Globo.FormBuilder.forms[formId],
+      partialElement: element,
+      dynamicCSS: dynamicCSS,
+      formId: formId,
+      Globo: Globo
+    }).then(function (html) {
+      form.innerHTML = html;
+      Globo.FormBuilder.init(form);
+    });
+  });
+
+  var shortCodeForms = Globo.containsText('div', '{formbuilder:');
+  shortCodeForms = Globo.reduceElements(shortCodeForms);
+  var regexFindFormId = /{formbuilder:(.*)}/g;
+  var renderFormId = [];
+
+  Globo.libs._.each(shortCodeForms, function (formWrapper) {
+    var m;
+
+    while ((m = regexFindFormId.exec(formWrapper.textContent)) !== null) {
+      if (m.index === regexFindFormId.lastIndex) {
+        regexFindFormId.lastIndex++;
+      }
+
+      if (m.length) {
+        var formId = m[1];
+
+        if (typeof Globo.FormBuilder.forms[formId] !== 'undefined' && renderFormId.indexOf(formId) == -1) {
+          var html = engine.parseAndRenderSync(template, {
+            configs: Globo.FormBuilder.forms[formId],
+            partialElement: element,
+            dynamicCSS: dynamicCSS,
+            formId: formId,
+            Globo: Globo
+          });
+          formWrapper.innerHTML = formWrapper.innerHTML.replace("{formbuilder:".concat(formId, "}"), '<div class="globo-formbuilder" id="globo-formbuilder-' + formId + '" data-id="' + formId + '">' + html + '</div>');
+          renderFormId.push(formId);
+        }
+      }
+    }
+  });
+
+  for (var i = 0; i < renderFormId.length; i++) {
+    Globo.FormBuilder.init(document.querySelector('.globo-formbuilder[data-id="' + renderFormId[i] + '"]'));
+  }
+}; // Prevent Lodash Global Pollution
+
+
+_.noConflict();
+
+var headContent = document.getElementsByTagName('head')[0].innerHTML;
+
+if (headContent && headContent.indexOf('globo.formbuilder.init.js') >= 0) {
+  Globo.FormBuilder.initialize();
+}
+
+/***/ }),
+
+/***/ 0:
+/*!********************************************************!*\
+  !*** multi ./public/js/form.js ./public/css/form.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /var/www/html/formbuilder2/public/js/form.js */"./public/js/form.js");
+module.exports = __webpack_require__(/*! /var/www/html/formbuilder2/public/css/form.scss */"./public/css/form.scss");
+
+
+/***/ })
+
+/******/ });

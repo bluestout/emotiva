@@ -54,7 +54,8 @@
     color: {{configs.appearance.descriptionColor}}
 }
 .globo-form-app .globo-label,
-.globo-form-app .globo-form-control label.globo-label{
+.globo-form-app .globo-form-control label.globo-label,
+.globo-form-app .globo-form-control label.globo-label span.label-content{
     color: {{configs.appearance.labelColor}}
 }
 .globo-form-app .globo-form-control .help-text.globo-description{
@@ -541,7 +542,7 @@
     {% if element.dataType == 'fixed' %}
         <input type="hidden" data-type="{{element.dataType}}" id="{{element.id}}" name="{{element.id}}" value="{{element.fixedValue}}">
     {% else %}
-        <input type="hidden" data-type="{{element.dataType}}" id="{{element.id}}" name="{{element.id}}" value="" >
+        <input type="hidden" data-type="{{element.dataType}}" id="{{element.id}}" name="{{element.id}}" data-default-value="{{element.defaultValue}}" value="{{element.defaultValue}}" >
     {% endif %}
 </div>
 {% else %}
@@ -551,4 +552,5 @@
 </script>
 
 {{ 'globo.formbuilder.data.10671.js' | asset_url | script_tag }}
+{{ 'globo.formbuilder.data.31679.js' | asset_url | script_tag }}
 {{ 'globo.formbuilder.js' | asset_url | script_tag }}
