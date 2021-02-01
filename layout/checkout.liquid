@@ -87,6 +87,81 @@ td.product__description {
     max-width: 400px;
   }
 }
+/***************international popup************************/
+.inter_ship_popup_hide
+{
+  display: none !important;
+}
+.inter_ship_popup_bg
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.5);
+}
+.inter_ship_popup
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 160px;
+  background-color: #fff;
+  max-width: 350px;
+  margin: 0 auto;
+  z-index: 10000;
+}
+
+.inter_ship_popup_ini
+{
+  border: 1px solid #F0F1F2;
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 13%);
+  padding: 24px;
+}
+.close-popup-img {
+  cursor: pointer;
+  position: relative;
+}
+.close-popup-img:after{
+  clear: both;
+  display: table;
+  content:"";
+}
+.close-popup-icon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: block;
+    float: right;
+}
+.close-popup-icon:before {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+    content: "";
+    background: #667175;
+    height: 1px;
+    position: absolute;
+}
+.close-popup-icon:after {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: rotate(-45deg);
+    content: "";
+    background: #667175;
+    height: 1px;
+    position: absolute;
+}
+.inter_ship_title{
+  margin-bottom: 16px;
+}
+.inter_ship_cont{
+  margin-bottom: 16px;
+}
 </style> 
     
 
@@ -99,10 +174,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W98R37M');</script>
 <!-- End Google Tag Manager -->
 <script src="https://cdn.swellrewards.com/loader/WZ2usUmthJFkMk8tgU2aQw.js"></script>
+{{ "//code.jquery.com/jquery-3.3.1.min.js" | script_tag }}
+
   </head>
   <body>
     {{ skip_to_content_link }}
+    <div id="inter_ship_popup" class="inter_ship_popup_hide">
+      <div class="inter_ship_popup_bg">
 
+      </div>
+      <div class="inter_ship_popup">
+        <div class="inter_ship_popup_ini">
+          <div>
+            <div class="close-popup-img">
+              <span class="close-popup-icon"></span>
+            </div>
+          </div>
+          <div>
+            <h3 class="inter_ship_title">Please note the following concerning international shipments:</h3>
+            <p class="inter_ship_cont">
+              I acknowledged that all customs charges, duties, taxes for my upcoming shipment is my responsibility and will be handled through the carrier. Any fees associated in the event of the delivery being refused will be deducted from my end.
+            </p>
+            <p class="inter_ship_cont">
+              Emotiva is not able to estimate these fees, however, there are several resources online that can help you- <a href="https://www.simplyduty.com/import-calculator/" target="_blank">https://www.simplyduty.com/import-calculator/</a>
+            </p>
+            <p class="inter_ship_cont">
+              Please acknowledge to this email so we can get your order on its way. Thank you in advance!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="banner" data-header>
       <div class="wrap">
         {{ content_for_logo }}
@@ -203,6 +305,23 @@ var caNotification = function(){
 		return null;
   }  
 
+
+  $(document).ready(function(){ 
+    console.log("TEST:","{{ checkout.shipping_address.country }}");
+    var country = "{{ checkout.shipping_address.country }}";
+    if( country !== "United States")
+    {      
+      if($('#checkout_different_billing_address_false').length)
+      {
+        $('#inter_ship_popup').removeClass("inter_ship_popup_hide");
+      }
+    }
+
+    $('body').on('click', '.close-popup-img', function(e){
+      e.preventDefault();
+      $('#inter_ship_popup').addClass("inter_ship_popup_hide");
+    })    
+  });
 </script>
  
   <!-- Google Tag Manager (noscript) -->
