@@ -162,6 +162,20 @@ td.product__description {
 .inter_ship_cont{
   margin-bottom: 16px;
 }
+.inter_ship_accep_row
+{
+  text-align: center;
+}
+.inter_ship_accep_chkbox:focus
+{
+  outline: none;
+}
+.inter_ship_accep_btn
+{
+  display: block;
+  padding: 5px 20px;
+  margin: 20px auto 0;
+}
 </style> 
     
 
@@ -179,28 +193,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </head>
   <body>
     {{ skip_to_content_link }}
-    <div id="inter_ship_popup" class="inter_ship_popup_hide">
+	<div id="inter_ship_popup" class="inter_ship_popup_hide">
       <div class="inter_ship_popup_bg">
 
       </div>
       <div class="inter_ship_popup">
         <div class="inter_ship_popup_ini">
-          <div>
+          {% comment %} <div>
             <div class="close-popup-img">
               <span class="close-popup-icon"></span>
             </div>
-          </div>
+          </div> {% endcomment %}
           <div>
             <h3 class="inter_ship_title">Please note the following concerning international shipments:</h3>
             <p class="inter_ship_cont">
               I acknowledged that all customs charges, duties, taxes for my upcoming shipment is my responsibility and will be handled through the carrier. Any fees associated in the event of the delivery being refused will be deducted from my end.
             </p>
             <p class="inter_ship_cont">
-              Emotiva is not able to estimate these fees, however, there are several resources online that can help you- <a href="https://www.simplyduty.com/import-calculator/" target="_blank">https://www.simplyduty.com/import-calculator/</a>
+              Emotiva is not able to estimate these fees, however, here is an online estimation tool that can help you. <a href="https://www.simplyduty.com/import-calculator/" target="_blank">https://www.simplyduty.com/import-calculator/</a>
             </p>
-            <p class="inter_ship_cont">
-              Please acknowledge to this email so we can get your order on its way. Thank you in advance!
-            </p>
+            <div class="inter_ship_accep_row">
+              <label><input type="checkbox" class="input-checkbox inter_ship_accep_chkbox" /> I Accept</label>
+              <button class="btn inter_ship_accep_btn" type="button" disabled>Accept</button>
+            </div>
           </div>
         </div>
       </div>
@@ -304,24 +319,42 @@ var caNotification = function(){
 		}
 		return null;
   }  
-
-
+  
   $(document).ready(function(){ 
-    console.log("TEST:","{{ checkout.shipping_address.country }}");
-    var country = "{{ checkout.shipping_address.country }}";
-    if( country !== "United States")
-    {      
-      if($('#checkout_different_billing_address_false').length)
-      {
-        $('#inter_ship_popup').removeClass("inter_ship_popup_hide");
+    function checkInternation()
+    {
+      var country = "{{ checkout.shipping_address.country }}";
+      if( country !== "United States")
+      {      
+        var current_tab = $('.breadcrumb__item--current .breadcrumb__text').text();
+        if(current_tab == 'Payment')
+        {
+          $('#inter_ship_popup').removeClass("inter_ship_popup_hide");
+        }
       }
-    }
 
-    $('body').on('click', '.close-popup-img', function(e){
-      e.preventDefault();
-      $('#inter_ship_popup').addClass("inter_ship_popup_hide");
-    })    
+      $('body').on('click', '.close-popup-img', function(e){
+        e.preventDefault();
+        $('#inter_ship_popup').addClass("inter_ship_popup_hide");
+      })  
+
+      $(".inter_ship_accep_chkbox").change(function(){
+        if ($('input.inter_ship_accep_chkbox').is(':checked')) {
+          $(".inter_ship_accep_btn").removeAttr("disabled");
+        }    
+        else{
+          $(".inter_ship_accep_btn").attr("disabled", true);
+        }
+      })
+      $('body').on('click', '.inter_ship_accep_btn', function(e){
+        e.preventDefault();
+        $('#inter_ship_popup').addClass("inter_ship_popup_hide");
+      })  
+    }
+     setTimeout(checkInternation, 1000)
+
   });
+  
 </script>
  
   <!-- Google Tag Manager (noscript) -->
