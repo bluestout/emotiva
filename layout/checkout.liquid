@@ -92,6 +92,7 @@ td.product__description {
 {
   display: none !important;
 }
+
 .inter_ship_popup_bg
 {
   position: fixed;
@@ -176,6 +177,24 @@ td.product__description {
   padding: 5px 20px;
   margin: 20px auto 0;
 }
+.inter_ship_notify_hide
+{
+  display: none !important;
+}
+.inter_ship_notify p
+{
+ font-size: 13px;
+ margin-bottom: 12px;
+}
+.checkout_international_notify_hide
+{
+  {% comment %} display: none; {% endcomment %}
+}
+.checkout_international_notify
+{
+  text-align: center;
+  margin-top: 50px;
+}
 </style> 
     
 
@@ -193,7 +212,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </head>
   <body>
     {{ skip_to_content_link }}
-	<div id="inter_ship_popup" class="inter_ship_popup_hide">
+	  <div id="inter_ship_popup" class="inter_ship_popup_hide">
       <div class="inter_ship_popup_bg">
 
       </div>
@@ -236,8 +255,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {{ breadcrumb }}
             {{ alternative_payment_methods }}
           </div>
+          <div class="inter_ship_notify inter_ship_notify_hide" id="inter_ship_notify"><p>I acknowledged that all customs charges, duties, taxes for my upcoming shipment is my responsibility and will be handled through the carrier. Any fees associated in the event of the delivery being refused will be deducted from my end.</p></div>
           <div class="main__content">
             {{ content_for_layout }}
+            <div class="checkout_international_notify checkout_international_notify_hide">
+              <p>International customers are responsible for all customs charges, duties, taxes and all fees will be handled through the carrier. Any fees associated in the event of the delivery being refused will be deducted from the customers account.</p>
+            </div>
           </div>
           <div class="main__footer">
             {{ content_for_footer }}
@@ -332,7 +355,7 @@ var caNotification = function(){
           $('#inter_ship_popup').removeClass("inter_ship_popup_hide");
         }
       }
-
+      
       $('body').on('click', '.close-popup-img', function(e){
         e.preventDefault();
         $('#inter_ship_popup').addClass("inter_ship_popup_hide");
@@ -349,7 +372,12 @@ var caNotification = function(){
       $('body').on('click', '.inter_ship_accep_btn', function(e){
         e.preventDefault();
         $('#inter_ship_popup').addClass("inter_ship_popup_hide");
+        $('#inter_ship_notify').removeClass("inter_ship_notify_hide");
+        
+
       })  
+      
+      
     }
      setTimeout(checkInternation, 1000)
 
