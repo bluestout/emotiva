@@ -1,16 +1,23 @@
 $(document).ready(function(){ 
-  jQuery(function() {
-  jQuery('.swatch :radio').change(function() {
-    var optionIndex = jQuery(this).closest('.swatch').attr('data-option-index');
-    var optionValue = jQuery(this).val();
-    jQuery(this)
-      .closest('form')
-      .find('.single-option-selector')
-      .eq(optionIndex)
-      .val(optionValue)
-      .trigger('change');
+  /*********************** FreeShip Popup ***********************/
+  $('body').on('click', '.cst_freeship_popup_li', function() {
+    $(".cst_freeship_popup").toggleClass("FreeShipPop");
   });
-});
+
+
+  
+  jQuery(function() {
+    jQuery('.swatch :radio').change(function() {
+      var optionIndex = jQuery(this).closest('.swatch').attr('data-option-index');
+      var optionValue = jQuery(this).val();
+      jQuery(this)
+        .closest('form')
+        .find('.single-option-selector')
+        .eq(optionIndex)
+        .val(optionValue)
+        .trigger('change');
+    });
+  });
   $( "#datepicker" ).datepicker();
   $( "#WarrantyValidity" ).datepicker();
   /******************************/
@@ -402,3 +409,5 @@ $('.em-about-award-mob-slider').slick({
       }
       $('.product-single__thumbnails').slick('slickGoTo','0');
     }
+
+

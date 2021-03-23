@@ -298,21 +298,24 @@
               <div class="em-sin-pro-cst-ship-warranty-inn">
                 <div class="em-cart-bot-fea-sec">
                   <ul>
-                    <li><img src="{{'icon-free-shipping@1x.svg'| asset_url}}">Free US Shipping over $49</li>
+                    <li class="cst_freeship_popup_li">
+                    <img src="{{'icon-free-shipping@1x.svg'| asset_url}}">Free US Shipping over $49
+                    {%include "freeship_popup" %}
+                    </li>
                     <li><img src="{{'icon-warranty.svg'| asset_url}}" width="18px" height="18px">
-                              {% if product.metafields.global.warranty %}
-                                {{product.metafields.global.warranty}}
-                              {% else %}
-                                Up to 5-year warranties
-                              {% endif %}
-                            </li>
+                      {% if product.metafields.global.warranty %}
+                        {{product.metafields.global.warranty}}
+                      {% else %}
+                        Up to 5-year warranties
+                      {% endif %}
+                    </li>
                   </ul>
                 </div>
                 <div class="em-cart-bot-fea-sec-faq"><a href="{{section.settings.link_faq}}">FAQ</a></div>
               </div>	
-              <div class="em-sin-pro-cst-ship-warranty-inn-copy">
+              {% comment %} <div class="em-sin-pro-cst-ship-warranty-inn-copy">
                 <p>We are experiencing longer shipping times due to high volume and carrier delays. Please allow extra time for delivery.</p>
-              </div>
+              </div> {% endcomment %}
             </div>
           {% endform %}
         {% endif %}
@@ -365,18 +368,18 @@
         {%include "explore-similar" %}
       </div>
     {% endif %} 
-    <div class="grid_item cst_yotpo_photo_gallery">
-      <div
-          class="yotpo yotpo-pictures-widget"
-          data-gallery-id="5f4e5c12a7ccdf336e084609">
-      </div>
-    </div>
     <div class="grid_item CustomTabs DesktopTabs">
       {%include "product-tab" %}
     </div>
     <div class="grid_item CustomAccrdion MobileAccordion">
       {%include "product-accordion" %}
     </div>
+  </div>
+</div>
+<div class="grid_item cst_yotpo_photo_gallery">
+  <div
+      class="yotpo yotpo-pictures-widget"
+      data-gallery-id="5f4e5c12a7ccdf336e084609">
   </div>
 </div>
 <div class="em-sin-pro-ReviewSection">

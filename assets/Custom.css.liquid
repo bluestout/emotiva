@@ -9630,6 +9630,94 @@ span.lessBtn {
   display: none;
 }
 
+/*********************************************/
+/*********************FreeShip Popup*******************/
+/*********************************************/
+.cst_freeship_popup_li{
+  cursor: pointer;
+}
+.cst_freeship_popup{
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 13%);
+  padding: 30px;
+  width: 460px;
+}
+.FreeShipPop{
+  display: block !important;
+}
+@media (max-width: 1100px){
+  .cst_freeship_popup{
+    width: 400px;
+  }
+}
+@media (max-width: 749px){
+  .cst_freeship_popup{
+    width: 330px;
+  }
+}
+.cst_freeship_popup_ini{
+  position: relative;
+}
+.cst_freeship_popup_des{
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  padding-right: 105px;
+}
+.cst_freeship_popup_img{
+  background-color: #000;
+  padding: 10px 14px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+.cst_freeship_popup_img svg{
+  position: relative !important;
+}
+.cst_freeship_popup_close{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cst_freeship_popup_close_btn{
+
+}
+.cst_freeship_popup_close_btn:after{
+  content: "";
+  width: 22px;
+  height: 1px;
+  border-radius: 2px;
+  display: block;
+  background: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.25s ease-out;
+  transform: rotate(-45deg);
+  transition: all 0.25s ease-out;
+  margin-top: -6px;
+}
+.cst_freeship_popup_close_btn:before{
+  width: 22px;
+  height: 1px;
+  border-radius: 2px;
+  display: block;
+  background: #000;
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  content: "";
+  transition: all 0.25s ease-out;
+  transform: rotate(45deg);
+  margin-top: 6px;
+  transition: all 0.25s ease-out;
+
+}
 /*************************general****************************/
 @media (min-width: 750px)
 {
