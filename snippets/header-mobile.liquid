@@ -1,9 +1,13 @@
 <div class="em-mob-header-sec">
-   {% unless template == "page.landing"%}
-	<div class="em-mob-header-top-bar">
-  <p>Free US Shipping over $49</p>
-  </div>
-  {%endunless%}
+  {% comment %} {% unless template == "page.landing"%}
+	  <div class="em-mob-header-top-bar">  <p>Free US Shipping over $49</p>  </div>
+  {%endunless%} {% endcomment %}
+  {%if template == "index" %}
+	  <div class="em-mob-header-top-bar">  <p>Direct to consumer - No retail markups</p>  </div>
+  {% else %}
+    <div class="em-mob-header-top-bar">  <p>Free US Shipping over $49</p>  </div>
+  {%endif%}
+
 	<div class="em-mob-header-bot-sec">
 		<div class="em-mob-header-bot-left">
           <div class="em-mob-header-menu"><div class="em-mob-header-menu-icon"><span></span>Menu</div></div>

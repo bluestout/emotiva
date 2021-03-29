@@ -1,8 +1,13 @@
 <div class="em-top-head-sec DesktopHeader">
-  
-  {% unless template == "page.landing"%}
+  <div style="display: none;">{{template}}</div>
+  {%if template == "index" %}
+	  <div class="em-ext-top-bar"><p>Direct to consumer - No retail markups</p></div>
+  {% else %}
+    <div class="em-ext-top-bar"><p>Free US Shipping over $49</p></div>
+  {%endif%}
+  {% comment %} {% unless template == "page.landing"%}
 	<div class="em-ext-top-bar"><p>Free US Shipping over $49</p></div>
-  {%endunless%}
+  {%endunless%} {% endcomment %}
 	<div class="em-head-top-bar">
 		<div class="em-container">
 			<div class="em-head-top-bar-row">
