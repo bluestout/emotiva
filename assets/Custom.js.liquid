@@ -110,6 +110,42 @@ $(document).ready(function(){
     $(this).parents(".childlist").parents(".em-mega-menu-dd-main-left").next(".em-mega-menu-dd-main-right").children("img").attr("src",getImagepath);
       /*$(".em-mega-menu-dd-main-right").show();*//*FS remove will do sprint2*/
   })
+
+  /****************MENU HOVER IMAGE CHANGE *********************/
+  {% comment %} console.log("0::::bs-all-pro-hoverworking");
+  $(".bs-all-pro-hoverworking").hover(
+    function() {
+      console.log("1::::bs-all-pro-hoverworking");
+    }, function() {
+      console.log("2::::bs-all-pro-hoverworking");
+    }
+  ); {% endcomment %}
+  $(".bs-all-pro-hoverworking").mouseenter(function(){
+    var data_handle = $(this).attr("data-handle");
+    $(".bs-all-pro-hoverworking").removeClass("bs-all-pro-active");
+    $(this).addClass("bs-all-pro-active");
+    if(data_handle == "shop-by-application")
+    {
+      $(".bs-mega-menu-all-allpro-main").hide();  
+      $(".bs-mega-menu-all-shopbyseries-main").hide();
+      $(".bs-mega-menu-all-shopbyapp-main").show();
+    }
+    else if(data_handle == "shop-by-series")
+    {
+      $(".bs-mega-menu-all-allpro-main").hide();
+      $(".bs-mega-menu-all-shopbyseries-main").show();
+      $(".bs-mega-menu-all-shopbyapp-main").hide();
+    }
+    else if(data_handle == "all-products")
+    {
+      $(".bs-mega-menu-all-allpro-main").show();
+      $(".bs-mega-menu-all-shopbyseries-main").hide();
+      $(".bs-mega-menu-all-shopbyapp-main").hide();
+    }
+    {% comment %} $(this).parents(".childlist").parents(".em-mega-menu-dd-main-left").next(".em-mega-menu-dd-main-right").children("img").attr("src",getImagepath); {% endcomment %}
+
+  })
+
   $(".CheckNote").change(function(){
   if ($('input.CheckNote').is(':checked')) {
     $(".em-cartspecial-ins-textarea").show();

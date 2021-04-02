@@ -440,6 +440,7 @@ a.em-nav-top-cart{
   transition: all 0.25s ease-out;
   opacity: 0;
 }
+
 .em-menu-no-list-title .em-mega-menu-dd-main .childlist > li > a:hover:after{
   right: 0px;
   opacity: 1;
@@ -533,6 +534,10 @@ a.em-nav-top-cart{
   left: 35px;
   max-width: 35%;
 }
+.em-mega-menu-dd-main .bs-mega-menu-all-shopbyapp-main .em-hm-shop-srs-box-img h3{
+  max-width: 100%;
+  bottom: 0;
+}
 .em-mega-menu-dd-main .em-hm-shop-srs-box-img img{
 	max-width: 70%;
   float: right;
@@ -583,10 +588,33 @@ a.em-nav-top-cart{
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.AllProcuts .bs-all-pro-hoverworking{
+  padding-left: 15px !important;
+}
+.AllProcuts .bs-all-pro-hoverworking.bs-all-pro-active{
+  background-color: #F0F1F2;
+}
+.AllProcuts .bs-all-pro-hoverworking > a{
+  width: 100%;
+}
+.AllProcuts .bs-all-pro-hoverworking > a:after{
+  border-left: 1px solid #000 !important; 
+  border-bottom: 1px solid #000 !important;
+  opacity: 1 !important;
+}
+
+.AllProcuts .em-mega-menu-dd-main-row{
+  justify-content: left;
+}
+.AllProcuts .em-mega-menu-dd-main-right{
+  width: 100%;
+  padding-left: 20px;
+  border-left: 1px solid #F3F3F4;
+}
 .em-mega-menu-dd-main-row .em-mega-menu-dd-main-right{
-	width: 39%;
-  text-align: right;
-  display: none;/*FS add for sprint2*/
+	{% comment %} width: 39%; {% endcomment %}
+  {% comment %} text-align: right; {% endcomment %}
+  {% comment %} display: none;/*FS add for sprint2*/ {% endcomment %}
 }
 .dd-menu-qz-img-con{
 	text-align: left;
@@ -1444,6 +1472,10 @@ a.em-nav-top-cart{
 .em-hm-shop-srs-box{
 	background-color: #f0f1f2;
   padding: 10px 0 45px; 
+}
+.bs-mega-menu-all-shopbyapp-main .em-hm-shop-srs-box
+{
+  width: 100%;
 }
 .em-hm-shop-srs-box-img{
 	position: relative;  
@@ -9727,6 +9759,17 @@ span.lessBtn {
   margin-top: 6px;
   transition: all 0.25s ease-out;
 
+}
+
+/*************************Mega Menu****************************/
+.bs-mega-menu-all-allpro-main{
+  
+}
+.bs-mega-menu-all-shopbyseries-main{
+  display: none;
+}
+.bs-mega-menu-all-shopbyapp-main{
+  display: none;
 }
 /*************************general****************************/
 @media (min-width: 750px)

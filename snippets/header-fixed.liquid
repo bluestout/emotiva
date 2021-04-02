@@ -2,117 +2,137 @@
 	<div class="em-top-head-sec-sticky-inn">
 		<div class="em-top-head-sec-sticky-logo">
 			<a href="/">
-                         {% comment %} <img src="{{section.settings.logo | img_url: "original"}}" /> {% endcomment %}
-                         <img src="{{'emotiva@1x.svg' | asset_url}}" />
-                         
-                      </a>
+        {% comment %} <img src="{{section.settings.logo | img_url: "original"}}" /> {% endcomment %}
+        <img src="{{'emotiva@1x.svg' | asset_url}}" />
+      </a>
 		</div>
 		<div class="em-top-head-sec-sticky-nav">
-          <ul class="em-nav-top-bar-lt-list">
-                  {% for link in linklists[section.settings.main_linklist].links %}
-                      {% if link.links != blank %}
-                      <li class="em-nav-listing {%if forloop.index==5%}SeriesCustom em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==8%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 7 or forloop.index== 9%}ReadCustom em-mega-menu-single{%endif%}"><a>{{link.title}}</a>
-                        <div class="em-mega-menu-dd-main">
-                          {%if forloop.index==5 or forloop.index==8%}
-                          <div class="em-mega-menu-dd-main-row">
-	<div class="em-mega-menu-dd-main-left">
-		<ul class="childlist">
-                       {% for childlink in link.links %}
-                          {%if childlink.handle == "has-dropdown" %}
-                          <li>
-                          {%include "admin-menu"%}
-	</li>
-                          {%else%}
-                          {% if childlink.links != blank %}
-                            <li><a href="{{childlink.url}}">{{childlink.title}}</a>
+      <ul class="em-nav-top-bar-lt-list">
+        {% for link in linklists[section.settings.main_linklist].links %}
+          {% if link.links != blank %}
+          <li class="em-nav-listing {%if forloop.index==6%}AllProcuts em-menu-no-list-title em-mega-menu-full-width{%elsif forloop.index==7%}CustomerCustom em-menu-with-list-title em-mega-menu-full-width{%elsif forloop.index== 8%}ReadCustom em-mega-menu-single{%endif%}"><a>{{link.title}}</a>
+            <div class="em-mega-menu-dd-main">
+              {%if forloop.index==7%}
+              <div class="em-mega-menu-dd-main-row">
+	              <div class="em-mega-menu-dd-main-left">
+		              <ul class="childlist">
+                    {% for childlink in link.links %}
+                      {% if childlink.links != blank %}
+                        <li><a href="{{childlink.url}}">{{childlink.title}}</a>
                           <ul class="SubChilList">
                             {% for subchildlink in childlink.links %}
                             <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
                             {%endfor%}
-                              </ul>
-                          </li>
-                          {%else%}
-                        <li {% if childlink.type contains "collection_link" %} {% assign imagepath = childlink.object.handle %} class="hoverworking" data-images="{{ collections[imagepath].image | img_url: "483x191" }}"{%endif%}><a href="{{childlink.url}}">{{childlink.title}}</a></li>
-                          {%endif%}
-                          {%endif%}
-                        {%endfor%}
-                        </ul>
-	</div>
-                            {%if forloop.index==5%}
-	<div class="em-mega-menu-dd-main-right" style="display:none">
-		<img src="{{'imgpsh_fullsize_anim.jpg' | asset_url }}" />
-	</div>
-                            {%endif%}
-</div>
-                          {%else%}
-                        <ul class="childlist">
-                       {% for childlink in link.links %}
-                          {%if childlink.handle == "has-dropdown" %}
-                          <li>
-                          {%include "admin-menu"%}
-	</li>
-                          {%else%}
-                          {% if childlink.links != blank %}
-                            <li><a href="{{childlink.url}}">{{childlink.title}}</a>
-                          <ul class="SubChilList">
-                            {% for subchildlink in childlink.links %}
-                            <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
-                            {%endfor%}
-                              </ul>
-                          </li>
-                          {%else%}
-                        <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
-                          {%endif%}
-                          {%endif%}
-                        {%endfor%}
-                        </ul>
-                          {%endif%}
-                        </div>
-                      </li>
+                          </ul>
+                        </li>
                       {%else%}
-                  <li><a href="{{link.url}}">{{link.title}}</a></li>
+                        <li {% if childlink.type contains "collection_link" %} {% assign imagepath = childlink.object.handle %} class="hoverworking" data-images="{{ collections[imagepath].image | img_url: "483x191" }}"{%endif%}><a href="{{childlink.url}}">{{childlink.title}}</a></li>
                       {%endif%}
-                  {%endfor%}
+                    {%endfor%}
                   </ul>
+	              </div>
+              </div>
+              {%elsif forloop.index== 6 %}
+                <div class="em-mega-menu-dd-main-row">
+                  <div class="em-mega-menu-dd-main-left">
+                    <ul class="childlist">
+                      {% for childlink in link.links %}
+                      <li class="bs-all-pro-hoverworking" data-handle="{{childlink.handle}}">
+                        <a href="{{childlink.url}}">{{childlink.title}}</a>
+                      </li>
+                      {%endfor%}
+                    </ul>
+                  </div>
+                  <div class="em-mega-menu-dd-main-right">
+                    <div class="bs-mega-menu-all-allpro-main">
+                      <ul class="childlist">
+                        {% for childlink in link.links %}
+                          {%if childlink.handle == "all-products" %}
+                          {% for subchildlink in childlink.links %}
+                            <li>
+                              <a href="{{subchildlink.url}}">{{subchildlink.title}}</a>
+                            </li>
+                          {%endfor%}
+                          {%endif%}
+                        {%endfor%}
+                      </ul>
+                    </div>
+                    <div class="bs-mega-menu-all-shopbyseries-main">
+                      {%include "admin-menu"%}
+                    </div> 
+                    <div class="bs-mega-menu-all-shopbyapp-main">
+                      {%include "admin-menu-shop-app"%}
+                    </div> 
+                  </div>
+                </div>
+              {%else%}
+                <ul class="childlist">
+                  {% for childlink in link.links %}
+                    {%if childlink.handle == "has-dropdown" %}
+                      <li>
+                        {%include "admin-menu"%}
+	                    </li>
+                    {%else%}
+                      {% if childlink.links != blank %}
+                        <li><a href="{{childlink.url}}">{{childlink.title}}</a>
+                          <ul class="SubChilList">
+                            {% for subchildlink in childlink.links %}
+                            <li><a href="{{subchildlink.url}}">{{subchildlink.title}}</a></li>
+                            {%endfor%}
+                          </ul>
+                        </li>
+                      {%else%}
+                        <li><a href="{{childlink.url}}">{{childlink.title}}</a></li>
+                      {%endif%}
+                    {%endif%}
+                  {%endfor%}
+                </ul>
+              {%endif%}
+            </div>
+          </li>
+          {%else%}
+            <li><a href="{{link.url}}">{{link.title}}</a></li>
+          {%endif%}
+        {%endfor%}
+      </ul>
 		</div>
      
 		<div class="em-top-head-sec-sticky-right">
 			<ul class="em-nav-top-bar-rt-list">
-              
-              <li> <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
+        <li> <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
             {% include 'icon-search' %}
             <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
           </button></li>
-            {% if customer %}
-              <li><a href="/account">Account</a></li>
-            {%else%}
-              <li><a href="/account/login">Sign in</a></li>
-            {%endif%}
-              <li><a href="/cart" class="em-nav-top-cart">Cart<span class="fixedCart">{{cart.item_count}}</span></a></li>
-					</ul>
+        {% if customer %}
+          <li><a href="/account">Account</a></li>
+        {%else%}
+          <li><a href="/account/login">Sign in</a></li>
+        {%endif%}
+          <li><a href="/cart" class="em-nav-top-cart">Cart<span class="fixedCart">{{cart.item_count}}</span></a></li>
+      </ul>
 		</div>  
        
 	</div>
   {% if template contains "article" %}
   <div class="em-articl-sub-nav-sec">
-  <div class="em-articl-sub-nav-list">
-    <ul>
-         {% for link in linklists['bs-blogs'].links %}
-      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-      {% endfor %}
-    </ul> 
+    <div class="em-articl-sub-nav-list">
+      <ul>
+          {% for link in linklists['bs-blogs'].links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul> 
+    </div>
   </div>
-</div>
   {%elsif template contains "blog.custom" or template contains "blog"%}
-   <div class="em-articl-sub-nav-sec">
-  <div class="em-articl-sub-nav-list">
-    <ul class="BlogCustomize">
-     {% for link in linklists['bs-blogs'].links %}
-      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-      {% endfor %}
-          
-    </ul>
+  <div class="em-articl-sub-nav-sec">
+    <div class="em-articl-sub-nav-list">
+      <ul class="BlogCustomize">
+      {% for link in linklists['bs-blogs'].links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+            
+      </ul>
+    </div>
   </div>
-</div>
   {%endif%}
 </div>
