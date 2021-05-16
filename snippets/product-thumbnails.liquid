@@ -1,5 +1,10 @@
 {%for image in product.images %}
 <li>
-<img src="{{image.src | img_url: "original" }}" />
+{% comment %} <img src="{{image.src | img_url: "original" }}" /> {% endcomment %}
+  <a href="{{image.src | img_url: "original"}}" data-fancybox="images">
+    <img src="{{image.src | img_url: "original"}}" />
+  </a>
 </li>
+
+
 {%endfor %}
