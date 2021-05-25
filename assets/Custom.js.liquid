@@ -1,4 +1,12 @@
 $(document).ready(function(){ 
+
+  $("#gotoSimPro").on("click",function(e){
+    e.preventDefault();
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#cstExSimPro").offset().top
+    }, 1000);
+  });
+
   /*********************** FreeShip Popup ***********************/
   $('body').on('click', '.cst_freeship_popup_li', function() {
     $(".cst_freeship_popup").toggleClass("FreeShipPop");

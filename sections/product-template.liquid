@@ -21,6 +21,13 @@
     {% assign isDiscontinued = true %}
   {% endif %}
 
+  {% assign isLimitedQuantity = false %}
+  {% if product.tags contains "limited-quantity" %}
+    {% assign isLimitedQuantity = true %}
+  {% endif %}
+
+
+
   {% case section.settings.media_size %}
     {% when 'small' %}
       {%- assign product_media_width = 'medium-up--one-third' -%}
@@ -131,10 +138,16 @@
         <div class="ProMeta">{{product.metafields.global.type}}</div>
         {%endif%}
         {%if product.metafields.global.short != blank %}
-        <div class="ShortDesc"><p class="lessDesc">{{product.metafields.global.short | truncate: 100}}<span class="moreDesc">More</span></p>
-          <p class="FullDesc">{{product.metafields.global.short }}<span class="lessBtn">Less</span></p>
-          </div>
-        
+          {%if isDiscontinued == false  %}
+            <div class="ShortDesc">
+              <p class="lessDesc">{{product.metafields.global.short | truncate: 100}}<span class="moreDesc">More</span></p>
+              <p class="FullDesc">{{product.metafields.global.short }}<span class="lessBtn">Less</span></p>
+            </div>
+          {%else%}
+            <div class="ShortDesc">
+              <p class="isDiscontinued">{{product.metafields.global.short }}</p>
+            </div>
+          {%endif%} 
         {%endif%}
         <div class="em-product-single-rev-rating">
         <!-- Yopto -->
@@ -256,7 +269,11 @@
                         name="quantity" value="1"
                         class="qty product-form__input product-form__input--quantity" data-quantity-input
                       >
-                      <input type='button' value='+' class='pro_qtyplus' field='quantity' max="600000000" />
+                      {%if isLimitedQuantity == false  %}
+                        <input type='button' value='+' class='pro_qtyplus' field='quantity' max="600000000" />
+                      {%else%}
+                        <input type='button' value='+' class='pro_qtyplus' field='quantity' max="3" />
+                      {%endif%}
                     </div>
                   </div>
                 </div>
@@ -313,6 +330,11 @@
                 </div>
                 <div class="em-cart-bot-fea-sec-faq"><a href="{{section.settings.link_faq}}">FAQ</a></div>
               </div>	
+              {%if isLimitedQuantity == true  %}
+              <div class="em-sin-pro-cst-limited-quantity">
+              * Due to high demand for this product, there is a limit of 3 per purchase
+              </div>
+              {%endif%}
               {% comment %} <div class="em-sin-pro-cst-ship-warranty-inn-copy">
                 <p>We are experiencing longer shipping times due to high volume and carrier delays. Please allow extra time for delivery.</p>
               </div> {% endcomment %}
@@ -323,7 +345,7 @@
           <div class="em-pro-cst-discontinue-block">
             <div class="em-pro-cst-discontinue-block-ini">
               <span>This product is discontinued.</span> 
-              <a href="#cstExSimPro" class="moreDesc">See similar products</a>
+              <a id="gotoSimPro" class="moreDesc">See similar products</a>
             </div>
           </div>
         {% endif %}
@@ -363,11 +385,7 @@
         {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
       {% endif %}
     </div>
-    {%if isDiscontinued == true  %}
-      <div class="CustomExplore" id="cstExSimPro">
-        {%include "explore-similar" %}
-      </div>
-    {% endif %} 
+    
     <div class="grid_item CustomTabs DesktopTabs">
       {%include "product-tab" %}
     </div>
@@ -424,7 +442,11 @@
     </div>
   </div>
 </div>
-  
+{%if isDiscontinued == true  %}
+  <div class="CustomExplore" id="cstExSimPro">
+    {%include "explore-similar" %}
+  </div>
+{% endif %}  
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
     {{ product | json }}
@@ -433,11 +455,11 @@
     {{ product.media | where: 'media_type', 'model' | json }}
   </script>
 {% endunless %}
-
+{%if isDiscontinued == false  %}
 <div class="CustomRelated">
   {%include "complete-related" %}
 </div>
-
+{%endif%} 
 <!-- Klaviyo product tracking -->
 <script type="text/javascript">
   var _learnq = _learnq || [];

@@ -2,8 +2,15 @@
   The contents of the product.liquid template can be found in /sections/product-template.liquid
 {% endcomment %}
 
+{% assign isDiscontinued = false %}
+{% if product.tags contains "discontinued" %}
+  {% assign isDiscontinued = true %}
+{% endif %}
+
 {% section 'product-template' %}
+{%if isDiscontinued == false  %}
 {% section 'product-recommendations' %}
+{%endif%} 
 {%section 'pro-article'%}
 
 {% if collection %}

@@ -4044,6 +4044,9 @@ ul.em-read-single-gr-lined-btns li a{
   color: #000;
   margin: 0 0 10px 0;
 }
+.product-template__container .product-single .ShortDesc .isDiscontinued a{
+  text-decoration: underline;
+}
 .product-template__container .product-single .ShortDesc .moreDesc{ 
 	font-size: 14px;
   line-height: 16px;
@@ -4403,6 +4406,9 @@ ul.em-read-single-gr-lined-btns li a{
 .em-sin-pro-cst-ship-warranty-inn-copy
 {
   margin-top: 16px;
+}
+.em-sin-pro-cst-limited-quantity{
+  font-weight: 700;
 }
 .em-sin-pro-cst-ship-made-to-order
 {
@@ -9073,21 +9079,21 @@ span.lessBtn {
 }
 
 /*******Yopto product review*******/
-.cst-yotpo-product .yotpo-label
+ .cst-yotpo-product .yotpo-label
 {
   display: none;
 }
-.cst-yotpo-product .questions 
+.cst-yotpo-product .write-question-button
 {
-   display: none;
+   display: none !important;
 }
 .cst-yotpo-product .yotpo-nav
 {
  display: none !important;
 }
-.cst-yotpo-product .write-question-button
+.cst-yotpo-product .questions 
 {
-   display: none !important;
+   display: none;
 }
 .cst-yotpo-product .yotpo-review-date
 {
@@ -9097,14 +9103,18 @@ span.lessBtn {
 {
    display: none !important;
 }
+{% comment %}
+
+
 .cst-yotpo-product .yotpo-footer
 {
   display: none !important;
 }
+
 .cst-yotpo-product .yotpo-review-media-wrapper
 {
   display: none !important;
-}
+}  {% endcomment %}
 
 .cst-yotpo-product  .yotpo-default-button
 {
@@ -9600,6 +9610,7 @@ span.lessBtn {
 .em-pro-cst-discontinue-block-ini a
 {
   color: #15b1ec;
+  cursor: pointer;
 }
 /******************product page explore similar block****************************/
 .CustomExplore
