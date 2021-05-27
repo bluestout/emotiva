@@ -85,6 +85,13 @@ BCSfFilter.prototype.buildProductGridItem = function(data) {
   var aspect_ratio = '';
   var thumburl = this.getFeaturedImage(images, '300x300');
   var itemImagesHtml = '<div id="' + wrapperId + '" class="grid-view-item__image-wrapper product-card__image-wrapper js">';
+
+  
+  itemImagesHtml += '<span class="fs-cst-product-tag-flag">';
+  if(data.tags.includes("best-sellers")){
+    itemImagesHtml += 'Best Seller';
+  } 
+  itemImagesHtml += '</span>';
   itemImagesHtml += '<div style="padding-top:';
   if (images.length > 0) {
     aspect_ratio = images[0]['width'] / images[0]['height'];
