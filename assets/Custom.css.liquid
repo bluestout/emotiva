@@ -9422,6 +9422,107 @@ span.lessBtn {
     text-align: center;
   }
 }
+/*****************homepage DACS News section****************************/
+.em-hm-dacs-news-main
+{
+}
+.dacs-news-layered-sec
+{
+  position: relative;
+  background-size: cover;
+  padding: 70px 100px 70px 100px;
+  background-position: right top;
+}
+@media (min-width: 750px){
+  .dacs-news-layered-sec-mob {
+      background-image: none !important;
+  }
+}
+
+.dacs-news-layered-cont-upr
+{
+  max-width: 650px;
+  {% comment %} position: absolute;
+  padding: 0 15px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(-35%,-50%);
+  -moz-transform: translate(-35%,-50%);
+  -webkit-transform: translate(-35%,-50%); {% endcomment %}
+}
+
+.dacs-news-layered-cont-upr h3
+{
+  font-size: 48px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #D7C46B;
+  text-align: left;
+  margin: 0 0 25px 0;
+}
+
+.dacs-news-layered-cont-upr .dacs-news-layered-cont-des
+{
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-align: left;
+  margin: 0 0 35px 0;
+}
+.dacs-news-layered-cont-btn
+{
+  text-align: left;
+  margin-top: 40px;
+}
+.dacs-news-layered-cont-upr .em-banner-feature-list
+{
+  justify-content: flex-start;
+}
+.dacs-news-layered-cont-upr .em-banner-feature-list p
+{
+  color: #fff;
+}
+@media (max-width: 749px)
+{
+  .em-hm-dacs-news-main .page-width
+  {
+    padding: 0;
+  }
+  .dacs-news-layered-sec {
+      padding-top: 0;
+      background-image: none;
+      background-position: 50% 50%;
+      padding: 0;/*added*/
+  }
+  .dacs-news-layered-sec-mob {
+    position: relative;
+    background-size: contain;
+    background-position: top;
+    padding: 350px 30px 30px 30px;
+  }
+  .dacs-news-layered-cont-upr
+  {
+    {% comment %} transform: translate(0%,-50%);
+    -moz-transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%); {% endcomment %}
+  }
+  .dacs-news-layered-cont-upr h3
+  {
+    font-size: 34px;
+    text-align: center;
+  }
+  .dacs-news-layered-cont-upr .dacs-news-layered-cont-des
+  {
+    font-size: 16px;
+    text-align: center;
+  }
+  .dacs-news-layered-cont-btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
 /*****************homepage festival hero section****************************/
 @media (min-width: 750px)
 {

@@ -200,8 +200,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- end tracking code from old store -->
 
   {% if template contains "product" %}
+      <script src="{{ 'jquery.fancybox.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'product-custom.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'jquery.fancybox.min.js' | asset_url }}" defer="defer"></script>
   {%endif%}
 
 
